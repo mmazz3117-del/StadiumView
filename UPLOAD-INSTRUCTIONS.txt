@@ -1,0 +1,41 @@
+STADIUM ATLAS — LOGO, HOME-SCREEN ICON + STADIUM FACTS UPDATE
+
+Upload these files into your existing Stadium Atlas repository, replacing
+matching filenames and keeping the assets folder intact. There is no need to
+upload the Oregon stadium images again.
+
+At repository root:
+  index.html
+  styles.css
+  site.webmanifest
+  catalog.js
+
+Inside assets/:
+  stadium-mark.svg
+  stadium-logo.svg
+  icon.svg
+  apple-touch-icon.png
+  icon-192.png
+  icon-512.png
+  icon-maskable.svg
+  icon-maskable-512.png
+  favicon.ico
+  favicon-16.png
+  favicon-32.png
+
+The private Stadium Atlas site has also been updated.
+
+The iPhone home-screen icon is assets/apple-touch-icon.png (180 x 180).
+It is an opaque square; iOS supplies its own corner mask.
+
+The logo is assets/stadium-logo.svg, a scalable vector with outlined lettering.
+The app header uses the matching stadium mark with its existing wordmark.
+
+Home-screen icons can be cached. If a saved shortcut still shows an older
+icon, remove that shortcut and add the updated site to the Home Screen again.
+The Oregon detail now includes team, mascot, seating capacity, and opening
+year, with links to official Oregon Athletics sources. The 54,000 figure counts
+seats rather than standing-room attendance.
+
+This package adds matching branding, install metadata, and stadium facts. It does not
+provide offline stadium storage or change the stadium collection.

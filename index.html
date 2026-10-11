@@ -6,7 +6,16 @@
 <meta name="theme-color" content="#121815">
 <meta name="description" content="Explore college football from above. Browse the Stadium Atlas collection, starting with two aerial views of Oregon's Autzen Stadium.">
 <title>Stadium Atlas · College football from above</title>
+<link rel="icon" href="assets/favicon.ico" sizes="any">
 <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="assets/favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="site.webmanifest">
+<meta name="application-name" content="Stadium Atlas">
+<meta name="apple-mobile-web-app-title" content="Stadium Atlas">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
 <link rel="stylesheet" href="styles.css">
 <script src="catalog.js" defer></script>
 <script src="app.js" defer></script>
@@ -14,7 +23,7 @@
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header shell">
-  <a class="brand" href="#" aria-label="Stadium Atlas home"><svg viewBox="0 0 44 38" fill="none" aria-hidden="true"><path d="M4 12 22 3l18 9v14l-18 9L4 26Z"/><path d="m4 12 18 9 18-9M22 21v14M10 15v8l12 6 12-6v-8"/></svg><span>STADIUM<span class="brand-sub">ATLAS</span></span></a>
+  <a class="brand" href="#" aria-label="Stadium Atlas home"><img class="brand-mark" src="assets/stadium-mark.svg" width="44" height="38" alt=""><span>STADIUM<span class="brand-sub">ATLAS</span></span></a>
   <div class="header-meta"><span class="status-dot"></span> COLLEGE FOOTBALL</div>
   <a class="header-link" href="#collection">Explore <span aria-hidden="true">↗</span></a>
 </header>
@@ -30,7 +39,7 @@
       <div id="letter-board" class="letter-board" role="group" aria-label="Filter schools by first letter"></div>
       <div class="results-heading"><h2 id="results-title">The collection</h2><p id="result-count" role="status" aria-live="polite"></p></div>
       <div id="stadium-list"></div>
-      <div id="empty-state" class="empty-state" hidden><svg viewBox="0 0 44 38" fill="none" aria-hidden="true"><path d="M4 12 22 3l18 9v14l-18 9L4 26Z"/><path d="m4 12 18 9 18-9M22 21v14"/></svg><h3>No stadiums here yet.</h3><p id="empty-copy"></p><button class="primary-button" id="show-all">Show all stadiums <span aria-hidden="true">↗</span></button></div>
+      <div id="empty-state" class="empty-state" hidden><img class="empty-stadium-mark" src="assets/stadium-mark.svg" width="44" height="38" alt=""><h3>No stadiums here yet.</h3><p id="empty-copy"></p><button class="primary-button" id="show-all">Show all stadiums <span aria-hidden="true">↗</span></button></div>
     </section>
     <p class="collection-note"><span aria-hidden="true">↳</span> Starting in Eugene. More home fields to come.</p>
   </section>
@@ -39,7 +48,7 @@
     <div class="detail-heading"><div><p class="eyebrow">OREGON DUCKS <span class="muted">/ EUGENE, OREGON</span></p><h1 id="detail-title" tabindex="-1">Autzen Stadium<span class="title-dot">.</span></h1></div><p class="detail-index">FIELD NOTES <span>001</span></p></div>
     <div class="detail-image-wrap"><button class="image-open" id="open-viewer" aria-label="Open aerial view full screen"><img id="detail-image" src="assets/autzen-aerial.png" width="1672" height="941" alt="AI-generated aerial reconstruction of Autzen Stadium, with its open seating bowl and Oregon field visible."><span class="expand-label"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg>Full screen</span></button></div>
     <div class="gallery-strip"><div class="view-tabs" role="group" aria-label="Choose aerial view"><button class="view-tab active" data-view="0" aria-pressed="true"><img src="assets/autzen-aerial.png" width="96" height="54" alt=""><span><small>01</small>Aerial view</span></button><button class="view-tab" data-view="1" aria-pressed="false"><img src="assets/autzen-reverse.png" width="96" height="54" alt=""><span><small>02</small>Reverse view</span></button></div><p class="gallery-hint">Two ways to see the home of the Ducks.</p></div>
-    <div class="field-notes"><div><p class="eyebrow">THE HOME FIELD</p><p class="stadium-description">Oregon’s home in Eugene since 1967.<br>Green stands, an open bowl, and a different perspective.</p><a href="https://goducks.com/facilities/autzen-stadium/22" target="_blank" rel="noopener noreferrer" class="source-link">Official stadium information <span aria-hidden="true">↗</span></a></div><dl><div><dt>School</dt><dd>University of Oregon</dd></div><div><dt>Location</dt><dd>Eugene, Oregon</dd></div><div><dt>Opened</dt><dd>1967</dd></div></dl></div>
+    <div class="field-notes"><div><p class="eyebrow">THE HOME FIELD</p><p class="stadium-description">Oregon’s home in Eugene since 1967.<br>Green stands, an open bowl, and a different perspective.</p><div class="fact-sources"><a href="https://goducks.com/sports/2011/6/21/205174790" target="_blank" rel="noopener noreferrer" class="source-link">Stadium facts <span aria-hidden="true">↗</span></a><a href="https://goducks.com/sports/2003/8/28/153778" target="_blank" rel="noopener noreferrer" class="source-link">Meet The Duck <span aria-hidden="true">↗</span></a></div><p class="capacity-note">Capacity counts seats; standing-room attendance can be higher.</p></div><dl aria-label="Autzen Stadium facts"><div><dt>School</dt><dd>University of Oregon</dd></div><div><dt>Team</dt><dd>Oregon Ducks</dd></div><div><dt>Mascot</dt><dd>The Duck</dd></div><div><dt>Location</dt><dd>Eugene, Oregon</dd></div><div><dt>Seating capacity</dt><dd>54,000</dd></div><div><dt>Opened</dt><dd>1967</dd></div></dl></div>
     <p class="image-note">About these views: AI-generated, reference-based reconstructions of the stadium’s 2024-era appearance. They are not current photographs. Original images: 1672 × 941 pixels.</p>
   </section>
 </main>

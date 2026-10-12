@@ -2,7 +2,30 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+  const BUILD = '1.1.1';
+  window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
+  const expectedBuild = document.documentElement.dataset.appBuild;
+  const validCatalog = Array.isArray(catalog) && catalog.length === 6 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
+  if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
+    let warning = document.getElementById('release-warning');
+    if (!warning) {
+      warning = document.createElement('section');
+      warning.id = 'release-warning';
+      warning.setAttribute('role','alert');
+      document.body.prepend(warning);
+    }
+    warning.hidden = false;
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.1.1 repair ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
+    if (document.getElementById('main')) document.getElementById('main').hidden = true;
+    if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
+    if (document.getElementById('detail-view')) document.getElementById('detail-view').hidden = true;
+    const failedDialog = document.getElementById('image-viewer');
+    if (failedDialog) { if (failedDialog.open) failedDialog.close(); failedDialog.hidden = true; failedDialog.style.cssText = 'display:none!important'; }
+    document.body.classList.remove('viewer-open');
+    return;
+  }
   const home = $('#home-view');
   const detail = $('#detail-view');
   const input = $('#stadium-search');
@@ -13,18 +36,22 @@
   let letter = 'All';
   let query = '';
   let view = 0;
+  let activeStadium = catalog[0];
   let wasDetail = false;
   let homeScroll = 0;
   let viewerHistoryEntry = false;
-  let priorFocus = null;
+  let closingViewer = false;
+  const selectedViews = new Map();
   $('.skip-link').addEventListener('click', event => { event.preventDefault(); $('#main').focus(); $('#main').scrollIntoView({behavior:'instant'}); });
-  const normalize = value => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  const indexOf = item => catalog.indexOf(item) + 1;
+  const imageOf = () => activeStadium.views[view];
 
   for (const value of ['All', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']) {
     const button = document.createElement('button');
     button.type = 'button';
-    button.className = 'letter' + (value === 'All' ? ' letter-all' : '') + (catalog.some(item => item.school.startsWith(value)) ? ' available' : '');
+    button.className = 'letter' + (value === 'All' ? ' letter-all' : '') + (catalog.some(item => item.school.toUpperCase().startsWith(value)) ? ' available' : '');
     button.textContent = value;
     button.dataset.letter = value;
     button.setAttribute('aria-label', value === 'All' ? 'All schools' : `Schools starting with ${value}`);
@@ -33,51 +60,92 @@
   }
 
   function matches(item) {
-    const searchable = normalize([item.school, item.fullSchool, item.team, item.stadium, item.city, item.state].join(' '));
+    const searchable = normalize([item.school, item.fullSchool, item.team, item.teamName, item.mascot, item.stadium, item.city, item.state, ...(item.aliases || [])].join(' '));
     return (letter === 'All' || item.school.toUpperCase().startsWith(letter)) && normalize(query).split(/\s+/).filter(Boolean).every(word => searchable.includes(word));
   }
   function renderResults() {
-    const results = catalog.filter(matches);
+    const results = catalog.filter(matches).sort((a,b) => a.school.localeCompare(b.school));
+    const views = results.reduce((sum,item) => sum + item.views.length, 0);
     $$('.letter').forEach(button => { const selected = button.dataset.letter === letter; button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected)); });
     $('#clear-search').hidden = !query;
     $('#reset-filters').hidden = !query && letter === 'All';
     $('#results-title').textContent = query ? 'Search results' : letter === 'All' ? 'The collection' : `${letter} · Schools`;
-    $('#result-count').textContent = `${results.length} stadium${results.length === 1 ? '' : 's'}${results.length ? ' · 2 views' : ''}`;
-    $('#stadium-list').innerHTML = results.map(item => `<a class="stadium-card" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(item.school)}: ${escape(item.stadium)}, two aerial views"><div class="card-image"><img src="${escape(item.views[0].src)}" width="1672" height="941" alt="${escape(item.views[0].alt)}"><span class="card-viewcount">2 AERIAL VIEWS</span></div><div class="card-body"><div class="card-topline"><span>UNIVERSITY OF OREGON</span><span class="card-no">01</span></div><h3 class="school-name">${escape(item.school)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗</span></div></div></a>`).join('');
+    $('#result-count').textContent = `${results.length} stadium${results.length === 1 ? '' : 's'}${results.length ? ` · ${views} views` : ''}`;
+    $('#collection-total').textContent = String(catalog.length).padStart(3,'0');
+    $('#collection-note-text').textContent = catalog.length === 1 ? 'Starting in Eugene. More home fields to come.' : `${catalog.length} home fields. ${catalog.reduce((sum,item) => sum + item.views.length,0)} perspectives. More to come.`;
+    $('#stadium-list').classList.toggle('multi-stadium', catalog.length > 1);
+    $('#stadium-list').innerHTML = results.map(item => `<a class="stadium-card" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(item.school)}: ${escape(item.stadium)}, ${item.views.length} aerial views"><div class="card-image"><img src="${escape(item.views[0].src)}" width="${item.views[0].width}" height="${item.views[0].height}" loading="lazy" decoding="async" alt="${escape(item.views[0].alt)}"><span class="card-viewcount">${item.views.length} AERIAL VIEWS</span></div><div class="card-body"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(item.school)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></div></a>`).join('');
     $('#empty-state').hidden = results.length > 0;
-    $('#empty-copy').textContent = query ? `No match for “${query}”${letter !== 'All' ? ` among schools starting with ${letter}` : ''}. The collection currently includes Oregon’s Autzen Stadium.` : `No schools starting with ${letter} have been added yet. Oregon’s Autzen Stadium is the first in the collection.`;
+    $('#empty-copy').textContent = query ? `No match for “${query}”${letter !== 'All' ? ` among schools starting with ${letter}` : ''}. Try another school, stadium, or city, or show the full collection.` : `No schools starting with ${letter} have been added yet. Show all ${catalog.length} stadium${catalog.length === 1 ? '' : 's'} to keep exploring.`;
   }
   function resetFilters() { letter = 'All'; query = ''; input.value = ''; renderResults(); }
   input.addEventListener('input', () => { query = input.value; renderResults(); });
   $('.search-form').addEventListener('submit', event => { event.preventDefault(); input.blur(); });
   $('#clear-search').addEventListener('click', () => { query = ''; input.value = ''; renderResults(); input.focus(); });
-  $('#reset-filters').addEventListener('click', resetFilters);
+  $('#reset-filters').addEventListener('click', () => { resetFilters(); input.focus(); });
   $('#show-all').addEventListener('click', () => { resetFilters(); input.focus(); });
 
+  function renderDetail() {
+    const item = activeStadium;
+    $('#detail-eyebrow').innerHTML = `${escape(item.teamName || `${item.school} ${item.team}`)} <span class="muted">/ ${escape(item.city)}, ${escape(item.state)}</span>`;
+    $('#detail-title').innerHTML = `${escape(item.stadium)}<span class="title-dot">.</span>`;
+    $('#detail-number').textContent = String(indexOf(item)).padStart(3,'0');
+    $('#gallery-hint').textContent = `Two ways to see the home of the ${item.team}.`;
+    $('#stadium-description').textContent = item.description || `${item.school}’s home in ${item.city} since ${item.opened}.`;
+    $('#fact-sources').innerHTML = (item.sources || [
+      {title:'Stadium facts',url:item.factsSources.stadium},
+      {title:`Meet ${item.mascot}`,url:item.factsSources.mascot}
+    ]).filter(source => source.url).map(source => `<a class="source-link" href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.title)} <span aria-hidden="true">↗︎</span></a>`).join('');
+    $('#capacity-note').textContent = item.capacityNote || 'Capacity counts seats; standing-room attendance can be higher.';
+    const facts = [['School',item.fullSchool],['Team',item.teamName || `${item.school} ${item.team}`],['Mascot',item.mascot],['Division',item.classification || 'Not listed'],['Conference (2026)',item.conference || 'Not listed'],['Location',`${item.city}, ${item.state}`],[item.capacityLabel || 'Seating capacity',Number(item.seatingCapacity).toLocaleString('en-US')],['Opened',item.opened]];
+    $('#stadium-facts').innerHTML = facts.map(([label,value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('');
+    $('#stadium-facts').setAttribute('aria-label',`${item.stadium} facts`);
+    const imageSizes = [...new Set(item.views.map(image => `${image.width} × ${image.height}`))].join(' and ');
+    $('#image-note').textContent = item.imageNote || `About these views: AI-generated, reference-based reconstructions of the stadium’s ${item.artEra || '2024-era'} appearance. Architecture and landscape are interpretive, not current photographs or survey-accurate images. Original image resolution: ${imageSizes} pixels.`;
+    $('#viewer-stadium').textContent = item.stadium;
+    $('#viewer-era').textContent = `${item.artEra || '2024-era'} reconstruction`;
+    $$('.view-tab').forEach((button,index) => {
+      const image = item.views[index];
+      const thumbnail = $('img',button);
+      thumbnail.src = image.src;
+      thumbnail.width = image.width;
+      thumbnail.height = image.height;
+    });
+  }
   function changeView(index) {
-    view = index;
-    const image = catalog[0].views[view];
-    $('#detail-image').src = image.src;
-    $('#detail-image').alt = image.alt;
-    $('#open-viewer').setAttribute('aria-label', `Open ${image.title.toLowerCase()} full screen`);
+    view = Math.max(0,Math.min(activeStadium.views.length-1,index));
+    selectedViews.set(activeStadium.id,view);
+    const image = imageOf();
+    const detailImage = $('#detail-image');
+    detailImage.src = image.src;
+    detailImage.alt = image.alt;
+    detailImage.width = image.width;
+    detailImage.height = image.height;
+    detailImage.style.aspectRatio = `${image.width} / ${image.height}`;
+    $('#open-viewer').setAttribute('aria-label', `Open ${image.title.toLowerCase()} of ${activeStadium.stadium} full screen`);
     $$('.view-tab').forEach(button => { const active = Number(button.dataset.view) === view; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
     if (dialog.open) updateViewerImage();
   }
   $$('.view-tab').forEach(button => button.addEventListener('click', () => changeView(Number(button.dataset.view))));
 
   function route() {
-    const match = location.hash.match(/^#stadium\/oregon-autzen(?:\/view\/([12]))?$/);
-    const showDetail = Boolean(match);
+    const match = location.hash.match(/^#stadium\/([a-z0-9-]+)(?:\/view\/([12]))?$/);
+    const item = match && catalog.find(stadium => stadium.id === match[1]);
+    const showDetail = Boolean(item);
+    viewerHistoryEntry = Boolean(showDetail && match[2] && history.state?.stadiumAtlasViewer?.from === `#stadium/${item.id}` && history.state?.stadiumAtlasViewer?.viewer === location.hash);
+    const changedStadium = showDetail && activeStadium.id !== item.id;
     if (showDetail && !wasDetail) homeScroll = window.scrollY;
     home.hidden = showDetail;
     detail.hidden = !showDetail;
-    document.title = showDetail ? 'Autzen Stadium · Stadium Atlas' : 'Stadium Atlas · College football from above';
-    if (showDetail && !wasDetail) { window.scrollTo({top:0,behavior:'instant'}); $('#detail-title').focus({preventScroll:true}); }
-    if (match?.[1]) {
-      view = Number(match[1]) - 1;
-      changeView(view);
+    document.title = showDetail ? `${item.stadium} · Stadium Atlas` : 'Stadium Atlas · College football from above';
+    if (showDetail) {
+      activeStadium = item;
+      if (changedStadium || !wasDetail) renderDetail();
+      changeView(match[2] ? Number(match[2])-1 : selectedViews.get(item.id) || 0);
+    }
+    if (showDetail && (!wasDetail || changedStadium)) { window.scrollTo({top:0,behavior:'instant'}); $('#detail-title').focus({preventScroll:true}); }
+    if (showDetail && match[2]) {
       if (!dialog.open) {
-        priorFocus = document.activeElement;
         dialog.showModal();
         document.body.classList.add('viewer-open');
         updateViewerImage();
@@ -94,21 +162,29 @@
     }
     if (!showDetail && wasDetail) {
       window.scrollTo({top:homeScroll,behavior:'instant'});
-      $('.stadium-card')?.focus({preventScroll:true});
+      $(`.stadium-card[href="#stadium/${activeStadium.id}"]`)?.focus({preventScroll:true});
     }
     wasDetail = showDetail;
+    closingViewer = false;
   }
   function closeViewer() {
-    if (!dialog.open) return;
+    if (!dialog.open || closingViewer) return;
+    closingViewer = true;
     if (viewerHistoryEntry) history.back();
-    else { history.replaceState(null, '', '#stadium/oregon-autzen'); route(); }
+    else { history.replaceState(null, '', `#stadium/${activeStadium.id}`); route(); }
   }
-  $('#open-viewer').addEventListener('click', () => { viewerHistoryEntry = true; location.hash = `stadium/oregon-autzen/view/${view + 1}`; });
+  $('#open-viewer').addEventListener('click', () => {
+    const from = `#stadium/${activeStadium.id}`;
+    const viewer = `${from}/view/${view + 1}`;
+    history.pushState({stadiumAtlasViewer:{from,viewer}}, '', viewer);
+    route();
+  });
   $('#close-viewer').addEventListener('click', closeViewer);
   dialog.addEventListener('cancel', event => { event.preventDefault(); closeViewer(); });
   window.addEventListener('hashchange', route);
   $$('.viewer-switch button').forEach(button => button.addEventListener('click', () => {
-    history.replaceState(null, '', `#stadium/oregon-autzen/view/${Number(button.dataset.viewerView) + 1}`);
+    const viewer = `#stadium/${activeStadium.id}/view/${Number(button.dataset.viewerView) + 1}`;
+    history.replaceState(viewerHistoryEntry ? {stadiumAtlasViewer:{from:`#stadium/${activeStadium.id}`,viewer}} : null, '', viewer);
     changeView(Number(button.dataset.viewerView));
   }));
 
@@ -120,7 +196,7 @@
   const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
   const maxScale = () => Math.max(1, 1 / fit);
   function constrain() {
-    const image = catalog[0].views[view];
+    const image = imageOf();
     x = clamp(x, -Math.max(0, (image.width * fit * scale - stageWidth) / 2), Math.max(0, (image.width * fit * scale - stageWidth) / 2));
     y = clamp(y, -Math.max(0, (image.height * fit * scale - stageHeight) / 2), Math.max(0, (image.height * fit * scale - stageHeight) / 2));
   }
@@ -133,7 +209,7 @@
     const rect = stage.getBoundingClientRect();
     stageWidth = Math.max(1, rect.width);
     stageHeight = Math.max(1, rect.height);
-    const image = catalog[0].views[view];
+    const image = imageOf();
     fit = Math.min(stageWidth / image.width, stageHeight / image.height, 1);
     viewerImage.style.width = `${image.width * fit}px`;
     viewerImage.style.height = `${image.height * fit}px`;
@@ -143,7 +219,7 @@
     paint();
   }
   function updateViewerImage() {
-    const image = catalog[0].views[view];
+    const image = imageOf();
     viewerImage.src = image.src; viewerImage.alt = image.alt;
     $('#viewer-title').textContent = image.title;
     $$('.viewer-switch button').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.viewerView) === view)));
@@ -229,4 +305,5 @@
   });
   document.addEventListener('fullscreenchange', () => { fullscreenButton.setAttribute('aria-label', document.fullscreenElement ? 'Exit device full screen' : 'Enter device full screen'); if(dialog.open) fitImage(); });
   renderResults(); route();
+  window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:true,schools:catalog.length,views:catalog.reduce((n,item)=>n+item.views.length,0)};
 })();

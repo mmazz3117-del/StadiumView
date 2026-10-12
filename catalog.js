@@ -1,5 +1,8 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.5.1';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.6.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
+window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
+/* Replaced only by the authenticated, all-team-validated Pages build. */
+window.STADIUM_ATLAS_RECORDS = null;
 window.STADIUMS = [
   {
     "id": "oregon-autzen",

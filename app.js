@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.5.1';
+  const BUILD = '1.6.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.5.1 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.6.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
     if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
@@ -52,6 +52,82 @@
   const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const indexOf = item => catalog.indexOf(item) + 1;
   const imageOf = () => activeStadium.views[view];
+
+  // Published daily snapshots only. No provider credentials or API calls in the browser.
+  const recordsSeason = window.STADIUM_ATLAS_RECORDS_SEASON;
+  const RECORD_TTL = 24 * 60 * 60 * 1000;
+  const recordsCacheKey = `stadium-atlas-records-${recordsSeason}-v1`;
+  function recordParts(label) {
+    if (typeof label !== 'string' || !/^\d{1,2}-\d{1,2}(?:-\d{1,2})?$/.test(label)) return null;
+    const parts = label.split('-').map(Number);
+    if (parts.some(n => n > 30) || parts.reduce((a,b) => a+b,0) > 30) return null;
+    return [parts[0],parts[1],parts[2] || 0];
+  }
+  function validRecordSnapshot(value) {
+    if (!Number.isInteger(recordsSeason) || !value || value.schemaVersion !== 1 || value.season !== recordsSeason || value.source !== 'CollegeFootballData' || !Array.isArray(value.rows) || value.rows.length !== catalog.length) return null;
+    if (typeof value.checkedAt !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(value.checkedAt)) return null;
+    const time = Date.parse(value.checkedAt);
+    if (!Number.isFinite(time) || time > Date.now() + 5 * 60 * 1000 || time < Date.UTC(recordsSeason,0,1)) return null;
+    if (new Date(time).toISOString().replace('.000Z','Z') !== value.checkedAt.replace('.000Z','Z')) return null;
+    const seen = new Set(), rows = [];
+    for (const row of value.rows) {
+      const item = row && catalog.find(item => item.id === row.stadiumId);
+      if (!item || seen.has(item.id)) return null;
+      const overall = recordParts(row.overall);
+      const independent = item.conference === 'Independent (football)';
+      const conference = independent ? null : recordParts(row.conference);
+      if (!overall || (independent ? row.conference !== null : !conference || conference.some((n,i) => n > overall[i]))) return null;
+      seen.add(item.id);
+      rows.push({stadiumId:item.id,overall:row.overall,conference:independent ? null : row.conference});
+    }
+    return {schemaVersion:1,season:recordsSeason,checkedAt:value.checkedAt,source:'CollegeFootballData',rows};
+  }
+  let embeddedRecords = validRecordSnapshot(window.STADIUM_ATLAS_RECORDS), savedRecords = null;
+  try { savedRecords = validRecordSnapshot(JSON.parse(window.localStorage.getItem(recordsCacheKey))); } catch {}
+  let recordSnapshot = embeddedRecords;
+  let recordOrigin = embeddedRecords ? 'published' : 'unavailable';
+  if (savedRecords && (!embeddedRecords || Date.parse(savedRecords.checkedAt) > Date.parse(embeddedRecords.checkedAt))) {
+    recordSnapshot = savedRecords;
+    recordOrigin = 'device';
+  }
+  if (recordSnapshot) { try { window.localStorage.setItem(recordsCacheKey,JSON.stringify(recordSnapshot)); } catch {} }
+  const recordMap = new Map((recordSnapshot?.rows || []).map(row => [row.stadiumId,row]));
+  function recordState() {
+    if (!recordSnapshot) return 'unavailable';
+    return Date.now() - Date.parse(recordSnapshot.checkedAt) > RECORD_TTL ? 'stale' : recordOrigin;
+  }
+  function checkedDate(short = false) {
+    if (!recordSnapshot) return '';
+    return new Intl.DateTimeFormat(undefined, short ? {month:'short',day:'numeric'} : {year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'}).format(new Date(recordSnapshot.checkedAt));
+  }
+  function recordSummary(item) {
+    const row = recordMap.get(item.id);
+    const conference = item.conference === 'Independent (football)' ? 'not applicable for independent football' : row ? row.conference : 'unavailable';
+    return `${recordsSeason} season. Overall record ${row ? row.overall : 'unavailable'}. Conference record ${conference}.${recordSnapshot ? ` Last checked ${checkedDate()}.` : ''}`;
+  }
+  function recordMarkup(item) {
+    const row = recordMap.get(item.id), state = recordState();
+    const overall = row ? row.overall : '—';
+    const conference = item.conference === 'Independent (football)' ? 'N/A' : row ? row.conference : '—';
+    const note = !row ? `${recordsSeason} season · Unavailable` : `${recordsSeason} season · ${state === 'stale' ? 'Stale · ' : ''}${recordOrigin === 'device' ? 'Saved · ' : ''}Checked ${checkedDate(true)}`;
+    return `<dl class="record-stats"><div><dt>Overall</dt><dd aria-label="Overall record ${row ? escape(overall) : 'unavailable'}">${escape(overall)}</dd></div><div><dt>Conference</dt><dd aria-label="Conference record ${conference === 'N/A' ? 'not applicable: independent football team' : row ? escape(conference) : 'unavailable'}">${escape(conference)}</dd></div></dl><p class="record-note${state === 'stale' ? ' record-stale' : ''}"${recordSnapshot ? ` title="Last checked ${escape(checkedDate())}"` : ''}>${escape(note)}</p>`;
+  }
+  function updateRecordLabels() {
+    const state = recordState(), status = $('#records-status');
+    const now = new Date(), activeSeason = now.getUTCFullYear() - (now.getUTCMonth() < 7 ? 1 : 0);
+    let text = recordSnapshot ? `${recordsSeason} records · ${recordsSeason < activeSeason ? 'Previous season · ' : ''}${state === 'stale' ? 'Stale · ' : ''}${recordOrigin === 'device' ? 'Saved on this device · ' : ''}Last checked ${checkedDate()}.` : `${recordsSeason} records unavailable. No verified snapshot is loaded.`;
+    if (state === 'stale') text += ' A newer daily snapshot has not loaded.';
+    if (status) { status.textContent = text; status.classList.toggle('record-stale',state === 'stale'); }
+    $$('[data-records-id]').forEach(element => { const item = catalog.find(item => item.id === element.dataset.recordsId); if (item) element.innerHTML = recordMarkup(item); });
+    window.STADIUM_ATLAS_RUNTIME.records = {season:recordsSeason,state,origin:recordOrigin,checkedAt:recordSnapshot?.checkedAt || null,teams:recordMap.size};
+  }
+  $('#reload-records')?.addEventListener('click', () => window.location.reload());
+  document.addEventListener('visibilitychange', () => { if (!document.hidden) updateRecordLabels(); });
+  window.addEventListener('focus',updateRecordLabels);
+  if (recordSnapshot) {
+    const delay = Date.parse(recordSnapshot.checkedAt) + RECORD_TTL + 1 - Date.now();
+    if (delay > 0 && delay <= RECORD_TTL + 5 * 60 * 1000) setTimeout(updateRecordLabels,delay);
+  }
 
   for (const value of ['All', ...'ABCDEFGHIJKLMNOPQRSTUVWXYZ']) {
     const button = document.createElement('button');
@@ -89,8 +165,9 @@
       const capacityValue = `${/\bnearly\b/i.test(item.capacityLabel || '') ? 'Nearly ' : ''}${Number(item.seatingCapacity).toLocaleString('en-US')}`;
       const temporarySeats = /including temporary/i.test(item.capacityNote || '') ? '<small>incl. temporary seats</small>' : '';
       const division = (item.classification || '').replace('NCAA Division I ', 'D-I ');
-      return `<article class="stadium-card" data-stadium-id="${escape(item.id)}"><div class="card-image" data-card-gallery="${escape(item.id)}"><a class="card-image-link" href="#stadium/${escape(item.id)}" aria-label="Open ${escape(item.school)}: ${escape(image.title.toLowerCase())}"><img src="${escape(image.src)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async" alt="${escape(image.alt)}" draggable="false"></a><span class="card-viewcount" aria-live="polite" aria-atomic="true">${index + 1} / ${item.views.length} · ${escape(image.title)}</span><button type="button" class="card-preview-arrow card-preview-prev" data-card-step="-1" aria-label="Previous ${escape(item.school)} aerial view" title="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><button type="button" class="card-preview-arrow card-preview-next" data-card-step="1" aria-label="Next ${escape(item.school)} aerial view" title="Next view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><a class="card-body card-detail-link" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(teamName)}: ${escape(item.stadium)}. ${escape(item.conference)}, ${escape(item.classification)}. ${escape(capacityLabel)}: ${escape(capacityValue)}. ${item.views.length} aerial views"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(teamName)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><dl class="card-facts"><div><dt>League / division · 2026</dt><dd>${escape(item.conference)}<span class="card-division" aria-label="${escape(item.classification)}">${escape(division)}</span></dd></div><div><dt>${escape(capacityLabel)}</dt><dd><span class="card-capacity-value">${escape(capacityValue)}</span>${temporarySeats}</dd></div></dl><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></a></article>`;
+      return `<article class="stadium-card" data-stadium-id="${escape(item.id)}"><div class="card-image" data-card-gallery="${escape(item.id)}"><a class="card-image-link" href="#stadium/${escape(item.id)}" aria-label="Open ${escape(item.school)}: ${escape(image.title.toLowerCase())}"><img src="${escape(image.src)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async" alt="${escape(image.alt)}" draggable="false"></a><span class="card-viewcount" aria-live="polite" aria-atomic="true">${index + 1} / ${item.views.length} · ${escape(image.title)}</span><button type="button" class="card-preview-arrow card-preview-prev" data-card-step="-1" aria-label="Previous ${escape(item.school)} aerial view" title="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><button type="button" class="card-preview-arrow card-preview-next" data-card-step="1" aria-label="Next ${escape(item.school)} aerial view" title="Next view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><a class="card-body card-detail-link" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(teamName)}: ${escape(item.stadium)}. ${escape(item.conference)}, ${escape(item.classification)}. ${escape(capacityLabel)}: ${escape(capacityValue)}. ${item.views.length} aerial views. ${escape(recordSummary(item))}"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(teamName)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><dl class="card-facts"><div><dt>League / division · 2026</dt><dd>${escape(item.conference)}<span class="card-division" aria-label="${escape(item.classification)}">${escape(division)}</span></dd></div><div><dt>${escape(capacityLabel)}</dt><dd><span class="card-capacity-value">${escape(capacityValue)}</span>${temporarySeats}</dd></div></dl><div class="team-records" data-records-id="${escape(item.id)}">${recordMarkup(item)}</div><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></a></article>`;
     }).join('');
+    updateRecordLabels();
     $('#empty-state').hidden = results.length > 0;
     $('#empty-copy').textContent = query ? `No match for “${query}”${letter !== 'All' ? ` among schools starting with ${letter}` : ''}. Try another school, stadium, or city, or show the full collection.` : `No schools starting with ${letter} have been added yet. Show all ${catalog.length} stadium${catalog.length === 1 ? '' : 's'} to keep exploring.`;
   }
@@ -208,6 +285,8 @@
     $('#stadium-facts').setAttribute('aria-label',`${item.stadium} facts`);
     const imageSizes = [...new Set(item.views.map(image => `${image.width} × ${image.height}`))].join(' and ');
     $('#image-note').textContent = item.imageNote || `About these views: AI-generated, reference-based reconstructions of the stadium’s ${item.artEra || '2024-era'} appearance. Architecture and landscape are interpretive, not current photographs or survey-accurate images. Original image resolution: ${imageSizes} pixels.`;
+    $('#detail-records').innerHTML = `<div class="team-records" data-records-id="${escape(item.id)}">${recordMarkup(item)}</div>`;
+    updateRecordLabels();
     $('#viewer-stadium').textContent = item.stadium;
     $('#viewer-era').textContent = `${item.artEra || '2024-era'} reconstruction`;
     $$('.view-tab').forEach((button,index) => {
@@ -428,5 +507,5 @@
   });
   document.addEventListener('fullscreenchange', () => { if(dialog.open) fitImage(); });
   renderResults(); route();
-  window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:true,schools:catalog.length,views:catalog.reduce((n,item)=>n+item.views.length,0)};
+  window.STADIUM_ATLAS_RUNTIME = {...window.STADIUM_ATLAS_RUNTIME,build:BUILD,ready:true,schools:catalog.length,views:catalog.reduce((n,item)=>n+item.views.length,0)};
 })();

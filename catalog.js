@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.3.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.4.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUMS = [
   {
@@ -1090,5 +1090,527 @@ window.STADIUMS = [
       }
     ],
     "imageNote": "AI-generated 2024-era architectural reconstructions, not photographs or survey-accurate views. Stadium proportions, seating details, field markings and surrounding campus buildings are approximate; the paired views differ in fine geometry. Current facts were separately verified in October 2026. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "brown-brown-stadium",
+    "school": "Brown",
+    "fullSchool": "Brown University",
+    "team": "Bears",
+    "teamName": "Brown Bears",
+    "mascot": "Bruno and Cubby",
+    "stadium": "Richard Gouse Field at Brown Stadium",
+    "city": "Providence",
+    "state": "Rhode Island",
+    "opened": 1925,
+    "seatingCapacity": 20000,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Brown",
+      "Brown University",
+      "Bears",
+      "Brown Bears",
+      "Bruno",
+      "Cubby",
+      "Brown Stadium",
+      "Richard Gouse Field",
+      "Brown Field",
+      "Brown Amphitheatre"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://brownbears.com/facilities/brown-stadium/4"
+      },
+      {
+        "title": "Meet Bruno & Cubby",
+        "url": "https://brownbears.com/sports/2018/4/27/Marketing-Spirit-Support-Mascots-Mascots"
+      },
+      {
+        "title": "Ivy football (2026)",
+        "url": "https://ivyleague.com/news/2026/9/17/ivy-football-kicks-off-2026-season-saturday.aspx"
+      },
+      {
+        "title": "2022 aerial reference",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/brownuni.sidearmsports.com/images/2022/9/13/Brown-Stadium-overhead_0027_d7oQ5.jpg"
+      }
+    ],
+    "description": "Brown’s historic Providence home pairs a monumental arched southwest grandstand with a much smaller opposite stand, an oval running track and a leafy residential setting.",
+    "capacityNote": "Brown Athletics currently publishes 20,000 seats. This is not the original 1925 capacity, which included temporary end bleachers.",
+    "openingNote": "Opened September 26, 1925. The facility received its Richard Gouse Field name in 2021.",
+    "artEra": "Approximately 2022, after the 2021 turf installation and before the 2024 track resurfacing",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/brown-aerial-2022-era.png",
+        "alt": "AI-generated approximately 2022 aerial reconstruction of Richard Gouse Field at Brown Stadium from the southwest, showing its arched main-grandstand exterior, red running track and Providence residential surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/brown-reverse-aerial-2022-era.png",
+        "alt": "AI-generated complementary approximately 2022 reconstruction of Brown Stadium from the northeast, with the small visitors stand in front and the main grandstand’s windowed press box across the field.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs and maps; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately 2022, after the 2021 turf installation and before the 2024 track resurfacing. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "columbia-wien-stadium",
+    "school": "Columbia",
+    "fullSchool": "Columbia University",
+    "team": "Lions",
+    "teamName": "Columbia Lions",
+    "mascot": "Roar-ee the Lion",
+    "stadium": "Robert K. Kraft Field at Lawrence A. Wien Stadium",
+    "city": "New York",
+    "state": "New York",
+    "opened": 1984,
+    "seatingCapacity": 17000,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Columbia",
+      "Columbia University",
+      "Lions",
+      "Columbia Lions",
+      "Roar-ee",
+      "Wien Stadium",
+      "Lawrence A. Wien Stadium",
+      "Robert K. Kraft Field",
+      "Kraft Field",
+      "Baker Athletics Complex",
+      "Baker Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://gocolumbialions.com/sports/2018/6/5/319180"
+      },
+      {
+        "title": "Stadium history",
+        "url": "https://gocolumbialions.com/news/2020/10/16/columbia-footballs-stadiums-through-the-years"
+      },
+      {
+        "title": "NCAA football membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=158"
+      },
+      {
+        "title": "Roar-ee & traditions",
+        "url": "https://gocolumbialions.com/sports/2017/3/14/211521090"
+      },
+      {
+        "title": "2017 field reference",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/gocolumbialions.com/images/2017/6/2/SSVWYJZUSNGQXQM.20170602175121.jpg"
+      }
+    ],
+    "description": "Columbia’s two-stand home sits at Manhattan’s northern tip beside Spuyten Duyvil, framed by Baker’s athletic fields, Inwood Hill Park and the Henry Hudson Bridge.",
+    "capacityNote": "Columbia Athletics publishes 17,000, comprising 10,500 east-stand seats and 6,500 west-stand seats. The west stand was added in 1986. This capacity is separate from the former wooden Baker Field stadium.",
+    "openingNote": "Opened September 22, 1984. The current facility page’s quick-facts opponent says Lafayette, but its own timeline and the official stadium-history article say Harvard. Opening year/date agree; no first-opponent claim is used in the catalog.",
+    "artEra": "Approximately 2017, with post-2015 field markings, older scoreboard and pre-2023 tennis enclosure",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/columbia-aerial-2017-era.png",
+        "alt": "AI-generated circa-2017 aerial reconstruction of Columbia’s Wien Stadium from the southeast, showing the two open-ended stands, red track, old tennis enclosure, Spuyten Duyvil and Henry Hudson Bridge.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/columbia-reverse-aerial-2017-era.png",
+        "alt": "AI-generated complementary circa-2017 reconstruction of Columbia’s Wien Stadium from the northwest, showing the low west stand, old tennis enclosure, larger east stand and Inwood neighborhood beyond.",
+        "width": 1672,
+        "height": 940
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs and maps; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately 2017, with post-2015 field markings, older scoreboard and pre-2023 tennis enclosure. Original images: 1672 × 940 pixels."
+  },
+  {
+    "id": "cornell-schoellkopf",
+    "school": "Cornell",
+    "fullSchool": "Cornell University",
+    "team": "Big Red",
+    "teamName": "Cornell Big Red",
+    "mascot": "Touchdown, the Big Red Bear (unofficial)",
+    "mascotNote": "Cornell Undergraduate Admissions explicitly states that Cornell has no official mascot. Touchdown, the Big Red Bear, is the beloved unofficial mascot; Big Red is the athletic team nickname.",
+    "stadium": "Schoellkopf Field",
+    "city": "Ithaca",
+    "state": "New York",
+    "opened": 1915,
+    "seatingCapacity": 21500,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Cornell",
+      "Big Red",
+      "Schoellkopf",
+      "Schoellkopf Field",
+      "Crescent",
+      "Touchdown"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://cornellbigred.com/facilities/schoellkopf-field/18"
+      },
+      {
+        "title": "Unofficial mascot",
+        "url": "https://faq.enrollment.cornell.edu/kb/article/221-what-is-cornell-s-school-mascot/"
+      },
+      {
+        "title": "Campus changes",
+        "url": "https://fcs.cornell.edu/projects/cornell-ann-s-bowers-college-computing-information-science-new-building"
+      },
+      {
+        "title": "Ivy football (2026)",
+        "url": "https://ivyleague.com/news/2026/9/17/ivy-football-kicks-off-2026-season-saturday.aspx"
+      }
+    ],
+    "description": "Cornell’s East Hill football home, defined by the great east-side Crescent and Schoellkopf Memorial Hall at its north end.",
+    "capacityNote": "Official athletics lists 21,500. The former 25,597 figure reflects the west stands added in 1947; those stands were removed in 2016. Both images intentionally show the post-demolition open west side.",
+    "artEra": "Approximately 2019, after west-stand demolition and before the 2023 removal of adjacent Hoy Field",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/cornell-aerial-2019-era.png",
+        "alt": "AI-generated approximately 2019 aerial reconstruction of Cornell’s Schoellkopf Field from the south, with its one-sided east Crescent, open west edge, parking garage and Schoellkopf Memorial Hall.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/cornell-reverse-aerial-2019-era-corrected.png",
+        "alt": "AI-generated approximately 2019 reverse aerial reconstruction of Cornell’s Schoellkopf Field, with the full red-roofed Schoellkopf Memorial Hall in the foreground and wooded Cascadilla gorge beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Fine field markings, seating details and surrounding buildings are approximate. Image era is separate from facts checked in October 2026. Reference era: Approximately 2019, after west-stand demolition and before the 2023 removal of adjacent Hoy Field. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "dartmouth-memorial",
+    "school": "Dartmouth",
+    "fullSchool": "Dartmouth College",
+    "team": "Big Green",
+    "teamName": "Dartmouth Big Green",
+    "mascot": "No official mascot",
+    "mascotNote": "Big Green is the team nickname rather than a tangible mascot. The official nickname history says proposed tangible mascots have not been adopted. Keggy the Keg is a student-created unofficial character and is not presented as the official mascot.",
+    "stadium": "Buddy Teevens Stadium at Memorial Field",
+    "city": "Hanover",
+    "state": "New Hampshire",
+    "opened": 1923,
+    "seatingCapacity": 11000,
+    "capacityLabel": "Approx. capacity",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Dartmouth",
+      "Big Green",
+      "Memorial Field",
+      "Buddy Teevens Stadium",
+      "Buddy Teevens Stadium at Memorial Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts & naming",
+        "url": "https://dartmouthsports.com/facilities/memorial-field/9"
+      },
+      {
+        "title": "Big Green traditions",
+        "url": "https://dartmouthsports.com/sports/2018/5/31/590538"
+      },
+      {
+        "title": "Ivy football (2026)",
+        "url": "https://ivyleague.com/news/2026/9/17/ivy-football-kicks-off-2026-season-saturday.aspx"
+      }
+    ],
+    "description": "Dartmouth’s intimate Hanover stadium, framed by a red running track, historic brick west stands and Floren Varsity House on the east.",
+    "capacityNote": "The current official facility page gives about 11,000 including temporary end-zone seating. Earlier 20,000-era figures precede removal of most upper east seating; 2015 west-side reconstruction retained the historic brick exterior.",
+    "openingNote": "The athletic ground was first built in 1893; the Memorial Field stadium was completed in 1923. Current stadium naming was dedicated October 4, 2024.",
+    "artEra": "Approximately 2016, following 2015 west-stand reconstruction and before the October 2024 Buddy Teevens renaming",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/dartmouth-aerial-2016-era.png",
+        "alt": "AI-generated approximately 2016 aerial reconstruction of Dartmouth’s Memorial Field from the south, showing the red running track, asymmetric grandstands, Floren Varsity House and Alumni Gym.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/dartmouth-reverse-aerial-2016-era.png",
+        "alt": "AI-generated approximately 2016 reverse aerial reconstruction of Dartmouth’s Memorial Field, with the west pressbox on the right, Floren Varsity House on the left and the south scoreboard beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Fine field markings, seating details and surrounding buildings are approximate. Image era is separate from facts checked in October 2026. Reference era: Approximately 2016, following 2015 west-stand reconstruction and before the October 2024 Buddy Teevens renaming. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "harvard-stadium",
+    "school": "Harvard",
+    "fullSchool": "Harvard University",
+    "team": "Crimson",
+    "teamName": "Harvard Crimson",
+    "mascot": "John Harvard",
+    "mascotLabel": "Traditional mascot",
+    "mascotNote": "Crimson is the athletic team nickname. A 2023 Harvard University Retirees Association publication identifies John Harvard the Pilgrim as the College mascot and says there is no official overall University mascot; unofficial turkey proposals are not treated as a replacement.",
+    "stadium": "Harvard Stadium",
+    "city": "Boston",
+    "state": "Massachusetts",
+    "opened": 1903,
+    "seatingCapacity": 25884,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Harvard",
+      "Harvard University",
+      "Crimson",
+      "Harvard Crimson",
+      "Harvard Stadium",
+      "Allston"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://gocrimson.com/sports/2020/5/5/information-facilities-harvardstadium"
+      },
+      {
+        "title": "Opening history",
+        "url": "https://gocrimson.com/sports/2020/5/5/information-facilities-Harvard-Stadium-Football-History"
+      },
+      {
+        "title": "Mascot tradition",
+        "url": "https://hura.harvard.edu/sites/g/files/omnuum1296/files/hura/files/hura_febmar2023.pdf"
+      },
+      {
+        "title": "Ivy football (2026)",
+        "url": "https://ivyleague.com/news/2026/9/17/ivy-football-kicks-off-2026-season-saturday.aspx"
+      }
+    ],
+    "description": "Harvard’s historic reinforced-concrete horseshoe stands in Boston’s Allston neighborhood, across the Charles River from the Cambridge campus.",
+    "capacityNote": "Harvard Athletics currently publishes 25,884 on its dedicated stadium page, updated November 29, 2023. Older secondary summaries often retain 30,323; the athletics rental page rounds capacity to 25,000. No seat-count claim is inferred from the artwork.",
+    "openingNote": "Opened November 14, 1903, for Harvard–Dartmouth.",
+    "artEra": "Approximately 2024, based on official November 2022 aerial and modern post-2015 field configuration",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/harvard-aerial-2024-era-corrected.png",
+        "alt": "AI-generated approximately 2024 aerial reconstruction of Harvard Stadium from the southwest, with the open northeast end, Murr Center, O’Donnell Field and Charles River beyond.",
+        "width": 1671,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/harvard-reverse-aerial-2024-era.png",
+        "alt": "AI-generated approximately 2024 reverse aerial of Harvard Stadium from its open northeast end, with Murr Center in the foreground and the closed southwest horseshoe beyond.",
+        "width": 1671,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Major horseshoe shape and campus relationships were checked against official references; fine geometry, field markings, neighboring buildings and skyline scale are approximate. Current facts are separate from artwork era. Reference era: Approximately 2024, based on official November 2022 aerial and modern post-2015 field configuration. Original images: 1671 × 941 pixels."
+  },
+  {
+    "id": "penn-franklin-field",
+    "school": "Penn",
+    "fullSchool": "University of Pennsylvania",
+    "team": "Quakers",
+    "teamName": "Penn Quakers",
+    "mascot": "Quaker",
+    "mascotLabel": "Mascot",
+    "mascotNote": "Quakers is the team nickname; Quaker is the costumed mascot’s name, as used in the official September 2026 promotions announcement. This is the University of Pennsylvania, not Penn State.",
+    "stadium": "Franklin Field",
+    "city": "Philadelphia",
+    "state": "Pennsylvania",
+    "opened": 1895,
+    "seatingCapacity": 52958,
+    "capacityLabel": "Capacity (2025)",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Penn",
+      "UPenn",
+      "University of Pennsylvania",
+      "Pennsylvania",
+      "Quakers",
+      "Penn Quakers",
+      "Franklin Field"
+    ],
+    "sources": [
+      {
+        "title": "2025 football fact book",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/penn.sidearmsports.com/documents/2025/9/16/2025_Penn_Football_Fact_Book_web_V2.pdf"
+      },
+      {
+        "title": "Stadium history",
+        "url": "https://pennathletics.com/sports/2019/5/16/penn-athletics-facilities-ff-bio"
+      },
+      {
+        "title": "Facility information",
+        "url": "https://pennathletics.com/sports/2019/2/4/penn-facility-info-franklin-field"
+      },
+      {
+        "title": "Quaker mascot",
+        "url": "https://pennathletics.com/news/2026/9/8/penn-athletics-announces-footballs-2026-theme-days-and-promotions.aspx"
+      },
+      {
+        "title": "Ivy football (2026)",
+        "url": "https://ivyleague.com/news/2026/9/17/ivy-football-kicks-off-2026-season-saturday.aspx"
+      }
+    ],
+    "description": "Penn’s historic two-tiered brick horseshoe surrounds a football field and running track beside the rail corridor and Penn Park in Philadelphia.",
+    "capacityNote": "The official 2025 Penn Football Fact Book Quick Facts lists 52,958. Penn’s older dedicated Franklin Field facility biography still lists 52,593, and its rental page advertises seating for 40,000. The more recent football-specific fact book is used for the catalog; the differing official figures are not silently reconciled.",
+    "openingNote": "Opened April 20, 1895, for the first Penn Relays. First Penn football game was October 1, 1895. Present lower bowl dates to 1922; upper deck to 1925.",
+    "artEra": "Approximately early 2024; post-2015 red-and-blue track configuration, with modern stadium form and approximate surrounding campus",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/penn-aerial-2024-era-corrected.png",
+        "alt": "AI-generated early-2024-style aerial reconstruction of Penn’s Franklin Field looking east, with Weightman Hall, the red-and-blue track, Penn Park and Philadelphia skyline.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/penn-reverse-aerial-2024-era-corrected.png",
+        "alt": "AI-generated early-2024-style reverse aerial of Franklin Field, with its brick east facade above the railway, two-tiered seating, and Weightman Hall at the far west end.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Major horseshoe shape and campus relationships were checked against official references; fine geometry, field markings, neighboring buildings and skyline scale are approximate. Current facts are separate from artwork era. Reference era: Approximately early 2024; post-2015 red-and-blue track configuration, with modern stadium form and approximate surrounding campus. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "princeton-powers",
+    "school": "Princeton",
+    "fullSchool": "Princeton University",
+    "team": "Tigers",
+    "teamName": "Princeton Tigers",
+    "mascot": "The Tiger",
+    "stadium": "Powers Field at Princeton Stadium",
+    "city": "Princeton",
+    "state": "New Jersey",
+    "opened": 1998,
+    "seatingCapacity": 27800,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Princeton",
+      "Tigers",
+      "Powers Field",
+      "Princeton Stadium",
+      "Princeton University"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://goprincetontigers.com/facilities/powers-field-at-princeton-stadium/2"
+      },
+      {
+        "title": "2025 football yearbook",
+        "url": "https://goprincetontigers.com/documents/download/2025/9/18/2025_Princeton_Football_Yearbook7.pdf"
+      },
+      {
+        "title": "Opening history",
+        "url": "https://static.goprincetontigers.com/custompages/pdf/fb_record_book.pdf"
+      },
+      {
+        "title": "The Tiger",
+        "url": "https://www.princeton.edu/news/2007/07/25/tigers-prowl-around-princeton-campus"
+      },
+      {
+        "title": "Ivy football (2026)",
+        "url": "https://ivyleague.com/news/2026/9/17/ivy-football-kicks-off-2026-season-saturday.aspx"
+      }
+    ],
+    "description": "Princeton’s concrete horseshoe surrounds a close-to-the-field lower bowl, with Weaver Track and Jadwin Gymnasium just beyond its open south end.",
+    "capacityNote": "The current official facility page and stadium section of the 2025-hosted yearbook list 27,800 seats, with room for up to 30,000. The stadium was constructed in 1997 and first opened for football September 19, 1998; it replaced Palmer Stadium (1914–1996).",
+    "artEra": "Approximately 2020, before later campus construction and the 2025 turf replacement",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/princeton-aerial-2020-era-corrected.png",
+        "alt": "AI-generated north-side aerial of Princeton Stadium looking south toward Weaver Track, Jadwin Gymnasium and Lake Carnegie.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/princeton-reverse-aerial-2020-era-corrected.png",
+        "alt": "AI-generated south-side aerial of Princeton Stadium looking north across Weaver Track toward the stadium’s low open end and campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Architecture, field markings, seating details and campus proportions are approximate. Image era is separate from facts checked in October 2026. Reference era: Approximately 2020, before later campus construction and the 2025 turf replacement. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "yale-bowl",
+    "school": "Yale",
+    "fullSchool": "Yale University",
+    "team": "Bulldogs",
+    "teamName": "Yale Bulldogs",
+    "mascot": "Handsome Dan",
+    "stadium": "Yale Bowl, Class of 1954 Field",
+    "city": "New Haven",
+    "state": "Connecticut",
+    "opened": 1914,
+    "seatingCapacity": 61446,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FCS",
+    "conference": "Ivy League",
+    "aliases": [
+      "Yale",
+      "Bulldogs",
+      "Elis",
+      "Yale Bowl",
+      "Class of 1954 Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://yalebulldogs.com/facilities/yale-bowl-class-of-1954-field/22"
+      },
+      {
+        "title": "2019 field history",
+        "url": "https://yalebulldogs.com/news/2019/9/18/yale-football-kicks-off-season-saturday-vs-holy-cross.aspx"
+      },
+      {
+        "title": "Handsome Dan",
+        "url": "https://visitorcenter.yale.edu/handsome-dan"
+      },
+      {
+        "title": "Ivy football (2026)",
+        "url": "https://ivyleague.com/news/2026/9/17/ivy-football-kicks-off-2026-season-saturday.aspx"
+      }
+    ],
+    "description": "A continuous blue seating bowl set into a grassy embankment, with pale entry portals and the Kenney Center overlooking Jensen Plaza on the west side.",
+    "capacityNote": "Yale Athletics lists 61,446 following the 1994 and 2006 alterations. The general university history page retains an older rounded 64,000 figure; the dedicated athletics facility record is used here.",
+    "artEra": "Approximately 2019, after installation of the artificial playing surface",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/yale-aerial-2019-era.png",
+        "alt": "AI-generated west-side aerial of Yale Bowl, with the Kenney Center and Jensen Plaza in the foreground.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/yale-reverse-aerial-2019-era.png",
+        "alt": "AI-generated east-side aerial of Yale Bowl looking toward the low west pressbox, athletic fields and Westville neighborhood.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Architecture, field markings, seating details and campus proportions are approximate. Image era is separate from facts checked in October 2026. Reference era: Approximately 2019, after installation of the artificial playing surface. Original images: 1672 × 941 pixels."
   }
 ];

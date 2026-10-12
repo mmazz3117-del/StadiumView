@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.6.0';
+  const BUILD = '1.7.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.6.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.7.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
     if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
@@ -30,11 +30,15 @@
   const detail = $('#detail-view');
   const input = $('#stadium-search');
   const board = $('#letter-board');
+  const conferenceFilter = $('#conference-filter');
+  const divisionFilter = $('#division-filter');
   const dialog = $('#image-viewer');
   const stage = $('#zoom-stage');
   const viewerImage = $('#viewer-image');
   let letter = 'All';
   let query = '';
+  let conference = '';
+  let classification = '';
   let view = 0;
   let activeStadium = catalog[0];
   let wasDetail = false;
@@ -140,9 +144,25 @@
     board.append(button);
   }
 
+  // Read affiliations from the same catalog used by cards; no separate team lists.
+  for (const [select, field] of [[conferenceFilter, 'conference'], [divisionFilter, 'classification']]) {
+    const values = [...new Set(catalog.map(item => item[field]).filter(Boolean))].sort((a,b) => a.localeCompare(b));
+    for (const value of values) {
+      const option = document.createElement('option');
+      option.value = value;
+      option.textContent = value;
+      select.append(option);
+    }
+  }
+  conferenceFilter.addEventListener('change', () => { conference = conferenceFilter.value; renderResults(); });
+  divisionFilter.addEventListener('change', () => { classification = divisionFilter.value; renderResults(); });
+  function filterDescription() {
+    return [conference, classification, letter !== 'All' ? `Schools starting with ${letter}` : '', query ? `Search: “${query}”` : ''].filter(Boolean).join(' · ');
+  }
+
   function matches(item) {
     const searchable = normalize([item.school, item.fullSchool, item.team, item.teamName, item.mascot, item.stadium, item.city, item.state, ...(item.aliases || [])].join(' '));
-    return (letter === 'All' || item.school.toUpperCase().startsWith(letter)) && normalize(query).split(/\s+/).filter(Boolean).every(word => searchable.includes(word));
+    return (!conference || item.conference === conference) && (!classification || item.classification === classification) && (letter === 'All' || item.school.toUpperCase().startsWith(letter)) && normalize(query).split(/\s+/).filter(Boolean).every(word => searchable.includes(word));
   }
   function renderResults() {
     cancelCardGesture();
@@ -150,8 +170,10 @@
     const views = results.reduce((sum,item) => sum + item.views.length, 0);
     $$('.letter').forEach(button => { const selected = button.dataset.letter === letter; button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected)); });
     $('#clear-search').hidden = !query;
-    $('#reset-filters').hidden = !query && letter === 'All';
-    $('#results-title').textContent = query ? 'Search results' : letter === 'All' ? 'The collection' : `${letter} · Schools`;
+    $('#reset-filters').hidden = !query && letter === 'All' && !conference && !classification;
+    $('#filter-summary').textContent = filterDescription();
+    $('#filter-summary').hidden = !filterDescription();
+    $('#results-title').textContent = query ? 'Search results' : conference || classification ? 'Filtered collection' : letter === 'All' ? 'The collection' : `${letter} · Schools`;
     $('#result-count').textContent = `${results.length} stadium${results.length === 1 ? '' : 's'}${results.length ? ` · ${views} views` : ''}`;
     $('#collection-total').textContent = String(catalog.length).padStart(3,'0');
     $('#collection-note-text').textContent = catalog.length === 1 ? 'Starting in Eugene. More home fields to come.' : `${catalog.length} home fields. ${catalog.reduce((sum,item) => sum + item.views.length,0)} perspectives. More to come.`;
@@ -169,7 +191,7 @@
     }).join('');
     updateRecordLabels();
     $('#empty-state').hidden = results.length > 0;
-    $('#empty-copy').textContent = query ? `No match for “${query}”${letter !== 'All' ? ` among schools starting with ${letter}` : ''}. Try another school, stadium, or city, or show the full collection.` : `No schools starting with ${letter} have been added yet. Show all ${catalog.length} stadium${catalog.length === 1 ? '' : 's'} to keep exploring.`;
+    $('#empty-copy').textContent = `No stadiums match ${filterDescription() || 'these filters'}. Try another conference, division, letter, or search, or show all ${catalog.length} stadiums.`;
   }
   function syncCardView(item) {
     const card = $(`.stadium-card[data-stadium-id="${item.id}"]`);
@@ -261,7 +283,7 @@
   window.addEventListener('pointercancel', endCardPointer);
   cardList.addEventListener('lostpointercapture', endCardPointer);
   window.addEventListener('blur', cancelCardGesture);
-  function resetFilters() { letter = 'All'; query = ''; input.value = ''; renderResults(); }
+  function resetFilters() { letter = 'All'; query = ''; conference = ''; classification = ''; input.value = ''; conferenceFilter.value = ''; divisionFilter.value = ''; renderResults(); }
   input.addEventListener('input', () => { query = input.value; renderResults(); });
   $('.search-form').addEventListener('submit', event => { event.preventDefault(); input.blur(); });
   $('#clear-search').addEventListener('click', () => { query = ''; input.value = ''; renderResults(); input.focus(); });

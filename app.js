@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.1.1';
+  const BUILD = '1.2.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 6 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
+  const validCatalog = Array.isArray(catalog) && catalog.length === 11 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.1.1 repair ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.2.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
     if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
@@ -178,43 +178,60 @@
     const viewer = `${from}/view/${view + 1}`;
     history.pushState({stadiumAtlasViewer:{from,viewer}}, '', viewer);
     route();
+    // Use native full screen where available; the dialog already fills the viewport elsewhere.
+    if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
+      try { document.documentElement.requestFullscreen().then(() => { if (!dialog.open && document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {}); }).catch(() => {}); } catch {}
+    }
   });
   $('#close-viewer').addEventListener('click', closeViewer);
   dialog.addEventListener('cancel', event => { event.preventDefault(); closeViewer(); });
   window.addEventListener('hashchange', route);
-  $$('.viewer-switch button').forEach(button => button.addEventListener('click', () => {
-    const viewer = `#stadium/${activeStadium.id}/view/${Number(button.dataset.viewerView) + 1}`;
+  function switchViewer(direction) {
+    const nextView = (view + direction + activeStadium.views.length) % activeStadium.views.length;
+    const viewer = `#stadium/${activeStadium.id}/view/${nextView + 1}`;
     history.replaceState(viewerHistoryEntry ? {stadiumAtlasViewer:{from:`#stadium/${activeStadium.id}`,viewer}} : null, '', viewer);
-    changeView(Number(button.dataset.viewerView));
-  }));
+    changeView(nextView);
+  }
+  $('#viewer-prev').addEventListener('click', () => switchViewer(-1));
+  $('#viewer-next').addEventListener('click', () => switchViewer(1));
+  dialog.addEventListener('keydown', event => {
+    if (event.target !== stage && (event.key === 'PageUp' || event.key === 'PageDown')) { event.preventDefault(); switchViewer(event.key === 'PageUp' ? -1 : 1); }
+  });
 
-  // Fit preserves the whole image. The upper zoom bound is the source's native dimensions.
+  // Start with the whole image; allow deliberate enlargement without claiming added detail.
   let fit = 1, scale = 1, x = 0, y = 0, stageWidth = 1, stageHeight = 1;
   const pointers = new Map();
   let gesture = null;
+  let gestureHadMultiple = false;
   let lastTap = {time:0,x:0,y:0};
   const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
-  const maxScale = () => Math.max(1, 1 / fit);
+  const minScale = .5;
+  const maxScale = () => 8;
   function constrain() {
     const image = imageOf();
-    x = clamp(x, -Math.max(0, (image.width * fit * scale - stageWidth) / 2), Math.max(0, (image.width * fit * scale - stageWidth) / 2));
-    y = clamp(y, -Math.max(0, (image.height * fit * scale - stageHeight) / 2), Math.max(0, (image.height * fit * scale - stageHeight) / 2));
+    const width = image.width * fit * scale, height = image.height * fit * scale;
+    // Generous movement across the viewport, while keeping a small edge within reach.
+    const limitX = Math.max(0, (width + stageWidth) / 2 - Math.min(width, stageWidth) * .12);
+    const limitY = Math.max(0, (height + stageHeight) / 2 - Math.min(height, stageHeight) * .12);
+    x = clamp(x, -limitX, limitX);
+    y = clamp(y, -limitY, limitY);
   }
   function paint() {
     constrain();
     viewerImage.style.transform = `translate(calc(-50% + ${x}px), calc(-50% + ${y}px)) scale(${scale})`;
-    stage.classList.toggle('can-pan', scale > 1.01);
+    stage.classList.add('can-pan');
   }
   function fitImage() {
     const rect = stage.getBoundingClientRect();
     stageWidth = Math.max(1, rect.width);
     stageHeight = Math.max(1, rect.height);
     const image = imageOf();
-    fit = Math.min(stageWidth / image.width, stageHeight / image.height, 1);
+    fit = Math.min(stageWidth / image.width, stageHeight / image.height);
     viewerImage.style.width = `${image.width * fit}px`;
     viewerImage.style.height = `${image.height * fit}px`;
     scale = 1; x = 0; y = 0;
-    pointers.clear(); gesture = null;
+    pointers.clear(); gesture = null; gestureHadMultiple = false;
+    lastTap = {time:0,x:0,y:0};
     stage.classList.remove('is-dragging');
     paint();
   }
@@ -222,21 +239,22 @@
     const image = imageOf();
     viewerImage.src = image.src; viewerImage.alt = image.alt;
     $('#viewer-title').textContent = image.title;
-    $$('.viewer-switch button').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.viewerView) === view)));
-    $('#viewer-announcement').textContent = `${image.title}. Full image fitted to screen. Zoom stops at the original image size.`;
+    const otherTitle = activeStadium.views[(view + 1) % activeStadium.views.length].title.toLowerCase();
+    $('#viewer-prev').setAttribute('aria-label', `Previous view: ${otherTitle}`);
+    $('#viewer-next').setAttribute('aria-label', `Next view: ${otherTitle}`);
+    $('#viewer-announcement').textContent = `${image.title}, ${view + 1} of ${activeStadium.views.length}. Full image fitted to screen. Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
     fitImage();
   }
   function localPoint(clientX, clientY) { const rect = stage.getBoundingClientRect(); return {x:clientX - rect.left - rect.width / 2,y:clientY - rect.top - rect.height / 2}; }
   function zoomTo(next, anchor = {x:0,y:0}) {
-    next = clamp(next, 1, maxScale());
+    next = clamp(next, minScale, maxScale());
     const ratio = next / scale;
     x = anchor.x - (anchor.x - x) * ratio;
     y = anchor.y - (anchor.y - y) * ratio;
     scale = next;
     paint();
   }
-  function toggleZoom(point) { if (scale > 1.01) { scale = 1; x = y = 0; paint(); } else zoomTo(Math.min(maxScale(), 2.5), point); }
-  $('#fit-image').addEventListener('click', () => { fitImage(); $('#viewer-announcement').textContent = 'Full image fitted to screen.'; });
+  function toggleZoom(point) { if (Math.abs(scale - 1) > .01 || Math.abs(x) > 1 || Math.abs(y) > 1) { scale = 1; x = y = 0; paint(); } else zoomTo(Math.min(maxScale(), 2.5), point); }
   viewerImage.addEventListener('load', () => { if (dialog.open) fitImage(); });
   new ResizeObserver(() => { if (dialog.open) fitImage(); }).observe(stage);
   stage.addEventListener('wheel', event => { event.preventDefault(); const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? stageHeight : 1); zoomTo(scale * Math.exp(-delta * .002), localPoint(event.clientX,event.clientY)); }, {passive:false});
@@ -253,8 +271,9 @@
     if (event.pointerType === 'mouse' && event.button !== 0) return;
     stage.focus({preventScroll:true});
     stage.setPointerCapture(event.pointerId);
+    if (!pointers.size) gestureHadMultiple = false;
     pointers.set(event.pointerId, localPoint(event.clientX,event.clientY));
-    if (pointers.size > 1) lastTap.time = 0;
+    if (pointers.size > 1) { lastTap.time = 0; gestureHadMultiple = true; }
     beginGesture();
     stage.classList.add('is-dragging');
   });
@@ -265,7 +284,7 @@
     if (gesture?.kind === 'pinch' && points.length >= 2) {
       const a=points[0], b=points[1];
       const center={x:(a.x+b.x)/2,y:(a.y+b.y)/2};
-      scale=clamp(gesture.scale*Math.hypot(a.x-b.x,a.y-b.y)/gesture.distance,1,maxScale());
+      scale=clamp(gesture.scale*Math.hypot(a.x-b.x,a.y-b.y)/gesture.distance,minScale,maxScale());
       const ratio=scale/gesture.scale;
       x=center.x-(gesture.center.x-gesture.x)*ratio;
       y=center.y-(gesture.center.y-gesture.y)*ratio;
@@ -278,11 +297,12 @@
   });
   function endPointer(event) {
     if (!pointers.has(event.pointerId)) return;
-    if (event.type === 'pointerup' && event.pointerType === 'touch' && pointers.size === 1 && gesture?.kind === 'pan') {
+    if (event.type !== 'pointerup') lastTap.time = 0;
+    if (event.type === 'pointerup' && event.pointerType === 'touch' && !gestureHadMultiple && pointers.size === 1 && gesture?.kind === 'pan') {
       const point=localPoint(event.clientX,event.clientY);
       if (Math.hypot(point.x-gesture.start.x,point.y-gesture.start.y)<8) {
         const now=performance.now();
-        if (now-lastTap.time<300 && Math.hypot(point.x-lastTap.x,point.y-lastTap.y)<24) { toggleZoom(point); lastTap.time=0; }
+        if (lastTap.time > 0 && now-lastTap.time<300 && Math.hypot(point.x-lastTap.x,point.y-lastTap.y)<24) { toggleZoom(point); lastTap.time=0; }
         else lastTap={time:now,...point};
       }
     }
@@ -294,16 +314,10 @@
   stage.addEventListener('pointercancel', endPointer);
   stage.addEventListener('lostpointercapture', endPointer);
   stage.addEventListener('keydown', event => {
-    const actions = {'+':()=>zoomTo(scale*1.25),'=':()=>zoomTo(scale*1.25),'-':()=>zoomTo(scale/1.25),'0':fitImage,ArrowLeft:()=>{x+=65;paint();},ArrowRight:()=>{x-=65;paint();},ArrowUp:()=>{y+=65;paint();},ArrowDown:()=>{y-=65;paint();}};
+    const actions = {'+':()=>zoomTo(scale*1.25),'=':()=>zoomTo(scale*1.25),'-':()=>zoomTo(scale/1.25),'0':fitImage,PageUp:()=>switchViewer(-1),PageDown:()=>switchViewer(1),ArrowLeft:()=>{x+=65;paint();},ArrowRight:()=>{x-=65;paint();},ArrowUp:()=>{y+=65;paint();},ArrowDown:()=>{y-=65;paint();}};
     if (actions[event.key]) { event.preventDefault(); actions[event.key](); }
   });
-  const fullscreenButton = $('#fullscreen-toggle');
-  fullscreenButton.hidden = !document.documentElement.requestFullscreen;
-  fullscreenButton.addEventListener('click', async () => {
-    try { if (document.fullscreenElement) await document.exitFullscreen(); else await document.documentElement.requestFullscreen(); }
-    catch { $('#viewer-announcement').textContent = 'Device full screen is unavailable. The image viewer is already using the available screen.'; }
-  });
-  document.addEventListener('fullscreenchange', () => { fullscreenButton.setAttribute('aria-label', document.fullscreenElement ? 'Exit device full screen' : 'Enter device full screen'); if(dialog.open) fitImage(); });
+  document.addEventListener('fullscreenchange', () => { if(dialog.open) fitImage(); });
   renderResults(); route();
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:true,schools:catalog.length,views:catalog.reduce((n,item)=>n+item.views.length,0)};
 })();

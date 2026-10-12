@@ -5,7 +5,7 @@ Production: python scripts/build_stadium_records.py --source . --output _site --
 Local portable source: use --source dist instead. CFBD_API_KEY is read from the
 process environment only. Responses stay in memory; neither credentials nor
 raw provider data are written, printed, cached, or included in the artifact.
-Only this app's 44 overall/conference display labels are embedded in catalog.js.
+Only this app's reviewed overall/conference display labels are embedded in catalog.js.
 Pillow 12.3.0 produces hosting-only lossless WebP artwork; every decoded pixel
 and native dimension is verified. Original source PNGs are never rewritten.
 No authenticated coverage is assumed: a missing school (including Ivy/FCS)
@@ -83,7 +83,31 @@ SCHOOLS = {
     'north-carolina-kenan-stadium': ('North Carolina', 'fbs'),
     'nc-state-carter-finley': ('NC State', 'fbs'),
     'duke-wallace-wade-stadium': ('Duke', 'fbs'),
+    'arizona-arizona-stadium': ('Arizona', 'fbs'),
+    'arizona-state-sun-devil-stadium': ('Arizona State', 'fbs'),
+    'byu-lavell-edwards': ('BYU', 'fbs'),
+    'colorado-folsom-field': ('Colorado', 'fbs'),
+    'utah-rice-eccles': ('Utah', 'fbs'),
+    'iowa-state-jack-trice': ('Iowa State', 'fbs'),
+    'kansas-memorial-stadium': ('Kansas', 'fbs'),
+    'kansas-state-bill-snyder-family': ('Kansas State', 'fbs'),
+    'oklahoma-state-boone-pickens': ('Oklahoma State', 'fbs'),
+    'texas-tech-jones-stadium': ('Texas Tech', 'fbs'),
+    'baylor-mclane': ('Baylor', 'fbs'),
+    'tcu-amon-g-carter': ('TCU', 'fbs'),
+    'houston-stadium': ('Houston', 'fbs'),
+    'ucf-bounce-house': ('UCF', 'fbs'),
+    'cincinnati-nippert': ('Cincinnati', 'fbs'),
+    'west-virginia-milan-puskar': ('West Virginia', 'fbs'),
+    'miami-joe-robbie-stadium': ('Miami', 'fbs'),
+    'louisville-cardinal-stadium': ('Louisville', 'fbs'),
+    'pittsburgh-north-shore-stadium': ('Pittsburgh', 'fbs'),
+    'georgia-tech-bobby-dodd': ('Georgia Tech', 'fbs'),
 }
+# New FBS names above were checked against the provider's public directory:
+# https://collegefootballdata.com/teams (2026-10-12). Miami is the ACC school;
+# Miami (OH) is a separate identity and must never match. Public identities do
+# not establish authenticated 2026 records coverage, which every run validates.
 # These are explicit identities, not fuzzy matches or generic abbreviations.
 # API alternateNames/abbreviation fields are deliberately not used as a fallback.
 EXPLICIT_ALIASES = {
@@ -152,6 +176,27 @@ def checked_file(source: Path, relative: str) -> Path:
     return candidate
 
 
+def validate_catalog(catalog) -> None:
+    """Require the complete reviewed school set before any records can join it."""
+    if not isinstance(catalog, list) or len(catalog) != len(SCHOOLS):
+        raise BuildError(f"The catalog must contain exactly {len(SCHOOLS)} reviewed schools.")
+    found = set()
+    for item in catalog:
+        if not isinstance(item, dict) or not isinstance(item.get("id"), str) or item["id"] not in SCHOOLS:
+            raise BuildError("The catalog contains an unrecognized school.")
+        sid = item["id"]
+        name, classification = SCHOOLS[sid]
+        if sid in found:
+            raise BuildError("The catalog contains duplicate stadium IDs.", [sid])
+        if item.get("school") != name or item.get("classification") != f"NCAA Division I {classification.upper()}":
+            raise BuildError("The catalog identity or football classification has changed.", [sid])
+        if not isinstance(item.get("views"), list) or len(item["views"]) != 2:
+            raise BuildError("Each reviewed stadium must have two views.", [sid])
+        found.add(sid)
+    if found != SCHOOLS.keys():
+        raise BuildError("The catalog is missing reviewed schools.", SCHOOLS.keys() - found)
+
+
 def read_catalog(source: Path) -> tuple[str, list[dict]]:
     try:
         text = checked_file(source, "catalog.js").read_text(encoding="utf-8")
@@ -161,23 +206,7 @@ def read_catalog(source: Path) -> tuple[str, list[dict]]:
         if RECORD_MARKER not in prefix or not raw.rstrip().endswith(";"):
             raise BuildError("The catalog layout is not supported; build stopped.")
         catalog = strict_json(raw.rstrip()[:-1])
-        if not isinstance(catalog, list) or len(catalog) != len(SCHOOLS):
-            raise BuildError("The catalog must contain exactly 44 reviewed schools.")
-        found = set()
-        for item in catalog:
-            if not isinstance(item, dict) or item.get("id") not in SCHOOLS:
-                raise BuildError("The catalog contains an unrecognized school.")
-            sid = item["id"]
-            name, classification = SCHOOLS[sid]
-            if sid in found:
-                raise BuildError("The catalog contains duplicate stadium IDs.", [sid])
-            if item.get("school") != name or item.get("classification") != f"NCAA Division I {classification.upper()}":
-                raise BuildError("The catalog identity or football classification has changed.", [sid])
-            if not isinstance(item.get("views"), list) or len(item["views"]) != 2:
-                raise BuildError("Each reviewed stadium must have two views.", [sid])
-            found.add(sid)
-        if found != SCHOOLS.keys():
-            raise BuildError("The catalog is missing reviewed schools.", SCHOOLS.keys() - found)
+        validate_catalog(catalog)
         return text, catalog
     except (UnicodeError, ValueError, TypeError, OSError):
         raise BuildError("The local catalog could not be read or parsed safely.") from None
@@ -314,6 +343,7 @@ def record_label(counts: dict) -> str:
 
 
 def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
+    validate_catalog(catalog)
     resolved = resolve_teams(metadata)
     if not isinstance(records, list) or not records or len(records) > 10000:
         raise BuildError("Season records are missing or malformed.")
@@ -352,8 +382,8 @@ def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
     if failures:
         raise BuildError(" ".join(sorted({failure.reason for failure in failures})),
                          [sid for failure in failures for sid in failure.school_ids])
-    if len(rows) != 44 or len({row["stadiumId"] for row in rows}) != 44:
-        raise BuildError("The complete 44-school snapshot could not be verified.")
+    if len(rows) != len(SCHOOLS) or {row["stadiumId"] for row in rows} != SCHOOLS.keys():
+        raise BuildError(f"The complete {len(SCHOOLS)}-school snapshot could not be verified.")
     checked = now or datetime.now(timezone.utc)
     if not isinstance(checked, datetime) or checked.tzinfo is None:
         raise BuildError("A valid UTC check time is required.")
@@ -477,7 +507,9 @@ def main(argv=None) -> int:
         snapshot = make_snapshot(catalog, metadata, records)
         del metadata, records
         build_artifact(args.source, args.output, catalog_text, snapshot, files)
-        report("All 44 schools (36 FBS and 8 Ivy/FCS) passed identity, season, classification, and record checks. All hosted stadium artwork passed pixel-identical lossless checks. The artifact is ready for the separate Pages deployment job.", success=True)
+        fbs_count = sum(classification == "fbs" for _, classification in SCHOOLS.values())
+        fcs_count = sum(classification == "fcs" for _, classification in SCHOOLS.values())
+        report(f"All {len(SCHOOLS)} schools ({fbs_count} FBS and {fcs_count} FCS) passed identity, season, classification, and record checks. All hosted stadium artwork passed pixel-identical lossless checks. The artifact is ready for the separate Pages deployment job.", success=True)
         return 0
     except BuildError as exc:
         report(exc.public_message())

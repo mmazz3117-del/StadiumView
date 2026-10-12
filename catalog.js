@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.7.1';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.8.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -2962,5 +2962,1372 @@ window.STADIUMS = [
       }
     ],
     "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately September 2024, after the Devils Deck installation. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "arizona-arizona-stadium",
+    "school": "Arizona",
+    "fullSchool": "University of Arizona",
+    "team": "Wildcats",
+    "teamName": "Arizona Wildcats",
+    "mascot": "Wilbur and Wilma the Wildcat",
+    "stadium": "Casino Del Sol Stadium",
+    "city": "Tucson",
+    "state": "Arizona",
+    "opened": 1929,
+    "seatingCapacity": 50800,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Arizona",
+      "University of Arizona",
+      "Wildcats",
+      "Arizona Stadium",
+      "Casino Del Sol Stadium",
+      "Wilbur",
+      "Wilma",
+      "Tucson"
+    ],
+    "sources": [
+      {
+        "title": "Current stadium facts",
+        "url": "https://arizonawildcats.com/sports/2026/7/14/Casino-Del-Sol-Stadium"
+      },
+      {
+        "title": "Opening timeline",
+        "url": "https://arizonawildcats.com/sports/2013/4/18/208236808"
+      },
+      {
+        "title": "Wildcat mascots",
+        "url": "https://arizonawildcats.com/sports/2009/3/31/207981043"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=29"
+      },
+      {
+        "title": "Official aerial reference",
+        "url": "https://news.arizona.edu/news/arizona-athletics-generates-millions-local-and-state-economies"
+      }
+    ],
+    "description": "Arizona’s tall sideline stands frame a lower south curve and the Lowell-Stevens north-end facility amid Tucson’s red-brick campus and desert mountain views. The athletics history timeline dates the opening and dedication game to October 12, 1929. Some official facility summaries instead list 1928; the dated opening-game chronology is used here.",
+    "capacityNote": "The current official stadium guide lists 50,800; older published capacities reflect earlier seating layouts.",
+    "openingNote": "The athletics history timeline dates the opening and dedication game to October 12, 1929. Some official facility summaries instead list 1928; the dated opening-game chronology is used here.",
+    "artEra": "2022–2024-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs. Fine seating geometry, exterior details, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Native original images, with no upscaling or post-generation redraw. Reference era: Approximately 2022–2024, before the Casino Del Sol rebranding and 2026 lighting and seating changes. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/arizona-aerial-2022-era.png",
+        "alt": "AI-generated approximately 2022–2024, before the casino del sol rebranding and 2026 lighting and seating changes east-side westward aerial reconstruction of Casino Del Sol Stadium in Tucson, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/arizona-reverse-2022-era.png",
+        "alt": "AI-generated approximately 2022–2024, before the casino del sol rebranding and 2026 lighting and seating changes northwest-side southeastward aerial reconstruction of Casino Del Sol Stadium in Tucson, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "arizona-state-sun-devil-stadium",
+    "school": "Arizona State",
+    "fullSchool": "Arizona State University",
+    "team": "Sun Devils",
+    "teamName": "Arizona State Sun Devils",
+    "mascot": "Sparky the Sun Devil",
+    "stadium": "Mountain America Stadium",
+    "city": "Tempe",
+    "state": "Arizona",
+    "opened": 1958,
+    "seatingCapacity": 53599,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Arizona State",
+      "ASU",
+      "Sun Devils",
+      "Sparky",
+      "Sun Devil Stadium",
+      "Mountain America Stadium",
+      "Frank Kush Field",
+      "Tempe"
+    ],
+    "sources": [
+      {
+        "title": "Stadium and architecture",
+        "url": "https://thesundevils.com/facilities-venues/mountain-america-stadium"
+      },
+      {
+        "title": "Current capacity guide",
+        "url": "https://sundevils.com/fans-community/game-day/gameday-guide"
+      },
+      {
+        "title": "Sparky",
+        "url": "https://sundevils.com/about/news/tempe-thames-sparky-takes-london"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=28"
+      },
+      {
+        "title": "Official aerial reference",
+        "url": "https://storage.googleapis.com/thesundevils-com-prod/2025/05/23/QRUNosMsJp8Ydqnz2VxaXUJTsaOBqbR9dHPbkIyQ.jpg"
+      }
+    ],
+    "description": "Mountain America Stadium’s separate upper grandstands and north video board sit tightly between desert buttes, with Tempe Town Lake on one side and the ASU campus on the other. Opened in 1958 as Sun Devil Stadium; the playing surface is Frank Kush Field. Mountain America became the stadium naming-rights partner in 2023.",
+    "capacityNote": "The official game-day guide lists 53,599 following the three-phase renovation completed in 2018. The facility page also contains historical and rounded figures, which are not used.",
+    "openingNote": "Opened in 1958 as Sun Devil Stadium; the playing surface is Frank Kush Field. Mountain America became the stadium naming-rights partner in 2023.",
+    "artEra": "2024–2025-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs. Fine seating geometry, exterior details, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Native original images, with no upscaling or post-generation redraw. Reference era: Approximately 2024–2025, using the post-renovation official aerial published in 2025. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/asu-aerial-2025-era.png",
+        "alt": "AI-generated approximately 2024–2025, using the post-renovation official aerial published in 2025 north-side southward aerial reconstruction of Mountain America Stadium in Tempe, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/asu-reverse-2025-era.png",
+        "alt": "AI-generated approximately 2024–2025, using the post-renovation official aerial published in 2025 south-side northward aerial reconstruction of Mountain America Stadium in Tempe, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "byu-lavell-edwards",
+    "school": "BYU",
+    "fullSchool": "Brigham Young University",
+    "team": "Cougars",
+    "teamName": "BYU Cougars",
+    "mascot": "Cosmo the Cougar",
+    "stadium": "LaVell Edwards Stadium",
+    "city": "Provo",
+    "state": "Utah",
+    "opened": 1964,
+    "seatingCapacity": 62073,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "BYU",
+      "Brigham Young",
+      "Cougars",
+      "Cosmo",
+      "LaVell Edwards Stadium",
+      "Cougar Stadium",
+      "Provo"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://byucougars.com/football-facilities"
+      },
+      {
+        "title": "Capacity update",
+        "url": "https://byucougars.com/news/2024/08/29/les-stadium-upgrades-ready-for-2024-season-opener"
+      },
+      {
+        "title": "Cosmo the Cougar",
+        "url": "https://byucougars.com/about-cosmo"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=77"
+      },
+      {
+        "title": "2018 aerial and concourse era",
+        "url": "https://magazine.byu.edu/article/nfl-quality-wi-fi/"
+      }
+    ],
+    "description": "LaVell Edwards Stadium’s four distinct seating blocks, spiral ramps and long west press box stand between Y Mountain and the broad Utah Valley. Opened as Cougar Stadium in 1964; renamed for LaVell Edwards at the conclusion of the 2000 season.",
+    "capacityNote": "BYU’s current facilities page and 2024 seating-update announcement list 62,073. The 63,470 figure in older guides predates the 2024 seating changes.",
+    "openingNote": "Opened as Cougar Stadium in 1964; renamed for LaVell Edwards at the conclusion of the 2000 season.",
+    "artEra": "2018-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs. Fine seating geometry, exterior details, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Native original images, with no upscaling or post-generation redraw. Reference era: Approximately 2018, before the 2019 corner-concourse connections. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/byu-aerial-2018-era.png",
+        "alt": "AI-generated approximately 2018, before the 2019 corner-concourse connections west-side mountain-facing aerial reconstruction of LaVell Edwards Stadium in Provo, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/byu-reverse-2018-era.png",
+        "alt": "AI-generated approximately 2018, before the 2019 corner-concourse connections east-side lake-facing aerial reconstruction of LaVell Edwards Stadium in Provo, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "baylor-mclane",
+    "school": "Baylor",
+    "fullSchool": "Baylor University",
+    "team": "Bears",
+    "teamName": "Baylor Bears",
+    "mascot": "Bruiser and Marigold",
+    "stadium": "McLane Stadium",
+    "city": "Waco",
+    "state": "Texas",
+    "opened": 2014,
+    "seatingCapacity": 45140,
+    "capacityLabel": "2026 published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Baylor",
+      "BU",
+      "Bears",
+      "Bruiser",
+      "Marigold",
+      "McLane Stadium",
+      "John Eddie Williams Field",
+      "Waco"
+    ],
+    "sources": [
+      {
+        "title": "McLane Stadium",
+        "url": "https://baylorbears.com/facilities/mclane-stadium/30"
+      },
+      {
+        "title": "Official seating capacity",
+        "url": "https://baylorbears.com/sports/2018/5/16/facilities-football-html"
+      },
+      {
+        "title": "Bruiser and Marigold",
+        "url": "https://baylorbears.com/sports/2018/5/16/spiritsquad-spirit-squad-mascots-html"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=51"
+      },
+      {
+        "title": "2026 Big 12 football",
+        "url": "https://big12sports.com/news/2026/1/21/big-12-conference-announces-2026-football-schedule.aspx"
+      }
+    ],
+    "description": "McLane’s white canopy follows a red-brick horseshoe beside the Brazos River, with the open scoreboard end facing Baylor’s campus across the water. Opened for the August 31, 2014 game against SMU. The playing surface is John Eddie Williams Field.",
+    "capacityNote": "Baylor’s official football facilities listing gives 45,140 seats. The current stadium page identifies 2026 as its 13th season.",
+    "openingNote": "Opened for the August 31, 2014 game against SMU. The playing surface is John Eddie Williams Field.",
+    "artEra": "2019-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms were checked against university and photographic references; seating details, field lettering, nearby building proportions and paired-view geometry remain approximate. Artwork era is separate from facts verified October 12, 2026. Reference era: Approximately 2019, before the 2024 video-board and premium-hospitality changes. Original images: 1672 × 941 pixels, generated natively without upscaling.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/baylor-aerial.png",
+        "alt": "AI-generated south-side riverfront aerial reconstruction of McLane Stadium, Waco, showing the empty stadium and its surroundings. Artwork era: Approximately 2019, before the 2024 video-board and premium-hospitality changes.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/baylor-reverse.png",
+        "alt": "AI-generated north-side reverse aerial reconstruction of McLane Stadium, Waco, showing the empty stadium and its surroundings. Artwork era: Approximately 2019, before the 2024 video-board and premium-hospitality changes.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "cincinnati-nippert",
+    "school": "Cincinnati",
+    "fullSchool": "University of Cincinnati",
+    "team": "Bearcats",
+    "teamName": "Cincinnati Bearcats",
+    "mascot": "The Bearcat",
+    "stadium": "Nippert Stadium",
+    "city": "Cincinnati",
+    "state": "Ohio",
+    "opened": 1915,
+    "seatingCapacity": 38088,
+    "capacityLabel": "2026 published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Cincinnati",
+      "UC",
+      "Cincy",
+      "Bearcats",
+      "The Bearcat",
+      "Nippert Stadium",
+      "James Gamble Nippert Memorial Stadium",
+      "Carson Field"
+    ],
+    "sources": [
+      {
+        "title": "Nippert Stadium facts",
+        "url": "https://gobearcats.com/facilities/nippert-stadium"
+      },
+      {
+        "title": "Stadium and field timeline (UC, 2025)",
+        "url": "https://gobearcats.com/news/2025/09/8/cincinnati-welcomes-northwestern-state-on-saturday"
+      },
+      {
+        "title": "The Bearcat",
+        "url": "https://gobearcats.com/what-is-a-bearcat"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=140"
+      },
+      {
+        "title": "2026 Big 12 football",
+        "url": "https://big12sports.com/news/2026/1/21/big-12-conference-announces-2026-football-schedule.aspx"
+      }
+    ],
+    "description": "Nippert’s intimate sunken horseshoe sits in the middle of Cincinnati’s campus, between the glass West Pavilion, east grandstand and distinctive curved Lindner Center. 1915 marks the permanent brick-and-concrete stadium replacing wooden stands. UC had used the playing site since 1901; the completed horseshoe was dedicated as James Gamble Nippert Memorial Stadium on November 8, 1924. The playing surface remains Carson Field.",
+    "capacityNote": "The current university facility page lists 38,088. Higher historical attendance records and older 40,000-plus capacity figures describe different configurations or event counts.",
+    "openingNote": "1915 marks the permanent brick-and-concrete stadium replacing wooden stands. UC had used the playing site since 1901; the completed horseshoe was dedicated as James Gamble Nippert Memorial Stadium on November 8, 1924. The playing surface remains Carson Field.",
+    "artEra": "2023–2025-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms were checked against university and photographic references; seating details, field lettering, nearby building proportions and paired-view geometry remain approximate. Artwork era is separate from facts verified October 12, 2026. Reference era: Approximately 2023–2025, after the West Pavilion and field-widening projects. Original images: 1672 × 941 pixels, generated natively without upscaling.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/cincinnati-aerial-v5.png",
+        "alt": "AI-generated south-side aerial toward the scoreboard reconstruction of Nippert Stadium, Cincinnati, showing the empty stadium and its surroundings. Artwork era: Approximately 2023–2025, after the West Pavilion and field-widening projects.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/cincinnati-reverse-v2.png",
+        "alt": "AI-generated northwest-side reverse aerial reconstruction of Nippert Stadium, Cincinnati, showing the empty stadium and its surroundings. Artwork era: Approximately 2023–2025, after the West Pavilion and field-widening projects.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "colorado-folsom-field",
+    "school": "Colorado",
+    "fullSchool": "University of Colorado Boulder",
+    "team": "Buffaloes",
+    "teamName": "Colorado Buffaloes",
+    "mascot": "Ralphie VII and Chip",
+    "stadium": "Folsom Field",
+    "city": "Boulder",
+    "state": "Colorado",
+    "opened": 1924,
+    "seatingCapacity": 50183,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Colorado",
+      "CU",
+      "Boulder",
+      "Buffaloes",
+      "Buffs",
+      "Folsom Field",
+      "Ralphie",
+      "Ralphie VII",
+      "Chip"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts and aerials",
+        "url": "https://cubuffs.com/facilities/folsom-field/1"
+      },
+      {
+        "title": "Current stadium overview",
+        "url": "https://cubuffs.com/sports/2005/4/21/117805"
+      },
+      {
+        "title": "Ralphie",
+        "url": "https://cubuffs.com/sports/2016/6/15/Ralphie"
+      },
+      {
+        "title": "Chip and Spirit",
+        "url": "https://cubuffs.com/sports/2016/6/15/Spirit"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=157"
+      }
+    ],
+    "description": "Folsom Field’s compact horseshoe is woven into sandstone buildings and red-tile roofs, with the Dal Ward and Champions Center complex at its north end and the Flatirons beyond campus. Dedicated October 11, 1924, when Colorado defeated Regis, 39–0.",
+    "capacityNote": "Colorado’s current facility and stadium-overview pages list 50,183. The facility history says the 2014 north-end seating conversion changed capacity to this total.",
+    "openingNote": "Dedicated October 11, 1924, when Colorado defeated Regis, 39–0.",
+    "artEra": "2016-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs. Fine seating geometry, exterior details, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Native original images, with no upscaling or post-generation redraw. Reference era: Approximately summer 2016, after the Champions Center and indoor practice facility additions; the turf is shown without full game-day yard lines. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/colorado-aerial-2016-era.png",
+        "alt": "AI-generated approximately summer 2016, after the champions center and indoor practice facility additions; the turf is shown without full game-day yard lines north-side Flatirons-facing aerial reconstruction of Folsom Field in Boulder, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/colorado-reverse-2016-era.png",
+        "alt": "AI-generated approximately summer 2016, after the champions center and indoor practice facility additions; the turf is shown without full game-day yard lines south-side campus-facing aerial reconstruction of Folsom Field in Boulder, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "georgia-tech-bobby-dodd",
+    "school": "Georgia Tech",
+    "fullSchool": "Georgia Institute of Technology",
+    "team": "Yellow Jackets",
+    "teamName": "Georgia Tech Yellow Jackets",
+    "mascot": "Buzz and the Ramblin’ Wreck",
+    "stadium": "Bobby Dodd Stadium at Hyundai Field",
+    "city": "Atlanta",
+    "state": "Georgia",
+    "opened": 1913,
+    "seatingCapacity": 51913,
+    "capacityLabel": "Capacity (2026)",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "GT",
+      "Georgia Institute of Technology",
+      "Yellow Jackets",
+      "Ramblin' Wreck",
+      "Bobby Dodd Stadium",
+      "Grant Field",
+      "Hyundai Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts and aerial",
+        "url": "https://ramblinwreck.com/facilities/bobby-dodd-stadium"
+      },
+      {
+        "title": "Renovation timing",
+        "url": "https://ramblinwreck.com/bobby-dodd-stadium-renovation-faq"
+      },
+      {
+        "title": "Tech mascots",
+        "url": "https://commencement.gatech.edu/traditions"
+      },
+      {
+        "title": "NCAA membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=255"
+      },
+      {
+        "title": "Stadium map",
+        "url": "https://ramblinwreck.com/bobby-dodd-stadium-map"
+      }
+    ],
+    "description": "Georgia Tech’s historic campus stadium is tightly woven into Midtown Atlanta, with asymmetric silver grandstands and the downtown skyline beyond.",
+    "capacityNote": "Current official facility capacity is 51,913 after north-end seats were removed for the Fanning Center. The renovation scheduled after the 2026 season targets approximately 50,000 for 2027 and is not treated as completed.",
+    "artEra": "2025-era",
+    "imageNote": "AI-generated October 2025-era reconstructions, before the planned post-2026 stadium renovation. Nearby construction, buildings, decks and signs are approximations, not documentary photographs. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/georgia-tech-aerial-final.png",
+        "alt": "AI-generated October 2025-era aerial of Bobby Dodd Stadium facing downtown Atlanta, with its north upper deck and Tech Tower visible.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/georgia-tech-reverse-final.png",
+        "alt": "AI-generated October 2025-era reverse aerial of Bobby Dodd Stadium, looking across the Wardlaw south end toward campus and the north deck.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "houston-stadium",
+    "school": "Houston",
+    "fullSchool": "University of Houston",
+    "team": "Cougars",
+    "teamName": "Houston Cougars",
+    "mascot": "Shasta and Sasha",
+    "stadium": "TDECU Stadium",
+    "city": "Houston",
+    "state": "Texas",
+    "opened": 2014,
+    "seatingCapacity": 40000,
+    "capacityLabel": "2026 published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Houston",
+      "UH",
+      "Cougars",
+      "Shasta",
+      "Sasha",
+      "TDECU Stadium",
+      "John O’Quinn Field",
+      "John OQuinn Field"
+    ],
+    "sources": [
+      {
+        "title": "TDECU Stadium facts",
+        "url": "https://uhcougars.com/sports/2018/6/12/TDECU-Stadium-Info-html"
+      },
+      {
+        "title": "2026 stadium updates",
+        "url": "https://uhcougars.com/news/2026/8/13/football-whats-new-at-tdecu-improved-game-day-experience"
+      },
+      {
+        "title": "Shasta and Sasha",
+        "url": "https://uhbandsandspiritgroups.com/mascots"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=288"
+      },
+      {
+        "title": "2026 Big 12 football",
+        "url": "https://big12sports.com/news/2026/1/21/big-12-conference-announces-2026-football-schedule.aspx"
+      }
+    ],
+    "description": "TDECU’s red-and-gray metal facade wraps silver stands aligned with Houston’s campus grid, with the downtown skyline visible from the east side in this 2015-era view. Opened August 29, 2014 against UTSA on the former Robertson Stadium site. The playing surface is John O’Quinn Field.",
+    "capacityNote": "Houston’s official stadium facts page lists 40,000 seats and describes the 2025 football operations-center additions. Current 2026 athletics materials continue to use TDECU Stadium.",
+    "openingNote": "Opened August 29, 2014 against UTSA on the former Robertson Stadium site. The playing surface is John O’Quinn Field.",
+    "artEra": "2015-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms were checked against university and photographic references; seating details, field lettering, nearby building proportions and paired-view geometry remain approximate. Artwork era is separate from facts verified October 12, 2026. Reference era: Approximately 2015, before the 2024 west video board and 2025 Memorial Hermann Football Operations Center. Original images: 1672 × 941 pixels, generated natively without upscaling.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/houston-aerial.png",
+        "alt": "AI-generated east-side aerial toward downtown reconstruction of TDECU Stadium, Houston, showing the empty stadium and its surroundings. Artwork era: Approximately 2015, before the 2024 west video board and 2025 Memorial Hermann Football Operations Center.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/houston-reverse-v2.png",
+        "alt": "AI-generated west-side reverse aerial toward campus reconstruction of TDECU Stadium, Houston, showing the empty stadium and its surroundings. Artwork era: Approximately 2015, before the 2024 west video board and 2025 Memorial Hermann Football Operations Center.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "iowa-state-jack-trice",
+    "school": "Iowa State",
+    "fullSchool": "Iowa State University",
+    "team": "Cyclones",
+    "teamName": "Iowa State Cyclones",
+    "mascot": "Cy",
+    "stadium": "MidAmerican Energy Field at Jack Trice Stadium",
+    "city": "Ames",
+    "state": "Iowa",
+    "opened": 1975,
+    "seatingCapacity": 61500,
+    "capacityLabel": "Capacity (2026)",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Iowa State",
+      "ISU",
+      "Cyclones",
+      "Cy",
+      "Jack Trice",
+      "Jack Trice Stadium",
+      "MidAmerican Energy Field",
+      "Cyclone Stadium",
+      "Ames"
+    ],
+    "sources": [
+      {
+        "title": "2026 stadium facts",
+        "url": "https://cyclones.com/documents/download/2026/3/23/2026_Spring_Prospectus.pdf"
+      },
+      {
+        "title": "Stadium history",
+        "url": "https://cyclones.com/sports/2024/5/21/50-years-of-jack-trice-stadium"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=311"
+      },
+      {
+        "title": "2015 aerial reference",
+        "url": "https://cyclones.com/galleries/football/jack-trice-stadium-aerial-shots/jacktricestadium-2015-6-jpg/1257/69505"
+      }
+    ],
+    "description": "Jack Trice’s long double-deck sidelines meet a deep south-end stand, while grassy north corners frame the Jacobson building and the Ames athletics campus. First game September 20, 1975; the stadium was dedicated to Jack Trice in 1997. The field naming agreement began in 2018.",
+    "capacityNote": "Iowa State’s September 2026 game information lists 61,500, consistent with its 2026 Spring Prospectus. This configuration dates to the 2015 south-end expansion.",
+    "openingNote": "First game September 20, 1975; the stadium was dedicated to Jack Trice in 1997. The field naming agreement began in 2018.",
+    "artEra": "2015-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main forms and site relationships were checked against Iowa State’s September 2015 aerial. Fine seating, field lettering, the distant campus and paired-view proportions are approximate. The artwork predates the Stark Performance Center and pedestrian bridge; current facts were verified October 12, 2026. Original images are native 1672 × 941 pixels; no upscaling. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/iowa-state-aerial-2015-era.png",
+        "alt": "AI-generated 2015-era north-end aerial of MidAmerican Energy Field at Jack Trice Stadium, Iowa State, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/iowa-state-reverse-aerial-2015-era.png",
+        "alt": "AI-generated 2015-era south-end reverse aerial of MidAmerican Energy Field at Jack Trice Stadium, Iowa State, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "kansas-memorial-stadium",
+    "school": "Kansas",
+    "fullSchool": "University of Kansas",
+    "team": "Jayhawks",
+    "teamName": "Kansas Jayhawks",
+    "mascot": "Big Jay and Baby Jay",
+    "stadium": "David Booth Kansas Memorial Stadium",
+    "city": "Lawrence",
+    "state": "Kansas",
+    "opened": 1921,
+    "seatingCapacity": 32000,
+    "capacityLabel": "Approx. capacity (2026)",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Kansas",
+      "KU",
+      "Jayhawks",
+      "Big Jay",
+      "Baby Jay",
+      "David Booth Kansas Memorial Stadium",
+      "Kansas Memorial Stadium",
+      "Memorial Stadium",
+      "The Booth",
+      "Kivisto Field",
+      "Lawrence"
+    ],
+    "sources": [
+      {
+        "title": "2026 renovation",
+        "url": "https://kuathletics.com/news/2026/1/22/kansas-football-announces-2026-season-tickets-on-sale"
+      },
+      {
+        "title": "2026 stadium history",
+        "url": "https://kuathletics.com/documents/2026/7/31/07312026_Kansas_Football_Media_Guide.pdf"
+      },
+      {
+        "title": "Big Jay and Baby Jay",
+        "url": "https://admissions.ku.edu/blog/what-is-a-jayhawk"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=328"
+      },
+      {
+        "title": "Reported 2026 capacity",
+        "url": "https://www.kmuw.org/2026-09-03/ku-university-kansas-football-stadium-construction-jayhawks"
+      }
+    ],
+    "description": "Kansas’s 2025-era stadium pairs new blue west and north decks with its older east bleachers and an open view toward Campanile Hill. Originally opened October 29, 1921. The Phase I rebuild opened August 23, 2025.",
+    "capacityNote": "2026 capacity is approximately 32,000 during Phase II east-side work, reported by KMUW quoting Kansas Athletics leadership and consistent with official 2026 attendance totals. Kansas Athletics confirms reduced 2026 capacity, east lower-bowl use and completion of the upper bowl planned for 2027. The 41,525 opening capacity belongs to the 2025 configuration shown in the artwork; it is not the current 2026 figure.",
+    "openingNote": "Originally opened October 29, 1921. The Phase I rebuild opened August 23, 2025.",
+    "artEra": "2025-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Artwork deliberately shows August 2025: rebuilt west and north stands, retained older east stand and open south end. It does not show the 2026 construction-season configuration or future completed east stand and Gateway District. Official August 2025 interior photos support the main forms; exterior details, campus spacing, seating geometry and field markings are approximate. Current facts were verified October 12, 2026. Original images are native 1672 × 941 pixels; no upscaling. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/kansas-aerial-2025-era.png",
+        "alt": "AI-generated 2025-era southeast aerial of David Booth Kansas Memorial Stadium, Kansas, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/kansas-reverse-aerial-2025-era.png",
+        "alt": "AI-generated 2025-era northwest reverse aerial of David Booth Kansas Memorial Stadium, Kansas, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "kansas-state-bill-snyder-family",
+    "school": "Kansas State",
+    "fullSchool": "Kansas State University",
+    "team": "Wildcats",
+    "teamName": "Kansas State Wildcats",
+    "mascot": "Willie the Wildcat",
+    "stadium": "Bill Snyder Family Stadium",
+    "city": "Manhattan",
+    "state": "Kansas",
+    "opened": 1968,
+    "seatingCapacity": 50000,
+    "capacityLabel": "Capacity (2026)",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Kansas State",
+      "K-State",
+      "KSU",
+      "Wildcats",
+      "Willie the Wildcat",
+      "Bill Snyder Family Stadium",
+      "Wagner Field",
+      "Manhattan"
+    ],
+    "sources": [
+      {
+        "title": "2026 team facts",
+        "url": "https://www.kstatesports.com/news/2026/8/31/football-k-state-opens-klein-era-against-nicholls"
+      },
+      {
+        "title": "Stadium location",
+        "url": "https://www.k-state.edu/maps/buildings/KFS/"
+      },
+      {
+        "title": "Willie the Wildcat",
+        "url": "https://www.k-state.com/news/120721bestmascot.php"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=327"
+      },
+      {
+        "title": "Stadium aerials",
+        "url": "https://www.kstatesports.com/facilities/bill-snyder-family-stadium/12"
+      }
+    ],
+    "description": "K-State’s limestone stadium complex joins the tall west suite center, north Vanier building and south Shamrock Zone beside Bramlage Coliseum. Opened September 21, 1968 as KSU Stadium. Renamed for Bill Snyder and his family on November 16, 2005.",
+    "capacityNote": "K-State’s August 2026 season-opening preview lists a capacity of 50,000. Reported game attendance can exceed this published nominal capacity.",
+    "openingNote": "Opened September 21, 1968 as KSU Stadium. Renamed for Bill Snyder and his family on November 16, 2005.",
+    "artEra": "2021-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and the Bramlage/Vanier site relationships were checked against official autumn 2021 aerials. Artwork includes the Shamrock Zone and omits the later east-side indoor practice facility. Fine seat counts, facade details, scoreboards and distant buildings are approximate. Current facts were verified October 12, 2026. Original images are native 1672 × 941 pixels; no upscaling. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/kansas-state-aerial-2021-era.png",
+        "alt": "AI-generated 2021-era northeast aerial of Bill Snyder Family Stadium, Kansas State, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/kansas-state-reverse-aerial-2021-era.png",
+        "alt": "AI-generated 2021-era southwest reverse aerial of Bill Snyder Family Stadium, Kansas State, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "louisville-cardinal-stadium",
+    "school": "Louisville",
+    "fullSchool": "University of Louisville",
+    "team": "Cardinals",
+    "teamName": "Louisville Cardinals",
+    "mascot": "Louie the Cardinal",
+    "stadium": "L&N Federal Credit Union Stadium",
+    "city": "Louisville",
+    "state": "Kentucky",
+    "opened": 1998,
+    "seatingCapacity": 60000,
+    "capacityLabel": "Published venue capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "UofL",
+      "University of Louisville",
+      "Cards",
+      "Cardinals",
+      "L&N Stadium",
+      "Cardinal Stadium",
+      "Papa John's Cardinal Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Venue history and capacity",
+        "url": "https://www.landnstadium.com/guest-services/stadium-history/"
+      },
+      {
+        "title": "Official football facility",
+        "url": "https://gocards.com/facilities/cardinal-stadium/13"
+      },
+      {
+        "title": "Louie the Cardinal",
+        "url": "https://gocards.com/sports/2015/3/26/GEN_20140101180"
+      },
+      {
+        "title": "NCAA membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=367"
+      },
+      {
+        "title": "Stadium map",
+        "url": "https://www.landnstadium.com/guest-services/stadium-map/"
+      }
+    ],
+    "description": "Louisville’s red-seated football home rises beside active railway tracks, with a white west-side canopy and a tall exposed-steel east deck.",
+    "capacityNote": "The stadium operator currently publishes 60,000. University publications have also listed 58,923 and 60,800; capacities vary by configuration and publication date.",
+    "artEra": "2025-era",
+    "imageNote": "AI-generated 2025-era reconstructions. Seating geometry, signs and surrounding campus and industrial streets are approximations, not documentary photographs. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/louisville-aerial.png",
+        "alt": "AI-generated 2025-era south-side aerial of Louisville’s L&N Stadium, showing red seats, white west canopy, tall east deck and the peaked north expansion.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/louisville-reverse-final.png",
+        "alt": "AI-generated 2025-era north-side aerial of L&N Stadium, with twin north videoboards, the low south end and railway corridor alongside.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "miami-joe-robbie-stadium",
+    "school": "Miami",
+    "fullSchool": "University of Miami",
+    "team": "Hurricanes",
+    "teamName": "Miami Hurricanes",
+    "mascot": "Sebastian the Ibis",
+    "stadium": "Hard Rock Stadium",
+    "city": "Miami Gardens",
+    "state": "Florida",
+    "opened": 1987,
+    "seatingCapacity": 65326,
+    "capacityLabel": "Published Miami football capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "Miami (Florida)",
+      "Miami (FL)",
+      "University of Miami",
+      "UM",
+      "The U",
+      "Hurricanes",
+      "Hard Rock Stadium",
+      "Joe Robbie Stadium",
+      "Sun Life Stadium",
+      "Dolphin Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Stadium history",
+        "url": "https://miamihurricanes.com/facilities/hard-rock-stadium"
+      },
+      {
+        "title": "Miami football capacity",
+        "url": "https://miamihurricanes.com/news/2021/09/10/welcome-back-to-hard-rock"
+      },
+      {
+        "title": "Sebastian the Ibis",
+        "url": "https://miamihurricanes.com/sebastian-the-ibis"
+      },
+      {
+        "title": "NCAA membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=415"
+      },
+      {
+        "title": "Official tourism aerial",
+        "url": "https://www.miamiandbeaches.com/l/sports/hard-rock-stadium/225"
+      }
+    ],
+    "description": "The Hurricanes’ Miami Gardens home has a vast white canopy, four corner masts and a teal seating bowl amid a sprawling sports campus. Opened in 1987 as Joe Robbie Stadium; Miami football moved here in 2008.",
+    "capacityNote": "Miami Athletics lists 65,326 for its football configuration. Other event and NFL configurations may differ.",
+    "openingNote": "Opened in 1987 as Joe Robbie Stadium; Miami football moved here in 2008.",
+    "artEra": "2025-era",
+    "imageNote": "AI-generated 2025-era reconstructions. Canopy geometry, field graphics and the surrounding racecourse, courts and roads are approximations, not documentary photographs. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/miami-aerial-final.png",
+        "alt": "AI-generated 2025-era oblique view of Hard Rock Stadium’s white canopy, four masts, teal seating and Miami Hurricanes field.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/miami-end-zone-roof-final.png",
+        "alt": "AI-generated 2025-era end-zone aerial of Hard Rock Stadium, looking along the Miami football field through the canopy opening.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "oklahoma-state-boone-pickens",
+    "school": "Oklahoma State",
+    "fullSchool": "Oklahoma State University",
+    "team": "Cowboys",
+    "teamName": "Oklahoma State Cowboys",
+    "mascot": "Pistol Pete and Bullet",
+    "stadium": "Boone Pickens Stadium",
+    "city": "Stillwater",
+    "state": "Oklahoma",
+    "opened": 1919,
+    "seatingCapacity": 52202,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Oklahoma State",
+      "OSU",
+      "OK State",
+      "Cowboys",
+      "Pokes",
+      "Pistol Pete",
+      "Bullet",
+      "Boone Pickens Stadium",
+      "Lewis Field",
+      "Stillwater"
+    ],
+    "sources": [
+      {
+        "title": "Current stadium facts",
+        "url": "https://okstate.com/sports/2015/6/18/GEN_0618155302"
+      },
+      {
+        "title": "Mascot traditions",
+        "url": "https://okstate.com/sports/2015/3/17/GEN_201401011"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=521"
+      },
+      {
+        "title": "Architect reference",
+        "url": "https://www.reed-architects.com/boone-pickens"
+      }
+    ],
+    "description": "Boone Pickens wraps orange stands and red-brick suite facades around an east–west field, with Gallagher-Iba Arena anchoring the east end. The official facility timeline dates the stadium at its current site to 1919, initially with wooden bleachers. Football began at the earlier athletic grounds in 1901; permanent steel-and-concrete seating followed in 1924.",
+    "capacityNote": "The current official facility page lists 52,202 after the 2023–2024 seating renovations. Older 55,509, 53,855 and 52,305 figures describe earlier configurations or differ from the current official listing.",
+    "openingNote": "The official facility timeline dates the stadium at its current site to 1919, initially with wooden bleachers. Football began at the earlier athletic grounds in 1901; permanent steel-and-concrete seating followed in 1924.",
+    "artEra": "2019-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. The east–west field, west horseshoe, Georgian brick exterior and adjoining Gallagher-Iba Arena were checked against the stadium architect’s aerial and official facility history. Fine facade details, seat arrangement, logos and campus proportions are approximate. Artwork predates the 2023–2024 seating changes; current facts were verified October 12, 2026. Original images are native 1672 × 941 pixels; no upscaling. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/oklahoma-state-aerial-2019-era.png",
+        "alt": "AI-generated 2019-era northeast aerial of Boone Pickens Stadium, Oklahoma State, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/oklahoma-state-reverse-aerial-2019-era.png",
+        "alt": "AI-generated 2019-era southwest reverse aerial of Boone Pickens Stadium, Oklahoma State, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "pittsburgh-north-shore-stadium",
+    "school": "Pittsburgh",
+    "fullSchool": "University of Pittsburgh",
+    "team": "Panthers",
+    "teamName": "Pittsburgh Panthers",
+    "mascot": "ROC the Panther",
+    "stadium": "Acrisure Stadium",
+    "city": "Pittsburgh",
+    "state": "Pennsylvania",
+    "opened": 2001,
+    "seatingCapacity": 51416,
+    "capacityLabel": "Pitt football capacity (2026)",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "Pitt",
+      "University of Pittsburgh",
+      "Panthers",
+      "Acrisure Stadium",
+      "Heinz Field",
+      "North Shore"
+    ],
+    "sources": [
+      {
+        "title": "Stadium history",
+        "url": "https://pittsburghpanthers.com/facilities/acrisure-stadium/71"
+      },
+      {
+        "title": "2026 Pitt capacity",
+        "url": "https://pittsburghpanthers.com/news/2026/1/28/2026-pitt-football-season-tickets-now-on-sale"
+      },
+      {
+        "title": "ROC the Panther",
+        "url": "https://pittsburghpanthers.com/sports/2017/8/28/roc-the-panther"
+      },
+      {
+        "title": "NCAA membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=545"
+      },
+      {
+        "title": "Venue facts",
+        "url": "https://acrisurestadium.com/stadium/"
+      }
+    ],
+    "description": "Pitt’s shared North Shore home opens toward Pittsburgh’s river confluence, with yellow seating, exposed steel and views across to downtown.",
+    "capacityNote": "Pitt’s upper east and west seating areas are offline beginning in 2026, reducing its football capacity to 51,416. The north upper deck remains available; NFL and other-event capacity differs.",
+    "artEra": "2025-era",
+    "imageNote": "AI-generated 2025-era reconstructions of the physical stadium. The 2026 Pitt seating closures are not illustrated. Architecture, skyline and field graphics are approximations, not documentary photographs. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/pittsburgh-aerial.png",
+        "alt": "AI-generated 2025-era aerial of Acrisure Stadium facing Pittsburgh’s river confluence, Point State Park and downtown skyline.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/pittsburgh-reverse-final.png",
+        "alt": "AI-generated 2025-era reverse aerial of Acrisure Stadium from the riverfront, with yellow grandstands and the North Shore hills beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "tcu-amon-g-carter",
+    "school": "TCU",
+    "fullSchool": "Texas Christian University",
+    "team": "Horned Frogs",
+    "teamName": "TCU Horned Frogs",
+    "mascot": "SuperFrog",
+    "stadium": "Amon G. Carter Stadium",
+    "city": "Fort Worth",
+    "state": "Texas",
+    "opened": 1930,
+    "seatingCapacity": 46000,
+    "capacityLabel": "2026 published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "TCU",
+      "Texas Christian",
+      "Horned Frogs",
+      "SuperFrog",
+      "Amon G. Carter Stadium",
+      "The Carter",
+      "Moncrief Field",
+      "Fort Worth"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts and history",
+        "url": "https://gofrogs.com/sports/2018/7/13/facilities-tcu-facilities-football-html"
+      },
+      {
+        "title": "SuperFrog",
+        "url": "https://gofrogs.com/sports/2018/9/26/superfrog"
+      },
+      {
+        "title": "Legends Club",
+        "url": "https://tcufrogclub.com/sports/2022/8/6/legends-club-suites.aspx"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=698"
+      },
+      {
+        "title": "2026 Big 12 football",
+        "url": "https://big12sports.com/news/2026/1/21/big-12-conference-announces-2026-football-schedule.aspx"
+      }
+    ],
+    "description": "The Carter pairs its steep west grandstand and buff-brick arches with the east Legends Club, a lower south bowl and the neighboring Schollmaier Arena dome. First game October 11, 1930 against Arkansas. The natural-grass playing surface is Moncrief Field.",
+    "capacityNote": "The current TCU facility page explicitly lists 46,000. Its 45,000 figure describes the 2012 rebuild; older 44,358 figures describe pre-rebuild facilities.",
+    "openingNote": "First game October 11, 1930 against Arkansas. The natural-grass playing surface is Moncrief Field.",
+    "artEra": "2023-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms were checked against university and photographic references; seating details, field lettering, nearby building proportions and paired-view geometry remain approximate. Artwork era is separate from facts verified October 12, 2026. Reference era: Approximately 2023, after the 2020 Legends Club addition and before the 2025 performance-center and 2026 video-board changes. Original images: 1672 × 941 pixels, generated natively without upscaling.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/tcu-aerial.png",
+        "alt": "AI-generated northwest-side aerial reconstruction of Amon G. Carter Stadium, Fort Worth, showing the empty stadium and its surroundings. Artwork era: Approximately 2023, after the 2020 Legends Club addition and before the 2025 performance-center and 2026 video-board changes.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/tcu-reverse-v2.png",
+        "alt": "AI-generated southeast-side reverse aerial reconstruction of Amon G. Carter Stadium, Fort Worth, showing the empty stadium and its surroundings. Artwork era: Approximately 2023, after the 2020 Legends Club addition and before the 2025 performance-center and 2026 video-board changes.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "texas-tech-jones-stadium",
+    "school": "Texas Tech",
+    "fullSchool": "Texas Tech University",
+    "team": "Red Raiders",
+    "teamName": "Texas Tech Red Raiders",
+    "mascot": "The Masked Rider and Raider Red",
+    "stadium": "Galaxy Stadium",
+    "city": "Lubbock",
+    "state": "Texas",
+    "opened": 1947,
+    "seatingCapacity": 60229,
+    "capacityLabel": "Capacity (2026)",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Texas Tech",
+      "TTU",
+      "Tech",
+      "Red Raiders",
+      "Masked Rider",
+      "Raider Red",
+      "Galaxy Stadium",
+      "Jones Stadium",
+      "Jones AT&T Stadium",
+      "Jones SBC Stadium",
+      "The Jones",
+      "Lubbock"
+    ],
+    "sources": [
+      {
+        "title": "Stadium name and history",
+        "url": "https://texastech.com/facilities/galaxy-stadium/2"
+      },
+      {
+        "title": "2026 capacity",
+        "url": "https://texastech.com/news/2026/8/31/football-no-12-texas-tech-opens-2026-season-saturday"
+      },
+      {
+        "title": "Mascot traditions",
+        "url": "https://www.ttu.edu/now/posts/2026/04/texas-tech-university-unveils-new-masked-rider-and-raider-red.php"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=700"
+      },
+      {
+        "title": "Stadium location",
+        "url": "https://texastech.com/sports/2026/7/15/gameday-in-raiderland"
+      }
+    ],
+    "description": "Texas Tech’s asymmetric suite towers and silver stands frame a Spanish Renaissance south-end building with twin towers and the Double T scoreboard. Opened November 29, 1947 as Jones Stadium. Named Jones AT&T Stadium from 2006; Galaxy Stadium naming began with the 2026 season.",
+    "capacityNote": "The official August 31, 2026 season preview lists Galaxy Stadium at 60,229. Attendance records above that number are not the current published capacity.",
+    "openingNote": "Opened November 29, 1947 as Jones Stadium. Named Jones AT&T Stadium from 2006; Galaxy Stadium naming began with the 2026 season.",
+    "artEra": "2024-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main forms were checked against official 2024 interior photos, including the new south-end building, and the official stadium location. Fine seat geometry, surrounding campus, facade details and scoreboard backs are approximate. The artwork represents Jones AT&T Stadium in 2024; the current venue name is Galaxy Stadium. Facts were verified October 12, 2026. Original images are native 1672 × 941 pixels; no upscaling. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/texas-tech-aerial-2024-era.png",
+        "alt": "AI-generated 2024-era north-end aerial of Galaxy Stadium, Texas Tech, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/texas-tech-reverse-aerial-2024-era.png",
+        "alt": "AI-generated 2024-era south-end reverse aerial of Galaxy Stadium, Texas Tech, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "ucf-bounce-house",
+    "school": "UCF",
+    "fullSchool": "University of Central Florida",
+    "team": "Knights",
+    "teamName": "UCF Knights",
+    "mascot": "Knightro",
+    "stadium": "Acrisure Bounce House",
+    "city": "Orlando",
+    "state": "Florida",
+    "opened": 2007,
+    "seatingCapacity": 45906,
+    "capacityLabel": "2026 published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "UCF",
+      "Central Florida",
+      "Knights",
+      "Knightro",
+      "Bounce House",
+      "Acrisure Bounce House",
+      "FBC Mortgage Stadium",
+      "Spectrum Stadium",
+      "Bright House Networks Stadium",
+      "Orlando"
+    ],
+    "sources": [
+      {
+        "title": "Acrisure Bounce House",
+        "url": "https://ucfknights.com/facilities/acrisure-bounce-house"
+      },
+      {
+        "title": "Roth Tower project",
+        "url": "https://ucfknights.com/roth-tower-project"
+      },
+      {
+        "title": "UCF athletics and Knightro",
+        "url": "https://www.ucf.edu/athletics/"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=128"
+      },
+      {
+        "title": "2026 Big 12 football",
+        "url": "https://big12sports.com/news/2026/1/21/big-12-conference-announces-2026-football-schedule.aspx"
+      }
+    ],
+    "description": "UCF’s silver bleacher bowl stands on exposed steel framing beside its athletics village, with the expanded Roth Tower anchoring the west sideline. Opened September 15, 2007 against Texas, giving UCF its first on-campus football home.",
+    "capacityNote": "UCF’s current facility page reports 45,906 following the 2026 Roth Tower expansion, an increase of 1,700 seats. The older 44,206 figure is not the current capacity.",
+    "openingNote": "Opened September 15, 2007 against Texas, giving UCF its first on-campus football home.",
+    "artEra": "2026-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms were checked against university and photographic references; seating details, field lettering, nearby building proportions and paired-view geometry remain approximate. Artwork era is separate from facts verified October 12, 2026. Reference era: September 2026, after the expanded Roth Tower opened. Original images: 1672 × 941 pixels, generated natively without upscaling.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/ucf-aerial.png",
+        "alt": "AI-generated east-side aerial reconstruction of Acrisure Bounce House, Orlando, showing the empty stadium and its surroundings. Artwork era: September 2026, after the expanded Roth Tower opened.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/ucf-reverse.png",
+        "alt": "AI-generated northwest-side reverse aerial reconstruction of Acrisure Bounce House, Orlando, showing the empty stadium and its surroundings. Artwork era: September 2026, after the expanded Roth Tower opened.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "utah-rice-eccles",
+    "school": "Utah",
+    "fullSchool": "University of Utah",
+    "team": "Utes",
+    "teamName": "Utah Utes",
+    "mascot": "Swoop",
+    "stadium": "Rice-Eccles Stadium",
+    "city": "Salt Lake City",
+    "state": "Utah",
+    "opened": 1998,
+    "seatingCapacity": 51444,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "Utah",
+      "University of Utah",
+      "Utes",
+      "Swoop",
+      "Rice-Eccles Stadium",
+      "Rice Stadium",
+      "Ute Stadium",
+      "Ken Garff Red Zone",
+      "Salt Lake City"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts and aerials",
+        "url": "https://utahutes.com/facilities/rice-eccles-stadium/3"
+      },
+      {
+        "title": "Football and mascot facts",
+        "url": "https://utahutes.com/sports/2019/7/2/football-quick-facts"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=732"
+      },
+      {
+        "title": "2022 official aerial reference",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/utahutes.com/images/2024/5/30/10152022_UU_FB_Utah_Utes_vs._USC_hd_edits_96.JPG"
+      }
+    ],
+    "description": "Rice-Eccles pairs its long west-side press box with the terraced Ken Garff south end, overlooking Salt Lake City on one side and the University of Utah’s Wasatch foothills on the other. The current Rice-Eccles structure opened September 12, 1998, on the site of Ute Stadium (1927–1971) and Rice Stadium (1972–1997).",
+    "capacityNote": "The current facility and football quick-facts pages list 51,444 following the 2021 south-end expansion; attendance can exceed the seating figure.",
+    "openingNote": "The current Rice-Eccles structure opened September 12, 1998, on the site of Ute Stadium (1927–1971) and Rice Stadium (1972–1997).",
+    "artEra": "2022–2023-era",
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs. Fine seating geometry, exterior details, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Native original images, with no upscaling or post-generation redraw. Reference era: Approximately 2022–2023, after the 2021 Ken Garff Red Zone expansion. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/utah-aerial-2022-era.png",
+        "alt": "AI-generated approximately 2022–2023, after the 2021 ken garff red zone expansion east-side city-facing aerial reconstruction of Rice-Eccles Stadium in Salt Lake City, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/utah-reverse-2022-era.png",
+        "alt": "AI-generated approximately 2022–2023, after the 2021 ken garff red zone expansion west-side mountain-facing aerial reconstruction of Rice-Eccles Stadium in Salt Lake City, showing the complete stadium and surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "west-virginia-milan-puskar",
+    "school": "West Virginia",
+    "fullSchool": "West Virginia University",
+    "team": "Mountaineers",
+    "teamName": "West Virginia Mountaineers",
+    "mascot": "The Mountaineer",
+    "stadium": "Mountaineer Field at Milan Puskar Stadium",
+    "city": "Morgantown",
+    "state": "West Virginia",
+    "opened": 1980,
+    "seatingCapacity": 60000,
+    "capacityLabel": "Published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big 12",
+    "aliases": [
+      "WVU",
+      "West Virginia University",
+      "Mountaineers",
+      "Milan Puskar Stadium",
+      "Mountaineer Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://wvusports.com/facilities/milan-puskar-stadium/8"
+      },
+      {
+        "title": "Mountaineer mascot",
+        "url": "https://mountaineer.wvu.edu/"
+      },
+      {
+        "title": "NCAA membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=768"
+      },
+      {
+        "title": "Official aerial reference",
+        "url": "https://seasontickets.wvusports.com/"
+      }
+    ],
+    "description": "West Virginia’s open, double-deck home beside Morgantown’s health-sciences campus, framed by wooded hills.",
+    "artEra": "2025-era",
+    "imageNote": "AI-generated 2025-era reconstructions. Stadium details, signs, roads and nearby buildings are approximations, not documentary photographs. Original images: 1672 × 941 pixels.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/west-virginia-aerial-final.png",
+        "alt": "AI-generated 2025-era north-side aerial of Milan Puskar Stadium, with its twin sideline decks and the white-roof Caperton indoor facility beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/west-virginia-reverse-final.png",
+        "alt": "AI-generated 2025-era south-side aerial of Milan Puskar Stadium, facing the north end and nearby WVU medical-campus buildings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
   }
 ];

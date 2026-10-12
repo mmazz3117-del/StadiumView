@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.2.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.3.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUMS = [
   {
@@ -705,5 +705,390 @@ window.STADIUMS = [
       }
     ],
     "imageNote": "About these views: AI-generated, reference-based 2024-era reconstructions. Architecture, surroundings, and field markings are interpretive approximations, not current photographs or survey-accurate images. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "georgia-sanford",
+    "school": "Georgia",
+    "fullSchool": "University of Georgia",
+    "team": "Bulldogs",
+    "teamName": "Georgia Bulldogs",
+    "mascot": "Uga and Hairy Dawg",
+    "stadium": "Dooley Field at Sanford Stadium",
+    "city": "Athens",
+    "state": "Georgia",
+    "opened": 1929,
+    "seatingCapacity": 93033,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "UGA",
+      "Georgia",
+      "Bulldogs",
+      "Sanford Stadium",
+      "Dooley Field",
+      "Between the Hedges"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts and aerial gallery",
+        "url": "https://georgiadogs.com/sports/2023/7/11/facility-SanfordStadium"
+      },
+      {
+        "title": "Official stadium history and capacity by era",
+        "url": "https://georgiadogs.com/documents/download/2025/8/4/25FB_history_sanford.pdf"
+      },
+      {
+        "title": "Official stadium orientation map",
+        "url": "https://georgiadogs.com/documents/download/2023/8/2/24FB_SanfordStadium_Map.pdf"
+      },
+      {
+        "title": "Uga, the live Georgia mascot",
+        "url": "https://georgiadogs.com/sports/2017/6/16/uga"
+      },
+      {
+        "title": "Hairy Dawg, the costumed mascot",
+        "url": "https://georgiadogs.com/sports/2017/6/16/hairy-dawg"
+      },
+      {
+        "title": "Official 2026 SEC schedule and Athens location",
+        "url": "https://georgiadogs.com/news/2025/12/11/sec-announces-georgias-2026-football-schedule"
+      },
+      {
+        "title": "SEC membership and 2026–29 football opponents",
+        "url": "https://www.secsports.com/championships/2026-2029-sec-football-opponents-reveal"
+      },
+      {
+        "title": "NCAA Division I school profile",
+        "url": "https://www.ncaa.com/schools/georgia"
+      },
+      {
+        "title": "NCAA current FBS statistics",
+        "url": "https://www.ncaa.com/stats/football/FbS"
+      }
+    ],
+    "description": "Georgia’s Athens home since 1929, with its famous field-level hedges and asymmetric stands overlooking the Sanford Drive bridge.",
+    "capacityNote": "Georgia lists 93,033 after its 2023–24 two-phase renovation. The images reconstruct approximately 2023, when the published capacity was 92,746, and do not depict the completed 2024 south-side alterations.",
+    "artEra": "Approximately 2023, before the completed 2024 south-side renovation",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/georgia-aerial-2023-era.png",
+        "alt": "AI-generated 2023-era aerial reconstruction of Sanford Stadium from the west-southwest, with Sanford Drive bridge and west video board in the foreground.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/georgia-reverse-aerial-2023-era.png",
+        "alt": "AI-generated opposite-side 2023-era reconstruction of Sanford Stadium, with the east exterior, East Campus Road and railway nearest the camera.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Architecture, field markings, seating details and campus proportions are approximate. Image era is separate from facts checked in October 2026. Reference era: Approximately 2023, before the completed 2024 south-side renovation. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "florida-ben-hill-griffin",
+    "school": "Florida",
+    "fullSchool": "University of Florida",
+    "team": "Gators",
+    "teamName": "Florida Gators",
+    "mascot": "Albert and Alberta",
+    "stadium": "Steve Spurrier-Florida Field at Ben Hill Griffin Stadium",
+    "city": "Gainesville",
+    "state": "Florida",
+    "opened": 1930,
+    "seatingCapacity": 88548,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "UF",
+      "Florida",
+      "Gators",
+      "The Swamp",
+      "Ben Hill Griffin Stadium",
+      "Florida Field",
+      "Steve Spurrier-Florida Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts and photo gallery",
+        "url": "https://floridagators.com/facilities/detail/1"
+      },
+      {
+        "title": "Official opening and stadium development timeline",
+        "url": "https://floridagators.com/sports/2015/12/10/_facilities_bhgriffin_timeline_"
+      },
+      {
+        "title": "Official full field and stadium name",
+        "url": "https://floridagators.com/news/2016/6/9/football-florida-field-to-bear-spurrier-name"
+      },
+      {
+        "title": "Albert and Alberta mascot program",
+        "url": "https://floridagators.com/sports/2015/12/10/_spirit_mascots_"
+      },
+      {
+        "title": "Official 2026 SEC football schedule",
+        "url": "https://www.secsports.com/fbsched26-florida"
+      },
+      {
+        "title": "NCAA Division I school profile and Gainesville location",
+        "url": "https://www.ncaa.com/schools/florida"
+      },
+      {
+        "title": "NCAA current FBS statistics",
+        "url": "https://www.ncaa.com/stats/football/FbS"
+      },
+      {
+        "title": "Official stadium orientation map, updated August 2026",
+        "url": "https://floridagators.com/images/2026/8/27/Ben_Hill_Griffin_Stadium_Map_20260827.png"
+      },
+      {
+        "title": "Future renovation announcement and era caveat",
+        "url": "https://floridagators.com/news/2026/6/11/football-florida-athletics-takes-transformational-step-toward-the-future-of-the-swamp"
+      },
+      {
+        "title": "Official southwest aerial reference",
+        "url": "https://floridagators.com/news/2010/8/31/18602"
+      },
+      {
+        "title": "WUFT / University of Florida: north aerial photographed in March 2025",
+        "url": "https://www.wuft.org/entertainment/2025-03-24/photo-gallery-9th-annual-gator-fly-in-celebrating-gators-in-space"
+      }
+    ],
+    "description": "The Gators’ compact, steep-sided Gainesville home, known as The Swamp, with its orange walls and prominent west-side suite tower.",
+    "capacityNote": "The current official facility page lists 88,548. The images depict approximate 2024 pre-renovation architecture and do not show the future redevelopment announced in June 2026.",
+    "artEra": "Approximately 2024, before the renovation announced in 2026",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/florida-aerial-2024-era-corrected.png",
+        "alt": "AI-generated 2024-era reconstruction of Ben Hill Griffin Stadium from the southwest, showing its west suite tower, south bowl and nearby Florida Gym.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/florida-reverse-aerial-2024-era.png",
+        "alt": "AI-generated opposite-side 2024-era reconstruction of The Swamp, showing its north spiral ramps, east campus pool and west suite tower.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Architecture, field markings, seating details and campus proportions are approximate. Image era is separate from facts checked in October 2026. Reference era: Approximately 2024, before the renovation announced in 2026. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "florida-state-doak-campbell",
+    "school": "Florida State",
+    "fullSchool": "Florida State University",
+    "team": "Seminoles",
+    "teamName": "Florida State Seminoles",
+    "mascot": "Osceola and Renegade",
+    "mascotLabel": "Symbols",
+    "mascotNote": "Florida State does not designate a mascot. Osceola and Renegade are honored university symbols, developed in consultation with the Seminole Tribe of Florida.",
+    "stadium": "Bobby Bowden Field at Doak S. Campbell Stadium",
+    "city": "Tallahassee",
+    "state": "Florida",
+    "opened": 1950,
+    "seatingCapacity": 67277,
+    "capacityLabel": "Seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "FSU",
+      "Florida State",
+      "Seminoles",
+      "Doak",
+      "Doak Campbell",
+      "Bobby Bowden Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts and capacity history (2026)",
+        "url": "https://seminoles.com/sports/2026/1/16/doak-campbell-stadium"
+      },
+      {
+        "title": "Official post-renovation aerial reference (September 2025)",
+        "url": "https://seminoles.com/news/2025/9/8/football-florida-state-kent-state-set-for-3-30-pm-on-sept-20"
+      },
+      {
+        "title": "Osceola and Renegade are honored symbols",
+        "url": "https://news.fsu.edu/news/university-news/2026/03/24/fsu-175-how-florida-state-university-built-and-honors-its-partnership-with-the-seminole-tribe-of-florida/"
+      },
+      {
+        "title": "2026 ACC football schedule",
+        "url": "https://admin.theacc.com/news/2026/1/26/acc-unveils-2026-football-schedule.aspx"
+      },
+      {
+        "title": "NCAA FBS classification",
+        "url": "https://www.ncaa.com/history/football/fbs"
+      }
+    ],
+    "description": "Florida State’s brick-clad home in Tallahassee since 1950.",
+    "capacityNote": "67,277 following the completed 2025 renovation, listed by FSU as 2025–present. Historical capacities were 79,560 in 2016–23 and a temporary 55,107 during 2024 construction. These images interpret the completed 2025-era stadium, not its 2024 construction phase.",
+    "artEra": "2025-era",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/florida-state-aerial-2025-era-corrected.png",
+        "alt": "AI-generated east-side aerial reconstruction of Doak Campbell Stadium after its 2025 renovation, with brick University Center facade and west premium seating.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/florida-state-reverse-aerial-2025-era-corrected.png",
+        "alt": "AI-generated west-side reverse aerial of Doak Campbell Stadium, with north scoreboard to the left and south Champions Club canopies to the right.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated 2025-era architectural remakes based on official post-renovation reference photography, not actual photographs or survey-accurate views. Surrounding campus buildings, seating details, logos, field markings and proportions are approximate; fine geometry differs between paired views. Current facts were checked in October 2026. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "oklahoma-memorial-stadium",
+    "school": "Oklahoma",
+    "fullSchool": "University of Oklahoma",
+    "team": "Sooners",
+    "teamName": "Oklahoma Sooners",
+    "mascot": "Sooner Schooner; Boomer and Sooner",
+    "stadium": "Gaylord Family–Oklahoma Memorial Stadium",
+    "city": "Norman",
+    "state": "Oklahoma",
+    "opened": 1923,
+    "seatingCapacity": 80126,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "OU",
+      "Oklahoma",
+      "Sooners",
+      "Oklahoma Sooners",
+      "Gaylord Family",
+      "Oklahoma Memorial Stadium",
+      "Owen Field",
+      "Palace on the Prairie"
+    ],
+    "sources": [
+      {
+        "title": "Current stadium capacity, location and opening history",
+        "url": "https://soonersports.com/facilities/gaylord-family---oklahoma-memorial-stadium/21?path=football"
+      },
+      {
+        "title": "Sooner Schooner, Boomer and Sooner mascots",
+        "url": "https://soonersports.com/news/2013/5/20/208806111"
+      },
+      {
+        "title": "NCAA 2026–27 FBS classification and SEC membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=522"
+      },
+      {
+        "title": "2026 SEC football schedule",
+        "url": "https://www.secsports.com/fbsched26-oklahoma"
+      },
+      {
+        "title": "Official campus map and directional geography",
+        "url": "https://ou.edu/content/dam/visit/docs/campus-map.pdf"
+      }
+    ],
+    "description": "The Sooners’ Norman home, with its enclosed bowl and red-brick collegiate Gothic exterior.",
+    "capacityNote": "Oklahoma Athletics currently lists 80,126 seats. The first game on the site was in 1923; the first large grandstand opened in 1925. The images approximate the post-2016 enclosure as it appeared around 2024.",
+    "artEra": "2024-era",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/oklahoma-aerial-2024-era-corrected.png",
+        "alt": "AI-generated north-side aerial reconstruction of Oklahoma Memorial Stadium looking south, with the low south canopy and east upper deck.",
+        "width": 1671,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/oklahoma-reverse-aerial-2024-era-corrected.png",
+        "alt": "AI-generated south-side aerial reconstruction of Oklahoma Memorial Stadium looking north, with the south canopy and Switzer Center in the foreground.",
+        "width": 1671,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated 2024-era architectural reconstructions, not photographs or survey-accurate views. Stadium proportions, seating details, field markings and surrounding campus buildings are approximate; the paired views differ in fine geometry. Current facts were separately verified in October 2026. Original images: 1671 × 941 pixels."
+  },
+  {
+    "id": "texas-am-kyle-field",
+    "school": "Texas A&M",
+    "fullSchool": "Texas A&M University",
+    "team": "Aggies",
+    "teamName": "Texas A&M Aggies",
+    "mascot": "Reveille X",
+    "stadium": "Kyle Field",
+    "city": "College Station",
+    "state": "Texas",
+    "opened": 1905,
+    "seatingCapacity": 102733,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "TAMU",
+      "Texas AM",
+      "Texas A and M",
+      "Texas A&M",
+      "Aggies",
+      "Texas A&M Aggies",
+      "Kyle Field",
+      "Home of the 12th Man"
+    ],
+    "sources": [
+      {
+        "title": "Current Kyle Field capacity and official 1905 opening history",
+        "url": "https://12thman.com/facilities/kyle-field"
+      },
+      {
+        "title": "Reveille X, official mascot",
+        "url": "https://reveille.tamu.edu/"
+      },
+      {
+        "title": "Reveille tradition and breed",
+        "url": "https://www.tamu.edu/campus-community/traditions/aggie-culture/reveille.html"
+      },
+      {
+        "title": "NCAA 2026–27 FBS classification and SEC membership",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=697"
+      },
+      {
+        "title": "2026 SEC football schedule",
+        "url": "https://www.secsports.com/fbsched26-texasam"
+      },
+      {
+        "title": "Current Kyle Field access and campus construction context",
+        "url": "https://12thman.com/gameday-central-kyle-field"
+      },
+      {
+        "title": "2026 Kyle Field updates outside intended art era",
+        "url": "https://12thman.com/news/2026/08/31/12-kyle-field-upgrades-for-2026"
+      }
+    ],
+    "description": "The Aggies’ steep-sided, multi-tier home, rebuilt into its current enclosed form in 2015.",
+    "capacityNote": "Texas A&M Athletics lists 102,733 seats after the 2015 redevelopment. Its current history dates use of Kyle Field to spring 1905; permanent concrete stands began in 1927. The images approximate 2024 and do not document later campus construction or 2026 screen upgrades.",
+    "artEra": "2024-era",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/texas-am-aerial-2024-era-corrected.png",
+        "alt": "AI-generated north-side aerial reconstruction of Kyle Field looking south, with the Richardson Zone brick facade and southwest baseball context.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/texas-am-reverse-aerial-2024-era-corrected.png",
+        "alt": "AI-generated south-side aerial reconstruction of Kyle Field looking north, showing the exposed south-stand bracing and rear of the south scoreboard.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated 2024-era architectural reconstructions, not photographs or survey-accurate views. Stadium proportions, seating details, field markings and surrounding campus buildings are approximate; the paired views differ in fine geometry. Current facts were separately verified in October 2026. Original images: 1672 × 941 pixels."
   }
 ];

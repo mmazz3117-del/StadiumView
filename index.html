@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en" data-app-build="1.2.0">
+<html lang="en" data-app-build="1.3.0">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#121815">
-<meta name="stadium-atlas-build" content="1.2.0">
+<meta name="stadium-atlas-build" content="1.3.0">
 <meta name="description" content="Explore college football from above. Search the Stadium Atlas collection by school or stadium, then explore each home field from two aerial perspectives.">
 <title>Stadium Atlas · College football from above</title>
 <link rel="icon" href="assets/favicon.ico" sizes="any">
@@ -17,10 +17,10 @@
 <meta name="apple-mobile-web-app-title" content="Stadium Atlas">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="stylesheet" href="styles.css?v=1.2.0">
+<link rel="stylesheet" href="styles.css?v=1.3.0">
 <script>
 /* This check lives in the HTML so an old or missing app.js cannot hide a mixed release. */
-window.STADIUM_ATLAS_EXPECTED = Object.freeze({build:'1.2.0',schools:11,views:22});
+window.STADIUM_ATLAS_EXPECTED = Object.freeze({build:'1.3.0',schools:16,views:32});
 window.addEventListener('DOMContentLoaded', function () {
   var expected = window.STADIUM_ATLAS_EXPECTED;
   var runtime = window.STADIUM_ATLAS_RUNTIME;
@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', function () {
   var message = document.getElementById('release-warning-message');
   warning.hidden = false;
   if (!message) { message = document.createElement('p'); message.id = 'release-warning-message'; warning.appendChild(message); }
-  message.textContent = 'This page is v' + expected.build + ', but ' + issues.join(', ') + ' did not load as the matching 11-stadium release. Upload index.html, styles.css, app.js, and catalog.js from the same v' + expected.build + ' code ZIP into the same app folder, replacing the older files, then reload.';
+  message.textContent = 'This page is v' + expected.build + ', but ' + issues.join(', ') + ' did not load as the matching 16-stadium release. Upload index.html, styles.css, app.js, and catalog.js from the same v' + expected.build + ' code ZIP into the same app folder, replacing the older files, then reload.';
   warning.style.cssText = 'display:block;padding:18px;margin-top:20px;margin-bottom:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
   var main = document.getElementById('main');
   if (main) main.hidden = true;
@@ -51,15 +51,15 @@ window.addEventListener('DOMContentLoaded', function () {
   document.body.classList.remove('viewer-open');
 });
 </script>
-<script src="catalog.js?v=1.2.0" defer></script>
-<script src="app.js?v=1.2.0" defer></script>
+<script src="catalog.js?v=1.3.0" defer></script>
+<script src="app.js?v=1.3.0" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header shell">
   <a class="brand" href="#" aria-label="Stadium Atlas home"><img class="brand-mark" src="assets/stadium-mark.svg" width="44" height="38" alt=""><span>STADIUM<span class="brand-sub">ATLAS</span></span></a>
   <div class="header-meta"><span class="status-dot"></span> COLLEGE FOOTBALL</div>
-  <span class="version-badge" id="version-badge" aria-label="Stadium Atlas version 1.2.0">v1.2.0</span>
+  <span class="version-badge" id="version-badge" aria-label="Stadium Atlas version 1.3.0">v1.3.0</span>
   <a class="header-link" href="#collection">Explore <span aria-hidden="true">↗︎</span></a>
 </header>
 <section id="release-warning" class="release-warning shell" role="alert" hidden><strong>The update files need to match.</strong><p id="release-warning-message"></p></section>
@@ -67,7 +67,7 @@ window.addEventListener('DOMContentLoaded', function () {
   <section id="home-view" aria-labelledby="home-title">
     <div class="intro">
       <div><p class="eyebrow">THE PLACES THAT MAKE THE GAME.</p><h1 id="home-title">The view<br>from <em>above.</em></h1></div>
-      <div class="intro-aside"><p>A new perspective on <br>college football’s home fields.</p><span class="edition">THE COLLECTION <span aria-hidden="true">/</span> <span id="collection-total">011</span></span></div>
+      <div class="intro-aside"><p>A new perspective on <br>college football’s home fields.</p><span class="edition">THE COLLECTION <span aria-hidden="true">/</span> <span id="collection-total">016</span></span></div>
     </div>
     <section class="collection" id="collection" aria-label="Find a stadium">
       <form class="search-form" role="search"><label class="sr-only" for="stadium-search">Search schools, stadiums, or cities</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input type="search" id="stadium-search" placeholder="Search a school or stadium" autocomplete="off" spellcheck="false"><button type="button" id="clear-search" class="clear-search" aria-label="Clear search" hidden>×</button><span class="search-hint" aria-hidden="true">FIND YOUR FIELD</span></form>

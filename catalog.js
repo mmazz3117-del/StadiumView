@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.5.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.5.1';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUMS = [
   {

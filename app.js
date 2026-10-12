@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.4.0';
+  const BUILD = '1.5.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 24 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
+  const validCatalog = Array.isArray(catalog) && catalog.length === 44 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.4.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.5.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
     if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
@@ -42,6 +42,11 @@
   let viewerHistoryEntry = false;
   let closingViewer = false;
   const selectedViews = new Map();
+  const cardList = $('#stadium-list');
+  const cardPointers = new Set();
+  const blockedCardClicks = new WeakMap();
+  let cardGesture = null;
+  let lastCardFocus = null;
   $('.skip-link').addEventListener('click', event => { event.preventDefault(); $('#main').focus(); $('#main').scrollIntoView({behavior:'instant'}); });
   const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -64,6 +69,7 @@
     return (letter === 'All' || item.school.toUpperCase().startsWith(letter)) && normalize(query).split(/\s+/).filter(Boolean).every(word => searchable.includes(word));
   }
   function renderResults() {
+    cancelCardGesture();
     const results = catalog.filter(matches).sort((a,b) => a.school.localeCompare(b.school));
     const views = results.reduce((sum,item) => sum + item.views.length, 0);
     $$('.letter').forEach(button => { const selected = button.dataset.letter === letter; button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected)); });
@@ -74,10 +80,109 @@
     $('#collection-total').textContent = String(catalog.length).padStart(3,'0');
     $('#collection-note-text').textContent = catalog.length === 1 ? 'Starting in Eugene. More home fields to come.' : `${catalog.length} home fields. ${catalog.reduce((sum,item) => sum + item.views.length,0)} perspectives. More to come.`;
     $('#stadium-list').classList.toggle('multi-stadium', catalog.length > 1);
-    $('#stadium-list').innerHTML = results.map(item => `<a class="stadium-card" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(item.school)}: ${escape(item.stadium)}, ${item.views.length} aerial views"><div class="card-image"><img src="${escape(item.views[0].src)}" width="${item.views[0].width}" height="${item.views[0].height}" loading="lazy" decoding="async" alt="${escape(item.views[0].alt)}"><span class="card-viewcount">${item.views.length} AERIAL VIEWS</span></div><div class="card-body"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(item.school)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></div></a>`).join('');
+    cardList.innerHTML = results.map(item => {
+      const index = selectedViews.get(item.id) || 0;
+      const image = item.views[index];
+      const capacityYear = (item.capacityLabel || '').match(/\b20\d{2}\b/);
+      const capacityLabel = `${/approx/i.test(item.capacityLabel || '') ? 'Approx. capacity' : 'Capacity'}${capacityYear ? ` (${capacityYear[0]})` : ''}`;
+      const capacityValue = `${/\bnearly\b/i.test(item.capacityLabel || '') ? 'Nearly ' : ''}${Number(item.seatingCapacity).toLocaleString('en-US')}`;
+      const temporarySeats = /including temporary/i.test(item.capacityNote || '') ? '<small>incl. temporary seats</small>' : '';
+      const division = (item.classification || '').replace('NCAA Division I ', 'D-I ');
+      return `<article class="stadium-card" data-stadium-id="${escape(item.id)}"><div class="card-image" data-card-gallery="${escape(item.id)}"><a class="card-image-link" href="#stadium/${escape(item.id)}" aria-label="Open ${escape(item.school)}: ${escape(image.title.toLowerCase())}"><img src="${escape(image.src)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async" alt="${escape(image.alt)}" draggable="false"></a><span class="card-viewcount" aria-live="polite" aria-atomic="true">${index + 1} / ${item.views.length} · ${escape(image.title)}</span><button type="button" class="card-preview-arrow card-preview-prev" data-card-step="-1" aria-label="Previous ${escape(item.school)} aerial view" title="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><button type="button" class="card-preview-arrow card-preview-next" data-card-step="1" aria-label="Next ${escape(item.school)} aerial view" title="Next view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><a class="card-body card-detail-link" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(item.school)}: ${escape(item.stadium)}. ${escape(item.conference)}, ${escape(item.classification)}. ${escape(capacityLabel)}: ${escape(capacityValue)}. ${item.views.length} aerial views"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(item.school)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><dl class="card-facts"><div><dt>League / division · 2026</dt><dd>${escape(item.conference)}<span class="card-division" aria-label="${escape(item.classification)}">${escape(division)}</span></dd></div><div><dt>${escape(capacityLabel)}</dt><dd>${escape(capacityValue)}${temporarySeats}</dd></div></dl><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></a></article>`;
+    }).join('');
     $('#empty-state').hidden = results.length > 0;
     $('#empty-copy').textContent = query ? `No match for “${query}”${letter !== 'All' ? ` among schools starting with ${letter}` : ''}. Try another school, stadium, or city, or show the full collection.` : `No schools starting with ${letter} have been added yet. Show all ${catalog.length} stadium${catalog.length === 1 ? '' : 's'} to keep exploring.`;
   }
+  function syncCardView(item) {
+    const card = $(`.stadium-card[data-stadium-id="${item.id}"]`);
+    if (!card) return;
+    const index = selectedViews.get(item.id) || 0;
+    const image = item.views[index];
+    const preview = $('.card-image img', card);
+    preview.src = image.src;
+    preview.alt = image.alt;
+    preview.width = image.width;
+    preview.height = image.height;
+    $('.card-image-link', card).setAttribute('aria-label', `Open ${item.school}: ${image.title.toLowerCase()}`);
+    $('.card-viewcount', card).textContent = `${index + 1} / ${item.views.length} · ${image.title}`;
+  }
+  function stepCardView(gallery, direction) {
+    const item = catalog.find(item => item.id === gallery.dataset.cardGallery);
+    if (!item) return;
+    selectedViews.set(item.id, ((selectedViews.get(item.id) || 0) + direction + item.views.length) % item.views.length);
+    syncCardView(item);
+  }
+  function cancelCardGesture() {
+    const old = cardGesture;
+    cardGesture = null;
+    cardPointers.clear();
+    if (old?.gallery.hasPointerCapture?.(old.pointerId)) old.gallery.releasePointerCapture(old.pointerId);
+  }
+  cardList.addEventListener('click', event => {
+    const gallery = event.target.closest('[data-card-gallery]');
+    const control = event.target.closest('[data-card-step]');
+    if (control && gallery) { event.preventDefault(); stepCardView(gallery, Number(control.dataset.cardStep)); return; }
+    if (gallery && event.detail !== 0 && blockedCardClicks.has(gallery)) {
+      const recent = performance.now() - blockedCardClicks.get(gallery) < 800;
+      blockedCardClicks.delete(gallery);
+      if (recent) { event.preventDefault(); event.stopPropagation(); return; }
+    }
+    const link = event.target.closest('.card-image-link, .card-detail-link');
+    if (link) lastCardFocus = link;
+  }, true);
+  cardList.addEventListener('keydown', event => {
+    const link = event.target.closest('.card-image-link');
+    if (link && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
+      event.preventDefault();
+      stepCardView(link.closest('[data-card-gallery]'), event.key === 'ArrowLeft' ? -1 : 1);
+    }
+  });
+  cardList.addEventListener('dragstart', event => {
+    if (event.target.closest('[data-card-gallery]')) event.preventDefault();
+  });
+  cardList.addEventListener('pointerdown', event => {
+    const gallery = event.target.closest('[data-card-gallery]');
+    if (!gallery || event.target.closest('button') || event.button !== 0) return;
+    cardPointers.add(event.pointerId);
+    if (cardPointers.size > 1) {
+      if (cardGesture) blockedCardClicks.set(cardGesture.gallery, performance.now());
+      blockedCardClicks.set(gallery, performance.now());
+      const old = cardGesture;
+      cardGesture = null;
+      if (old?.gallery.hasPointerCapture?.(old.pointerId)) old.gallery.releasePointerCapture(old.pointerId);
+      return;
+    }
+    blockedCardClicks.delete(gallery);
+    cardGesture = {gallery, pointerId:event.pointerId, startX:event.clientX, startY:event.clientY, axis:null};
+  });
+  cardList.addEventListener('pointermove', event => {
+    const g = cardGesture;
+    if (!g || event.pointerId !== g.pointerId) return;
+    const dx = event.clientX - g.startX, dy = event.clientY - g.startY;
+    if (!g.axis && Math.max(Math.abs(dx), Math.abs(dy)) >= 10) {
+      g.axis = Math.abs(dx) > Math.abs(dy) * 1.3 ? 'horizontal' : 'vertical';
+      if (g.axis === 'horizontal') {
+        try { g.gallery.setPointerCapture(event.pointerId); } catch {}
+      }
+    }
+    if (g.axis === 'horizontal' && event.cancelable) event.preventDefault();
+  });
+  function endCardPointer(event) {
+    cardPointers.delete(event.pointerId);
+    const g = cardGesture;
+    if (!g || event.pointerId !== g.pointerId) return;
+    cardGesture = null;
+    const dx = event.clientX - g.startX, dy = event.clientY - g.startY;
+    const moved = Math.max(Math.abs(dx), Math.abs(dy)) >= 10;
+    const cancelled = event.type !== 'pointerup';
+    if (moved || cancelled) blockedCardClicks.set(g.gallery, performance.now());
+    if (!cancelled && g.axis === 'horizontal' && Math.abs(dx) >= 36 && Math.abs(dx) > Math.abs(dy) * 1.3) stepCardView(g.gallery, dx < 0 ? 1 : -1);
+    if (g.gallery.hasPointerCapture?.(event.pointerId)) g.gallery.releasePointerCapture(event.pointerId);
+  }
+  window.addEventListener('pointerup', endCardPointer);
+  window.addEventListener('pointercancel', endCardPointer);
+  cardList.addEventListener('lostpointercapture', endCardPointer);
+  window.addEventListener('blur', cancelCardGesture);
   function resetFilters() { letter = 'All'; query = ''; input.value = ''; renderResults(); }
   input.addEventListener('input', () => { query = input.value; renderResults(); });
   $('.search-form').addEventListener('submit', event => { event.preventDefault(); input.blur(); });
@@ -129,6 +234,7 @@
   $$('.view-tab').forEach(button => button.addEventListener('click', () => changeView(Number(button.dataset.view))));
 
   function route() {
+    cancelCardGesture();
     const match = location.hash.match(/^#stadium\/([a-z0-9-]+)(?:\/view\/([12]))?$/);
     const item = match && catalog.find(stadium => stadium.id === match[1]);
     const showDetail = Boolean(item);
@@ -161,8 +267,10 @@
       viewerHistoryEntry = false;
     }
     if (!showDetail && wasDetail) {
+      syncCardView(activeStadium);
       window.scrollTo({top:homeScroll,behavior:'instant'});
-      $(`.stadium-card[href="#stadium/${activeStadium.id}"]`)?.focus({preventScroll:true});
+      const link = lastCardFocus?.isConnected && lastCardFocus.getAttribute('href') === `#stadium/${activeStadium.id}` ? lastCardFocus : $(`.card-detail-link[href="#stadium/${activeStadium.id}"]`);
+      link?.focus({preventScroll:true});
     }
     wasDetail = showDetail;
     closingViewer = false;

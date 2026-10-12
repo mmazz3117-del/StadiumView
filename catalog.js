@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.4.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.5.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUMS = [
   {
@@ -1612,5 +1612,1352 @@ window.STADIUMS = [
       }
     ],
     "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Architecture, field markings, seating details and campus proportions are approximate. Image era is separate from facts checked in October 2026. Reference era: Approximately 2019, after installation of the artificial playing surface. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "auburn-jordan-hare-stadium",
+    "school": "Auburn",
+    "fullSchool": "Auburn University",
+    "team": "Tigers",
+    "teamName": "Auburn Tigers",
+    "mascot": "Aubie the Tiger",
+    "stadium": "Jordan-Hare Stadium",
+    "city": "Auburn",
+    "state": "Alabama",
+    "opened": 1939,
+    "seatingCapacity": 88043,
+    "capacityLabel": "Current published capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "Auburn",
+      "Auburn University",
+      "Tigers",
+      "Auburn Tigers",
+      "Aubie the Tiger",
+      "Jordan-Hare Stadium",
+      "Pat Dye Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://auburntigers.com/jordan-hare-stadium"
+      },
+      {
+        "title": "Auburn traditions",
+        "url": "https://auburn.edu/about/facts-figures.php"
+      },
+      {
+        "title": "2026 SEC football",
+        "url": "https://www.secsports.com/championships/2026-2029-sec-football-opponents-reveal"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://www.ncaa.org/division-i/member-schools/"
+      }
+    ],
+    "description": "Jordan-Hare's large east and west upper decks rise around a lower bowl within Auburn's red-brick campus.",
+    "capacityNote": "Auburn Athletics publishes 88,043 seats. The north end project began in 2026, is scheduled for spring 2029 and is intended to maintain more than 88,000 capacity.",
+    "openingNote": "The current Auburn Athletics facility page lists 1939 as the year opened.",
+    "artEra": "Approximately 2023–2024, before the 2025 north videoboard and 2026 north-end construction",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/auburn-aerial-2024-era.png",
+        "alt": "AI-generated Approximately 2023–2024, before the 2025 north videoboard and 2026 north-end construction reconstruction of Jordan-Hare Stadium, southeast-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/auburn-reverse-aerial-2024-era.png",
+        "alt": "AI-generated Approximately 2023–2024, before the 2025 north videoboard and 2026 north-end construction reconstruction of Jordan-Hare Stadium, northwest-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were reviewed against published photos; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Reference era: Approximately 2023–2024, before the 2025 north videoboard and 2026 north-end construction. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "arkansas-razorback-stadium",
+    "school": "Arkansas",
+    "fullSchool": "University of Arkansas",
+    "team": "Razorbacks",
+    "teamName": "Arkansas Razorbacks",
+    "mascot": "Big Red and Tusk",
+    "stadium": "Donald W. Reynolds Razorback Stadium",
+    "city": "Fayetteville",
+    "state": "Arkansas",
+    "opened": 1938,
+    "seatingCapacity": 76000,
+    "capacityLabel": "Published post-expansion capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "Arkansas",
+      "University of Arkansas",
+      "Razorbacks",
+      "Arkansas Razorbacks",
+      "Big Red and Tusk",
+      "Donald W. Reynolds Razorback Stadium",
+      "Frank Broyles Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://arkansasrazorbacks.com/pdf/mediaguide/football/2023/Facilities.pdf"
+      },
+      {
+        "title": "2026 capacity",
+        "url": "https://roarlions.com/news/2026/9/4/preview-football-travels-to-arkansas-for-sec-showdown.aspx"
+      },
+      {
+        "title": "2026 SEC football",
+        "url": "https://www.secsports.com/championships/2026-2029-sec-football-opponents-reveal"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://www.ncaa.org/division-i/member-schools/"
+      }
+    ],
+    "description": "Razorback Stadium sits below the University's hilltop campus, with steep sideline decks, red end-zone seats and contrasting north and south buildings.",
+    "capacityNote": "The 2023 Arkansas media guide lists 76,000, also used by North Alabama Athletics for its September 2026 visit. An older Arkansas facility page still lists pre-2018 72,000; the renovation-planning FAQ projected 76,212. Use 76,000 as the rounded published post-expansion figure, not attendance.",
+    "openingNote": "First game September 24, 1938; dedicated October 8, 1938.",
+    "artEra": "Approximately 2023–2024, after the 2018 north-end addition and 2019 return to natural grass",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/arkansas-aerial-2024-era.png",
+        "alt": "AI-generated Approximately 2023–2024, after the 2018 north-end addition and 2019 return to natural grass reconstruction of Donald W. Reynolds Razorback Stadium, south-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/arkansas-reverse-aerial-2024-era.png",
+        "alt": "AI-generated Approximately 2023–2024, after the 2018 north-end addition and 2019 return to natural grass reconstruction of Donald W. Reynolds Razorback Stadium, north-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were reviewed against published photos; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Reference era: Approximately 2023–2024, after the 2018 north-end addition and 2019 return to natural grass. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "ole-miss-vaught-hemingway-stadium",
+    "school": "Ole Miss",
+    "fullSchool": "University of Mississippi",
+    "team": "Rebels",
+    "teamName": "Ole Miss Rebels",
+    "mascot": "Tony the Landshark",
+    "mascotNote": "The current official traditions page still identifies Tony the Landshark as the mascot. This does not independently verify frequency of present-day sideline appearances.",
+    "stadium": "Vaught-Hemingway Stadium/Hollingsworth Field",
+    "city": "Oxford",
+    "state": "Mississippi",
+    "opened": 1915,
+    "seatingCapacity": 64038,
+    "capacityLabel": "Current published capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "Ole Miss",
+      "University of Mississippi",
+      "Rebels",
+      "Ole Miss Rebels",
+      "Tony the Landshark",
+      "Vaught-Hemingway Stadium/Hollingsworth Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://olemisssports.com/facilities/vaught-hemingway-stadiumhollingsworth-field/3"
+      },
+      {
+        "title": "The Landshark",
+        "url": "https://olemisssports.com/sports/2018/7/20/trads-landshark-html"
+      },
+      {
+        "title": "2026 SEC football",
+        "url": "https://www.secsports.com/championships/2026-2029-sec-football-opponents-reveal"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://www.ncaa.org/division-i/member-schools/"
+      }
+    ],
+    "description": "The Vaught is framed by red-roofed athletic facilities, the north entry plaza and wooded Oxford campus.",
+    "capacityNote": "Ole Miss Athletics lists 64,038 following the 2016 north enclosure; record game attendances can exceed the listed seating capacity.",
+    "openingNote": "Students helped build the first football grandstand at the current site in 1915.",
+    "artEra": "Approximately 2019–2023, after the 2016 enclosure and completed 2017 north plaza",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/ole-miss-aerial-2021-era.png",
+        "alt": "AI-generated Approximately 2019–2023, after the 2016 enclosure and completed 2017 north plaza reconstruction of Vaught-Hemingway Stadium/Hollingsworth Field, south-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/ole-miss-reverse-aerial-2021-era.png",
+        "alt": "AI-generated Approximately 2019–2023, after the 2016 enclosure and completed 2017 north plaza reconstruction of Vaught-Hemingway Stadium/Hollingsworth Field, north-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were reviewed against published photos; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Reference era: Approximately 2019–2023, after the 2016 enclosure and completed 2017 north plaza. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "mississippi-state-davis-wade-stadium",
+    "school": "Mississippi State",
+    "fullSchool": "Mississippi State University",
+    "team": "Bulldogs",
+    "teamName": "Mississippi State Bulldogs",
+    "mascot": "Bully",
+    "stadium": "Davis Wade Stadium at Scott Field",
+    "city": "Starkville",
+    "state": "Mississippi",
+    "opened": 1914,
+    "seatingCapacity": 60311,
+    "capacityLabel": "Official 2025 media-guide capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "Mississippi State",
+      "Mississippi State University",
+      "Bulldogs",
+      "Mississippi State Bulldogs",
+      "Bully",
+      "Davis Wade Stadium at Scott Field"
+    ],
+    "sources": [
+      {
+        "title": "2025 stadium guide",
+        "url": "https://static.hailstate.com/custompages/pdf/fb/fb_25mg.pdf"
+      },
+      {
+        "title": "Bully and traditions",
+        "url": "https://hailstate.com/sports/2025/6/3/traditions"
+      },
+      {
+        "title": "2026 SEC football",
+        "url": "https://www.secsports.com/championships/2026-2029-sec-football-opponents-reveal"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://www.ncaa.org/division-i/member-schools/"
+      }
+    ],
+    "description": "Davis Wade's two tall sideline decks, low north enclosure and open south scoreboard end overlook Starkville's wooded campus.",
+    "capacityNote": "The official 2025 media guide lists 60,311. Its stadium timeline dates this figure to the 2022 west-side Balconies project; the 61,337 figure from the 2014 expansion is historical.",
+    "openingNote": "First game at the present site was October 3, 1914.",
+    "artEra": "Approximately 2018–2021, after the 2014 north enclosure and before the 2022 west Balconies changes",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/mississippi-state-aerial-2019-era.png",
+        "alt": "AI-generated Approximately 2018–2021, after the 2014 north enclosure and before the 2022 west Balconies changes reconstruction of Davis Wade Stadium at Scott Field, southwest-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/mississippi-state-reverse-aerial-2019-era.png",
+        "alt": "AI-generated Approximately 2018–2021, after the 2014 north enclosure and before the 2022 west Balconies changes reconstruction of Davis Wade Stadium at Scott Field, north-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were reviewed against published photos; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Reference era: Approximately 2018–2021, after the 2014 north enclosure and before the 2022 west Balconies changes. Original images: 1672 × 940 and 1672 × 941 pixels."
+  },
+  {
+    "id": "missouri-memorial-stadium",
+    "school": "Missouri",
+    "fullSchool": "University of Missouri",
+    "team": "Tigers",
+    "teamName": "Missouri Tigers",
+    "mascot": "Truman the Tiger",
+    "stadium": "Memorial Stadium/Faurot Field",
+    "city": "Columbia",
+    "state": "Missouri",
+    "opened": 1926,
+    "seatingCapacity": 65000,
+    "capacityLabel": "Nearly 65,000 after 2026 expansion",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "Missouri",
+      "University of Missouri",
+      "Tigers",
+      "Missouri Tigers",
+      "Truman the Tiger",
+      "Memorial Stadium/Faurot Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium history",
+        "url": "https://mutigers.com/memorial-stadiumfaurot-field"
+      },
+      {
+        "title": "2026 expansion",
+        "url": "https://mutigers.com/memorial-stadium-project"
+      },
+      {
+        "title": "2026 stadium views",
+        "url": "https://showme.missouri.edu/2026/the-bowl-game/"
+      },
+      {
+        "title": "Truman the Tiger",
+        "url": "https://mutigers.com/documents/download/2024/11/11/Handbook.pdf"
+      },
+      {
+        "title": "2026 SEC football",
+        "url": "https://www.secsports.com/championships/2026-2029-sec-football-opponents-reveal"
+      }
+    ],
+    "description": "Memorial Stadium's 2026 north enclosure preserves the Rock M while completing the bowl opposite the distinct 2019 south football facility.",
+    "capacityNote": "The official completed-project page describes total capacity as nearly 65,000 after the 2026 Centennial Project. 65,000 is an approximate display value, not a verified exact seat count. The separate legacy facility page still describes temporary 57,321 capacity for the 2025 construction season; do not use it as 2026 capacity.",
+    "openingNote": "Memorial Stadium opened in October 1926; the stadium commemorates Missouri students and graduates lost in World War I.",
+    "artEra": "Early fall 2026, following the completed north-end Centennial Project",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/missouri-aerial-2026-era.png",
+        "alt": "AI-generated Early fall 2026, following the completed north-end Centennial Project reconstruction of Memorial Stadium/Faurot Field, south-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/missouri-reverse-aerial-2026-era.png",
+        "alt": "AI-generated Early fall 2026, following the completed north-end Centennial Project reconstruction of Memorial Stadium/Faurot Field, north-side aerial, with surrounding campus context.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were reviewed against published photos; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Artwork era is separate from current facts verified October 12, 2026. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "kentucky-kroger-field",
+    "school": "Kentucky",
+    "fullSchool": "University of Kentucky",
+    "team": "Wildcats",
+    "teamName": "Kentucky Wildcats",
+    "mascot": "The Wildcat and Scratch",
+    "stadium": "Kroger Field",
+    "city": "Lexington",
+    "state": "Kentucky",
+    "opened": 1973,
+    "seatingCapacity": 61000,
+    "capacityLabel": "Approx. current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "Kentucky",
+      "University of Kentucky",
+      "Wildcats",
+      "Kentucky Wildcats",
+      "Kroger Field",
+      "Commonwealth Stadium",
+      "C. M. Newton Grounds",
+      "The Wildcat",
+      "Scratch"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://ukathletics.com/facilities/kroger-field/"
+      },
+      {
+        "title": "Kentucky mascots",
+        "url": "https://ukathletics.com/mascots/"
+      },
+      {
+        "title": "2026 SEC football",
+        "url": "https://www.secsports.com/fbsched26-kentucky"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/FBS.pdf"
+      },
+      {
+        "title": "2021 aerial reference",
+        "url": "https://medicine.uky.edu/sites/default/files/2022-05/210825KrogerField07sl.jpg"
+      }
+    ],
+    "description": "Kentucky's blue-seated enclosed bowl sits among broad campus parking lots and the football training complex in southern Lexington.",
+    "capacityNote": "UK Athletics lists approximately 61,000 following the 2015 renovation; 2025 official SEC attendance tables give 61,000. Historical 67,606 and original 57,800 figures describe earlier configurations.",
+    "openingNote": "Opened September 15, 1973, as Commonwealth Stadium; renamed Kroger Field in 2017. The playing surface retains the C. M. Newton Grounds name.",
+    "artEra": "Approximately August 2021, before the 2022 videoboard enlargement and 2023 practice-facility upgrades",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/kentucky-aerial-2021-era.png",
+        "alt": "AI-generated approximately 2021 aerial reconstruction of Kroger Field from the east end, with the blue seating bowl and campus parking lots.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/kentucky-reverse-aerial-2021-era.png",
+        "alt": "AI-generated approximately 2021 complementary Kroger Field view from the west end, showing the training complex beyond the stadium.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs and maps; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately August 2021, before the 2022 videoboard enlargement and 2023 practice-facility upgrades. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "south-carolina-williams-brice-stadium",
+    "school": "South Carolina",
+    "fullSchool": "University of South Carolina",
+    "team": "Gamecocks",
+    "teamName": "South Carolina Gamecocks",
+    "mascot": "Cocky; Sir Big Spur (live mascot)",
+    "stadium": "Williams-Brice Stadium",
+    "city": "Columbia",
+    "state": "South Carolina",
+    "opened": 1934,
+    "seatingCapacity": 77559,
+    "capacityLabel": "Current published capacity; 2026 seating retained",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "South Carolina",
+      "University of South Carolina",
+      "Gamecocks",
+      "South Carolina Gamecocks",
+      "Williams-Brice Stadium",
+      "Williams Brice",
+      "Carolina Stadium",
+      "Cocky",
+      "Sir Big Spur"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://gamecocksonline.com/facilities/williams-brice-stadium/"
+      },
+      {
+        "title": "Renovation FAQ",
+        "url": "https://gamecocksonline.com/wbsreimagined-faqs/"
+      },
+      {
+        "title": "2026 SEC football",
+        "url": "https://www.secsports.com/fbsched26-southcarolina"
+      },
+      {
+        "title": "Meet Cocky",
+        "url": "https://gamecocksonline.com/cocky-appearance-request/"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/FBS.pdf"
+      }
+    ],
+    "description": "Williams-Brice rises over Columbia's off-campus stadium district with exposed white light frames, tall sideline decks and surrounding plazas, fairground lots and tailgate lawns.",
+    "capacityNote": "The official facilities page publishes 77,559. The Reimagined project's FAQ states no seats are impacted in 2026, with new west-side premium areas opening in 2027. This is distinct from roughly 80,000 attendance language and earlier capacity figures.",
+    "openingNote": "First game as Carolina Stadium was October 6, 1934; dedicated as Williams-Brice Stadium on September 9, 1972.",
+    "artEra": "Approximately August 2024, before December 2025 Reimagined construction and the 2025 garnet end-zone paint",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/south-carolina-aerial-2024-era.png",
+        "alt": "AI-generated approximately August 2024 Williams-Brice Stadium aerial reconstruction from the south, with north scoreboard and fairground parking beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/south-carolina-reverse-aerial-2024-era-v3.png",
+        "alt": "AI-generated complementary 2024 Williams-Brice Stadium view from the north, with the scoreboard rear and parking foreground, west pressbox right and curved south stand beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs and maps; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately August 2024, before December 2025 Reimagined construction and the 2025 garnet end-zone paint. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "vanderbilt-firstbank-stadium",
+    "school": "Vanderbilt",
+    "fullSchool": "Vanderbilt University",
+    "team": "Commodores",
+    "teamName": "Vanderbilt Commodores",
+    "mascot": "Mr. C (Mr. Commodore)",
+    "stadium": "FirstBank Stadium",
+    "city": "Nashville",
+    "state": "Tennessee",
+    "opened": 1922,
+    "seatingCapacity": 35000,
+    "capacityLabel": "2026 football capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "SEC",
+    "aliases": [
+      "Vanderbilt",
+      "Vanderbilt University",
+      "Vandy",
+      "Commodores",
+      "Vanderbilt Commodores",
+      "FirstBank Stadium",
+      "Vanderbilt Stadium",
+      "Dudley Field",
+      "Mr. C",
+      "Mr. Commodore"
+    ],
+    "sources": [
+      {
+        "title": "Stadium history",
+        "url": "https://vucommodores.com/firstbankstadium-history"
+      },
+      {
+        "title": "2026 capacity",
+        "url": "https://vucommodores.com/news/2026/09/8/vufb-game-week-delaware"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=736"
+      },
+      {
+        "title": "Meet Mr. C",
+        "url": "https://vucommodores.com/mr-commodore"
+      },
+      {
+        "title": "2026 aerial reference",
+        "url": "https://theamerican.org/news/2026/3/24/championships-american-conference-announces-2026-womens-lacrosse-championship-at-firstbank-stadium.aspx"
+      }
+    ],
+    "description": "Vanderbilt's compact Nashville stadium combines steep silver sideline stands with newly enclosed modern end zones, beside Hawkins Field and Memorial Gymnasium.",
+    "capacityNote": "35,000 in official 2025 stadium tables and a September 2026 sellout report, after the 2024–25 end-zone projects. The history page's introductory 40,350 figure is an unrevised pre-renovation number and is not used as current capacity.",
+    "openingNote": "Dudley Field opened at the present site on October 14, 1922; the substantially rebuilt Vanderbilt Stadium was dedicated in 1981. FirstBank naming began in 2022.",
+    "artEra": "Early 2026 completed stadium configuration, following the 2025 south-end-zone opening",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/vanderbilt-aerial-2026-era.png",
+        "alt": "AI-generated early-2026 FirstBank Stadium reconstruction from the west, with completed end-zone facilities, Hawkins Field and Memorial Gymnasium.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/vanderbilt-reverse-aerial-2026-era.png",
+        "alt": "AI-generated complementary early-2026 FirstBank Stadium view from the east above Hawkins Field, looking toward the west press box.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs and maps; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "usc-los-angeles-memorial-coliseum",
+    "school": "USC",
+    "fullSchool": "University of Southern California",
+    "team": "Trojans",
+    "teamName": "USC Trojans",
+    "mascot": "Traveler",
+    "stadium": "United Airlines Field at Los Angeles Memorial Coliseum",
+    "city": "Los Angeles",
+    "state": "California",
+    "opened": 1923,
+    "seatingCapacity": 77500,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "aliases": [
+      "USC",
+      "Southern California",
+      "University of Southern California",
+      "Trojans",
+      "USC Trojans",
+      "Los Angeles Memorial Coliseum",
+      "LA Coliseum",
+      "Coliseum",
+      "United Airlines Field",
+      "Traveler"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://usctrojans.com/facilities/detail/2"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=657"
+      },
+      {
+        "title": "Meet Traveler",
+        "url": "https://usctrojans.com/sports/2018/7/25/usc-history-traditions-traveler-mascot-horse"
+      },
+      {
+        "title": "2019 renovation",
+        "url": "https://usctrojans.com/news/2019/8/14/usc-trojans-football-renovation-united-airlines-field-los-angeles-memorial-coliseum"
+      },
+      {
+        "title": "2019 aerial reference",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/usctrojans.com/images/2019/8/15/usc_trojans_united_airlines_field_los_angeles_memorial_coliseum_aerial.jpg"
+      }
+    ],
+    "description": "USC's historic off-campus home anchors Exposition Park with a vast cardinal bowl, Olympic peristyle and the modern south-side Scholarship Club Tower.",
+    "capacityNote": "USC's facilities page publishes 77,500, the configuration established by the completed 2019 renovation. Earlier 92,348/93,607 and construction-year 78,467 figures are not current capacity.",
+    "openingNote": "Construction completed May 1, 1923; USC has played here since 1923. United Airlines naming applies to the field, not a replacement of the historic stadium name.",
+    "artEra": "Approximately August 2019, after the Scholarship Club Tower renovation and before completion of the Lucas Museum",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/usc-aerial-2019-era-v2.png",
+        "alt": "AI-generated approximately August 2019 Los Angeles Memorial Coliseum aerial reconstruction from the peristyle end, with the south Scholarship Club Tower and Exposition Park.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/usc-reverse-aerial-2019-era-v2.png",
+        "alt": "AI-generated complementary 2019 Coliseum view from the west, with peristyle beyond the field and south-side club tower on the right.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs and maps; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately August 2019, after the Scholarship Club Tower renovation and before completion of the Lucas Museum. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "ucla-rose-bowl",
+    "school": "UCLA",
+    "fullSchool": "University of California, Los Angeles",
+    "team": "Bruins",
+    "teamName": "UCLA Bruins",
+    "mascot": "Joe and Josie Bruin",
+    "stadium": "Rose Bowl Stadium",
+    "city": "Pasadena",
+    "state": "California",
+    "opened": 1922,
+    "seatingCapacity": 81258,
+    "capacityLabel": "2026 published capacity after south-end renovation",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "aliases": [
+      "UCLA",
+      "University of California, Los Angeles",
+      "Bruins",
+      "UCLA Bruins",
+      "Rose Bowl",
+      "Rose Bowl Stadium",
+      "Spieker Field",
+      "Spieker Field at the Rose Bowl",
+      "Joe Bruin",
+      "Josie Bruin"
+    ],
+    "sources": [
+      {
+        "title": "2026 stadium guide",
+        "url": "https://storage.googleapis.com/uclabruins-com-prod/2026/10/06/7E8PRXanvCI37yvTW6EpYIzluAxJxrw4QVmoIZFP.pdf"
+      },
+      {
+        "title": "Bruin traditions",
+        "url": "https://uclabruins.com/news/2013/04/17/ucla-bruins-traditions-1"
+      },
+      {
+        "title": "2025 aerial reference",
+        "url": "https://uclabruins.com/news/2025/10/02/wax-motif-to-headline-bruinfest-concert-series-at-ucla-penn-state-football-game"
+      },
+      {
+        "title": "Rose Bowl setting",
+        "url": "https://www.visitpasadena.com/directory/rose-bowl-loop/"
+      },
+      {
+        "title": "Big Ten membership",
+        "url": "https://newsroom.ucla.edu/stories/ucla-officially-joins-big-ten-conference"
+      }
+    ],
+    "description": "UCLA's off-campus home sits in Pasadena's Arroyo Seco, surrounded by Brookside golf greens and wooded slopes, with a broad shallow bowl and long west-side pavilion.",
+    "capacityNote": "UCLA's October 6, 2026 game notes publish 81,258 on pages 2 and 19, after the 2025–26 offseason south-end renovation. This supersedes older 89,702/91,136 figures. The artwork deliberately represents September 2025, before that renovation, and does not depict the current seating inventory.",
+    "openingNote": "First game October 28, 1922. UCLA has played its home games here since September 11, 1982; the playing surface received the Spieker Field name in 2017.",
+    "artEra": "September 2025, before the 2026 South Field Club renovation",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/ucla-aerial-2025-era.png",
+        "alt": "AI-generated September 2025 Rose Bowl reconstruction from the south, showing UCLA north tarps, west pavilion, Brookside golf and the San Gabriel Mountains.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/ucla-reverse-aerial-2025-era-v2.png",
+        "alt": "AI-generated complementary September 2025 Rose Bowl view from northeast toward southwest, with the west pavilion at right, north scoreboard rear, golf and a distant Los Angeles skyline.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs and maps; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: September 2025, before the 2026 South Field Club renovation. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "wisconsin-camp-randall",
+    "school": "Wisconsin",
+    "fullSchool": "University of Wisconsin–Madison",
+    "team": "Badgers",
+    "teamName": "Wisconsin Badgers",
+    "mascot": "Bucky Badger",
+    "stadium": "Camp Randall Stadium",
+    "city": "Madison",
+    "state": "Wisconsin",
+    "opened": 1917,
+    "seatingCapacity": 76030,
+    "capacityLabel": "Official 2026 published capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "aliases": [
+      "Wisconsin",
+      "Badgers",
+      "Bucky Badger",
+      "Camp Randall",
+      "University of Wisconsin–Madison"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://uwbadgers.com/sports/2015/08/21/gen_2014010132"
+      },
+      {
+        "title": "Stadium history",
+        "url": "https://uwbadgers.com/news/2017/2/28/general-camp-randall-stadium-fact-sheet"
+      },
+      {
+        "title": "Bucky and traditions",
+        "url": "https://uwbadgers.com/sports/2015/08/21/GEN_20140101235"
+      },
+      {
+        "title": "2026 Big Ten football",
+        "url": "https://bigten.org/standings.aspx?path=football"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/FBS.pdf"
+      }
+    ],
+    "description": "Camp Randall combines a west-side upper grandstand, an east-side suite structure and the orange-roofed historic Wisconsin Field House at its south end.",
+    "capacityNote": "The current Wisconsin Athletics facility overview lists 76,030. Earlier post-2022 figures and the former 80,321 capacity do not describe the latest published total.",
+    "openingNote": "Opened in 1917. The centennial fact sheet distinguishes the October 6 first game from the November 3 dedication; the current facility overview conflates those dates, so only the year is used in the catalog.",
+    "artEra": "Approximately 2023, after the south-end renovation and before 2026–27 indoor-facility construction",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/wisconsin-aerial-2023-era-v3.png",
+        "alt": "AI-generated approximately 2023, after the south-end renovation and before 2026–27 indoor-facility construction southwest-side aerial reconstruction of Camp Randall Stadium in Madison, Wisconsin.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/wisconsin-reverse-aerial-2023-era-v2.png",
+        "alt": "AI-generated approximately 2023, after the south-end renovation and before 2026–27 indoor-facility construction north-side reverse aerial reconstruction of Camp Randall Stadium in Madison, Wisconsin.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against reference photographs; fine seating geometry, field markings, distant buildings and paired-view proportions remain approximate. Image era is separate from facts verified October 12, 2026. Reference era: Approximately 2023, after the south-end renovation and before 2026–27 indoor-facility construction. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "iowa-kinnick",
+    "school": "Iowa",
+    "fullSchool": "University of Iowa",
+    "team": "Hawkeyes",
+    "teamName": "Iowa Hawkeyes",
+    "mascot": "Herky the Hawk",
+    "stadium": "Kinnick Stadium",
+    "city": "Iowa City",
+    "state": "Iowa",
+    "opened": 1929,
+    "seatingCapacity": 69250,
+    "capacityLabel": "Current official published capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "aliases": [
+      "Iowa",
+      "Hawkeyes",
+      "Herky the Hawk",
+      "Kinnick Stadium",
+      "University of Iowa"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://hawkeyesports.com/kinnick-stadium"
+      },
+      {
+        "title": "Herky the Hawk",
+        "url": "https://hawkeyesports.com/herky-security"
+      },
+      {
+        "title": "2023 aerial reference",
+        "url": "https://hr.uiowa.edu/sites/hr.uiowa.edu/files/2024-03/2023_10_21-Football-Minnesota-Drone-007_0.JPG"
+      },
+      {
+        "title": "2026 Big Ten football",
+        "url": "https://bigten.org/standings.aspx?path=football"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/FBS.pdf"
+      }
+    ],
+    "description": "Kinnick’s steep, close-set sideline bleachers sit beside the curved Stead Family Children’s Hospital, with the glass press facility along the west side.",
+    "capacityNote": "Iowa Athletics lists 69,250 following the Kinnick Edge north-end project completed before the 2019 season. The earlier 70,585 total predates that work.",
+    "artEra": "Approximately 2023, after the Kinnick Edge project",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/iowa-aerial-2023-era.png",
+        "alt": "AI-generated approximately 2023, after the kinnick edge project north-side aerial reconstruction of Kinnick Stadium in Iowa City, Iowa.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/iowa-reverse-aerial-2023-era.png",
+        "alt": "AI-generated approximately 2023, after the kinnick edge project south-side reverse aerial reconstruction of Kinnick Stadium in Iowa City, Iowa.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against reference photographs; fine seating geometry, field markings, distant buildings and paired-view proportions remain approximate. Image era is separate from facts verified October 12, 2026. Reference era: Approximately 2023, after the Kinnick Edge project. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "nebraska-memorial",
+    "school": "Nebraska",
+    "fullSchool": "University of Nebraska–Lincoln",
+    "team": "Cornhuskers",
+    "teamName": "Nebraska Cornhuskers",
+    "mascot": "Herbie Husker and Lil’ Red",
+    "stadium": "Memorial Stadium",
+    "city": "Lincoln",
+    "state": "Nebraska",
+    "opened": 1923,
+    "seatingCapacity": 82841,
+    "capacityLabel": "Official 2026 media-guide capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "aliases": [
+      "Nebraska",
+      "Cornhuskers",
+      "Huskers",
+      "Memorial Stadium",
+      "Tom Osborne Field",
+      "Herbie Husker",
+      "Lil Red"
+    ],
+    "sources": [
+      {
+        "title": "2026 stadium guide",
+        "url": "https://huskers.com/documents/09cae873-320e-4fa1-a470-fe1a221cbe2f.pdf"
+      },
+      {
+        "title": "Stadium overview",
+        "url": "https://huskers.com/facilities/memorial-stadium"
+      },
+      {
+        "title": "Future renovation",
+        "url": "https://huskers.com/news/2026/04/25/regents-approve-big-red-rebuild-project"
+      },
+      {
+        "title": "Nebraska mascots",
+        "url": "https://www.huskeralum.org/s/1620/magazine/interior.aspx?gid=1&pgid=1623&sid=1620"
+      },
+      {
+        "title": "2026 Big Ten football",
+        "url": "https://bigten.org/standings.aspx?path=football"
+      }
+    ],
+    "description": "Nebraska’s steep, angular seating banks sit between a west glass suite tower and a towered east expansion above the historic brick exterior.",
+    "capacityNote": "The 2026 Nebraska Football Media Guide, page 3, lists 82,841. This supersedes the older 85,458 tour-handout figure and the facility overview’s stale description of more than 85,000. The approved Big Red Rebuild anticipates reduced capacity in 2027 and completion in 2028; its future total is not used here.",
+    "artEra": "Approximately 2024, before the 2025 turf design and the future Big Red Rebuild",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/nebraska-aerial-2024-era.png",
+        "alt": "AI-generated approximately 2024, before the 2025 turf design and the future big red rebuild southeast-side aerial reconstruction of Memorial Stadium, Tom Osborne Field in Lincoln, Nebraska.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/nebraska-reverse-aerial-2024-era-v3.png",
+        "alt": "AI-generated approximately 2024, before the 2025 turf design and the future big red rebuild northwest-side reverse aerial reconstruction of Memorial Stadium, Tom Osborne Field in Lincoln, Nebraska.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against reference photographs; fine seating geometry, field markings, distant buildings and paired-view proportions remain approximate. Image era is separate from facts verified October 12, 2026. Reference era: Approximately 2024, before the 2025 turf design and the future Big Red Rebuild. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "michigan-state-spartan",
+    "school": "Michigan State",
+    "fullSchool": "Michigan State University",
+    "team": "Spartans",
+    "teamName": "Michigan State Spartans",
+    "mascot": "Sparty",
+    "stadium": "Spartan Stadium",
+    "city": "East Lansing",
+    "state": "Michigan",
+    "opened": 1923,
+    "seatingCapacity": 74866,
+    "capacityLabel": "Current official published capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "aliases": [
+      "Michigan State",
+      "MSU",
+      "Spartans",
+      "Sparty",
+      "Spartan Stadium",
+      "Macklin Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://msuspartans.com/facilities/spartan-stadium/12"
+      },
+      {
+        "title": "Sparty and traditions",
+        "url": "https://msuspartans.com/sports/2018/7/20/trads-msu-traditions-html"
+      },
+      {
+        "title": "Aerial reference",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/msuspartans.com/images/2021/9/21/48766_02_71.jpg"
+      },
+      {
+        "title": "2026 Big Ten football",
+        "url": "https://bigten.org/standings.aspx?path=football"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/FBS.pdf"
+      }
+    ],
+    "description": "Spartan Stadium pairs two tall cantilevered sideline decks with a lower oval bowl, a west-side glass suite tower and the nearby Ralph Young track.",
+    "capacityNote": "The official facility page lists 74,866 following expanded sideline chairback seating before the 2021 season. The older 75,005 total is retained on some historical pages.",
+    "artEra": "Approximately 2023, before the 2025 video-board replacement",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/michigan-state-aerial-2023-era.png",
+        "alt": "AI-generated approximately 2023, before the 2025 video-board replacement southeast-side aerial reconstruction of Spartan Stadium in East Lansing, Michigan.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/michigan-state-reverse-aerial-2023-era.png",
+        "alt": "AI-generated approximately 2023, before the 2025 video-board replacement northwest-side reverse aerial reconstruction of Spartan Stadium in East Lansing, Michigan.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against reference photographs; fine seating geometry, field markings, distant buildings and paired-view proportions remain approximate. Image era is separate from facts verified October 12, 2026. Reference era: Approximately 2023, before the 2025 video-board replacement. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "minnesota-huntington-bank",
+    "school": "Minnesota",
+    "fullSchool": "University of Minnesota Twin Cities",
+    "team": "Golden Gophers",
+    "teamName": "Minnesota Golden Gophers",
+    "mascot": "Goldy Gopher",
+    "stadium": "Huntington Bank Stadium",
+    "city": "Minneapolis",
+    "state": "Minnesota",
+    "opened": 2009,
+    "seatingCapacity": 50805,
+    "capacityLabel": "Current official football capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "aliases": [
+      "Minnesota",
+      "Golden Gophers",
+      "Goldy Gopher",
+      "Huntington Bank Stadium",
+      "TCF Bank Stadium",
+      "University of Minnesota"
+    ],
+    "sources": [
+      {
+        "title": "Stadium overview",
+        "url": "https://gophersports.com/sports/2022/10/18/huntington-bank-stadium"
+      },
+      {
+        "title": "Capacity history",
+        "url": "https://gophersports.com/sports/2018/5/21/sports-m-footbl-spec-rel-attendance-records-html"
+      },
+      {
+        "title": "Stadium opening",
+        "url": "https://gophersports.com/sports/2019/1/25/gss-facilities-tcf-bank-stadium"
+      },
+      {
+        "title": "2026 Big Ten football",
+        "url": "https://bigten.org/standings.aspx?path=football"
+      },
+      {
+        "title": "NCAA classification",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/FBS.pdf"
+      }
+    ],
+    "description": "A red-brick and limestone horseshoe opens west toward Williams Arena, Mariucci Arena and the distant Minneapolis skyline.",
+    "capacityNote": "Minnesota’s attendance record gives 50,805 for 2009–13 and 2016–present, distinguishing the temporary 52,525 configuration used in 2014–15. A premium-seating overview rounds the figure to 50,000.",
+    "artEra": "Approximately 2022, in Huntington Bank naming era",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/minnesota-aerial-2022-era.png",
+        "alt": "AI-generated approximately 2022, in huntington bank naming era east-side aerial reconstruction of Huntington Bank Stadium in Minneapolis, Minnesota.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/minnesota-reverse-aerial-2022-era.png",
+        "alt": "AI-generated approximately 2022, in huntington bank naming era west-side reverse aerial reconstruction of Huntington Bank Stadium in Minneapolis, Minnesota.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against reference photographs; fine seating geometry, field markings, distant buildings and paired-view proportions remain approximate. Image era is separate from facts verified October 12, 2026. Reference era: Approximately 2022, in Huntington Bank naming era. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "virginia-tech-lane-stadium",
+    "school": "Virginia Tech",
+    "fullSchool": "Virginia Polytechnic Institute and State University",
+    "team": "Hokies",
+    "teamName": "Virginia Tech Hokies",
+    "mascot": "HokieBird",
+    "stadium": "Lane Stadium/Worsham Field",
+    "city": "Blacksburg",
+    "state": "Virginia",
+    "opened": 1965,
+    "seatingCapacity": 65632,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "Virginia Tech",
+      "VT",
+      "Hokies",
+      "HokieBird",
+      "Lane Stadium",
+      "Worsham Field",
+      "Blacksburg"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://hokiesports.com/lane-stadium-worsham-field"
+      },
+      {
+        "title": "Meet the HokieBird",
+        "url": "https://hokiesports.com/spirit-hokiebird-requests"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=742"
+      },
+      {
+        "title": "2026 ACC football",
+        "url": "https://theacc.com/standings.aspx?path=football&view=default"
+      }
+    ],
+    "description": "Virginia Tech’s four-stand football home pairs towering sideline terraces with a stone-and-glass west facade, woodland and nearby training fields.",
+    "capacityNote": "Virginia Tech Athletics publishes 65,632 following the 2012 west-side club-seat changes; opening and earlier expanded capacities differ.",
+    "openingNote": "First used September 24, 1965 for a freshman game; varsity debut October 2, 1965. Original construction finished in 1968.",
+    "artEra": "Approximately 2025, using an official aerial hosted April 2025",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/lane-stadium-aerial-2025-era.png",
+        "alt": "AI-generated approximately 2025 south-end aerial of Lane Stadium/Worsham Field, Virginia Tech, with woodland and training-field surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/lane-stadium-reverse-aerial-2025-era.png",
+        "alt": "AI-generated approximately 2025 north-end complementary aerial of Lane Stadium/Worsham Field, Virginia Tech, with woodland and training-field surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately 2025, using an official aerial hosted April 2025. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "virginia-scott-stadium",
+    "school": "Virginia",
+    "fullSchool": "University of Virginia",
+    "team": "Cavaliers",
+    "teamName": "Virginia Cavaliers",
+    "mascot": "Cavman (costumed Cavalier); mounted Cavalier",
+    "stadium": "Carl Smith Center, home of David A. Harrison III Field at Scott Stadium",
+    "city": "Charlottesville",
+    "state": "Virginia",
+    "opened": 1931,
+    "seatingCapacity": 61500,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "Virginia",
+      "UVA",
+      "Cavaliers",
+      "Wahoos",
+      "Hoos",
+      "Cavman",
+      "Scott Stadium",
+      "Carl Smith Center",
+      "Harrison Field"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://virginiasports.com/scott-stadium"
+      },
+      {
+        "title": "Cavalier traditions",
+        "url": "https://virginiasports.com/traditions"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=746"
+      },
+      {
+        "title": "Cavalier and Cavman",
+        "url": "https://communications.virginia.edu/sites/communications/files/VirginiaStandardArtSheet.20220418.pdf"
+      },
+      {
+        "title": "2021 aerial reference",
+        "url": "https://news.virginia.edu/content/uva-announces-plans-person-final-exercises-classes-2020-2021"
+      }
+    ],
+    "description": "Virginia’s two-tier horseshoe frames a grassy north-end hill and pergola, surrounded by leafy Charlottesville Grounds.",
+    "capacityNote": "Virginia Athletics currently lists 61,500. Record crowds over that number are attendance figures, not the published seated capacity.",
+    "openingNote": "Dedicated October 15, 1931; major expansion completed in 2000.",
+    "artEra": "Approximately 2021, before the 2024 enlarged north videoboard",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/scott-stadium-aerial-2021-era-v5.png",
+        "alt": "AI-generated approximately 2021, before the 2024 enlarged north videoboard south-end aerial of Carl Smith Center, home of David A. Harrison III Field at Scott Stadium, Charlottesville, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/scott-stadium-reverse-aerial-2021-era-v3.png",
+        "alt": "AI-generated approximately 2021, before the 2024 enlarged north videoboard north-end complementary aerial of Carl Smith Center, home of David A. Harrison III Field at Scott Stadium, Charlottesville, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. End-zone paint uses simplified correctly spelled white lettering rather than the exact diamond design. Reference era: Approximately 2021, before the 2024 enlarged north videoboard. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "north-carolina-kenan-stadium",
+    "school": "North Carolina",
+    "fullSchool": "University of North Carolina at Chapel Hill",
+    "team": "Tar Heels",
+    "teamName": "North Carolina Tar Heels",
+    "mascot": "Rameses and Rameses Jr. (RJ)",
+    "stadium": "Chris Smith Field at Kenan Stadium",
+    "city": "Chapel Hill",
+    "state": "North Carolina",
+    "opened": 1927,
+    "seatingCapacity": 50500,
+    "capacityLabel": "Current published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "North Carolina",
+      "UNC",
+      "Carolina",
+      "Tar Heels",
+      "Rameses",
+      "RJ",
+      "Kenan Stadium",
+      "Kenan Memorial Stadium",
+      "Chris Smith Field",
+      "Chapel Hill"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://goheels.com/facilities/kenan-stadium/159"
+      },
+      {
+        "title": "Rameses and RJ",
+        "url": "https://goheels.com/sports/2024/6/25/unc-mascot-appearance-request"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=457"
+      },
+      {
+        "title": "Rameses tradition",
+        "url": "https://goheels.com/sports/2012/7/15/205498275"
+      },
+      {
+        "title": "2022 aerial reference",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/unc.sidearmsports.com/images/2022/7/12/Kenan_Aerial.jpg"
+      }
+    ],
+    "description": "Carolina’s pale-blue stands sit within a dense canopy of pines, with end-zone centers and the nearby Morehead-Patterson Bell Tower.",
+    "capacityNote": "UNC Athletics publishes 50,500 after the 2018 chairback-seat conversion. Older 60,000-plus figures describe previous seating configurations.",
+    "openingNote": "First game November 12, 1927; dedication November 24, 1927. The field was named Chris Smith Field in 2020.",
+    "artEra": "Approximately 2022, using the July 2022 official aerial",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/kenan-stadium-aerial-2022-era.png",
+        "alt": "AI-generated approximately 2022, using the july 2022 official aerial northwest-side aerial of Chris Smith Field at Kenan Stadium, Chapel Hill, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/kenan-stadium-reverse-aerial-2022-era.png",
+        "alt": "AI-generated approximately 2022, using the july 2022 official aerial southeast-side complementary aerial of Chris Smith Field at Kenan Stadium, Chapel Hill, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately 2022, using the July 2022 official aerial. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "nc-state-carter-finley",
+    "school": "NC State",
+    "fullSchool": "North Carolina State University",
+    "team": "Wolfpack",
+    "teamName": "NC State Wolfpack",
+    "mascot": "Mr. Wuf, Ms. Wuf and Tuffy III",
+    "stadium": "Carter-Finley Stadium",
+    "city": "Raleigh",
+    "state": "North Carolina",
+    "opened": 1966,
+    "seatingCapacity": 56919,
+    "capacityLabel": "Current official published capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "NC State",
+      "North Carolina State",
+      "Wolfpack",
+      "Carter-Finley Stadium",
+      "Wayne Day Family Field",
+      "Mr. Wuf",
+      "Ms. Wuf",
+      "Tuffy III"
+    ],
+    "sources": [
+      {
+        "title": "Stadium facts",
+        "url": "https://gopack.com/facilities/carter-finley-stadium/3"
+      },
+      {
+        "title": "Field and history",
+        "url": "https://gopack.com/documents/download/2023/11/7/10NCStatevsWakeForest.pdf"
+      },
+      {
+        "title": "Mr. and Ms. Wuf",
+        "url": "https://firstpack.dasa.ncsu.edu/group/mascots/"
+      },
+      {
+        "title": "Meet Tuffy III",
+        "url": "https://gopack.com/sports/2026/5/9/tuffy-iii"
+      },
+      {
+        "title": "2026 ACC football",
+        "url": "https://theacc.com/schedule.aspx?schedule=4608"
+      }
+    ],
+    "description": "Carter-Finley’s silver sideline stands and red end seats sit between the west suite tower and the Murphy Center, with PNC Arena beyond the north end in this 2019-era setting.",
+    "capacityNote": "The current official facility page lists 56,919. The 2026 CFS overview repeats that capacity and the 1966 opening year; its attendance table contains placeholders and was not used.",
+    "openingNote": "First game October 8, 1966. Wayne Day Family Field was named for Wayne T. Day in 2002.",
+    "artEra": "Approximately 2019, before later video-board and surrounding arena-district changes",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/nc-state-aerial-2019-era-v3.png",
+        "alt": "AI-generated approximately 2019 north-side aerial reconstruction of Carter-Finley Stadium and its surrounding Raleigh athletics complex.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/nc-state-reverse-aerial-2019-era.png",
+        "alt": "AI-generated approximately 2019 south-side reverse aerial reconstruction of Carter-Finley Stadium and its surrounding Raleigh athletics complex.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Stadium structure and main site relationships were checked against original photographer aerials and official university facility information. Fine seating geometry, scoreboard backs, logos, field markings and nearby building proportions remain approximate. Artwork era is separate from facts verified October 12, 2026. Reference era: Approximately 2019, before later video-board and surrounding arena-district changes. Original images: 1672 × 941 pixels."
+  },
+  {
+    "id": "duke-wallace-wade-stadium",
+    "school": "Duke",
+    "fullSchool": "Duke University",
+    "team": "Blue Devils",
+    "teamName": "Duke Blue Devils",
+    "mascot": "The Blue Devil",
+    "stadium": "Brooks Field at Wallace Wade Stadium",
+    "city": "Durham",
+    "state": "North Carolina",
+    "opened": 1929,
+    "seatingCapacity": 35018,
+    "capacityLabel": "2026 published seating capacity",
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "aliases": [
+      "Duke",
+      "Blue Devils",
+      "Blue Devil",
+      "Wallace Wade Stadium",
+      "Brooks Field",
+      "Duke Stadium",
+      "Durham"
+    ],
+    "sources": [
+      {
+        "title": "Stadium history",
+        "url": "https://goduke.com/facilities/brooks-field-at-wallace-wade-stadium/20"
+      },
+      {
+        "title": "2026 stadium guide",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/goduke.com/documents/2026/3/11/2026_Spring_Prospectus.pdf?timestamp=20260311051806"
+      },
+      {
+        "title": "The Blue Devil",
+        "url": "https://goduke.com/feature/BlueDevilMascot"
+      },
+      {
+        "title": "NCAA football profile",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=193"
+      },
+      {
+        "title": "2024 aerial reference",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/goduke.com/images/2024/10/16/20240928_homecoming_football_aerials008.jpg"
+      }
+    ],
+    "description": "Duke’s intimate horseshoe places Blue Devil Tower along its west side and the open scoreboard end beside leafy West Campus.",
+    "capacityNote": "Duke’s official 2026 Spring Prospectus lists 35,018. The current facility page rounds this to 35,000; older 40,004 figures predate the Devils Deck seating changes.",
+    "openingNote": "Opened October 5, 1929 as Duke Stadium; renamed for Wallace Wade in 1967, with Brooks Field named in 2015.",
+    "artEra": "Approximately September 2024, after the Devils Deck installation",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/duke-aerial-2024-era.png",
+        "alt": "AI-generated approximately september 2024, after the devils deck installation south-end aerial of Brooks Field at Wallace Wade Stadium, Durham, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/duke-reverse-aerial-2024-era.png",
+        "alt": "AI-generated approximately september 2024, after the devils deck installation north-end complementary aerial of Brooks Field at Wallace Wade Stadium, Durham, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "imageNote": "AI-generated architectural reconstructions, not documentary photographs or survey-accurate views. Main stadium forms and site relationships were checked against official photographs; fine seating geometry, field markings, surrounding buildings and paired-view proportions are approximate. Image era is separate from current facts verified October 12, 2026. Reference era: Approximately September 2024, after the Devils Deck installation. Original images: 1672 × 941 pixels."
   }
 ];

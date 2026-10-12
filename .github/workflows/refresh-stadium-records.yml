@@ -1,1 +1,64 @@
+name: Refresh Stadium Atlas records
 
+# Enable Settings > Pages > Build and deployment > Source: GitHub Actions.
+# Install the portable app's files at the repository root; never upload dist/.
+# The season is deliberately pinned in this workflow and the Python builder.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 9 * * *' # Daily around 09:17 UTC; GitHub may delay scheduled runs.
+
+permissions: {}
+concurrency:
+  group: stadium-atlas-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Manual runs must use the default branch; there are no PR/push triggers.
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    steps:
+      - name: Check out the installed root-level app
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Install the pinned lossless image encoder from official PyPI
+        # Dependency installation has no provider secret and adds no cache.
+        # Current stable release verified at https://pypi.org/project/pillow/
+        run: python -m pip --isolated install --index-url https://pypi.org/simple --only-binary=:all: --no-deps --no-cache-dir Pillow==12.3.0
+      - name: Fetch validated 2026 records and build a sanitized site
+        # The provider secret exists only in this step. No shell expansion,
+        # curl output, raw JSON files, caches, commits, or debug logging.
+        env:
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
+        run: python scripts/build_stadium_records.py --source . --output _site --season 2026
+      - name: Upload only the validated static site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Read GitHub Pages configuration
+        uses: actions/configure-pages@v5
+      - name: Deploy the complete validated site
+        id: deployment
+        uses: actions/deploy-pages@v4

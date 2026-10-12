@@ -33,7 +33,8 @@ jobs:
       - name: Install the pinned lossless image encoder from official PyPI
         # Dependency installation has no provider secret and adds no cache.
         # Current stable release verified at https://pypi.org/project/pillow/
-        run: python -m pip --isolated install --index-url https://pypi.org/simple --only-binary=:all: --no-deps --no-cache-dir Pillow==12.3.0
+        run: >-
+          python -m pip --isolated install --index-url https://pypi.org/simple --only-binary=:all: --no-deps --no-cache-dir Pillow==12.3.0
       - name: Fetch validated 2026 records and build a sanitized site
         # The provider secret exists only in this step. No shell expansion,
         # curl output, raw JSON files, caches, commits, or debug logging.

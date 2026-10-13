@@ -133,11 +133,33 @@ SCHOOLS = {
     'hawaii-ching-complex': ("Hawai'i", 'fbs'),
     'app-state-kidd-brewer': ('App State', 'fbs'),
     'james-madison-bridgeforth': ('James Madison', 'fbs'),
+    'charlotte-jerry-richardson': ('Charlotte', 'fbs'),
+    'east-carolina-dowdy-ficklen': ('East Carolina', 'fbs'),
+    'florida-atlantic-flagler-stadium': ('Florida Atlantic', 'fbs'),
+    'north-texas-datcu': ('North Texas', 'fbs'),
+    'rice-first-community-stadium': ('Rice', 'fbs'),
+    'temple-lincoln-financial': ('Temple', 'fbs'),
+    'tulsa-chapman': ('Tulsa', 'fbs'),
+    'uab-protective-stadium': ('UAB', 'fbs'),
+    'utsa-alamodome': ('UTSA', 'fbs'),
+    'nevada-mackay': ('Nevada', 'fbs'),
+    'new-mexico-university-stadium': ('New Mexico', 'fbs'),
+    'north-dakota-state-fargodome': ('North Dakota State', 'fbs'),
+    'northern-illinois-huskie-stadium': ('Northern Illinois', 'fbs'),
+    'san-jose-state-cefcu': ('San José State', 'fbs'),
+    'utep-sun-bowl': ('UTEP', 'fbs'),
+    'wyoming-war-memorial': ('Wyoming', 'fbs'),
+    'uconn-rentschler-field': ('UConn', 'fbs'),
+    'coastal-carolina-brooks-stadium': ('Coastal Carolina', 'fbs'),
+    'georgia-southern-paulson': ('Georgia Southern', 'fbs'),
+    'marshall-joan-edwards': ('Marshall', 'fbs'),
 }
-# The 94 reviewed identities include 30 FBS additions for v1.9.0. Public
+# The 114 reviewed identities include 20 FBS additions for v1.10.0. Public
 # directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-13); canonical provider spellings include "Hawai'i" and "App State".
 # These names are intentionally not replaced by Hawaii or Appalachian State.
+# San José State retains the provider directory accent; UConn is its canonical name.
+# North Dakota State is a new FBS Mountain West member in 2026.
 # Miami is the ACC school;
 # Miami (OH) is a separate identity and must never match. Public identities do
 # not establish authenticated 2026 records coverage, which every run validates.
@@ -151,6 +173,9 @@ DISPLAY_NAMES = {
     "hawaii-ching-complex": "Hawai‘i",
     "app-state-kidd-brewer": "Appalachian State",
 }
+
+# Explicit football independents: preserve null conference records.
+INDEPENDENT_STADIUMS = frozenset({"notre-dame", "uconn-rentschler-field"})
 
 # v1.9.2 adds one interior view after the two existing exterior views for these
 # two enclosed venues only. Keep the count exact so missing or unexpected
@@ -420,13 +445,13 @@ def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
                 raise BuildError("A record has the wrong football classification.", [sid])
             total = validate_counts(record.get("total"), sid)
             conference_label = None
-            if sid != "notre-dame":
+            if sid not in INDEPENDENT_STADIUMS:
                 conference = validate_counts(record.get("conferenceGames"), sid)
                 if any(conference[field] > total[field] for field in ("games", "wins", "losses", "ties")):
                     raise BuildError("Conference counts exceed the overall record.", [sid])
                 conference_label = record_label(conference)
-            # Notre Dame is independent: conferenceGames is irrelevant and may
-            # legitimately be missing/null. Never display its provider 0-0.
+            # Notre Dame and UConn are football independents: conferenceGames
+            # may legitimately be missing/null. Never display a provider 0-0.
             rows.append({"stadiumId": sid, "overall": record_label(total),
                          "conference": conference_label})
         except BuildError as exc:

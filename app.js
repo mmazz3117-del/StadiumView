@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.9.3';
+  const BUILD = '1.9.4';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.3 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.4 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -239,7 +239,8 @@
   });
   document.addEventListener('visibilitychange', () => { if (document.hidden && slideshow.active) setSlideshowPlaying(false,'Paused while this tab is hidden'); });
   window.addEventListener('pagehide', () => { if (slideshow.active) setSlideshowPlaying(false); });
-  window.addEventListener('blur', () => { if (slideshow.active && slideshow.playing) setSlideshowPlaying(false,'Paused while this window is inactive'); });
+  // A visible slideshow may keep playing on another monitor while this window is unfocused.
+  // Only actual page hiding, explicit controls, or image exploration pause playback.
 
   // Published daily snapshots only. No provider credentials or API calls in the browser.
   const recordsSeason = window.STADIUM_ATLAS_RECORDS_SEASON;

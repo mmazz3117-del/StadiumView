@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.9.1';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.9.2';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -4959,7 +4959,7 @@ window.STADIUMS = [
     "seatingCapacity": 42774,
     "classification": "NCAA Division I FBS",
     "conference": "ACC",
-    "description": "Syracuse’s enclosed multipurpose stadium is defined by the fixed white roof and exposed steel crown installed in 2020. Both aerial views show its exterior with the playing field hidden beneath the roof.",
+    "description": "Syracuse’s enclosed multipurpose stadium is defined by the fixed white roof and exposed steel crown installed in 2020. Two aerial views show its exterior; the interior overview reveals the football field, post-2024 seating and fixed roof.",
     "aliases": [
       "Cuse",
       "Syracuse University",
@@ -4980,10 +4980,14 @@ window.STADIUMS = [
       {
         "title": "Modern roof structure",
         "url": "https://cuse.com/news/2020/4/21/general-final-structural-beam-placed-in-stadium-roof-replacement"
+      },
+      {
+        "title": "Interior and seating enhancements",
+        "url": "https://cuse.com/news/2024/8/29/football-dome-enhancements-await-orange-fans-on-saturday"
       }
     ],
     "artEra": "2026-era",
-    "imageNote": "AI-generated 2026-era aerial interpretations, not documentary photographs. Architecture, landscaping and event details are illustrative.",
+    "imageNote": "AI-generated 2026-era architectural interpretations, not documentary photographs. The interior reflects the post-2024 reseating; roof members, seat counts, signs and sightlines are approximate.",
     "views": [
       {
         "title": "Aerial view",
@@ -4998,6 +5002,13 @@ window.STADIUMS = [
         "alt": "Generated aerial interpretation of JMA Wireless Dome from a second viewpoint.",
         "width": 1672,
         "height": 941
+      },
+      {
+        "title": "Interior overview",
+        "src": "assets/syracuse-stadium-interior.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI-generated high-wide interior interpretation of JMA Wireless Dome, showing the football field, seating bowl and fixed roof."
       }
     ]
   },
@@ -5914,7 +5925,7 @@ window.STADIUMS = [
     "seatingCapacity": 65000,
     "classification": "NCAA Division I FBS",
     "conference": "Mountain West",
-    "description": "UNLV plays in Allegiant Stadium, the enclosed black-and-silver venue near the Las Vegas Strip. Its translucent roof and curved exterior sit west of Interstate 15.",
+    "description": "UNLV plays in Allegiant Stadium, the enclosed black-and-silver venue near the Las Vegas Strip. Its translucent roof and curved exterior sit west of Interstate 15. The additional interior overview shows the UNLV football configuration beneath the translucent fixed roof.",
     "aliases": [
       "Nevada Las Vegas",
       "University of Nevada Las Vegas",
@@ -5937,10 +5948,14 @@ window.STADIUMS = [
       {
         "title": "Official mascot and traditions",
         "url": "https://unlvrebels.com/sports/2018/5/18/trads-unlv-trads-mascot-html.aspx?id=434"
+      },
+      {
+        "title": "2026 UNLV interior configuration",
+        "url": "https://unlvrebels.com/news/2026/7/22/fan-enhancements-announced-for-unlv-football-2026"
       }
     ],
     "artEra": "2026-era",
-    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "imageNote": "AI-generated 2026-era architectural interpretations, not documentary photographs. The interior is representative: UNLV south-end student seating may use retractable seats or field-level bleachers depending on the game. Roof members, seat counts, signs and sightlines are approximate.",
     "views": [
       {
         "title": "Stadium aerial",
@@ -5955,6 +5970,13 @@ window.STADIUMS = [
         "alt": "Generated second aerial interpretation of Allegiant Stadium in Paradise.",
         "width": 1672,
         "height": 941
+      },
+      {
+        "title": "Interior overview",
+        "src": "assets/unlv-stadium-interior.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI-generated high-wide interior interpretation of Allegiant Stadium, showing the football field, seating bowl and fixed roof."
       }
     ]
   },

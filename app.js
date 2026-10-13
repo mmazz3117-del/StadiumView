@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.9.1';
+  const BUILD = '1.9.2';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 94 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
+  const validCatalog = Array.isArray(catalog) && catalog.length === 94 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant'].includes(item.id) ? 3 : 2));
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.1 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.2 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
     if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
@@ -220,7 +220,7 @@
       const capacityValue = `${/\bnearly\b/i.test(item.capacityLabel || '') ? 'Nearly ' : ''}${Number(item.seatingCapacity).toLocaleString('en-US')}`;
       const temporarySeats = /including temporary/i.test(item.capacityNote || '') ? '<small>incl. temporary seats</small>' : '';
       const division = (item.classification || '').replace('NCAA Division I ', 'D-I ');
-      return `<article class="stadium-card" data-stadium-id="${escape(item.id)}"><div class="card-image" data-card-gallery="${escape(item.id)}" style="aspect-ratio:${image.width}/${image.height}"><a class="card-image-link" href="#stadium/${escape(item.id)}" aria-label="Open ${escape(item.school)}: ${escape(image.title.toLowerCase())}"><img data-card-source="${escape(image.src)}" src="${escape(image.src)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async" alt="${escape(image.alt)}" draggable="false"></a><div class="card-image-status" hidden><p role="status" aria-live="polite"></p><button type="button" class="card-image-retry" aria-label="Retry ${escape(item.school)} image" hidden>Retry image</button></div><span class="card-viewcount" aria-live="polite" aria-atomic="true">${index + 1} / ${item.views.length} · ${escape(image.title)}</span><button type="button" class="card-preview-arrow card-preview-prev" data-card-step="-1" aria-label="Previous ${escape(item.school)} aerial view" title="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><button type="button" class="card-preview-arrow card-preview-next" data-card-step="1" aria-label="Next ${escape(item.school)} aerial view" title="Next view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><a class="card-body card-detail-link" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(teamName)}: ${escape(item.stadium)}. ${escape(item.conference)}, ${escape(item.classification)}. ${escape(capacityLabel)}: ${escape(capacityValue)}. ${item.views.length} aerial views. ${escape(recordSummary(item))}"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(teamName)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><dl class="card-facts"><div><dt>League / division · 2026</dt><dd>${escape(item.conference)}<span class="card-division" aria-label="${escape(item.classification)}">${escape(division)}</span></dd></div><div><dt>${escape(capacityLabel)}</dt><dd><span class="card-capacity-value">${escape(capacityValue)}</span>${temporarySeats}</dd></div></dl><div class="team-records" data-records-id="${escape(item.id)}">${recordMarkup(item)}</div><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></a></article>`;
+      return `<article class="stadium-card" data-stadium-id="${escape(item.id)}"><div class="card-image" data-card-gallery="${escape(item.id)}" style="aspect-ratio:${image.width}/${image.height}"><a class="card-image-link" href="#stadium/${escape(item.id)}" aria-label="Open ${escape(item.school)}: ${escape(image.title.toLowerCase())}"><img data-card-source="${escape(image.src)}" src="${escape(image.src)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async" alt="${escape(image.alt)}" draggable="false"></a><div class="card-image-status" hidden><p role="status" aria-live="polite"></p><button type="button" class="card-image-retry" aria-label="Retry ${escape(item.school)} image" hidden>Retry image</button></div><span class="card-viewcount" aria-live="polite" aria-atomic="true">${index + 1} / ${item.views.length} · ${escape(image.title)}</span><button type="button" class="card-preview-arrow card-preview-prev" data-card-step="-1" aria-label="Previous ${escape(item.school)} stadium view" title="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><button type="button" class="card-preview-arrow card-preview-next" data-card-step="1" aria-label="Next ${escape(item.school)} stadium view" title="Next view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><a class="card-body card-detail-link" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(teamName)}: ${escape(item.stadium)}. ${escape(item.conference)}, ${escape(item.classification)}. ${escape(capacityLabel)}: ${escape(capacityValue)}. ${item.views.length} stadium views. ${escape(recordSummary(item))}"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(teamName)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><dl class="card-facts"><div><dt>League / division · 2026</dt><dd>${escape(item.conference)}<span class="card-division" aria-label="${escape(item.classification)}">${escape(division)}</span></dd></div><div><dt>${escape(capacityLabel)}</dt><dd><span class="card-capacity-value">${escape(capacityValue)}</span>${temporarySeats}</dd></div></dl><div class="team-records" data-records-id="${escape(item.id)}">${recordMarkup(item)}</div><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></a></article>`;
     }).join('');
     updateRecordLabels();
     $('#empty-state').hidden = results.length > 0;
@@ -386,7 +386,7 @@
     $('#detail-eyebrow').innerHTML = `${escape(item.teamName || `${item.school} ${item.team}`)} <span class="muted">/ ${escape(item.city)}, ${escape(item.state)}</span>`;
     $('#detail-title').innerHTML = `${escape(item.stadium)}<span class="title-dot">.</span>`;
     $('#detail-number').textContent = String(indexOf(item)).padStart(3,'0');
-    $('#gallery-hint').textContent = `Two ways to see the home of the ${item.team}.`;
+    $('#gallery-hint').textContent = `${item.views.length === 2 ? 'Two' : 'Three'} ways to see the home of the ${item.team}.`;
     $('#stadium-description').textContent = item.description || `${item.school}’s home in ${item.city} since ${item.opened}.`;
     $('#fact-sources').innerHTML = (item.sources || [
       {title:'Stadium facts',url:item.factsSources.stadium},
@@ -402,14 +402,7 @@
     updateRecordLabels();
     $('#viewer-stadium').textContent = item.stadium;
     $('#viewer-era').textContent = `${item.artEra || '2024-era'} reconstruction`;
-    $$('.view-tab').forEach((button,index) => {
-      const image = item.views[index];
-      const thumbnail = $('img',button);
-      $('span',button).innerHTML = `<small>${String(index + 1).padStart(2,'0')}</small>${escape(image.title)}`;
-      thumbnail.src = image.src;
-      thumbnail.width = image.width;
-      thumbnail.height = image.height;
-    });
+    $('.view-tabs').innerHTML = item.views.map((image,index) => `<button type="button" class="view-tab" data-view="${index}" aria-pressed="false"><img src="${escape(image.src)}" width="${image.width}" height="${image.height}" alt=""><span><small>${String(index + 1).padStart(2,'0')}</small>${escape(image.title)}</span></button>`).join('');
   }
   function changeView(index) {
     view = Math.max(0,Math.min(activeStadium.views.length-1,index));
@@ -425,13 +418,13 @@
     $$('.view-tab').forEach(button => { const active = Number(button.dataset.view) === view; button.classList.toggle('active', active); button.setAttribute('aria-pressed', String(active)); });
     if (dialog.open) updateViewerImage();
   }
-  $$('.view-tab').forEach(button => button.addEventListener('click', () => changeView(Number(button.dataset.view))));
+  $('.view-tabs').addEventListener('click', event => { const button = event.target.closest('.view-tab'); if (button) changeView(Number(button.dataset.view)); });
 
   function route() {
     cancelCardGesture();
-    const match = location.hash.match(/^#stadium\/([a-z0-9-]+)(?:\/view\/([12]))?$/);
+    const match = location.hash.match(/^#stadium\/([a-z0-9-]+)(?:\/view\/([1-9][0-9]*))?$/);
     const item = match && catalog.find(stadium => stadium.id === match[1]);
-    const showDetail = Boolean(item);
+    const showDetail = Boolean(item) && (!match[2] || Number(match[2]) <= item.views.length);
     viewerHistoryEntry = Boolean(showDetail && match[2] && history.state?.stadiumAtlasViewer?.from === `#stadium/${item.id}` && history.state?.stadiumAtlasViewer?.viewer === location.hash);
     const changedStadium = showDetail && activeStadium.id !== item.id;
     if (showDetail && !wasDetail) homeScroll = window.scrollY;
@@ -541,9 +534,10 @@
     const image = imageOf();
     viewerImage.src = image.src; viewerImage.alt = image.alt;
     $('#viewer-title').textContent = image.title;
-    const otherTitle = activeStadium.views[(view + 1) % activeStadium.views.length].title.toLowerCase();
-    $('#viewer-prev').setAttribute('aria-label', `Previous view: ${otherTitle}`);
-    $('#viewer-next').setAttribute('aria-label', `Next view: ${otherTitle}`);
+    const nextTitle = activeStadium.views[(view + 1) % activeStadium.views.length].title.toLowerCase();
+    const previousTitle = activeStadium.views[(view - 1 + activeStadium.views.length) % activeStadium.views.length].title.toLowerCase();
+    $('#viewer-prev').setAttribute('aria-label', `Previous view: ${previousTitle}`);
+    $('#viewer-next').setAttribute('aria-label', `Next view: ${nextTitle}`);
     $('#viewer-announcement').textContent = `${image.title}, ${view + 1} of ${activeStadium.views.length}. Full image fitted to screen. Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
     fitImage();
   }

@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.9.4';
+  const BUILD = '1.9.5';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.4 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.5 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -100,6 +100,13 @@
   let slideshowPreload = null;
   let viewerFailed = false;
   let viewerReady = false;
+  let viewerDisplayedEntry = null;
+  let viewerRequest = null;
+  let viewerTransition = null;
+  const CROSSFADE_MS = 600;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  // Requested selection and displayed image stay separate until decoding succeeds.
+  const displayedPhoto = () => viewerDisplayedEntry?.item.views[viewerDisplayedEntry.index];
   const viewerEntry = () => slideshow.active ? slideshow.queue[slideshow.position] : {item:activeStadium,index:view};
   const viewerPhoto = () => { const entry = viewerEntry(); return entry?.item.views[entry.index]; };
   const photoKey = entry => `${entry.item.id}/${entry.index}`;
@@ -118,7 +125,7 @@
     }, slideshow.delay);
   }
   function updateSlideshowControls(message = '') {
-    const entry = viewerEntry(), total = slideshow.queue.length;
+    const entry = viewerDisplayedEntry, total = slideshow.queue.length;
     slideshowControls.hidden = !slideshow.active;
     dialog.classList.toggle('is-slideshow',slideshow.active);
     slideshowPlay.textContent = slideshow.playing ? 'Pause' : 'Play';
@@ -130,11 +137,12 @@
     slideshowScope.querySelector('[value="all"]').textContent = `All photos (${slideshowPhotos('all').length})`;
     slideshowScope.querySelector('[value="filtered"]').textContent = `Current filtered results (${slideshowPhotos('filtered').length})`;
     $('#slideshow-speed').value = String(slideshow.delay);
-    $('#slideshow-position').textContent = `${total ? slideshow.position + 1 : 0} / ${total}`;
-    $('#slideshow-school').textContent = total ? entry.item.school : 'No matching photos';
-    $('#slideshow-stadium').textContent = total ? entry.item.stadium : 'Choose All photos, or close to change your filters.';
-    $('#slideshow-view').textContent = total ? entry.item.views[entry.index].title : '';
-    const status = message || (total ? `${slideshow.playing ? (viewerReady ? 'Playing' : 'Loading photo') : 'Paused'} · ${slideshow.scope === 'all' ? 'All photos' : 'Filtered results'}${slideshow.shuffle ? ' · Shuffled' : ''}` : 'Paused · No photos match your filters');
+    const displayedPosition = entry ? slideshow.queue.findIndex(photo => photoKey(photo) === photoKey(entry)) + 1 : 0;
+    $('#slideshow-position').textContent = `${total ? (displayedPosition || '–') : 0} / ${total}`;
+    $('#slideshow-school').textContent = total ? (entry?.item.school || 'Loading photo') : 'No matching photos';
+    $('#slideshow-stadium').textContent = total ? (entry?.item.stadium || 'Preparing the first view…') : 'Choose All photos, or close to change your filters.';
+    $('#slideshow-view').textContent = total && entry ? entry.item.views[entry.index].title : '';
+    const status = message || (total ? `${slideshow.playing ? (viewerReady ? 'Playing' : viewerTransition ? 'Changing photo' : 'Loading photo') : 'Paused'} · ${slideshow.scope === 'all' ? 'All photos' : 'Filtered results'}${slideshow.shuffle ? ' · Shuffled' : ''}` : 'Paused · No photos match your filters');
     $('#slideshow-status').setAttribute('aria-live',slideshow.active && slideshow.playing ? 'off' : 'polite');
     if ($('#slideshow-status').textContent !== status) $('#slideshow-status').textContent = status;
     $('#viewer-announcement').setAttribute('aria-live',slideshow.active && slideshow.playing ? 'off' : 'polite');
@@ -237,8 +245,18 @@
     slideshow.shuffle = !slideshow.shuffle;
     orderSlideshow(); saveSlideshowHistory(); updateViewerImage();
   });
-  document.addEventListener('visibilitychange', () => { if (document.hidden && slideshow.active) setSlideshowPlaying(false,'Paused while this tab is hidden'); });
-  window.addEventListener('pagehide', () => { if (slideshow.active) setSlideshowPlaying(false); });
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) return;
+    if (slideshow.active) setSlideshowPlaying(false,'Paused while this tab is hidden');
+    finishViewerTransition(false);
+  });
+  window.addEventListener('pagehide', () => {
+    if (slideshow.active) setSlideshowPlaying(false);
+    finishViewerTransition(false);
+  });
+  const onReducedMotion = () => { if (reducedMotion.matches) finishViewerTransition(); };
+  if (reducedMotion.addEventListener) reducedMotion.addEventListener('change',onReducedMotion);
+  else reducedMotion.addListener(onReducedMotion);
   // A visible slideshow may keep playing on another monitor while this window is unfocused.
   // Only actual page hiding, explicit controls, or image exploration pause playback.
 
@@ -552,8 +570,6 @@
     $('#image-note').textContent = item.imageNote || `About these views: AI-generated, reference-based reconstructions of the stadium’s ${item.artEra || '2024-era'} appearance. Architecture and landscape are interpretive, not current photographs or survey-accurate images. Original image resolution: ${imageSizes} pixels.`;
     $('#detail-records').innerHTML = `<div class="team-records" data-records-id="${escape(item.id)}">${recordMarkup(item)}</div>`;
     updateRecordLabels();
-    $('#viewer-stadium').textContent = item.stadium;
-    $('#viewer-era').textContent = `${item.artEra || '2024-era'} reconstruction`;
     $('.view-tabs').innerHTML = item.views.map((image,index) => `<button type="button" class="view-tab" data-view="${index}" aria-pressed="false"><img src="${escape(image.src)}" width="${image.width}" height="${image.height}" alt=""><span><small>${String(index + 1).padStart(2,'0')}</small>${escape(image.title)}</span></button>`).join('');
   }
   function changeView(index) {
@@ -621,6 +637,9 @@
   function closeViewer() {
     if (!dialog.open || closingViewer) return;
     closingViewer = true;
+    cancelViewerRequest();
+    finishViewerTransition(false);
+    viewerReady = false;
     if (slideshow.active) {
       setSlideshowPlaying(false);
       if (slideshow.owned) history.back();
@@ -667,6 +686,7 @@
   dialog.addEventListener('close', () => {
     if (!dialog.open) {
       clearSlideshowTimer();
+      clearViewerPresentation();
       if (slideshow.active) setSlideshowPlaying(false);
       document.body.classList.remove('viewer-open');
     }
@@ -682,7 +702,7 @@
   const minScale = .5;
   const maxScale = () => 8;
   function constrain() {
-    const image = viewerPhoto();
+    const image = displayedPhoto();
     if (!image) return;
     const width = image.width * fit * scale, height = image.height * fit * scale;
     // Generous movement across the viewport, while keeping a small edge within reach.
@@ -700,7 +720,7 @@
     const rect = stage.getBoundingClientRect();
     stageWidth = Math.max(1, rect.width);
     stageHeight = Math.max(1, rect.height);
-    const image = viewerPhoto();
+    const image = displayedPhoto();
     if (!image) return;
     fit = Math.min(stageWidth / image.width, stageHeight / image.height);
     viewerImage.style.width = `${image.width * fit}px`;
@@ -716,56 +736,160 @@
     $('#viewer-image-status').hidden = !message;
     $('#viewer-retry').hidden = !retry;
   }
-  function replaceViewerImage(image, retry = false) {
-    const previous = viewerImage;
+  function updateViewerCaption() {
+    const entry = viewerDisplayedEntry, image = displayedPhoto();
+    if (!image) {
+      $('#viewer-title').textContent = viewerPhoto() ? 'Loading photo' : 'No matching photos';
+      $('#viewer-stadium').textContent = '';
+      $('#viewer-era').textContent = '';
+      $('#viewer-announcement').textContent = viewerPhoto() ? 'Loading photo.' : 'No photos match these filters. Choose All photos or close to change filters.';
+      return;
+    }
+    $('#viewer-title').textContent = image.title;
+    $('#viewer-stadium').textContent = entry.item.stadium;
+    $('#viewer-era').textContent = `${entry.item.artEra || '2024-era'} reconstruction`;
+    if (slideshow.active) {
+      const position = slideshow.queue.findIndex(photo => photoKey(photo) === photoKey(entry)) + 1;
+      $('#viewer-announcement').textContent = `${entry.item.school}, ${entry.item.stadium}. ${image.title}${position ? `, ${position} of ${slideshow.queue.length}` : ''}. Page Up and Page Down change photos. Space pauses or plays. Zooming or dragging pauses playback.`;
+    } else {
+      $('#viewer-announcement').textContent = `${image.title}, ${entry.index + 1} of ${entry.item.views.length}. Full image fitted to screen. Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
+    }
+  }
+  function cancelViewerRequest() {
+    const request = viewerRequest;
+    if (!request) return;
+    viewerRequest = null;
+    request.detach();
+    request.node.removeAttribute('src');
+    request.node.remove();
+    stage.setAttribute('aria-busy','false');
+  }
+  function finishViewerTransition(reschedule = true) {
+    const transition = viewerTransition;
+    if (!transition) return;
+    viewerTransition = null;
+    if (transition.frame !== null) window.cancelAnimationFrame(transition.frame);
+    if (transition.timer !== null) window.clearTimeout(transition.timer);
+    transition.outgoing.removeEventListener('transitionend',transition.onEnd);
+    transition.outgoing.remove();
+    stage.classList.remove('is-crossfading');
+    viewerReady = Boolean(viewerDisplayedEntry && !viewerRequest && !viewerFailed && dialog.open && !closingViewer);
+    if (reschedule && slideshow.active) { updateSlideshowControls(); scheduleSlideshow(); }
+  }
+  function clearViewerPresentation() {
+    cancelViewerRequest();
+    finishViewerTransition(false);
+    viewerDisplayedEntry = null;
+    viewerReady = false; viewerFailed = false;
+    viewerImage.style.visibility = 'hidden';
+    viewerImage.removeAttribute('src');
+    viewerImage.removeAttribute('data-viewer-source');
+    stage.setAttribute('aria-busy','false');
+    showViewerStatus();
+  }
+  function replaceViewerImage(entry, retry = false) {
+    cancelViewerRequest();
+    finishViewerTransition(false);
+    const image = entry.item.views[entry.index];
+    viewerFailed = false; viewerReady = false;
+    showViewerStatus();
+    if (!retry && displayedPhoto()?.src === image.src) {
+      viewerDisplayedEntry = entry;
+      viewerReady = true;
+      fitImage(); updateViewerCaption();
+      if (slideshow.active) { updateSlideshowControls(); scheduleSlideshow(); }
+      return;
+    }
     const replacement = document.createElement('img');
-    replacement.id = 'viewer-image'; replacement.alt = image.alt;
+    replacement.className = 'viewer-image-pending';
+    replacement.alt = ''; replacement.setAttribute('aria-hidden','true');
     replacement.width = image.width; replacement.height = image.height;
     replacement.draggable = false; replacement.decoding = 'async';
     replacement.dataset.viewerSource = image.src;
-    // Per-request nodes isolate late load/error events from a photo we've left.
-    let loaded = false;
-    const onLoad = () => {
-      if (loaded || viewerImage !== replacement || !dialog.open || viewerPhoto()?.src !== image.src) return;
-      loaded = true; viewerReady = true;
-      viewerFailed = false; replacement.style.visibility = '';
-      showViewerStatus(); fitImage();
+    const request = {node:replacement,entry,detach:() => {
+      replacement.removeEventListener('load',onLoad);
+      replacement.removeEventListener('error',onError);
+    }};
+    const isCurrent = () => viewerRequest === request && dialog.open && !closingViewer && viewerPhoto()?.src === image.src;
+    let decoding = false;
+    const onError = () => {
+      if (!isCurrent()) return;
+      cancelViewerRequest();
+      viewerFailed = true; viewerReady = false;
+      showViewerStatus(`This image could not load. ${viewerDisplayedEntry ? 'The previous photo is still shown. ' : ''}Retry it, or use the arrows to continue.`,true);
+      if (slideshow.active) setSlideshowPlaying(false,'Paused · Image could not load');
+    };
+    const onReady = () => {
+      if (!isCurrent()) return;
+      request.detach(); viewerRequest = null;
+      const previous = viewerImage, outgoing = viewerDisplayedEntry ? previous : null;
+      // Keep the decoded incoming image underneath the outgoing image. Fading
+      // the opaque outgoing layer avoids a dark midpoint or a blank frame.
+      previous.removeAttribute('id');
+      if (outgoing) {
+        outgoing.className = 'viewer-image-outgoing';
+        outgoing.alt = ''; outgoing.setAttribute('aria-hidden','true');
+      } else previous.remove();
+      replacement.className = ''; replacement.id = 'viewer-image';
+      replacement.alt = image.alt; replacement.removeAttribute('aria-hidden');
+      viewerImage = replacement; viewerDisplayedEntry = entry;
+      viewerFailed = false;
+      stage.setAttribute('aria-busy','false');
+      fitImage(); updateViewerCaption();
+      if (outgoing && !reducedMotion.matches && !document.hidden) {
+        const transition = {outgoing,frame:null,timer:null,onEnd:event => {
+          if (viewerTransition === transition && event.target === outgoing && event.propertyName === 'opacity') finishViewerTransition();
+        }};
+        viewerTransition = transition;
+        stage.classList.add('is-crossfading');
+        outgoing.addEventListener('transitionend',transition.onEnd);
+        // Establish the start opacity before the first animation frame.
+        outgoing.getBoundingClientRect();
+        transition.frame = window.requestAnimationFrame(() => {
+          if (viewerTransition !== transition) return;
+          transition.frame = null;
+          outgoing.style.opacity = '0';
+          transition.timer = window.setTimeout(() => {
+            if (viewerTransition === transition) finishViewerTransition();
+          },CROSSFADE_MS);
+        });
+      } else {
+        outgoing?.remove();
+        viewerReady = true;
+      }
       if (slideshow.active) { updateSlideshowControls(); scheduleSlideshow(); }
     };
+    const onLoad = () => {
+      if (decoding || !isCurrent()) return;
+      decoding = true;
+      // Decode before presenting; stale decode promises cannot commit a photo.
+      if (typeof replacement.decode === 'function') {
+        try { replacement.decode().then(onReady,onError); } catch { onError(); }
+      } else onReady();
+    };
+    viewerRequest = request;
     replacement.addEventListener('load',onLoad);
-    replacement.addEventListener('error', () => {
-      if (viewerImage !== replacement || !dialog.open || viewerPhoto()?.src !== image.src) return;
-      viewerReady = false;
-      viewerFailed = true; replacement.style.visibility = 'hidden';
-      showViewerStatus('This image could not load. Retry it, or use the arrows to continue.',true);
-      if (slideshow.active) setSlideshowPlaying(false,'Paused · Image could not load');
-    });
-    viewerImage = replacement;
-    previous.replaceWith(replacement);
-    viewerFailed = false; viewerReady = false;
-    showViewerStatus();
+    replacement.addEventListener('error',onError);
+    if (!viewerDisplayedEntry) viewerImage.style.visibility = 'hidden';
+    stage.setAttribute('aria-busy','true');
+    stage.appendChild(replacement);
     replacement.src = retry ? `${image.src}${image.src.includes('?') ? '&' : '?'}sa_viewer_retry=${Date.now()}-${++retryRequest}` : image.src;
-    // A cached image may already be complete before its load event is delivered.
     if (replacement.complete && replacement.naturalWidth > 0) onLoad();
   }
   function updateViewerImage() {
+    if (!dialog.open || closingViewer) return;
     clearSlideshowTimer();
     const entry = viewerEntry(), image = viewerPhoto();
     $('#viewer-prev').disabled = slideshow.active && slideshow.queue.length < 2;
     $('#viewer-next').disabled = slideshow.active && slideshow.queue.length < 2;
     if (!image) {
-      viewerImage.style.visibility = 'hidden'; viewerImage.removeAttribute('src');
-      viewerFailed = false; viewerReady = false;
+      clearViewerPresentation();
       if (slideshowPreload) { slideshowPreload.removeAttribute('src'); slideshowPreload = null; }
-      $('#viewer-title').textContent = 'No matching photos';
-      $('#viewer-announcement').textContent = 'No photos match these filters. Choose All photos or close to change filters.';
-      showViewerStatus(); updateSlideshowControls();
+      updateViewerCaption(); updateSlideshowControls();
       return;
     }
-    replaceViewerImage(image);
-    $('#viewer-title').textContent = image.title;
-    $('#viewer-stadium').textContent = entry.item.stadium;
-    $('#viewer-era').textContent = `${entry.item.artEra || '2024-era'} reconstruction`;
+    replaceViewerImage(entry);
+    if (!viewerDisplayedEntry) updateViewerCaption();
     if (slideshow.active) {
       const total = slideshow.queue.length;
       const next = slideshow.queue[(slideshow.position + 1) % total];
@@ -773,25 +897,26 @@
       $('#viewer-prev').setAttribute('aria-label', `Previous photo: ${prev.item.school}, ${prev.item.views[prev.index].title.toLowerCase()}`);
       $('#viewer-next').setAttribute('aria-label', `Next photo: ${next.item.school}, ${next.item.views[next.index].title.toLowerCase()}`);
       updateSlideshowControls();
-      $('#viewer-announcement').textContent = `${entry.item.school}, ${entry.item.stadium}. ${image.title}, ${slideshow.position + 1} of ${total}. Page Up and Page Down change photos. Space pauses or plays. Zooming or dragging pauses playback.`;
-      preloadNextSlideshowPhoto(); scheduleSlideshow();
+      preloadNextSlideshowPhoto();
     } else {
       const nextTitle = activeStadium.views[(view + 1) % activeStadium.views.length].title.toLowerCase();
       const previousTitle = activeStadium.views[(view - 1 + activeStadium.views.length) % activeStadium.views.length].title.toLowerCase();
       $('#viewer-prev').setAttribute('aria-label', `Previous view: ${previousTitle}`);
       $('#viewer-next').setAttribute('aria-label', `Next view: ${nextTitle}`);
-      $('#viewer-announcement').textContent = `${image.title}, ${view + 1} of ${activeStadium.views.length}. Full image fitted to screen. Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
     }
-    fitImage();
   }
   $('#viewer-retry').addEventListener('click', () => {
-    const image = viewerPhoto();
-    if (!image) return;
-    replaceViewerImage(image,true); fitImage();
+    const entry = viewerEntry();
+    if (!entry) return;
+    clearSlideshowTimer();
+    replaceViewerImage(entry,true);
+    if (!viewerDisplayedEntry) updateViewerCaption();
     stage.focus({preventScroll:true});
     if (slideshow.active) updateSlideshowControls('Paused · Retrying image');
   });
   function pauseForImageInteraction() {
+    // Image exploration should respond immediately, even midway through a fade.
+    finishViewerTransition(false);
     if (slideshow.active && slideshow.playing) setSlideshowPlaying(false,'Paused to explore · Press Play to continue');
   }
   function localPoint(clientX, clientY) { const rect = stage.getBoundingClientRect(); return {x:clientX - rect.left - rect.width / 2,y:clientY - rect.top - rect.height / 2}; }

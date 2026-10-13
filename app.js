@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.9.2';
+  const BUILD = '1.9.3';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,8 +16,9 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.2 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.3 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
+    if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
     if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
     if (document.getElementById('detail-view')) document.getElementById('detail-view').hidden = true;
@@ -67,7 +68,7 @@
   const divisionFilter = $('#division-filter');
   const dialog = $('#image-viewer');
   const stage = $('#zoom-stage');
-  const viewerImage = $('#viewer-image');
+  let viewerImage = $('#viewer-image');
   let letter = 'All';
   let query = '';
   let conference = '';
@@ -89,6 +90,156 @@
   const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const indexOf = item => catalog.indexOf(item) + 1;
   const imageOf = () => activeStadium.views[view];
+  // Slideshow selection never changes the gallery's selected stadium or photo.
+  const slideshow = {active:false,playing:false,scope:'all',queue:[],position:0,shuffle:false,delay:5000,from:'#collection',owned:false};
+  const slideshowControls = $('#slideshow-controls');
+  const slideshowScope = $('#slideshow-scope');
+  const slideshowPlay = $('#slideshow-play');
+  const stageLabel = stage.getAttribute('aria-label');
+  let slideshowTimer = null;
+  let slideshowPreload = null;
+  let viewerFailed = false;
+  let viewerReady = false;
+  const viewerEntry = () => slideshow.active ? slideshow.queue[slideshow.position] : {item:activeStadium,index:view};
+  const viewerPhoto = () => { const entry = viewerEntry(); return entry?.item.views[entry.index]; };
+  const photoKey = entry => `${entry.item.id}/${entry.index}`;
+  function slideshowPhotos(scope) {
+    return catalog.filter(item => scope !== 'filtered' || matches(item)).slice().sort((a,b) => a.school.localeCompare(b.school)).flatMap(item => item.views.map((image,index) => ({item,index})));
+  }
+  function clearSlideshowTimer() {
+    if (slideshowTimer !== null) { window.clearTimeout(slideshowTimer); slideshowTimer = null; }
+  }
+  function scheduleSlideshow() {
+    clearSlideshowTimer();
+    if (!slideshow.active || !slideshow.playing || !dialog.open || document.hidden || slideshow.queue.length < 2 || viewerFailed || !viewerReady) return;
+    slideshowTimer = window.setTimeout(() => {
+      slideshowTimer = null;
+      if (slideshow.active && slideshow.playing && dialog.open && !document.hidden) switchViewer(1);
+    }, slideshow.delay);
+  }
+  function updateSlideshowControls(message = '') {
+    const entry = viewerEntry(), total = slideshow.queue.length;
+    slideshowControls.hidden = !slideshow.active;
+    dialog.classList.toggle('is-slideshow',slideshow.active);
+    slideshowPlay.textContent = slideshow.playing ? 'Pause' : 'Play';
+    slideshowPlay.setAttribute('aria-label',slideshow.playing ? 'Pause slideshow' : 'Play slideshow');
+    slideshowPlay.disabled = !total || viewerFailed;
+    $('#slideshow-shuffle').setAttribute('aria-pressed',String(slideshow.shuffle));
+    $('#slideshow-shuffle').disabled = total < 2;
+    slideshowScope.value = slideshow.scope;
+    slideshowScope.querySelector('[value="all"]').textContent = `All photos (${slideshowPhotos('all').length})`;
+    slideshowScope.querySelector('[value="filtered"]').textContent = `Current filtered results (${slideshowPhotos('filtered').length})`;
+    $('#slideshow-speed').value = String(slideshow.delay);
+    $('#slideshow-position').textContent = `${total ? slideshow.position + 1 : 0} / ${total}`;
+    $('#slideshow-school').textContent = total ? entry.item.school : 'No matching photos';
+    $('#slideshow-stadium').textContent = total ? entry.item.stadium : 'Choose All photos, or close to change your filters.';
+    $('#slideshow-view').textContent = total ? entry.item.views[entry.index].title : '';
+    const status = message || (total ? `${slideshow.playing ? (viewerReady ? 'Playing' : 'Loading photo') : 'Paused'} · ${slideshow.scope === 'all' ? 'All photos' : 'Filtered results'}${slideshow.shuffle ? ' · Shuffled' : ''}` : 'Paused · No photos match your filters');
+    $('#slideshow-status').setAttribute('aria-live',slideshow.active && slideshow.playing ? 'off' : 'polite');
+    if ($('#slideshow-status').textContent !== status) $('#slideshow-status').textContent = status;
+    $('#viewer-announcement').setAttribute('aria-live',slideshow.active && slideshow.playing ? 'off' : 'polite');
+    window.STADIUM_ATLAS_RUNTIME.slideshow = {active:slideshow.active,playing:slideshow.playing,scope:slideshow.scope,photos:total,position:total ? slideshow.position + 1 : 0,shuffle:slideshow.shuffle,delay:slideshow.delay};
+  }
+  function setSlideshowPlaying(playing, message = '') {
+    slideshow.playing = Boolean(playing && slideshow.active && slideshow.queue.length && !document.hidden && !viewerFailed);
+    updateSlideshowControls(message);
+    scheduleSlideshow();
+  }
+  function saveSlideshowHistory() {
+    if (!slideshow.active || location.hash !== '#slideshow') return;
+    const state = {from:slideshow.from,owned:slideshow.owned,scope:slideshow.scope,order:slideshow.queue.map(photoKey),position:slideshow.position,shuffle:slideshow.shuffle,delay:slideshow.delay};
+    history.replaceState({stadiumAtlasSlideshow:state},'', '#slideshow');
+  }
+  function orderSlideshow(keepCurrent = true) {
+    const current = keepCurrent && viewerEntry();
+    const queue = slideshowPhotos(slideshow.scope);
+    if (slideshow.shuffle) {
+      for (let i = queue.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [queue[i],queue[j]] = [queue[j],queue[i]];
+      }
+      // Keep the visible photo while putting every other photo after it once.
+      if (current) {
+        const found = queue.findIndex(entry => photoKey(entry) === photoKey(current));
+        if (found >= 0) queue.unshift(...queue.splice(found,1));
+      }
+    }
+    slideshow.queue = queue;
+    slideshow.position = current ? Math.max(0,queue.findIndex(entry => photoKey(entry) === photoKey(current))) : 0;
+  }
+  function preloadNextSlideshowPhoto() {
+    if (!slideshow.active || slideshow.queue.length < 2) return;
+    const next = slideshow.queue[(slideshow.position + 1) % slideshow.queue.length];
+    if (!slideshowPreload) { slideshowPreload = new Image(); slideshowPreload.decoding = 'async'; }
+    // Exactly one speculative image; changing src cancels any earlier preload.
+    const src = next.item.views[next.index].src;
+    if (slideshowPreload.getAttribute('src') !== src) slideshowPreload.src = src;
+  }
+  function leaveSlideshow() {
+    clearSlideshowTimer();
+    slideshow.active = false; slideshow.playing = false;
+    if (slideshowPreload) { slideshowPreload.removeAttribute('src'); slideshowPreload = null; }
+    stage.setAttribute('aria-label',stageLabel);
+    updateSlideshowControls();
+  }
+  function routeSlideshow() {
+    if (!slideshow.active) {
+      const saved = history.state?.stadiumAtlasSlideshow;
+      slideshow.active = true; slideshow.playing = false;
+      slideshow.scope = saved?.scope === 'filtered' ? 'filtered' : 'all';
+      slideshow.shuffle = saved?.shuffle === true;
+      slideshow.delay = [3000,5000,8000,12000].includes(saved?.delay) ? saved.delay : 5000;
+      slideshow.from = typeof saved?.from === 'string' && /^#(?:collection|stadium\/[a-z0-9-]+)?$/.test(saved.from) ? saved.from : '#collection';
+      slideshow.owned = saved?.owned === true;
+      orderSlideshow(false);
+      if (Array.isArray(saved?.order) && saved.order.length === slideshow.queue.length && new Set(saved.order).size === saved.order.length) {
+        const entries = new Map(slideshow.queue.map(entry => [photoKey(entry),entry]));
+        if (saved.order.every(key => entries.has(key))) slideshow.queue = saved.order.map(key => entries.get(key));
+      }
+      slideshow.position = Number.isInteger(saved?.position) ? Math.max(0,Math.min(slideshow.queue.length - 1,saved.position)) : 0;
+      if (!dialog.open) dialog.showModal();
+      document.body.classList.add('viewer-open');
+      stage.setAttribute('aria-label',`${stageLabel} Space or P pauses and plays the slideshow. Zooming and dragging pauses playback.`);
+      updateViewerImage();
+      stage.focus({preventScroll:true});
+    }
+    document.title = 'Slideshow · Stadium Atlas';
+    viewerHistoryEntry = false;
+    saveSlideshowHistory();
+  }
+  function requestViewerFullscreen() {
+    // The dialog is already viewport-sized when native fullscreen is unavailable.
+    if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
+      try { document.documentElement.requestFullscreen().then(() => { if (!dialog.open && document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {}); }).catch(() => {}); } catch {}
+    }
+  }
+  $('#start-slideshow').addEventListener('click', () => {
+    if (dialog.open || closingViewer || dialog.hidden || !$('#release-warning').hidden) return;
+    const from = location.hash || '#collection';
+    history.pushState({stadiumAtlasSlideshow:{from,owned:true,scope:'all'}},'', '#slideshow');
+    route();
+    setSlideshowPlaying(true);
+    requestViewerFullscreen();
+  });
+  slideshowPlay.addEventListener('click', () => setSlideshowPlaying(!slideshow.playing));
+  slideshowScope.addEventListener('change', () => {
+    slideshow.scope = slideshowScope.value === 'filtered' ? 'filtered' : 'all';
+    orderSlideshow(false);
+    if (!slideshow.queue.length) slideshow.playing = false;
+    saveSlideshowHistory(); updateViewerImage();
+  });
+  $('#slideshow-speed').addEventListener('change', event => {
+    const value = Number(event.target.value);
+    slideshow.delay = [3000,5000,8000,12000].includes(value) ? value : 5000;
+    saveSlideshowHistory(); updateSlideshowControls(); scheduleSlideshow();
+  });
+  $('#slideshow-shuffle').addEventListener('click', () => {
+    slideshow.shuffle = !slideshow.shuffle;
+    orderSlideshow(); saveSlideshowHistory(); updateViewerImage();
+  });
+  document.addEventListener('visibilitychange', () => { if (document.hidden && slideshow.active) setSlideshowPlaying(false,'Paused while this tab is hidden'); });
+  window.addEventListener('pagehide', () => { if (slideshow.active) setSlideshowPlaying(false); });
+  window.addEventListener('blur', () => { if (slideshow.active && slideshow.playing) setSlideshowPlaying(false,'Paused while this window is inactive'); });
 
   // Published daily snapshots only. No provider credentials or API calls in the browser.
   const recordsSeason = window.STADIUM_ATLAS_RECORDS_SEASON;
@@ -422,6 +573,9 @@
 
   function route() {
     cancelCardGesture();
+    if (location.hash === '#slideshow') { routeSlideshow(); closingViewer = false; return; }
+    const leavingSlideshow = slideshow.active;
+    if (leavingSlideshow) leaveSlideshow();
     const match = location.hash.match(/^#stadium\/([a-z0-9-]+)(?:\/view\/([1-9][0-9]*))?$/);
     const item = match && catalog.find(stadium => stadium.id === match[1]);
     const showDetail = Boolean(item) && (!match[2] || Number(match[2]) <= item.views.length);
@@ -459,12 +613,19 @@
       const link = lastCardFocus?.isConnected && lastCardFocus.getAttribute('href') === `#stadium/${activeStadium.id}` ? lastCardFocus : $(`.card-detail-link[href="#stadium/${activeStadium.id}"]`);
       link?.focus({preventScroll:true});
     }
+    if (leavingSlideshow && !dialog.open) $('#start-slideshow').focus({preventScroll:true});
     wasDetail = showDetail;
     closingViewer = false;
   }
   function closeViewer() {
     if (!dialog.open || closingViewer) return;
     closingViewer = true;
+    if (slideshow.active) {
+      setSlideshowPlaying(false);
+      if (slideshow.owned) history.back();
+      else { history.replaceState(null,'',slideshow.from); route(); }
+      return;
+    }
     if (viewerHistoryEntry) history.back();
     else { history.replaceState(null, '', `#stadium/${activeStadium.id}`); route(); }
   }
@@ -473,15 +634,19 @@
     const viewer = `${from}/view/${view + 1}`;
     history.pushState({stadiumAtlasViewer:{from,viewer}}, '', viewer);
     route();
-    // Use native full screen where available; the dialog already fills the viewport elsewhere.
-    if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
-      try { document.documentElement.requestFullscreen().then(() => { if (!dialog.open && document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(() => {}); }).catch(() => {}); } catch {}
-    }
+    requestViewerFullscreen();
   });
   $('#close-viewer').addEventListener('click', closeViewer);
   dialog.addEventListener('cancel', event => { event.preventDefault(); closeViewer(); });
   window.addEventListener('hashchange', route);
   function switchViewer(direction) {
+    if (!dialog.open || closingViewer) return;
+    if (slideshow.active) {
+      if (!slideshow.queue.length) return;
+      slideshow.position = (slideshow.position + direction + slideshow.queue.length) % slideshow.queue.length;
+      saveSlideshowHistory(); updateViewerImage();
+      return;
+    }
     const nextView = (view + direction + activeStadium.views.length) % activeStadium.views.length;
     const viewer = `#stadium/${activeStadium.id}/view/${nextView + 1}`;
     history.replaceState(viewerHistoryEntry ? {stadiumAtlasViewer:{from:`#stadium/${activeStadium.id}`,viewer}} : null, '', viewer);
@@ -490,7 +655,20 @@
   $('#viewer-prev').addEventListener('click', () => switchViewer(-1));
   $('#viewer-next').addEventListener('click', () => switchViewer(1));
   dialog.addEventListener('keydown', event => {
+    // Native selects and buttons retain their own keyboard behavior.
+    if (event.target.closest('select,input,textarea')) return;
     if (event.target !== stage && (event.key === 'PageUp' || event.key === 'PageDown')) { event.preventDefault(); switchViewer(event.key === 'PageUp' ? -1 : 1); }
+    if (slideshow.active && !event.target.closest('button') && (event.key === ' ' || event.key.toLowerCase() === 'p')) {
+      event.preventDefault();
+      if (!event.repeat) setSlideshowPlaying(!slideshow.playing);
+    }
+  });
+  dialog.addEventListener('close', () => {
+    if (!dialog.open) {
+      clearSlideshowTimer();
+      if (slideshow.active) setSlideshowPlaying(false);
+      document.body.classList.remove('viewer-open');
+    }
   });
 
   // Start with the whole image; allow deliberate enlargement without claiming added detail.
@@ -503,7 +681,8 @@
   const minScale = .5;
   const maxScale = () => 8;
   function constrain() {
-    const image = imageOf();
+    const image = viewerPhoto();
+    if (!image) return;
     const width = image.width * fit * scale, height = image.height * fit * scale;
     // Generous movement across the viewport, while keeping a small edge within reach.
     const limitX = Math.max(0, (width + stageWidth) / 2 - Math.min(width, stageWidth) * .12);
@@ -520,7 +699,8 @@
     const rect = stage.getBoundingClientRect();
     stageWidth = Math.max(1, rect.width);
     stageHeight = Math.max(1, rect.height);
-    const image = imageOf();
+    const image = viewerPhoto();
+    if (!image) return;
     fit = Math.min(stageWidth / image.width, stageHeight / image.height);
     viewerImage.style.width = `${image.width * fit}px`;
     viewerImage.style.height = `${image.height * fit}px`;
@@ -530,16 +710,88 @@
     stage.classList.remove('is-dragging');
     paint();
   }
+  function showViewerStatus(message = '', retry = false) {
+    $('#viewer-image-message').textContent = message;
+    $('#viewer-image-status').hidden = !message;
+    $('#viewer-retry').hidden = !retry;
+  }
+  function replaceViewerImage(image, retry = false) {
+    const previous = viewerImage;
+    const replacement = document.createElement('img');
+    replacement.id = 'viewer-image'; replacement.alt = image.alt;
+    replacement.width = image.width; replacement.height = image.height;
+    replacement.draggable = false; replacement.decoding = 'async';
+    replacement.dataset.viewerSource = image.src;
+    // Per-request nodes isolate late load/error events from a photo we've left.
+    let loaded = false;
+    const onLoad = () => {
+      if (loaded || viewerImage !== replacement || !dialog.open || viewerPhoto()?.src !== image.src) return;
+      loaded = true; viewerReady = true;
+      viewerFailed = false; replacement.style.visibility = '';
+      showViewerStatus(); fitImage();
+      if (slideshow.active) { updateSlideshowControls(); scheduleSlideshow(); }
+    };
+    replacement.addEventListener('load',onLoad);
+    replacement.addEventListener('error', () => {
+      if (viewerImage !== replacement || !dialog.open || viewerPhoto()?.src !== image.src) return;
+      viewerReady = false;
+      viewerFailed = true; replacement.style.visibility = 'hidden';
+      showViewerStatus('This image could not load. Retry it, or use the arrows to continue.',true);
+      if (slideshow.active) setSlideshowPlaying(false,'Paused · Image could not load');
+    });
+    viewerImage = replacement;
+    previous.replaceWith(replacement);
+    viewerFailed = false; viewerReady = false;
+    showViewerStatus();
+    replacement.src = retry ? `${image.src}${image.src.includes('?') ? '&' : '?'}sa_viewer_retry=${Date.now()}-${++retryRequest}` : image.src;
+    // A cached image may already be complete before its load event is delivered.
+    if (replacement.complete && replacement.naturalWidth > 0) onLoad();
+  }
   function updateViewerImage() {
-    const image = imageOf();
-    viewerImage.src = image.src; viewerImage.alt = image.alt;
+    clearSlideshowTimer();
+    const entry = viewerEntry(), image = viewerPhoto();
+    $('#viewer-prev').disabled = slideshow.active && slideshow.queue.length < 2;
+    $('#viewer-next').disabled = slideshow.active && slideshow.queue.length < 2;
+    if (!image) {
+      viewerImage.style.visibility = 'hidden'; viewerImage.removeAttribute('src');
+      viewerFailed = false; viewerReady = false;
+      if (slideshowPreload) { slideshowPreload.removeAttribute('src'); slideshowPreload = null; }
+      $('#viewer-title').textContent = 'No matching photos';
+      $('#viewer-announcement').textContent = 'No photos match these filters. Choose All photos or close to change filters.';
+      showViewerStatus(); updateSlideshowControls();
+      return;
+    }
+    replaceViewerImage(image);
     $('#viewer-title').textContent = image.title;
-    const nextTitle = activeStadium.views[(view + 1) % activeStadium.views.length].title.toLowerCase();
-    const previousTitle = activeStadium.views[(view - 1 + activeStadium.views.length) % activeStadium.views.length].title.toLowerCase();
-    $('#viewer-prev').setAttribute('aria-label', `Previous view: ${previousTitle}`);
-    $('#viewer-next').setAttribute('aria-label', `Next view: ${nextTitle}`);
-    $('#viewer-announcement').textContent = `${image.title}, ${view + 1} of ${activeStadium.views.length}. Full image fitted to screen. Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
+    $('#viewer-stadium').textContent = entry.item.stadium;
+    $('#viewer-era').textContent = `${entry.item.artEra || '2024-era'} reconstruction`;
+    if (slideshow.active) {
+      const total = slideshow.queue.length;
+      const next = slideshow.queue[(slideshow.position + 1) % total];
+      const prev = slideshow.queue[(slideshow.position - 1 + total) % total];
+      $('#viewer-prev').setAttribute('aria-label', `Previous photo: ${prev.item.school}, ${prev.item.views[prev.index].title.toLowerCase()}`);
+      $('#viewer-next').setAttribute('aria-label', `Next photo: ${next.item.school}, ${next.item.views[next.index].title.toLowerCase()}`);
+      updateSlideshowControls();
+      $('#viewer-announcement').textContent = `${entry.item.school}, ${entry.item.stadium}. ${image.title}, ${slideshow.position + 1} of ${total}. Page Up and Page Down change photos. Space pauses or plays. Zooming or dragging pauses playback.`;
+      preloadNextSlideshowPhoto(); scheduleSlideshow();
+    } else {
+      const nextTitle = activeStadium.views[(view + 1) % activeStadium.views.length].title.toLowerCase();
+      const previousTitle = activeStadium.views[(view - 1 + activeStadium.views.length) % activeStadium.views.length].title.toLowerCase();
+      $('#viewer-prev').setAttribute('aria-label', `Previous view: ${previousTitle}`);
+      $('#viewer-next').setAttribute('aria-label', `Next view: ${nextTitle}`);
+      $('#viewer-announcement').textContent = `${image.title}, ${view + 1} of ${activeStadium.views.length}. Full image fitted to screen. Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
+    }
     fitImage();
+  }
+  $('#viewer-retry').addEventListener('click', () => {
+    const image = viewerPhoto();
+    if (!image) return;
+    replaceViewerImage(image,true); fitImage();
+    stage.focus({preventScroll:true});
+    if (slideshow.active) updateSlideshowControls('Paused · Retrying image');
+  });
+  function pauseForImageInteraction() {
+    if (slideshow.active && slideshow.playing) setSlideshowPlaying(false,'Paused to explore · Press Play to continue');
   }
   function localPoint(clientX, clientY) { const rect = stage.getBoundingClientRect(); return {x:clientX - rect.left - rect.width / 2,y:clientY - rect.top - rect.height / 2}; }
   function zoomTo(next, anchor = {x:0,y:0}) {
@@ -551,10 +803,9 @@
     paint();
   }
   function toggleZoom(point) { if (Math.abs(scale - 1) > .01 || Math.abs(x) > 1 || Math.abs(y) > 1) { scale = 1; x = y = 0; paint(); } else zoomTo(Math.min(maxScale(), 2.5), point); }
-  viewerImage.addEventListener('load', () => { if (dialog.open) fitImage(); });
   new ResizeObserver(() => { if (dialog.open) fitImage(); }).observe(stage);
-  stage.addEventListener('wheel', event => { event.preventDefault(); const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? stageHeight : 1); zoomTo(scale * Math.exp(-delta * .002), localPoint(event.clientX,event.clientY)); }, {passive:false});
-  stage.addEventListener('dblclick', event => { event.preventDefault(); toggleZoom(localPoint(event.clientX,event.clientY)); });
+  stage.addEventListener('wheel', event => { event.preventDefault(); pauseForImageInteraction(); const delta = event.deltaY * (event.deltaMode === 1 ? 16 : event.deltaMode === 2 ? stageHeight : 1); zoomTo(scale * Math.exp(-delta * .002), localPoint(event.clientX,event.clientY)); }, {passive:false});
+  stage.addEventListener('dblclick', event => { event.preventDefault(); pauseForImageInteraction(); toggleZoom(localPoint(event.clientX,event.clientY)); });
   function beginGesture() {
     const points = [...pointers.values()];
     if (points.length >= 2) {
@@ -565,6 +816,7 @@
   }
   stage.addEventListener('pointerdown', event => {
     if (event.pointerType === 'mouse' && event.button !== 0) return;
+    pauseForImageInteraction();
     stage.focus({preventScroll:true});
     stage.setPointerCapture(event.pointerId);
     if (!pointers.size) gestureHadMultiple = false;
@@ -611,7 +863,7 @@
   stage.addEventListener('lostpointercapture', endPointer);
   stage.addEventListener('keydown', event => {
     const actions = {'+':()=>zoomTo(scale*1.25),'=':()=>zoomTo(scale*1.25),'-':()=>zoomTo(scale/1.25),'0':fitImage,PageUp:()=>switchViewer(-1),PageDown:()=>switchViewer(1),ArrowLeft:()=>{x+=65;paint();},ArrowRight:()=>{x-=65;paint();},ArrowUp:()=>{y+=65;paint();},ArrowDown:()=>{y-=65;paint();}};
-    if (actions[event.key]) { event.preventDefault(); actions[event.key](); }
+    if (actions[event.key]) { event.preventDefault(); if (!['PageUp','PageDown'].includes(event.key)) pauseForImageInteraction(); actions[event.key](); }
   });
   document.addEventListener('fullscreenchange', () => { if(dialog.open) fitImage(); });
   renderResults(); route();

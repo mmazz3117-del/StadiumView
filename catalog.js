@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.9.5';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.10.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -6157,6 +6157,1289 @@ window.STADIUMS = [
         "alt": "Generated second aerial interpretation of Bridgeforth Stadium/Zane Showker Field in Harrisonburg.",
         "width": 1672,
         "height": 941
+      }
+    ]
+  },
+  {
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "id": "charlotte-jerry-richardson",
+    "school": "Charlotte",
+    "fullSchool": "University of North Carolina at Charlotte",
+    "team": "49ers",
+    "teamName": "Charlotte 49ers",
+    "mascot": "Norm the Niner",
+    "stadium": "Jerry Richardson Stadium",
+    "city": "Charlotte",
+    "state": "North Carolina",
+    "opened": 2013,
+    "seatingCapacity": 15314,
+    "description": "Charlotte’s compact campus football home has low, open-air stands and a brick field house. Its west-side premium tower is under construction in 2026, with completion expected in spring 2027.",
+    "aliases": [
+      "UNC Charlotte",
+      "UNCC",
+      "McColl-Richardson Field",
+      "University of North Carolina at Charlotte",
+      "Charlotte 49ers"
+    ],
+    "capacityNote": "15,314 during the 2026 expansion works; planned higher capacity is not yet open.",
+    "sources": [
+      {
+        "title": "Official stadium facts and visual references",
+        "url": "https://charlotte49ers.com/sports/2012/3/27/205404774"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://charlotte49ers.com/news/2025/8/28/football-charlotte-athletics-breaks-ground-on-jerry-richardson-stadium-expansion"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://charlotte49ers.com/sports/2025/11/4/jerry-richardson-stadium-expansion"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://charlotte49ers.com/sports/2012/3/27/205404652"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 conference schedule pairings",
+        "url": "https://theamerican.org/news/2025/10/14/american-announces-2026-football-schedule-pairings.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/charlotte-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Jerry Richardson Stadium in Charlotte, with low stands, west-side tower construction, brick field house and wooded campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/charlotte-stadium-reverse-v2.png",
+        "alt": "AI-generated reverse aerial of Jerry Richardson Stadium across the west sideline pressbox and unfinished construction toward the field, opposite bleachers and wooded campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "id": "east-carolina-dowdy-ficklen",
+    "school": "East Carolina",
+    "fullSchool": "East Carolina University",
+    "team": "Pirates",
+    "teamName": "East Carolina Pirates",
+    "mascot": "PeeDee the Pirate",
+    "stadium": "Dowdy-Ficklen Stadium",
+    "city": "Greenville",
+    "state": "North Carolina",
+    "opened": 1963,
+    "seatingCapacity": 51000,
+    "description": "ECU’s Bagwell Field sits between a double-deck north grandstand and the south-side TowneBank Tower. The east-end horseshoe faces the Murphy Center at the opposite end, within Greenville’s tree-lined athletics campus.",
+    "aliases": [
+      "ECU",
+      "Bagwell Field",
+      "Ficklen Stadium",
+      "East Carolina University",
+      "East Carolina Pirates"
+    ],
+    "capacityNote": "51,000 in the 2026 schedule; the facilities quick facts still list 50,000.",
+    "sources": [
+      {
+        "title": "Official stadium facts and visual references",
+        "url": "https://ecupirates.com/facilities/dowdy-ficklen-stadium/1"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://ecupirates.com/documents/download/2026/5/12/2026_Football_Schedule.pdf"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://ecupirates.com/news/2021/3/12/general-ecu-athletics-introduces-new-mascot-mark"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 conference schedule pairings",
+        "url": "https://theamerican.org/news/2025/10/14/american-announces-2026-football-schedule-pairings.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/east-carolina-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Dowdy-Ficklen Stadium in Greenville, showing TowneBank Tower, the double-deck north stand and leafy athletics campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/east-carolina-stadium-reverse-v2.png",
+        "alt": "AI-generated reverse aerial of Dowdy-Ficklen Stadium from the Murphy Center end, with the north double deck at left, TowneBank Tower at right and east-end seating beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "id": "florida-atlantic-flagler-stadium",
+    "school": "Florida Atlantic",
+    "fullSchool": "Florida Atlantic University",
+    "team": "Owls",
+    "teamName": "Florida Atlantic Owls",
+    "mascot": "Owlsley and Hoot",
+    "stadium": "Flagler Credit Union Stadium",
+    "city": "Boca Raton",
+    "state": "Florida",
+    "opened": 2011,
+    "seatingCapacity": 30000,
+    "description": "FAU’s palm-lined home surrounds Howard Schnellenberger Field with exposed steel-supported stands and a west-side suite tower. The Boca Raton campus and distant Atlantic coast provide its tropical setting.",
+    "aliases": [
+      "FAU",
+      "FAU Stadium",
+      "Howard Schnellenberger Field",
+      "Florida Atlantic University",
+      "Florida Atlantic Owls"
+    ],
+    "capacityNote": "",
+    "sources": [
+      {
+        "title": "Official stadium facts and visual references",
+        "url": "https://fausports.com/facilities/fau-football-stadium/79"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.fau.edu/president/traditions/"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.fau.edu/newsdesk/documents/florida-atlantic-mag-f-2023.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 conference schedule pairings",
+        "url": "https://theamerican.org/news/2025/10/14/american-announces-2026-football-schedule-pairings.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/florida-atlantic-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Flagler Credit Union Stadium in Boca Raton, showing its curved end stand, west suite tower, palm-lined campus and distant coast.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/florida-atlantic-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of Flagler Credit Union Stadium, with separate south-end seating, exposed steel stands, west suite tower and inland Boca Raton campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "id": "north-texas-datcu",
+    "school": "North Texas",
+    "fullSchool": "University of North Texas",
+    "team": "Mean Green",
+    "teamName": "North Texas Mean Green",
+    "mascot": "Scrappy the Eagle",
+    "stadium": "DATCU Stadium",
+    "city": "Denton",
+    "state": "Texas",
+    "opened": 2011,
+    "seatingCapacity": 30100,
+    "description": "North Texas’s horseshoe-shaped stadium is recognizable for its wing-shaped north-end grandstand and west-side premium tower. It anchors the Mean Green Athletic Village near Interstate 35E, with three wind turbines supporting its green design.",
+    "aliases": [
+      "UNT",
+      "Apogee Stadium",
+      "Mean Green Stadium",
+      "University of North Texas",
+      "North Texas Mean Green"
+    ],
+    "capacityNote": "30,100 after the 2024 chairback-seat changes.",
+    "sources": [
+      {
+        "title": "Official stadium facts and visual references",
+        "url": "https://meangreensports.com/facilities/apogee-stadium/4"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://studentaffairs.unt.edu/student-activities-center/programs-and-services/spirit/scrappy/index.html"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://www.unt.edu/allabout/mean-green.html"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 conference schedule pairings",
+        "url": "https://theamerican.org/news/2025/10/14/american-announces-2026-football-schedule-pairings.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/north-texas-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of DATCU Stadium in Denton, looking past the south scoreboard toward wing-shaped north-end seating, with the athletic village and highway beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/north-texas-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of DATCU Stadium over its wing-shaped north stand, with the west premium tower, south scoreboard and surrounding athletic village.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "id": "rice-first-community-stadium",
+    "school": "Rice",
+    "fullSchool": "Rice University",
+    "team": "Owls",
+    "teamName": "Rice Owls",
+    "mascot": "Sammy the Owl",
+    "stadium": "First Community Stadium",
+    "city": "Houston",
+    "state": "Texas",
+    "opened": 1950,
+    "seatingCapacity": 47000,
+    "description": "Rice’s historic concrete football bowl stands among campus oaks, with Houston’s Texas Medical Center beyond. Renamed First Community Stadium in October 2026, it retains the broad sideline upper decks ahead of the planned Gateway Project transformation.",
+    "aliases": [
+      "Rice Stadium",
+      "Historic Rice Stadium",
+      "Rice University",
+      "Rice Owls"
+    ],
+    "capacityNote": "",
+    "sources": [
+      {
+        "title": "Official stadium facts and visual references",
+        "url": "https://riceowls.com/facilities/rice-stadium/3"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://riceowls.com/news/2026/10/1/football-rice-first-community-credit-union-announce-20-year-stadium-naming-rights-deal"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://riceowls.com/news/2026/8/10/football-construction-set-to-begin-on-new-practice-pavilion"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.rice.edu/rice-traditions"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 conference schedule pairings",
+        "url": "https://theamerican.org/news/2025/10/14/american-announces-2026-football-schedule-pairings.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/rice-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of First Community Stadium in Houston, retaining the historic concrete upper decks and north performance center among campus oaks.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/rice-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of First Community Stadium over the tarped south-end seats toward both concrete sideline upper decks and the north performance center.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "id": "temple-lincoln-financial",
+    "school": "Temple",
+    "fullSchool": "Temple University",
+    "team": "Owls",
+    "teamName": "Temple Owls",
+    "mascot": "Hooter the Owl and Stella",
+    "stadium": "Lincoln Financial Field",
+    "city": "Philadelphia",
+    "state": "Pennsylvania",
+    "opened": 2003,
+    "seatingCapacity": 69879,
+    "description": "Temple plays at Lincoln Financial Field in South Philadelphia’s sports complex. The open-air professional stadium combines steep green seating decks, exposed steel, corner gaps and large end-zone screens, with the city skyline visible to the north.",
+    "aliases": [
+      "The Linc",
+      "Temple Owls",
+      "Temple University"
+    ],
+    "capacityNote": "69,879 total venue seats; Temple’s game configuration may differ.",
+    "sources": [
+      {
+        "title": "Official stadium facts and visual references",
+        "url": "https://owlsports.com/facilities/lincoln-financial-field/17"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://media.eagles.1rmg.com/wp-content/uploads/2020/03/13135906/Lincoln-Financial-Field-2024-10.pdf"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://admissions.temple.edu/about/fast-facts"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 conference schedule pairings",
+        "url": "https://theamerican.org/news/2025/10/14/american-announces-2026-football-schedule-pairings.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/temple-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Lincoln Financial Field for Temple football, with dark green decks, cherry field markings and South Philadelphia sports-district context.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/temple-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Lincoln Financial Field for Temple football, with exposed steel, green multi-tier stands and surrounding South Philadelphia roads and parking.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "id": "tulsa-chapman",
+    "school": "Tulsa",
+    "fullSchool": "University of Tulsa",
+    "team": "Golden Hurricane",
+    "teamName": "Tulsa Golden Hurricane",
+    "mascot": "Gus T.",
+    "stadium": "Skelly Field at H.A. Chapman Stadium",
+    "city": "Tulsa",
+    "state": "Oklahoma",
+    "opened": 1930,
+    "seatingCapacity": 30000,
+    "description": "Tulsa’s intimate football venue pairs pale stone collegiate architecture with steep sideline stands and an open north end anchored by the Case Athletic Complex. Its west-side tower faces the Reynolds Center across the field, with campus lawns and neighborhood streets around the stadium.",
+    "aliases": [
+      "H.A. Chapman Stadium",
+      "Chapman Stadium",
+      "Skelly Stadium",
+      "Skelly Field",
+      "University of Tulsa",
+      "Tulsa Golden Hurricane"
+    ],
+    "capacityNote": "",
+    "sources": [
+      {
+        "title": "Official stadium facts and visual references",
+        "url": "https://tulsahurricane.com/sports/2015/6/9/facilities"
+      },
+      {
+        "title": "Official stadium update and current context",
+        "url": "https://tulsahurricane.com/news/2015/6/4/FB_0604152438"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://utulsa.edu/news/tu-mascot-history/"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 conference schedule pairings",
+        "url": "https://theamerican.org/news/2025/10/14/american-announces-2026-football-schedule-pairings.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/tulsa-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of H.A. Chapman Stadium in Tulsa, with the west limestone facade, north Case Athletic Complex, separate south bleachers and Reynolds Center beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/tulsa-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of H.A. Chapman Stadium over the north Case Athletic Complex toward the field, west-side tower, south bleachers and leafy Tulsa campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "uab-protective-stadium",
+    "school": "UAB",
+    "fullSchool": "University of Alabama at Birmingham",
+    "team": "Blazers",
+    "teamName": "UAB Blazers",
+    "mascot": "Blaze the Dragon",
+    "stadium": "Protective Stadium",
+    "city": "Birmingham",
+    "state": "Alabama",
+    "opened": 2021,
+    "seatingCapacity": 47100,
+    "conference": "American Athletic",
+    "description": "UAB's downtown football home anchors Birmingham's Uptown district beside the BJCC. Red brick, exposed black steel, a west-side premium tower and the south-end video board frame its open seating bowl.",
+    "aliases": [
+      "Alabama Birmingham",
+      "University of Alabama at Birmingham",
+      "UAB Blazers"
+    ],
+    "capacityNote": "UAB-hosted 2025 football game notes list 47,100; the venue A–Z guide separately lists 45,000 seats. Capacity depends on the published configuration.",
+    "sources": [
+      {
+        "title": "Official football capacity",
+        "url": "https://uabsports.com/documents/download/2025/11/11/UNT_FB_Game_Notes_2025_10_UAB.pdf"
+      },
+      {
+        "title": "Official venue facts and opening",
+        "url": "https://protectivestadium.com/a-z-guide/"
+      },
+      {
+        "title": "2026 home venue confirmation",
+        "url": "https://uabsports.com/news/2026/8/3/2026-uab-football-single-game-tickets-on-sale-now"
+      },
+      {
+        "title": "Official mascot",
+        "url": "https://uabsports.com/documents/download/2026/1/29/Record_Book_as_of_January_2026.pdf"
+      },
+      {
+        "title": "Architect imagery and design",
+        "url": "https://populous.com/article/populous-designed-protective-stadium-and-legacy-arena-make-their-debuts-in-birmingham"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference directory",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/uab-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Protective Stadium in Birmingham: south-corner view with the freestanding scoreboard and west brick-and-glass premium tower.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/uab-stadium-reverse.png",
+        "alt": "Generated aerial interpretation of Protective Stadium in Birmingham: north-end view toward the south scoreboard with the west premium tower on the right.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "utsa-alamodome",
+    "school": "UTSA",
+    "fullSchool": "The University of Texas at San Antonio",
+    "team": "Roadrunners",
+    "teamName": "UTSA Roadrunners",
+    "mascot": "Rowdy the Roadrunner",
+    "stadium": "Alamodome",
+    "city": "San Antonio",
+    "state": "Texas",
+    "opened": 1993,
+    "seatingCapacity": 64000,
+    "conference": "American Athletic",
+    "description": "UTSA plays beneath the Alamodome's enclosed cable-supported roof near downtown San Antonio. Four corner pylons, pale exterior walls and curved glass entrances distinguish the venue east of Interstate 37.",
+    "aliases": [
+      "Texas San Antonio",
+      "University of Texas at San Antonio",
+      "UT San Antonio",
+      "UTSA Roadrunners",
+      "The University of Texas at San Antonio"
+    ],
+    "capacityNote": "Full-stadium capacity from the venue production guide; UTSA ticketed configurations are smaller (2023 quick facts listed 34,984).",
+    "sources": [
+      {
+        "title": "Official stadium opening and capacity",
+        "url": "https://www.alamodome.com/assets/doc/Alamodome-Production-Guide-042616-a046118ac7.pdf"
+      },
+      {
+        "title": "Official exterior reference",
+        "url": "https://www.alamodome.com/book-your-event/configuration-maps"
+      },
+      {
+        "title": "Official university, FBS identity and mascot",
+        "url": "https://goutsa.com/utsa-athletics-communications"
+      },
+      {
+        "title": "UTSA football configuration",
+        "url": "https://goutsa.com/documents/2023/3/7/23_utsa_fb_quick_facts.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference directory",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/utsa-stadium-aerial-v2.png",
+        "alt": "Generated aerial interpretation of Alamodome in San Antonio: corner view of the fully enclosed roof, four support pylons and distant downtown skyline.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/utsa-stadium-reverse-v2.png",
+        "alt": "Generated aerial interpretation of Alamodome in San Antonio: high side-on view across the freeway toward the fully enclosed roof and four corner pylons.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "nevada-mackay",
+    "school": "Nevada",
+    "fullSchool": "University of Nevada, Reno",
+    "team": "Wolf Pack",
+    "mascot": "Alphie, Wolfie Jr. and Luna",
+    "stadium": "Mackay Stadium",
+    "city": "Reno",
+    "state": "Nevada",
+    "opened": 1966,
+    "seatingCapacity": 30000,
+    "description": "Mackay Stadium sits on the north end of the Reno campus, with separate sideline stands, a running track and a backdrop of the Sierra Nevada.",
+    "aliases": [
+      "UNR",
+      "Nevada Reno",
+      "Chris Ault Field",
+      "University of Nevada, Reno",
+      "Nevada Wolf Pack"
+    ],
+    "capacityNote": "Nevada’s current facilities page and 2025 official football notes list 30,000. Older post-renovation notes from 2017 list approximately 27,000; published figures conflict.",
+    "teamName": "Nevada Wolf Pack",
+    "conference": "Mountain West",
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official Mackay Stadium history and facilities",
+        "url": "https://nevadawolfpack.com/sports/2017/7/21/facilities-mackay-stadium-html.aspx"
+      },
+      {
+        "title": "2025 Nevada football official notes, capacity 30,000",
+        "url": "https://wkusports.com/documents/download/2025/9/17/092025_WKU_GameNotes.pdf"
+      },
+      {
+        "title": "Older official 27,000 capacity evidence",
+        "url": "https://nevadawolfpack.com/news/2017/9/11/football-pack-hosts-idaho-state-for-whiteout-game.aspx"
+      },
+      {
+        "title": "2026 official Nevada mascot identities",
+        "url": "https://www.unr.edu/nevada-today/news/2026/fyp-find-your-pack-mikayla-pagh"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 Mountain West football membership",
+        "url": "https://gobison.com/sports/2026/2/9/fbs-frequently-asked-questions"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/nevada-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Mackay Stadium in Reno, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/nevada-stadium-reverse-v2.png",
+        "alt": "Generated reverse-angle aerial interpretation of Mackay Stadium in Reno, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "new-mexico-university-stadium",
+    "school": "New Mexico",
+    "fullSchool": "University of New Mexico",
+    "team": "Lobos",
+    "mascot": "Lobo Louie and Lobo Lucy",
+    "stadium": "University Stadium",
+    "city": "Albuquerque",
+    "state": "New Mexico",
+    "opened": 1960,
+    "seatingCapacity": 37440,
+    "description": "The Lobos’ south-campus stadium has broad concrete sideline stands, low north-end seating and an open southern end, with Albuquerque and the Sandia Mountains beyond.",
+    "aliases": [
+      "UNM",
+      "Dreamstyle Stadium",
+      "University of New Mexico",
+      "New Mexico Lobos"
+    ],
+    "capacityNote": "Official stadium page lists 37,440; a September 2025 sellout report corroborates the same figure.",
+    "teamName": "New Mexico Lobos",
+    "conference": "Mountain West",
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official University Stadium history and capacity",
+        "url": "https://golobos.com/university-stadium-info"
+      },
+      {
+        "title": "2025 official sellout capacity corroboration",
+        "url": "https://golobos.com/news/2025/09/27/lobos-storm-past-aggies-in-second-half-for-38-20-rio-grande-rivalry-win"
+      },
+      {
+        "title": "Official Lobos mascot history",
+        "url": "https://golobos.com/mascot"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 Mountain West football membership",
+        "url": "https://gobison.com/sports/2026/2/9/fbs-frequently-asked-questions"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/new-mexico-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of University Stadium in Albuquerque, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/new-mexico-stadium-reverse.png",
+        "alt": "Generated reverse-angle aerial interpretation of University Stadium in Albuquerque, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "north-dakota-state-fargodome",
+    "school": "North Dakota State",
+    "fullSchool": "North Dakota State University",
+    "team": "Bison",
+    "mascot": "Thundar",
+    "stadium": "FARGODOME",
+    "city": "Fargo",
+    "state": "North Dakota",
+    "opened": 1992,
+    "seatingCapacity": 18500,
+    "description": "The Bison’s enclosed football home is a broad brick arena with a hipped metal roof, set beside campus athletic facilities and expansive Fargo tailgating lots.",
+    "aliases": [
+      "NDSU",
+      "Fargodome",
+      "Gate City Bank Field",
+      "North Dakota State University",
+      "North Dakota State Bison"
+    ],
+    "capacityNote": "Venue operator lists 18,500 football seats; NDSU describes room for 19,000 fans. Other older university publications use 18,700. The operator’s seated figure is used here.",
+    "teamName": "North Dakota State Bison",
+    "conference": "Mountain West",
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official venue operator opening and seated capacity",
+        "url": "https://www.fargodome.com/about-us"
+      },
+      {
+        "title": "Official NDSU facility description and reference views",
+        "url": "https://gobison.com/facilities/gate-city-bank-field-at-the-fargodome/1"
+      },
+      {
+        "title": "Official FBS and Mountain West 2026 FAQ",
+        "url": "https://gobison.com/sports/2026/2/9/fbs-frequently-asked-questions"
+      },
+      {
+        "title": "Official Thundar mascot identity",
+        "url": "https://gobison.com/form/20"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/north-dakota-state-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of FARGODOME in Fargo, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/north-dakota-state-stadium-reverse.png",
+        "alt": "Generated reverse-angle aerial interpretation of FARGODOME in Fargo, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "northern-illinois-huskie-stadium",
+    "school": "Northern Illinois",
+    "fullSchool": "Northern Illinois University",
+    "team": "Huskies",
+    "mascot": "Mission and Victor E. Huskie",
+    "stadium": "Huskie Stadium",
+    "city": "DeKalb",
+    "state": "Illinois",
+    "opened": 1965,
+    "seatingCapacity": 23595,
+    "description": "Brigham Field lies between two separate grandstands on NIU’s west campus. The Yordon Center anchors the north end, with an open lawn and scoreboard to the south.",
+    "aliases": [
+      "NIU",
+      "Brigham Field at Huskie Stadium",
+      "Northern Illinois University",
+      "Northern Illinois Huskies"
+    ],
+    "capacityNote": "23,595 is the capacity in NIU’s 2025 official game notes, replacing older 24,000 figures.",
+    "teamName": "Northern Illinois Huskies",
+    "conference": "Mountain West",
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official Huskie Stadium history and reference photographs",
+        "url": "https://niuhuskies.com/facilities/huskie-stadium/6"
+      },
+      {
+        "title": "2025 NIU official game notes: identity, mascots and capacity",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/niuhuskies.com/documents/2025/9/24/4_-_SAN_DIEGO_STATE_9-27.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 Mountain West football membership",
+        "url": "https://gobison.com/sports/2026/2/9/fbs-frequently-asked-questions"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/northern-illinois-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Huskie Stadium in DeKalb, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/northern-illinois-stadium-reverse.png",
+        "alt": "Generated reverse-angle aerial interpretation of Huskie Stadium in DeKalb, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "san-jose-state-cefcu",
+    "school": "San José State",
+    "fullSchool": "San José State University",
+    "team": "Spartans",
+    "mascot": "Sammy Spartan",
+    "stadium": "CEFCU Stadium",
+    "city": "San José",
+    "state": "California",
+    "opened": 1933,
+    "seatingCapacity": 18265,
+    "description": "CEFCU Stadium’s tall west grandstand faces the modern Spartan Athletics Center and grassy east-side berm, with lower end-zone terraces and San José neighborhoods around it.",
+    "aliases": [
+      "SJSU",
+      "San Jose State",
+      "Spartan Stadium",
+      "San José State University",
+      "San José State Spartans"
+    ],
+    "capacityNote": "Current official stadium page lists 18,265 following east-side redevelopment, rather than older 30,000-plus totals.",
+    "teamName": "San José State Spartans",
+    "conference": "Mountain West",
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official CEFCU Stadium opening, capacity and reference views",
+        "url": "https://sjsuspartans.com/facilities/cefcu-stadium"
+      },
+      {
+        "title": "Official Sammy Spartan mascot",
+        "url": "https://sjsuspartans.com/sammy-spartan-rental"
+      },
+      {
+        "title": "Official university identity",
+        "url": "https://www.sjsu.edu/"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 Mountain West football membership",
+        "url": "https://gobison.com/sports/2026/2/9/fbs-frequently-asked-questions"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/san-jose-state-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of CEFCU Stadium in San José, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/san-jose-state-stadium-reverse.png",
+        "alt": "Generated reverse-angle aerial interpretation of CEFCU Stadium in San José, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 940
+      }
+    ]
+  },
+  {
+    "id": "utep-sun-bowl",
+    "school": "UTEP",
+    "fullSchool": "The University of Texas at El Paso",
+    "team": "Miners",
+    "mascot": "Paydirt Pete",
+    "stadium": "Sun Bowl",
+    "city": "El Paso",
+    "state": "Texas",
+    "opened": 1963,
+    "seatingCapacity": 45971,
+    "description": "Carved into El Paso’s rocky desert hills, the Sun Bowl combines sweeping silver grandstands with a low southern end and views across UTEP’s distinctive campus.",
+    "aliases": [
+      "Texas-El Paso",
+      "Sun Bowl Stadium",
+      "The University of Texas at El Paso",
+      "UTEP Miners"
+    ],
+    "capacityNote": "UTEP’s current facilities page lists 45,971; older 51,500 figures are not used.",
+    "teamName": "UTEP Miners",
+    "conference": "Mountain West",
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official Sun Bowl capacity, history and photographs",
+        "url": "https://utepminers.com/sports/2017/6/7/sports-facilities-spec-rel-sun-bowl-html"
+      },
+      {
+        "title": "Official aerial reference gallery",
+        "url": "https://utepminers.com/facilities/sun-bowl/2"
+      },
+      {
+        "title": "Official 2026 Mountain West membership and mascot",
+        "url": "https://www.utep.edu/newsfeed/2026/july/new-era-new-pete-utep-athletics-bringing-paydirt-into-the-21st-century.html"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/utep-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Sun Bowl in El Paso, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/utep-stadium-reverse.png",
+        "alt": "Generated reverse-angle aerial interpretation of Sun Bowl in El Paso, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "wyoming-war-memorial",
+    "school": "Wyoming",
+    "fullSchool": "University of Wyoming",
+    "team": "Cowboys",
+    "mascot": "Pistol Pete and Cowboy Joe",
+    "stadium": "War Memorial Stadium",
+    "city": "Laramie",
+    "state": "Wyoming",
+    "opened": 1950,
+    "seatingCapacity": 25500,
+    "description": "Wyoming’s high-plains football home has separate east and west stands, the north-end High Altitude Performance Center and a south scoreboard, surrounded by Laramie’s athletics campus.",
+    "aliases": [
+      "UW",
+      "Jonah Field at War Memorial Stadium",
+      "The War",
+      "University of Wyoming",
+      "Wyoming Cowboys"
+    ],
+    "capacityNote": "Current official capacity is 25,500 following the west-side project completed for the 2025 season; pre-renovation 29,000-plus figures are obsolete.",
+    "teamName": "Wyoming Cowboys",
+    "conference": "Mountain West",
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official current capacity and stadium facilities",
+        "url": "https://gowyo.com/facilities/jonah-field-at-war-memorial-stadium/1"
+      },
+      {
+        "title": "Official 2025 renovation completion",
+        "url": "https://gowyo.com/news/2025/9/4/2025-football-gameday-information-for-saturday.aspx"
+      },
+      {
+        "title": "Official opening date and renovation history",
+        "url": "https://gowyo.com/news/2024/5/16/pokes-insider-restore-the-war-update.aspx"
+      },
+      {
+        "title": "Official mascots",
+        "url": "https://www.uwyo.edu/student-success/cowboy-coaches/"
+      },
+      {
+        "title": "Official campus aerial reference",
+        "url": "https://gowyo.com/news/2020/11/17/football-university-of-wyoming-athletics-reduces-maximum-number-of-fans-allowed-at-upcoming-uw-athletics-events.aspx"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 Mountain West football membership",
+        "url": "https://gobison.com/sports/2026/2/9/fbs-frequently-asked-questions"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/wyoming-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of War Memorial Stadium in Laramie, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/wyoming-stadium-reverse.png",
+        "alt": "Generated reverse-angle aerial interpretation of War Memorial Stadium in Laramie, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "uconn-rentschler-field",
+    "school": "UConn",
+    "fullSchool": "University of Connecticut",
+    "team": "Huskies",
+    "teamName": "UConn Huskies",
+    "mascot": "Jonathan the Husky",
+    "stadium": "Pratt & Whitney Stadium at Rentschler Field",
+    "city": "East Hartford",
+    "state": "Connecticut",
+    "opened": 2003,
+    "seatingCapacity": 40000,
+    "conference": "Independent (football)",
+    "description": "UConn's football stadium occupies a former airfield in East Hartford, away from the Storrs campus. Its compact bowl and long south-side suite tower sit within broad parking areas and the Connecticut River valley's urban landscape.",
+    "aliases": [
+      "Connecticut",
+      "University of Connecticut",
+      "Rentschler Field",
+      "UConn Huskies"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts and images",
+        "url": "https://uconnhuskies.com/facilities/pratt-whitney-stadium-at-rentschler-field/2"
+      },
+      {
+        "title": "2026 home venue and FBS confirmation",
+        "url": "https://uconnhuskies.com/news/2026/1/22/football-huskies-announce-2026-home-schedule"
+      },
+      {
+        "title": "Official tower layout",
+        "url": "https://tickets.uconnhuskies.com/football/"
+      },
+      {
+        "title": "Official mascot",
+        "url": "https://uconnhuskies.com/documents/download/2021/7/7/UConn_Heritage_2017.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference directory",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/uconn-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Pratt & Whitney Stadium at Rentschler Field in East Hartford: end-on view across the bowl toward the scoreboard, with the south suite tower and distant Hartford skyline.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/uconn-stadium-reverse.png",
+        "alt": "Generated aerial interpretation of Pratt & Whitney Stadium at Rentschler Field in East Hartford: high oblique view across the south suite tower toward the opposite grandstand and surrounding parking.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "coastal-carolina-brooks-stadium",
+    "school": "Coastal Carolina",
+    "fullSchool": "Coastal Carolina University",
+    "team": "Chanticleers",
+    "teamName": "Coastal Carolina Chanticleers",
+    "mascot": "Chauncey the Chanticleer",
+    "stadium": "Brooks Stadium",
+    "city": "Conway",
+    "state": "South Carolina",
+    "opened": 2003,
+    "seatingCapacity": 20000,
+    "conference": "Sun Belt",
+    "description": "Brooks Stadium sits on Coastal Carolina's wooded Conway campus. Benton Field's teal Surf Turf, a north-end field house and the expanded west-side premium building give this compact stadium its distinctive identity.",
+    "aliases": [
+      "CCU",
+      "Coastal Carolina University",
+      "Benton Field",
+      "Chants",
+      "Coastal Carolina Chanticleers"
+    ],
+    "capacityNote": "Official athletics facility page and football notes publish 20,000; university emergency planning lists an estimated football event population of 20,968. Do not confuse that planning population with the athletics capacity.",
+    "sources": [
+      {
+        "title": "Official stadium history, capacity and visual reference",
+        "url": "https://goccusports.com/sports/2018/5/24/facilities-brooks-stadium-html"
+      },
+      {
+        "title": "2026 venue confirmation",
+        "url": "https://goccusports.com/news/2026/8/18/free-concessions-to-return-to-coastal-carolina-for-2026-football-season"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://goccusports.com/sports/2018/5/24/trads-Traditions-html?path=wbball"
+      },
+      {
+        "title": "University event population distinction",
+        "url": "https://www.coastal.edu/media/2024siteassets/contentassets/documents/resilience/CCU-EOF_May-2025.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference directory",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/coastal-carolina-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Brooks Stadium in Conway: west-side oblique view of teal Surf Turf, the premium building and the north field house.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/coastal-carolina-stadium-reverse.png",
+        "alt": "Generated aerial interpretation of Brooks Stadium in Conway: opposite-end view over the north field-house roof toward teal Surf Turf and the south scoreboard.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "georgia-southern-paulson",
+    "school": "Georgia Southern",
+    "fullSchool": "Georgia Southern University",
+    "team": "Eagles",
+    "teamName": "Georgia Southern Eagles",
+    "mascot": "GUS and Freedom (live eagle)",
+    "stadium": "Allen E. Paulson Stadium",
+    "city": "Statesboro",
+    "state": "Georgia",
+    "opened": 1984,
+    "seatingCapacity": 25000,
+    "conference": "Sun Belt",
+    "description": "Paulson Stadium occupies Georgia Southern's athletics grounds in Statesboro. Its east–west field is flanked by separate grandstands, with grassy end-zone areas and the Ted Smith Family Football Center closing the east end.",
+    "aliases": [
+      "Georgia Southern University",
+      "Evans Family Field",
+      "Paulson Stadium",
+      "Georgia Southern Eagles"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts, expansion and aerial reference",
+        "url": "https://gseagles.com/sports/2013/7/23/FB_0723131314"
+      },
+      {
+        "title": "2024 field naming",
+        "url": "https://gseagles.com/news/2024/5/21/football-paulson-stadium-field-to-be-re-named-after-generous-donation-from-evans-family"
+      },
+      {
+        "title": "2026 stadium enhancements",
+        "url": "https://gseagles.com/news/2026/8/31/football-welcome-back-to-paulson-2026"
+      },
+      {
+        "title": "Official mascots and identity",
+        "url": "https://gseagles.com/documents/download/2021/3/17/QuickFacts_21.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference directory",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/georgia-southern-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Allen E. Paulson Stadium in Statesboro: west-end view toward the east football center, with separate north and south grandstands.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/georgia-southern-stadium-reverse-v2.png",
+        "alt": "Generated aerial interpretation of Allen E. Paulson Stadium in Statesboro: east-end view over the football-center roof toward the open west lawn and separate grandstands.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "marshall-joan-edwards",
+    "school": "Marshall",
+    "fullSchool": "Marshall University",
+    "team": "Thundering Herd",
+    "teamName": "Marshall Thundering Herd",
+    "mascot": "Marco the Bison",
+    "stadium": "Joan C. Edwards Stadium",
+    "city": "Huntington",
+    "state": "West Virginia",
+    "opened": 1991,
+    "seatingCapacity": 30475,
+    "conference": "Sun Belt",
+    "description": "Marshall's football home is woven into Huntington's street grid beside campus. Steep sideline stands and a curved north end surround James F. Edwards Field, while the Shewey building anchors the south end.",
+    "aliases": [
+      "Marshall University",
+      "The Joan",
+      "James F. Edwards Field",
+      "Marshall Thundering Herd"
+    ],
+    "sources": [
+      {
+        "title": "Official venue images",
+        "url": "https://herdzone.com/facilities/joan-c.-edwards-stadium/3"
+      },
+      {
+        "title": "Official current capacity and opening history",
+        "url": "https://herdzone.com/documents/download/2025/10/8/2025_Marshall_Game_Notes_-_Week_6_-_Old_Dominion.pdf"
+      },
+      {
+        "title": "Official mascot and conference identity",
+        "url": "https://herdzone.com/documents/download/2023/9/28/Marshall_Game_Notes_-_Game_4_-_ODU.pdf"
+      },
+      {
+        "title": "2026 future facility context",
+        "url": "https://herdzone.com/news/2026/8/18/general-marshall-athletics-announces-vision-for-2026-27-and-beyond"
+      },
+      {
+        "title": "CFBD public FBS identity and current conference directory",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "classification": "NCAA Division I FBS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/marshall-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Joan C. Edwards Stadium in Huntington: south-end view across the low Shewey building toward the curved north end and video board.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/marshall-stadium-reverse.png",
+        "alt": "Generated aerial interpretation of Joan C. Edwards Stadium in Huntington: north-end view over the video-board back and curved seating toward the south Shewey building.",
+        "width": 1672,
+        "height": 940
       }
     ]
   }

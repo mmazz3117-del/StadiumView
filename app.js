@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.9.5';
+  const BUILD = '1.10.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 94 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant'].includes(item.id) ? 3 : 2));
+  const validCatalog = Array.isArray(catalog) && catalog.length === 114 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant'].includes(item.id) ? 3 : 2));
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.5 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.10.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -95,6 +95,7 @@
   const slideshowControls = $('#slideshow-controls');
   const slideshowScope = $('#slideshow-scope');
   const slideshowPlay = $('#slideshow-play');
+  const quietCaption = $('#slideshow-quiet-caption');
   const stageLabel = stage.getAttribute('aria-label');
   let slideshowTimer = null;
   let slideshowPreload = null;
@@ -110,6 +111,91 @@
   const viewerEntry = () => slideshow.active ? slideshow.queue[slideshow.position] : {item:activeStadium,index:view};
   const viewerPhoto = () => { const entry = viewerEntry(); return entry?.item.views[entry.index]; };
   const photoKey = entry => `${entry.item.id}/${entry.index}`;
+  // Chrome idling has its own clock; it never changes playback or image readiness.
+  const SLIDESHOW_UI_IDLE_MS = 3000;
+  let slideshowUiTimer = null;
+  let slideshowPointerInput = false;
+  let slideshowPointerControl = null;
+  const revealPointers = new Set();
+  let revealClickUntil = 0;
+  function clearSlideshowUiTimer() {
+    if (slideshowUiTimer !== null) { window.clearTimeout(slideshowUiTimer); slideshowUiTimer = null; }
+  }
+  function slideshowControlHasFocus() {
+    return dialog.contains(document.activeElement) && Boolean(document.activeElement.closest('button,select,input,textarea'));
+  }
+  function canHideSlideshowControls() {
+    return slideshow.active && dialog.open && !closingViewer && !document.hidden && !viewerFailed && viewerDisplayedEntry && slideshow.queue.length && !slideshowControlHasFocus() && !pointers.size && !revealPointers.size;
+  }
+  function hideSlideshowControls() {
+    slideshowUiTimer = null;
+    if (canHideSlideshowControls()) dialog.classList.add('slideshow-ui-hidden');
+  }
+  function scheduleSlideshowUiHide() {
+    clearSlideshowUiTimer();
+    if (!dialog.classList.contains('slideshow-ui-hidden') && canHideSlideshowControls()) slideshowUiTimer = window.setTimeout(hideSlideshowControls,SLIDESHOW_UI_IDLE_MS);
+  }
+  function revealSlideshowControls() {
+    if (!slideshow.active) return;
+    dialog.classList.remove('slideshow-ui-hidden');
+    scheduleSlideshowUiHide();
+  }
+  function resetSlideshowUi() {
+    clearSlideshowUiTimer();
+    dialog.classList.remove('slideshow-ui-hidden');
+    revealPointers.clear(); revealClickUntil = 0; slideshowPointerInput = false; slideshowPointerControl = null;
+  }
+  function consumeRevealEvent(event) {
+    event.preventDefault(); event.stopImmediatePropagation();
+  }
+  dialog.addEventListener('pointerdown', event => {
+    if (!slideshow.active || (event.pointerType === 'mouse' && event.button !== 0)) return;
+    slideshowPointerInput = true;
+    slideshowPointerControl = event.target.closest('button,select');
+    const revealing = dialog.classList.contains('slideshow-ui-hidden') || revealPointers.size > 0;
+    if (revealing) {
+      revealPointers.add(event.pointerId);
+      revealClickUntil = performance.now() + 500;
+      lastTap.time = 0;
+      // A first tap only reveals chrome, even above a newly revealed button.
+      try { dialog.setPointerCapture(event.pointerId); } catch {} // Window cleanup also covers unsupported capture.
+      consumeRevealEvent(event);
+    } else revealClickUntil = 0;
+    revealSlideshowControls();
+  },true);
+  for (const type of ['pointerup','pointercancel','lostpointercapture']) window.addEventListener(type,event => {
+    if (!revealPointers.has(event.pointerId)) return;
+    revealPointers.delete(event.pointerId);
+    revealClickUntil = performance.now() + 500;
+    consumeRevealEvent(event);
+    scheduleSlideshowUiHide();
+  },true);
+  for (const type of ['click','dblclick']) dialog.addEventListener(type,event => {
+    if (slideshow.active && revealClickUntil > performance.now()) consumeRevealEvent(event);
+  },true);
+  dialog.addEventListener('pointermove', event => {
+    if (event.pointerType === 'mouse' || event.pointerType === 'pen') revealSlideshowControls();
+  });
+  dialog.addEventListener('pointerup', scheduleSlideshowUiHide);
+  dialog.addEventListener('pointercancel', scheduleSlideshowUiHide);
+  dialog.addEventListener('lostpointercapture', scheduleSlideshowUiHide);
+  dialog.addEventListener('keydown', () => { slideshowPointerInput = false; slideshowPointerControl = null; revealClickUntil = 0; revealSlideshowControls(); },true);
+  dialog.addEventListener('focusin', event => {
+    if (event.target !== slideshowPointerControl) slideshowPointerControl = null;
+    revealSlideshowControls();
+  });
+  dialog.addEventListener('focusout', () => { Promise.resolve().then(scheduleSlideshowUiHide); });
+  for (const type of ['click','change']) dialog.addEventListener(type,event => {
+    if (!slideshow.active) return;
+    // After a pointer selection is committed, return to the photo. Keyboard or
+    // assistive-technology focus stays on its control and keeps chrome visible.
+    const control = event.target.closest(type === 'change' ? 'select' : 'button');
+    if (slideshowPointerInput && control && slideshowPointerControl === control && (type === 'change' || event.detail > 0) && document.activeElement === control) {
+      slideshowPointerControl = null;
+      stage.focus({preventScroll:true});
+    }
+    revealSlideshowControls();
+  });
   function slideshowPhotos(scope) {
     return catalog.filter(item => scope !== 'filtered' || matches(item)).slice().sort((a,b) => a.school.localeCompare(b.school)).flatMap(item => item.views.map((image,index) => ({item,index})));
   }
@@ -128,6 +214,13 @@
     const entry = viewerDisplayedEntry, total = slideshow.queue.length;
     slideshowControls.hidden = !slideshow.active;
     dialog.classList.toggle('is-slideshow',slideshow.active);
+    quietCaption.hidden = !slideshow.active || !entry || !total;
+    $('#slideshow-quiet-school').textContent = entry ? (entry.item.teamName || `${entry.item.school} ${entry.item.team}`) : '';
+    $('#slideshow-quiet-stadium').textContent = entry?.item.stadium || '';
+    $('#slideshow-quiet-location').textContent = entry ? `${entry.item.city}, ${entry.item.state}` : '';
+    if (!slideshow.active) resetSlideshowUi();
+    else if (!entry || !total || viewerFailed) revealSlideshowControls();
+    else if (slideshowUiTimer === null && !dialog.classList.contains('slideshow-ui-hidden')) scheduleSlideshowUiHide();
     slideshowPlay.textContent = slideshow.playing ? 'Pause' : 'Play';
     slideshowPlay.setAttribute('aria-label',slideshow.playing ? 'Pause slideshow' : 'Play slideshow');
     slideshowPlay.disabled = !total || viewerFailed;
@@ -185,6 +278,7 @@
   }
   function leaveSlideshow() {
     clearSlideshowTimer();
+    resetSlideshowUi();
     slideshow.active = false; slideshow.playing = false;
     if (slideshowPreload) { slideshowPreload.removeAttribute('src'); slideshowPreload = null; }
     stage.setAttribute('aria-label',stageLabel);
@@ -193,6 +287,7 @@
   function routeSlideshow() {
     if (!slideshow.active) {
       const saved = history.state?.stadiumAtlasSlideshow;
+      resetSlideshowUi();
       slideshow.active = true; slideshow.playing = false;
       slideshow.scope = saved?.scope === 'filtered' ? 'filtered' : 'all';
       slideshow.shuffle = saved?.shuffle === true;
@@ -207,7 +302,7 @@
       slideshow.position = Number.isInteger(saved?.position) ? Math.max(0,Math.min(slideshow.queue.length - 1,saved.position)) : 0;
       if (!dialog.open) dialog.showModal();
       document.body.classList.add('viewer-open');
-      stage.setAttribute('aria-label',`${stageLabel} Space or P pauses and plays the slideshow. Zooming and dragging pauses playback.`);
+      stage.setAttribute('aria-label',`${stageLabel} Space or P pauses and plays the slideshow. Zooming and dragging pauses playback. Move the pointer, tap once, or press Tab to reveal slideshow controls.`);
       updateViewerImage();
       stage.focus({preventScroll:true});
     }
@@ -246,14 +341,18 @@
     orderSlideshow(); saveSlideshowHistory(); updateViewerImage();
   });
   document.addEventListener('visibilitychange', () => {
-    if (!document.hidden) return;
+    if (!document.hidden) { revealSlideshowControls(); return; }
+    clearSlideshowUiTimer();
+    revealPointers.clear();
     if (slideshow.active) setSlideshowPlaying(false,'Paused while this tab is hidden');
     finishViewerTransition(false);
   });
   window.addEventListener('pagehide', () => {
     if (slideshow.active) setSlideshowPlaying(false);
     finishViewerTransition(false);
+    resetSlideshowUi();
   });
+  window.addEventListener('pageshow', revealSlideshowControls);
   const onReducedMotion = () => { if (reducedMotion.matches) finishViewerTransition(); };
   if (reducedMotion.addEventListener) reducedMotion.addEventListener('change',onReducedMotion);
   else reducedMotion.addListener(onReducedMotion);
@@ -637,6 +736,7 @@
   function closeViewer() {
     if (!dialog.open || closingViewer) return;
     closingViewer = true;
+    resetSlideshowUi();
     cancelViewerRequest();
     finishViewerTransition(false);
     viewerReady = false;
@@ -686,6 +786,7 @@
   dialog.addEventListener('close', () => {
     if (!dialog.open) {
       clearSlideshowTimer();
+      resetSlideshowUi();
       clearViewerPresentation();
       if (slideshow.active) setSlideshowPlaying(false);
       document.body.classList.remove('viewer-open');

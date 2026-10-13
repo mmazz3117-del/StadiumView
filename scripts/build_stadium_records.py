@@ -103,13 +103,55 @@ SCHOOLS = {
     'louisville-cardinal-stadium': ('Louisville', 'fbs'),
     'pittsburgh-north-shore-stadium': ('Pittsburgh', 'fbs'),
     'georgia-tech-bobby-dodd': ('Georgia Tech', 'fbs'),
+    'indiana-memorial-stadium': ('Indiana', 'fbs'),
+    'illinois-memorial-stadium': ('Illinois', 'fbs'),
+    'maryland-secu-stadium': ('Maryland', 'fbs'),
+    'northwestern-ryan-field': ('Northwestern', 'fbs'),
+    'purdue-ross-ade': ('Purdue', 'fbs'),
+    'rutgers-shi-stadium': ('Rutgers', 'fbs'),
+    'boston-college-alumni': ('Boston College', 'fbs'),
+    'california-memorial-stadium': ('California', 'fbs'),
+    'smu-ford-stadium': ('SMU', 'fbs'),
+    'stanford-stadium': ('Stanford', 'fbs'),
+    'syracuse-jma-wireless-dome': ('Syracuse', 'fbs'),
+    'wake-forest-allegacy-stadium': ('Wake Forest', 'fbs'),
+    'boise-state-albertsons': ('Boise State', 'fbs'),
+    'colorado-state-canvas': ('Colorado State', 'fbs'),
+    'fresno-state-valley-childrens': ('Fresno State', 'fbs'),
+    'san-diego-state-snapdragon': ('San Diego State', 'fbs'),
+    'oregon-state-reser': ('Oregon State', 'fbs'),
+    'washington-state-martin': ('Washington State', 'fbs'),
+    'utah-state-maverik': ('Utah State', 'fbs'),
+    'texas-state-bobcat-stadium': ('Texas State', 'fbs'),
+    'army-michie': ('Army', 'fbs'),
+    'navy-marine-corps-memorial': ('Navy', 'fbs'),
+    'air-force-falcon': ('Air Force', 'fbs'),
+    'memphis-simmons-bank-liberty': ('Memphis', 'fbs'),
+    'tulane-yulman': ('Tulane', 'fbs'),
+    'south-florida-raymond-james': ('South Florida', 'fbs'),
+    'unlv-allegiant': ('UNLV', 'fbs'),
+    'hawaii-ching-complex': ("Hawai'i", 'fbs'),
+    'app-state-kidd-brewer': ('App State', 'fbs'),
+    'james-madison-bridgeforth': ('James Madison', 'fbs'),
 }
-# New FBS names above were checked against the provider's public directory:
-# https://collegefootballdata.com/teams (2026-10-12). Miami is the ACC school;
+# The 94 reviewed identities include 30 FBS additions for v1.9.0. Public
+# directory identities were checked at https://collegefootballdata.com/teams
+# (2026-10-13); canonical provider spellings include "Hawai'i" and "App State".
+# These names are intentionally not replaced by Hawaii or Appalachian State.
+# Miami is the ACC school;
 # Miami (OH) is a separate identity and must never match. Public identities do
 # not establish authenticated 2026 records coverage, which every run validates.
 # These are explicit identities, not fuzzy matches or generic abbreviations.
 # API alternateNames/abbreviation fields are deliberately not used as a fallback.
+# Reviewed UI labels are separate from provider identities. This mapping only
+# validates catalog display text; it never participates in provider matching.
+DISPLAY_NAMES = {
+    "california-memorial-stadium": "Cal",
+    "south-florida-raymond-james": "USF",
+    "hawaii-ching-complex": "Hawai‘i",
+    "app-state-kidd-brewer": "Appalachian State",
+}
+
 EXPLICIT_ALIASES = {
     "lsu-tiger": ("Louisiana State", "Louisiana State University"),
     "penn-franklin-field": ("Pennsylvania", "University of Pennsylvania"),
@@ -188,7 +230,7 @@ def validate_catalog(catalog) -> None:
         name, classification = SCHOOLS[sid]
         if sid in found:
             raise BuildError("The catalog contains duplicate stadium IDs.", [sid])
-        if item.get("school") != name or item.get("classification") != f"NCAA Division I {classification.upper()}":
+        if item.get("school") != DISPLAY_NAMES.get(sid, name) or item.get("classification") != f"NCAA Division I {classification.upper()}":
             raise BuildError("The catalog identity or football classification has changed.", [sid])
         if not isinstance(item.get("views"), list) or len(item["views"]) != 2:
             raise BuildError("Each reviewed stadium must have two views.", [sid])

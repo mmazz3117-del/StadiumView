@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.8.0';
+  const BUILD = '1.9.1';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 64 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
+  const validCatalog = Array.isArray(catalog) && catalog.length === 94 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === 2);
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.8.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.9.1 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
     if (document.getElementById('home-view')) document.getElementById('home-view').hidden = true;
@@ -26,6 +26,39 @@
     document.body.classList.remove('viewer-open');
     return;
   }
+  // Layout is independent of catalog state and the immersive viewer.
+  const layoutSelect = $('#layout-preference');
+  const layoutStatus = $('#layout-status');
+  const layoutKey = 'stadium-atlas-layout';
+  const desktopScreen = window.matchMedia('(min-width: 1100px)');
+  const validLayout = value => ['auto','phone','desktop'].includes(value);
+  let layoutPreference = 'auto';
+  try {
+    const savedLayout = window.localStorage.getItem(layoutKey);
+    if (validLayout(savedLayout)) layoutPreference = savedLayout;
+  } catch {} // Private browsing or blocked storage must never block the app.
+  function applyLayout() {
+    const effective = layoutPreference === 'auto' ? (desktopScreen.matches ? 'desktop' : 'phone') : layoutPreference;
+    document.documentElement.dataset.layoutPreference = layoutPreference;
+    document.documentElement.dataset.layout = effective;
+    layoutSelect.value = layoutPreference;
+    layoutStatus.textContent = layoutPreference === 'auto' ? `Auto · ${effective === 'desktop' ? 'Desktop' : 'Phone'}` : `${layoutPreference === 'desktop' ? 'Desktop' : 'Phone'} layout`;
+  }
+  layoutSelect.addEventListener('change', () => {
+    layoutPreference = validLayout(layoutSelect.value) ? layoutSelect.value : 'auto';
+    try { window.localStorage.setItem(layoutKey,layoutPreference); } catch {}
+    applyLayout();
+  });
+  if (desktopScreen.addEventListener) desktopScreen.addEventListener('change', applyLayout);
+  else desktopScreen.addListener(applyLayout);
+  window.addEventListener('storage', event => {
+    if (event.key === layoutKey || event.key === null) {
+      layoutPreference = validLayout(event.newValue) ? event.newValue : 'auto';
+      applyLayout();
+    }
+  });
+  applyLayout();
+
   const home = $('#home-view');
   const detail = $('#detail-view');
   const input = $('#stadium-search');
@@ -372,6 +405,7 @@
     $$('.view-tab').forEach((button,index) => {
       const image = item.views[index];
       const thumbnail = $('img',button);
+      $('span',button).innerHTML = `<small>${String(index + 1).padStart(2,'0')}</small>${escape(image.title)}`;
       thumbnail.src = image.src;
       thumbnail.width = image.width;
       thumbnail.height = image.height;

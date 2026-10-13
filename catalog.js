@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.8.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.9.1';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -4325,6 +4325,1814 @@ window.STADIUMS = [
         "title": "Reverse view",
         "src": "assets/west-virginia-reverse-final.png",
         "alt": "AI-generated 2025-era south-side aerial of Milan Puskar Stadium, facing the north end and nearby WVU medical-campus buildings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "school": "Indiana",
+    "fullSchool": "Indiana University Bloomington",
+    "team": "Hoosiers",
+    "teamName": "Indiana Hoosiers",
+    "mascot": "Hoosier the Bison",
+    "stadium": "Merchants Bank Field at Memorial Stadium",
+    "city": "Bloomington",
+    "state": "Indiana",
+    "opened": 1960,
+    "seatingCapacity": 52656,
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "description": "Indiana’s Bloomington football home since 1960, with north-end towers and enclosed student-athlete facilities.",
+    "aliases": [
+      "Indiana University Bloomington",
+      "Hoosiers",
+      "Merchants Bank Field at Memorial Stadium",
+      "Indiana Hoosiers"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://iuhoosiers.com/sports/2015/4/1/GEN_20140101101"
+      },
+      {
+        "title": "Mascot information",
+        "url": "https://iuhoosiers.com/sports/2026/5/19/hoosier-the-bison-tryout-information"
+      },
+      {
+        "title": "CFBD canonical school and conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "2026 Big Ten membership",
+        "url": "https://bigten.org/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "2026 stadium capacity",
+        "url": "https://iuhoosiers.com/news/2026/8/27/football-notebook-improving-hoover-keeping-the-special-in-special-teams-PETE"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated aerial reconstruction; an illustration rather than a documentary photograph.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/indiana-stadium-aerial.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/indiana-stadium-aerial.png",
+        "alt": "AI-generated aerial reconstruction of Merchants Bank Field at Memorial Stadium, showing Indiana's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "7af61ab6ab1b1b6a4daea89b09f6c48f749f4843ff9e7293cea85ded4bd0e229"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/indiana-stadium-reverse-v2.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/indiana-stadium-reverse-v2.png",
+        "alt": "AI-generated second aerial reconstruction of Merchants Bank Field at Memorial Stadium, showing Indiana's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "6aa06a2e17f5162e2782eff98eaeea7290d59c13b0b6e1ea1eae2535cbace9ad"
+      }
+    ],
+    "id": "indiana-memorial-stadium"
+  },
+  {
+    "school": "Illinois",
+    "fullSchool": "University of Illinois Urbana-Champaign",
+    "team": "Fighting Illini",
+    "teamName": "Illinois Fighting Illini",
+    "mascot": "No official mascot",
+    "stadium": "Gies Memorial Stadium",
+    "city": "Champaign",
+    "state": "Illinois",
+    "opened": 1923,
+    "seatingCapacity": 60670,
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "description": "Illinois’ historic football home, with memorial colonnades and an enlarged south-end video display for 2026.",
+    "aliases": [
+      "University of Illinois Urbana-Champaign",
+      "Fighting Illini",
+      "Gies Memorial Stadium",
+      "Illinois Fighting Illini"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://fightingillini.com/facilities/gies-memorial-stadium/64"
+      },
+      {
+        "title": "Mascot information",
+        "url": "https://www.senate.illinois.edu/2020-2021/20200921senate/RS2102_FINAL_20200921.pdf"
+      },
+      {
+        "title": "CFBD canonical school and conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "2026 Big Ten membership",
+        "url": "https://bigten.org/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "2026 video display",
+        "url": "https://fightingillini.com/news/2026/1/13/illinois-daktronics-install-largest-video-display-in-college-football"
+      },
+      {
+        "title": "2026 capacity sellout",
+        "url": "https://purduesports.com/news/2026/10/3/boilers-topple-illini-24-17-to-bring-home-cannon-trophy"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated aerial reconstruction; an illustration rather than a documentary photograph.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/illinois-stadium-aerial.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/illinois-stadium-aerial.png",
+        "alt": "AI-generated aerial reconstruction of Gies Memorial Stadium, showing Illinois's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "6748f080c752c5572251aa8a19fd49da10ac68f027bd932dab3e685ddfe325f5"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/illinois-stadium-reverse-v2.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/illinois-stadium-reverse-v2.png",
+        "alt": "AI-generated second aerial reconstruction of Gies Memorial Stadium, showing Illinois's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "b95b8ecb7d57cdc7592f8b0ed233eb137cf52703792e43f1c18f6825ff71d03f"
+      }
+    ],
+    "id": "illinois-memorial-stadium"
+  },
+  {
+    "school": "Maryland",
+    "fullSchool": "University of Maryland",
+    "team": "Terrapins",
+    "teamName": "Maryland Terrapins",
+    "mascot": "Testudo",
+    "stadium": "SECU Stadium",
+    "city": "College Park",
+    "state": "Maryland",
+    "opened": 1950,
+    "seatingCapacity": 46185,
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "description": "Maryland’s College Park home since 1950, distinguished by its asymmetric upper deck and Tyser Tower.",
+    "aliases": [
+      "University of Maryland",
+      "Terrapins",
+      "SECU Stadium",
+      "Maryland Terrapins"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://umterps.com/facilities/secu-stadium/1"
+      },
+      {
+        "title": "Mascot information",
+        "url": "https://umterps.com/sports/2018/6/7/school-mascot"
+      },
+      {
+        "title": "CFBD canonical school and conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "2026 Big Ten membership",
+        "url": "https://bigten.org/stats.aspx?path=football&year=2026"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated aerial reconstruction; an illustration rather than a documentary photograph.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/maryland-stadium-aerial-v2.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/maryland-stadium-aerial-v2.png",
+        "alt": "AI-generated aerial reconstruction of SECU Stadium, showing Maryland's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "8541026aaa6993b980cc44e5e141853c60c71fa731f064c8cfc4e60f2bd80ad0"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/maryland-stadium-reverse.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/maryland-stadium-reverse.png",
+        "alt": "AI-generated second aerial reconstruction of SECU Stadium, showing Maryland's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "2e93d5bc0b36dd0007a81d58531ea76d104a6616c883b82b3e516826b3ffdb87"
+      }
+    ],
+    "capacityNote": "Current official facilities quick facts list 46,185; older capacity figures are higher.",
+    "id": "maryland-secu-stadium"
+  },
+  {
+    "school": "Northwestern",
+    "fullSchool": "Northwestern University",
+    "team": "Wildcats",
+    "teamName": "Northwestern Wildcats",
+    "mascot": "Willie the Wildcat",
+    "stadium": "Ryan Field",
+    "city": "Evanston",
+    "state": "Illinois",
+    "opened": 2026,
+    "seatingCapacity": 35000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "description": "Northwestern’s new 35,000-seat Ryan Field opened in October 2026, with a sweeping canopy above the seating bowl.",
+    "aliases": [
+      "Northwestern University",
+      "Wildcats",
+      "Ryan Field",
+      "New Ryan Field",
+      "Northwestern Wildcats"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://newryanfield.com/"
+      },
+      {
+        "title": "Mascot information",
+        "url": "https://nusports.com/news/2024/07/30/willie-the-wildcat-now-available-for-private-events"
+      },
+      {
+        "title": "CFBD canonical school and conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "2026 Big Ten membership",
+        "url": "https://bigten.org/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "2026 opening and structural design",
+        "url": "https://www.thorntontomasetti.com/news/northwestern-university-opens-ryan-field"
+      },
+      {
+        "title": "University opening announcement",
+        "url": "https://news.northwestern.edu/stories/2026/10/ryan-field-opens-tonight-here-are-some-things-you-should-know"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated aerial reconstruction; an illustration rather than a documentary photograph.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/northwestern-stadium-aerial.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/northwestern-stadium-aerial.png",
+        "alt": "AI-generated aerial reconstruction of Ryan Field, showing Northwestern's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "f75c10dafd181eab967ec97ab7d4499dbe43fcc8453ac131d518b6913ebf1ce5"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/northwestern-stadium-reverse.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/northwestern-stadium-reverse.png",
+        "alt": "AI-generated second aerial reconstruction of Ryan Field, showing Northwestern's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "a8071cb31605932df0bcb12d908a71b7cd03aa80377669ff070c397817b35fcd"
+      }
+    ],
+    "capacityNote": "New stadium opened October 2, 2026; replaces the demolished historic Ryan Field.",
+    "id": "northwestern-ryan-field"
+  },
+  {
+    "school": "Purdue",
+    "fullSchool": "Purdue University",
+    "team": "Boilermakers",
+    "teamName": "Purdue Boilermakers",
+    "mascot": "Boilermaker Special; Purdue Pete",
+    "stadium": "Ross-Ade Stadium",
+    "city": "West Lafayette",
+    "state": "Indiana",
+    "opened": 1924,
+    "seatingCapacity": 61441,
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "description": "Purdue’s West Lafayette home since 1924, with its curved north bowl and 2023 south-end seating addition.",
+    "aliases": [
+      "Purdue University",
+      "Boilermakers",
+      "Ross-Ade Stadium",
+      "Purdue Boilermakers"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://purduesports.com/facilities/ross-ade-stadium"
+      },
+      {
+        "title": "Mascot information",
+        "url": "https://purduesports.com/mascots"
+      },
+      {
+        "title": "CFBD canonical school and conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "2026 Big Ten membership",
+        "url": "https://bigten.org/stats.aspx?path=football&year=2026"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated aerial reconstruction; an illustration rather than a documentary photograph.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/purdue-stadium-aerial.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/purdue-stadium-aerial.png",
+        "alt": "AI-generated aerial reconstruction of Ross-Ade Stadium, showing Purdue's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "f36b4d88c155d9464c33f0fe7ae7924b2513fbafa3f01c6cf8c2e82a83430f8e"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/purdue-stadium-reverse.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/purdue-stadium-reverse.png",
+        "alt": "AI-generated second aerial reconstruction of Ross-Ade Stadium, showing Purdue's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "7a5058df6e418090ae78307ad484471f103be98c00a028cd9f38bde1dc23d5b9"
+      }
+    ],
+    "id": "purdue-ross-ade"
+  },
+  {
+    "school": "Rutgers",
+    "fullSchool": "Rutgers, The State University of New Jersey",
+    "team": "Scarlet Knights",
+    "teamName": "Rutgers Scarlet Knights",
+    "mascot": "Sir Henry, the Scarlet Knight",
+    "stadium": "SHI Stadium",
+    "city": "Piscataway",
+    "state": "New Jersey",
+    "opened": 1994,
+    "seatingCapacity": 52454,
+    "classification": "NCAA Division I FBS",
+    "conference": "Big Ten",
+    "description": "Rutgers’ football home on Busch campus, rebuilt in 1994 and expanded in 2009.",
+    "aliases": [
+      "Rutgers, The State University of New Jersey",
+      "Scarlet Knights",
+      "SHI Stadium",
+      "Rutgers Scarlet Knights"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://scarletknights.com/sports/2017/6/11/facilities-football-html"
+      },
+      {
+        "title": "Mascot information",
+        "url": "https://scarletknights.com/sports/2017/6/11/cheer-knight-html"
+      },
+      {
+        "title": "CFBD canonical school and conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "2026 Big Ten membership",
+        "url": "https://bigten.org/stats.aspx?path=football&year=2026"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated aerial reconstruction; an illustration rather than a documentary photograph.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/rutgers-stadium-aerial.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/rutgers-stadium-aerial.png",
+        "alt": "AI-generated aerial reconstruction of SHI Stadium, showing Rutgers's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "f922b0ec5292d6449c8535f2e447805594a018e339ed211f9f08df02f0fd949c"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/rutgers-stadium-reverse-v2.png",
+        "localPath": "/workspace/scratch/753081c0d988/stadium-batch94/power/rutgers-stadium-reverse-v2.png",
+        "alt": "AI-generated second aerial reconstruction of SHI Stadium, showing Rutgers's 2026-era football venue and surrounding campus context.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "00b382093a6e51988b5b88317063de75906bf7cbac3d19b0d31285bb9936798b"
+      }
+    ],
+    "capacityNote": "Present stadium rebuilt in 1994 on the 1938 stadium site; expanded to 52,454 in 2009.",
+    "id": "rutgers-shi-stadium"
+  },
+  {
+    "id": "boston-college-alumni",
+    "school": "Boston College",
+    "fullSchool": "Boston College",
+    "team": "Eagles",
+    "teamName": "Boston College Eagles",
+    "mascot": "Baldwin the Eagle",
+    "stadium": "Alumni Stadium",
+    "city": "Chestnut Hill",
+    "state": "Massachusetts",
+    "opened": 1957,
+    "seatingCapacity": 44500,
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "description": "Boston College’s compact football home sits beside Conte Forum, framed by stone campus buildings and mature trees.",
+    "aliases": [
+      "BC",
+      "Eagles",
+      "Boston College",
+      "Boston College Eagles"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://bceagles.com/facilities/alumni-stadium/2"
+      },
+      {
+        "title": "Mascot and traditions",
+        "url": "https://www.bc.edu/bc-web/sites/bc-magazine/summer-2023-issue/features/baldwin-confidential.html"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated 2026-era aerial interpretations, not documentary photographs. Architecture, landscaping and event details are illustrative.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/boston-college-1.png",
+        "alt": "Generated aerial interpretation of Alumni Stadium and its surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/boston-college-2.png",
+        "alt": "Generated aerial interpretation of Alumni Stadium from a second viewpoint.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "california-memorial-stadium",
+    "school": "Cal",
+    "fullSchool": "University of California, Berkeley",
+    "team": "Golden Bears",
+    "teamName": "Cal Golden Bears",
+    "mascot": "Oski",
+    "stadium": "Databricks Field at California Memorial Stadium",
+    "city": "Berkeley",
+    "state": "California",
+    "opened": 1923,
+    "seatingCapacity": 62467,
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "description": "California’s historic hillside oval combines a restored arched facade with a modern press box and wooded Tightwad Hill. Full untarped capacity is 62,467; reduced operating configurations may use 52,428 seats. The Databricks name began in September 2026.",
+    "aliases": [
+      "California",
+      "UC Berkeley",
+      "Berkeley",
+      "Golden Bears",
+      "California Memorial Stadium",
+      "University of California, Berkeley",
+      "Cal Golden Bears"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://calbears.com/facilities/california-memorial-stadium/32"
+      },
+      {
+        "title": "Mascot and traditions",
+        "url": "https://www.berkeley.edu/about/traditions/"
+      },
+      {
+        "title": "September 2026 stadium naming announcement",
+        "url": "https://calbears.com/news/2026/9/24/athletics-news-cal-announces-historic-naming-rights-partnership-with-databricks"
+      },
+      {
+        "title": "Full stadium capacity",
+        "url": "https://calbears.com/sports/2013/8/14/209136161"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated 2026-era aerial interpretations, not documentary photographs. Architecture, landscaping and event details are illustrative.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/cal-1.png",
+        "alt": "Generated aerial interpretation of Databricks Field at California Memorial Stadium and its surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/cal-2-v2.png",
+        "alt": "Generated aerial interpretation of Databricks Field at California Memorial Stadium from a second viewpoint.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "smu-ford-stadium",
+    "school": "SMU",
+    "fullSchool": "Southern Methodist University",
+    "team": "Mustangs",
+    "teamName": "SMU Mustangs",
+    "mascot": "Peruna",
+    "stadium": "Gerald J. Ford Stadium",
+    "city": "Dallas",
+    "state": "Texas",
+    "opened": 2000,
+    "seatingCapacity": 33200,
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "description": "SMU’s sunken bowl sits among red-brick campus buildings. The three-level Garry Weber End Zone Complex completed in 2024 anchors the south end.",
+    "aliases": [
+      "Southern Methodist",
+      "Southern Methodist University",
+      "Mustangs",
+      "Ford Stadium",
+      "SMU Mustangs"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://smumustangs.com/facilities/gerald-j.-ford-stadium/2"
+      },
+      {
+        "title": "Mascot and traditions",
+        "url": "https://www.smu.edu/stories/spirit-and-traditions"
+      },
+      {
+        "title": "Garry Weber End Zone Complex",
+        "url": "https://smumustangs.com/facilities/garry-weber-end-zone-complex/86"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated 2026-era aerial interpretations, not documentary photographs. Architecture, landscaping and event details are illustrative.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/smu-1-v2.png",
+        "alt": "Generated aerial interpretation of Gerald J. Ford Stadium and its surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/smu-2-v2.png",
+        "alt": "Generated aerial interpretation of Gerald J. Ford Stadium from a second viewpoint.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "stanford-stadium",
+    "school": "Stanford",
+    "fullSchool": "Stanford University",
+    "team": "Cardinal",
+    "teamName": "Stanford Cardinal",
+    "mascot": "Stanford Tree (unofficial; Stanford Band mascot)",
+    "stadium": "Stanford Stadium",
+    "city": "Stanford",
+    "state": "California",
+    "opened": 1921,
+    "seatingCapacity": 50424,
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "description": "Rebuilt in 2006 on its historic site, Stanford’s compact two-tier stadium brings the seats close to the field within a grove-filled setting. The Tree is the band’s mascot; Stanford has no official university mascot.",
+    "aliases": [
+      "Stanford University",
+      "Cardinal",
+      "Stanford Cardinal"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://gostanford.com/facilities/stanford-stadium"
+      },
+      {
+        "title": "Mascot and traditions",
+        "url": "https://gostanford.com/news/2013/04/17/on-campus-1"
+      },
+      {
+        "title": "2026 stadium updates",
+        "url": "https://gostanford.com/news/2026/07/27/things-to-know-stanford-stadium-2026"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated 2026-era aerial interpretations, not documentary photographs. Architecture, landscaping and event details are illustrative.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/stanford-1.png",
+        "alt": "Generated aerial interpretation of Stanford Stadium and its surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/stanford-2.png",
+        "alt": "Generated aerial interpretation of Stanford Stadium from a second viewpoint.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "syracuse-jma-wireless-dome",
+    "school": "Syracuse",
+    "fullSchool": "Syracuse University",
+    "team": "Orange",
+    "teamName": "Syracuse Orange",
+    "mascot": "Otto the Orange",
+    "stadium": "JMA Wireless Dome",
+    "city": "Syracuse",
+    "state": "New York",
+    "opened": 1980,
+    "seatingCapacity": 42774,
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "description": "Syracuse’s enclosed multipurpose stadium is defined by the fixed white roof and exposed steel crown installed in 2020. Both aerial views show its exterior with the playing field hidden beneath the roof.",
+    "aliases": [
+      "Cuse",
+      "Syracuse University",
+      "Orange",
+      "Carrier Dome",
+      "JMA Dome",
+      "Syracuse Orange"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://cuse.com/facilities/jma-wireless-dome/526"
+      },
+      {
+        "title": "Mascot and traditions",
+        "url": "https://www.syracuse.edu/stories/14-fun-facts-about-otto-the-orange/"
+      },
+      {
+        "title": "Modern roof structure",
+        "url": "https://cuse.com/news/2020/4/21/general-final-structural-beam-placed-in-stadium-roof-replacement"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated 2026-era aerial interpretations, not documentary photographs. Architecture, landscaping and event details are illustrative.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/syracuse-1.png",
+        "alt": "Generated aerial interpretation of JMA Wireless Dome and its surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/syracuse-2.png",
+        "alt": "Generated aerial interpretation of JMA Wireless Dome from a second viewpoint.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "wake-forest-allegacy-stadium",
+    "school": "Wake Forest",
+    "fullSchool": "Wake Forest University",
+    "team": "Demon Deacons",
+    "teamName": "Wake Forest Demon Deacons",
+    "mascot": "Demon Deacon",
+    "stadium": "Allegacy Federal Credit Union Stadium",
+    "city": "Winston-Salem",
+    "state": "North Carolina",
+    "opened": 1968,
+    "seatingCapacity": 31500,
+    "classification": "NCAA Division I FBS",
+    "conference": "ACC",
+    "description": "Wake Forest’s football home sits in the athletics district, with the tall west-side tower, Bridger Field House and grassy Deacon Hill defining its intimate footprint.",
+    "aliases": [
+      "Wake",
+      "WFU",
+      "Demon Deacons",
+      "Groves Stadium",
+      "BB&T Field",
+      "Truist Field",
+      "Wake Forest University",
+      "Wake Forest Demon Deacons"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://godeacs.com/sports/2018/7/27/facilities-wake-bbt-field-html"
+      },
+      {
+        "title": "Mascot and traditions",
+        "url": "https://traditions.campuslife.wfu.edu/mascot/"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated 2026-era aerial interpretations, not documentary photographs. Architecture, landscaping and event details are illustrative.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/wake-forest-1.png",
+        "alt": "Generated aerial interpretation of Allegacy Federal Credit Union Stadium and its surrounding setting.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/wake-forest-2.png",
+        "alt": "Generated aerial interpretation of Allegacy Federal Credit Union Stadium from a second viewpoint.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "school": "Boise State",
+    "fullSchool": "Boise State University",
+    "team": "Broncos",
+    "teamName": "Boise State Broncos",
+    "mascot": "Buster Bronco",
+    "stadium": "Albertsons Stadium",
+    "city": "Boise",
+    "state": "Idaho",
+    "opened": 1970,
+    "seatingCapacity": 32423,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "Albertsons Stadium is home to the Boise State Broncos in Boise, Idaho.",
+    "aliases": [
+      "Bronco Stadium",
+      "Lyle Smith Field",
+      "Boise State University",
+      "Boise State Broncos"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://broncosports.com/facilities/albertsons-stadium/1"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://www.boisestate.edu/brand/design/horse-imagery/"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "Headline, description and seating facts say 32,423 after 2026 renovation; timeline caption says 32,343.",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/boise-state-stadium-aerial-v3.png",
+        "alt": "Realistic aerial illustration of Albertsons Stadium, its blue field and completed north end, with Boise campus and foothills.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "171a491aa755c3d548bc9ccf1bff7c8024db6ba2dc93ce01c1c215beeaf72276"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/boise-state-stadium-reverse-v3.png",
+        "alt": "second aerial illustration of Albertsons Stadium with its west tower on the right.",
+        "width": 1672,
+        "height": 940,
+        "sha256": "2b354c6f8996363f301cb56afc3f47effec3e27d52b3fd6618f94992da391011"
+      }
+    ],
+    "id": "boise-state-albertsons"
+  },
+  {
+    "school": "Colorado State",
+    "fullSchool": "Colorado State University",
+    "team": "Rams",
+    "teamName": "Colorado State Rams",
+    "mascot": "CAM the Ram",
+    "stadium": "Canvas Stadium",
+    "city": "Fort Collins",
+    "state": "Colorado",
+    "opened": 2017,
+    "seatingCapacity": 36500,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "Canvas Stadium is home to the Colorado State Rams in Fort Collins, Colorado.",
+    "aliases": [
+      "Sonny Lubick Field",
+      "Colorado State University",
+      "Colorado State Rams"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://csurams.com/sports/2018/10/5/facilities-canvas-stadium"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://csurams.com/sports/2022/1/6/History-Traditions"
+      },
+      {
+        "title": "2025 official media guide: seated and standing-room capacities",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/csurams.com/documents/2025/8/25/2025_Football_Media_Guide.pdf"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "36,500 seats, 41,000 including standing room. Official 2025 media guide confirms distinction.",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/colorado-state-stadium-aerial.png",
+        "alt": "Realistic aerial illustration of Canvas Stadium and its Fort Collins surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "7c55f721d1aaf0ea4c5d76a02af8235971ffae2d5e89ed9a9a6395949f46fbbe"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/colorado-state-stadium-reverse-v3.png",
+        "alt": "second aerial illustration of Canvas Stadium with its west tower on the right.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "51d78992b52f34d3b01688ed108c591c6c6f4184f8c2e61738545dccfbcb37fc"
+      }
+    ],
+    "id": "colorado-state-canvas"
+  },
+  {
+    "school": "Fresno State",
+    "fullSchool": "California State University, Fresno",
+    "team": "Bulldogs",
+    "teamName": "Fresno State Bulldogs",
+    "mascot": "TimeOut",
+    "stadium": "Valley Children's Stadium",
+    "city": "Fresno",
+    "state": "California",
+    "opened": 1980,
+    "seatingCapacity": 40727,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "Valley Children's Stadium is home to the Fresno State Bulldogs in Fresno, California.",
+    "aliases": [
+      "Bulldog Stadium",
+      "California State University, Fresno",
+      "Fresno State Bulldogs"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://gobulldogs.com/facilities/valley-children%27s-stadium/1"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://gobulldogs.com/sports/2016/6/8/trads-mascot-home-html"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "Current official capacity; do not show proposed Elevate tower as completed.",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/fresno-state-stadium-aerial-v3.png",
+        "alt": "Realistic aerial illustration of Valley Children's Stadium and its Fresno surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "f246c184b9ffa7445b98225226dfc262a5a9feea384a52cf03223127d038b999"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/fresno-state-stadium-reverse-v3.png",
+        "alt": "Realistic second aerial illustration of Valley Children's Stadium and its Fresno surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "851f7f6ea9703939b6551247fbe414743cab5c7f898744b454c5408e8936b3a1"
+      }
+    ],
+    "id": "fresno-state-valley-childrens"
+  },
+  {
+    "school": "San Diego State",
+    "fullSchool": "San Diego State University",
+    "team": "Aztecs",
+    "teamName": "San Diego State Aztecs",
+    "mascot": "No official mascot",
+    "stadium": "Snapdragon Stadium",
+    "city": "San Diego",
+    "state": "California",
+    "opened": 2022,
+    "seatingCapacity": 35000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "Snapdragon Stadium is home to the San Diego State Aztecs in San Diego, California.",
+    "aliases": [
+      "San Diego State University",
+      "San Diego State Aztecs"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://goaztecs.com/snapdragon-stadium"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://goaztecs.com/news/2025/10/02/sdsu-unveils-glyphs-expanded-aztec-iconography-honoring-aztec-heritage"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/san-diego-state-stadium-aerial.png",
+        "alt": "Realistic aerial illustration of Snapdragon Stadium and its San Diego surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "ca61fa75c10938bc94de345953c841bec1d97db6dd4b1d505cef18b282508c5c"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/san-diego-state-stadium-reverse.png",
+        "alt": "Realistic second aerial illustration of Snapdragon Stadium and its San Diego surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "3ee6af78e00ae804aba55489884b72bc51f0dfd40022ea2ab51231f14d45e7f7"
+      }
+    ],
+    "id": "san-diego-state-snapdragon"
+  },
+  {
+    "school": "Oregon State",
+    "fullSchool": "Oregon State University",
+    "team": "Beavers",
+    "teamName": "Oregon State Beavers",
+    "mascot": "Benny Beaver",
+    "stadium": "Reser Stadium",
+    "city": "Corvallis",
+    "state": "Oregon",
+    "opened": 1953,
+    "seatingCapacity": 35548,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "Reser Stadium is home to the Oregon State Beavers in Corvallis, Oregon.",
+    "aliases": [
+      "Parker Stadium",
+      "Oregon State University",
+      "Oregon State Beavers"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://osubeavers.com/facilities/reser-stadium/3"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://osubeavers.com/sports/2013/7/9/208626262"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "Use post-2023 rebuilt west grandstand, not pre-demolition west stands.",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/oregon-state-stadium-aerial.png",
+        "alt": "Realistic aerial illustration of Reser Stadium and its Corvallis surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "8a63c8edf0703dea926c54874dd635e6d9208c821b8c7a5fd457aa48ea35db67"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/oregon-state-stadium-reverse.png",
+        "alt": "Realistic second aerial illustration of Reser Stadium and its Corvallis surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "09866f0878ccc04de50c6ca5fbf26c1325dcb48b230176ba4bfd1614f020534a"
+      }
+    ],
+    "id": "oregon-state-reser"
+  },
+  {
+    "school": "Washington State",
+    "fullSchool": "Washington State University",
+    "team": "Cougars",
+    "teamName": "Washington State Cougars",
+    "mascot": "Butch T. Cougar",
+    "stadium": "Gesa Field at Martin Stadium",
+    "city": "Pullman",
+    "state": "Washington",
+    "opened": 1972,
+    "seatingCapacity": 32952,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "Gesa Field at Martin Stadium is home to the Washington State Cougars in Pullman, Washington.",
+    "aliases": [
+      "Martin Stadium",
+      "Gesa Field",
+      "Washington State University",
+      "Washington State Cougars"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://wsucougars.com/gesa-field"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://wsucougars.com/sports/spirit-squads"
+      },
+      {
+        "title": "Official WSU game notes: capacity",
+        "url": "https://wsucougars.com/news/2024/08/26/cougars-open-2024-hosting-portland-state"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "Capacity supported by official game notes https://wsucougars.com/news/2024/08/26/cougars-open-2024-hosting-portland-state . Site history predates1972.",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/washington-state-stadium-aerial.png",
+        "alt": "Realistic aerial illustration of Gesa Field at Martin Stadium and its Pullman surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "b75756ad3f04c8a37422e9f8717f2cea7323f4dba4724c3dc70d432658538a8d"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/washington-state-stadium-reverse.png",
+        "alt": "Realistic second aerial illustration of Gesa Field at Martin Stadium and its Pullman surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "8d07885f370d1e6bf436742156ad9a18a1752cc217796fa14cb242d6785313ac"
+      }
+    ],
+    "id": "washington-state-martin"
+  },
+  {
+    "school": "Utah State",
+    "fullSchool": "Utah State University",
+    "team": "Aggies",
+    "teamName": "Utah State Aggies",
+    "mascot": "Big Blue",
+    "stadium": "Merlin Olsen Field at Maverik Stadium",
+    "city": "Logan",
+    "state": "Utah",
+    "opened": 1968,
+    "seatingCapacity": 25513,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "Merlin Olsen Field at Maverik Stadium is home to the Utah State Aggies in Logan, Utah.",
+    "aliases": [
+      "Maverik Stadium",
+      "Romney Stadium",
+      "Utah State University",
+      "Utah State Aggies"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://utahstateaggies.com/sports/2018/6/19/merlin-olsen-field-at-maverik-stadium.aspx"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://utahstateaggies.com/news/2009/9/27/USU_s_Big_Blue_Mascot_Participating_In_Mascot_Bowl_Monday.aspx"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "Official facility page says25,513; some2025 own game notes say25,100. Store facility figure with source note.",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/utah-state-stadium-aerial-v3.png",
+        "alt": "Realistic aerial illustration of Merlin Olsen Field at Maverik Stadium and its Logan surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "98b7d2f2a794cb169dc845f9208854a9f8d065ef76e7d97b9a8284efbc342fa5"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/utah-state-stadium-reverse-v3.png",
+        "alt": "second aerial illustration of Merlin Olsen Field at Maverik Stadium with its west tower on the right.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "ac8bf7978034805f43f314ac74a9c27ba4b128409bd563c3a033866ce337cb7f"
+      }
+    ],
+    "id": "utah-state-maverik"
+  },
+  {
+    "school": "Texas State",
+    "fullSchool": "Texas State University",
+    "team": "Bobcats",
+    "teamName": "Texas State Bobcats",
+    "mascot": "Boko the Bobcat",
+    "stadium": "UFCU Stadium",
+    "city": "San Marcos",
+    "state": "Texas",
+    "opened": 1981,
+    "seatingCapacity": 28388,
+    "classification": "NCAA Division I FBS",
+    "conference": "Pac-12",
+    "description": "UFCU Stadium is home to the Texas State Bobcats in San Marcos, Texas.",
+    "aliases": [
+      "Bobcat Stadium",
+      "Jim Wacker Field",
+      "Texas State University",
+      "Texas State Bobcats"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium information",
+        "url": "https://txst.com/facilities/ufcu-stadium/1"
+      },
+      {
+        "title": "Official 2026 Pac-12 football membership",
+        "url": "https://pac-12.com/news/2026/2/9/general-the-new-pac-12-announces-its-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public canonical team names and FBS metrics",
+        "url": "https://collegefootballdata.com/metrics/season"
+      },
+      {
+        "title": "Official mascot and identity",
+        "url": "https://www.txst.edu/about/history-traditions/boko-the-bobcat.html"
+      },
+      {
+        "title": "South-end complex completed July 2025",
+        "url": "https://www.facilities.txst.edu/pdc/construction/stadium.html"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "AI-generated realistic aerial illustrations informed by current stadium references; not documentary photographs. Small architectural and field-marking details are interpretive.",
+    "capacityNote": "Capacity reflects2025 south end complex; no running track since2012.",
+    "views": [
+      {
+        "title": "Campus aerial",
+        "src": "assets/texas-state-stadium-aerial.png",
+        "alt": "Realistic aerial illustration of UFCU Stadium and its San Marcos surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "f5b35b66c2e4b70d58c138490ff6b5e31e4d104d9d059f76a4a3a4eb1b40a167"
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/texas-state-stadium-reverse.png",
+        "alt": "Realistic second aerial illustration of UFCU Stadium and its San Marcos surroundings.",
+        "width": 1672,
+        "height": 941,
+        "sha256": "363fd6af48c78edff9292e1d1bfef0ff5193f4146672be328a456dae1df0fc76"
+      }
+    ],
+    "id": "texas-state-bobcat-stadium"
+  },
+  {
+    "id": "army-michie",
+    "school": "Army",
+    "fullSchool": "United States Military Academy",
+    "team": "Black Knights",
+    "teamName": "Army Black Knights",
+    "mascot": "Army Mules",
+    "stadium": "Michie Stadium Preserved by USAA",
+    "city": "West Point",
+    "state": "New York",
+    "opened": 1924,
+    "seatingCapacity": 36000,
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "description": "Army's hilltop football home overlooks Lusk Reservoir at West Point. Its rebuilt East Stands opened in 2026 with cadet seating, premium spaces and a new reservoir-facing plaza.",
+    "aliases": [
+      "Army West Point",
+      "United States Military Academy",
+      "Army Black Knights"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://michiestadium.squarespace.com/construction"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://www.ewingcole.com/news/michie-stadium-preservation-project-complete/"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://goarmywestpoint.com/sports/2015/3/6/gen_2014010154"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "Approximate post-2026 renovation capacity; older official facility narrative still says 38,000.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/army-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Michie Stadium Preserved by USAA in West Point.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/army-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Michie Stadium Preserved by USAA and its West Point setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "navy-marine-corps-memorial",
+    "school": "Navy",
+    "fullSchool": "United States Naval Academy",
+    "team": "Midshipmen",
+    "teamName": "Navy Midshipmen",
+    "mascot": "Bill the Goat",
+    "stadium": "Navy-Marine Corps Memorial Stadium",
+    "city": "Annapolis",
+    "state": "Maryland",
+    "opened": 1959,
+    "seatingCapacity": 34000,
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "description": "Navy's football home sits in Annapolis, away from the Academy waterfront. The open-air stadium is also a memorial to Navy and Marine Corps service.",
+    "aliases": [
+      "United States Naval Academy",
+      "Navy Midshipmen"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://navysports.com/sports/2026/8/25/a-to-z-navy-marine-corps-memorial-stadium.aspx"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://navysports.com/sports/2026/7/22/The-Navy-ticket-office.aspx?path=general"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://navysports.com/news/2018/10/9/navy-football-to-wear-under-armour-bill-the-goat-uniforms-for-the-army-navy-game.aspx?path=me"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/navy-stadium-aerial.png",
+        "alt": "Generated wide aerial interpretation of Navy-Marine Corps Memorial Stadium and its Annapolis setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/navy-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Navy-Marine Corps Memorial Stadium in Annapolis.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "air-force-falcon",
+    "school": "Air Force",
+    "fullSchool": "United States Air Force Academy",
+    "team": "Falcons",
+    "teamName": "Air Force Falcons",
+    "mascot": "Nova (live falcon) and The Bird",
+    "stadium": "Falcon Stadium",
+    "city": "Colorado Springs",
+    "state": "Colorado",
+    "opened": 1962,
+    "seatingCapacity": 39441,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mountain West",
+    "description": "Falcon Stadium sits in a natural bowl at the foot of the Rampart Range. Its modern East Club complements the elevated west grandstand and expansive mountain setting.",
+    "aliases": [
+      "United States Air Force Academy",
+      "Air Force Falcons"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://goairforcefalcons.com/facilities/falcon-stadium/5"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://goairforcefalcons.com/news/2024/4/19/football-local-media-gets-tour-of-falcon-stadium-east-club"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://goairforcefalcons.com/sports/2018/6/21/trads-afa-bird-html"
+      },
+      {
+        "title": "Academy mascot Nova",
+        "url": "https://www.usafa.edu/brand/"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/air-force-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Falcon Stadium in Colorado Springs.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/air-force-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Falcon Stadium in Colorado Springs.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "memphis-simmons-bank-liberty",
+    "school": "Memphis",
+    "fullSchool": "University of Memphis",
+    "team": "Tigers",
+    "teamName": "Memphis Tigers",
+    "mascot": "Pouncer",
+    "stadium": "Simmons Bank Liberty Stadium",
+    "city": "Memphis",
+    "state": "Tennessee",
+    "opened": 1965,
+    "seatingCapacity": 45632,
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "description": "Memphis plays at Liberty Park's newly renovated stadium. The 2026 project added a West Tower and Landers Plaza while retaining the historic bowl's distinctive profile.",
+    "aliases": [
+      "University of Memphis",
+      "Liberty Bowl Memorial Stadium",
+      "Memphis Tigers"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://gotigersgo.com/news/2026/6/17/football-memphis-athletics-announces-enhancements-to-simmons-bank-liberty-stadium-project"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://d38tcz7gi4rwly.cloudfront.net/news/2026/9/2/football-tigers-set-to-host-arkansas-state-in-home-opener-at-newly-renovated-simmons-bank-liberty-stadium"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://gotigersgo.com/sports/2015/6/30/TigerTraditions.aspx"
+      },
+      {
+        "title": "2026 renovation completed and capacity",
+        "url": "https://d38tcz7gi4rwly.cloudfront.net/news/2026/9/2/football-tigers-set-to-host-arkansas-state-in-home-opener-at-newly-renovated-simmons-bank-liberty-stadium"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/memphis-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Simmons Bank Liberty Stadium in Memphis.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/memphis-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Simmons Bank Liberty Stadium in Memphis.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "tulane-yulman",
+    "school": "Tulane",
+    "fullSchool": "Tulane University",
+    "team": "Green Wave",
+    "teamName": "Tulane Green Wave",
+    "mascot": "Riptide the Pelican",
+    "stadium": "Yulman Stadium",
+    "city": "New Orleans",
+    "state": "Louisiana",
+    "opened": 2014,
+    "seatingCapacity": 30000,
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "description": "Tulane's compact on-campus stadium returned Green Wave football to Uptown New Orleans in 2014. It sits among athletics buildings, nearby homes and the leafy campus.",
+    "aliases": [
+      "Benson Field at Yulman Stadium",
+      "Tulane University",
+      "Tulane Green Wave"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://tulanegreenwave.com/facilities/yulman-stadium/30"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://campusservices.tulane.edu/sites/default/files/styles/Yulman%20Stadium%20LEED%20Case%20Study_cs4.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://tulanegreenwave.com/sports/2016/6/13/trads-tul-trads-html"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/tulane-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Yulman Stadium in New Orleans.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/tulane-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Yulman Stadium in New Orleans.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "south-florida-raymond-james",
+    "school": "USF",
+    "fullSchool": "University of South Florida",
+    "team": "Bulls",
+    "teamName": "South Florida Bulls",
+    "mascot": "Rocky D. Bull",
+    "stadium": "Raymond James Stadium",
+    "city": "Tampa",
+    "state": "Florida",
+    "opened": 1998,
+    "seatingCapacity": 65857,
+    "classification": "NCAA Division I FBS",
+    "conference": "American Athletic",
+    "description": "The Bulls' 2026 home remains Raymond James Stadium, with its red seating tiers and north-end pirate ship. USF's new on-campus stadium is scheduled to open in 2027.",
+    "aliases": [
+      "USF",
+      "University of South Florida",
+      "South Florida Bulls"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://gousfbulls.com/documents/download/2026/3/13/2026_Spring_Prospectus.pdf"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://gousfbulls.com/news/2026/5/15/single-game-tickets-for-usf-football-on-sale-now"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.usf.edu/about-usf/traditions.aspx"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "2026 USF published football capacity; other NFL/event configurations differ.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/usf-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Raymond James Stadium in Tampa.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/usf-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Raymond James Stadium in Tampa.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "unlv-allegiant",
+    "school": "UNLV",
+    "fullSchool": "University of Nevada, Las Vegas",
+    "team": "Rebels",
+    "teamName": "UNLV Rebels",
+    "mascot": "No current official mascot",
+    "stadium": "Allegiant Stadium",
+    "city": "Paradise",
+    "state": "Nevada",
+    "opened": 2020,
+    "seatingCapacity": 65000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mountain West",
+    "description": "UNLV plays in Allegiant Stadium, the enclosed black-and-silver venue near the Las Vegas Strip. Its translucent roof and curved exterior sit west of Interstate 15.",
+    "aliases": [
+      "Nevada Las Vegas",
+      "University of Nevada Las Vegas",
+      "University of Nevada, Las Vegas",
+      "UNLV Rebels"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://unlvrebels.com/sports/2025/4/28/facilities-unlv-FB-Allegiant-Stadium-html.aspx"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://www.allegiantstadium.com/planyourvisit/a-z-guide-1"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://unlvrebels.com/sports/2018/5/18/trads-unlv-trads-mascot-html.aspx?id=434"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/unlv-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Allegiant Stadium in Paradise.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/unlv-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Allegiant Stadium in Paradise.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "hawaii-ching-complex",
+    "school": "Hawai‘i",
+    "fullSchool": "University of Hawaiʻi at Mānoa",
+    "team": "Rainbow Warriors",
+    "teamName": "Hawai‘i Rainbow Warriors",
+    "mascot": "Rainbow (university symbol; Vili the Warrior is historical)",
+    "stadium": "Clarence T.C. Ching Athletics Complex",
+    "city": "Honolulu",
+    "state": "Hawaii",
+    "opened": 2016,
+    "seatingCapacity": 15014,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mountain West",
+    "description": "Hawai‘i plays on its Mānoa campus at the Ching Complex, expanded to 15,014 seats in 2023. The temporary football home is near the baseball park and campus arena.",
+    "aliases": [
+      "Hawaii",
+      "Hawai‘i",
+      "University of Hawaiʻi at Mānoa",
+      "Ching Complex",
+      "Hawai‘i Rainbow Warriors"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://hawaiiathletics.com/sports/2025/7/9/clarence-t-c-ching-athletics-complex.aspx"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://hawaiiathletics.com/news/2026/9/7/football-rainbow-warriors-host-new-mexico-state-in-nonconference-matchup.aspx"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.hawaii.edu/news/2021/08/26/uh-manoa-national-mascot-rankings/"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/hawaii-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Clarence T.C. Ching Athletics Complex in Honolulu.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/hawaii-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Clarence T.C. Ching Athletics Complex in Honolulu.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "app-state-kidd-brewer",
+    "school": "Appalachian State",
+    "fullSchool": "Appalachian State University",
+    "team": "Mountaineers",
+    "teamName": "Appalachian State Mountaineers",
+    "mascot": "Yosef",
+    "stadium": "Kidd Brewer Stadium",
+    "city": "Boone",
+    "state": "North Carolina",
+    "opened": 1962,
+    "seatingCapacity": 30000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Known as The Rock, Kidd Brewer Stadium sits amid Boone's Blue Ridge landscape. Its west Athletics Center, north-end facility and wooded setting shape the game-day scene.",
+    "aliases": [
+      "Appalachian State",
+      "App State",
+      "The Rock",
+      "Appalachian State University",
+      "Appalachian State Mountaineers"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://appstatesports.com/facilities/kidd-brewer-stadium/3"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://appstatesports.com/story.aspx?file_date=9-26-2026&filename=inside-app-state-athletics-9-26-26"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://appstatesports.com/news/2017/5/30/athletics-yosef.aspx"
+      },
+      {
+        "title": "Kidd Brewer seating capacity",
+        "url": "https://citadelsports.com/news/2022/9/29/football-game-day-central-app-state"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/appalachian-state-stadium-aerial.png",
+        "alt": "Generated aerial view of Kidd Brewer Stadium and the Blue Ridge mountain campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/appalachian-state-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Kidd Brewer Stadium in Boone.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "james-madison-bridgeforth",
+    "school": "James Madison",
+    "fullSchool": "James Madison University",
+    "team": "Dukes",
+    "teamName": "James Madison Dukes",
+    "mascot": "Duke Dog",
+    "stadium": "Bridgeforth Stadium/Zane Showker Field",
+    "city": "Harrisonburg",
+    "state": "Virginia",
+    "opened": 1975,
+    "seatingCapacity": 24877,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Bridgeforth's tall west grandstand and lower opposite stands create a distinctive campus bowl. The Dukes' home sits near Newman Lake in Harrisonburg's Shenandoah Valley.",
+    "aliases": [
+      "JMU",
+      "Bridgeforth Stadium",
+      "James Madison University",
+      "James Madison Dukes"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts",
+        "url": "https://jmusports.com/facilities/bridgeforth-stadium-zane-showker-field/1?jmu_redir=r_bridgeforthstadium"
+      },
+      {
+        "title": "Official venue update / architecture",
+        "url": "https://jmusports.com/news/2024/9/2/bridgeforth-stadium-ready-for-2024-jmu-football-season"
+      },
+      {
+        "title": "CFBD public FBS identity and affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.jmu.edu/admissions/explore/spirit-traditions.shtml"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/james-madison-stadium-aerial.png",
+        "alt": "Generated aerial interpretation of Bridgeforth Stadium/Zane Showker Field in Harrisonburg.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/james-madison-stadium-reverse.png",
+        "alt": "Generated second aerial interpretation of Bridgeforth Stadium/Zane Showker Field in Harrisonburg.",
         "width": 1672,
         "height": 941
       }

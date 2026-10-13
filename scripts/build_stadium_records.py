@@ -152,6 +152,14 @@ DISPLAY_NAMES = {
     "app-state-kidd-brewer": "Appalachian State",
 }
 
+# v1.9.2 adds one interior view after the two existing exterior views for these
+# two enclosed venues only. Keep the count exact so missing or unexpected
+# artwork still fails preflight before credentials or provider access.
+INTERIOR_VIEW_STADIUMS = frozenset({
+    "syracuse-jma-wireless-dome",
+    "unlv-allegiant",
+})
+
 EXPLICIT_ALIASES = {
     "lsu-tiger": ("Louisiana State", "Louisiana State University"),
     "penn-franklin-field": ("Pennsylvania", "University of Pennsylvania"),
@@ -232,8 +240,10 @@ def validate_catalog(catalog) -> None:
             raise BuildError("The catalog contains duplicate stadium IDs.", [sid])
         if item.get("school") != DISPLAY_NAMES.get(sid, name) or item.get("classification") != f"NCAA Division I {classification.upper()}":
             raise BuildError("The catalog identity or football classification has changed.", [sid])
-        if not isinstance(item.get("views"), list) or len(item["views"]) != 2:
-            raise BuildError("Each reviewed stadium must have two views.", [sid])
+        expected_views = 3 if sid in INTERIOR_VIEW_STADIUMS else 2
+        if not isinstance(item.get("views"), list) or len(item["views"]) != expected_views:
+            count_label = "three" if expected_views == 3 else "two"
+            raise BuildError(f"This reviewed stadium must have exactly {count_label} views.", [sid])
         found.add(sid)
     if found != SCHOOLS.keys():
         raise BuildError("The catalog is missing reviewed schools.", SCHOOLS.keys() - found)

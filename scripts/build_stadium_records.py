@@ -153,15 +153,46 @@ SCHOOLS = {
     'coastal-carolina-brooks-stadium': ('Coastal Carolina', 'fbs'),
     'georgia-southern-paulson': ('Georgia Southern', 'fbs'),
     'marshall-joan-edwards': ('Marshall', 'fbs'),
+    'akron-infocision': ('Akron', 'fbs'),
+    'ball-state-scheumann': ('Ball State', 'fbs'),
+    'bowling-green-doyt-perry': ('Bowling Green', 'fbs'),
+    'buffalo-broadview': ('Buffalo', 'fbs'),
+    'central-michigan-kelly-shorts': ('Central Michigan', 'fbs'),
+    'eastern-michigan-rynearson': ('Eastern Michigan', 'fbs'),
+    'kent-state-dix': ('Kent State', 'fbs'),
+    'miami-yager': ('Miami (OH)', 'fbs'),
+    'ohio-peden': ('Ohio', 'fbs'),
+    'toledo-glass-bowl': ('Toledo', 'fbs'),
+    'umass-mcguirk': ('Massachusetts', 'fbs'),
+    'western-michigan-waldo': ('Western Michigan', 'fbs'),
+    'sacramento-state-hornet': ('Sacramento State', 'fbs'),
+    'fiu-pitbull': ('Florida International', 'fbs'),
+    'jacksonville-state-amfirst': ('Jacksonville State', 'fbs'),
+    'kennesaw-state-fifth-third': ('Kennesaw State', 'fbs'),
+    'liberty-williams': ('Liberty', 'fbs'),
+    'middle-tennessee-floyd': ('Middle Tennessee', 'fbs'),
+    'new-mexico-state-aggie-memorial': ('New Mexico State', 'fbs'),
+    'sam-houston-bowers': ('Sam Houston', 'fbs'),
+    'western-kentucky-houchens-smith': ('Western Kentucky', 'fbs'),
+    'arkansas-state-centennial': ('Arkansas State', 'fbs'),
+    'georgia-state-center-parc': ('Georgia State', 'fbs'),
+    'louisiana-lourdes': ('Louisiana', 'fbs'),
+    'louisiana-tech-joe-aillet': ('Louisiana Tech', 'fbs'),
+    'ulm-st-francis': ('UL Monroe', 'fbs'),
+    'old-dominion-ballard': ('Old Dominion', 'fbs'),
+    'south-alabama-hancock-whitney': ('South Alabama', 'fbs'),
+    'southern-miss-renasant': ('Southern Miss', 'fbs'),
+    'troy-veterans-memorial': ('Troy', 'fbs'),
 }
-# The 114 reviewed identities include 20 FBS additions for v1.10.0. Public
+# The 144 reviewed identities include 30 FBS additions for v1.11.0. Public
 # directory identities were checked at https://collegefootballdata.com/teams
-# (2026-10-13); canonical provider spellings include "Hawai'i" and "App State".
+# (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
 # These names are intentionally not replaced by Hawaii or Appalachian State.
 # San José State retains the provider directory accent; UConn is its canonical name.
 # North Dakota State is a new FBS Mountain West member in 2026.
 # Miami is the ACC school;
-# Miami (OH) is a separate identity and must never match. Public identities do
+# Miami (OH) is the separate MAC school and must never match Miami.
+# New canonical identities include Florida International, Massachusetts, and UL Monroe. Public identities do
 # not establish authenticated 2026 records coverage, which every run validates.
 # These are explicit identities, not fuzzy matches or generic abbreviations.
 # API alternateNames/abbreviation fields are deliberately not used as a fallback.
@@ -172,6 +203,9 @@ DISPLAY_NAMES = {
     "south-florida-raymond-james": "USF",
     "hawaii-ching-complex": "Hawai‘i",
     "app-state-kidd-brewer": "Appalachian State",
+    'umass-mcguirk': 'UMass',
+    'fiu-pitbull': 'FIU',
+    'ulm-st-francis': 'ULM',
 }
 
 # Explicit football independents: preserve null conference records.

@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.10.1';
+  const BUILD = '1.11.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 114 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant'].includes(item.id) ? 3 : 2));
+  const validCatalog = Array.isArray(catalog) && catalog.length === 144 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant'].includes(item.id) ? 3 : 2));
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.10.1 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.11.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -91,7 +91,7 @@
   const indexOf = item => catalog.indexOf(item) + 1;
   const imageOf = () => activeStadium.views[view];
   // Slideshow selection never changes the gallery's selected stadium or photo.
-  const slideshow = {active:false,playing:false,scope:'all',queue:[],position:0,shuffle:false,delay:5000,from:'#collection',owned:false};
+  const slideshow = {active:false,playing:false,scope:'all',queue:[],position:0,shuffle:false,rounds:[],roundIndex:0,roundOffset:0,viewCycles:{},delay:5000,from:'#collection',owned:false};
   const slideshowControls = $('#slideshow-controls');
   const slideshowScope = $('#slideshow-scope');
   const slideshowPlay = $('#slideshow-play');
@@ -204,14 +204,14 @@
   }
   function scheduleSlideshow() {
     clearSlideshowTimer();
-    if (!slideshow.active || !slideshow.playing || !dialog.open || document.hidden || slideshow.queue.length < 2 || viewerFailed || !viewerReady) return;
+    if (!slideshow.active || !slideshow.playing || !dialog.open || document.hidden || slideshowPhotos(slideshow.scope).length < 2 || viewerFailed || !viewerReady) return;
     slideshowTimer = window.setTimeout(() => {
       slideshowTimer = null;
       if (slideshow.active && slideshow.playing && dialog.open && !document.hidden) switchViewer(1);
     }, slideshow.delay);
   }
   function updateSlideshowControls(message = '') {
-    const entry = viewerDisplayedEntry, total = slideshow.queue.length;
+    const entry = viewerDisplayedEntry, total = slideshow.queue.length, photoTotal = slideshowPhotos(slideshow.scope).length;
     slideshowControls.hidden = !slideshow.active;
     dialog.classList.toggle('is-slideshow',slideshow.active);
     quietCaption.hidden = !slideshow.active || !entry || !total;
@@ -232,21 +232,23 @@
     slideshowPlay.setAttribute('aria-label',slideshow.playing ? 'Pause slideshow' : 'Play slideshow');
     slideshowPlay.disabled = !total || viewerFailed;
     $('#slideshow-shuffle').setAttribute('aria-pressed',String(slideshow.shuffle));
-    $('#slideshow-shuffle').disabled = total < 2;
+    $('#slideshow-shuffle').disabled = photoTotal < 2;
     slideshowScope.value = slideshow.scope;
     slideshowScope.querySelector('[value="all"]').textContent = `All photos (${slideshowPhotos('all').length})`;
     slideshowScope.querySelector('[value="filtered"]').textContent = `Current filtered results (${slideshowPhotos('filtered').length})`;
     $('#slideshow-speed').value = String(slideshow.delay);
-    const displayedPosition = entry ? slideshow.queue.findIndex(photo => photoKey(photo) === photoKey(entry)) + 1 : 0;
-    $('#slideshow-position').textContent = `${total ? (displayedPosition || '–') : 0} / ${total}`;
+    const displayedPosition = entry ? (slideshow.shuffle && entry.schoolPosition ? entry.schoolPosition : slideshow.queue.findIndex(photo => photoKey(photo) === photoKey(entry)) + 1) : 0;
+    const displayedRound = slideshow.shuffle && entry?.schoolRound || slideshow.roundOffset + slideshow.roundIndex + 1;
+    const displayedTotal = slideshow.shuffle && entry?.schoolTotal || total;
+    $('#slideshow-position').textContent = `${total ? (displayedPosition || '–') : 0} / ${displayedTotal}${slideshow.shuffle ? ` schools · Round ${displayedRound}` : ''}`;
     $('#slideshow-school').textContent = total ? (entry?.item.school || 'Loading photo') : 'No matching photos';
     $('#slideshow-stadium').textContent = total ? (entry?.item.stadium || 'Preparing the first view…') : 'Choose All photos, or close to change your filters.';
     $('#slideshow-view').textContent = total && entry ? entry.item.views[entry.index].title : '';
-    const status = message || (total ? `${slideshow.playing ? (viewerReady ? 'Playing' : viewerTransition ? 'Changing photo' : 'Loading photo') : 'Paused'} · ${slideshow.scope === 'all' ? 'All photos' : 'Filtered results'}${slideshow.shuffle ? ' · Shuffled' : ''}` : 'Paused · No photos match your filters');
+    const status = message || (total ? `${slideshow.playing ? (viewerReady ? 'Playing' : viewerTransition ? 'Changing photo' : 'Loading photo') : 'Paused'} · ${slideshow.scope === 'all' ? 'All photos' : 'Filtered results'}${slideshow.shuffle ? ` · School shuffle · Round ${displayedRound}` : ''}` : 'Paused · No photos match your filters');
     $('#slideshow-status').setAttribute('aria-live',slideshow.active && slideshow.playing ? 'off' : 'polite');
     if ($('#slideshow-status').textContent !== status) $('#slideshow-status').textContent = status;
     $('#viewer-announcement').setAttribute('aria-live',slideshow.active && slideshow.playing ? 'off' : 'polite');
-    window.STADIUM_ATLAS_RUNTIME.slideshow = {active:slideshow.active,playing:slideshow.playing,scope:slideshow.scope,photos:total,position:total ? slideshow.position + 1 : 0,shuffle:slideshow.shuffle,delay:slideshow.delay};
+    window.STADIUM_ATLAS_RUNTIME.slideshow = {active:slideshow.active,playing:slideshow.playing,scope:slideshow.scope,photos:photoTotal,schools:slideshowSchools().length,position:total ? slideshow.position + 1 : 0,shuffle:slideshow.shuffle,round:slideshow.shuffle ? slideshow.roundOffset + slideshow.roundIndex + 1 : null,delay:slideshow.delay};
   }
   function setSlideshowPlaying(playing, message = '') {
     slideshow.playing = Boolean(playing && slideshow.active && slideshow.queue.length && !document.hidden && !viewerFailed);
@@ -256,28 +258,111 @@
   function saveSlideshowHistory() {
     if (!slideshow.active || location.hash !== '#slideshow') return;
     const state = {from:slideshow.from,owned:slideshow.owned,scope:slideshow.scope,order:slideshow.queue.map(photoKey),position:slideshow.position,shuffle:slideshow.shuffle,delay:slideshow.delay};
+    if (slideshow.shuffle) Object.assign(state,{schoolShuffleVersion:1,rounds:slideshow.rounds.map(round => round.map(photoKey)),roundIndex:slideshow.roundIndex,roundOffset:slideshow.roundOffset,viewCycles:slideshow.viewCycles});
     history.replaceState({stadiumAtlasSlideshow:state},'', '#slideshow');
+  }
+  function shuffledCopy(values) {
+    const result = values.slice();
+    for (let i = result.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [result[i],result[j]] = [result[j],result[i]];
+    }
+    return result;
+  }
+  function slideshowSchools() {
+    return [...new Map(slideshowPhotos(slideshow.scope).map(entry => [entry.item.id,entry.item])).values()];
+  }
+  function makeSchoolRound(number, previousSchool = null, preferred = null) {
+    const schools = shuffledCopy(slideshowSchools());
+    if (preferred) {
+      const found = schools.findIndex(item => item.id === preferred.item.id);
+      if (found >= 0) schools.unshift(...schools.splice(found,1));
+    } else if (schools.length > 1 && schools[0].id === previousSchool) {
+      const swap = 1 + Math.floor(Math.random() * (schools.length - 1));
+      [schools[0],schools[swap]] = [schools[swap],schools[0]];
+    }
+    return schools.map((item,position) => ({item,index:slideshow.viewCycles[item.id][number % item.views.length],schoolRound:number + 1,schoolPosition:position + 1,schoolTotal:schools.length}));
+  }
+  function ensureNextSchoolRound() {
+    if (!slideshow.shuffle || !slideshow.queue.length || slideshow.roundIndex + 1 < slideshow.rounds.length) return;
+    const last = slideshow.queue[slideshow.queue.length - 1];
+    slideshow.rounds.push(makeSchoolRound(slideshow.roundOffset + slideshow.rounds.length,last.item.id));
+    // Keep navigation/history bounded for an unattended, multi-day slideshow.
+    if (slideshow.rounds.length > 32) {
+      slideshow.rounds.shift(); slideshow.roundOffset++; slideshow.roundIndex--;
+    }
+  }
+  function adjacentSlideshowEntry(direction) {
+    if (!slideshow.shuffle) return slideshow.queue[(slideshow.position + direction + slideshow.queue.length) % slideshow.queue.length];
+    const position = slideshow.position + direction;
+    if (position >= 0 && position < slideshow.queue.length) return slideshow.queue[position];
+    if (direction > 0) {
+      ensureNextSchoolRound();
+      return slideshow.rounds[slideshow.roundIndex + 1]?.[0];
+    }
+    const previous = slideshow.rounds[slideshow.roundIndex - 1];
+    return previous?.[previous.length - 1] || slideshow.queue[0];
+  }
+  function advanceSlideshow(direction) {
+    if (!slideshow.shuffle) {
+      slideshow.position = (slideshow.position + direction + slideshow.queue.length) % slideshow.queue.length;
+      return;
+    }
+    const position = slideshow.position + direction;
+    if (position >= 0 && position < slideshow.queue.length) slideshow.position = position;
+    else if (direction > 0) {
+      ensureNextSchoolRound(); slideshow.roundIndex++;
+      slideshow.queue = slideshow.rounds[slideshow.roundIndex]; slideshow.position = 0;
+      ensureNextSchoolRound();
+    } else if (slideshow.roundIndex > 0) {
+      slideshow.roundIndex--; slideshow.queue = slideshow.rounds[slideshow.roundIndex];
+      slideshow.position = slideshow.queue.length - 1;
+    }
   }
   function orderSlideshow(keepCurrent = true) {
     const current = keepCurrent && viewerEntry();
-    const queue = slideshowPhotos(slideshow.scope);
+    slideshow.rounds = []; slideshow.roundIndex = 0; slideshow.roundOffset = 0; slideshow.viewCycles = {};
     if (slideshow.shuffle) {
-      for (let i = queue.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [queue[i],queue[j]] = [queue[j],queue[i]];
+      for (const item of slideshowSchools()) {
+        const cycle = shuffledCopy(item.views.map((_,index) => index));
+        if (current && current.item.id === item.id) cycle.unshift(...cycle.splice(cycle.indexOf(current.index),1));
+        slideshow.viewCycles[item.id] = cycle;
       }
-      // Keep the visible photo while putting every other photo after it once.
-      if (current) {
-        const found = queue.findIndex(entry => photoKey(entry) === photoKey(current));
-        if (found >= 0) queue.unshift(...queue.splice(found,1));
-      }
+      slideshow.queue = makeSchoolRound(0,null,current);
+      slideshow.rounds = [slideshow.queue]; slideshow.position = 0;
+      ensureNextSchoolRound();
+    } else {
+      slideshow.queue = slideshowPhotos(slideshow.scope);
+      slideshow.position = current ? Math.max(0,slideshow.queue.findIndex(entry => photoKey(entry) === photoKey(current))) : 0;
     }
-    slideshow.queue = queue;
-    slideshow.position = current ? Math.max(0,queue.findIndex(entry => photoKey(entry) === photoKey(current))) : 0;
+  }
+  function restoreSchoolRounds(saved) {
+    if (saved?.schoolShuffleVersion !== 1 || !Array.isArray(saved.rounds) || !saved.rounds.length || saved.rounds.length > 32 || !Number.isSafeInteger(saved.roundOffset) || saved.roundOffset < 0 || saved.roundOffset > 1e9 || !Number.isInteger(saved.roundIndex) || saved.roundIndex < 0 || saved.roundIndex >= saved.rounds.length) return false;
+    const schools = slideshowSchools(), entries = new Map(slideshowPhotos(slideshow.scope).map(entry => [photoKey(entry),entry]));
+    const cycles = {};
+    for (const item of schools) {
+      const cycle = saved.viewCycles?.[item.id];
+      if (!Array.isArray(cycle) || cycle.length !== item.views.length || new Set(cycle).size !== cycle.length || !Array.from(cycle).every(index => Number.isInteger(index) && index >= 0 && index < item.views.length)) return false;
+      cycles[item.id] = cycle.slice();
+    }
+    const rounds = [];
+    for (let number = 0; number < saved.rounds.length; number++) {
+      const keys = saved.rounds[number];
+      if (!Array.isArray(keys) || keys.length !== schools.length || !Array.from(keys).every(key => entries.has(key))) return false;
+      const round = keys.map((key,position) => ({...entries.get(key),schoolRound:saved.roundOffset + number + 1,schoolPosition:position + 1,schoolTotal:schools.length}));
+      if (new Set(round.map(entry => entry.item.id)).size !== schools.length || !round.every(entry => entry.index === cycles[entry.item.id][(saved.roundOffset + number) % entry.item.views.length])) return false;
+      if (number && round.length > 1 && rounds[number - 1].at(-1).item.id === round[0].item.id) return false;
+      rounds.push(round);
+    }
+    slideshow.rounds = rounds; slideshow.roundIndex = saved.roundIndex; slideshow.roundOffset = saved.roundOffset; slideshow.viewCycles = cycles;
+    slideshow.queue = rounds[slideshow.roundIndex];
+    ensureNextSchoolRound();
+    return true;
   }
   function preloadNextSlideshowPhoto() {
-    if (!slideshow.active || slideshow.queue.length < 2) return;
-    const next = slideshow.queue[(slideshow.position + 1) % slideshow.queue.length];
+    if (!slideshow.active || slideshowPhotos(slideshow.scope).length < 2) return;
+    const next = adjacentSlideshowEntry(1);
+    if (!next) return;
     if (!slideshowPreload) { slideshowPreload = new Image(); slideshowPreload.decoding = 'async'; }
     // Exactly one speculative image; changing src cancels any earlier preload.
     const src = next.item.views[next.index].src;
@@ -302,11 +387,12 @@
       slideshow.from = typeof saved?.from === 'string' && /^#(?:collection|stadium\/[a-z0-9-]+)?$/.test(saved.from) ? saved.from : '#collection';
       slideshow.owned = saved?.owned === true;
       orderSlideshow(false);
-      if (Array.isArray(saved?.order) && saved.order.length === slideshow.queue.length && new Set(saved.order).size === saved.order.length) {
+      const restoredRound = slideshow.shuffle && restoreSchoolRounds(saved);
+      if (!slideshow.shuffle && Array.isArray(saved?.order) && saved.order.length === slideshow.queue.length && new Set(saved.order).size === saved.order.length) {
         const entries = new Map(slideshow.queue.map(entry => [photoKey(entry),entry]));
-        if (saved.order.every(key => entries.has(key))) slideshow.queue = saved.order.map(key => entries.get(key));
+        if (Array.from(saved.order).every(key => entries.has(key))) slideshow.queue = saved.order.map(key => entries.get(key));
       }
-      slideshow.position = Number.isInteger(saved?.position) ? Math.max(0,Math.min(slideshow.queue.length - 1,saved.position)) : 0;
+      slideshow.position = (!slideshow.shuffle || restoredRound) && Number.isInteger(saved?.position) ? Math.max(0,Math.min(slideshow.queue.length - 1,saved.position)) : 0;
       if (!dialog.open) dialog.showModal();
       document.body.classList.add('viewer-open');
       stage.setAttribute('aria-label',`${stageLabel} Space or P pauses and plays the slideshow. Zooming and dragging pauses playback. Move the pointer, tap once, or press Tab to reveal slideshow controls.`);
@@ -770,7 +856,7 @@
     if (!dialog.open || closingViewer) return;
     if (slideshow.active) {
       if (!slideshow.queue.length) return;
-      slideshow.position = (slideshow.position + direction + slideshow.queue.length) % slideshow.queue.length;
+      advanceSlideshow(direction);
       saveSlideshowHistory(); updateViewerImage();
       return;
     }
@@ -988,8 +1074,8 @@
     if (!dialog.open || closingViewer) return;
     clearSlideshowTimer();
     const entry = viewerEntry(), image = viewerPhoto();
-    $('#viewer-prev').disabled = slideshow.active && slideshow.queue.length < 2;
-    $('#viewer-next').disabled = slideshow.active && slideshow.queue.length < 2;
+    $('#viewer-prev').disabled = slideshow.active && (slideshowPhotos(slideshow.scope).length < 2 || (slideshow.shuffle && slideshow.roundIndex === 0 && slideshow.position === 0));
+    $('#viewer-next').disabled = slideshow.active && slideshowPhotos(slideshow.scope).length < 2;
     if (!image) {
       clearViewerPresentation();
       if (slideshowPreload) { slideshowPreload.removeAttribute('src'); slideshowPreload = null; }
@@ -1000,8 +1086,8 @@
     if (!viewerDisplayedEntry) updateViewerCaption();
     if (slideshow.active) {
       const total = slideshow.queue.length;
-      const next = slideshow.queue[(slideshow.position + 1) % total];
-      const prev = slideshow.queue[(slideshow.position - 1 + total) % total];
+      const next = adjacentSlideshowEntry(1);
+      const prev = adjacentSlideshowEntry(-1);
       $('#viewer-prev').setAttribute('aria-label', `Previous photo: ${prev.item.school}, ${prev.item.views[prev.index].title.toLowerCase()}`);
       $('#viewer-next').setAttribute('aria-label', `Next photo: ${next.item.school}, ${next.item.views[next.index].title.toLowerCase()}`);
       updateSlideshowControls();

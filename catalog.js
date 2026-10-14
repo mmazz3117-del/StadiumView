@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.10.1';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.11.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -7440,6 +7440,1949 @@ window.STADIUMS = [
         "alt": "Generated aerial interpretation of Joan C. Edwards Stadium in Huntington: north-end view over the video-board back and curved seating toward the south Shewey building.",
         "width": 1672,
         "height": 940
+      }
+    ]
+  },
+  {
+    "id": "akron-infocision",
+    "school": "Akron",
+    "fullSchool": "University of Akron",
+    "team": "Zips",
+    "mascot": "Zippy the Kangaroo",
+    "stadium": "InfoCision Stadium – Summa Health Field",
+    "city": "Akron",
+    "state": "Ohio",
+    "opened": 2009,
+    "seatingCapacity": 30000,
+    "capacityLabel": "Seating capacity",
+    "capacityNote": "The university lists a capacity of 30,000 and an official sellout of 27,881.",
+    "description": "Akron’s campus stadium pairs a tall west-side press and suite tower with open east bleachers, grassy end slopes and a north-end team building beside the indoor field house.",
+    "aliases": [
+      "University of Akron",
+      "UA",
+      "InfoCision Stadium",
+      "Summa Field",
+      "Summa Health Field",
+      "Akron Zips",
+      "Akron"
+    ],
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "teamName": "Akron Zips",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility, facts and reference photographs",
+        "url": "https://gozips.com/facilities/infocision-stadium---summa-health-field/1"
+      },
+      {
+        "title": "Akron official mascot branding guide",
+        "url": "https://gozips.com/documents/download/2018/6/19/Brand_Guide_2018_digital.pdf"
+      },
+      {
+        "title": "Public CFBD FBS identity and current affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/akron-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of InfoCision Stadium – Summa Health Field in Akron, Ohio. Akron’s campus stadium pairs a tall west-side press and suite tower with open east bleachers, grassy end slopes and a north-end team building beside the indoor field house.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/akron-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of InfoCision Stadium – Summa Health Field in Akron, Ohio. Akron’s campus stadium pairs a tall west-side press and suite tower with open east bleachers, grassy end slopes and a north-end team building beside the indoor field house.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "ball-state-scheumann",
+    "school": "Ball State",
+    "fullSchool": "Ball State University",
+    "team": "Cardinals",
+    "mascot": "Charlie Cardinal",
+    "stadium": "Scheumann Stadium",
+    "city": "Muncie",
+    "state": "Indiana",
+    "opened": 1967,
+    "seatingCapacity": 22500,
+    "description": "Scheumann Stadium has a glass-fronted west press tower, separate aluminum grandstands and an open grassy north end framed by a stone colonnade.",
+    "aliases": [
+      "BSU",
+      "Ball State University",
+      "Gainbridge Field",
+      "John B. and June M. Scheumann Stadium",
+      "Ball State Cardinals",
+      "Ball State"
+    ],
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "teamName": "Ball State Cardinals",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility, facts and reference photographs",
+        "url": "https://ballstatesports.com/facilities/scheumann-stadium/9"
+      },
+      {
+        "title": "Ball State 2025 official football yearbook",
+        "url": "https://ballstatesports.com/documents/download/2025/9/12/Football_YearBook_2025.pdf"
+      },
+      {
+        "title": "Official Charlie Cardinal profile",
+        "url": "https://ballstatesports.com/sports/2006/12/11/718638"
+      },
+      {
+        "title": "Public CFBD FBS identity and current affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/ball-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Scheumann Stadium in Muncie, Indiana. Scheumann Stadium has a glass-fronted west press tower, separate aluminum grandstands and an open grassy north end framed by a stone colonnade.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/ball-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Scheumann Stadium in Muncie, Indiana. Scheumann Stadium has a glass-fronted west press tower, separate aluminum grandstands and an open grassy north end framed by a stone colonnade.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "bowling-green-doyt-perry",
+    "school": "Bowling Green",
+    "fullSchool": "Bowling Green State University",
+    "team": "Falcons",
+    "mascot": "Freddie and Frieda Falcon",
+    "stadium": "Doyt L. Perry Stadium",
+    "city": "Bowling Green",
+    "state": "Ohio",
+    "opened": 1966,
+    "seatingCapacity": 24000,
+    "description": "The Doyt’s two gently curved sideline stands frame an open football field, with the sculpted roof of the Sebo Athletic Center at the north end and the flat northwest Ohio landscape beyond.",
+    "aliases": [
+      "BGSU",
+      "Bowling Green State",
+      "Doyt Perry Stadium",
+      "The Doyt",
+      "Bowling Green State University",
+      "Bowling Green Falcons",
+      "Bowling Green"
+    ],
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "teamName": "Bowling Green Falcons",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility, facts and reference photographs",
+        "url": "https://bgsufalcons.com/facilities/doyt-l.-perry-stadium/2"
+      },
+      {
+        "title": "BGSU 2025 official football media guide",
+        "url": "https://bgsufalcons.com/documents/download/2025/7/26/Final_Media_Guide_-_BGSU_Football_2025.pdf"
+      },
+      {
+        "title": "Official Freddie and Frieda mascots",
+        "url": "https://www.bgsu.edu/spirit-and-traditions/freddie-and-frieda/"
+      },
+      {
+        "title": "Public CFBD FBS identity and current affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/bowling-green-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Doyt L. Perry Stadium in Bowling Green, Ohio. The Doyt’s two gently curved sideline stands frame an open football field, with the sculpted roof of the Sebo Athletic Center at the north end and the flat northwest Ohio landscape beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/bowling-green-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Doyt L. Perry Stadium in Bowling Green, Ohio. The Doyt’s two gently curved sideline stands frame an open football field, with the sculpted roof of the Sebo Athletic Center at the north end and the flat northwest Ohio landscape beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "buffalo-broadview",
+    "school": "Buffalo",
+    "fullSchool": "University at Buffalo",
+    "team": "Bulls",
+    "mascot": "Victor E. Bull",
+    "stadium": "Broadview Stadium",
+    "city": "Amherst",
+    "state": "New York",
+    "opened": 1993,
+    "seatingCapacity": 29013,
+    "capacityLabel": "Football seating capacity (2026)",
+    "capacityNote": "2026 football prospectus lists 29,013. The March 2026 naming announcement cites 30,270; the sport-specific 2026 figure is used here.",
+    "description": "Buffalo’s North Campus home surrounds its football field with a red athletics track, separated grandstands and the nearby Murchie Family Fieldhouse, with Lake LaSalle and the Amherst campus beyond.",
+    "aliases": [
+      "UB",
+      "University at Buffalo",
+      "SUNY Buffalo",
+      "UB Stadium",
+      "University at Buffalo Stadium",
+      "Buffalo Bulls",
+      "Buffalo"
+    ],
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "teamName": "Buffalo Bulls",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility, facts and reference photographs",
+        "url": "https://ubbulls.com/facilities/broadview-stadium/10"
+      },
+      {
+        "title": "Official 2026 football prospectus",
+        "url": "https://ubbulls.com/documents/download/2026/3/23/2026_football_prospectus.pdf"
+      },
+      {
+        "title": "Official Broadview naming announcement",
+        "url": "https://ubbulls.com/news/2026/3/11/football-university-at-buffalo-broadview-federal-credit-union-announce-31m-partnership-for-naming-rights-student-scholarships-and-student-support"
+      },
+      {
+        "title": "Official 2025–26 track media guide and stadium history",
+        "url": "https://ubbulls.com/documents/download/2026/1/6/2025-26_T_F_MEDIA_GUIDE.pdf"
+      },
+      {
+        "title": "Official university mascot history",
+        "url": "https://library.buffalo.edu/news/stories/2025/08/wooly-bully-mascot.html"
+      },
+      {
+        "title": "Public CFBD FBS identity and current affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/buffalo-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Broadview Stadium in Amherst, New York. Buffalo’s North Campus home surrounds its football field with a red athletics track, separated grandstands and the nearby Murchie Family Fieldhouse, with Lake LaSalle and the Amherst campus beyond.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/buffalo-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Broadview Stadium in Amherst, New York. Buffalo’s North Campus home surrounds its football field with a red athletics track, separated grandstands and the nearby Murchie Family Fieldhouse, with Lake LaSalle and the Amherst campus beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "central-michigan-kelly-shorts",
+    "school": "Central Michigan",
+    "fullSchool": "Central Michigan University",
+    "team": "Chippewas",
+    "mascot": "None (Chippewas is the team nickname)",
+    "stadium": "Kramer/Deromedi Field at Kelly/Shorts Stadium",
+    "city": "Mount Pleasant",
+    "state": "Michigan",
+    "opened": 1972,
+    "seatingCapacity": 30255,
+    "description": "Kelly/Shorts Stadium’s sunken horseshoe bowl opens toward the modern Chippewa Champions Center, with a modest west press box and a landscaped athletics campus around it.",
+    "aliases": [
+      "Kelly/Shorts Stadium",
+      "CMU",
+      "Central Michigan University",
+      "Kramer/Deromedi Field",
+      "Kramer/Deromedi Field at Kelly/Shorts Stadium",
+      "Perry Shorts Stadium",
+      "Central Michigan Chippewas",
+      "Central Michigan"
+    ],
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "teamName": "Central Michigan Chippewas",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility, facts and reference photographs",
+        "url": "https://cmuchippewas.com/sports/2018/7/6/facilities-football-facilities-html"
+      },
+      {
+        "title": "Official composite stadium name",
+        "url": "https://cmuchippewas.com/facilities/kramer-deromedi-field-at-kelly-shorts-stadium/36"
+      },
+      {
+        "title": "Official Chippewa Champions Center facility and completed-building photographs",
+        "url": "https://cmuchippewas.com/facilities/chippewa-champions-center/37"
+      },
+      {
+        "title": "Official university explanation of the Chippewas nickname",
+        "url": "https://www.cmich.edu/offices-departments/indigenous-affairs/what-it-means-to-be-chippewa/the-central-michigan-university-chippewas"
+      },
+      {
+        "title": "Public CFBD FBS identity and current affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/central-michigan-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Kramer/Deromedi Field at Kelly/Shorts Stadium in Mount Pleasant, Michigan. Kelly/Shorts Stadium’s sunken horseshoe bowl opens toward the modern Chippewa Champions Center, with a modest west press box and a landscaped athletics campus around it.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/central-michigan-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Kramer/Deromedi Field at Kelly/Shorts Stadium in Mount Pleasant, Michigan. Kelly/Shorts Stadium’s sunken horseshoe bowl opens toward the modern Chippewa Champions Center, with a modest west press box and a landscaped athletics campus around it.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "eastern-michigan-rynearson",
+    "school": "Eastern Michigan",
+    "fullSchool": "Eastern Michigan University",
+    "team": "Eagles",
+    "mascot": "Swoop",
+    "stadium": "Crosby Field at Rynearson Stadium",
+    "city": "Ypsilanti",
+    "state": "Michigan",
+    "opened": 1969,
+    "seatingCapacity": 30200,
+    "description": "Eastern Michigan’s football home is distinguished by its gray Maxx Crosby Field, green runoff, open grassy south end and long sideline stands opposite the north-end Incarnati Athletic Center.",
+    "aliases": [
+      "Rynearson Stadium",
+      "EMU",
+      "Eastern Michigan University",
+      "Maxx Crosby Field",
+      "The Factory",
+      "Eastern Michigan Eagles",
+      "Eastern Michigan"
+    ],
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "teamName": "Eastern Michigan Eagles",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility, facts and reference photographs",
+        "url": "https://emueagles.com/facilities/rynearson-stadium/2"
+      },
+      {
+        "title": "Official 2026 opener and current venue name",
+        "url": "https://emueagles.com/news/2026/8/24/football-welcomes-sac-state-in-mac-opener"
+      },
+      {
+        "title": "Official Swoop mascot confirmation",
+        "url": "https://emueagles.com/news/2024/10/12/football-looking-ahead-emu-gears-up-for-homecoming-with-a-week-of-events"
+      },
+      {
+        "title": "Public CFBD FBS identity and current affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/eastern-michigan-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Crosby Field at Rynearson Stadium in Ypsilanti, Michigan. Eastern Michigan’s football home is distinguished by its gray Maxx Crosby Field, green runoff, open grassy south end and long sideline stands opposite the north-end Incarnati Athletic Center.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/eastern-michigan-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Crosby Field at Rynearson Stadium in Ypsilanti, Michigan. Eastern Michigan’s football home is distinguished by its gray Maxx Crosby Field, green runoff, open grassy south end and long sideline stands opposite the north-end Incarnati Athletic Center.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "kent-state-dix",
+    "school": "Kent State",
+    "fullSchool": "Kent State University",
+    "team": "Golden Flashes",
+    "mascot": "Flash the Golden Eagle",
+    "stadium": "Dix Stadium",
+    "city": "Kent",
+    "state": "Ohio",
+    "opened": 1969,
+    "seatingCapacity": 25319,
+    "description": "Dix Stadium’s tall west grandstand, smaller east seating and separate north end stand face a broad south plaza and scoreboard on Kent State’s leafy athletics grounds.",
+    "aliases": [
+      "KSU",
+      "Kent State University",
+      "Memorial Stadium",
+      "Kent State Golden Flashes",
+      "Kent State"
+    ],
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "teamName": "Kent State Golden Flashes",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility, facts and reference photographs",
+        "url": "https://kentstatesports.com/facilities/dix-stadium/2"
+      },
+      {
+        "title": "Official Flash mascot profile",
+        "url": "https://kentstatesports.com/sports/2015/7/20/spirit_0720150509"
+      },
+      {
+        "title": "Public CFBD FBS identity and current affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/kent-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Dix Stadium in Kent, Ohio. Dix Stadium’s tall west grandstand, smaller east seating and separate north end stand face a broad south plaza and scoreboard on Kent State’s leafy athletics grounds.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/kent-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Dix Stadium in Kent, Ohio. Dix Stadium’s tall west grandstand, smaller east seating and separate north end stand face a broad south plaza and scoreboard on Kent State’s leafy athletics grounds.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "miami-yager",
+    "school": "Miami (OH)",
+    "fullSchool": "Miami University",
+    "team": "RedHawks",
+    "teamName": "Miami (OH) RedHawks",
+    "mascot": "Swoop",
+    "stadium": "Yager Stadium",
+    "city": "Oxford",
+    "state": "Ohio",
+    "opened": 1983,
+    "seatingCapacity": 24286,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "description": "Miami’s football home has separate sideline grandstands, an open south scoreboard plaza, and the Gunlock athletic center and Dauch indoor facility at its north end.",
+    "aliases": [
+      "Miami University (Ohio)",
+      "Miami Ohio",
+      "Fred C. Yager Stadium",
+      "Miami University",
+      "Miami (OH) RedHawks",
+      "Miami (OH)"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium history, capacity and visual references",
+        "url": "https://miamiredhawks.com/facilities/yager-stadium/20"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://meet.miamioh.edu/campus-life/miami-number-one-fan-swoop/"
+      },
+      {
+        "title": "CFBD public FBS team identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/miami-oh-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Yager Stadium in Oxford, Ohio, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/miami-oh-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Yager Stadium in Oxford, Ohio, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "ohio-peden",
+    "school": "Ohio",
+    "fullSchool": "Ohio University",
+    "team": "Bobcats",
+    "teamName": "Ohio Bobcats",
+    "mascot": "Rufus the Bobcat",
+    "stadium": "Frank Solich Field at Peden Stadium",
+    "city": "Athens",
+    "state": "Ohio",
+    "opened": 1929,
+    "seatingCapacity": 24000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "description": "Ohio’s historic football home sits beside the Hocking River, with a west-side press tower, north Sook Academic Center, and grassy Victory Hill at the south end.",
+    "aliases": [
+      "Peden Stadium",
+      "Frank Solich Field",
+      "Ohio University",
+      "Ohio Bobcats",
+      "Ohio"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium history, capacity and visual references",
+        "url": "https://ohiobobcats.com/sports/2021/5/13/facilities-peden-stadium-index"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://ohiobobcats.com/sports/2026/4/15/game-day-a-z-guide"
+      },
+      {
+        "title": "CFBD public FBS team identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official current field and stadium name",
+        "url": "https://ohiobobcats.com/facilities/frank-solich-field-at-peden-stadium/8"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/ohio-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Frank Solich Field at Peden Stadium in Athens, Ohio, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/ohio-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Frank Solich Field at Peden Stadium in Athens, Ohio, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "toledo-glass-bowl",
+    "school": "Toledo",
+    "fullSchool": "University of Toledo",
+    "team": "Rockets",
+    "teamName": "Toledo Rockets",
+    "mascot": "Rocky the Rocket and Rocksy",
+    "stadium": "Glass Bowl",
+    "city": "Toledo",
+    "state": "Ohio",
+    "opened": 1936,
+    "seatingCapacity": 26038,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "description": "Toledo’s compact horseshoe stadium combines historic stone towers with a large west press tower and the Larimer Athletic Complex at its open north end.",
+    "aliases": [
+      "Glass Bowl Stadium",
+      "University of Toledo",
+      "Toledo Rockets",
+      "Toledo"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium history, capacity and visual references",
+        "url": "https://utrockets.com/facilities/glass-bowl/1"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.utoledo.edu/mascot/history/"
+      },
+      {
+        "title": "CFBD public FBS team identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/toledo-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Glass Bowl in Toledo, Ohio, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/toledo-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Glass Bowl in Toledo, Ohio, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "umass-mcguirk",
+    "school": "UMass",
+    "fullSchool": "University of Massachusetts Amherst",
+    "team": "Minutemen",
+    "teamName": "UMass Minutemen",
+    "mascot": "Sam the Minuteman",
+    "stadium": "McGuirk Alumni Stadium",
+    "city": "Hadley",
+    "state": "Massachusetts",
+    "opened": 1965,
+    "seatingCapacity": 17000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "description": "UMass football plays in an open-ended stadium with two concrete sideline grandstands, a long west-side skybox, and the Jacobson Football Performance Center near the north end.",
+    "aliases": [
+      "Massachusetts",
+      "UMass Amherst",
+      "Warren McGuirk Alumni Stadium",
+      "Warren P. McGuirk Alumni Stadium",
+      "University of Massachusetts Amherst",
+      "UMass Minutemen"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium history, capacity and visual references",
+        "url": "https://umassathletics.com/facilities/mcguirk-alumni-stadium/2"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.umass.edu/gateway/why-umass/about/sam-minuteman"
+      },
+      {
+        "title": "CFBD public FBS team identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official performance center and campus address",
+        "url": "https://www.umass.edu/planning-design-construction/book/football-performance-center-2014"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/umass-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of McGuirk Alumni Stadium in Hadley, Massachusetts, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/umass-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of McGuirk Alumni Stadium in Hadley, Massachusetts, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "western-michigan-waldo",
+    "school": "Western Michigan",
+    "fullSchool": "Western Michigan University",
+    "team": "Broncos",
+    "teamName": "Western Michigan Broncos",
+    "mascot": "Buster Bronco",
+    "stadium": "Stafford-Smith Field at Waldo Stadium",
+    "city": "Kalamazoo",
+    "state": "Michigan",
+    "opened": 1939,
+    "seatingCapacity": 30200,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "description": "Western Michigan’s valley-set stadium has a low horseshoe of stands, the Bill Brown football center along one sideline, and the tall arched Seelye Athletic Center at the east end.",
+    "aliases": [
+      "Waldo Stadium",
+      "Dwight B. Waldo Stadium",
+      "Western Michigan University",
+      "Western Michigan Broncos",
+      "Western Michigan"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium history, capacity and visual references",
+        "url": "https://wmubroncos.com/facilities/stafford-smith-field-at-waldo-stadium/4"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://wmubroncos.com/sports/2011/8/16/205243786.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/western-michigan-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Stafford-Smith Field at Waldo Stadium in Kalamazoo, Michigan, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/western-michigan-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Stafford-Smith Field at Waldo Stadium in Kalamazoo, Michigan, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "sacramento-state-hornet",
+    "school": "Sacramento State",
+    "fullSchool": "California State University, Sacramento",
+    "team": "Hornets",
+    "teamName": "Sacramento State Hornets",
+    "mascot": "Herky the Hornet",
+    "stadium": "Hornet Stadium",
+    "city": "Sacramento",
+    "state": "California",
+    "opened": 1969,
+    "seatingCapacity": 21195,
+    "classification": "NCAA Division I FBS",
+    "conference": "Mid-American",
+    "description": "Sacramento State’s on-campus football home retains two long open grandstands and its tan athletics track, with the Broad Fieldhouse and WELL recreation complex nearby.",
+    "aliases": [
+      "Sac State",
+      "CSU Sacramento",
+      "California State University, Sacramento",
+      "Sacramento State Hornets",
+      "Sacramento State"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium history, capacity and visual references",
+        "url": "https://hornetsports.com/facilities/hornet-stadium/1"
+      },
+      {
+        "title": "Official mascot and traditions",
+        "url": "https://www.csus.edu/student-affairs/meet-mewe.html"
+      },
+      {
+        "title": "CFBD public FBS team identity and current conference",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official 2026 FBS and MAC football debut",
+        "url": "https://hornetsports.com/news/2026/8/24/football-football-starts-fbs-mac-eras-at-eastern-michigan-on-saturday.aspx"
+      },
+      {
+        "title": "Official 2026 facility capacity",
+        "url": "https://www.csus.edu/administration-business-affairs/space-management/_internal/_documents/space-facilities-rental-fees-2026.pdf"
+      },
+      {
+        "title": "2026 current-stadium interim upgrades and future Cal Expo distinction",
+        "url": "https://www.csus.edu/president/presidential-communications/"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/sacramento-state-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Hornet Stadium in Sacramento, California, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/sacramento-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Hornet Stadium in Sacramento, California, showing the stadium and its campus surroundings.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "fiu-pitbull",
+    "school": "FIU",
+    "fullSchool": "Florida International University",
+    "team": "Panthers",
+    "teamName": "FIU Panthers",
+    "mascot": "Roary the Panther and Paulina",
+    "stadium": "South Dade Kia Field at Pitbull Stadium",
+    "city": "Miami",
+    "state": "Florida",
+    "opened": 1995,
+    "seatingCapacity": 20000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "FIU’s compact stadium sits beside residence halls and Tamiami Park. A low rectangular seating bowl surrounds the field, with a long south-side suite building and a training center behind the lower west end.",
+    "aliases": [
+      "Florida International",
+      "Florida International University",
+      "Pitbull Stadium",
+      "FIU Stadium",
+      "Riccardo Silva Stadium",
+      "South Dade Kia Field",
+      "FIU Panthers"
+    ],
+    "sources": [
+      {
+        "title": "Official 2026 home venue and field naming",
+        "url": "https://fiusports.com/news/2026/5/27/football-announces-game-times-tv-info-for-2026-season.aspx"
+      },
+      {
+        "title": "Official stadium opening, capacity and facilities",
+        "url": "https://fiusports.com/news/2024/11/1/2024-26-florida-high-school-class-1a-7a-football-state-championships-to-be-held-at-fius-south-dade-kia-field-at-pitbull-stadium.aspx"
+      },
+      {
+        "title": "Official football game notes and aerial reference, page 18",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/fiu.sidearmsports.com/documents/2025/10/9/MASTER_FIU_FOOTBALL_GAME_NOTES_WKU.pdf"
+      },
+      {
+        "title": "Official 2026 stadium changes and adjacent campus construction",
+        "url": "https://fiusports.com/news/2026/9/8/fiu-athletics-announces-whatss-new-gameday-information-for-2026-football-season.aspx"
+      },
+      {
+        "title": "Official current mascots, September 2026 photo caption",
+        "url": "https://news.fiu.edu/2026/double-win-pig-roast-and-fiu-football"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/fiu-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of South Dade Kia Field at Pitbull Stadium on FIU's Miami campus, with its compact rectangular bowl, dormitories and Tamiami Park.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/fiu-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of FIU's Pitbull Stadium from the northeast, across the silver stands toward campus and suburban Miami.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate."
+  },
+  {
+    "id": "jacksonville-state-amfirst",
+    "school": "Jacksonville State",
+    "fullSchool": "Jacksonville State University",
+    "team": "Gamecocks",
+    "teamName": "Jacksonville State Gamecocks",
+    "mascot": "Cocky",
+    "stadium": "Burgess-Snow Field at AmFirst Stadium",
+    "city": "Jacksonville",
+    "state": "Alabama",
+    "opened": 1947,
+    "seatingCapacity": 22500,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "Jax State’s on-campus football home combines a tall south-side residence-hall and suite tower with lower north seating and a modern football performance center beyond the west end zone.",
+    "aliases": [
+      "Jax State",
+      "JSU",
+      "AmFirst Stadium",
+      "Burgess-Snow Field",
+      "Burgess-Snow Field at JSU Stadium",
+      "Paul Snow Stadium",
+      "Jacksonville State University",
+      "Jacksonville State Gamecocks",
+      "Jacksonville State"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts, 2024 renovation and current capacity",
+        "url": "https://jaxstatesports.com/facilities/amfirst-stadium/4"
+      },
+      {
+        "title": "Official university identity and Cocky mascot",
+        "url": "https://www.jsu.edu/discover/at-a-glance.html"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/jacksonville-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of AmFirst Stadium, showing its large south stand and residence tower, low north premium seating and completed west performance center.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/jacksonville-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of AmFirst Stadium from the southwest, across the west performance center and south tower toward Jacksonville's wooded campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "22,500 in the official facilities quick facts after the 2024 renovation."
+  },
+  {
+    "id": "kennesaw-state-fifth-third",
+    "school": "Kennesaw State",
+    "fullSchool": "Kennesaw State University",
+    "team": "Owls",
+    "teamName": "Kennesaw State Owls",
+    "mascot": "Scrappy the Owl",
+    "stadium": "Walens Family Field at Fifth Third Stadium",
+    "city": "Kennesaw",
+    "state": "Georgia",
+    "opened": 2010,
+    "seatingCapacity": 11040,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "Kennesaw State’s small open-air bowl has a north-end stage deck and sits within its sports and entertainment park near I-575, practice fields, a track and a landscaped lake.",
+    "aliases": [
+      "KSU",
+      "Fifth Third Stadium",
+      "Fifth Third Bank Stadium",
+      "KSU Soccer Stadium",
+      "Walens Family Field",
+      "Kennesaw State University",
+      "Kennesaw State Owls",
+      "Kennesaw State"
+    ],
+    "sources": [
+      {
+        "title": "Official current name, opening date, capacity and venue description",
+        "url": "https://ksuowls.com/facilities/fifth-third-bank-stadium/4"
+      },
+      {
+        "title": "Official university and Scrappy identity",
+        "url": "https://www.kennesaw.edu/news/stories/2023/get-to-know-kennesaw-state-university.php"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/kennesaw-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Fifth Third Stadium, with compact gold-and-black seating, low west pressbox and surrounding Kennesaw sports park.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/kennesaw-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of Kennesaw State's compact Fifth Third Stadium from the southeast, with silver east stands, low west facilities and wooded suburban context.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "11,040 in the current facility quick facts; the older narrative retains 10,200."
+  },
+  {
+    "id": "liberty-williams",
+    "school": "Liberty",
+    "fullSchool": "Liberty University",
+    "team": "Flames",
+    "teamName": "Liberty Flames",
+    "mascot": "Sparky the Eagle",
+    "stadium": "Williams Stadium",
+    "city": "Lynchburg",
+    "state": "Virginia",
+    "opened": 1989,
+    "seatingCapacity": 25000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "Williams Stadium has a tall west-side suite tower, a large east grandstand, a north football center and scoreboard, and a landscaped south berm with cabanas. Liberty’s campus and wooded Virginia hills frame the venue.",
+    "aliases": [
+      "Liberty Flames",
+      "Williams Football Stadium",
+      "Liberty University",
+      "Liberty"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts and current photo gallery",
+        "url": "https://libertyflames.com/facilities/williams-stadium/2"
+      },
+      {
+        "title": "Official south berm cabanas and seating upgrades",
+        "url": "https://www.liberty.edu/news/2022/01/20/liberty-athletics-announces-williams-stadium-expansion-plans/"
+      },
+      {
+        "title": "Official campus facilities and 2020 football center",
+        "url": "https://catalog.liberty.edu/undergraduate/about-liberty/introduction-campus/"
+      },
+      {
+        "title": "Official Sparky mascot identity",
+        "url": "https://catalog.liberty.edu/graduate/about-liberty/general-information/"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/liberty-stadium-aerial.png",
+        "alt": "Wide south-southwest aerial interpretation of Williams Stadium and Liberty University campus, with Carter Tower, east stands, football center and wooded Virginia hills.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/liberty-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of Liberty's Williams Stadium, with its east grandstand towers, west Carter Tower, north football center and wooded campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate."
+  },
+  {
+    "id": "middle-tennessee-floyd",
+    "school": "Middle Tennessee",
+    "fullSchool": "Middle Tennessee State University",
+    "team": "Blue Raiders",
+    "teamName": "Middle Tennessee Blue Raiders",
+    "mascot": "Lightning",
+    "stadium": "Johnny “Red” Floyd Stadium/Horace Jones Field",
+    "city": "Murfreesboro",
+    "state": "Tennessee",
+    "opened": 1933,
+    "seatingCapacity": 27303,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "Floyd Stadium forms an angular bowl at the northwest edge of MTSU’s campus. Its west-side press and suite tower faces the east grandstand, with the new Smith Center at the north end and a large video board to the south.",
+    "aliases": [
+      "MTSU",
+      "Middle Tennessee State",
+      "Floyd Stadium",
+      "Johnny Red Floyd Stadium",
+      "Horace Jones Field",
+      "Johnny “Red” Floyd Stadium",
+      "Middle Tennessee State University",
+      "Middle Tennessee Blue Raiders",
+      "Middle Tennessee"
+    ],
+    "sources": [
+      {
+        "title": "Official current stadium facts, capacity and completed Smith Center",
+        "url": "https://goblueraiders.com/facilities/johnny-red-floyd-stadium/32"
+      },
+      {
+        "title": "Official Blue Raiders traditions and Lightning mascot",
+        "url": "https://goblueraiders.com/sports/2014/8/21/FB_0821140646"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official September2026 west-seat project announcement; 2027 completion",
+        "url": "https://goblueraiders.com/news/2026/9/3/football-mtsu-athletics-announces-16-million-west-side-seating-upgrade-to-floyd-stadium"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/middle-tennessee-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Floyd Stadium, with its octagonal silver bowl, west press tower, completed north Smith Center and nearby Murphy Center.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/middle-tennessee-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of Floyd Stadium from the northwest, showing Smith Center, west tower and blue field accents amid the Murfreesboro campus.",
+        "width": 1671,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "27,303, the revised capacity announced in 2024 and retained in the 2026 facility page."
+  },
+  {
+    "id": "new-mexico-state-aggie-memorial",
+    "school": "New Mexico State",
+    "fullSchool": "New Mexico State University",
+    "team": "Aggies",
+    "teamName": "New Mexico State Aggies",
+    "mascot": "Pistol Pete",
+    "stadium": "Aggie Memorial Stadium",
+    "city": "Las Cruces",
+    "state": "New Mexico",
+    "opened": 1978,
+    "seatingCapacity": 28853,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "Aggie Memorial Stadium is a partially sunken berm bowl on the eastern edge of the Las Cruces campus. Curved seating, a west press box and a north football complex open toward desert surroundings and the Organ Mountains.",
+    "aliases": [
+      "NMSU",
+      "NM State",
+      "New Mexico State Aggies",
+      "New Mexico State University",
+      "New Mexico State"
+    ],
+    "sources": [
+      {
+        "title": "Official Aggie Memorial opening, capacity and geometry",
+        "url": "https://nmstatesports.com/facilities/aggie-memorial-stadium/5"
+      },
+      {
+        "title": "Official Pistol Pete mascot history",
+        "url": "https://people.nmsu.edu/pistolpete/index.html"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/new-mexico-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Aggie Memorial Stadium in Las Cruces, with its sunken seating bowl, football complex, desert campus and Organ Mountains.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/new-mexico-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of Aggie Memorial Stadium, showing the exterior of the end-zone football complex, curved silver stands and Las Cruces campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate."
+  },
+  {
+    "id": "sam-houston-bowers",
+    "school": "Sam Houston",
+    "fullSchool": "Sam Houston State University",
+    "team": "Bearkats",
+    "teamName": "Sam Houston Bearkats",
+    "mascot": "Sammy Bearkat",
+    "stadium": "Elliott T. Bowers Stadium",
+    "city": "Huntsville",
+    "state": "Texas",
+    "opened": 1986,
+    "seatingCapacity": 14500,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "Bowers Stadium pairs orange sideline stands with a new five-level west-side press and suite complex. Green aprons have replaced the former running track, while open ends, grass berms and wooded Huntsville campus surroundings preserve its compact setting.",
+    "aliases": [
+      "SHSU",
+      "Sam Houston State",
+      "Elliott T. Bowers Stadium",
+      "Bearkats",
+      "Bowers Stadium",
+      "Sam Houston State University",
+      "Sam Houston Bearkats",
+      "Sam Houston"
+    ],
+    "sources": [
+      {
+        "title": "Official 2026 stadium capacity and return to Huntsville",
+        "url": "https://gobearkats.com/news/2026/9/10/football-game-2-preview-vs-tulsa"
+      },
+      {
+        "title": "Official current October 2026 Bowers Stadium home game",
+        "url": "https://gobearkats.com/news/2026/10/12/football-game-6-preview-vs-wku"
+      },
+      {
+        "title": "Official completed September 12, 2026 home game",
+        "url": "https://gobearkats.com/news/2026/9/13/football-tulsa-survives-late-bearkat-barrage"
+      },
+      {
+        "title": "Official July 30, 2026 west press-box opening and features",
+        "url": "https://www.shsu.edu/news/2026-news-stories/bowers-press-box-ribbon-cutting"
+      },
+      {
+        "title": "Official completed west-complex photo gallery",
+        "url": "https://gobearkats.com/facilities/bowers-stadium-west-side-complex/537"
+      },
+      {
+        "title": "Official historic opening and 2024 stadium photograph",
+        "url": "https://gobearkats.com/facilities/bowers-stadium/22"
+      },
+      {
+        "title": "University-system board materials: 2024 turf replacement and track removal",
+        "url": "https://docs.gato.txst.edu/755321/November%202025-1%20Board%20Materials.pdf"
+      },
+      {
+        "title": "Official Sammy Bearkat identity and athletics branding",
+        "url": "https://www.shsu.edu/offices-departments/integrated-marketing-communications/documents/atlheticsbrandguide-web.pdf"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/sam-houston-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of reopened Bowers Stadium, showing the new 2026 orange-and-glass west tower, separate stands and wooded Huntsville campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/sam-houston-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial of Bowers Stadium from the northwest, showing the new west-complex exterior, field and separate east bleachers.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "14,500 in official 2026 home-game information; the older facilities page still lists 14,000."
+  },
+  {
+    "id": "western-kentucky-houchens-smith",
+    "school": "Western Kentucky",
+    "fullSchool": "Western Kentucky University",
+    "team": "Hilltoppers",
+    "teamName": "Western Kentucky Hilltoppers",
+    "mascot": "Big Red",
+    "stadium": "Jimmy Feix Field at Houchens Industries–L.T. Smith Stadium",
+    "city": "Bowling Green",
+    "state": "Kentucky",
+    "opened": 1968,
+    "seatingCapacity": 22113,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "WKU’s stadium sits below the university’s hilltop campus, with tall east seating, a west football complex and premium tower, and a north grass berm. Jimmy Feix Field has black end zones and the red towel at midfield.",
+    "aliases": [
+      "WKU",
+      "Houchens Industries-L.T. Smith Stadium",
+      "Houchens-Smith Stadium",
+      "Jimmy Feix Field",
+      "Feix Field",
+      "The Houch",
+      "Houchens Industries–L.T. Smith Stadium",
+      "Western Kentucky University",
+      "Western Kentucky Hilltoppers",
+      "Western Kentucky"
+    ],
+    "sources": [
+      {
+        "title": "Official opening, current capacity and 2024 press-box renovation",
+        "url": "https://wkusports.com/facilities/houchens-industries-l-t-smith-stadium/2"
+      },
+      {
+        "title": "Official March 24, 2026 fieldhouse opening and current campus context",
+        "url": "https://wkusports.com/facilities/tim-and-sarah-ford-fieldhouse/91"
+      },
+      {
+        "title": "Official Big Red mascot",
+        "url": "https://wkusports.com/sports/2018/7/3/big_red"
+      },
+      {
+        "title": "CFBD public FBS identity and current Conference USA affiliation",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official Jimmy Feix Field naming and 2024 turf",
+        "url": "https://wkusports.com/news/2024/5/21/football-wku-unveils-new-surface-for-feix-field"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/western-kentucky-stadium-aerial.png",
+        "alt": "Wide aerial interpretation of WKU’s Houchens Industries–L.T. Smith Stadium from the campus side, including the west press box, east stand, Ford Fieldhouse and nearby track.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/western-kentucky-stadium-reverse.png",
+        "alt": "Reverse aerial interpretation of WKU’s stadium looking toward the hilltop campus, with the tall east stand, completed west press box and adjacent Ford Fieldhouse.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "22,113 in the current official facilities page."
+  },
+  {
+    "id": "arkansas-state-centennial",
+    "school": "Arkansas State",
+    "fullSchool": "Arkansas State University",
+    "team": "Red Wolves",
+    "teamName": "Arkansas State Red Wolves",
+    "mascot": "Howl and Scarlet",
+    "stadium": "Allison Field at Centennial Bank Stadium",
+    "city": "Jonesboro",
+    "state": "Arkansas",
+    "opened": 1974,
+    "seatingCapacity": 30382,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Arkansas State’s campus home combines steep sideline stands with the north-end Centennial Bank Athletics Operations Center and its distinctive waterfall features. Allison Field is surrounded by red-and-black seating accents and the Red Wolves athletics campus.",
+    "aliases": [
+      "A-State",
+      "ASU",
+      "Allison Field",
+      "Indian Stadium",
+      "Centennial Bank Stadium",
+      "Arkansas State University",
+      "Arkansas State Red Wolves",
+      "Arkansas State"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://astateredwolves.com/documents/2026/8/10/2026_Arkansas_State_Football_Media_Guide_Reduced_Size.pdf"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://astateredwolves.com/sports/2019/12/16/centennial-bank-stadium.aspx"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://astateredwolves.com/sports/2023/7/6/howls-pals.aspx"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Allison Field naming",
+        "url": "https://astateredwolves.com/news/2017/12/11/211689358.aspx"
+      },
+      {
+        "title": "Official aerial reference",
+        "url": "https://www.astate.edu/about/news/new-certificate-program-creates-name-image-and-likeness-nil-opportunities.html"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "The 2026 football media guide gives 30,382 in both quick facts and stadium facts, superseding older university listings of 30,406 and a visiting-team page of 30,458.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/arkansas-state-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of Allison Field at Centennial Bank Stadium in Jonesboro, Arkansas, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/arkansas-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Allison Field at Centennial Bank Stadium in Jonesboro, Arkansas, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 940
+      }
+    ]
+  },
+  {
+    "id": "georgia-state-center-parc",
+    "school": "Georgia State",
+    "fullSchool": "Georgia State University",
+    "team": "Panthers",
+    "teamName": "Georgia State Panthers",
+    "mascot": "Pounce",
+    "stadium": "“Pete” Petit Field at Center Parc Credit Union Stadium",
+    "city": "Atlanta",
+    "state": "Georgia",
+    "opened": 1996,
+    "seatingCapacity": 25000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Georgia State converted Atlanta’s former Olympic stadium and Turner Field into its football home in 2017. The remaining tall baseball-era stands contrast with a newer low east grandstand, with downtown Atlanta visible beyond the stadium.",
+    "aliases": [
+      "GSU",
+      "Georgia State Stadium",
+      "Turner Field",
+      "Pete Petit Field",
+      "Center Parc Credit Union Stadium",
+      "Georgia State University",
+      "Georgia State Panthers",
+      "Georgia State"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://georgiastatesports.com/sports/2017/6/16/211628909.aspx"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://gseagles.com/documents/download/2025/10/14/2025_FB_GAME_NOTES-SOUTHERN.pdf"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://commkit.gsu.edu/university-logos/"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official Pete Petit Field naming",
+        "url": "https://georgiastatesports.com/sports/2014/2/1/205155202.aspx"
+      },
+      {
+        "title": "Venue parking operator aerial reference",
+        "url": "https://parkmobilechatbot.zendesk.com/hc/en-us/articles/39930249501723-Georgia-State-University-Center-Parc-Stadium"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/georgia-state-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of “Pete” Petit Field at Center Parc Credit Union Stadium in Atlanta, Georgia, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/georgia-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of “Pete” Petit Field at Center Parc Credit Union Stadium in Atlanta, Georgia, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "louisiana-lourdes",
+    "school": "Louisiana",
+    "fullSchool": "University of Louisiana at Lafayette",
+    "team": "Ragin’ Cajuns",
+    "teamName": "Louisiana Ragin’ Cajuns",
+    "mascot": "Ragin’ Cajuns",
+    "stadium": "Our Lady of Lourdes Stadium",
+    "city": "Lafayette",
+    "state": "Louisiana",
+    "opened": 1971,
+    "seatingCapacity": 30392,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Louisiana’s sunken football bowl reopened with a new west-side premium tower in 2025. The red-and-white venue sits in Lafayette’s athletics district beside the Cajundome, with open lawns and parking surrounding the broad concrete stands.",
+    "aliases": [
+      "UL Lafayette",
+      "ULL",
+      "Cajun Field",
+      "Louisiana Ragin Cajuns",
+      "University of Louisiana at Lafayette",
+      "Louisiana Ragin’ Cajuns",
+      "Louisiana"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://ragincajuns.com/facilities/our-lady-of-lourdes-stadium/1166"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://louisiana.edu/news/media/proper-use-university-louisiana-lafayettes-name"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://louisiana.edu/news/living-our-brand"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Completed 2025 renovation and actual stadium photograph",
+        "url": "https://ragincajuns.com/news/2025/8/15/louisiana-athletics-opens-our-lady-of-lourdes-stadium-transformation-for-2025-season"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "Official facility page lists 30,392 after the 2023–25 west-side renovation; 41,426 belongs to the pre-renovation stadium. Ragin’ Cajuns is the team identity, not a claim that retired costumed Cayenne remains active.",
+    "mascotLabel": "Team identity",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/louisiana-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of Our Lady of Lourdes Stadium in Lafayette, Louisiana, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/louisiana-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Our Lady of Lourdes Stadium in Lafayette, Louisiana, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 940
+      }
+    ]
+  },
+  {
+    "id": "louisiana-tech-joe-aillet",
+    "school": "Louisiana Tech",
+    "fullSchool": "Louisiana Tech University",
+    "team": "Bulldogs",
+    "teamName": "Louisiana Tech Bulldogs",
+    "mascot": "Champ and Tech XXII",
+    "stadium": "Origin Bank Field at Joe Aillet Stadium",
+    "city": "Ruston",
+    "state": "Louisiana",
+    "opened": 1968,
+    "seatingCapacity": 28562,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Louisiana Tech’s field sits between separate sideline grandstands, a west-side pressbox and the completed south-end Davison Athletics Complex. The 2026 reference-based views retain north-end Origin Bank Center construction beneath the scoreboard, with the Thomas Assembly Center nearby.",
+    "aliases": [
+      "LA Tech",
+      "The Joe",
+      "Joe Aillet Stadium",
+      "Louisiana Tech University",
+      "Louisiana Tech Bulldogs",
+      "Louisiana Tech"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://latechsports.com/facilities/joe-aillet-stadium/4"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://ragincajuns.com/news/2026/10/8/2026-louisiana-football-preview-the-louisiana-tech-game"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://sunbeltsports.org/news/2026/7/1/general-sun-belt-officially-welcomes-louisiana-tech.aspx"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://brand.latech.edu/documents/2021/07/art-sheet.pdf/"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://1894.latech.edu/documents/2026/03/tech-xxii-episode-146.pdf/"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official Origin Bank Center construction status and photograph",
+        "url": "https://latechsports.com/facilities/origin-bank-center-for-student-athlete-success/197"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "October 8, 2026 official opponent preview gives current 28,562; facility narrative’s 30,600 refers to the 1989 expansion. Joined the Sun Belt July 1, 2026.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/louisiana-tech-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of Origin Bank Field at Joe Aillet Stadium in Ruston, Louisiana, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/louisiana-tech-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Origin Bank Field at Joe Aillet Stadium in Ruston, Louisiana, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "ulm-st-francis",
+    "school": "ULM",
+    "fullSchool": "University of Louisiana Monroe",
+    "team": "Warhawks",
+    "teamName": "ULM Warhawks",
+    "mascot": "Ace the Warhawk",
+    "stadium": "FMOL Health | St. Francis Stadium",
+    "city": "Monroe",
+    "state": "Louisiana",
+    "opened": 1978,
+    "seatingCapacity": 27617,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "ULM’s football home stands beside Bayou DeSiard, across the water from its main campus. Its asymmetric sideline stands, northwest fieldhouse and surrounding pecan-lined grounds retain the familiar Malone Stadium setting under a new 2026 name.",
+    "aliases": [
+      "UL Monroe",
+      "University of Louisiana at Monroe",
+      "Malone Stadium",
+      "JPS Field",
+      "University of Louisiana Monroe",
+      "ULM Warhawks"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://ulmwarhawks.com/facilities/malone-stadium/1"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://ulmwarhawks.com/sports/2024/9/13/gameday.aspx"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://lionsports.net/news/2026/9/17/football-lions-close-nonconference-schedule-at-ulm.aspx"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://ulm.edu/omc/"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://ulm.edu/recserv/ace.html"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "Renamed FMOL Health | St. Francis Stadium for the 2026 season. Official facilities narrative explicitly calls 27,617 current, but page header retains 30,427; the September 2026 Southeastern Louisiana preview also gives 27,617. Current university marketing style omits “at”; legal name with “at” remains an alias.",
+    "capacityLabel": "Seating capacity (2026)",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/ulm-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of FMOL Health | St. Francis Stadium in Monroe, Louisiana, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/ulm-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of FMOL Health | St. Francis Stadium in Monroe, Louisiana, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "old-dominion-ballard",
+    "school": "Old Dominion",
+    "fullSchool": "Old Dominion University",
+    "team": "Monarchs",
+    "teamName": "Old Dominion Monarchs",
+    "mascot": "Big Blue",
+    "stadium": "Kornblau Field at S.B. Ballard Stadium",
+    "city": "Norfolk",
+    "state": "Virginia",
+    "opened": 2019,
+    "seatingCapacity": 21944,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Old Dominion’s rebuilt football stadium fits tightly within its Norfolk campus. Steep modern east and west stands flank Kornblau Field, with the south-end football building and surrounding academic blocks set near the waters of Hampton Roads.",
+    "aliases": [
+      "ODU",
+      "S.B. Ballard Stadium",
+      "Foreman Field",
+      "Old Dominion University",
+      "Old Dominion Monarchs",
+      "Old Dominion"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://odusports.com/kornblau-field-at-sb-ballard-stadium"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://odusports.com/news/2022/08/06/minium-new-premium-seating-cup-holders-and-beer-and-wine-sales-coming-to-odu-football"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://sites.wp.odu.edu/oduwiki/2020/03/30/big-blue/"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/old-dominion-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of Kornblau Field at S.B. Ballard Stadium in Norfolk, Virginia, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/old-dominion-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Kornblau Field at S.B. Ballard Stadium in Norfolk, Virginia, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 940
+      }
+    ]
+  },
+  {
+    "id": "south-alabama-hancock-whitney",
+    "school": "South Alabama",
+    "fullSchool": "University of South Alabama",
+    "team": "Jaguars",
+    "teamName": "South Alabama Jaguars",
+    "mascot": "SouthPaw and Miss Pawla",
+    "stadium": "Abraham A. Mitchell Field at Hancock Whitney Stadium",
+    "city": "Mobile",
+    "state": "Alabama",
+    "opened": 2020,
+    "seatingCapacity": 25450,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "South Alabama’s modern on-campus stadium has a compact horseshoe of red-and-blue seating, a west-side premium tower and an open terrace at one end. Mobile’s wooded campus and athletics fields frame Abraham A. Mitchell Field.",
+    "aliases": [
+      "USA",
+      "Abraham A. Mitchell Field",
+      "Hancock Whitney Stadium",
+      "University of South Alabama",
+      "South Alabama Jaguars",
+      "South Alabama"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://usajaguars.com/facilities/hancock-whitney-stadium/1"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://usajaguars.com/sports/2020/4/6/seating-charts.aspx?path=general"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://usajaguars.com/sports/2010/6/30/GEN_0630101424.aspx?path=wgolf"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/south-alabama-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of Abraham A. Mitchell Field at Hancock Whitney Stadium in Mobile, Alabama, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/south-alabama-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Abraham A. Mitchell Field at Hancock Whitney Stadium in Mobile, Alabama, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "southern-miss-renasant",
+    "school": "Southern Miss",
+    "fullSchool": "The University of Southern Mississippi",
+    "team": "Golden Eagles",
+    "teamName": "Southern Miss Golden Eagles",
+    "mascot": "Seymour d’Campus",
+    "stadium": "Carlisle-Faulkner Field at Renasant Stadium",
+    "city": "Hattiesburg",
+    "state": "Mississippi",
+    "opened": 1932,
+    "seatingCapacity": 36000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "The Rock sits in the heart of Southern Miss’s Hattiesburg campus. Tall double-deck sideline stands, a south-end suite structure and the north-end athletics center surround the field, with dense campus buildings and Pine Belt trees beyond.",
+    "aliases": [
+      "USM",
+      "M.M. Roberts Stadium",
+      "The Rock",
+      "Carlisle-Faulkner Field",
+      "The University of Southern Mississippi",
+      "Southern Miss Golden Eagles",
+      "Southern Miss"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://southernmiss.com/news/2026/9/9/southern-miss-and-renasant-announce-10-year-naming-rights-deal-for-football-stadium"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://southernmiss.com/facilities/carlisle-faulkner-field-at-renasant-stadium/28"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://southernmiss.com/documents/download/2025/9/8/2025_Football_Notes_-_App_State_Game.pdf"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://southernmiss.com/sports/2018/6/21/_trads_origin_of_the_mascot_html?id=1136"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/southern-miss-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of Carlisle-Faulkner Field at Renasant Stadium in Hattiesburg, Mississippi, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/southern-miss-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Carlisle-Faulkner Field at Renasant Stadium in Hattiesburg, Mississippi, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "troy-veterans-memorial",
+    "school": "Troy",
+    "fullSchool": "Troy University",
+    "team": "Trojans",
+    "teamName": "Troy Trojans",
+    "mascot": "T-Roy",
+    "stadium": "Larry Blakeney Field at Veterans Memorial Stadium",
+    "city": "Troy",
+    "state": "Alabama",
+    "opened": 1950,
+    "seatingCapacity": 30000,
+    "classification": "NCAA Division I FBS",
+    "conference": "Sun Belt",
+    "description": "Troy’s campus stadium combines high sideline stands, a six-story west-side tower and a substantial north-end football facility with arched windows, cupolas and a video board. Cardinal seating accents stand among the university’s red-brick campus buildings.",
+    "aliases": [
+      "The Vet",
+      "Larry Blakeney Field",
+      "Troy State",
+      "Veterans Memorial Stadium",
+      "Troy University",
+      "Troy Trojans",
+      "Troy"
+    ],
+    "sources": [
+      {
+        "title": "Official university or athletics source",
+        "url": "https://troytrojans.com/documents/2026/7/14/2026_Troy_Football_Record_Book_R.pdf"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://troytrojans.com/facilities/veterans-memorial-stadium/5"
+      },
+      {
+        "title": "Official university or athletics source",
+        "url": "https://helpdesk.troy.edu/TDClient/1924/Portal/KB/Article/44524/What-is-the-school-mascot"
+      },
+      {
+        "title": "2026 Sun Belt football membership and schedule",
+        "url": "https://sunbeltsports.org/news/2026/3/13/sun-belt-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "CFBD public FBS team identity",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official Larry Blakeney Field name",
+        "url": "https://troytrojans.com/news/2026/4/13/general-this-week-in-troy-university-athletics-april-13-19-2026"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "The 2026 Troy football record book explicitly lists capacity 30,000 in quick facts and stadium facts; many third-party listings quote 30,470. The current university figure is used. Indoor practice facility opened September 2025.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/troy-stadium-aerial.png",
+        "alt": "AI-generated wide aerial interpretation of Larry Blakeney Field at Veterans Memorial Stadium in Troy, Alabama, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/troy-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Larry Blakeney Field at Veterans Memorial Stadium in Troy, Alabama, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
       }
     ]
   }

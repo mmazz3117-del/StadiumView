@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.10.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.10.1';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -4468,7 +4468,7 @@ window.STADIUMS = [
   },
   {
     "school": "Maryland",
-    "fullSchool": "University of Maryland",
+    "fullSchool": "University of Maryland, College Park",
     "team": "Terrapins",
     "teamName": "Maryland Terrapins",
     "mascot": "Testudo",

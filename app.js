@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.10.0';
+  const BUILD = '1.10.1';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, catalog.js, and site.webmanifest from the same v1.10.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.10.1 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -215,9 +215,16 @@
     slideshowControls.hidden = !slideshow.active;
     dialog.classList.toggle('is-slideshow',slideshow.active);
     quietCaption.hidden = !slideshow.active || !entry || !total;
-    $('#slideshow-quiet-school').textContent = entry ? (entry.item.teamName || `${entry.item.school} ${entry.item.team}`) : '';
+    $('#slideshow-quiet-school').textContent = entry?.item.fullSchool || '';
+    $('#slideshow-quiet-team').textContent = entry ? (entry.item.teamName || `${entry.item.school} ${entry.item.team}`) : '';
     $('#slideshow-quiet-stadium').textContent = entry?.item.stadium || '';
     $('#slideshow-quiet-location').textContent = entry ? `${entry.item.city}, ${entry.item.state}` : '';
+    // Keep the recorded capacity's year and approximation rather than imply a
+    // newer or more precise count in the compact caption.
+    const capacityLabel = entry?.item.capacityLabel || '';
+    const capacityYear = capacityLabel.match(/\b20\d{2}\b/);
+    const capacityQualifier = /\bnearly\b/i.test(capacityLabel) ? 'Nearly ' : /approx/i.test(capacityLabel) ? 'Approx. ' : '';
+    $('#slideshow-quiet-capacity').textContent = entry ? `Seating capacity${capacityYear ? ` (${capacityYear[0]})` : ''}: ${capacityQualifier}${Number(entry.item.seatingCapacity).toLocaleString('en-US')}` : '';
     if (!slideshow.active) resetSlideshowUi();
     else if (!entry || !total || viewerFailed) revealSlideshowControls();
     else if (slideshowUiTimer === null && !dialog.classList.contains('slideshow-ui-hidden')) scheduleSlideshowUiHide();

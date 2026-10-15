@@ -1,25 +1,25 @@
 <!doctype html>
-<html lang="en" data-app-build="1.13.0">
+<html lang="en" data-app-build="1.14.0">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#121815">
-<meta name="stadium-atlas-build" content="1.13.0">
+<meta name="stadium-atlas-build" content="1.14.0">
 <meta name="description" content="Explore college football from above. Search the Stadium Atlas collection by school or stadium, then explore each home field through aerial perspectives and selected interior overviews.">
 <title>Stadium Atlas · College football from above</title>
 <link rel="icon" href="assets/stadium-atlas-icon-v190-favicon.ico" sizes="any">
 <link rel="icon" href="assets/stadium-atlas-icon-v190-favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="assets/stadium-atlas-icon-v190-favicon-16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="assets/stadium-atlas-icon-v190-apple-touch-180.png" sizes="180x180">
-<link rel="manifest" href="site.webmanifest?v=1.13.0">
+<link rel="manifest" href="site.webmanifest?v=1.14.0">
 <meta name="application-name" content="Stadium Atlas">
 <meta name="apple-mobile-web-app-title" content="Stadium Atlas">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="stylesheet" href="styles.css?v=1.13.0">
+<link rel="stylesheet" href="styles.css?v=1.14.0">
 <script>
 /* This check lives in the HTML so an old or missing app.js cannot hide a mixed release. */
-window.STADIUM_ATLAS_EXPECTED = Object.freeze({build:'1.13.0',schools:174,views:350});
+window.STADIUM_ATLAS_EXPECTED = Object.freeze({build:'1.14.0',schools:189,views:380});
 window.addEventListener('DOMContentLoaded', function () {
   var expected = window.STADIUM_ATLAS_EXPECTED;
   var runtime = window.STADIUM_ATLAS_RUNTIME;
@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', function () {
   var message = document.getElementById('release-warning-message');
   warning.hidden = false;
   if (!message) { message = document.createElement('p'); message.id = 'release-warning-message'; warning.appendChild(message); }
-  message.textContent = 'This page is v' + expected.build + ', but ' + issues.join(', ') + ' did not load as the matching 174-stadium release. Upload index.html, styles.css, app.js, and catalog.js from the same v' + expected.build + ' code ZIP into the same app folder, replacing the older files, then reload.';
+  message.textContent = 'This page is v' + expected.build + ', but ' + issues.join(', ') + ' did not load as the matching 189-stadium release. Upload index.html, styles.css, app.js, and catalog.js from the same v' + expected.build + ' code ZIP into the same app folder, replacing the older files, then reload.';
   warning.style.cssText = 'display:block;padding:18px;margin-top:20px;margin-bottom:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
   var slideshowStart = document.getElementById('start-slideshow');
   if (slideshowStart) slideshowStart.disabled = true;
@@ -52,19 +52,19 @@ window.addEventListener('DOMContentLoaded', function () {
   document.body.classList.remove('viewer-open');
 });
 </script>
-<script src="catalog.js?v=1.13.0" defer></script>
-<script src="app.js?v=1.13.0" defer></script>
+<script src="catalog.js?v=1.14.0" defer></script>
+<script src="app.js?v=1.14.0" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header shell">
   <a class="brand" href="#" aria-label="Stadium Atlas home"><img class="brand-mark" src="assets/stadium-mark.svg" width="44" height="38" alt=""><span>STADIUM<span class="brand-sub">ATLAS</span></span></a>
   <div class="header-meta"><span class="status-dot"></span> COLLEGE FOOTBALL</div>
-  <span class="version-badge" id="version-badge" aria-label="Stadium Atlas version 1.13.0">v1.13.0</span>
+  <span class="version-badge" id="version-badge" aria-label="Stadium Atlas version 1.14.0">v1.14.0</span>
   <a class="header-link" href="#collection">Explore <span aria-hidden="true">↗︎</span></a>
 </header>
 <div class="layout-toolbar shell" role="group" aria-label="Slideshow and display preferences">
-  <div class="slideshow-launch"><button type="button" id="start-slideshow" aria-label="Start slideshow of all 350 photos" aria-describedby="slideshow-launch-note"><span aria-hidden="true">▶</span> Slideshow</button><span id="slideshow-launch-note">All 350 photos</span></div>
+  <div class="slideshow-launch"><button type="button" id="start-slideshow" aria-label="Start slideshow of all 380 photos" aria-describedby="slideshow-launch-note"><span aria-hidden="true">▶</span> Slideshow</button><span id="slideshow-launch-note">All 380 photos</span></div>
   <label for="layout-preference">Layout</label>
   <select id="layout-preference" aria-describedby="layout-status">
     <option value="auto">Auto</option>
@@ -78,7 +78,7 @@ window.addEventListener('DOMContentLoaded', function () {
   <section id="home-view" aria-labelledby="home-title">
     <div class="intro">
       <div><p class="eyebrow">THE PLACES THAT MAKE THE GAME.</p><h1 id="home-title">The view<br>from <em>above.</em></h1></div>
-      <div class="intro-aside"><p>A new perspective on <br>college football’s home fields.</p><span class="edition">THE COLLECTION <span aria-hidden="true">/</span> <span id="collection-total">174</span></span></div>
+      <div class="intro-aside"><p>A new perspective on <br>college football’s home fields.</p><span class="edition">THE COLLECTION <span aria-hidden="true">/</span> <span id="collection-total">189</span></span></div>
     </div>
     <section class="collection" id="collection" aria-label="Find a stadium">
       <div class="search-tools">
@@ -97,7 +97,7 @@ window.addEventListener('DOMContentLoaded', function () {
       <div id="stadium-list"></div>
       <div id="empty-state" class="empty-state" hidden><img class="empty-stadium-mark" src="assets/stadium-mark.svg" width="44" height="38" alt=""><h3>No stadiums here yet.</h3><p id="empty-copy"></p><button class="primary-button" id="show-all">Show all stadiums <span aria-hidden="true">↗︎</span></button></div>
     </section>
-    <p class="collection-note"><span aria-hidden="true">↳</span> <span id="collection-note-text">174 home fields. 350 perspectives. More to come.</span></p>
+    <p class="collection-note"><span aria-hidden="true">↳</span> <span id="collection-note-text">189 home fields. 380 perspectives. More to come.</span></p>
   </section>
   <section id="detail-view" aria-labelledby="detail-title" hidden>
     <a class="back-link" href="#collection"><span aria-hidden="true">←</span> All stadiums</a>
@@ -125,10 +125,10 @@ window.addEventListener('DOMContentLoaded', function () {
     <p class="slideshow-quiet-facts"><span id="slideshow-quiet-location"></span><span class="slideshow-quiet-divider">•</span><span id="slideshow-quiet-capacity"></span></p>
   </div>
   <section id="slideshow-controls" class="slideshow-panel" aria-label="Slideshow controls" hidden>
-    <div class="slideshow-caption"><p class="slideshow-kicker"><span id="slideshow-position">1 / 350</span><span id="slideshow-view">Aerial view</span></p><p id="slideshow-school" class="slideshow-school"></p><p id="slideshow-stadium" class="slideshow-stadium"></p></div>
+    <div class="slideshow-caption"><p class="slideshow-kicker"><span id="slideshow-position">1 / 380</span><span id="slideshow-view">Aerial view</span></p><p id="slideshow-school" class="slideshow-school"></p><p id="slideshow-stadium" class="slideshow-stadium"></p></div>
     <div class="slideshow-settings">
       <button type="button" id="slideshow-play" class="slideshow-play" aria-keyshortcuts="Space P">Pause</button>
-      <div class="slideshow-field"><label for="slideshow-scope">Photos</label><select id="slideshow-scope"><option value="all">All photos (350)</option><option value="filtered">Current filtered results (350)</option></select></div>
+      <div class="slideshow-field"><label for="slideshow-scope">Photos</label><select id="slideshow-scope"><option value="all">All photos (380)</option><option value="filtered">Current filtered results (380)</option></select></div>
       <div class="slideshow-field slideshow-speed-field"><label for="slideshow-speed">Every</label><select id="slideshow-speed"><option value="3000">3 sec</option><option value="5000" selected>5 sec</option><option value="8000">8 sec</option><option value="12000">12 sec</option></select></div>
       <button type="button" id="slideshow-shuffle" class="slideshow-shuffle" aria-pressed="false">Shuffle</button>
     </div>

@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.13.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.14.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -11383,6 +11383,1061 @@ window.STADIUMS = [
         "title": "Second aerial view",
         "src": "assets/new-hampshire-stadium-reverse.png",
         "alt": "AI-generated reverse interpretation of Wildcat Stadium in Durham, New Hampshire. Wildcat Stadium pairs a brick-and-glass west grandstand with twin gabled roof towers and a lower east stand, around a blue-and-gray track beside practice fields and the wooded Durham campus. Rebuilt in 2016 on the former Cowell Stadium site (1936–2015).",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "idaho-kibbie-dome",
+    "school": "Idaho",
+    "fullSchool": "University of Idaho",
+    "team": "Vandals",
+    "teamName": "Idaho Vandals",
+    "mascot": "Joe Vandal",
+    "stadium": "P1FCU Kibbie Dome",
+    "city": "Moscow",
+    "state": "Idaho",
+    "opened": 1971,
+    "seatingCapacity": 15250,
+    "conference": "Big Sky",
+    "classification": "NCAA Division I FCS",
+    "sources": [
+      {
+        "title": "Official facility history and capacity",
+        "url": "https://govandals.com/facilities/p1fcu-kibbie-dome/1"
+      },
+      {
+        "title": "University venue page",
+        "url": "https://www.uidaho.edu/campus-facilities/athletic-facilities/kibbie-dome"
+      },
+      {
+        "title": "Mascot identity",
+        "url": "https://www.uidaho.edu/brand/joe-vandal"
+      },
+      {
+        "title": "2026 Big Sky conference schedule",
+        "url": "https://bigskyconf.com/news/2026/7/6/big-sky-announces-kickoff-times-for-2026-conference-football-season.aspx"
+      },
+      {
+        "title": "2026-27 Big Sky full university names",
+        "url": "https://bigskyconf.com/sports/2008/6/5/BSHISTORY060508.aspx"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=295"
+      }
+    ],
+    "description": "The Kibbie Dome’s tall white barrel vault rises beside the timber-roofed ICCU Arena and wooded Moscow campus; inside, parallel timber arches frame straight sideline stands and translucent end walls. The field and stands opened in 1971; the roof and enclosing end walls were completed in 1975.",
+    "aliases": [
+      "U of I",
+      "UI",
+      "Vandals",
+      "Kibbie Dome",
+      "Kibbie-ASUI Activity Center",
+      "Idaho Stadium",
+      "Idaho",
+      "University of Idaho",
+      "Idaho Vandals"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/idaho-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of P1FCU Kibbie Dome in Moscow, Idaho. Opaque tall barrel vault, west end paneling, separate undulating-roof ICCU Arena, roundabout, water tank, wooded campus and low Palouse landscape visible. Illustrative campus placement approximate.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Interior view",
+        "src": "assets/idaho-stadium-interior.png",
+        "alt": "AI-generated interior illustration of P1FCU Kibbie Dome in Moscow, Idaho, showing dark timber roof ribs, cream roof panels, a translucent end wall, straight sideline stands and the green football field.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "idaho-state-iccu-dome",
+    "school": "Idaho State",
+    "fullSchool": "Idaho State University",
+    "team": "Bengals",
+    "teamName": "Idaho State Bengals",
+    "mascot": "Benny the Bengal",
+    "stadium": "ICCU Dome",
+    "city": "Pocatello",
+    "state": "Idaho",
+    "opened": 1970,
+    "seatingCapacity": 10000,
+    "conference": "Big Sky",
+    "classification": "NCAA Division I FCS",
+    "sources": [
+      {
+        "title": "Current venue identity/history/renovation",
+        "url": "https://isubengals.com/facilities/holt-arena/8"
+      },
+      {
+        "title": "University venue location and team",
+        "url": "https://www.isu.edu/iccudome/about/"
+      },
+      {
+        "title": "Official historical capacity",
+        "url": "https://www.isu.edu/holt50/history-walk/"
+      },
+      {
+        "title": "Mascot identity",
+        "url": "https://www.isu.edu/cob/students/blog/articles/isu-traditions.html"
+      },
+      {
+        "title": "Official 2024 football media guide, page 7",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/isubengals.com/documents/2024/8/3/2024_Idaho_State_Football_Media_Guide.pdf"
+      },
+      {
+        "title": "2026 Big Sky conference schedule",
+        "url": "https://bigskyconf.com/news/2026/7/6/big-sky-announces-kickoff-times-for-2026-conference-football-season.aspx"
+      },
+      {
+        "title": "2026-27 Big Sky full university names",
+        "url": "https://bigskyconf.com/sports/2008/6/5/BSHISTORY060508.aspx"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=294"
+      }
+    ],
+    "capacityNote": "The official 2024 football media guide lists 10,000 after the 2022–23 renovation, replacing the historical 12,000 capacity.",
+    "description": "Pocatello’s ICCU Dome combines a broad white arched exterior with orange-ribbed interior roofing, black-and-orange sideline seating, and a translucent window band above the president’s deck.",
+    "aliases": [
+      "ISU",
+      "Bengals",
+      "Holt Arena",
+      "ASISU Minidome",
+      "Idaho Central Credit Union Dome",
+      "Idaho State",
+      "Idaho State University",
+      "Idaho State Bengals"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "capacityLabel": "Football capacity (2024)",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/idaho-state-stadium-aerial.png",
+        "alt": "AI-generated aerial illustration of ICCU Dome in Pocatello, Idaho. Its broad white arched roof, orange facade accents and scalloped entrance sit among the green university grounds and dry foothills.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Interior view",
+        "src": "assets/idaho-state-stadium-interior.png",
+        "alt": "AI-generated interior illustration of ICCU Dome in Pocatello, Idaho, with orange roof ribs, a white liner, black catwalk, translucent window band, black-and-orange sideline seating and the football field.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "northern-arizona-walkup-skydome",
+    "school": "Northern Arizona",
+    "fullSchool": "Northern Arizona University",
+    "team": "Lumberjacks",
+    "teamName": "Northern Arizona Lumberjacks",
+    "mascot": "Louie the Lumberjack",
+    "stadium": "Findlay Toyota Field at J. Lawrence Walkup Skydome",
+    "city": "Flagstaff",
+    "state": "Arizona",
+    "opened": 1977,
+    "seatingCapacity": 10000,
+    "conference": "Big Sky",
+    "classification": "NCAA Division I FCS",
+    "sources": [
+      {
+        "title": "Official venue name, opening, capacity",
+        "url": "https://nauathletics.com/sports/2017/5/30/information-facilities-skydome.aspx"
+      },
+      {
+        "title": "University architectural history",
+        "url": "https://library.nau.edu/speccoll/exhibits/louies_legacy/walkupdome.html"
+      },
+      {
+        "title": "Mascot/team identity",
+        "url": "https://nau.edu/flagstaff-campus/lumberjack-spirit/"
+      },
+      {
+        "title": "2026 Big Sky conference schedule",
+        "url": "https://bigskyconf.com/news/2026/7/6/big-sky-announces-kickoff-times-for-2026-conference-football-season.aspx"
+      },
+      {
+        "title": "2026-27 Big Sky full university names",
+        "url": "https://bigskyconf.com/sports/2008/6/5/BSHISTORY060508.aspx"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=501"
+      }
+    ],
+    "description": "Flagstaff’s circular white Skydome sits among ponderosa pines below the San Francisco Peaks; its interior exposes a vast triangular timber roof above blue-and-gold football seating.",
+    "aliases": [
+      "NAU",
+      "Lumberjacks",
+      "Walkup Skydome",
+      "J. Lawrence Walkup Skydome",
+      "Findlay Toyota Field",
+      "Northern Arizona",
+      "Northern Arizona University",
+      "Northern Arizona Lumberjacks"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/northern-arizona-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Findlay Toyota Field at J. Lawrence Walkup Skydome in Flagstaff, Arizona. Circular white shallow dome with central vent cap, scalloped edge, ponderosa pines and recognizable mountain backdrop; no roof opening.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Interior view",
+        "src": "assets/northern-arizona-stadium-interior.png",
+        "alt": "AI-generated interior view interpretation of Findlay Toyota Field at J. Lawrence Walkup Skydome in Flagstaff, Arizona. Timber triangular lattice, pale panels, yellow perimeter supports, blue seating, field and both ends visible under intact roof.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "northern-colorado-nottingham",
+    "school": "Northern Colorado",
+    "fullSchool": "University of Northern Colorado",
+    "team": "Bears",
+    "teamName": "Northern Colorado Bears",
+    "mascot": "Klawz",
+    "stadium": "Nottingham Field",
+    "city": "Greeley",
+    "state": "Colorado",
+    "opened": 1995,
+    "seatingCapacity": 8533,
+    "conference": "Big Sky",
+    "classification": "NCAA Division I FCS",
+    "sources": [
+      {
+        "title": "Official venue facts",
+        "url": "https://uncbears.com/facilities/nottingham-field/25"
+      },
+      {
+        "title": "Official mascot",
+        "url": "https://uncbears.com/form/13"
+      },
+      {
+        "title": "Opening date",
+        "url": "https://uncbears.com/documents/download/2022/9/7/GM2-Wyoming.pdf"
+      },
+      {
+        "title": "2026 Big Sky conference schedule",
+        "url": "https://bigskyconf.com/news/2026/7/6/big-sky-announces-kickoff-times-for-2026-conference-football-season.aspx"
+      },
+      {
+        "title": "2026-27 Big Sky full university names",
+        "url": "https://bigskyconf.com/sports/2008/6/5/BSHISTORY060508.aspx"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=502"
+      }
+    ],
+    "description": "Nottingham Field’s red oval track frames separate silver sideline grandstands, open grassy ends, a narrow west press box, and low east-side entrances on Northern Colorado’s Greeley campus.",
+    "aliases": [
+      "UNC",
+      "UNCO",
+      "Bears",
+      "Nottingham Field",
+      "Northern Colorado",
+      "University of Northern Colorado",
+      "Northern Colorado Bears"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/northern-colorado-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Nottingham Field in Greeley, Colorado. Complete red track oval, open ends, separate straight silver stands, narrow west press box, low east entrance buildings and southwest retention pond; current UNC and BEARS field design.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/northern-colorado-stadium-reverse-v2.png",
+        "alt": "AI-generated reverse aerial illustration of Nottingham Field in Greeley, Colorado, with the west grandstand in the foreground, the east seating beyond the red running track, open grassy ends and a small campus retention pond.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "north-dakota-alerus-center",
+    "school": "North Dakota",
+    "fullSchool": "University of North Dakota",
+    "team": "Fighting Hawks",
+    "teamName": "North Dakota Fighting Hawks",
+    "mascot": "The Fighting Hawk",
+    "stadium": "Alerus Center",
+    "city": "Grand Forks",
+    "state": "North Dakota",
+    "opened": 2001,
+    "seatingCapacity": 12283,
+    "conference": "Missouri Valley Football",
+    "classification": "NCAA Division I FCS",
+    "sources": [
+      {
+        "title": "Official football venue facts",
+        "url": "https://fightinghawks.com/sports/2025/12/17/alerus-center.aspx"
+      },
+      {
+        "title": "Current football conference",
+        "url": "https://fightinghawks.com/news/2026/9/21/football-nodak-enters-mvfc-play-ranked-7th-and-8th-in-national-polls.aspx"
+      },
+      {
+        "title": "University mascot and nickname",
+        "url": "https://campus.und.edu/brand/brand-assets/logo-system.html"
+      },
+      {
+        "title": "Roof renovation and aerial reference",
+        "url": "https://www.aleruscenter.com/assets/doc/Annual-Report-2023-Final-3b051c9242.pdf"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=494"
+      }
+    ],
+    "description": "The off-campus Alerus Center has a shallow black central roof, brick-and-metal facade, and attached conference wing; its indoor football hall features exposed steel trusses and straight sideline stands.",
+    "aliases": [
+      "UND",
+      "NoDak",
+      "Fighting Hawks",
+      "Alerus Center",
+      "North Dakota",
+      "University of North Dakota",
+      "North Dakota Fighting Hawks"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/north-dakota-stadium-aerial.png",
+        "alt": "AI-generated stadium aerial interpretation of Alerus Center in Grand Forks, North Dakota. Shallow rectangular black central roof and pale edges, brick/metal facade, conference wing, broad parking and flat Grand Forks context with hotel and highway; no open roof.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Interior view",
+        "src": "assets/north-dakota-stadium-interior.png",
+        "alt": "AI-generated interior illustration of Alerus Center in Grand Forks, North Dakota, with exposed steel roof trusses and catwalks, straight sideline stands, end-wall video boards and black football end zones.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "south-dakota-dakotadome",
+    "school": "South Dakota",
+    "fullSchool": "University of South Dakota",
+    "team": "Coyotes",
+    "teamName": "South Dakota Coyotes",
+    "mascot": "Charlie Coyote",
+    "stadium": "DakotaDome",
+    "city": "Vermillion",
+    "state": "South Dakota",
+    "opened": 1979,
+    "seatingCapacity": 9100,
+    "capacityNote": "Official venue lists 9,100. West-side seating renovation opened in 2020; this is the current published figure checked October 15, 2026.",
+    "conference": "Missouri Valley Football",
+    "description": "The DakotaDome pairs a broad white domed roof and ribbed concrete exterior with steep red sideline stands, glass loge boxes and the green H. Lauren Lewis Field beneath dark steel roof ribs.",
+    "aliases": [
+      "USD",
+      "Yotes",
+      "H. Lauren Lewis Field",
+      "South Dakota",
+      "University of South Dakota",
+      "South Dakota Coyotes"
+    ],
+    "sources": [
+      {
+        "title": "Official DakotaDome facts",
+        "url": "https://goyotes.com/facilities/the-dakotadome/14"
+      },
+      {
+        "title": "Official playing surface and field name",
+        "url": "https://goyotes.com/facilities/h-lauren-lewis-field/13"
+      },
+      {
+        "title": "2026 MVFC game report",
+        "url": "https://valley-football.org/news/2026/10/4/football-defense-shines-in-dakota-days-win-over-sycamores.aspx"
+      },
+      {
+        "title": "Official mascot and full university identity",
+        "url": "https://www.usd.edu/Student-Life/Activities-and-Involvement/Athletics-and-Spirit-Squad/Charlie-Coyote"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=650"
+      }
+    ],
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "views": [
+      {
+        "title": "Exterior aerial",
+        "src": "assets/south-dakota-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of DakotaDome at University of South Dakota in Vermillion, South Dakota. The DakotaDome pairs a broad white domed roof and ribbed concrete exterior with steep red sideline stands, glass loge boxes and the green H. Lauren Lewis Field beneath dark steel roof ribs.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Interior view",
+        "src": "assets/south-dakota-stadium-interior.png",
+        "alt": "AI-generated interior interpretation of DakotaDome at University of South Dakota in Vermillion, South Dakota. The DakotaDome pairs a broad white domed roof and ribbed concrete exterior with steep red sideline stands, glass loge boxes and the green H. Lauren Lewis Field beneath dark steel roof ribs.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "northern-iowa-uni-dome",
+    "school": "Northern Iowa",
+    "fullSchool": "University of Northern Iowa",
+    "team": "Panthers",
+    "teamName": "Northern Iowa Panthers",
+    "mascot": "TC and TK",
+    "stadium": "UNI-Dome",
+    "city": "Cedar Falls",
+    "state": "Iowa",
+    "opened": 1976,
+    "seatingCapacity": 12500,
+    "capacityLabel": "Approximate football capacity (2026)",
+    "capacityNote": "The current official venue page lists approximately 12,500 for football during the seating renovation, with full completion expected in fall 2026.",
+    "conference": "Missouri Valley Football",
+    "description": "The UNI-Dome has a segmented sloping roof with a translucent central crown, purple sideline seating beneath radial steel trusses and a connected McLeod Center on the Cedar Falls campus.",
+    "aliases": [
+      "UNI",
+      "University of Northern Iowa",
+      "UNI Dome",
+      "Northern Iowa",
+      "Northern Iowa Panthers"
+    ],
+    "sources": [
+      {
+        "title": "Official UNI-Dome history and current capacity",
+        "url": "https://unipanthers.com/facilities/uni-dome/286"
+      },
+      {
+        "title": "Official 2026 football conference schedule",
+        "url": "https://unipanthers.com/news/2026/2/20/football-panther-football-announces-2026-conference-schedule"
+      },
+      {
+        "title": "Official 2025 seating options",
+        "url": "https://unipanthers.com/sports/2025/2/26/frequently-asked-questions"
+      },
+      {
+        "title": "Official mascot history",
+        "url": "https://insideuni.uni.edu/magazine/panther-evolution"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=504"
+      }
+    ],
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "views": [
+      {
+        "title": "Exterior aerial",
+        "src": "assets/northern-iowa-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of UNI-Dome at University of Northern Iowa in Cedar Falls, Iowa. The UNI-Dome has a segmented sloping roof with a translucent central crown, purple sideline seating beneath radial steel trusses and a connected McLeod Center on the Cedar Falls campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Interior view",
+        "src": "assets/northern-iowa-stadium-interior.png",
+        "alt": "AI-generated interior interpretation of UNI-Dome at University of Northern Iowa in Cedar Falls, Iowa. The UNI-Dome has a segmented sloping roof with a translucent central crown, purple sideline seating beneath radial steel trusses and a connected McLeod Center on the Cedar Falls campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "indiana-state-memorial",
+    "school": "Indiana State",
+    "fullSchool": "Indiana State University",
+    "team": "Sycamores",
+    "teamName": "Indiana State Sycamores",
+    "mascot": "Sycamore Sam",
+    "stadium": "Memorial Stadium",
+    "city": "Terre Haute",
+    "state": "Indiana",
+    "opened": 1924,
+    "seatingCapacity": 12764,
+    "conference": "Missouri Valley Football",
+    "description": "Memorial Stadium places a single large south grandstand opposite a grassy north-side bank, with blue end zones, a compact blue press box and tree-lined Terre Haute neighborhoods around the off-campus venue. The field first hosted play in 1924, was formally dedicated in 1925, and became Indiana State’s home in 1967.",
+    "aliases": [
+      "ISU",
+      "Sycamores",
+      "Memorial Stadium Terre Haute",
+      "Indiana State",
+      "Indiana State University",
+      "Indiana State Sycamores"
+    ],
+    "sources": [
+      {
+        "title": "Official Memorial Stadium history, capacity and location",
+        "url": "https://gosycamores.com/facilities/memorial-stadium/5"
+      },
+      {
+        "title": "2026 MVFC confirmation",
+        "url": "https://valley-football.org/news/2026/10/4/football-defense-shines-in-dakota-days-win-over-sycamores.aspx"
+      },
+      {
+        "title": "Official university mascot",
+        "url": "https://indianastate.edu/sites/default/files/2024-11/brandguide_v2024.pdf"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=305"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/indiana-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Memorial Stadium at Indiana State University in Terre Haute, Indiana. Memorial Stadium places a single large south grandstand opposite a grassy north-side bank, with blue end zones, a compact blue press box and tree-lined Terre Haute neighborhoods around the off-campus venue.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/indiana-state-stadium-reverse.png",
+        "alt": "AI-generated aerial interpretation of Memorial Stadium at Indiana State University in Terre Haute, Indiana. Memorial Stadium places a single large south grandstand opposite a grassy north-side bank, with blue end zones, a compact blue press box and tree-lined Terre Haute neighborhoods around the off-campus venue.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "abilene-christian-anthony-field",
+    "school": "Abilene Christian",
+    "fullSchool": "Abilene Christian University",
+    "team": "Wildcats",
+    "teamName": "Abilene Christian Wildcats",
+    "mascot": "Willie the Wildcat",
+    "stadium": "Anthony Field at Wildcat Stadium",
+    "city": "Abilene",
+    "state": "Texas",
+    "opened": 2017,
+    "seatingCapacity": 12000,
+    "capacityNote": "The official 12,000 capacity includes berm, club and suite seating.",
+    "conference": "United Athletic Conference",
+    "description": "Wildcat Stadium has two straight sideline stands, open grassy end-zone berms, a large north scoreboard and the glass-fronted Chuck Sitton Tower rising above the west stand on ACU’s flat Texas campus.",
+    "aliases": [
+      "ACU",
+      "Anthony Field",
+      "Wildcat Stadium",
+      "Chuck Sitton Tower",
+      "Abilene Christian",
+      "Abilene Christian University",
+      "Abilene Christian Wildcats"
+    ],
+    "sources": [
+      {
+        "title": "Official Wildcat Stadium facts",
+        "url": "https://acusports.com/facilities/anthony-field-at-wildcat-stadium/20"
+      },
+      {
+        "title": "Official 2026 conference identity",
+        "url": "https://acusports.com/news/2025/6/26/football-wac-to-rebrand-to-uac-add-five-new-members-in-2026-27"
+      },
+      {
+        "title": "Current October 2026 UAC result",
+        "url": "https://acusports.com/news/2026/10/10/football-acu-goes-to-2-0-in-conference-with-win-over-bears"
+      },
+      {
+        "title": "Official Wildcat mascot history",
+        "url": "https://acu.edu/about/history-and-traditions/"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=2"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "capacityLabel": "Venue capacity",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/abilene-christian-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Anthony Field at Wildcat Stadium at Abilene Christian University in Abilene, Texas. Wildcat Stadium has two straight sideline stands, open grassy end-zone berms, a large north scoreboard and the glass-fronted Chuck Sitton Tower rising above the west stand on ACU’s flat Texas campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/abilene-christian-stadium-reverse.png",
+        "alt": "AI-generated aerial interpretation of Anthony Field at Wildcat Stadium at Abilene Christian University in Abilene, Texas. Wildcat Stadium has two straight sideline stands, open grassy end-zone berms, a large north scoreboard and the glass-fronted Chuck Sitton Tower rising above the west stand on ACU’s flat Texas campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "central-arkansas-estes",
+    "school": "Central Arkansas",
+    "fullSchool": "University of Central Arkansas",
+    "team": "Bears",
+    "teamName": "Central Arkansas Bears",
+    "mascot": "Bruce D. Bear and Sugar Bear",
+    "stadium": "First Security Field at Estes Stadium",
+    "city": "Conway",
+    "state": "Arkansas",
+    "opened": 1939,
+    "seatingCapacity": 10000,
+    "capacityNote": "Official 2023 football game notes list 10,000. The current venue page does not publish a newer capacity figure.",
+    "conference": "United Athletic Conference",
+    "description": "Estes Stadium’s distinctive purple-and-gray striped turf sits between two sideline stands, with Bear Hall and its suites above the east side and tree-lined Conway campus streets beyond the open ends.",
+    "aliases": [
+      "UCA",
+      "The Stripes",
+      "Estes Stadium",
+      "First Security Field",
+      "Central Arkansas",
+      "University of Central Arkansas",
+      "Central Arkansas Bears"
+    ],
+    "sources": [
+      {
+        "title": "Official Estes Stadium history and field naming",
+        "url": "https://ucasports.com/sports/2010/8/9/FB_0809101221.aspx?id=43"
+      },
+      {
+        "title": "Official capacity, nickname and division",
+        "url": "https://static.ucasports.com/custompages/2023%20FB%20GAME%20NOTES/UCA-ACU%20FB%20NOTES%202023.pdf"
+      },
+      {
+        "title": "Official 2026 UAC affiliation",
+        "url": "https://ucasports.com/news/2025/12/10/the-uac-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "Official full university name and location",
+        "url": "https://uca.edu/about/"
+      },
+      {
+        "title": "Official named mascot pair",
+        "url": "https://uca.edu/alumni/files/2020/03/031417-Coloring-book8.5x11Pages_FIN.pdf"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=1004"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "capacityLabel": "Published capacity (2023)",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/central-arkansas-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of First Security Field at Estes Stadium at University of Central Arkansas in Conway, Arkansas. Estes Stadium’s distinctive purple-and-gray striped turf sits between two sideline stands, with Bear Hall and its suites above the east side and tree-lined Conway campus streets beyond the open ends.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/central-arkansas-stadium-reverse.png",
+        "alt": "AI-generated aerial interpretation of First Security Field at Estes Stadium at University of Central Arkansas in Conway, Arkansas. Estes Stadium’s distinctive purple-and-gray striped turf sits between two sideline stands, with Bear Hall and its suites above the east side and tree-lined Conway campus streets beyond the open ends.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "stephen-f-austin-homer-bryce",
+    "school": "Stephen F. Austin",
+    "fullSchool": "Stephen F. Austin State University",
+    "team": "Lumberjacks",
+    "teamName": "Stephen F. Austin Lumberjacks",
+    "mascot": "Lumberjack",
+    "stadium": "Homer Bryce Stadium",
+    "city": "Nacogdoches",
+    "state": "Texas",
+    "opened": 1973,
+    "seatingCapacity": 14575,
+    "capacityLabel": "Fixed seats",
+    "capacityNote": "The official facility page lists 14,575 fixed seats; grass-bank seating raises total capacity to more than 25,000.",
+    "classification": "NCAA Division I FCS",
+    "conference": "Southland",
+    "aliases": [
+      "SFA",
+      "Lumberjack Stadium",
+      "Jimmy W. Murphy Field",
+      "Stephen F. Austin",
+      "Stephen F. Austin State University",
+      "Stephen F. Austin Lumberjacks"
+    ],
+    "description": "Homer Bryce Stadium sits in a grassy bowl with short central sideline stands, an oval running track and a west-side press box amid the wooded Nacogdoches campus.",
+    "sources": [
+      {
+        "title": "Official venue history, seating and renovation facts",
+        "url": "https://sfajacks.com/facilities/homer-bryce-stadium/5"
+      },
+      {
+        "title": "2026 title defense, team identity and current affiliation",
+        "url": "https://sfajacks.com/news/2026/8/27/football-preview-13-jacks-begin-title-defense-in-lake-charles"
+      },
+      {
+        "title": "Official university and Lumberjack mascot identity",
+        "url": "https://www.sfasu.edu/about-sfa/newsroom/2025/sfa-relaunches-lumberjacks-make-great-campaign-and-introduces-modern"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=676"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/stephen-f-austin-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Homer Bryce Stadium at Stephen F. Austin State University.",
+        "width": 1671,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/stephen-f-austin-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Homer Bryce Stadium at Stephen F. Austin State University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "mcneese-cowboy-stadium",
+    "school": "McNeese",
+    "fullSchool": "McNeese State University",
+    "team": "Cowboys",
+    "teamName": "McNeese Cowboys",
+    "mascot": "Rowdy the Cowboy",
+    "stadium": "Navarre Stadium",
+    "city": "Lake Charles",
+    "state": "Louisiana",
+    "opened": 1965,
+    "seatingCapacity": 20000,
+    "capacityLabel": "Venue capacity (2025)",
+    "capacityNote": "The official 2025 visitor guide lists 20,000 overall venue capacity, not an independently counted fixed-seat total. Historical permanent-seat figures of 17,410 and 17,610 appear in older sources.",
+    "classification": "NCAA Division I FCS",
+    "conference": "Southland",
+    "aliases": [
+      "McNeese State",
+      "Cowboy Stadium",
+      "The Hole",
+      "Louis Bonnette Field",
+      "McNeese",
+      "McNeese State University",
+      "McNeese Cowboys"
+    ],
+    "description": "Navarre Stadium's sunken field is framed by substantial sideline stands, grassy end-zone banks, a long modern west-side press box and the fieldhouse on the north end.",
+    "sources": [
+      {
+        "title": "Official 2025 stadium naming announcement and opening history",
+        "url": "https://mcneesesports.com/news/2025/7/23/football-mcneese-unveils-navarre-stadium-with-record-breaking-naming-rights-deals"
+      },
+      {
+        "title": "Official visiting-team guide capacity",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/mcneese.sidearmsports.com/documents/2025/8/21/2025_FB_VTG_Updated.pdf"
+      },
+      {
+        "title": "2026 current football schedule",
+        "url": "https://mcneesesports.com/sports/football/schedule/2026"
+      },
+      {
+        "title": "Official mascot history",
+        "url": "https://mcneesesports.com/sports/2012/5/17/GEN_0517125835"
+      },
+      {
+        "title": "Official new pressbox opening and 20,000 venue capacity",
+        "url": "https://mcneesesports.com/news/2025/8/29/football-cowboys-open-season-against-lc-in-viators-return.aspx"
+      },
+      {
+        "title": "Architect current completed pressbox photographs",
+        "url": "https://www.multi.studio/work/mcneese-state-university---navarre-stadium-press-box-suites"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=402"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/mcneese-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Navarre Stadium at McNeese State University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/mcneese-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Navarre Stadium at McNeese State University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "southeastern-louisiana-strawberry",
+    "school": "Southeastern Louisiana",
+    "fullSchool": "Southeastern Louisiana University",
+    "team": "Lions",
+    "teamName": "Southeastern Louisiana Lions",
+    "mascot": "Roomie the Lion",
+    "stadium": "Strawberry Stadium",
+    "city": "Hammond",
+    "state": "Louisiana",
+    "opened": 1937,
+    "seatingCapacity": 7408,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southland",
+    "aliases": [
+      "Southeastern",
+      "SLU",
+      "Southeastern Louisiana",
+      "Southeastern Louisiana University",
+      "Southeastern Louisiana Lions"
+    ],
+    "description": "Strawberry Stadium is a compact campus venue with two parallel grandstands, an old red-brick east facade, green-and-gold field and seat accents, and open end-zone lawns.",
+    "sources": [
+      {
+        "title": "Official stadium name, capacity, history and aerial gallery",
+        "url": "https://lionsports.net/facilities/strawberry-stadium/1"
+      },
+      {
+        "title": "2026 team identity and conference evidence",
+        "url": "https://lionsports.net/news/2026/9/24/football-lions-head-to-nsu-in-search-of-first-southland-win.aspx"
+      },
+      {
+        "title": "University mascot history",
+        "url": "https://www.southeastern.edu/2023/05/leaving-a-legacy-and-honoring-a-legend/"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=655"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/southeastern-louisiana-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Strawberry Stadium at Southeastern Louisiana University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/southeastern-louisiana-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Strawberry Stadium at Southeastern Louisiana University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "samford-seibert",
+    "school": "Samford",
+    "fullSchool": "Samford University",
+    "team": "Bulldogs",
+    "teamName": "Samford Bulldogs",
+    "mascot": "Sam the Bulldog",
+    "stadium": "Bobby Bowden Field at Pete Hanna Stadium",
+    "city": "Homewood",
+    "state": "Alabama",
+    "opened": 1958,
+    "seatingCapacity": 6700,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "aliases": [
+      "Seibert Stadium",
+      "Pete Hanna Stadium",
+      "Samford",
+      "Samford University",
+      "Samford Bulldogs"
+    ],
+    "sources": [
+      {
+        "title": "school",
+        "url": "https://www.samford.edu/"
+      },
+      {
+        "title": "athletics",
+        "url": "https://samfordsports.com/"
+      },
+      {
+        "title": "football",
+        "url": "https://samfordsports.com/sports/football"
+      },
+      {
+        "title": "facility",
+        "url": "https://samfordsports.com/sports/2012/6/28/GEN_0628121441"
+      },
+      {
+        "title": "rename",
+        "url": "https://samfordsports.com/news/2023/10/14/samford-renames-football-stadium-in-honor-of-pete-hanna"
+      },
+      {
+        "title": "mascot",
+        "url": "https://samfordsports.com/form/48"
+      },
+      {
+        "title": "mascot handbook",
+        "url": "https://www.samford.edu/files/Student-Handbook.pdf"
+      },
+      {
+        "title": "ncaa 2026 27",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=625"
+      },
+      {
+        "title": "geographic city",
+        "url": "https://www.samford.edu/pharmacy/campus-and-community"
+      },
+      {
+        "title": "campus map",
+        "url": "https://www.samford.edu/files/Samford-Campus-Map.pdf"
+      },
+      {
+        "title": "game day",
+        "url": "https://samfordsports.com/sports/2023/9/20/game-day-know-before-you-go"
+      },
+      {
+        "title": "recreation complex",
+        "url": "https://www.samford.edu/campus-recreation/facilities"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Pete Hanna Stadium has two straight sideline stands, a brick-and-glass west press tower and a distinctive arched recreation-building terrace at the north end. The venue opened in 1958 and was renamed Pete Hanna Stadium in 2023, retaining the Bobby Bowden Field name.",
+    "views": [
+      {
+        "title": "Reverse aerial",
+        "src": "assets/samford-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Bobby Bowden Field at Pete Hanna Stadium at Samford University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Stadium aerial",
+        "src": "assets/samford-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Bobby Bowden Field at Pete Hanna Stadium at Samford University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "mercer-five-star",
+    "school": "Mercer",
+    "fullSchool": "Mercer University",
+    "team": "Bears",
+    "teamName": "Mercer Bears",
+    "mascot": "Toby and Tot",
+    "stadium": "Five Star Stadium",
+    "city": "Macon",
+    "state": "Georgia",
+    "opened": 2013,
+    "seatingCapacity": 10200,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "aliases": [
+      "Moye Complex",
+      "Tony and Nancy Moye Football and Lacrosse Complex",
+      "Anderson Field",
+      "Mercer",
+      "Mercer University",
+      "Mercer Bears"
+    ],
+    "sources": [
+      {
+        "title": "school",
+        "url": "https://www.mercer.edu/"
+      },
+      {
+        "title": "athletics",
+        "url": "https://mercerbears.com/"
+      },
+      {
+        "title": "football",
+        "url": "https://mercerbears.com/sports/football"
+      },
+      {
+        "title": "facility",
+        "url": "https://mercerbears.com/facilities/five-star-stadium/3"
+      },
+      {
+        "title": "rename",
+        "url": "https://mercerbears.com/news/2015/2/26/2_26_2015_1104"
+      },
+      {
+        "title": "mascots",
+        "url": "https://www.mercer.edu/about-mercer/traditions/"
+      },
+      {
+        "title": "ncaa 2026 27",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=406"
+      },
+      {
+        "title": "current 2026 name",
+        "url": "https://mercerbears.com/news/2026/7/21/football-mercer-picked-to-three-peat-smith-named-preseason-player-of-the-year"
+      },
+      {
+        "title": "campus map",
+        "url": "https://www.mercer.edu/wp-content/uploads/2021/01/mercer-macon-campus-map.pdf"
+      },
+      {
+        "title": "gameday capacity rounding",
+        "url": "https://www.mercergameday.com/stadium-information/"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Five Star Stadium pairs unequal straight sideline stands with the brick Drake Field House on its south end and an open north end framed by campus buildings.",
+    "capacityNote": "The official stadium page lists 10,200; another official university account rounds the capacity to 10,000.",
+    "views": [
+      {
+        "title": "Reverse aerial",
+        "src": "assets/mercer-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Five Star Stadium at Mercer University.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Stadium aerial",
+        "src": "assets/mercer-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Five Star Stadium at Mercer University.",
         "width": 1672,
         "height": 941
       }

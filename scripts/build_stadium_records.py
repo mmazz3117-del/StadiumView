@@ -183,9 +183,29 @@ SCHOOLS = {
     'south-alabama-hancock-whitney': ('South Alabama', 'fbs'),
     'southern-miss-renasant': ('Southern Miss', 'fbs'),
     'troy-veterans-memorial': ('Troy', 'fbs'),
+    'delaware-stadium': ('Delaware', 'fbs'),
+    'richmond-robins': ('Richmond', 'fcs'),
+    'villanova-stadium': ('Villanova', 'fcs'),
+    'william-mary-zable': ('William & Mary', 'fcs'),
+    'furman-paladin': ('Furman', 'fcs'),
+    'montana-washington-grizzly': ('Montana', 'fcs'),
+    'montana-state-bobcat': ('Montana State', 'fcs'),
+    'eastern-washington-roos': ('Eastern Washington', 'fcs'),
+    'weber-state-stewart': ('Weber State', 'fcs'),
+    'cal-poly-spanos': ('Cal Poly', 'fcs'),
+    'missouri-state-plaster': ('Missouri State', 'fbs'),
+    'south-dakota-state-dykhouse': ('South Dakota State', 'fcs'),
+    'illinois-state-hancock': ('Illinois State', 'fcs'),
+    'southern-illinois-saluki': ('Southern Illinois', 'fcs'),
+    'youngstown-state-stambaugh': ('Youngstown State', 'fcs'),
+    'uc-davis-health': ('UC Davis', 'fcs'),
+    'chattanooga-finley': ('Chattanooga', 'fcs'),
+    'florida-am-bragg': ('Florida A&M', 'fcs'),
+    'jackson-state-veterans': ('Jackson State', 'fcs'),
+    'southern-mumford': ('Southern', 'fcs'),
 }
-# The 144 reviewed identities include 30 FBS additions for v1.11.0. Public
-# directory identities were checked at https://collegefootballdata.com/teams
+# The 164 reviewed identities include 2 FBS and 18 FCS additions for v1.12.0. Public
+# FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
 # These names are intentionally not replaced by Hawaii or Appalachian State.
 # San José State retains the provider directory accent; UConn is its canonical name.
@@ -194,6 +214,9 @@ SCHOOLS = {
 # Miami (OH) is the separate MAC school and must never match Miami.
 # New canonical identities include Florida International, Massachusetts, and UL Monroe. Public identities do
 # not establish authenticated 2026 records coverage, which every run validates.
+# New FCS name strings have historical public corroboration, not current
+# authenticated coverage. The authenticated build
+# must verify all current team IDs, classifications, and records before publication.
 # These are explicit identities, not fuzzy matches or generic abbreviations.
 # API alternateNames/abbreviation fields are deliberately not used as a fallback.
 # Reviewed UI labels are separate from provider identities. This mapping only

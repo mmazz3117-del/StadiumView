@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.12.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.13.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -10754,6 +10754,635 @@ window.STADIUMS = [
         "title": "Second aerial view",
         "src": "assets/southern-stadium-reverse.png",
         "alt": "AI-generated reverse aerial interpretation of A. W. Mumford Stadium in Baton Rouge, Louisiana. Southern’s A. W. Mumford Stadium has a bright blue athletics track, separate concrete sideline stands, a curved north fieldhouse and the Mississippi River beyond its tree-lined campus bluff.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "howard-greene",
+    "school": "Howard",
+    "fullSchool": "Howard University",
+    "team": "Bison",
+    "teamName": "Howard Bison",
+    "mascot": "Bison",
+    "stadium": "William H. Greene Stadium",
+    "city": "Washington",
+    "state": "District of Columbia",
+    "opened": 1926,
+    "seatingCapacity": 10000,
+    "conference": "Mid-Eastern Athletic",
+    "description": "Greene Stadium is a compact urban campus venue with metal sideline bleachers, a dark blue oval track, navy-and-white turf markings and red-brick Howard buildings immediately beyond the stands.",
+    "aliases": [
+      "HU",
+      "Howard University",
+      "Greene Stadium",
+      "Howard Stadium",
+      "Howard Bison",
+      "Howard"
+    ],
+    "capacityLabel": "Football capacity",
+    "capacityNote": "Howard lists 10,000 for football and 7,086 seats for the multipurpose venue.",
+    "sources": [
+      {
+        "title": "Howard official Greene Stadium facility page",
+        "url": "https://hubison.com/facilities/greene-stadium/2"
+      },
+      {
+        "title": "Howard 2026 MEAC football preseason team",
+        "url": "https://hubison.com/news/2026/7/20/five-bison-selected-to-the-meac-football-preseason-team.aspx"
+      },
+      {
+        "title": "Howard official mascot and traditions",
+        "url": "https://thedig.howard.edu/all-stories/new-bison-embrace-tested-traditions"
+      },
+      {
+        "title": "NCAA FCS stadium record book",
+        "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/FCS.pdf"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/howard-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of William H. Greene Stadium in Washington, District of Columbia. Greene Stadium is a compact urban campus venue with metal sideline bleachers, a dark blue oval track, navy-and-white turf markings and red-brick Howard buildings immediately beyond the stands.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/howard-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of William H. Greene Stadium in Washington, District of Columbia. Greene Stadium is a compact urban campus venue with metal sideline bleachers, a dark blue oval track, navy-and-white turf markings and red-brick Howard buildings immediately beyond the stands.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "hampton-armstrong",
+    "school": "Hampton",
+    "fullSchool": "Hampton University",
+    "team": "Pirates",
+    "teamName": "Hampton Pirates",
+    "mascot": "Petey the Pirate",
+    "stadium": "Armstrong Stadium",
+    "city": "Hampton",
+    "state": "Virginia",
+    "opened": 1922,
+    "seatingCapacity": 9710,
+    "conference": "Coastal Athletic Association",
+    "description": "Armstrong Stadium combines historic brick-backed stands, compact press boxes and a vivid blue oval track with the leafy Hampton campus, nearby athletic halls and coastal water towers.",
+    "aliases": [
+      "HU",
+      "Hampton University",
+      "Armstrong Field",
+      "Hampton Pirates",
+      "Hampton"
+    ],
+    "capacityLabel": "Published permanent-home seating capacity",
+    "capacityNote": "Hampton’s updated 2026 facility page and June 2026 renovation report list 9,710. NCAA and October 8, 2026 CAA notes still list 12,000; the host’s updated venue figure is used. This is Armstrong’s capacity, not temporary Darling Stadium. The first three 2026 home games used Darling during renovation; an Armstrong return was scheduled for October 24 as of October 15. The field opened in 1922; permanent stands were dedicated in 1928.",
+    "sources": [
+      {
+        "title": "Hampton updated official Armstrong Stadium history and 2026 refurbishment",
+        "url": "https://hamptonpirates.com/sports/2006/8/8/armstrongstadium?path=cheer"
+      },
+      {
+        "title": "June 30 2026 Armstrong refurbishment report",
+        "url": "https://hamptonpirates.com/news/2026/6/30/general-historic-armstrong-stadium-undergoing-amajor-facelift"
+      },
+      {
+        "title": "September 24 2026 preview confirms final Darling home game",
+        "url": "https://hamptonpirates.com/news/2026/9/24/football-pirates-tackle-no-22-ranked-campbell"
+      },
+      {
+        "title": "Current 2026 Hampton schedule and Armstrong return",
+        "url": "https://hamptonpirates.com/sports/football/schedule"
+      },
+      {
+        "title": "Official Petey the Pirate alumni event",
+        "url": "https://oaa.hamptonu.edu/?calcid=3636&calpgid=1122&cc=1&crid=0&ecid=3368&gid=1&pgid=252&scontid=2000%5C&sessionid=9b227739-452a-4190-8f65-b89b5d972670&sid=1339"
+      },
+      {
+        "title": "CAA October 8 2026 notes, alternate 12,000 capacity",
+        "url": "https://s3.amazonaws.com/sidearm.sites/caasports.com/documents/2026/10/8/Week626FBNOTES.pdf"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/hampton-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Armstrong Stadium in Hampton, Virginia. Armstrong Stadium combines historic brick-backed stands, compact press boxes and a vivid blue oval track with the leafy Hampton campus, nearby athletic halls and coastal water towers.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/hampton-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Armstrong Stadium in Hampton, Virginia. Armstrong Stadium combines historic brick-backed stands, compact press boxes and a vivid blue oval track with the leafy Hampton campus, nearby athletic halls and coastal water towers.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "north-carolina-at-truist",
+    "school": "North Carolina A&T",
+    "fullSchool": "North Carolina Agricultural and Technical State University",
+    "team": "Aggies",
+    "teamName": "North Carolina A&T Aggies",
+    "mascot": "Aggie the Bulldog",
+    "stadium": "Truist Stadium",
+    "city": "Greensboro",
+    "state": "North Carolina",
+    "opened": 1981,
+    "seatingCapacity": 21500,
+    "conference": "Coastal Athletic Association",
+    "description": "Truist Stadium wraps silver bleachers and a royal-blue running track around natural grass, with a compact pale-gray skybox above the home stand and an open scoreboard end beside a blue-roofed athletics building.",
+    "aliases": [
+      "NC A&T",
+      "N.C. A&T",
+      "NCAT",
+      "Aggie Stadium",
+      "BB&T Stadium",
+      "North Carolina Agricultural and Technical State University",
+      "North Carolina A&T Aggies",
+      "North Carolina A&T"
+    ],
+    "sources": [
+      {
+        "title": "Official Truist Stadium facility history and photos",
+        "url": "https://ncataggies.com/facilities/truist-stadium/1"
+      },
+      {
+        "title": "Official 2026 CAA preseason football report",
+        "url": "https://ncataggies.com/news/2026/7/23/football-aggies-set-to-start-preseason-practice.aspx"
+      },
+      {
+        "title": "Official stadium and mascot quick facts",
+        "url": "https://static.ncataggies.com/custompages/Game%20Notes/2021FBNotes_A%26TvsRMUG4.pdf"
+      },
+      {
+        "title": "NCAA FCS stadium record book",
+        "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/FCS.pdf"
+      },
+      {
+        "title": "Official Aggie mascot profile in alumni news",
+        "url": "https://relations.ncat.edu/pubs/alumnitimes/2015/apr16/1890day-walk-run-heritage.html"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/north-carolina-at-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Truist Stadium in Greensboro, North Carolina. Truist Stadium wraps silver bleachers and a royal-blue running track around natural grass, with a compact pale-gray skybox above the home stand and an open scoreboard end beside a blue-roofed athletics building.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/north-carolina-at-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Truist Stadium in Greensboro, North Carolina. Truist Stadium wraps silver bleachers and a royal-blue running track around natural grass, with a compact pale-gray skybox above the home stand and an open scoreboard end beside a blue-roofed athletics building.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "north-carolina-central-okelly-riddick",
+    "school": "North Carolina Central",
+    "fullSchool": "North Carolina Central University",
+    "team": "Eagles",
+    "teamName": "North Carolina Central Eagles",
+    "mascot": "Eddie the Eagle",
+    "stadium": "O’Kelly-Riddick Stadium",
+    "city": "Durham",
+    "state": "North Carolina",
+    "opened": 1975,
+    "seatingCapacity": 10000,
+    "conference": "Mid-Eastern Athletic",
+    "description": "O’Kelly-Riddick Stadium has three compact straight bleacher banks around maroon-and-green turf, an open end facing a separate red running-track complex, and red-brick campus buildings close by.",
+    "aliases": [
+      "NCCU",
+      "NC Central",
+      "N.C. Central",
+      "O'Kelly-Riddick Stadium",
+      "The Nest",
+      "North Carolina Central University",
+      "North Carolina Central Eagles",
+      "North Carolina Central"
+    ],
+    "sources": [
+      {
+        "title": "Official O’Kelly-Riddick facility and aerial photos",
+        "url": "https://nccueaglepride.com/facilities/o-kelly-riddick-stadium/1"
+      },
+      {
+        "title": "NCAA FCS stadium record book",
+        "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/FCS.pdf"
+      },
+      {
+        "title": "Official Eddie the Eagle mascot identification",
+        "url": "https://nccueaglepride.com/news/2023/2/17/athletics-department-new-hbcu-bobblehead-series-features-nccus-eddie-the-eagle"
+      },
+      {
+        "title": "2026 MEAC football awards identify NCCU",
+        "url": "https://hubison.com/news/2026/7/20/five-bison-selected-to-the-meac-football-preseason-team.aspx"
+      },
+      {
+        "title": "NCCU game-day information describes separate adjacent lawn and track",
+        "url": "https://nccueaglepride.com/sports/2024/6/5/football-general-information.aspx"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/north-carolina-central-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of O’Kelly-Riddick Stadium in Durham, North Carolina. O’Kelly-Riddick Stadium has three compact straight bleacher banks around maroon-and-green turf, an open end facing a separate red running-track complex, and red-brick campus buildings close by.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/north-carolina-central-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of O’Kelly-Riddick Stadium in Durham, North Carolina. O’Kelly-Riddick Stadium has three compact straight bleacher banks around maroon-and-green turf, an open end facing a separate red running-track complex, and red-brick campus buildings close by.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "alabama-state-stadium",
+    "school": "Alabama State",
+    "fullSchool": "Alabama State University",
+    "team": "Hornets",
+    "teamName": "Alabama State Hornets",
+    "mascot": "Stinger",
+    "stadium": "ASU Stadium",
+    "city": "Montgomery",
+    "state": "Alabama",
+    "opened": 2012,
+    "seatingCapacity": 26500,
+    "conference": "Southwestern Athletic",
+    "description": "ASU Stadium is an asymmetric football venue with a tall two-tier home stand, a low visitor stand beside Interstate 85, open plaza and grass-bank ends, and black-and-gold turf accents.",
+    "aliases": [
+      "ASU",
+      "Alabama State University",
+      "New ASU Stadium",
+      "Alabama State Hornets",
+      "Alabama State"
+    ],
+    "sources": [
+      {
+        "title": "Official ASU Stadium facility and photos",
+        "url": "https://bamastatesports.com/facilities/asu-stadium/57"
+      },
+      {
+        "title": "2026 SWAC Eastern Division preseason poll",
+        "url": "https://bamastatesports.com/news/2026/7/16/football-alabama-state-picked-to-win-2026-swac-eastern-division-title.aspx"
+      },
+      {
+        "title": "Official student handbook: Stinger mascot, page 15",
+        "url": "https://www.alasu.edu/student-affairs/current-students/pilot-updated.pdf"
+      },
+      {
+        "title": "Official stadium opening history and capacity",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/bamastatesports.com/documents/2019/8/12/FB_Media_Guide.pdf"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/alabama-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of ASU Stadium in Montgomery, Alabama. ASU Stadium is an asymmetric football venue with a tall two-tier home stand, a low visitor stand beside Interstate 85, open plaza and grass-bank ends, and black-and-gold turf accents.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/alabama-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of ASU Stadium in Montgomery, Alabama. ASU Stadium is an asymmetric football venue with a tall two-tier home stand, a low visitor stand beside Interstate 85, open plaza and grass-bank ends, and black-and-gold turf accents.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "grambling-state-stadium",
+    "school": "Grambling State",
+    "fullSchool": "Grambling State University",
+    "team": "Tigers",
+    "teamName": "Grambling State Tigers",
+    "mascot": "Tiger",
+    "stadium": "Eddie G. Robinson Memorial Stadium",
+    "city": "Grambling",
+    "state": "Louisiana",
+    "opened": 1983,
+    "seatingCapacity": 19600,
+    "conference": "Southwestern Athletic",
+    "description": "Grambling’s sunken field lies between silver sideline grandstands and grassy end-zone banks, with black-and-gold tiger-pattern seats below the home press box and a wooded Louisiana campus beyond.",
+    "aliases": [
+      "Grambling",
+      "GSU",
+      "The Hole",
+      "Eddie Robinson Stadium",
+      "Grambling State University",
+      "Grambling State Tigers"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts and current reference gallery",
+        "url": "https://gsutigers.com/facilities/eddie-g-robinson-memorial-stadium/7"
+      },
+      {
+        "title": "2026 football home schedule and SWAC affiliation",
+        "url": "https://gsutigers.com/news/2026/7/16/grambling-state-announces-2026-football-home-game-times-and-themes.aspx"
+      },
+      {
+        "title": "Official athletics identity and mascot",
+        "url": "https://gsutigers.com/sports/2021/7/15/athletic-communications.aspx"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/grambling-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Eddie G. Robinson Memorial Stadium in Grambling, Louisiana. Grambling’s sunken field lies between silver sideline grandstands and grassy end-zone banks, with black-and-gold tiger-pattern seats below the home press box and a wooded Louisiana campus beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/grambling-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Eddie G. Robinson Memorial Stadium in Grambling, Louisiana. Grambling’s sunken field lies between silver sideline grandstands and grassy end-zone banks, with black-and-gold tiger-pattern seats below the home press box and a wooded Louisiana campus beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "eastern-kentucky-stadium",
+    "school": "Eastern Kentucky",
+    "fullSchool": "Eastern Kentucky University",
+    "team": "Colonels",
+    "teamName": "Eastern Kentucky Colonels",
+    "mascot": "The Colonel",
+    "stadium": "CG Bank Field at Roy Kidd Stadium",
+    "city": "Richmond",
+    "state": "Kentucky",
+    "opened": 1969,
+    "seatingCapacity": 20000,
+    "capacityLabel": "Approximately 20,000",
+    "capacityNote": "The official stadium page describes approximately 20,000 seats.",
+    "conference": "United Athletic Conference",
+    "description": "Roy Kidd Stadium’s steep west grandstand forms the roof of the nine-story Begley Building, opposite a low modern east stand, with an open grassy north hill and the Richmond campus around the field.",
+    "aliases": [
+      "EKU",
+      "Roy Kidd Stadium",
+      "Hanger Field",
+      "Colonels",
+      "Eastern Kentucky University",
+      "Eastern Kentucky Colonels",
+      "Eastern Kentucky"
+    ],
+    "sources": [
+      {
+        "title": "Official Roy Kidd Stadium history, capacity and renovations",
+        "url": "https://ekusports.com/sports/2019/3/30/new-roy-kidd-stadium"
+      },
+      {
+        "title": "Current CG Bank Field name in September 2026 game recap",
+        "url": "https://ekusports.com/news/2026/9/12/football-eastern-kentucky-defeats-chattanooga-22-17-in-home-opener.aspx"
+      },
+      {
+        "title": "Official 2026 UAC membership announcement",
+        "url": "https://ekusports.com/news/2026/7/1/united-athletic-conference.aspx"
+      },
+      {
+        "title": "Official Colonel identity and September 2026 brand update",
+        "url": "https://ekusports.com/news/2026/9/28/general-new-colonel-elevates-the-eku-brand.aspx"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/eastern-kentucky-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of CG Bank Field at Roy Kidd Stadium in Richmond, Kentucky. Roy Kidd Stadium’s steep west grandstand forms the roof of the nine-story Begley Building, opposite a low modern east stand, with an open grassy north hill and the Richmond campus around the field.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/eastern-kentucky-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of CG Bank Field at Roy Kidd Stadium in Richmond, Kentucky. Roy Kidd Stadium’s steep west grandstand forms the roof of the nine-story Begley Building, opposite a low modern east stand, with an open grassy north hill and the Richmond campus around the field.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "east-tennessee-state-stadium",
+    "school": "East Tennessee State",
+    "fullSchool": "East Tennessee State University",
+    "team": "Buccaneers",
+    "teamName": "East Tennessee State Buccaneers",
+    "mascot": "Bucky",
+    "stadium": "Bank of Tennessee Field at William B. Greene, Jr. Stadium",
+    "city": "Johnson City",
+    "state": "Tennessee",
+    "opened": 2017,
+    "seatingCapacity": 7694,
+    "capacityLabel": "Seated capacity",
+    "capacityNote": "Official athletics attendance report lists 7,694; total attendance can exceed seating capacity through berm and standing-room areas.",
+    "conference": "Southern",
+    "description": "Greene Stadium is a compact horseshoe-shaped venue with blue-and-gold turf markings, low sideline stands, a brick-and-glass west tower and grassy berms at the foot of Buffalo Mountain.",
+    "aliases": [
+      "ETSU",
+      "Bucs",
+      "William B. Greene Jr. Stadium",
+      "Greene Stadium",
+      "East Tennessee State University",
+      "East Tennessee State Buccaneers",
+      "East Tennessee State"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium history and field naming",
+        "url": "https://etsubucs.com/facilities/bank-of-tennessee-field-at-william-b-greene-jr-stadium/2"
+      },
+      {
+        "title": "Official stadium seating capacity and attendance distinction",
+        "url": "https://etsubucs.com/news/2024/12/6/etsu-football-ranks-highly-in-attendance.aspx"
+      },
+      {
+        "title": "Official 2026 Southern Conference football schedule",
+        "url": "https://soconsports.com/news/2025/12/18/2026-socon-football-schedule-announced-59122.aspx"
+      },
+      {
+        "title": "Official Bucky mascot history",
+        "url": "https://etsubucs.com/sports/2023/7/24/_133347007855386563.aspx?path=bucspirit"
+      },
+      {
+        "title": "Official 2026 football schedule and home venue",
+        "url": "https://etsubucs.com/sports/football/schedule"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/east-tennessee-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Bank of Tennessee Field at William B. Greene, Jr. Stadium in Johnson City, Tennessee. Greene Stadium is a compact horseshoe-shaped venue with blue-and-gold turf markings, low sideline stands, a brick-and-glass west tower and grassy berms at the foot of Buffalo Mountain.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/east-tennessee-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Bank of Tennessee Field at William B. Greene, Jr. Stadium in Johnson City, Tennessee. Greene Stadium is a compact horseshoe-shaped venue with blue-and-gold turf markings, low sideline stands, a brick-and-glass west tower and grassy berms at the foot of Buffalo Mountain.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "towson-stadium",
+    "school": "Towson",
+    "fullSchool": "Towson University",
+    "team": "Tigers",
+    "teamName": "Towson Tigers",
+    "mascot": "Doc the Tiger",
+    "stadium": "Minnegan Field at Johnny Unitas Stadium",
+    "city": "Towson",
+    "state": "Maryland",
+    "opened": 1978,
+    "seatingCapacity": 11198,
+    "conference": "Coastal Athletic Association",
+    "description": "Towson’s two silver sideline grandstands surround a gray running track with gold end-zone crescents, a brick-and-glass press tower, and a curved west-end field house amid the wooded Baltimore-area campus.",
+    "aliases": [
+      "TU",
+      "Johnny Unitas Stadium",
+      "Unitas Stadium",
+      "Minnegan Field",
+      "Towson University",
+      "Towson Tigers",
+      "Towson"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium capacity, architecture and 2023 aerial",
+        "url": "https://towsontigers.com/sports/2014/7/14/unitasstadium"
+      },
+      {
+        "title": "Official 2026 Towson CAA football schedule",
+        "url": "https://towsontigers.com/news/2025/12/16/towson-football-caa-announces-2026-schedule.aspx"
+      },
+      {
+        "title": "Official Towson football notes with first-game date",
+        "url": "https://wvusports.com/documents/download/2022/9/14/2022_Towson_FB_Game_Notes__West_Virginia_9-17_.pdf"
+      },
+      {
+        "title": "Official Doc the Tiger brand identity",
+        "url": "https://www.towson.edu/brand/visual-guidelines/brand-marks/doc-tiger.html"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/towson-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Minnegan Field at Johnny Unitas Stadium in Towson, Maryland. Towson’s two silver sideline grandstands surround a gray running track with gold end-zone crescents, a brick-and-glass press tower, and a curved west-end field house amid the wooded Baltimore-area campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/towson-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Minnegan Field at Johnny Unitas Stadium in Towson, Maryland. Towson’s two silver sideline grandstands surround a gray running track with gold end-zone crescents, a brick-and-glass press tower, and a curved west-end field house amid the wooded Baltimore-area campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "new-hampshire-stadium",
+    "school": "New Hampshire",
+    "fullSchool": "University of New Hampshire",
+    "team": "Wildcats",
+    "teamName": "New Hampshire Wildcats",
+    "mascot": "Wild E. Cat and Gnarlz",
+    "stadium": "Wildcat Stadium",
+    "city": "Durham",
+    "state": "New Hampshire",
+    "opened": 2016,
+    "seatingCapacity": 11015,
+    "conference": "Coastal Athletic Association",
+    "description": "Wildcat Stadium pairs a brick-and-glass west grandstand with twin gabled roof towers and a lower east stand, around a blue-and-gray track beside practice fields and the wooded Durham campus. Rebuilt in 2016 on the former Cowell Stadium site (1936–2015).",
+    "aliases": [
+      "UNH",
+      "Mooradian Field",
+      "Cowell Stadium",
+      "University of New Hampshire",
+      "New Hampshire Wildcats",
+      "New Hampshire"
+    ],
+    "sources": [
+      {
+        "title": "Official Wildcat Stadium opening, predecessor and capacity",
+        "url": "https://unhwildcats.com/sports/2016/8/10/wildcat-stadium"
+      },
+      {
+        "title": "Official 2026 UNH CAA football schedule",
+        "url": "https://unhwildcats.com/news/2025/12/16/2026-football-schedule-announced"
+      },
+      {
+        "title": "Official mascot history",
+        "url": "https://unhwildcats.com/sports/2015/6/24/Mascots"
+      },
+      {
+        "title": "Official prior stadium aerial and fan guide",
+        "url": "https://unhwildcats.com/news/2022/9/1/football-whats-new-at-wildcat-stadium"
+      }
+    ],
+    "classification": "NCAA Division I FCS",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/new-hampshire-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Wildcat Stadium in Durham, New Hampshire. Wildcat Stadium pairs a brick-and-glass west grandstand with twin gabled roof towers and a lower east stand, around a blue-and-gray track beside practice fields and the wooded Durham campus. Rebuilt in 2016 on the former Cowell Stadium site (1936–2015).",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/new-hampshire-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Wildcat Stadium in Durham, New Hampshire. Wildcat Stadium pairs a brick-and-glass west grandstand with twin gabled roof towers and a lower east stand, around a blue-and-gray track beside practice fields and the wooded Durham campus. Rebuilt in 2016 on the former Cowell Stadium site (1936–2015).",
         "width": 1672,
         "height": 941
       }

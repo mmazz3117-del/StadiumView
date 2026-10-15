@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.11.0';
+  const BUILD = '1.12.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 144 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant'].includes(item.id) ? 3 : 2));
+  const validCatalog = Array.isArray(catalog) && catalog.length === 164 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant'].includes(item.id) ? 3 : 2));
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.11.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.12.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -91,7 +91,7 @@
   const indexOf = item => catalog.indexOf(item) + 1;
   const imageOf = () => activeStadium.views[view];
   // Slideshow selection never changes the gallery's selected stadium or photo.
-  const slideshow = {active:false,playing:false,scope:'all',queue:[],position:0,shuffle:false,rounds:[],roundIndex:0,roundOffset:0,viewCycles:{},delay:5000,from:'#collection',owned:false};
+  const slideshow = {active:false,playing:false,scope:'all',queue:[],position:0,shuffle:false,rounds:[],roundIndex:0,roundOffset:0,delay:5000,from:'#collection',owned:false};
   const slideshowControls = $('#slideshow-controls');
   const slideshowScope = $('#slideshow-scope');
   const slideshowPlay = $('#slideshow-play');
@@ -258,7 +258,7 @@
   function saveSlideshowHistory() {
     if (!slideshow.active || location.hash !== '#slideshow') return;
     const state = {from:slideshow.from,owned:slideshow.owned,scope:slideshow.scope,order:slideshow.queue.map(photoKey),position:slideshow.position,shuffle:slideshow.shuffle,delay:slideshow.delay};
-    if (slideshow.shuffle) Object.assign(state,{schoolShuffleVersion:1,rounds:slideshow.rounds.map(round => round.map(photoKey)),roundIndex:slideshow.roundIndex,roundOffset:slideshow.roundOffset,viewCycles:slideshow.viewCycles});
+    if (slideshow.shuffle) Object.assign(state,{schoolShuffleVersion:2,rounds:slideshow.rounds.map(round => round.map(photoKey)),roundIndex:slideshow.roundIndex,roundOffset:slideshow.roundOffset});
     history.replaceState({stadiumAtlasSlideshow:state},'', '#slideshow');
   }
   function shuffledCopy(values) {
@@ -281,7 +281,8 @@
       const swap = 1 + Math.floor(Math.random() * (schools.length - 1));
       [schools[0],schools[swap]] = [schools[swap],schools[0]];
     }
-    return schools.map((item,position) => ({item,index:slideshow.viewCycles[item.id][number % item.views.length],schoolRound:number + 1,schoolPosition:position + 1,schoolTotal:schools.length}));
+    // Shuffle school blocks only; every image stays in its catalog sequence.
+    return schools.flatMap((item,position) => item.views.map((_,index) => ({item,index,schoolRound:number + 1,schoolPosition:position + 1,schoolTotal:schools.length})));
   }
   function ensureNextSchoolRound() {
     if (!slideshow.shuffle || !slideshow.queue.length || slideshow.roundIndex + 1 < slideshow.rounds.length) return;
@@ -320,14 +321,11 @@
     }
   }
   function orderSlideshow(keepCurrent = true) {
-    const current = keepCurrent && viewerEntry();
-    slideshow.rounds = []; slideshow.roundIndex = 0; slideshow.roundOffset = 0; slideshow.viewCycles = {};
+    const current = keepCurrent && (viewerDisplayedEntry || viewerEntry());
+    slideshow.rounds = []; slideshow.roundIndex = 0; slideshow.roundOffset = 0;
     if (slideshow.shuffle) {
-      for (const item of slideshowSchools()) {
-        const cycle = shuffledCopy(item.views.map((_,index) => index));
-        if (current && current.item.id === item.id) cycle.unshift(...cycle.splice(cycle.indexOf(current.index),1));
-        slideshow.viewCycles[item.id] = cycle;
-      }
+      // Keep the current school when enabling shuffle, but restart its complete
+      // ordered block at view one. Disabling shuffle retains the current photo.
       slideshow.queue = makeSchoolRound(0,null,current);
       slideshow.rounds = [slideshow.queue]; slideshow.position = 0;
       ensureNextSchoolRound();
@@ -337,24 +335,29 @@
     }
   }
   function restoreSchoolRounds(saved) {
-    if (saved?.schoolShuffleVersion !== 1 || !Array.isArray(saved.rounds) || !saved.rounds.length || saved.rounds.length > 32 || !Number.isSafeInteger(saved.roundOffset) || saved.roundOffset < 0 || saved.roundOffset > 1e9 || !Number.isInteger(saved.roundIndex) || saved.roundIndex < 0 || saved.roundIndex >= saved.rounds.length) return false;
-    const schools = slideshowSchools(), entries = new Map(slideshowPhotos(slideshow.scope).map(entry => [photoKey(entry),entry]));
-    const cycles = {};
-    for (const item of schools) {
-      const cycle = saved.viewCycles?.[item.id];
-      if (!Array.isArray(cycle) || cycle.length !== item.views.length || new Set(cycle).size !== cycle.length || !Array.from(cycle).every(index => Number.isInteger(index) && index >= 0 && index < item.views.length)) return false;
-      cycles[item.id] = cycle.slice();
-    }
+    if (saved?.schoolShuffleVersion !== 2 || !Array.isArray(saved.rounds) || !saved.rounds.length || saved.rounds.length > 32 || !Number.isSafeInteger(saved.roundOffset) || saved.roundOffset < 0 || saved.roundOffset > 1e9 || !Number.isInteger(saved.roundIndex) || saved.roundIndex < 0 || saved.roundIndex >= saved.rounds.length) return false;
+    const schools = slideshowSchools(), photos = slideshowPhotos(slideshow.scope);
+    const entries = new Map(photos.map(entry => [photoKey(entry),entry]));
     const rounds = [];
     for (let number = 0; number < saved.rounds.length; number++) {
       const keys = saved.rounds[number];
-      if (!Array.isArray(keys) || keys.length !== schools.length || !Array.from(keys).every(key => entries.has(key))) return false;
-      const round = keys.map((key,position) => ({...entries.get(key),schoolRound:saved.roundOffset + number + 1,schoolPosition:position + 1,schoolTotal:schools.length}));
-      if (new Set(round.map(entry => entry.item.id)).size !== schools.length || !round.every(entry => entry.index === cycles[entry.item.id][(saved.roundOffset + number) % entry.item.views.length])) return false;
-      if (number && round.length > 1 && rounds[number - 1].at(-1).item.id === round[0].item.id) return false;
+      if (!Array.isArray(keys) || keys.length !== photos.length || !Array.from(keys).every(key => entries.has(key)) || new Set(keys).size !== keys.length) return false;
+      const round = [], seenSchools = new Set();
+      for (let position = 0; position < keys.length;) {
+        const first = entries.get(keys[position]), item = first.item;
+        if (first.index !== 0 || seenSchools.has(item.id)) return false;
+        seenSchools.add(item.id);
+        for (let index = 0; index < item.views.length; index++) {
+          const entry = entries.get(keys[position++]);
+          if (!entry || entry.item.id !== item.id || entry.index !== index) return false;
+          round.push({...entry,schoolRound:saved.roundOffset + number + 1,schoolPosition:seenSchools.size,schoolTotal:schools.length});
+        }
+      }
+      if (seenSchools.size !== schools.length) return false;
+      if (number && schools.length > 1 && rounds[number - 1].at(-1).item.id === round[0].item.id) return false;
       rounds.push(round);
     }
-    slideshow.rounds = rounds; slideshow.roundIndex = saved.roundIndex; slideshow.roundOffset = saved.roundOffset; slideshow.viewCycles = cycles;
+    slideshow.rounds = rounds; slideshow.roundIndex = saved.roundIndex; slideshow.roundOffset = saved.roundOffset;
     slideshow.queue = rounds[slideshow.roundIndex];
     ensureNextSchoolRound();
     return true;

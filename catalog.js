@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.11.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.12.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -9381,6 +9381,1379 @@ window.STADIUMS = [
         "title": "Second aerial view",
         "src": "assets/troy-stadium-reverse.png",
         "alt": "AI-generated reverse aerial interpretation of Larry Blakeney Field at Veterans Memorial Stadium in Troy, Alabama, showing its distinctive stands and surrounding campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "delaware-stadium",
+    "school": "Delaware",
+    "fullSchool": "University of Delaware",
+    "team": "Fightin’ Blue Hens",
+    "teamName": "Delaware Fightin’ Blue Hens",
+    "mascot": "YoUDee",
+    "stadium": "Delaware Stadium",
+    "city": "Newark",
+    "state": "Delaware",
+    "opened": 1952,
+    "seatingCapacity": 18077,
+    "classification": "NCAA Division I FBS",
+    "conference": "Conference USA",
+    "description": "Delaware’s rectangular stadium combines tall concrete sideline stands, a modern west-side press and athletics complex, blue-and-gold turf markings and nearby indoor and outdoor sports venues.",
+    "aliases": [
+      "UD",
+      "Delaware Blue Hens",
+      "Tubby Raymond Field",
+      "University of Delaware",
+      "Delaware Fightin’ Blue Hens",
+      "Delaware"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official venue or football game notes",
+        "url": "https://bluehens.com/documents/download/2025/12/12/2025_Delaware_Football_Notes_-_68_Ventures_Bowl.pdf"
+      },
+      {
+        "title": "October 9, 2026 Delaware football notes (quick facts and stadium feature)",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/bluehens.com/documents/2026/10/9/2026_Delaware_Football_Notes_-_Middle_Tennessee.pdf?timestamp=20261009073210"
+      },
+      {
+        "title": "February 2026 event-venue information (alternate capacity)",
+        "url": "https://events.bluehens.com/sports/2026/2/19/sports.aspx"
+      },
+      {
+        "title": "Official YoUDee and Baby Blue mascot announcement",
+        "url": "https://bluehens.com/news/2024/11/21/high-5-hospitality-and-delaware-athletics-expand-partnership-to-include-mascot-jersey-patches"
+      },
+      {
+        "title": "Public CFBD FBS directory and Conference USA membership",
+        "url": "https://collegefootballdata.com/teams"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/delaware-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Delaware Stadium in Newark, Delaware. Delaware’s rectangular stadium combines tall concrete sideline stands, a modern west-side press and athletics complex, blue-and-gold turf markings and nearby indoor and outdoor sports venues.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/delaware-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Delaware Stadium in Newark, Delaware. Delaware’s rectangular stadium combines tall concrete sideline stands, a modern west-side press and athletics complex, blue-and-gold turf markings and nearby indoor and outdoor sports venues.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "capacityLabel": "Football seating capacity (2026)",
+    "capacityNote": "October 2026 football quick facts and the stadium feature list 18,077. The same notes’ opponent cards and the February 2026 event-venue page list 18,500; the stadium-specific figure is used."
+  },
+  {
+    "id": "richmond-robins",
+    "school": "Richmond",
+    "fullSchool": "University of Richmond",
+    "team": "Spiders",
+    "teamName": "Richmond Spiders",
+    "mascot": "WebstUR",
+    "stadium": "E. Claiborne Robins Stadium",
+    "city": "Richmond",
+    "state": "Virginia",
+    "opened": 2010,
+    "seatingCapacity": 8200,
+    "capacityLabel": "Football seating capacity (2026)",
+    "capacityNote": "October 2026 football notes list 8,200; the current multi-sport facility page lists 7,220. The football-specific figure is used.",
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "description": "Robins Stadium pairs red-brick sideline stands and compact press and suite buildings around a blue running track, with open end zones and the wooded Richmond campus beyond.",
+    "aliases": [
+      "University of Richmond",
+      "UR",
+      "Robins Stadium",
+      "Richmond Spiders",
+      "Richmond"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facility and photographs",
+        "url": "https://richmondspiders.com/facilities/e-claiborne-robins-stadium/6"
+      },
+      {
+        "title": "2026 Richmond football schedule",
+        "url": "https://richmondspiders.com/sports/football/schedule"
+      },
+      {
+        "title": "2026 football fan events and WebstUR branding",
+        "url": "https://richmondspiders.com/news/2026/8/27/2026-richmond-football"
+      },
+      {
+        "title": "October 6, 2026 Richmond football notes (8,200 capacity)",
+        "url": "https://richmondspiders.com/documents/download/2026/10/6/2026_Football_Game_Notes_Fordham.pdf"
+      },
+      {
+        "title": "Official WebstUR mascot branding",
+        "url": "https://brand.richmond.edu/visual/identity/spirit-logos.html"
+      },
+      {
+        "title": "Historical public CFBD-shaped school identity corroboration (not live 2026 records)",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/richmond-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of E. Claiborne Robins Stadium in Richmond, Virginia. Robins Stadium pairs red-brick sideline stands and compact press and suite buildings around a blue running track, with open end zones and the wooded Richmond campus beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/richmond-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of E. Claiborne Robins Stadium in Richmond, Virginia. Robins Stadium pairs red-brick sideline stands and compact press and suite buildings around a blue running track, with open end zones and the wooded Richmond campus beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate."
+  },
+  {
+    "id": "villanova-stadium",
+    "school": "Villanova",
+    "fullSchool": "Villanova University",
+    "team": "Wildcats",
+    "teamName": "Villanova Wildcats",
+    "mascot": "Will D. Cat",
+    "stadium": "Villanova Stadium",
+    "city": "Villanova",
+    "state": "Pennsylvania",
+    "opened": 1927,
+    "seatingCapacity": 12500,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "description": "Villanova Stadium’s two open sideline grandstands flank Goodreau Field and the red Jumbo Elliott Track, with the compact press box and the Main Line campus around them.",
+    "aliases": [
+      "VU",
+      "Nova",
+      "Goodreau Field",
+      "Jumbo Elliott Track",
+      "Villanova University",
+      "Villanova Wildcats",
+      "Villanova"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official venue or football game notes",
+        "url": "https://villanova.com/sports/2018/6/18/facilities-nova-stadium-11-html"
+      },
+      {
+        "title": "Villanova football joins Patriot League July 1, 2026",
+        "url": "https://villanova.com/news/2026/7/1/villanova-football-officially-joins-patriot-league-on-july-1.aspx"
+      },
+      {
+        "title": "Historical public CFBD-shaped school identity corroboration (not live 2026 records)",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official 2025–26 Will D. Cat mascot profile",
+        "url": "https://villanova.com/sports/cheerleading/roster/will-d-cat/15903"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/villanova-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Villanova Stadium in Villanova, Pennsylvania. Villanova Stadium’s two open sideline grandstands flank Goodreau Field and the red Jumbo Elliott Track, with the compact press box and the Main Line campus around them.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/villanova-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Villanova Stadium in Villanova, Pennsylvania. Villanova Stadium’s two open sideline grandstands flank Goodreau Field and the red Jumbo Elliott Track, with the compact press box and the Main Line campus around them.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "william-mary-zable",
+    "school": "William & Mary",
+    "fullSchool": "College of William & Mary",
+    "team": "Tribe",
+    "teamName": "William & Mary Tribe",
+    "mascot": "Reveley the Griffin",
+    "stadium": "Walter J. Zable Stadium at Cary Field",
+    "city": "Williamsburg",
+    "state": "Virginia",
+    "opened": 1935,
+    "seatingCapacity": 12504,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "description": "Zable Stadium’s red oval track lies between historic brick stands and an expanded west grandstand with slate-roofed towers, beside the leafy Williamsburg campus and Laycock Football Center.",
+    "aliases": [
+      "W&M",
+      "William and Mary",
+      "Zable Stadium",
+      "Cary Field",
+      "College of William & Mary",
+      "William & Mary Tribe",
+      "William & Mary"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official venue or football game notes",
+        "url": "https://tribeathletics.com/facilities/walter-j-zable-stadium-at-cary-field/1"
+      },
+      {
+        "title": "Official 2026 football schedule and inaugural Patriot League season",
+        "url": "https://tribeathletics.com/news/2026/1/2/w-m-football-announces-2026-schedule.aspx"
+      },
+      {
+        "title": "2026 fan experience and Reveley the Griffin",
+        "url": "https://tribeathletics.com/news/2026/4/27/fan-enhancements-for-the-2026-football-season.aspx"
+      },
+      {
+        "title": "Historical public CFBD-shaped school identity corroboration (not live 2026 records)",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/william-mary-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Walter J. Zable Stadium at Cary Field in Williamsburg, Virginia. Zable Stadium’s red oval track lies between historic brick stands and an expanded west grandstand with slate-roofed towers, beside the leafy Williamsburg campus and Laycock Football Center.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/william-mary-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Walter J. Zable Stadium at Cary Field in Williamsburg, Virginia. Zable Stadium’s red oval track lies between historic brick stands and an expanded west grandstand with slate-roofed towers, beside the leafy Williamsburg campus and Laycock Football Center.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "furman-paladin",
+    "school": "Furman",
+    "fullSchool": "Furman University",
+    "team": "Paladins",
+    "teamName": "Furman Paladins",
+    "mascot": "Victor the Paladin and Sir Paladin",
+    "stadium": "Paladin Stadium",
+    "city": "Greenville",
+    "state": "South Carolina",
+    "opened": 1981,
+    "seatingCapacity": 13406,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "description": "Paladin Stadium’s separate concrete grandstands and west-side Pearce-Horton Football Complex sit within Furman’s green campus, with open grassy end zones and Paris Mountain beyond.",
+    "aliases": [
+      "FU",
+      "Pearce-Horton Football Complex",
+      "Furman University",
+      "Furman Paladins",
+      "Furman"
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official venue or football game notes",
+        "url": "https://furmanpaladins.com/facilities/paladin-stadium/6"
+      },
+      {
+        "title": "October 7, 2026 Furman football notes and official stadium capacity",
+        "url": "https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/furmanpaladins.com/documents/2026/10/7/Furman_vs._Tennessee_Tech_Game_Notes___Stats.pdf"
+      },
+      {
+        "title": "September 29, 2026 Furman football notes (capacity corroboration)",
+        "url": "https://furmanpaladins.com/documents/2026/9/29/Furman_vs._Wofford_Game_Notes___Stats.pdf"
+      },
+      {
+        "title": "Official 2026 football schedule and Southern Conference affiliation",
+        "url": "https://furmanpaladins.com/news/2026/1/29/furman-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "Official mascot history",
+        "url": "https://www.furman.edu/about/history/"
+      },
+      {
+        "title": "Official Furman traditions",
+        "url": "https://furmanpaladins.com/sports/2019/6/7/furman-traditions.aspx"
+      },
+      {
+        "title": "Historical public CFBD-shaped school identity corroboration (not live 2026 records)",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official 2026 history of Victor and Sir Paladin",
+        "url": "https://www.furman.edu/news/?p=41928"
+      },
+      {
+        "title": "Wofford 2026 opponent preview (alternate capacity)",
+        "url": "https://woffordterriers.com/news/2026/9/30/football-travels-to-furman-for-100th-meeting.aspx"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/furman-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Paladin Stadium in Greenville, South Carolina. Paladin Stadium’s separate concrete grandstands and west-side Pearce-Horton Football Complex sit within Furman’s green campus, with open grassy end zones and Paris Mountain beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/furman-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Paladin Stadium in Greenville, South Carolina. Paladin Stadium’s separate concrete grandstands and west-side Pearce-Horton Football Complex sit within Furman’s green campus, with open grassy end zones and Paris Mountain beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "capacityLabel": "Football seating capacity (2026)",
+    "capacityNote": "Furman’s September and October 2026 football notes list 13,406. Its 2026 lacrosse notes list 14,518 and the general event-venue page lists 16,000; the current football-specific figure is used. A 2026 opponent preview lists 13,458."
+  },
+  {
+    "id": "montana-washington-grizzly",
+    "school": "Montana",
+    "fullSchool": "University of Montana",
+    "team": "Grizzlies",
+    "teamName": "Montana Grizzlies",
+    "mascot": "Monte",
+    "stadium": "Washington-Grizzly Stadium",
+    "city": "Missoula",
+    "state": "Montana",
+    "opened": 1986,
+    "seatingCapacity": 25217,
+    "capacityLabel": "Seating capacity",
+    "description": "Montana’s compact, steep-sided stadium sits at the foot of Mount Sentinel beside the Clark Fork River and the university campus.",
+    "aliases": [
+      "UM",
+      "Montana Grizzlies",
+      "Washington Grizzly Stadium",
+      "University of Montana",
+      "Montana"
+    ],
+    "classification": "NCAA Division I FCS",
+    "conference": "Big Sky",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility and reference photographs",
+        "url": "https://gogriz.com/facilities/washington-grizzly-stadium/1"
+      },
+      {
+        "title": "Official 2026 Big Sky football standings",
+        "url": "https://bigskyconf.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official university mascot identity",
+        "url": "https://gogriz.com/news/2016/10/27/general-monte-goes-pro-again"
+      },
+      {
+        "title": "Historical public provider-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/montana-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Washington-Grizzly Stadium in Missoula, Montana. Montana’s compact, steep-sided stadium sits at the foot of Mount Sentinel beside the Clark Fork River and the university campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/montana-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Washington-Grizzly Stadium in Missoula, Montana. Montana’s compact, steep-sided stadium sits at the foot of Mount Sentinel beside the Clark Fork River and the university campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "montana-state-bobcat",
+    "school": "Montana State",
+    "fullSchool": "Montana State University",
+    "team": "Bobcats",
+    "teamName": "Montana State Bobcats",
+    "mascot": "Champ",
+    "stadium": "Bobcat Stadium",
+    "city": "Bozeman",
+    "state": "Montana",
+    "opened": 1973,
+    "seatingCapacity": 17777,
+    "capacityLabel": "Published seating capacity",
+    "description": "Bobcat Stadium pairs a tall west press-and-suite building with a broad south end-zone stand, open east bleachers and a low north athletics complex against the Gallatin Valley mountains.",
+    "aliases": [
+      "MSU",
+      "Montana State Bobcats",
+      "Reno H. Sales Stadium",
+      "Montana State University",
+      "Montana State"
+    ],
+    "classification": "NCAA Division I FCS",
+    "conference": "Big Sky",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility and reference photographs",
+        "url": "https://msubobcats.com/facilities/worthington-arena/1"
+      },
+      {
+        "title": "Official 2026 Big Sky football standings",
+        "url": "https://bigskyconf.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official 2025 touchdown terrace seating addition",
+        "url": "https://msubobcats.com/news/2025/3/21/football-bobcat-stadium-gains-additional-seating-in-bozeman-health-touchdown-terrace.aspx"
+      },
+      {
+        "title": "Official Bobcat Stadium seated capacity",
+        "url": "https://msubobcats.com/news/2021/12/3/football-game-12-bobcats-host-ovc-champion-ut-martin-in-fcs-playoffs-on-saturday-at-2-pm"
+      },
+      {
+        "title": "Conceptual 2025 facilities master plan",
+        "url": "https://msubobcats.com/documents/download/2025/10/29/Bobcat_Athletics_Facilities_Master_Plan_2025.pdf"
+      },
+      {
+        "title": "Official October 14, 2026 football notes and capacity discrepancy",
+        "url": "https://msubobcats.com/documents/download/2026/10/14/MSU_Notes_26._7_vs_EWU.pdf"
+      },
+      {
+        "title": "Official athletic director letter confirming 253 terrace seats",
+        "url": "https://msubobcats.com/news/2026/1/28/general-letter-from-the-ad-september-2025-edition"
+      },
+      {
+        "title": "Official university mascot identity",
+        "url": "https://msubobcats.com/sports/2020/9/27/mens-basketball-quick-facts"
+      },
+      {
+        "title": "Historical public provider-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/montana-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Bobcat Stadium in Bozeman, Montana. Bobcat Stadium pairs a tall west press-and-suite building with a broad south end-zone stand, open east bleachers and a low north athletics complex against the Gallatin Valley mountains.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/montana-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Bobcat Stadium in Bozeman, Montana. Bobcat Stadium pairs a tall west press-and-suite building with a broad south end-zone stand, open east bleachers and a low north athletics complex against the Gallatin Valley mountains.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "capacityNote": "October 2026 football notes list 17,777 on the cover and 18,127 in quick facts; event capacity can be higher. The 2025 Touchdown Terrace added 253 club seats."
+  },
+  {
+    "id": "eastern-washington-roos",
+    "school": "Eastern Washington",
+    "fullSchool": "Eastern Washington University",
+    "team": "Eagles",
+    "teamName": "Eastern Washington Eagles",
+    "mascot": "Swoop",
+    "stadium": "Roos Field",
+    "city": "Cheney",
+    "state": "Washington",
+    "opened": 1967,
+    "seatingCapacity": 8500,
+    "capacityLabel": "Seating capacity",
+    "description": "Roos Field’s vivid red turf and black end zones sit inside an oval track, with a large west grandstand, small east bleachers and the rolling Palouse landscape beyond.",
+    "aliases": [
+      "EWU",
+      "Eastern Washington Eagles",
+      "Woodward Field",
+      "The Inferno",
+      "Eastern Washington University",
+      "Eastern Washington"
+    ],
+    "classification": "NCAA Division I FCS",
+    "conference": "Big Sky",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility and reference photographs",
+        "url": "https://goeags.com/sports/2020/9/24/ewu-athletic-facilities"
+      },
+      {
+        "title": "Official 2026 Big Sky football standings",
+        "url": "https://bigskyconf.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official September 2026 renovation timing",
+        "url": "https://www.ewu.edu/news/ewu-to-move-ahead-with-second-phase-of-roos-field-renovations/"
+      },
+      {
+        "title": "Official university mascot identity",
+        "url": "https://goeags.com/sports/2016/1/6/swoop?path=mtrack"
+      },
+      {
+        "title": "Historical public provider-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official 2026 gray/red track completion and photographs",
+        "url": "https://www.ewu.edu/news/track-resurfacing-project-nears-the-finish-line/"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/eastern-washington-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Roos Field in Cheney, Washington. Roos Field’s vivid red turf and black end zones sit inside an oval track, with a large west grandstand, small east bleachers and the rolling Palouse landscape beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/eastern-washington-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Roos Field in Cheney, Washington. Roos Field’s vivid red turf and black end zones sit inside an oval track, with a large west grandstand, small east bleachers and the rolling Palouse landscape beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "capacityNote": "Normal capacity of 8,500 is the current official facilities-page figure. Some older game notes list 8,600."
+  },
+  {
+    "id": "weber-state-stewart",
+    "school": "Weber State",
+    "fullSchool": "Weber State University",
+    "team": "Wildcats",
+    "teamName": "Weber State Wildcats",
+    "mascot": "Waldo the Wildcat",
+    "stadium": "Elizabeth Dee Shaw Stewart Stadium",
+    "city": "Ogden",
+    "state": "Utah",
+    "opened": 1953,
+    "seatingCapacity": 13441,
+    "capacityLabel": "Seating capacity",
+    "description": "Stewart Stadium’s gray-and-purple track separates a steep west stand and glass press tower from low east bleachers on the Wasatch foothills, with the Youngberg Football Center at the north end.",
+    "aliases": [
+      "WSU",
+      "Weber State Wildcats",
+      "Stewart Stadium",
+      "Wildcat Stadium",
+      "Weber State University",
+      "Weber State"
+    ],
+    "classification": "NCAA Division I FCS",
+    "conference": "Big Sky",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility and reference photographs",
+        "url": "https://weberstatesports.com/facilities/detail/1"
+      },
+      {
+        "title": "Official 2026 Big Sky football standings",
+        "url": "https://bigskyconf.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official 2023 stadium reopening",
+        "url": "https://weberstatesports.com/news/2023/9/26/athletics-weber-state-opens-the-newly-renovated-stewart-stadium"
+      },
+      {
+        "title": "Official university stadium history with 1953 dedication",
+        "url": "https://www.weber.edu/wsumagazine/fall-2023/stewart-stadium-history.html"
+      },
+      {
+        "title": "Official university mascot identity",
+        "url": "https://www.weber.edu/wsutoday/101424-waldo-60th-anniversary.html"
+      },
+      {
+        "title": "Historical public provider-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/weber-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Stewart Stadium in Ogden, Utah. Stewart Stadium’s gray-and-purple track separates a steep west stand and glass press tower from low east bleachers on the Wasatch foothills, with the Youngberg Football Center at the north end.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/weber-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Stewart Stadium in Ogden, Utah. Stewart Stadium’s gray-and-purple track separates a steep west stand and glass press tower from low east bleachers on the Wasatch foothills, with the Youngberg Football Center at the north end.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "capacityNote": "The 2023 east-stand rebuild brought capacity to 13,441; an older paragraph on the official page still lists 17,500."
+  },
+  {
+    "id": "cal-poly-spanos",
+    "school": "Cal Poly",
+    "fullSchool": "California Polytechnic State University, San Luis Obispo",
+    "team": "Mustangs",
+    "teamName": "Cal Poly Mustangs",
+    "mascot": "Musty the Mustang",
+    "stadium": "Mustang Memorial Field at Alex G. Spanos Stadium",
+    "city": "San Luis Obispo",
+    "state": "California",
+    "opened": 1935,
+    "seatingCapacity": 11075,
+    "capacityLabel": "Seating capacity",
+    "description": "Cal Poly’s intimate stadium pairs Mission Revival west stands and tiled-roof suites with east bleachers, the new south-end John Madden Football Center and the coastal hills of San Luis Obispo.",
+    "aliases": [
+      "California Polytechnic State University",
+      "Cal Poly San Luis Obispo",
+      "Cal Poly SLO",
+      "Alex G. Spanos Stadium",
+      "Mustang Memorial Field",
+      "Mustang Stadium",
+      "California Polytechnic State University, San Luis Obispo",
+      "Cal Poly Mustangs",
+      "Cal Poly"
+    ],
+    "classification": "NCAA Division I FCS",
+    "conference": "Big Sky",
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "sources": [
+      {
+        "title": "Official stadium facility and reference photographs",
+        "url": "https://gopoly.com/facilities/alex-g-spanos-stadium/3"
+      },
+      {
+        "title": "Official 2026 Big Sky football standings",
+        "url": "https://bigskyconf.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official 2026 opening-game and Madden Center confirmation",
+        "url": "https://gopoly.com/news/2026/8/25/football-cal-poly-hosts-idaho-friday-on-espn-to-open-2026-season"
+      },
+      {
+        "title": "Official university mascot identity",
+        "url": "https://gopoly.com/sports/2020/6/4/fan-zone-spirit-groups-mascot"
+      },
+      {
+        "title": "Historical public provider-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      }
+    ],
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/cal-poly-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Mustang Memorial Field at Alex G. Spanos Stadium in San Luis Obispo, California. Cal Poly’s intimate stadium pairs Mission Revival west stands and tiled-roof suites with east bleachers, the new south-end John Madden Football Center and the coastal hills of San Luis Obispo.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/cal-poly-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Mustang Memorial Field at Alex G. Spanos Stadium in San Luis Obispo, California. Cal Poly’s intimate stadium pairs Mission Revival west stands and tiled-roof suites with east bleachers, the new south-end John Madden Football Center and the coastal hills of San Luis Obispo.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "missouri-state-plaster",
+    "school": "Missouri State",
+    "fullSchool": "Missouri State University",
+    "team": "Bears",
+    "mascot": "Boomer the Bear",
+    "stadium": "Robert W. Plaster Stadium",
+    "city": "Springfield",
+    "state": "Missouri",
+    "opened": 1941,
+    "seatingCapacity": 17500,
+    "conference": "Conference USA",
+    "classification": "NCAA Division I FBS",
+    "description": "Two separate grandstands frame Plaster Field, with a tall concrete west stand, a smaller east student stand and open grassy end zones in the heart of the Springfield campus.",
+    "aliases": [
+      "MSU",
+      "Mo State",
+      "Missouri State University",
+      "Southwest Missouri State",
+      "Briggs Stadium",
+      "Plaster Sports Complex",
+      "Missouri State Bears",
+      "Missouri State"
+    ],
+    "sources": [
+      {
+        "title": "Official Robert W. Plaster Stadium facility facts and current photos",
+        "url": "https://missouristatebears.com/facilities/robert-w-plaster-stadium/10"
+      },
+      {
+        "title": "Official Plaster Stadium updates for 2026",
+        "url": "https://missouristatebears.com/news/2026/9/9/football-plaster-stadium-fan-updates-for-2026"
+      },
+      {
+        "title": "Public CFBD FBS directory identity",
+        "url": "https://collegefootballdata.com/teams"
+      },
+      {
+        "title": "Official Boomer mascot profile",
+        "url": "https://www.missouristate.edu/SpiritSquads/boomer.htm"
+      }
+    ],
+    "teamName": "Missouri State Bears",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/missouri-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Robert W. Plaster Stadium in Springfield, Missouri. Two separate grandstands frame Plaster Field, with a tall concrete west stand, a smaller east student stand and open grassy end zones in the heart of the Springfield campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/missouri-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Robert W. Plaster Stadium in Springfield, Missouri. Two separate grandstands frame Plaster Field, with a tall concrete west stand, a smaller east student stand and open grassy end zones in the heart of the Springfield campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate."
+  },
+  {
+    "id": "south-dakota-state-dykhouse",
+    "school": "South Dakota State",
+    "fullSchool": "South Dakota State University",
+    "team": "Jackrabbits",
+    "mascot": "Jack the Jackrabbit",
+    "stadium": "Dana J. Dykhouse Stadium",
+    "city": "Brookings",
+    "state": "South Dakota",
+    "opened": 2016,
+    "seatingCapacity": 19300,
+    "capacityLabel": "Approximate seating capacity",
+    "capacityNote": "The current official facility page states approximately 19,300 spectators; this rounded official value is used rather than an unsupported exact count.",
+    "conference": "Missouri Valley Football",
+    "classification": "NCAA Division I FCS",
+    "description": "Blue-and-yellow stands form a compact horseshoe beside a long west-side suite building and the large Sanford-Jackrabbit Athletic Complex on Brookings’ open northern campus.",
+    "aliases": [
+      "SDSU",
+      "South Dakota State University",
+      "Dykhouse Stadium",
+      "South Dakota State Jackrabbits",
+      "South Dakota State"
+    ],
+    "sources": [
+      {
+        "title": "Official Dana J. Dykhouse Stadium facility facts and photographs",
+        "url": "https://gojacks.com/facilities/dana-j.-dykhouse-stadium/2"
+      },
+      {
+        "title": "Official 2026 Missouri Valley Football standings",
+        "url": "https://valley-football.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical team-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official Jack the Jackrabbit mascot profile",
+        "url": "https://gojacks.com/news/2017/7/20/general-do-you-know-jack"
+      }
+    ],
+    "teamName": "South Dakota State Jackrabbits",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/south-dakota-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Dana J. Dykhouse Stadium in Brookings, South Dakota. Blue-and-yellow stands form a compact horseshoe beside a long west-side suite building and the large Sanford-Jackrabbit Athletic Complex on Brookings’ open northern campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/south-dakota-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Dana J. Dykhouse Stadium in Brookings, South Dakota. Blue-and-yellow stands form a compact horseshoe beside a long west-side suite building and the large Sanford-Jackrabbit Athletic Complex on Brookings’ open northern campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate."
+  },
+  {
+    "id": "illinois-state-hancock",
+    "school": "Illinois State",
+    "fullSchool": "Illinois State University",
+    "team": "Redbirds",
+    "mascot": "Reggie Redbird",
+    "stadium": "Jay and Lori Bergman Field at Hancock Stadium",
+    "city": "Normal",
+    "state": "Illinois",
+    "opened": 1963,
+    "seatingCapacity": 12440,
+    "conference": "Missouri Valley Football",
+    "classification": "NCAA Division I FCS",
+    "description": "Hancock Stadium pairs a brick-and-glass east grandstand with an older west terrace, open ends and the neighboring domed athletics buildings on Illinois State’s Normal campus.",
+    "aliases": [
+      "ISU",
+      "Illinois State University",
+      "Hancock",
+      "Hancock Stadium",
+      "Jay and Lori Bergman Field",
+      "Illinois State Redbirds",
+      "Illinois State"
+    ],
+    "sources": [
+      {
+        "title": "Official Hancock Stadium renovation history",
+        "url": "https://goredbirds.com/sports/2014/5/2/Club_venue_info.aspx"
+      },
+      {
+        "title": "Illinois State official 2023 football media guide",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/goredbirds.com/documents/2023/9/17/2023_Media_Guide.pdf"
+      },
+      {
+        "title": "Official 2026 Missouri Valley Football standings",
+        "url": "https://valley-football.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical team-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official current 2026 venue name and capacity",
+        "url": "https://goredbirds.com/news/2026/9/16/football-redbirds-and-panthers-set-to-face-off-in-114th-mid-america-classic.aspx"
+      },
+      {
+        "title": "Official 2025 Jay and Lori Bergman Field naming announcement",
+        "url": "https://goredbirds.com/news/2025/7/30/general-hancock-stadium-turf-renamed-jay-and-lori-bergman-field.aspx"
+      },
+      {
+        "title": "Official neighboring indoor practice facility opening and placement",
+        "url": "https://goredbirds.com/sports/2023/12/7/indoor-practice-facility.aspx"
+      },
+      {
+        "title": "Official Reggie Redbird mascot history",
+        "url": "https://goredbirds.com/sports/2014/4/17/his_trad_reggie"
+      }
+    ],
+    "teamName": "Illinois State Redbirds",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/illinois-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Jay and Lori Bergman Field at Hancock Stadium in Normal, Illinois. Hancock Stadium pairs a brick-and-glass east grandstand with an older west terrace, open ends and the neighboring domed athletics buildings on Illinois State’s Normal campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/illinois-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Jay and Lori Bergman Field at Hancock Stadium in Normal, Illinois. Hancock Stadium pairs a brick-and-glass east grandstand with an older west terrace, open ends and the neighboring domed athletics buildings on Illinois State’s Normal campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityLabel": "Football seating capacity (2026)",
+    "capacityNote": "The September 16, 2026 official game preview lists 12,440; this supersedes the older 13,391 figure in previous media guides."
+  },
+  {
+    "id": "southern-illinois-saluki",
+    "school": "Southern Illinois",
+    "fullSchool": "Southern Illinois University Carbondale",
+    "team": "Salukis",
+    "mascot": "Brown Dawg and Grey Dawg",
+    "stadium": "Saluki Stadium",
+    "city": "Carbondale",
+    "state": "Illinois",
+    "opened": 2010,
+    "seatingCapacity": 15000,
+    "conference": "Missouri Valley Football",
+    "classification": "NCAA Division I FCS",
+    "description": "A low horseshoe of seating, a grassy north-end berm and a west-side glass press box distinguish Saluki Stadium beside the circular roof of the Banterra Center.",
+    "aliases": [
+      "SIU",
+      "SIUC",
+      "Southern Illinois University",
+      "Southern Illinois University Carbondale",
+      "Southern Illinois Salukis",
+      "Southern Illinois"
+    ],
+    "sources": [
+      {
+        "title": "Official Saluki Stadium facts and aerial reference",
+        "url": "https://siusalukis.com/news/2010/6/28/Saluki_Stadium"
+      },
+      {
+        "title": "Official 2026 Missouri Valley Football standings",
+        "url": "https://valley-football.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical team-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official Brown Dawg and Grey Dawg mascot announcement",
+        "url": "https://siusalukis.com/news/2009/8/10/Grey_Dawg_and_Brown_Dawg_get_a_New_Look"
+      }
+    ],
+    "teamName": "Southern Illinois Salukis",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/southern-illinois-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Saluki Stadium in Carbondale, Illinois. A low horseshoe of seating, a grassy north-end berm and a west-side glass press box distinguish Saluki Stadium beside the circular roof of the Banterra Center.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/southern-illinois-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Saluki Stadium in Carbondale, Illinois. A low horseshoe of seating, a grassy north-end berm and a west-side glass press box distinguish Saluki Stadium beside the circular roof of the Banterra Center.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "capacityNote": "The official 15,000 capacity includes seating on the north grass berm."
+  },
+  {
+    "id": "youngstown-state-stambaugh",
+    "school": "Youngstown State",
+    "fullSchool": "Youngstown State University",
+    "team": "Penguins",
+    "mascot": "Pete and Penny Penguin",
+    "stadium": "Arnold D. Stambaugh Stadium",
+    "city": "Youngstown",
+    "state": "Ohio",
+    "opened": 1982,
+    "seatingCapacity": 20630,
+    "conference": "Missouri Valley Football",
+    "classification": "NCAA Division I FCS",
+    "description": "The Ice Castle’s towering west concrete grandstand faces a much smaller east stand and multimedia center, with open end zones, a neighboring indoor fieldhouse and Youngstown’s city campus beyond.",
+    "aliases": [
+      "YSU",
+      "Youngstown State University",
+      "Arnold D. Stambaugh Stadium",
+      "The Ice Castle",
+      "Beede Field",
+      "Stambaugh Stadium",
+      "Youngstown State Penguins",
+      "Youngstown State"
+    ],
+    "sources": [
+      {
+        "title": "Official Stambaugh Stadium facility and quick facts",
+        "url": "https://ysusports.com/sports/2022/3/10/information-facilities-stambaugh-stadium"
+      },
+      {
+        "title": "Official 2026 Missouri Valley Football standings",
+        "url": "https://valley-football.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical team-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official recent football quick facts confirm 20,630 capacity",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/ysusports.com/documents/2025/9/30/SDSU_Game_Notes.pdf"
+      },
+      {
+        "title": "Official Pete and Penny Penguin mascots",
+        "url": "https://ysusports.com/sports/2022/3/10/fan-zone-mascots"
+      }
+    ],
+    "teamName": "Youngstown State Penguins",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/youngstown-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Arnold D. Stambaugh Stadium in Youngstown, Ohio. The Ice Castle’s towering west concrete grandstand faces a much smaller east stand and multimedia center, with open end zones, a neighboring indoor fieldhouse and Youngstown’s city campus beyond.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/youngstown-state-stadium-reverse.png",
+        "alt": "AI-generated reverse interpretation of Arnold D. Stambaugh Stadium in Youngstown, Ohio. The Ice Castle’s towering west concrete grandstand faces a much smaller east stand and multimedia center, with open end zones, a neighboring indoor fieldhouse and Youngstown’s city campus beyond.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate."
+  },
+  {
+    "id": "uc-davis-health",
+    "school": "UC Davis",
+    "fullSchool": "University of California, Davis",
+    "team": "Aggies",
+    "teamName": "UC Davis Aggies",
+    "mascot": "Gunrock",
+    "stadium": "UC Davis Health Stadium",
+    "city": "Davis",
+    "state": "California",
+    "opened": 2007,
+    "seatingCapacity": 10743,
+    "classification": "NCAA Division I FCS",
+    "conference": "Big Sky",
+    "description": "UC Davis Health Stadium has low sideline grandstands, green end-zone berms and a west press box, surrounded by the level Davis campus and its distinctive water tower.",
+    "aliases": [
+      "UCD",
+      "University of California Davis",
+      "Aggie Stadium",
+      "Jim Sochor Field",
+      "Cal Davis",
+      "University of California, Davis",
+      "UC Davis Aggies",
+      "UC Davis"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facts and photographs",
+        "url": "https://ucdavisaggies.com/sports/2025/6/17/uc-davis-health-stadium.aspx"
+      },
+      {
+        "title": "Official 2026 football schedule and Big Sky affiliation",
+        "url": "https://ucdavisaggies.com/news/2026/7/7/football-announces-2026-start-times.aspx"
+      },
+      {
+        "title": "Future stadium expansion plans",
+        "url": "https://aggieascent.ucdavis.edu/ucdavis-health-stadium"
+      },
+      {
+        "title": "Restored Touchdown Tower",
+        "url": "https://utilities.ucdavis.edu/news/touchdown-tower-transformation-story"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official university mascot information",
+        "url": "https://ucdavisaggies.com/news/2022/11/22/digital_gunrock"
+      },
+      {
+        "title": "Official current turf photo and 2022 facility opening",
+        "url": "https://www.ucdavis.edu/news/staff-and-faculty-score-athletics"
+      },
+      {
+        "title": "Official Edwards Family Athletics Center facts",
+        "url": "https://ucdavisaggies.com/facilities/edwards-family-athletics-center/20"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/uc-davis-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of UC Davis Health Stadium in Davis, California. UC Davis Health Stadium has low sideline grandstands, green end-zone berms and a west press box, surrounded by the level Davis campus and its distinctive water tower.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/uc-davis-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of UC Davis Health Stadium in Davis, California. UC Davis Health Stadium has low sideline grandstands, green end-zone berms and a west press box, surrounded by the level Davis campus and its distinctive water tower.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "chattanooga-finley",
+    "school": "Chattanooga",
+    "fullSchool": "University of Tennessee at Chattanooga",
+    "team": "Mocs",
+    "teamName": "Chattanooga Mocs",
+    "mascot": "Scrappy",
+    "stadium": "Finley Stadium Davenport Field",
+    "city": "Chattanooga",
+    "state": "Tennessee",
+    "opened": 1997,
+    "seatingCapacity": 20668,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "description": "Finley Stadium’s two long grandstands and open end zones sit in Chattanooga’s Southside, beside a covered market pavilion and the city’s low industrial streets beneath wooded ridges.",
+    "aliases": [
+      "UTC",
+      "Tennessee Chattanooga",
+      "Tennessee-Chattanooga",
+      "Finley Stadium",
+      "Davenport Field",
+      "University of Tennessee at Chattanooga",
+      "Chattanooga Mocs",
+      "Chattanooga"
+    ],
+    "sources": [
+      {
+        "title": "Official Finley Stadium facility history and photographs",
+        "url": "https://gomocs.com/facilities/finley-stadium/4"
+      },
+      {
+        "title": "Official September 2026 football preview, capacity and conference",
+        "url": "https://gomocs.com/news/2026/9/16/football-preview-socon-slate-starts-at-finley-on-saturday"
+      },
+      {
+        "title": "Venue operator facilities and capacity",
+        "url": "https://www.finleystadium.com/finley-stadium-davenport-field/"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official 2026 university story identifying Scrappy as mascot",
+        "url": "https://blog.utc.edu/news/2026/10/designing-mocs-y2k-senior-caleb-connery-brings-utc-homecoming-to-life/"
+      },
+      {
+        "title": "Official city tourism venue aerial photograph",
+        "url": "https://www.visitchattanooga.com/chattanoogajamboree/venue-information/"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/chattanooga-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Finley Stadium Davenport Field in Chattanooga, Tennessee. Finley Stadium’s two long grandstands and open end zones sit in Chattanooga’s Southside, beside a covered market pavilion and the city’s low industrial streets beneath wooded ridges.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/chattanooga-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Finley Stadium Davenport Field in Chattanooga, Tennessee. Finley Stadium’s two long grandstands and open end zones sit in Chattanooga’s Southside, beside a covered market pavilion and the city’s low industrial streets beneath wooded ridges.",
+        "width": 1672,
+        "height": 941
+      }
+    ],
+    "capacityLabel": "Football seating capacity (2026)",
+    "capacityNote": "2026 Chattanooga football notes and the operator’s fixed-seat count list 20,668; the operator separately lists 20,985 total seating capacity."
+  },
+  {
+    "id": "florida-am-bragg",
+    "school": "Florida A&M",
+    "fullSchool": "Florida Agricultural and Mechanical University",
+    "team": "Rattlers",
+    "teamName": "Florida A&M Rattlers",
+    "mascot": "Venom and Lady Venom",
+    "stadium": "Ken Riley Field at Bragg Memorial Stadium",
+    "city": "Tallahassee",
+    "state": "Florida",
+    "opened": 1957,
+    "seatingCapacity": 19633,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southwestern Athletic",
+    "description": "Bragg Memorial Stadium’s separate silver sideline grandstands and white west press box frame orange-and-green turf, an open north scoreboard end and the Galimore-Powell Field House on FAMU’s leafy campus.",
+    "aliases": [
+      "FAMU",
+      "Florida A and M",
+      "Florida Agricultural and Mechanical University",
+      "Bragg Memorial Stadium",
+      "Ken Riley Field",
+      "Florida A&M Rattlers",
+      "Florida A&M"
+    ],
+    "sources": [
+      {
+        "title": "Official Bragg stadium facts and photograph",
+        "url": "https://famuathletics.com/facilities/bragg-memorial-stadium/8"
+      },
+      {
+        "title": "Official 2026 SWAC football standings",
+        "url": "https://swac.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Official 2026 stadium game-day guide",
+        "url": "https://famuathletics.com/news/2026/8/26/football-know-before-you-go-florida-am-vs.aspx"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official university mascot information",
+        "url": "https://www.famu.edu/students/student-activities/spirit-and-traditional-events/squad-87.php"
+      },
+      {
+        "title": "Real post-renovation aerial reference photograph",
+        "url": "https://aerialtallahassee.com/products/bragg-memorial-stadium-at3280"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/florida-am-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Ken Riley Field at Bragg Memorial Stadium in Tallahassee, Florida. Bragg Memorial Stadium’s separate silver sideline grandstands and white west press box frame orange-and-green turf, an open north scoreboard end and the Galimore-Powell Field House on FAMU’s leafy campus.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/florida-am-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Ken Riley Field at Bragg Memorial Stadium in Tallahassee, Florida. Bragg Memorial Stadium’s separate silver sideline grandstands and white west press box frame orange-and-green turf, an open north scoreboard end and the Galimore-Powell Field House on FAMU’s leafy campus.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "jackson-state-veterans",
+    "school": "Jackson State",
+    "fullSchool": "Jackson State University",
+    "team": "Tigers",
+    "teamName": "Jackson State Tigers",
+    "mascot": "Wavee Dave",
+    "stadium": "Mississippi Veterans Memorial Stadium",
+    "city": "Jackson",
+    "state": "Mississippi",
+    "opened": 1950,
+    "seatingCapacity": 60492,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southwestern Athletic",
+    "description": "Mississippi Veterans Memorial Stadium is a vast weathered concrete horseshoe beside Jackson’s medical district, with high curved bleachers, a west press box and a broad open south end.",
+    "aliases": [
+      "JSU",
+      "Jackson State University",
+      "Thee Vet",
+      "Veterans Memorial Stadium",
+      "War Veterans Memorial Stadium",
+      "Jackson State Tigers",
+      "Jackson State"
+    ],
+    "sources": [
+      {
+        "title": "Official Jackson State stadium facility page and photographs",
+        "url": "https://gojsutigers.com/facilities/mississippi-veterans-memorial-stadium/1"
+      },
+      {
+        "title": "Mississippi official tourism capacity",
+        "url": "https://visitmississippi.org/things-to-do/sports/mississippi-veterans-memorial-stadium/"
+      },
+      {
+        "title": "Mississippi Department of Archives and History stadium construction record",
+        "url": "https://www.apps.mdah.ms.gov/Public/prop.aspx?id=39990&view=facts&y=1176"
+      },
+      {
+        "title": "Official 2026 SWAC football standings",
+        "url": "https://swac.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official university mascot information",
+        "url": "https://www.jsums.edu/contractual/the-history-of-wavee-dave-jsu-mascot/"
+      },
+      {
+        "title": "Real aerial photograph of existing stadium and medical district",
+        "url": "https://www.wrkf.org/2022-10-28/3-key-reasons-why-espn-chose-jackson-states-rivalry-with-southern-for-college-gameday"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/jackson-state-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of Mississippi Veterans Memorial Stadium in Jackson, Mississippi. Mississippi Veterans Memorial Stadium is a vast weathered concrete horseshoe beside Jackson’s medical district, with high curved bleachers, a west press box and a broad open south end.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/jackson-state-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of Mississippi Veterans Memorial Stadium in Jackson, Mississippi. Mississippi Veterans Memorial Stadium is a vast weathered concrete horseshoe beside Jackson’s medical district, with high curved bleachers, a west press box and a broad open south end.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "southern-mumford",
+    "school": "Southern",
+    "fullSchool": "Southern University and A&M College",
+    "team": "Jaguars",
+    "teamName": "Southern Jaguars",
+    "mascot": "Lacumba",
+    "stadium": "A. W. Mumford Stadium",
+    "city": "Baton Rouge",
+    "state": "Louisiana",
+    "opened": 1938,
+    "seatingCapacity": 25500,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southwestern Athletic",
+    "description": "Southern’s A. W. Mumford Stadium has a bright blue athletics track, separate concrete sideline stands, a curved north fieldhouse and the Mississippi River beyond its tree-lined campus bluff.",
+    "aliases": [
+      "SU",
+      "Southern University",
+      "Southern University and A&M College",
+      "A.W. Mumford Stadium",
+      "Pete Richardson Field",
+      "Southern Jaguars",
+      "Southern"
+    ],
+    "sources": [
+      {
+        "title": "Official Mumford Stadium facts and photographs",
+        "url": "https://gojagsports.com/facilities/a-w-mumford-stadium/29"
+      },
+      {
+        "title": "Official 2026 Southern game-day venue naming",
+        "url": "https://gojagsports.com/sports/2025/8/28/single-gameday-rv-parking.aspx"
+      },
+      {
+        "title": "Official 2026 SWAC football standings",
+        "url": "https://swac.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Historical public CFBD-shaped canonical-name corroboration",
+        "url": "https://github.com/CFBNumbers/logos/blob/1d992e6bd19a3364d72750fd12186655692a3c6f/cfblogos.csv"
+      },
+      {
+        "title": "Official university mascot information",
+        "url": "https://www.subr.edu/news/852"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/southern-stadium-aerial.png",
+        "alt": "AI-generated aerial interpretation of A. W. Mumford Stadium in Baton Rouge, Louisiana. Southern’s A. W. Mumford Stadium has a bright blue athletics track, separate concrete sideline stands, a curved north fieldhouse and the Mississippi River beyond its tree-lined campus bluff.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Second aerial view",
+        "src": "assets/southern-stadium-reverse.png",
+        "alt": "AI-generated reverse aerial interpretation of A. W. Mumford Stadium in Baton Rouge, Louisiana. Southern’s A. W. Mumford Stadium has a bright blue athletics track, separate concrete sideline stands, a curved north fieldhouse and the Mississippi River beyond its tree-lined campus bluff.",
         "width": 1672,
         "height": 941
       }

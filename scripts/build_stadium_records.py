@@ -203,8 +203,18 @@ SCHOOLS = {
     'florida-am-bragg': ('Florida A&M', 'fcs'),
     'jackson-state-veterans': ('Jackson State', 'fcs'),
     'southern-mumford': ('Southern', 'fcs'),
+    'howard-greene': ('Howard', 'fcs'),
+    'hampton-armstrong': ('Hampton', 'fcs'),
+    'north-carolina-at-truist': ('North Carolina A&T', 'fcs'),
+    'north-carolina-central-okelly-riddick': ('North Carolina Central', 'fcs'),
+    'alabama-state-stadium': ('Alabama State', 'fcs'),
+    'grambling-state-stadium': ('Grambling', 'fcs'),
+    'eastern-kentucky-stadium': ('Eastern Kentucky', 'fcs'),
+    'east-tennessee-state-stadium': ('East Tennessee State', 'fcs'),
+    'towson-stadium': ('Towson', 'fcs'),
+    'new-hampshire-stadium': ('New Hampshire', 'fcs'),
 }
-# The 164 reviewed identities include 2 FBS and 18 FCS additions for v1.12.0. Public
+# The 174 reviewed identities include ten FCS additions for v1.13.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
 # These names are intentionally not replaced by Hawaii or Appalachian State.
@@ -229,6 +239,7 @@ DISPLAY_NAMES = {
     'umass-mcguirk': 'UMass',
     'fiu-pitbull': 'FIU',
     'ulm-st-francis': 'ULM',
+    'grambling-state-stadium': 'Grambling State',
 }
 
 # Explicit football independents: preserve null conference records.

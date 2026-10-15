@@ -213,8 +213,23 @@ SCHOOLS = {
     'east-tennessee-state-stadium': ('East Tennessee State', 'fcs'),
     'towson-stadium': ('Towson', 'fcs'),
     'new-hampshire-stadium': ('New Hampshire', 'fcs'),
+    'idaho-kibbie-dome': ('Idaho', 'fcs'),
+    'idaho-state-iccu-dome': ('Idaho State', 'fcs'),
+    'northern-arizona-walkup-skydome': ('Northern Arizona', 'fcs'),
+    'northern-colorado-nottingham': ('Northern Colorado', 'fcs'),
+    'north-dakota-alerus-center': ('North Dakota', 'fcs'),
+    'south-dakota-dakotadome': ('South Dakota', 'fcs'),
+    'northern-iowa-uni-dome': ('Northern Iowa', 'fcs'),
+    'indiana-state-memorial': ('Indiana State', 'fcs'),
+    'abilene-christian-anthony-field': ('Abilene Christian', 'fcs'),
+    'central-arkansas-estes': ('Central Arkansas', 'fcs'),
+    'stephen-f-austin-homer-bryce': ('Stephen F. Austin', 'fcs'),
+    'mcneese-cowboy-stadium': ('McNeese', 'fcs'),
+    'southeastern-louisiana-strawberry': ('Southeastern Louisiana', 'fcs'),
+    'samford-seibert': ('Samford', 'fcs'),
+    'mercer-five-star': ('Mercer', 'fcs'),
 }
-# The 174 reviewed identities include ten FCS additions for v1.13.0. Public
+# The 189 reviewed identities include fifteen FCS additions for v1.14.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
 # These names are intentionally not replaced by Hawaii or Appalachian State.
@@ -248,6 +263,8 @@ INDEPENDENT_STADIUMS = frozenset({"notre-dame", "uconn-rentschler-field"})
 # v1.9.2 adds one interior view after the two existing exterior views for these
 # two enclosed venues only. Keep the count exact so missing or unexpected
 # artwork still fails preflight before credentials or provider access.
+# The six covered venues added in v1.14.0 each retain the normal TWO-view
+# contract (exterior plus interior), so they do not belong in this third-view set.
 INTERIOR_VIEW_STADIUMS = frozenset({
     "syracuse-jma-wireless-dome",
     "unlv-allegiant",

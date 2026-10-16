@@ -260,17 +260,21 @@ DISPLAY_NAMES = {
 # Explicit football independents: preserve null conference records.
 INDEPENDENT_STADIUMS = frozenset({"notre-dame", "uconn-rentschler-field"})
 
-# v1.9.2 adds one interior view after the two existing exterior views for these
-# two enclosed venues only. Keep the count exact so missing or unexpected
+# The reviewed third-view set retains Syracuse and UNLV (v1.9.2), and adds
+# Fargodome (draft v1.14.1) after both existing exterior views. Keep the count exact so missing or unexpected
 # artwork still fails preflight before credentials or provider access.
 # The six covered venues added in v1.14.0 each retain the normal TWO-view
 # contract (exterior plus interior), so they do not belong in this third-view set.
 INTERIOR_VIEW_STADIUMS = frozenset({
     "syracuse-jma-wireless-dome",
     "unlv-allegiant",
+    "north-dakota-state-fargodome",
 })
 
 EXPLICIT_ALIASES = {
+    # Provider-style name for this one FCS school; retain its full UI label.
+    # No generic abbreviation fallback; all ID, class, season and count checks remain.
+    "southeastern-louisiana-strawberry": ("SE Louisiana",),
     "lsu-tiger": ("Louisiana State", "Louisiana State University"),
     "penn-franklin-field": ("Pennsylvania", "University of Pennsylvania"),
     "ole-miss-vaught-hemingway-stadium": ("Mississippi", "University of Mississippi"),

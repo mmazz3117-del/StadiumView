@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.14.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.14.1';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -6899,7 +6899,7 @@ window.STADIUMS = [
     "conference": "Mountain West",
     "classification": "NCAA Division I FBS",
     "artEra": "2026-era",
-    "imageNote": "Original AI-generated aerial interpretations, not documentary photographs; architecture and surroundings are approximate.",
+    "imageNote": "Original AI-generated aerial and interior illustrations, not documentary photographs; architecture, surroundings, seating, field markings, emblems and screen graphics are approximate.",
     "sources": [
       {
         "title": "Official venue operator opening and seated capacity",
@@ -6934,6 +6934,13 @@ window.STADIUMS = [
         "title": "Second aerial view",
         "src": "assets/north-dakota-state-stadium-reverse.png",
         "alt": "Generated reverse-angle aerial interpretation of FARGODOME in Fargo, with surrounding campus and landscape.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Interior overview",
+        "src": "assets/north-dakota-state-stadium-interior.png",
+        "alt": "AI-generated interior illustration of FARGODOME in Fargo, looking across the Bison football field and enclosed seating bowl beneath the roof trusses.",
         "width": 1672,
         "height": 941
       }

@@ -296,6 +296,8 @@ INTERIOR_VIEW_STADIUMS = frozenset({
 })
 
 EXPLICIT_ALIASES = {
+    # Reviewed university spelling; exact match only, never Albany State.
+    "ualbany-casey": ("UAlbany",),
     # Provider-style name for this one FCS school; retain its full UI label.
     # No generic abbreviation fallback; all ID, class, season and count checks remain.
     "southeastern-louisiana-strawberry": ("SE Louisiana",),

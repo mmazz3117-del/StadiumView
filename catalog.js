@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.14.1';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.15.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -12445,6 +12445,1157 @@ window.STADIUMS = [
         "title": "Stadium aerial",
         "src": "assets/mercer-stadium-aerial.png",
         "alt": "AI-generated aerial interpretation of Five Star Stadium at Mercer University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "maine-alfond",
+    "school": "Maine",
+    "fullSchool": "University of Maine",
+    "team": "Black Bears",
+    "teamName": "Maine Black Bears",
+    "mascot": "Bananas",
+    "stadium": "Morse Field at Harold Alfond Sports Stadium",
+    "city": "Orono",
+    "state": "Maine",
+    "opened": 1998,
+    "seatingCapacity": 10000,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "Maine",
+      "University of Maine",
+      "Maine Black Bears"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://goblackbears.com/facilities/morse-field-at-harold-alfond-sports-stadium/3"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://goblackbears.com/sports/2016/5/31/new-look-mascot-to-be-unveiled-on-sept-26.aspx?id=434"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Morse Field at Harold Alfond Sports Stadium is the Maine Black Bears football venue in Orono, Maine.",
+    "capacityNote": "The opening year refers to the rebuilt stadium complex inaugurated in 1998, not the first use of the football site.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/maine-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Morse Field at Harold Alfond Sports Stadium for University of Maine.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/maine-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Morse Field at Harold Alfond Sports Stadium for University of Maine.",
+        "width": 1672,
+        "height": 940
+      }
+    ]
+  },
+  {
+    "id": "rhode-island-centreville",
+    "school": "Rhode Island",
+    "fullSchool": "University of Rhode Island",
+    "team": "Rams",
+    "teamName": "Rhode Island Rams",
+    "mascot": "Rhody the Ram",
+    "stadium": "Centreville Bank Stadium",
+    "city": "Pawtucket",
+    "state": "Rhode Island",
+    "opened": 2025,
+    "seatingCapacity": 10500,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "Rhode Island",
+      "University of Rhode Island",
+      "Rhode Island Rams",
+      "URI",
+      "Rhody",
+      "Meade Stadium (permanent campus venue)"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://gorhody.com/news/2025/9/17/uri-football-to-play-2026-home-games-at-centreville-bank-stadium.aspx"
+      },
+      {
+        "title": "official facility / venue facts",
+        "url": "https://centrevillebankstadium.com/pages/about-us-centreville-bank-stadium"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://gorhody.com/sports/2020/6/9/fanzone-Rhody-the-Ram.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "opening date",
+        "url": "https://centrevillebankstadium.com/pages/stadium-one-year-birthday"
+      },
+      {
+        "title": "2026 home venue FAQ",
+        "url": "https://gorhody.com/sports/2026/3/25/26-football-faq.aspx"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Centreville Bank Stadium in Pawtucket is Rhode Island football’s temporary 2026 home while Meade Stadium in Kingston is renovated.",
+    "capacityNote": "Temporary Rhode Island football home for the 2026 season while Meade Stadium in Kingston is renovated; the Pawtucket venue opened in 2025.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/rhode-island-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Centreville Bank Stadium for University of Rhode Island.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/rhode-island-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Centreville Bank Stadium for University of Rhode Island.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "ualbany-casey",
+    "school": "UAlbany",
+    "fullSchool": "University at Albany, State University of New York",
+    "team": "Great Danes",
+    "teamName": "UAlbany Great Danes",
+    "mascot": "Damien",
+    "stadium": "Bob Ford Field at Tom & Mary Casey Stadium",
+    "city": "Albany",
+    "state": "New York",
+    "opened": 2013,
+    "seatingCapacity": 8500,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "UAlbany",
+      "University at Albany, State University of New York",
+      "UAlbany Great Danes",
+      "Albany",
+      "SUNY Albany",
+      "Bob Ford Field",
+      "Casey Stadium"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://ualbanysports.com/facilities/bob-ford-field-at-tom-mary-casey-stadium/1"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.albany.edu/style-guide/logos"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Bob Ford Field at Tom & Mary Casey Stadium is the UAlbany Great Danes football venue in Albany, New York.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/ualbany-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Bob Ford Field at Tom & Mary Casey Stadium for University at Albany, State University of New York.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/ualbany-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Bob Ford Field at Tom & Mary Casey Stadium for University at Albany, State University of New York.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "stony-brook-lavalle",
+    "school": "Stony Brook",
+    "fullSchool": "Stony Brook University",
+    "team": "Seawolves",
+    "teamName": "Stony Brook Seawolves",
+    "mascot": "Wolfie the Seawolf",
+    "stadium": "Kenneth P. LaValle Stadium",
+    "city": "Stony Brook",
+    "state": "New York",
+    "opened": 2002,
+    "seatingCapacity": 12300,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "Stony Brook",
+      "Stony Brook University",
+      "Stony Brook Seawolves"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://stonybrookathletics.com/facilities/lavalle-stadium/6"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://stonybrookathletics.com/sports/2016/9/2/meet-wolfie.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Kenneth P. LaValle Stadium is the Stony Brook Seawolves football venue in Stony Brook, New York.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/stony-brook-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Kenneth P. LaValle Stadium for Stony Brook University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/stony-brook-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Kenneth P. LaValle Stadium for Stony Brook University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "elon-rhodes",
+    "school": "Elon",
+    "fullSchool": "Elon University",
+    "team": "Phoenix",
+    "teamName": "Elon Phoenix",
+    "mascot": "The Phoenix",
+    "stadium": "Rhodes Stadium",
+    "city": "Elon",
+    "state": "North Carolina",
+    "opened": 2001,
+    "seatingCapacity": 14000,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "Elon",
+      "Elon University",
+      "Elon Phoenix"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://elonphoenix.com/facilities/rhodes-stadium/15"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.elon.edu/u/1923-commemoration/phoenix-mascot/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Rhodes Stadium is the Elon Phoenix football venue in Elon, North Carolina.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/elon-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Rhodes Stadium for Elon University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/elon-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Rhodes Stadium for Elon University.",
+        "width": 1671,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "monmouth-kessler",
+    "school": "Monmouth",
+    "fullSchool": "Monmouth University",
+    "team": "Hawks",
+    "teamName": "Monmouth Hawks",
+    "mascot": "Shadow the Hawk",
+    "stadium": "Kevin Callahan Field at Kessler Stadium",
+    "city": "West Long Branch",
+    "state": "New Jersey",
+    "opened": 2017,
+    "seatingCapacity": 4200,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "Monmouth",
+      "Monmouth University",
+      "Monmouth Hawks",
+      "Kessler Stadium",
+      "Kessler Field"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://monmouthhawks.com/facilities/kevin-callahan-field-at-kessler-stadium/1024"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.monmouth.edu/magazine/life-in-the-shadows/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Kevin Callahan Field at Kessler Stadium is the Monmouth Hawks football venue in West Long Branch, New Jersey.",
+    "capacityNote": "The present Kessler Stadium opened in 2017 after reconstruction; the football field first hosted Monmouth in 1993.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/monmouth-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Kevin Callahan Field at Kessler Stadium for Monmouth University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/monmouth-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Kevin Callahan Field at Kessler Stadium for Monmouth University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "campbell-barker-lane",
+    "school": "Campbell",
+    "fullSchool": "Campbell University",
+    "team": "Fighting Camels",
+    "teamName": "Campbell Fighting Camels",
+    "mascot": "Gaylord and Gladys",
+    "stadium": "Barker-Lane Stadium",
+    "city": "Buies Creek",
+    "state": "North Carolina",
+    "opened": 2008,
+    "seatingCapacity": 5500,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "Campbell",
+      "Campbell University",
+      "Campbell Fighting Camels"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://gocamels.com/sports/2017/7/14/facilities-Barker-LaneStadium.aspx"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.campbell.edu/about/traditions/our-camel-mascot/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Barker-Lane Stadium is the Campbell Fighting Camels football venue in Buies Creek, North Carolina.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/campbell-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Barker-Lane Stadium for Campbell University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/campbell-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Barker-Lane Stadium for Campbell University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "bryant-beirne",
+    "school": "Bryant",
+    "fullSchool": "Bryant University",
+    "team": "Bulldogs",
+    "teamName": "Bryant Bulldogs",
+    "mascot": "Tupper and Tupper II",
+    "stadium": "Beirne Stadium",
+    "city": "Smithfield",
+    "state": "Rhode Island",
+    "opened": 1999,
+    "seatingCapacity": 4400,
+    "classification": "NCAA Division I FCS",
+    "conference": "Coastal Athletic Association",
+    "aliases": [
+      "Bryant",
+      "Bryant University",
+      "Bryant Bulldogs"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://bryantbulldogs.com/facilities/beirne-stadium/4"
+      },
+      {
+        "title": "official facility / venue facts",
+        "url": "https://bryantbulldogs.com/sports/2025/6/9/NCUFieldhouse.aspx"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://news.bryant.edu/go-dawgs-meet-bryants-furry-friends"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://caasports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "published pre-expansion capacity",
+        "url": "https://bryantbulldogs.com/sports/2024/4/23/information-Facilities-BeirneStadium.aspx"
+      },
+      {
+        "title": "2026 fieldhouse update",
+        "url": "https://news.bryant.edu/pride-bulldogs-bryant-athletics-making-big-strides-and-field"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Beirne Stadium is the Bryant Bulldogs football venue in Smithfield, Rhode Island.",
+    "capacityNote": "The 4,400 figure is the official pre-2026 published capacity. The 2026 fieldhouse includes a 1,000-seat section; a verified updated total is unavailable, so this is not presented as the current total.",
+    "capacityLabel": "Published capacity (pre-2026 expansion)",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/bryant-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Beirne Stadium for Bryant University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/bryant-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Beirne Stadium for Bryant University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "holy-cross-fitton",
+    "school": "Holy Cross",
+    "fullSchool": "College of the Holy Cross",
+    "team": "Crusaders",
+    "teamName": "Holy Cross Crusaders",
+    "mascot": "Current costumed mascot not verified",
+    "stadium": "Fitton Field",
+    "city": "Worcester",
+    "state": "Massachusetts",
+    "opened": 1908,
+    "seatingCapacity": 23500,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "aliases": [
+      "Holy Cross",
+      "College of the Holy Cross",
+      "Holy Cross Crusaders"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://goholycross.com/facilities/fitton-field/2"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://patriotleague.org/news/2026/1/2/patriot-league-enters-new-era-with-announcement-of-2026-football-schedule.aspx"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Fitton Field is the Holy Cross Crusaders football venue in Worcester, Massachusetts.",
+    "capacityNote": "The football field first hosted a game in 1908; the steel stadium was built in 1924 and renovated in 1986.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/holy-cross-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Fitton Field for College of the Holy Cross.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/holy-cross-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Fitton Field for College of the Holy Cross.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "colgate-andy-kerr",
+    "school": "Colgate",
+    "fullSchool": "Colgate University",
+    "team": "Raiders",
+    "teamName": "Colgate Raiders",
+    "mascot": "Raider",
+    "stadium": "Crown Field at Andy Kerr Stadium",
+    "city": "Hamilton",
+    "state": "New York",
+    "opened": 1939,
+    "seatingCapacity": 10221,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "aliases": [
+      "Colgate",
+      "Colgate University",
+      "Colgate Raiders"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://colgateathletics.com/facilities/crown-field-at-andy-kerr-stadium/2"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.colgate.edu/news/stories/raider-invades-new-york-city"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://patriotleague.org/news/2026/1/2/patriot-league-enters-new-era-with-announcement-of-2026-football-schedule.aspx"
+      },
+      {
+        "title": "opening: 1939 first game, record book page 21",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/gocolgateraiders.com/documents/2014/7/21/FootballHistory.pdf"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Crown Field at Andy Kerr Stadium is the Colgate Raiders football venue in Hamilton, New York.",
+    "capacityNote": "Opening year follows Colgate’s record book, which identifies the first game at Colgate Athletic Field in 1939; the stadium was named for Andy Kerr in 1966.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/colgate-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Crown Field at Andy Kerr Stadium for Colgate University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/colgate-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Crown Field at Andy Kerr Stadium for Colgate University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "bucknell-mathewson",
+    "school": "Bucknell",
+    "fullSchool": "Bucknell University",
+    "team": "Bison",
+    "teamName": "Bucknell Bison",
+    "mascot": "Bucky",
+    "stadium": "Christy Mathewson-Memorial Stadium",
+    "city": "Lewisburg",
+    "state": "Pennsylvania",
+    "opened": 1924,
+    "seatingCapacity": 13100,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "aliases": [
+      "Bucknell",
+      "Bucknell University",
+      "Bucknell Bison"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://bucknellbison.com/facilities/detail/5"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.bucknell.edu/azdirectory/marketing-communications/brand-guidelines-policies/bucknell-style-guide"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://patriotleague.org/news/2026/1/2/patriot-league-enters-new-era-with-announcement-of-2026-football-schedule.aspx"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Christy Mathewson-Memorial Stadium is the Bucknell Bison football venue in Lewisburg, Pennsylvania.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/bucknell-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Christy Mathewson-Memorial Stadium for Bucknell University.",
+        "width": 1672,
+        "height": 940
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/bucknell-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Christy Mathewson-Memorial Stadium for Bucknell University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "lehigh-goodman",
+    "school": "Lehigh",
+    "fullSchool": "Lehigh University",
+    "team": "Mountain Hawks",
+    "teamName": "Lehigh Mountain Hawks",
+    "mascot": "Clutch",
+    "stadium": "Murray H. Goodman Stadium",
+    "city": "Bethlehem",
+    "state": "Pennsylvania",
+    "opened": 1988,
+    "seatingCapacity": 16000,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "aliases": [
+      "Lehigh",
+      "Lehigh University",
+      "Lehigh Mountain Hawks"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://lehighsports.com/facilities/goodman-stadium/1?path=sa"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://lehighsports.com/sports/2013/6/4/GEN_0604135643"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://patriotleague.org/news/2026/1/2/patriot-league-enters-new-era-with-announcement-of-2026-football-schedule.aspx"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Murray H. Goodman Stadium is the Lehigh Mountain Hawks football venue in Bethlehem, Pennsylvania.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/lehigh-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Murray H. Goodman Stadium for Lehigh University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/lehigh-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Murray H. Goodman Stadium for Lehigh University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "lafayette-fisher",
+    "school": "Lafayette",
+    "fullSchool": "Lafayette College",
+    "team": "Leopards",
+    "teamName": "Lafayette Leopards",
+    "mascot": "Roary",
+    "stadium": "Fisher Stadium",
+    "city": "Easton",
+    "state": "Pennsylvania",
+    "opened": 1926,
+    "seatingCapacity": 13132,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "aliases": [
+      "Lafayette",
+      "Lafayette College",
+      "Lafayette Leopards"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://goleopards.com/facilities/fisher-stadium/23"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.lafayette.edu/bicentennial/2025/11/10/from-the-archives-in-1924-the-lafayette-declares-leopard-to-be-college-mascot/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://patriotleague.org/news/2026/1/2/patriot-league-enters-new-era-with-announcement-of-2026-football-schedule.aspx"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Fisher Stadium is the Lafayette Leopards football venue in Easton, Pennsylvania.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/lafayette-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Fisher Stadium for Lafayette College.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/lafayette-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Fisher Stadium for Lafayette College.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "fordham-moglia",
+    "school": "Fordham",
+    "fullSchool": "Fordham University",
+    "team": "Rams",
+    "teamName": "Fordham Rams",
+    "mascot": "Ramses",
+    "stadium": "Moglia Stadium at Jack Coffey Field",
+    "city": "Bronx",
+    "state": "New York",
+    "opened": 1930,
+    "seatingCapacity": 7000,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "aliases": [
+      "Fordham",
+      "Fordham University",
+      "Fordham Rams",
+      "Jack Coffey Field",
+      "Coffey Field"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://fordhamsports.com/sports/2013/7/17/GEN_0717130349.aspx?id=10"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.fordham.edu/fordham-stories/campus-and-city-life/ramses-exit-interview-saying-goodbye-to-playing-fordhams-beloved-mascot/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://patriotleague.org/news/2026/1/2/patriot-league-enters-new-era-with-announcement-of-2026-football-schedule.aspx"
+      },
+      {
+        "title": "opening year: NCAA stadium table",
+        "url": "https://fs.ncaa.org/Docs/stats/football_records/2021/FCS.pdf"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Moglia Stadium at Jack Coffey Field is the Fordham Rams football venue in Bronx, New York.",
+    "capacityNote": "The 1930 year describes the original field; Fordham resumed football here in 1964. The Moglia Stadium name dates from 2023.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/fordham-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Moglia Stadium at Jack Coffey Field for Fordham University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/fordham-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Moglia Stadium at Jack Coffey Field for Fordham University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "georgetown-cooper",
+    "school": "Georgetown",
+    "fullSchool": "Georgetown University",
+    "team": "Hoyas",
+    "teamName": "Georgetown Hoyas",
+    "mascot": "Jack the Bulldog",
+    "stadium": "Cooper Field",
+    "city": "Washington",
+    "state": "District of Columbia",
+    "opened": 2003,
+    "seatingCapacity": 3750,
+    "classification": "NCAA Division I FCS",
+    "conference": "Patriot League",
+    "aliases": [
+      "Georgetown",
+      "Georgetown University",
+      "Georgetown Hoyas"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://guhoyas.com/sports/2018/6/6/facilities-gu-harbin-field-html"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.georgetown.edu/jack-the-bulldog/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://patriotleague.org/news/2026/1/2/patriot-league-enters-new-era-with-announcement-of-2026-football-schedule.aspx"
+      },
+      {
+        "title": "current capacity and seating layout",
+        "url": "https://guhoyas.com/sports/2018/6/6/facilities-gu-cooper-field-html.aspx"
+      },
+      {
+        "title": "opening year: NCAA stadium table",
+        "url": "https://fs.ncaa.org/Docs/stats/football_records/2021/FCS.pdf"
+      },
+      {
+        "title": "renovated facility dedication",
+        "url": "https://guhoyas.com/story.aspx?file_date=9-14-2022&filename=general-georgetown-athletics-celebrate-two-major-facility-upgrades"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Cooper Field is the Georgetown Hoyas football venue in Washington, District of Columbia.",
+    "capacityNote": "The opening year follows the NCAA football-venue listing. The rebuilt facility was completed in 2020 and formally celebrated in 2022. Capacity includes 3,000 west-stand seats and 750 north-end hillside lawn places.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/georgetown-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Cooper Field for Georgetown University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/georgetown-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Cooper Field for Georgetown University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "citadel-johnson-hagood",
+    "school": "The Citadel",
+    "fullSchool": "The Citadel, The Military College of South Carolina",
+    "team": "Bulldogs",
+    "teamName": "The Citadel Bulldogs",
+    "mascot": "General Bullseye (G4)",
+    "stadium": "Johnson Hagood Stadium",
+    "city": "Charleston",
+    "state": "South Carolina",
+    "opened": 1948,
+    "seatingCapacity": 11427,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "aliases": [
+      "The Citadel",
+      "The Citadel, The Military College of South Carolina",
+      "The Citadel Bulldogs",
+      "Citadel"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://citadelsports.com/facilities/johnson-hagood-stadium/19"
+      },
+      {
+        "title": "official facility / venue facts",
+        "url": "https://citadelsports.com/news/2026/9/3/football-from-the-desk-of-the-athletic-director-fall-updates-at-johnson-hagood-stadium"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.citadel.edu/cadetactivities/the-citadel-mascot/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://soconsports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate. East-stand details are interpretive, informed by official 2026 expansion plans rather than independently verified as-built documentation.",
+    "description": "Johnson Hagood Stadium is home to The Citadel Bulldogs in Charleston, South Carolina.",
+    "capacityNote": "The 11,427 figure is the official facility page’s pre-2026 capacity. New east stands were announced for the September 2026 home opener; a verified updated total is unavailable, so this is not presented as the current total.",
+    "capacityLabel": "Published capacity (pre-2026 expansion)",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/citadel-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Johnson Hagood Stadium for The Citadel, The Military College of South Carolina.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/citadel-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Johnson Hagood Stadium for The Citadel, The Military College of South Carolina.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "vmi-foster",
+    "school": "VMI",
+    "fullSchool": "Virginia Military Institute",
+    "team": "Keydets",
+    "teamName": "VMI Keydets",
+    "mascot": "Moe the Kangaroo",
+    "stadium": "Alumni Memorial Field at Foster Stadium",
+    "city": "Lexington",
+    "state": "Virginia",
+    "opened": 1962,
+    "seatingCapacity": 10000,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "aliases": [
+      "VMI",
+      "Virginia Military Institute",
+      "VMI Keydets"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://vmikeydets.com/sports/2007/12/31/1357385.aspx"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.vmi.edu/stealing-a-moe-ment-with-vmis-mascot/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://soconsports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Aerial reference — Quintin Soloviev, CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Alumni_Memorial_Field_-_Virginia_Military_Institute.jpg"
+      },
+      {
+        "title": "Reference image license — CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate. Aerial geometry reference: “Alumni Memorial Field - Virginia Military Institute” by Quintin Soloviev, 30 July 2026, licensed CC BY 4.0 via Wikimedia Commons. Adapted into these AI illustrations with added football markings and altered camera angles and style; see the reference and license links in this stadium’s sources.",
+    "description": "Alumni Memorial Field at Foster Stadium is the VMI Keydets football venue in Lexington, Virginia.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/vmi-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Alumni Memorial Field at Foster Stadium for Virginia Military Institute.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/vmi-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Alumni Memorial Field at Foster Stadium for Virginia Military Institute.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "western-carolina-whitmire",
+    "school": "Western Carolina",
+    "fullSchool": "Western Carolina University",
+    "team": "Catamounts",
+    "teamName": "Western Carolina Catamounts",
+    "mascot": "Paws",
+    "stadium": "E.J. Whitmire Stadium / Bob Waters Field",
+    "city": "Cullowhee",
+    "state": "North Carolina",
+    "opened": 1974,
+    "seatingCapacity": 13742,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "aliases": [
+      "Western Carolina",
+      "Western Carolina University",
+      "Western Carolina Catamounts"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://catamountsports.com/facilities/e-j-whitmire-stadium-bob-waters-field/5"
+      },
+      {
+        "title": "official facility / venue facts",
+        "url": "https://catamountsports.com/sports/2018/6/19/211718867.aspx"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://catamountsports.com/sports/2018/6/22/211719142.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://soconsports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "E.J. Whitmire Stadium / Bob Waters Field is the Western Carolina Catamounts football venue in Cullowhee, North Carolina.",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/western-carolina-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of E.J. Whitmire Stadium / Bob Waters Field for Western Carolina University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/western-carolina-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of E.J. Whitmire Stadium / Bob Waters Field for Western Carolina University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "wofford-gibbs",
+    "school": "Wofford",
+    "fullSchool": "Wofford College",
+    "team": "Terriers",
+    "teamName": "Wofford Terriers",
+    "mascot": "Boss and Terri",
+    "stadium": "Gibbs Stadium",
+    "city": "Spartanburg",
+    "state": "South Carolina",
+    "opened": 1996,
+    "seatingCapacity": 13000,
+    "classification": "NCAA Division I FCS",
+    "conference": "Southern",
+    "aliases": [
+      "Wofford",
+      "Wofford College",
+      "Wofford Terriers"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://woffordterriers.com/facilities/gibbs-stadium/1"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://woffordterriers.com/sports/2007/10/28/GEN_1028072210.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://soconsports.com/standings.aspx?path=football"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Gibbs Stadium is the Wofford Terriers football venue in Spartanburg, South Carolina.",
+    "capacityNote": "Approximate capacity combines the official facility page’s approximately 8,500 grandstand seats and 4,500 end-zone seats.",
+    "capacityLabel": "Approximate capacity",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/wofford-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Gibbs Stadium for Wofford College.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/wofford-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Gibbs Stadium for Wofford College.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "duquesne-rooney",
+    "school": "Duquesne",
+    "fullSchool": "Duquesne University",
+    "team": "Dukes",
+    "teamName": "Duquesne Dukes",
+    "mascot": "The Duke",
+    "stadium": "Arthur J. Rooney Athletic Field",
+    "city": "Pittsburgh",
+    "state": "Pennsylvania",
+    "opened": 1993,
+    "seatingCapacity": 2200,
+    "classification": "NCAA Division I FCS",
+    "conference": "Northeast",
+    "aliases": [
+      "Duquesne",
+      "Duquesne University",
+      "Duquesne Dukes"
+    ],
+    "sources": [
+      {
+        "title": "official facility / venue facts",
+        "url": "https://goduquesne.com/sports/2018/5/24/rooney-field.aspx"
+      },
+      {
+        "title": "mascot identity",
+        "url": "https://www.duq.edu/admission-and-aid/"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://goduquesne.com/news/2026/3/31/2026-duq-football-schedule-is-set.aspx"
+      },
+      {
+        "title": "published 2021 capacity and opening year",
+        "url": "https://fs.ncaa.org/Docs/stats/football_records/2021/FCS.pdf"
+      },
+      {
+        "title": "capacity corroboration",
+        "url": "https://goduquesne.com/news/2014/9/13/_DUQFB_Uses_Big_Plays_to_Down_Dayton_33_13"
+      }
+    ],
+    "artEra": "2026-era",
+    "imageNote": "Original AI-generated reference-based illustrations, not documentary photographs; architecture, field markings, seating and surroundings are approximate.",
+    "description": "Arthur J. Rooney Athletic Field is the Duquesne Dukes football venue in Pittsburgh, Pennsylvania.",
+    "capacityNote": "Capacity is the NCAA’s published 2021 figure, corroborated by Duquesne game coverage; an updated official capacity total was not located.",
+    "capacityLabel": "Published capacity (2021)",
+    "views": [
+      {
+        "title": "Stadium aerial",
+        "src": "assets/duquesne-stadium-aerial.png",
+        "alt": "AI-generated reference-based aerial interpretation of Arthur J. Rooney Athletic Field for Duquesne University.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse aerial",
+        "src": "assets/duquesne-stadium-reverse.png",
+        "alt": "AI-generated reference-based reverse aerial interpretation of Arthur J. Rooney Athletic Field for Duquesne University.",
         "width": 1672,
         "height": 941
       }

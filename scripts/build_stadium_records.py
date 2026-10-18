@@ -228,8 +228,28 @@ SCHOOLS = {
     'southeastern-louisiana-strawberry': ('Southeastern Louisiana', 'fcs'),
     'samford-seibert': ('Samford', 'fcs'),
     'mercer-five-star': ('Mercer', 'fcs'),
+    'maine-alfond': ('Maine', 'fcs'),
+    'rhode-island-centreville': ('Rhode Island', 'fcs'),
+    'ualbany-casey': ('Albany', 'fcs'),
+    'stony-brook-lavalle': ('Stony Brook', 'fcs'),
+    'elon-rhodes': ('Elon', 'fcs'),
+    'monmouth-kessler': ('Monmouth', 'fcs'),
+    'campbell-barker-lane': ('Campbell', 'fcs'),
+    'bryant-beirne': ('Bryant', 'fcs'),
+    'holy-cross-fitton': ('Holy Cross', 'fcs'),
+    'colgate-andy-kerr': ('Colgate', 'fcs'),
+    'bucknell-mathewson': ('Bucknell', 'fcs'),
+    'lehigh-goodman': ('Lehigh', 'fcs'),
+    'lafayette-fisher': ('Lafayette', 'fcs'),
+    'fordham-moglia': ('Fordham', 'fcs'),
+    'georgetown-cooper': ('Georgetown', 'fcs'),
+    'citadel-johnson-hagood': ('The Citadel', 'fcs'),
+    'vmi-foster': ('VMI', 'fcs'),
+    'western-carolina-whitmire': ('Western Carolina', 'fcs'),
+    'wofford-gibbs': ('Wofford', 'fcs'),
+    'duquesne-rooney': ('Duquesne', 'fcs'),
 }
-# The 189 reviewed identities include fifteen FCS additions for v1.14.0. Public
+# The 209 reviewed identities include twenty FCS additions for v1.15.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
 # These names are intentionally not replaced by Hawaii or Appalachian State.
@@ -239,6 +259,8 @@ SCHOOLS = {
 # Miami (OH) is the separate MAC school and must never match Miami.
 # New canonical identities include Florida International, Massachusetts, and UL Monroe. Public identities do
 # not establish authenticated 2026 records coverage, which every run validates.
+# The v1.15.0 mappings are proposed identities, not authenticated discovery.
+# Albany is UAlbany, not Albany State; keep exact-name and class checks.
 # New FCS name strings have historical public corroboration, not current
 # authenticated coverage. The authenticated build
 # must verify all current team IDs, classifications, and records before publication.
@@ -247,6 +269,8 @@ SCHOOLS = {
 # Reviewed UI labels are separate from provider identities. This mapping only
 # validates catalog display text; it never participates in provider matching.
 DISPLAY_NAMES = {
+    'ualbany-casey': 'UAlbany',
+
     "california-memorial-stadium": "Cal",
     "south-florida-raymond-james": "USF",
     "hawaii-ching-complex": "Hawai‘i",

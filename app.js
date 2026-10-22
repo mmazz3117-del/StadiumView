@@ -471,7 +471,7 @@
   const recordCatalog = new Map(catalog.map(item => [item.id,item]));
   const optionalRecordDivision = item => ['NCAA Division II','NCAA Division III'].includes(item.classification);
   const requiredRecordIds = new Set(catalog.filter(item => !optionalRecordDivision(item)).map(item => item.id));
-  const unavailableRecordReasons = ['identity-unverified','record-unavailable'];
+  const unavailableRecordReasons = ['identity-unverified','record-unavailable','record-inconsistent'];
   const hasRecordFields = (value, fields) => value && typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === fields.length && fields.every(field => Object.prototype.hasOwnProperty.call(value,field));
   function recordParts(label) {
     if (typeof label !== 'string' || !/^\d{1,2}-\d{1,2}(?:-\d{1,2})?$/.test(label)) return null;
@@ -526,7 +526,7 @@
     return new Intl.DateTimeFormat(undefined, short ? {month:'short',day:'numeric'} : {year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'}).format(new Date(recordSnapshot.checkedAt));
   }
   function unavailableRecordExplanation(row) {
-    return row?.reason === 'identity-unverified' ? 'No verified provider identity was matched for this school in the last successful refresh.' : row?.reason === 'record-unavailable' ? 'No season record was returned for this verified school in the last successful refresh.' : 'No verified snapshot is loaded.';
+    return row?.reason === 'identity-unverified' ? 'No verified provider identity was matched for this school in the last successful refresh.' : row?.reason === 'record-unavailable' ? 'No season record was returned for this verified school in the last successful refresh.' : row?.reason === 'record-inconsistent' ? 'The provider returned internally inconsistent game totals for this school; its record was withheld.' : 'No verified snapshot is loaded.';
   }
   function recordSummary(item) {
     const row = recordMap.get(item.id), available = row?.status === 'available';

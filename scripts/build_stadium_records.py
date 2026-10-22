@@ -394,6 +394,29 @@ def strict_json(text: str):
     return json.loads(text, object_pairs_hook=pairs, parse_constant=reject_constant)
 
 
+def public_file_label(relative: str) -> str:
+    """Only disclose public app/asset names, never raw rejected references."""
+    if relative in ROOT_FILES:
+        return f" Required file: {relative}."
+    try:
+        asset_reference(relative)
+    except (BuildError, TypeError, ValueError):
+        return ""
+    return f" Required file: {relative}."
+
+
+def checked_required_files(source: Path, files) -> None:
+    """Report every missing/unsafe required public file without opening it."""
+    failures = []
+    for relative in sorted(files):
+        try:
+            checked_file(source, relative)
+        except BuildError as exc:
+            failures.append(exc.public_message())
+    if failures:
+        raise BuildError("Required site file checks failed:\n" + "\n".join(failures))
+
+
 def checked_file(source: Path, relative: str) -> Path:
     """Reject traversal, symlinks, and nonfiles before opening/copying anything."""
     parts = PurePosixPath(relative).parts
@@ -403,9 +426,9 @@ def checked_file(source: Path, relative: str) -> Path:
     for part in parts:
         candidate = candidate / part
         if candidate.is_symlink():
-            raise BuildError("Symbolic links are not allowed in the site artifact.")
+            raise BuildError("Symbolic links are not allowed in the site artifact." + public_file_label(relative))
     if not candidate.is_file() or not candidate.resolve().is_relative_to(source.resolve()):
-        raise BuildError("A required site file is missing or unsafe.")
+        raise BuildError("A required site file is missing or unsafe." + public_file_label(relative))
     return candidate
 
 
@@ -472,6 +495,7 @@ def asset_reference(value) -> str:
 def required_site_files(source: Path, catalog: list[dict]) -> set[str]:
     """Exactly the five public app files and referenced images/icons, no globbing."""
     try:
+        checked_required_files(source, ROOT_FILES)
         references = set()
         for item in catalog:
             for view in item["views"]:
@@ -490,8 +514,7 @@ def required_site_files(source: Path, catalog: list[dict]) -> set[str]:
             if value.startswith("assets/"):
                 references.add(asset_reference(value))
         files = set(ROOT_FILES) | references
-        for relative in files:
-            checked_file(source, relative)
+        checked_required_files(source, files)
         return files
     except (UnicodeError, ValueError, KeyError, TypeError, OSError):
         raise BuildError("Required site assets could not be validated.") from None

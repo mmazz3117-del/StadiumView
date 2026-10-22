@@ -44,7 +44,7 @@ CLASSIFICATION_LABELS = {
     "ii": "NCAA Division II", "iii": "NCAA Division III",
 }
 OPTIONAL_CLASSIFICATIONS = frozenset({"NCAA Division II", "NCAA Division III"})
-UNAVAILABLE_REASONS = frozenset({"identity-unverified", "record-unavailable"})
+UNAVAILABLE_REASONS = frozenset({"identity-unverified", "record-unavailable", "record-inconsistent"})
 
 # Stadium IDs and display names are local, reviewed app data. Error summaries
 # only use these known names, never arbitrary strings returned by the API.
@@ -598,11 +598,20 @@ def resolve_teams(metadata, catalog: list[dict]) -> dict[str, dict]:
     return resolved
 
 
+class RecordInconsistencyError(BuildError):
+    """Well-typed counts disagree arithmetically; never a schema/identity error."""
+
+
+def validate_count_fields(value, sid: str) -> None:
+    if not isinstance(value, dict) or any(not integer(value.get(field), 0, MAX_GAMES) for field in ("games", "wins", "losses", "ties")):
+        raise BuildError("A record has missing or invalid nonnegative integer counts.", [sid])
+
+
 def validate_counts(value, sid: str) -> dict:
     if not isinstance(value, dict) or any(not integer(value.get(field), 0, MAX_GAMES) for field in ("games", "wins", "losses", "ties")):
         raise BuildError("A record has missing or invalid nonnegative integer counts.", [sid])
     if value["games"] != value["wins"] + value["losses"] + value["ties"]:
-        raise BuildError("A record's games do not equal wins plus losses plus ties.", [sid])
+        raise RecordInconsistencyError("A record's games do not equal wins plus losses plus ties.", [sid])
     return value
 
 
@@ -644,17 +653,28 @@ def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
                 raise BuildError("A record's team name does not match its verified team ID.", [sid])
             if record.get("classification") != SCHOOLS[sid][1]:
                 raise BuildError("A record has the wrong football classification.", [sid])
+            # Check both count structures before quarantining any arithmetic
+            # mismatch, so an inconsistent total cannot hide malformed conference data.
+            validate_count_fields(record.get("total"), sid)
+            if sid not in INDEPENDENT_STADIUMS:
+                validate_count_fields(record.get("conferenceGames"), sid)
             total = validate_counts(record.get("total"), sid)
             conference_label = None
             if sid not in INDEPENDENT_STADIUMS:
                 conference = validate_counts(record.get("conferenceGames"), sid)
                 if any(conference[field] > total[field] for field in ("games", "wins", "losses", "ties")):
-                    raise BuildError("Conference counts exceed the overall record.", [sid])
+                    raise RecordInconsistencyError("Conference counts exceed the overall record.", [sid])
                 conference_label = record_label(conference)
             # Reviewed football independents: conferenceGames
             # may legitimately be missing/null. Never display a provider 0-0.
             rows.append({"stadiumId": sid, "status": "available", "overall": record_label(total),
                          "conference": conference_label})
+        except RecordInconsistencyError as exc:
+            if sid in required:
+                failures.append(exc)
+            else:
+                # Withhold the entire optional record; never repair or publish bad counts.
+                rows.append(unavailable_row(sid, "record-inconsistent"))
         except BuildError as exc:
             failures.append(exc)
     if failures:

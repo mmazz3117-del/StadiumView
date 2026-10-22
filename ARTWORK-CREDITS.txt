@@ -115,3 +115,333 @@ https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/goduquesne.com/images
 https://goduquesne.com/images/2019/8/27/Rooney2.png
 Reference-based AI illustration; surrounding skyline and unseen details approximate.
 
+
+
+======================================================================
+STADIUM ATLAS v1.16.0 — MASSACHUSETTS / RHODE ISLAND REFERENCE ADDITIONS
+Research checked: 2026-10-21
+======================================================================
+
+These entries document public factual and visual references for the expanded
+college catalog. They are not a declaration of a completed image inventory.
+Artwork included in this release is labeled AI-generated, reference-based
+architectural reconstruction, not documentary photography or survey-accurate
+imagery. Hidden elevations, landscape, lighting, text and fine field markings
+may be approximate. Source-image dates can predate later renovations.
+
+School names, team names, logos and marks belong to their respective owners.
+Linked official photographs/graphics were consulted as visual evidence; no
+license to redistribute those source files is asserted. The source files are
+not the generated app artwork. No affiliation or endorsement is implied.
+
+Active-program scope: current NCAA varsity tackle football. Anna Maria is not
+included: its April 23, 2026 notice announced academic operations would end
+after the spring 2026 semester. This is academic cessation, not a claim that
+the college legally closed in May; its release describes corporate wind-down
+through December 2026. The exact short quotation appears in sources.md.
+https://annamaria.edu/transition/
+https://annamaria.edu/wp-content/uploads/2026/04/AMC-Press-Release_4-23-2026-1.pdf
+
+Fitchburg State — Elliot Field
+ID: fitchburg-state-elliot
+Primary factual sources:
+https://www.fitchburgstate.edu/athletic-opportunities
+https://www.fitchburgstate.edu/student-support/student-affairs/student-handbook
+https://www.fitchburgstate.edu/magazine/article/flight-falcor-freddy
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+https://admissions.fitchburgstate.edu/portal/fall_open_house
+Visual reference sources:
+https://blog.fitchburgstate.edu/hubfs/DJI_0179.jpg
+https://blog.fitchburgstate.edu/hubfs/Image_008-Aug-22-2023-04-09-44-6980-PM.jpg
+Caveats: Official aerial uploaded in 2023, after the university-documented summer 2022 turf replacement. Compact single-grandstand, red-track layout; fine markings and unseen structures approximate.
+
+Worcester State — John F. Coughlin Memorial Field
+ID: worcester-state-coughlin
+Primary factual sources:
+https://www.worcester.edu/magazine/2024/10/28/lasting-impact/
+https://news.worcester.edu/coughlin-field-to-get-summer-makeover/
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+Visual reference sources:
+https://apps.worcester.edu/map/images/wsu_coughlin_05.jpg
+Caveats: Campus-map aerial is an older reference. Official 2019 renovation removed visitor bleachers and changed the midfield mark to Chandler; historical visitor stands must not be described as current. Architecture and markings remain a reconstruction.
+
+Bridgewater State — Peter Mazzaferro Field at Swenson Athletic Complex
+ID: bridgewater-state-swenson
+Primary factual sources:
+https://www.bridgew.edu/office/university-events/buildings-parking-lots
+https://galeassociates.com/project/bridgewater-state-university-swenson-field-complex/
+https://www.bridgew.edu/student-life/spirit-traditions
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+https://www.bridgew.edu/stories/2025/mazzaferro-field
+https://www.bridgew.edu/homecoming/families
+https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf
+Visual reference sources:
+https://galeassociates.com/wp-content/uploads/2023/05/Bridgewater-State-University-Swenson-Field-1.jpg
+https://www.bridgew.edu/sites/bridgew/files/media/article_featured_image/mazzaferro2.jpg
+Caveats: Current name is Peter Mazzaferro Field at Swenson Athletic Complex; field dedication was 2023. Sources may still use Swenson Field. Locked asset ID keeps the historic Swenson identifier.
+
+Framingham State — Bowditch Field
+ID: framingham-state-bowditch
+Primary factual sources:
+https://www.framinghamma.gov/1211/Bowditch-Field-Athletic-Cultural-Complex
+https://www.framingham.edu/homecoming-family-weekend
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+https://www.framinghamma.gov/DocumentCenter/View/45988/CP-Plan-Final-Draft-6-15-22
+Visual reference sources:
+https://www.framinghamma.gov/ImageRepository/Document?documentID=16495
+Reference era: Current municipal facilities-page aerial; exact photograph date unspecified.
+Caveats: Municipal natural-grass venue with six-lane track. Field markings vary by event and season; do not treat generated end-zone decoration as a verified permanent installation.
+
+Westfield State — Alumni Field
+ID: westfield-state-alumni
+Primary factual sources:
+https://www.westfield.ma.edu/documents/2002-neche-self-study-pdfpdf
+https://www.westfield.ma.edu/news/welcome-owls-week-2025-kicks-academic-year
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+https://www.westfieldalumni.org/celebrate/hoco26
+https://thewestfieldnews.com/alumni-field-and-jerry-gravel-track-renovations-completed/
+Visual reference sources:
+https://thewestfieldnews.com/wp-content/uploads/2018/08/Alumni-Field.jpg
+https://ik.imagekit.io/upgrad1/abroad-images/university/408/image/woodward_centreYPZULJ.jpg
+Caveats: The documented 2018 renovation introduced blue end zones and the midfield W. Source-era field/track and surrounding campus are reconstructed, not a current site survey.
+
+Massachusetts Maritime — Clean Harbors Stadium
+ID: massachusetts-maritime-clean-harbors
+Primary factual sources:
+https://www.maritime.edu/sites/default/files/2021-09/Faculty%20Handbook%202021-2022%20V2.pdf
+https://www.maritime.edu/branding/athletics
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+https://www.civitects.com/project/mma-grandstands/
+https://www.maritime.edu/press-releases
+https://www.mass.gov/doc/mma2601-mma-wellness-center-feasibility-study-sasaki-2026/download
+Visual reference sources:
+https://www.civitects.com/wp-content/uploads/2015/03/NA_110621-119-preferred.jpg
+Reference era: Primary project-architect photograph, uploaded 2015; grandstand completed 2010.
+https://www.maritime.edu/sites/default/files/inline-images/MMA%20campus%20overview%20image%20from%20the%20%20sky%202.jpg
+Reference era: Official university campus aerial used on 2021-2022 press-release page; photograph date unspecified. Also appears on cover of April 2026 state feasibility report, which does not establish current capture date.
+https://i0.wp.com/studentunionsports.com/wp-content/uploads/2023/01/Ez-wZ5uXIAE1fUf.jpg?ssl=1
+Reference era: Republished January 2023 close aerial; original social photographer/account unverified. Used only to corroborate visible geometry already supported by primary architect and campus imagery.
+Caveats: Waterfront campus setting is important. Clean Harbors Stadium is distinct from the indoor Clean Harbors Athletic Center. Original stadium opening/current exact capacity are not verified.
+
+UMass Dartmouth — Cressy Field
+ID: umass-dartmouth-cressy
+Primary factual sources:
+https://corsairathletics.com/facilities
+https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf
+https://www.umassd.edu/student-life/terms/
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+Visual reference sources:
+https://corsairathletics.com/images/2023/8/8/IMG_1508_YBv7E.JPG
+Reference era: Official athletics photo uploaded August 2023; exact photograph date unspecified.
+https://corsairathletics.com/images/2023/8/8/IMG_1477.JPG
+https://corsairathletics.com/images/2023/8/8/IMG_1488.JPG
+Caveats: Official current facilities imagery is used for geometry; the NCAA historical stadium table is not relied on for present turf or markings. Fine landscaping and unseen elevations are approximate.
+
+Dean — Dale Lippert Field
+ID: dean-lippert
+Primary factual sources:
+https://deanbulldogs.com/sports/2021/8/13/longley-athletic-complex.aspx
+https://www.dean.edu/events/details/installation-celebration/2022-10-13/
+https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx
+https://www.dean.edu/alumni/events-activities/homecoming/
+Visual reference sources:
+https://pbs.twimg.com/media/EmtthrYW8AEEJ3T.jpg
+Reference era: Official Dean Athletics social aerial from November 2020; not a 2026 capture.
+https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/deanbulldogs.com/custompages/gallery/General_40_0002_2/Longley_Field_1.jpg
+Reference era: Official athletics complex photo used in June 2024 article; photograph date unspecified.
+Caveats: Dale Lippert Field at Longley Athletic Complex is the football game venue; Grant Field is used for football practice. Natural-grass markings and complex surroundings are source-era approximations.
+
+American International — Ronald J. Abdow Field
+ID: american-international-abdow
+Primary factual sources:
+https://aicyellowjackets.com/sports/2025/4/4/RONALD-J-ABDOW-FIELD.aspx
+https://aicyellowjackets.com/sports/football/schedule/2026
+https://www.aic.edu/news/rexs-pantry-first-anniversary/
+https://s3.amazonaws.com/sidearm.sites/aicyellowjackets.com/documents/2020/2/4/AIC_Visiting_Team_Guide_19_20.pdf
+https://northeast10.org/news/2026/8/5/bentley-football-picked-to-repeat-in-ne10-coaches-poll.aspx
+Visual reference sources:
+https://aicyellowjackets.com/images/2025/6/30/aic-athletics-complex-10_54596164864_o.jpg
+https://s3.amazonaws.com/sidearm.sites/aicyellowjackets.com/documents/2020/2/4/AIC_Visiting_Team_Guide_19_20.pdf
+Caveats: Reference-based AI reconstruction. Unseen details, surrounding landscape and fine markings approximate; not a current documentary photograph.
+
+Assumption — Brian Kelly '83 Stadium
+ID: assumption-brian-kelly
+Primary factual sources:
+https://assumptiongreyhounds.com/facilities/brian-kelly-83-stadium/1
+https://assumptiongreyhounds.com/sports/football/schedule/2026
+https://www.assumption.edu/sites/default/files/academics/AcademicCatalog.pdf
+https://northeast10.org/news/2026/8/5/bentley-football-picked-to-repeat-in-ne10-coaches-poll.aspx
+Visual reference sources:
+https://assumptiongreyhounds.com/images/2023/8/17/Brian_Kelly_2023.jpg
+Caveats: Reference-based AI reconstruction. Unseen details, surrounding landscape and fine markings approximate; not a current documentary photograph.
+
+Bentley — Peter Yetten Field
+ID: bentley-yetten
+Primary factual sources:
+https://bentleyfalcons.com/sports/2025/1/10/peter-yetten-field.aspx
+https://events.bentley.edu/bentley_university_football_stadium_591
+https://bentleyfalcons.com/sports/2025/7/31/athletic-timeline.aspx
+https://www.bentley.edu/news/8-bentley-traditions-youll-want-be-part
+https://northeast10.org/news/2026/8/5/bentley-football-picked-to-repeat-in-ne10-coaches-poll.aspx
+Visual reference sources:
+https://dbukjj6eu5tsf.cloudfront.net/sidearm.sites/bentleyu.sidearmsports.com/images/2025/5/16/aerial1.png
+https://localist-images.azureedge.net/photos/69455/huge/0f6323a362f8c90c82976f33de098854eb8876b6.jpg
+Caveats: Reference-based AI reconstruction. Unseen details, surrounding landscape and fine markings approximate; not a current documentary photograph.
+
+Curry — Walter M. Katz Field
+ID: curry-katz
+Primary factual sources:
+https://www.curry.edu/about-us/news-and-events/news/a-new-era-of-purple-pride-curry-college-announces-plans-for-all-purple-turf-this-fall
+https://www.curry.edu/about-us/office-of-conference-services/athletic-facilities
+https://www.curry.edu/athletics
+https://www.curry.edu/about-us/news-and-events/news/curry-college-retires-colonel-mascot
+https://cnesports.org/standings.aspx?path=football
+Visual reference sources:
+https://www.curry.edu/assets/Images/Homepage/Student-Life/Student-Campus-Services/Conference%20and%20Events/purple-turf-slide-1440.png
+Caveats: Official February 2026 announcement described planned purple turf for summer 2026; the official facilities graphic depicts purple turf but may be a visualization. Do not claim a verified as-built photograph or exact capture date. The Colonel mascot character was retired in 2020 while Colonels remains the team nickname. Inspected current official facilities aerial graphic: entire rectangular turf PURPLE, white end zones with purple CURRY/COLONELS, white outlined interlocking CC midfield. No running track. Long metal sideline bleachers with small press box, two small separate opposite-side bleachers; woodland at one end, grass and baseball grounds nearby. Image may be new-turf visualization; do not assert photographic capture date.
+
+Endicott — Melissa Hempstead '69 Stadium
+ID: endicott-hempstead
+Primary factual sources:
+https://www.endicott.edu/soundings/articles/fall-2019/advancement/more-than-just-a-name-meet-our-named-building-donors
+https://misselwood.endicott.edu/book-your-event/overnight-programs/campus-and-athletic-facilities
+https://www.endicott.edu/-/media/endicott/home/admission/plan-a-visit/selfguidedtouronline24.ashx?hash=F61474952652B8523E8F76D063A19A2826CA3483&la=en
+https://www.endicott.edu/about/why-endicott/our-history/endicott-mascot-gully
+https://web3.ncaa.org/directory/orgDetail?id=8981
+https://cnesports.org/standings.aspx?path=football
+Visual reference sources:
+https://www.endicott.edu/-/media/endicott/home/student-life/interior-page-student-life-images/interior-images-athletics-facilities2.jpg
+Caveats: Reference-based AI reconstruction. Unseen details, surrounding landscape and fine markings approximate; not a current documentary photograph.
+
+Nichols — Michael J. Vendetti Field
+ID: nichols-vendetti
+Primary factual sources:
+https://nicholsathletics.com/facilities/michael-j-vendetti-field/2
+https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/D3.pdf
+https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/nicholsathletics.com/documents/2008/10/23/2008FBGuide.pdf
+https://nicholsathletics.com/sports/2014/7/17/GEN_0717142636.aspx
+https://cnesports.org/standings.aspx?path=football
+Visual reference sources:
+https://nicholsathletics.com/images/2023/5/25/DJI_0318-Edit.jpeg
+Caveats: Reference-based AI reconstruction. Unseen details, surrounding landscape and fine markings approximate; not a current documentary photograph.
+
+Western New England — Golden Bear Stadium
+ID: western-new-england-golden-bear
+Primary factual sources:
+https://wnegoldenbears.com/sports/2023/6/16/information-facilities-golden-bear-stadium-index.aspx
+https://wnegoldenbears.com/facilities
+https://wnegoldenbears.com/news/2026/7/6/wne-football-unveils-2026-season-schedule.aspx
+https://wne.edu/student-life/chatbot.cfm
+https://cnesports.org/standings.aspx?path=football
+Visual reference sources:
+https://wnegoldenbears.com/images/2024/5/30/DJI_0097.jpg
+Caveats: Reference-based AI reconstruction. Unseen details, surrounding landscape and fine markings approximate; not a current documentary photograph.
+
+MIT — Henry G. Steinbrenner '27 Stadium
+ID: mit-steinbrenner
+Primary factual sources:
+https://mitathletics.com/sports/2021/4/20/information-facilities-steinbrenner.aspx
+https://brand.mit.edu/node/16
+https://newmacsports.com/standings.aspx?path=football
+Visual reference sources:
+https://mitathletics.com/images/2017/7/31/stienbrenner_Stadium.jpg
+https://www.mitrecsports.com/assets/West-Campus-scaled-1110x600-1.jpg
+Reference era: Image date unspecified; official camp facilities page circa 2022.
+Caveats: Image date unspecified; official camp facilities page circa 2022.
+
+WPI — H.Carr Field at Alumni Stadium
+ID: wpi-alumni
+Primary factual sources:
+https://athletics.wpi.edu/sports/2023/6/8/facilities-AlumniStadium-index.aspx
+https://www.wpi.edu/student-experience/community/traditions
+https://newmacsports.com/standings.aspx?path=football
+https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf
+Visual reference sources:
+https://athletics.wpi.edu/images/2022/9/26/Aerial_2022.jpg
+Reference era: Official athletics aerial uploaded September 2022.
+Caveats: Official athletics aerial uploaded September 2022.
+
+Springfield — Amos Alonzo Stagg Field
+ID: springfield-stagg
+Primary factual sources:
+https://springfieldcollegepride.com/sports/2023/10/20/information-facilities.aspx
+https://springfield.edu/sites/default/files/Springfield-College-International-Students-Pre-Arrival-Guide-2024.pdf
+https://newmacsports.com/standings.aspx?path=football
+https://springfield.edu/news/bugbee-family-pavilion-dedication-and-celebration
+Visual reference sources:
+https://springfieldcollegepride.com/images/2021/3/17/Drone-stagg-21-223.jpg
+Reference era: Official athletics image uploaded 2021; prior to 2024 pavilion
+https://live.staticflickr.com/65535/54079243357_658576c666_b.jpg
+Reference era: Official Springfield College Flickr photo taken October 19, 2024; 2021 supplemental aerial predates Bugbee pavilion.
+Caveats: Official Springfield College Flickr photo taken October 19, 2024; 2021 supplemental aerial predates Bugbee pavilion. No surrounding track. The official October 19, 2024 aerial shows Bugbee Family Pavilion; the 2021 aerial predates it.
+
+Salve Regina — Toppa Field at Freebody Park
+ID: salve-regina-toppa
+Primary factual sources:
+https://salveathletics.com/facilities/toppa-field/4
+https://salveathletics.com/sports/2024/6/4/information-facilities-directions-index
+https://newmacsports.com/standings.aspx?path=football
+Visual reference sources:
+https://salveathletics.com/images/2024/7/1/SalveCampus_ToppaField-8472.jpg
+https://salveathletics.com/images/2024/7/1/toppa.jpg
+Reference era: Official athletics file uploaded July 2024, but photographed during turf construction, plausibly 2017; exact capture date unverified.
+Caveats: Official athletics file uploaded July 2024, but photographed during turf construction, plausibly 2017; exact capture date unverified. The broad official aerial shows turf-installation work. Reference geometry is useful, but rolled materials/construction should not be presented as present-day condition.
+
+Amherst — Pratt Field at Lehrman Stadium
+ID: amherst-pratt
+Primary factual sources:
+https://athletics.amherst.edu/facilities/pratt-field-at-lehrman-stadium-the-neuhoff-lumley-track-conway-field-house/17
+https://www.amherst.edu/system/files/media/Amherst-College-Visual-Identity-Toolkit-ATHLETICS-July-2023.pdf
+https://nescac.com/stats.aspx?conf=true&path=football&year=2026
+Visual reference sources:
+https://athletics.amherst.edu/images/2020/9/30/Pratt_Field_9.jpg
+Reference era: Official athletics file uploaded September 2020; artwork is reference-based, not an assertion all markings remain unchanged in 2026.
+Caveats: Official athletics file uploaded September 2020; artwork is reference-based, not an assertion all markings remain unchanged in 2026.
+
+Tufts — Ellis Oval / Zimman Field
+ID: tufts-ellis-oval
+Primary factual sources:
+https://gotuftsjumbos.com/facilities/ellis-oval-zimman-field-dussault-track/5
+https://admissions.tufts.edu/discover-tufts/tufts-traditions/
+https://nescac.com/stats.aspx?conf=true&path=football&year=2026
+Visual reference sources:
+https://gotuftsjumbos.com/images/2024/8/15/230611_9921_aerial204.JPG
+Reference era: Official athletics file uploaded August 2024; filename suggests June 11, 2023 aerial.
+Caveats: Official athletics file uploaded August 2024; filename suggests June 11, 2023 aerial.
+
+Williams — Farley-Lamb Field
+ID: williams-farley-lamb
+Primary factual sources:
+https://ephsports.williams.edu/sports/2020/8/10/farley-lamb-field.aspx?id=854
+https://identity.williams.edu/
+https://nescac.com/stats.aspx?conf=true&path=football&year=2026
+Visual reference sources:
+https://hub.williams.edu/decarbonization/files/2024/01/Weston-Athletic-field.jpg
+Reference era: Official Williams decarbonization image uploaded January 2024, showing post-2014 rebuilt complex; enclosing timeline entry concerns a 2011 planning event, not photo date.
+Caveats: Official Williams decarbonization image uploaded January 2024, showing post-2014 rebuilt complex; enclosing timeline entry concerns a 2011 planning event, not photo date. Football field has no surrounding running track; a separate track wraps the adjacent field. Do not recreate obsolete Weston Field seating capacity.
+
+Stonehill — W.B. Mason Stadium
+ID: stonehill-wb-mason
+Primary factual sources:
+https://stonehillskyhawks.com/facilities/w-b-mason-stadium/2
+https://www.stonehill.edu/news/details/stonehill-college-from-a-to-z/
+https://stonehillskyhawks.com/sports/football/schedule/2026
+Visual reference sources:
+https://stonehillskyhawks.com/images/2025/8/26/WB_Mason_Stadium_Flyover.jpg
+Reference era: Official athletics flyover uploaded August 2025.
+Caveats: Official athletics flyover uploaded August 2025. Official 2025 aerial shows one main sideline grandstand and open grass opposite, not a large bowl.
+
+Merrimack — Duane Stadium
+ID: merrimack-duane
+Primary factual sources:
+https://merrimackathletics.com/facilities/duane-stadium/16
+https://www.merrimack.edu/about/
+https://merrimackathletics.com/news/2026/5/5/merrimack-football-announces-2026-schedule.aspx?path=football
+Visual reference sources:
+https://merrimackathletics.com/images/2018/6/21/Warrior_Stadium_5_24_18_30.jpg
+https://merrimackathletics.com/images/2019/6/14/DSC_9519.jpg
+Reference era: Official athletics aerial uploaded June 2019; source-era field markings, not claimed 2026 capture.
+https://gps-merrimack-edu.cdn.technolutions.net/images/footer-img-2020.jpg
+Reference era: Official college graduate admissions portal, 2020 image asset filename
+Caveats: Official athletics aerial uploaded June 2019; source-era field markings, not claimed 2026 capture.
+

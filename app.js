@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.15.0';
+  const BUILD = '1.16.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 209 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant','north-dakota-state-fargodome'].includes(item.id) ? 3 : 2));
+  const validCatalog = Array.isArray(catalog) && catalog.length === 233 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant','north-dakota-state-fargodome'].includes(item.id) ? 3 : 2));
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.15.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.16.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -89,6 +89,13 @@
   const normalize = value => String(value).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   const escape = value => String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
   const indexOf = item => catalog.indexOf(item) + 1;
+  // Source qualifiers and unknown counts must survive cards, facts and slideshows.
+  function displayedCapacity(item) {
+    if (typeof item.capacityDisplay === 'string' && item.capacityDisplay.trim()) return item.capacityDisplay;
+    if (!Number.isFinite(item.seatingCapacity) || item.seatingCapacity <= 0) return 'Not verified';
+    return Number(item.seatingCapacity).toLocaleString('en-US');
+  }
+
   const imageOf = () => activeStadium.views[view];
   // Slideshow selection never changes the gallery's selected stadium or photo.
   const slideshow = {active:false,playing:false,scope:'all',queue:[],position:0,shuffle:false,rounds:[],roundIndex:0,roundOffset:0,delay:5000,from:'#collection',owned:false};
@@ -224,7 +231,7 @@
     const capacityLabel = entry?.item.capacityLabel || '';
     const capacityYear = capacityLabel.match(/\b20\d{2}\b/);
     const capacityQualifier = /\bnearly\b/i.test(capacityLabel) ? 'Nearly ' : /approx/i.test(capacityLabel) ? 'Approx. ' : '';
-    $('#slideshow-quiet-capacity').textContent = entry ? `Seating capacity${capacityYear ? ` (${/pre-20\d{2}/i.test(capacityLabel) ? 'before ' + capacityYear[0] + ' expansion' : capacityYear[0]})` : ''}: ${capacityQualifier}${Number(entry.item.seatingCapacity).toLocaleString('en-US')}` : '';
+    $('#slideshow-quiet-capacity').textContent = entry ? `${entry.item.capacityShortLabel || (entry.item.capacityDisplay ? 'Reported capacity' : 'Seating capacity')}${capacityYear ? ` (${/pre-20\d{2}/i.test(capacityLabel) ? 'before ' + capacityYear[0] + ' expansion' : capacityYear[0]})` : ''}: ${entry.item.capacityDisplay ? '' : capacityQualifier}${displayedCapacity(entry.item)}` : '';
     if (!slideshow.active) resetSlideshowUi();
     else if (!entry || !total || viewerFailed) revealSlideshowControls();
     else if (slideshowUiTimer === null && !dialog.classList.contains('slideshow-ui-hidden')) scheduleSlideshowUiHide();
@@ -458,7 +465,14 @@
   // Published daily snapshots only. No provider credentials or API calls in the browser.
   const recordsSeason = window.STADIUM_ATLAS_RECORDS_SEASON;
   const RECORD_TTL = 24 * 60 * 60 * 1000;
-  const recordsCacheKey = `stadium-atlas-records-${recordsSeason}-v1`;
+  // v2 separates verified records from explicit, per-school Division II/III absences.
+  // A cached v1/all-DI snapshot must never mask the expanded catalog's coverage.
+  const recordsCacheKey = `stadium-atlas-records-${recordsSeason}-v2`;
+  const recordCatalog = new Map(catalog.map(item => [item.id,item]));
+  const optionalRecordDivision = item => ['NCAA Division II','NCAA Division III'].includes(item.classification);
+  const requiredRecordIds = new Set(catalog.filter(item => !optionalRecordDivision(item)).map(item => item.id));
+  const unavailableRecordReasons = ['identity-unverified','record-unavailable'];
+  const hasRecordFields = (value, fields) => value && typeof value === 'object' && !Array.isArray(value) && Object.keys(value).length === fields.length && fields.every(field => Object.prototype.hasOwnProperty.call(value,field));
   function recordParts(label) {
     if (typeof label !== 'string' || !/^\d{1,2}-\d{1,2}(?:-\d{1,2})?$/.test(label)) return null;
     const parts = label.split('-').map(Number);
@@ -466,23 +480,30 @@
     return [parts[0],parts[1],parts[2] || 0];
   }
   function validRecordSnapshot(value) {
-    if (!Number.isInteger(recordsSeason) || !value || value.schemaVersion !== 1 || value.season !== recordsSeason || value.source !== 'CollegeFootballData' || !Array.isArray(value.rows) || value.rows.length !== catalog.length) return null;
+    if (!Number.isInteger(recordsSeason) || !hasRecordFields(value,['schemaVersion','season','checkedAt','source','rows']) || value.schemaVersion !== 2 || value.season !== recordsSeason || value.source !== 'CollegeFootballData' || !Array.isArray(value.rows) || value.rows.length !== catalog.length || recordCatalog.size !== catalog.length) return null;
     if (typeof value.checkedAt !== 'string' || !/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?Z$/.test(value.checkedAt)) return null;
     const time = Date.parse(value.checkedAt);
     if (!Number.isFinite(time) || time > Date.now() + 5 * 60 * 1000 || time < Date.UTC(recordsSeason,0,1)) return null;
     if (new Date(time).toISOString().replace('.000Z','Z') !== value.checkedAt.replace('.000Z','Z')) return null;
     const seen = new Set(), rows = [];
     for (const row of value.rows) {
-      const item = row && catalog.find(item => item.id === row.stadiumId);
-      if (!item || seen.has(item.id)) return null;
+      const item = row && recordCatalog.get(row.stadiumId);
+      if (!item || seen.has(item.id) || !['NCAA Division I FBS','NCAA Division I FCS','NCAA Division II','NCAA Division III'].includes(item.classification)) return null;
+      seen.add(item.id);
+      if (row.status === 'unavailable') {
+        // Missing/invalid Division I coverage can never be disguised as optional.
+        if (requiredRecordIds.has(item.id) || !hasRecordFields(row,['stadiumId','status','reason','overall','conference']) || !unavailableRecordReasons.includes(row.reason) || row.overall !== null || row.conference !== null) return null;
+        rows.push({stadiumId:item.id,status:'unavailable',reason:row.reason,overall:null,conference:null});
+        continue;
+      }
+      if (row.status !== 'available' || !hasRecordFields(row,['stadiumId','status','overall','conference'])) return null;
       const overall = recordParts(row.overall);
       const independent = item.conference === 'Independent (football)';
       const conference = independent ? null : recordParts(row.conference);
       if (!overall || (independent ? row.conference !== null : !conference || conference.some((n,i) => n > overall[i]))) return null;
-      seen.add(item.id);
-      rows.push({stadiumId:item.id,overall:row.overall,conference:independent ? null : row.conference});
+      rows.push({stadiumId:item.id,status:'available',overall:row.overall,conference:independent ? null : row.conference});
     }
-    return {schemaVersion:1,season:recordsSeason,checkedAt:value.checkedAt,source:'CollegeFootballData',rows};
+    return {schemaVersion:2,season:recordsSeason,checkedAt:value.checkedAt,source:'CollegeFootballData',rows};
   }
   let embeddedRecords = validRecordSnapshot(window.STADIUM_ATLAS_RECORDS), savedRecords = null;
   try { savedRecords = validRecordSnapshot(JSON.parse(window.localStorage.getItem(recordsCacheKey))); } catch {}
@@ -494,6 +515,8 @@
   }
   if (recordSnapshot) { try { window.localStorage.setItem(recordsCacheKey,JSON.stringify(recordSnapshot)); } catch {} }
   const recordMap = new Map((recordSnapshot?.rows || []).map(row => [row.stadiumId,row]));
+  const availableRecordCount = [...recordMap.values()].filter(row => row.status === 'available').length;
+  const unavailableRecordCount = [...recordMap.values()].filter(row => row.status === 'unavailable').length;
   function recordState() {
     if (!recordSnapshot) return 'unavailable';
     return Date.now() - Date.parse(recordSnapshot.checkedAt) > RECORD_TTL ? 'stale' : recordOrigin;
@@ -502,26 +525,33 @@
     if (!recordSnapshot) return '';
     return new Intl.DateTimeFormat(undefined, short ? {month:'short',day:'numeric'} : {year:'numeric',month:'short',day:'numeric',hour:'numeric',minute:'2-digit',timeZoneName:'short'}).format(new Date(recordSnapshot.checkedAt));
   }
+  function unavailableRecordExplanation(row) {
+    return row?.reason === 'identity-unverified' ? 'No verified provider identity was matched for this school in the last successful refresh.' : row?.reason === 'record-unavailable' ? 'No season record was returned for this verified school in the last successful refresh.' : 'No verified snapshot is loaded.';
+  }
   function recordSummary(item) {
-    const row = recordMap.get(item.id);
-    const conference = item.conference === 'Independent (football)' ? 'not applicable for independent football' : row ? row.conference : 'unavailable';
-    return `${recordsSeason} season. Overall record ${row ? row.overall : 'unavailable'}. Conference record ${conference}.${recordSnapshot ? ` Last checked ${checkedDate()}.` : ''}`;
+    const row = recordMap.get(item.id), available = row?.status === 'available';
+    const conference = item.conference === 'Independent (football)' ? 'not applicable for independent football' : available ? row.conference : 'unavailable';
+    const coverage = row?.status === 'unavailable' ? ` Records unavailable for this ${item.classification.replace('NCAA ','')} school. ${unavailableRecordExplanation(row)}` : '';
+    return `${recordsSeason} season. Overall record ${available ? row.overall : 'unavailable'}. Conference record ${conference}.${coverage}${recordSnapshot ? ` Last checked ${checkedDate()}.` : ''}`;
   }
   function recordMarkup(item) {
-    const row = recordMap.get(item.id), state = recordState();
-    const overall = row ? row.overall : '—';
-    const conference = item.conference === 'Independent (football)' ? 'N/A' : row ? row.conference : '—';
-    const note = !row ? `${recordsSeason} season · Unavailable` : `${recordsSeason} season · ${state === 'stale' ? 'Stale · ' : ''}${recordOrigin === 'device' ? 'Saved · ' : ''}Checked ${checkedDate(true)}`;
-    return `<dl class="record-stats"><div><dt>Overall</dt><dd aria-label="Overall record ${row ? escape(overall) : 'unavailable'}">${escape(overall)}</dd></div><div><dt>Conference</dt><dd aria-label="Conference record ${conference === 'N/A' ? 'not applicable: independent football team' : row ? escape(conference) : 'unavailable'}">${escape(conference)}</dd></div></dl><p class="record-note${state === 'stale' ? ' record-stale' : ''}"${recordSnapshot ? ` title="Last checked ${escape(checkedDate())}"` : ''}>${escape(note)}</p>`;
+    const row = recordMap.get(item.id), available = row?.status === 'available', state = recordState();
+    const overall = available ? row.overall : '—';
+    const conference = item.conference === 'Independent (football)' ? 'N/A' : available ? row.conference : '—';
+    const coverage = row?.status === 'unavailable' ? `${item.classification.replace('NCAA ','')} records unavailable · ` : '';
+    const note = !row ? `${recordsSeason} season · Unavailable` : `${recordsSeason} season · ${coverage}${state === 'stale' ? 'Stale · ' : ''}${recordOrigin === 'device' ? 'Saved · ' : ''}Checked ${checkedDate(true)}`;
+    const title = `${row?.status === 'unavailable' ? `${unavailableRecordExplanation(row)} ` : ''}${recordSnapshot ? `Last checked ${checkedDate()}` : ''}`;
+    return `<dl class="record-stats"><div><dt>Overall</dt><dd aria-label="Overall record ${available ? escape(overall) : 'unavailable'}">${escape(overall)}</dd></div><div><dt>Conference</dt><dd aria-label="Conference record ${conference === 'N/A' ? 'not applicable: independent football team' : available ? escape(conference) : 'unavailable'}">${escape(conference)}</dd></div></dl><p class="record-note${state === 'stale' ? ' record-stale' : ''}"${title ? ` title="${escape(title)}"` : ''}>${escape(note)}</p>`;
   }
   function updateRecordLabels() {
     const state = recordState(), status = $('#records-status');
     const now = new Date(), activeSeason = now.getUTCFullYear() - (now.getUTCMonth() < 7 ? 1 : 0);
     let text = recordSnapshot ? `${recordsSeason} records · ${recordsSeason < activeSeason ? 'Previous season · ' : ''}${state === 'stale' ? 'Stale · ' : ''}${recordOrigin === 'device' ? 'Saved on this device · ' : ''}Last checked ${checkedDate()}.` : `${recordsSeason} records unavailable. No verified snapshot is loaded.`;
+    if (recordSnapshot && unavailableRecordCount) text += ` All ${requiredRecordIds.size} Division I schools verified; ${unavailableRecordCount} Division II/III schools unavailable.`;
     if (state === 'stale') text += ' A newer daily snapshot has not loaded.';
     if (status) { status.textContent = text; status.classList.toggle('record-stale',state === 'stale'); }
-    $$('[data-records-id]').forEach(element => { const item = catalog.find(item => item.id === element.dataset.recordsId); if (item) element.innerHTML = recordMarkup(item); });
-    window.STADIUM_ATLAS_RUNTIME.records = {season:recordsSeason,state,origin:recordOrigin,checkedAt:recordSnapshot?.checkedAt || null,teams:recordMap.size};
+    $$('[data-records-id]').forEach(element => { const item = recordCatalog.get(element.dataset.recordsId); if (item) element.innerHTML = recordMarkup(item); });
+    window.STADIUM_ATLAS_RUNTIME.records = {season:recordsSeason,state,origin:recordOrigin,checkedAt:recordSnapshot?.checkedAt || null,teams:availableRecordCount,unavailableTeams:unavailableRecordCount,requiredTeams:requiredRecordIds.size,catalogTeams:catalog.length};
   }
   $('#reload-records')?.addEventListener('click', () => window.location.reload());
   document.addEventListener('visibilitychange', () => { if (!document.hidden) updateRecordLabels(); });
@@ -581,8 +611,8 @@
       const image = item.views[index];
       const teamName = item.teamName || `${item.school} ${item.team}`;
       const capacityYear = (item.capacityLabel || '').match(/\b20\d{2}\b/);
-      const capacityLabel = `${/approx/i.test(item.capacityLabel || '') ? 'Approx. capacity' : 'Capacity'}${capacityYear ? ` (${/pre-20\d{2}/i.test(item.capacityLabel || '') ? 'before ' + capacityYear[0] + ' expansion' : capacityYear[0]})` : ''}`;
-      const capacityValue = `${/\bnearly\b/i.test(item.capacityLabel || '') ? 'Nearly ' : ''}${Number(item.seatingCapacity).toLocaleString('en-US')}`;
+      const capacityLabel = item.capacityShortLabel || `${/approx/i.test(item.capacityLabel || '') ? 'Approx. capacity' : 'Capacity'}${capacityYear ? ` (${/pre-20\d{2}/i.test(item.capacityLabel || '') ? 'before ' + capacityYear[0] + ' expansion' : capacityYear[0]})` : ''}`;
+      const capacityValue = `${!item.capacityDisplay && /\bnearly\b/i.test(item.capacityLabel || '') ? 'Nearly ' : ''}${displayedCapacity(item)}`;
       const temporarySeats = /including temporary/i.test(item.capacityNote || '') ? '<small>incl. temporary seats</small>' : '';
       const division = (item.classification || '').replace('NCAA Division I ', 'D-I ');
       return `<article class="stadium-card" data-stadium-id="${escape(item.id)}"><div class="card-image" data-card-gallery="${escape(item.id)}" style="aspect-ratio:${image.width}/${image.height}"><a class="card-image-link" href="#stadium/${escape(item.id)}" aria-label="Open ${escape(item.school)}: ${escape(image.title.toLowerCase())}"><img data-card-source="${escape(image.src)}" src="${escape(image.src)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async" alt="${escape(image.alt)}" draggable="false"></a><div class="card-image-status" hidden><p role="status" aria-live="polite"></p><button type="button" class="card-image-retry" aria-label="Retry ${escape(item.school)} image" hidden>Retry image</button></div><span class="card-viewcount" aria-live="polite" aria-atomic="true">${index + 1} / ${item.views.length} · ${escape(image.title)}</span><button type="button" class="card-preview-arrow card-preview-prev" data-card-step="-1" aria-label="Previous ${escape(item.school)} stadium view" title="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button><button type="button" class="card-preview-arrow card-preview-next" data-card-step="1" aria-label="Next ${escape(item.school)} stadium view" title="Next view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button></div><a class="card-body card-detail-link" href="#stadium/${escape(item.id)}" aria-label="Explore ${escape(teamName)}: ${escape(item.stadium)}. ${escape(item.conference)}, ${escape(item.classification)}. ${escape(capacityLabel)}: ${escape(capacityValue)}. ${item.views.length} stadium views. ${escape(recordSummary(item))}"><div class="card-topline"><span>${escape(item.fullSchool)}</span><span class="card-no">${String(indexOf(item)).padStart(2,'0')}</span></div><h3 class="school-name">${escape(teamName)}</h3><p class="card-stadium">${escape(item.stadium)}</p><p class="card-place">${escape(item.city)}, ${escape(item.state)}</p><dl class="card-facts"><div><dt>League / division · 2026</dt><dd>${escape(item.conference)}<span class="card-division" aria-label="${escape(item.classification)}">${escape(division)}</span></dd></div><div><dt>${escape(capacityLabel)}</dt><dd><span class="card-capacity-value">${escape(capacityValue)}</span>${temporarySeats}</dd></div></dl><div class="team-records" data-records-id="${escape(item.id)}">${recordMarkup(item)}</div><div class="card-bottom"><span>Explore stadium</span><span class="card-arrow" aria-hidden="true">↗︎</span></div></a></article>`;
@@ -757,8 +787,8 @@
       {title:'Stadium facts',url:item.factsSources.stadium},
       {title:`Meet ${item.mascot}`,url:item.factsSources.mascot}
     ]).filter(source => source.url).map(source => `<a class="source-link" href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.title)} <span aria-hidden="true">↗︎</span></a>`).join('');
-    $('#capacity-note').textContent = item.capacityNote || 'Capacity counts seats; standing-room attendance can be higher.';
-    const facts = [['School',item.fullSchool],['Team',item.teamName || `${item.school} ${item.team}`],[item.mascotLabel || 'Mascot',item.mascot],['Division',item.classification || 'Not listed'],['Conference (2026)',item.conference || 'Not listed'],['Location',`${item.city}, ${item.state}`],[item.capacityLabel || 'Seating capacity',Number(item.seatingCapacity).toLocaleString('en-US')],['Opened',item.opened]];
+    $('#capacity-note').textContent = (item.capacityNote || 'Capacity counts seats; standing-room attendance can be higher.') + (item.openedNote ? ' ' + item.openedNote : '');
+    const facts = [['School',item.fullSchool],['Team',item.teamName || `${item.school} ${item.team}`],[item.mascotLabel || 'Mascot',item.mascot || 'Not documented'],['Division',item.classification || 'Not listed'],['Conference (2026)',item.conference || 'Not listed'],['Location',`${item.city}, ${item.state}`],[item.capacityLabel || 'Seating capacity',displayedCapacity(item)],[item.openedDisplay ? 'Opened / established' : 'Opened',item.openedDisplay || item.opened || 'Not documented']];
     $('#stadium-facts').innerHTML = facts.map(([label,value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('');
     $('#stadium-facts').setAttribute('aria-label',`${item.stadium} facts`);
     const imageSizes = [...new Set(item.views.map(image => `${image.width} × ${image.height}`))].join(' and ');

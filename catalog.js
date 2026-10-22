@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.15.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.16.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -13596,6 +13596,1514 @@ window.STADIUMS = [
         "title": "Reverse aerial",
         "src": "assets/duquesne-stadium-reverse.png",
         "alt": "AI-generated reference-based reverse aerial interpretation of Arthur J. Rooney Athletic Field for Duquesne University.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "fitchburg-state-elliot",
+    "school": "Fitchburg State",
+    "fullSchool": "Fitchburg State University",
+    "team": "Falcons",
+    "stadium": "Elliot Field",
+    "city": "Fitchburg",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "Freddy T. Falcon",
+    "capacityDisplay": "Over 1,500",
+    "openedNote": "Original opening year not established; turf installation in 2022 is a renovation, not stadium opening.",
+    "teamName": "Fitchburg State Falcons",
+    "aliases": [
+      "Fitchburg State University",
+      "Fitchburg State Falcons",
+      "Elliot Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://www.fitchburgstate.edu/athletic-opportunities"
+      },
+      {
+        "title": "Elliot Field current surface",
+        "url": "https://www.fitchburgstate.edu/student-support/student-affairs/student-handbook"
+      },
+      {
+        "title": "Official current mascot identity",
+        "url": "https://www.fitchburgstate.edu/magazine/article/flight-falcor-freddy"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      },
+      {
+        "title": "2026 Homecoming football at Elliot Field",
+        "url": "https://admissions.fitchburgstate.edu/portal/fall_open_house"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.fitchburgstate.edu/athletic-opportunities"
+    },
+    "description": "Fitchburg State’s home field combines synthetic turf, an eight-lane track, compact grandstands and a wooded setting in northern Worcester County.",
+    "capacityNote": "The university describes seating for over 1,500; this is a lower-bound statement, not an exact seat count.",
+    "capacityLabel": "Reported seating capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/fitchburg-state-elliot-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Elliot Field, home of the Fitchburg State Falcons, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/fitchburg-state-elliot-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Elliot Field, home of the Fitchburg State Falcons, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "id": "worcester-state-coughlin",
+    "school": "Worcester State",
+    "fullSchool": "Worcester State University",
+    "team": "Lancers",
+    "stadium": "John F. Coughlin Memorial Field",
+    "city": "Worcester",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "Chandler",
+    "openedDisplay": "Dedicated 1986",
+    "openedNote": "Official university history says dedicated at Homecoming 1986; original opening not established.",
+    "teamName": "Worcester State Lancers",
+    "aliases": [
+      "Worcester State University",
+      "Worcester State Lancers",
+      "John F. Coughlin Memorial Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://www.worcester.edu/magazine/2024/10/28/lasting-impact/"
+      },
+      {
+        "title": "2019 stadium renovation and Chandler mascot",
+        "url": "https://news.worcester.edu/coughlin-field-to-get-summer-makeover/"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.worcester.edu/magazine/2024/10/28/lasting-impact/"
+    },
+    "description": "Worcester State’s multipurpose home field lies on the western side of campus. Its 2019 renovation expanded the turf surface and removed the visitor-side bleachers.",
+    "capacityNote": "Current exact capacity unverified. Visitor bleachers removed in 2019; historical 2,500 is not asserted as current.",
+    "capacityLabel": "Reported capacity",
+    "capacityDisplay": "Not verified",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates. The older campus aerial is interpreted with the documented 2019 removal of visitor bleachers.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/worcester-state-coughlin-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of John F. Coughlin Memorial Field, home of the Worcester State Lancers, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/worcester-state-coughlin-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of John F. Coughlin Memorial Field, home of the Worcester State Lancers, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "id": "american-international-abdow",
+    "school": "American International",
+    "fullSchool": "American International College",
+    "team": "Yellow Jackets",
+    "stadium": "Ronald J. Abdow Field",
+    "city": "Springfield",
+    "state": "Massachusetts",
+    "opened": 2009,
+    "seatingCapacity": 4000,
+    "classification": "NCAA Division II",
+    "conference": "Northeast 10",
+    "mascot": "Rex",
+    "teamName": "American International Yellow Jackets",
+    "aliases": [
+      "American International College",
+      "American International Yellow Jackets",
+      "Ronald J. Abdow Field"
+    ],
+    "sources": [
+      {
+        "title": "Ronald J. Abdow Field",
+        "url": "https://aicyellowjackets.com/sports/2025/4/4/RONALD-J-ABDOW-FIELD.aspx"
+      },
+      {
+        "title": "2026 football schedule",
+        "url": "https://aicyellowjackets.com/sports/football/schedule/2026"
+      },
+      {
+        "title": "Rex mascot",
+        "url": "https://www.aic.edu/news/rexs-pantry-first-anniversary/"
+      },
+      {
+        "title": "Official 2019–20 visiting team guide",
+        "url": "https://s3.amazonaws.com/sidearm.sites/aicyellowjackets.com/documents/2020/2/4/AIC_Visiting_Team_Guide_19_20.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://aicyellowjackets.com/sports/2025/4/4/RONALD-J-ABDOW-FIELD.aspx"
+    },
+    "description": "American International’s Yellow Jackets play at Ronald J. Abdow Field in Springfield. The venue opened in 2009 and received new synthetic turf in 2020.",
+    "capacityNote": "Official overall capacity includes 2,000-seat main grandstand, additional visitor seating, and standing room at both ends. Do not mislabel 4,000 as all fixed seats.",
+    "capacityLabel": "Overall capacity (including standing room)",
+    "capacityDisplay": "4,000 total",
+    "capacityShortLabel": "Overall capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/american-international-abdow-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Ronald J. Abdow Field, home of the American International Yellow Jackets, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/american-international-abdow-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Ronald J. Abdow Field, home of the American International Yellow Jackets, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "amherst-pratt",
+    "school": "Amherst",
+    "fullSchool": "Amherst College",
+    "team": "Mammoths",
+    "stadium": "Pratt Field at Lehrman Stadium",
+    "city": "Amherst",
+    "state": "Massachusetts",
+    "opened": 1891,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "The Mammoth",
+    "teamName": "Amherst Mammoths",
+    "aliases": [
+      "Amherst College",
+      "Pratt Field",
+      "Lehrman Stadium",
+      "Amherst Mammoths",
+      "Pratt Field at Lehrman Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://athletics.amherst.edu/facilities/pratt-field-at-lehrman-stadium-the-neuhoff-lumley-track-conway-field-house/17"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://www.amherst.edu/system/files/media/Amherst-College-Visual-Identity-Toolkit-ATHLETICS-July-2023.pdf"
+      },
+      {
+        "title": "2026 NESCAC football statistics",
+        "url": "https://nescac.com/stats.aspx?conf=true&path=football&year=2026"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.amherst.edu/facilities/pratt-field-at-lehrman-stadium-the-neuhoff-lumley-track-conway-field-house/17"
+    },
+    "description": "Pratt Field has hosted Amherst football since 1891. The 2013 redevelopment added new grandstands, a press box, field house and eight-lane track.",
+    "capacityNote": "A consistent current capacity was not verified in the linked official sources.",
+    "capacityLabel": "Reported capacity",
+    "capacityDisplay": "Not verified",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/amherst-pratt-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Pratt Field at Lehrman Stadium, home of the Amherst Mammoths, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/amherst-pratt-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Pratt Field at Lehrman Stadium, home of the Amherst Mammoths, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "assumption-brian-kelly",
+    "school": "Assumption",
+    "fullSchool": "Assumption University",
+    "team": "Greyhounds",
+    "stadium": "Brian Kelly '83 Stadium",
+    "city": "Worcester",
+    "state": "Massachusetts",
+    "opened": 2005,
+    "seatingCapacity": 1200,
+    "classification": "NCAA Division II",
+    "conference": "Northeast 10",
+    "mascot": "Greyhound",
+    "teamName": "Assumption Greyhounds",
+    "aliases": [
+      "Assumption University",
+      "Assumption Greyhounds",
+      "Brian Kelly '83 Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Brian Kelly '83 Stadium",
+        "url": "https://assumptiongreyhounds.com/facilities/brian-kelly-83-stadium/1"
+      },
+      {
+        "title": "2026 football schedule",
+        "url": "https://assumptiongreyhounds.com/sports/football/schedule/2026"
+      },
+      {
+        "title": "University academic catalog",
+        "url": "https://www.assumption.edu/sites/default/files/academics/AcademicCatalog.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://assumptiongreyhounds.com/facilities/brian-kelly-83-stadium/1"
+    },
+    "description": "Assumption’s Greyhounds play at Brian Kelly ’83 Stadium in Worcester, a compact artificial-turf venue with a main sideline grandstand.",
+    "capacityNote": "Official bleacher capacity; actual game attendance can exceed this with standing room.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/assumption-brian-kelly-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Brian Kelly '83 Stadium, home of the Assumption Greyhounds, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/assumption-brian-kelly-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Brian Kelly '83 Stadium, home of the Assumption Greyhounds, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "bentley-yetten",
+    "school": "Bentley",
+    "fullSchool": "Bentley University",
+    "team": "Falcons",
+    "stadium": "Peter Yetten Field",
+    "city": "Waltham",
+    "state": "Massachusetts",
+    "opened": 1989,
+    "seatingCapacity": 4800,
+    "classification": "NCAA Division II",
+    "conference": "Northeast 10",
+    "mascot": "Flex the Falcon",
+    "teamName": "Bentley Falcons",
+    "aliases": [
+      "Bentley University",
+      "Bentley Falcons",
+      "Peter Yetten Field"
+    ],
+    "sources": [
+      {
+        "title": "Peter Yetten Field",
+        "url": "https://bentleyfalcons.com/sports/2025/1/10/peter-yetten-field.aspx"
+      },
+      {
+        "title": "Football venue information",
+        "url": "https://events.bentley.edu/bentley_university_football_stadium_591"
+      },
+      {
+        "title": "Athletic timeline",
+        "url": "https://bentleyfalcons.com/sports/2025/7/31/athletic-timeline.aspx"
+      },
+      {
+        "title": "Flex the Falcon",
+        "url": "https://www.bentley.edu/news/8-bentley-traditions-youll-want-be-part"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://bentleyfalcons.com/sports/2025/1/10/peter-yetten-field.aspx"
+    },
+    "description": "Bentley’s Falcons play at Peter Yetten Field in Waltham. The football field opened in 1989 and was dedicated to Yetten in September 2024.",
+    "capacityNote": "Official university events venue page says 4,800; current athletics site uses Peter Yetten Field, named September 2024.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/bentley-yetten-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Peter Yetten Field, home of the Bentley Falcons, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/bentley-yetten-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Peter Yetten Field, home of the Bentley Falcons, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "bridgewater-state-swenson",
+    "school": "Bridgewater State",
+    "fullSchool": "Bridgewater State University",
+    "team": "Bears",
+    "stadium": "Peter Mazzaferro Field at Swenson Athletic Complex",
+    "city": "Bridgewater",
+    "state": "Massachusetts",
+    "opened": 1974,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "BRISTACO the Bear",
+    "openedNote": "1974 opening from NCAA official stadium table; field renamed for Peter Mazzaferro with 2023 dedication (not a new stadium opening).",
+    "teamName": "Bridgewater State Bears",
+    "aliases": [
+      "Bridgewater State University",
+      "Peter Mazzaferro Field",
+      "Mazzaferro Field",
+      "Swenson Field",
+      "Ed Swenson Field",
+      "Swenson Athletic Complex",
+      "Bridgewater State Bears",
+      "Peter Mazzaferro Field at Swenson Athletic Complex"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://www.bridgew.edu/office/university-events/buildings-parking-lots"
+      },
+      {
+        "title": "Facility project designer",
+        "url": "https://galeassociates.com/project/bridgewater-state-university-swenson-field-complex/"
+      },
+      {
+        "title": "Official current mascot identity",
+        "url": "https://www.bridgew.edu/student-life/spirit-traditions"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      },
+      {
+        "title": "Current field name and 2023 dedication",
+        "url": "https://www.bridgew.edu/stories/2025/mazzaferro-field"
+      },
+      {
+        "title": "2026 Homecoming football venue",
+        "url": "https://www.bridgew.edu/homecoming/families"
+      },
+      {
+        "title": "NCAA official historical stadium table",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.bridgew.edu/stories/2025/mazzaferro-field"
+    },
+    "description": "Bridgewater State University’s Bears play at Peter Mazzaferro Field at Swenson Athletic Complex in Bridgewater, Massachusetts.",
+    "capacityNote": "Current total seating not directly verified. Designer specifies a 1,500-seat grandstand; NCAA historical total 2,000 predates later work.",
+    "capacityLabel": "Reported capacity",
+    "capacityDisplay": "Not verified",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/bridgewater-state-swenson-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Peter Mazzaferro Field at Swenson Athletic Complex, home of the Bridgewater State Bears, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/bridgewater-state-swenson-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Peter Mazzaferro Field at Swenson Athletic Complex, home of the Bridgewater State Bears, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "id": "curry-katz",
+    "school": "Curry",
+    "fullSchool": "Curry College",
+    "team": "Colonels",
+    "stadium": "Walter M. Katz Field",
+    "city": "Milton",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": 2000,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": "Colonel character retired (2020)",
+    "teamName": "Curry Colonels",
+    "aliases": [
+      "Curry College",
+      "Curry Colonels",
+      "Walter M. Katz Field"
+    ],
+    "sources": [
+      {
+        "title": "Purple turf announcement",
+        "url": "https://www.curry.edu/about-us/news-and-events/news/a-new-era-of-purple-pride-curry-college-announces-plans-for-all-purple-turf-this-fall"
+      },
+      {
+        "title": "Athletic facilities",
+        "url": "https://www.curry.edu/about-us/office-of-conference-services/athletic-facilities"
+      },
+      {
+        "title": "Athletics",
+        "url": "https://www.curry.edu/athletics"
+      },
+      {
+        "title": "Mascot retired",
+        "url": "https://www.curry.edu/about-us/news-and-events/news/curry-college-retires-colonel-mascot"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.curry.edu/about-us/news-and-events/news/a-new-era-of-purple-pride-curry-college-announces-plans-for-all-purple-turf-this-fall"
+    },
+    "description": "Curry’s Colonels play at Walter M. Katz Field in Milton. The college announced all-purple turf for 2026; these views use the official upgrade visualization as a reference.",
+    "capacityNote": "Use dated Feb 18 2026 official announcement saying 2000 bleacher seats; older generic facilities page says 1000 and conflicts.",
+    "capacityLabel": "Reported seating capacity (2026)",
+    "mascotLabel": "Mascot status",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates. The purple turf follows the college’s official 2026 upgrade visualization; the completed surface was not independently photographed for this release.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/curry-katz-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Walter M. Katz Field, home of the Curry Colonels, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/curry-katz-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Walter M. Katz Field, home of the Curry Colonels, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "dean-lippert",
+    "school": "Dean",
+    "fullSchool": "Dean College",
+    "team": "Bulldogs",
+    "stadium": "Dale Lippert Field",
+    "city": "Franklin",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": 1500,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "Boomer the Bulldog",
+    "openedNote": "Original opening year not established; scoreboard dedication 2011 is not stadium opening.",
+    "teamName": "Dean Bulldogs",
+    "aliases": [
+      "Dean College",
+      "Dale Lippert Field",
+      "Longley Athletic Complex",
+      "Dean Bulldogs"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://deanbulldogs.com/sports/2021/8/13/longley-athletic-complex.aspx"
+      },
+      {
+        "title": "Official current mascot identity",
+        "url": "https://www.dean.edu/events/details/installation-celebration/2022-10-13/"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      },
+      {
+        "title": "2026 Homecoming confirms venue and current mascot",
+        "url": "https://www.dean.edu/alumni/events-activities/homecoming/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://deanbulldogs.com/sports/2021/8/13/longley-athletic-complex.aspx"
+    },
+    "description": "Dean College’s Bulldogs play at Dale Lippert Field in Franklin, Massachusetts.",
+    "capacityNote": "Official college athletics facility page specifies a 1,500-seat natural-grass football stadium at Longley Athletic Complex.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/dean-lippert-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Dale Lippert Field, home of the Dean Bulldogs, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/dean-lippert-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Dale Lippert Field, home of the Dean Bulldogs, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "id": "endicott-hempstead",
+    "school": "Endicott",
+    "fullSchool": "Endicott College",
+    "team": "Gulls",
+    "stadium": "Melissa Hempstead '69 Stadium",
+    "city": "Beverly",
+    "state": "Massachusetts",
+    "opened": 2003,
+    "seatingCapacity": 3000,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": "Gully",
+    "teamName": "Endicott Gulls",
+    "aliases": [
+      "Endicott College",
+      "Endicott Gulls",
+      "Melissa Hempstead '69 Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Hempstead Stadium history",
+        "url": "https://www.endicott.edu/soundings/articles/fall-2019/advancement/more-than-just-a-name-meet-our-named-building-donors"
+      },
+      {
+        "title": "Athletic facilities",
+        "url": "https://misselwood.endicott.edu/book-your-event/overnight-programs/campus-and-athletic-facilities"
+      },
+      {
+        "title": "2024 self-guided tour",
+        "url": "https://www.endicott.edu/-/media/endicott/home/admission/plan-a-visit/selfguidedtouronline24.ashx?hash=F61474952652B8523E8F76D063A19A2826CA3483&la=en"
+      },
+      {
+        "title": "Gully mascot",
+        "url": "https://www.endicott.edu/about/why-endicott/our-history/endicott-mascot-gully"
+      },
+      {
+        "title": "Current football conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=8981"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.endicott.edu/soundings/articles/fall-2019/advancement/more-than-just-a-name-meet-our-named-building-donors"
+    },
+    "description": "Endicott’s Gulls play at Melissa Hempstead ’69 Stadium on the college’s wooded Beverly campus. The stadium opened in 2003 and expanded its visitor seating in 2012.",
+    "capacityNote": "Official campus events and history sources specify 3000, including 800 visitor stands added 2012; NCAA table older 2200 is superseded.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/endicott-hempstead-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Melissa Hempstead '69 Stadium, home of the Endicott Gulls, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/endicott-hempstead-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Melissa Hempstead '69 Stadium, home of the Endicott Gulls, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "framingham-state-bowditch",
+    "school": "Framingham State",
+    "fullSchool": "Framingham State University",
+    "team": "Rams",
+    "stadium": "Bowditch Field",
+    "city": "Framingham",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": 5300,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "Sam the Ram",
+    "capacityDisplay": "Approximately 5,300",
+    "openedDisplay": "1930s",
+    "openedNote": "City community-preservation plan describes Bowditch among 1930s WPA projects; precise opening year unverified.",
+    "teamName": "Framingham State Rams",
+    "aliases": [
+      "Framingham State University",
+      "Framingham State Rams",
+      "Bowditch Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://www.framinghamma.gov/1211/Bowditch-Field-Athletic-Cultural-Complex"
+      },
+      {
+        "title": "School homecoming football and mascot",
+        "url": "https://www.framingham.edu/homecoming-family-weekend"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      },
+      {
+        "title": "City facility history",
+        "url": "https://www.framinghamma.gov/DocumentCenter/View/45988/CP-Plan-Final-Draft-6-15-22"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.framinghamma.gov/1211/Bowditch-Field-Athletic-Cultural-Complex"
+    },
+    "description": "Framingham State University’s Rams play at Bowditch Field in Framingham, Massachusetts.",
+    "capacityNote": "Current municipal owner describes stands accommodating approximately 5,300 spectators; do not show as exact count.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/framingham-state-bowditch-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Bowditch Field, home of the Framingham State Rams, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/framingham-state-bowditch-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Bowditch Field, home of the Framingham State Rams, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "id": "mit-steinbrenner",
+    "school": "MIT",
+    "fullSchool": "Massachusetts Institute of Technology",
+    "team": "Engineers",
+    "stadium": "Henry G. Steinbrenner '27 Stadium",
+    "city": "Cambridge",
+    "state": "Massachusetts",
+    "opened": 1978,
+    "seatingCapacity": 1000,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": "Tim the Beaver",
+    "teamName": "MIT Engineers",
+    "aliases": [
+      "Massachusetts Institute of Technology",
+      "MIT Engineers",
+      "Roberts Field",
+      "Bob and Eveline Roberts Field",
+      "Henry G. Steinbrenner '27 Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://mitathletics.com/sports/2021/4/20/information-facilities-steinbrenner.aspx"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://brand.mit.edu/node/16"
+      },
+      {
+        "title": "2026 NEWMAC football standings",
+        "url": "https://newmacsports.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://mitathletics.com/sports/2021/4/20/information-facilities-steinbrenner.aspx"
+    },
+    "description": "MIT’s Engineers play on Roberts Field within Steinbrenner Stadium, part of the Institute’s compact Cambridge athletic campus.",
+    "capacityNote": "Official facility description says nearly 1,000, not an exact 1,000.",
+    "capacityLabel": "Reported seating capacity",
+    "capacityDisplay": "Nearly 1,000",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/mit-steinbrenner-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Henry G. Steinbrenner '27 Stadium, home of the MIT Engineers, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/mit-steinbrenner-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Henry G. Steinbrenner '27 Stadium, home of the MIT Engineers, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "massachusetts-maritime-clean-harbors",
+    "school": "Massachusetts Maritime",
+    "fullSchool": "Massachusetts Maritime Academy",
+    "team": "Buccaneers",
+    "stadium": "Clean Harbors Stadium",
+    "city": "Buzzards Bay",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "The Captain",
+    "openedNote": "Original stadium opening year not established. Architect documents grandstand completion in 2010, which is not the original stadium opening.",
+    "teamName": "Massachusetts Maritime Buccaneers",
+    "aliases": [
+      "Massachusetts Maritime Academy",
+      "Massachusetts Maritime Buccaneers",
+      "Clean Harbors Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://www.maritime.edu/sites/default/files/2021-09/Faculty%20Handbook%202021-2022%20V2.pdf"
+      },
+      {
+        "title": "Official current mascot identity",
+        "url": "https://www.maritime.edu/branding/athletics"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      },
+      {
+        "title": "Primary project architect: stadium grandstand",
+        "url": "https://www.civitects.com/project/mma-grandstands/"
+      },
+      {
+        "title": "University campus stadium references and aerial",
+        "url": "https://www.maritime.edu/press-releases"
+      },
+      {
+        "title": "State-hosted April 2026 campus feasibility study",
+        "url": "https://www.mass.gov/doc/mma2601-mma-wellness-center-feasibility-study-sasaki-2026/download"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.maritime.edu/sites/default/files/2021-09/Faculty%20Handbook%202021-2022%20V2.pdf"
+    },
+    "description": "Massachusetts Maritime Academy’s Buccaneers play at Clean Harbors Stadium in Buzzards Bay, Massachusetts.",
+    "capacityNote": "Current exact capacity not verified from owner. Common secondary 2,300 claim is not promoted to a verified value.",
+    "capacityLabel": "Reported capacity",
+    "capacityDisplay": "Not verified",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/massachusetts-maritime-clean-harbors-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Clean Harbors Stadium, home of the Massachusetts Maritime Buccaneers, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/massachusetts-maritime-clean-harbors-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Clean Harbors Stadium, home of the Massachusetts Maritime Buccaneers, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "merrimack-duane",
+    "school": "Merrimack",
+    "fullSchool": "Merrimack College",
+    "team": "Warriors",
+    "stadium": "Duane Stadium",
+    "city": "North Andover",
+    "state": "Massachusetts",
+    "opened": 2017,
+    "seatingCapacity": 3500,
+    "classification": "NCAA Division I FCS",
+    "conference": "Independent (football)",
+    "mascot": "Mack the Warrior",
+    "teamName": "Merrimack Warriors",
+    "aliases": [
+      "Merrimack College",
+      "Warrior Stadium",
+      "Merrimack Warriors",
+      "Duane Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://merrimackathletics.com/facilities/duane-stadium/16"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://www.merrimack.edu/about/"
+      },
+      {
+        "title": "2026 independent football schedule announcement",
+        "url": "https://merrimackathletics.com/news/2026/5/5/merrimack-football-announces-2026-schedule.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://merrimackathletics.com/facilities/duane-stadium/16"
+    },
+    "description": "Merrimack’s Warriors play at Duane Stadium in North Andover. Opened in October 2017, the venue hosts an independent FCS football program in 2026.",
+    "capacityNote": "Official facility says over 3,500, not exact.",
+    "capacityLabel": "Reported capacity",
+    "capacityDisplay": "Over 3,500",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/merrimack-duane-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Duane Stadium, home of the Merrimack Warriors, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/merrimack-duane-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Duane Stadium, home of the Merrimack Warriors, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "nichols-vendetti",
+    "school": "Nichols",
+    "fullSchool": "Nichols College",
+    "team": "Bison",
+    "stadium": "Michael J. Vendetti Field",
+    "city": "Dudley",
+    "state": "Massachusetts",
+    "opened": 1961,
+    "seatingCapacity": 3000,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": "Thunder the Bison",
+    "teamName": "Nichols Bison",
+    "aliases": [
+      "Nichols College",
+      "Nichols Bison",
+      "Michael J. Vendetti Field"
+    ],
+    "sources": [
+      {
+        "title": "Michael J. Vendetti Field",
+        "url": "https://nicholsathletics.com/facilities/michael-j-vendetti-field/2"
+      },
+      {
+        "title": "NCAA Division III record book",
+        "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "2008 football guide",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/nicholsathletics.com/documents/2008/10/23/2008FBGuide.pdf"
+      },
+      {
+        "title": "Mascot program",
+        "url": "https://nicholsathletics.com/sports/2014/7/17/GEN_0717142636.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://nicholsathletics.com/facilities/michael-j-vendetti-field/2"
+    },
+    "description": "Nichols’ Bison play at Michael J. Vendetti Field in Dudley. The multipurpose turf field sits inside an eight-lane running track amid the wooded campus.",
+    "capacityNote": "NCAA football record book and official 2008 media guide both 3000. Current facility page does not give number; nonofficial sites disagree. Field dedicated 2005, not originally opened then.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/nichols-vendetti-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Michael J. Vendetti Field, home of the Nichols Bison, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/nichols-vendetti-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Michael J. Vendetti Field, home of the Nichols Bison, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "salve-regina-toppa",
+    "school": "Salve Regina",
+    "fullSchool": "Salve Regina University",
+    "team": "Seahawks",
+    "stadium": "Toppa Field at Freebody Park",
+    "city": "Newport",
+    "state": "Rhode Island",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": "Seahawk",
+    "teamName": "Salve Regina Seahawks",
+    "aliases": [
+      "Salve Regina University",
+      "Toppa Field",
+      "Freebody Park",
+      "Salve Regina Seahawks",
+      "Toppa Field at Freebody Park"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://salveathletics.com/facilities/toppa-field/4"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://salveathletics.com/sports/2024/6/4/information-facilities-directions-index"
+      },
+      {
+        "title": "2026 NEWMAC football standings",
+        "url": "https://newmacsports.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://salveathletics.com/facilities/toppa-field/4"
+    },
+    "description": "Salve Regina’s Seahawks play at Toppa Field in Newport’s Freebody Park. The university began playing football here in 1992; synthetic turf followed in 2017.",
+    "capacityNote": "A consistent current capacity was not verified in the linked official sources.",
+    "capacityLabel": "Reported capacity",
+    "capacityDisplay": "Not verified",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/salve-regina-toppa-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Toppa Field at Freebody Park, home of the Salve Regina Seahawks, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/salve-regina-toppa-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Toppa Field at Freebody Park, home of the Salve Regina Seahawks, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "springfield-stagg",
+    "school": "Springfield",
+    "fullSchool": "Springfield College",
+    "team": "Pride",
+    "stadium": "Amos Alonzo Stagg Field",
+    "city": "Springfield",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": 3867,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": "Spirit the Majestic Lion",
+    "teamName": "Springfield Pride",
+    "aliases": [
+      "Springfield College",
+      "Stagg Field",
+      "Benedum Field",
+      "Springfield Pride",
+      "Amos Alonzo Stagg Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://springfieldcollegepride.com/sports/2023/10/20/information-facilities.aspx"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://springfield.edu/sites/default/files/Springfield-College-International-Students-Pre-Arrival-Guide-2024.pdf"
+      },
+      {
+        "title": "2026 NEWMAC football standings",
+        "url": "https://newmacsports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Bugbee Family Pavilion dedication",
+        "url": "https://springfield.edu/news/bugbee-family-pavilion-dedication-and-celebration"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://springfieldcollegepride.com/sports/2023/10/20/information-facilities.aspx"
+    },
+    "description": "Springfield’s Pride play at Amos Alonzo Stagg Field. The Bugbee Family Pavilion opened in 2024 beside the home bleachers.",
+    "capacityNote": "Reported capacity is based on the linked official venue source; standing-room attendance may differ.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/springfield-stagg-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Amos Alonzo Stagg Field, home of the Springfield Pride, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/springfield-stagg-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Amos Alonzo Stagg Field, home of the Springfield Pride, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "stonehill-wb-mason",
+    "school": "Stonehill",
+    "fullSchool": "Stonehill College",
+    "team": "Skyhawks",
+    "stadium": "W.B. Mason Stadium",
+    "city": "Easton",
+    "state": "Massachusetts",
+    "opened": 2005,
+    "seatingCapacity": 2400,
+    "classification": "NCAA Division I FCS",
+    "conference": "NEC",
+    "mascot": "Ace the Skyhawk",
+    "teamName": "Stonehill Skyhawks",
+    "aliases": [
+      "Stonehill College",
+      "W.B. Mason Stadium",
+      "Timothy J. Coughlin Memorial Field",
+      "Stonehill Skyhawks"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://stonehillskyhawks.com/facilities/w-b-mason-stadium/2"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://www.stonehill.edu/news/details/stonehill-college-from-a-to-z/"
+      },
+      {
+        "title": "2026 football schedule",
+        "url": "https://stonehillskyhawks.com/sports/football/schedule/2026"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://stonehillskyhawks.com/facilities/w-b-mason-stadium/2"
+    },
+    "description": "Stonehill’s Skyhawks play on Timothy J. Coughlin Memorial Field inside W.B. Mason Stadium. The Easton facility opened in 2005 and includes an eight-lane track.",
+    "capacityNote": "Reported capacity is based on the linked official venue source; standing-room attendance may differ.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/stonehill-wb-mason-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of W.B. Mason Stadium, home of the Stonehill Skyhawks, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/stonehill-wb-mason-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of W.B. Mason Stadium, home of the Stonehill Skyhawks, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "tufts-ellis-oval",
+    "school": "Tufts",
+    "fullSchool": "Tufts University",
+    "team": "Jumbos",
+    "stadium": "Ellis Oval / Zimman Field",
+    "city": "Somerville",
+    "state": "Massachusetts",
+    "opened": 1894,
+    "seatingCapacity": 4000,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Jumbo the Elephant",
+    "teamName": "Tufts Jumbos",
+    "aliases": [
+      "Tufts University",
+      "Ellis Oval",
+      "Zimman Field",
+      "Dussault Track",
+      "Tufts Jumbos",
+      "Ellis Oval / Zimman Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://gotuftsjumbos.com/facilities/ellis-oval-zimman-field-dussault-track/5"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://admissions.tufts.edu/discover-tufts/tufts-traditions/"
+      },
+      {
+        "title": "2026 NESCAC football statistics",
+        "url": "https://nescac.com/stats.aspx?conf=true&path=football&year=2026"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://gotuftsjumbos.com/facilities/ellis-oval-zimman-field-dussault-track/5"
+    },
+    "description": "Tufts’ Jumbos play on Zimman Field within Ellis Oval in Somerville. The complex dates to 1894 and received synthetic turf in 2021.",
+    "capacityNote": "School says approximately 4,000.",
+    "capacityLabel": "Approximate capacity",
+    "capacityDisplay": "Approx. 4,000",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/tufts-ellis-oval-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Ellis Oval / Zimman Field, home of the Tufts Jumbos, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/tufts-ellis-oval-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Ellis Oval / Zimman Field, home of the Tufts Jumbos, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "umass-dartmouth-cressy",
+    "school": "UMass Dartmouth",
+    "fullSchool": "University of Massachusetts Dartmouth",
+    "team": "Corsairs",
+    "stadium": "Cressy Field",
+    "city": "Dartmouth",
+    "state": "Massachusetts",
+    "opened": 1986,
+    "seatingCapacity": 1850,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "Arnie the Corsair",
+    "teamName": "UMass Dartmouth Corsairs",
+    "aliases": [
+      "University of Massachusetts Dartmouth",
+      "UMass Dartmouth Corsairs",
+      "Cressy Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://corsairathletics.com/facilities"
+      },
+      {
+        "title": "NCAA Division III stadium record book",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official current mascot identity",
+        "url": "https://www.umassd.edu/student-life/terms/"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://corsairathletics.com/facilities"
+    },
+    "description": "University of Massachusetts Dartmouth’s Corsairs play at Cressy Field in Dartmouth, Massachusetts.",
+    "capacityNote": "1,850 capacity and 1986 opening reported by official NCAA Division III stadium table; current athletics facilities page confirms Cressy Field. Old surface entry not relied on.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/umass-dartmouth-cressy-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Cressy Field, home of the UMass Dartmouth Corsairs, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/umass-dartmouth-cressy-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Cressy Field, home of the UMass Dartmouth Corsairs, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "id": "wpi-alumni",
+    "school": "WPI",
+    "fullSchool": "Worcester Polytechnic Institute",
+    "team": "Engineers",
+    "stadium": "H.Carr Field at Alumni Stadium",
+    "city": "Worcester",
+    "state": "Massachusetts",
+    "opened": null,
+    "seatingCapacity": 2800,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": "Gompei the Goat",
+    "teamName": "WPI Engineers",
+    "aliases": [
+      "Worcester Polytechnic Institute",
+      "WPI Engineers",
+      "Alumni Stadium",
+      "H.Carr Field",
+      "H.Carr Field at Alumni Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://athletics.wpi.edu/sports/2023/6/8/facilities-AlumniStadium-index.aspx"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://www.wpi.edu/student-experience/community/traditions"
+      },
+      {
+        "title": "2026 NEWMAC football standings",
+        "url": "https://newmacsports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "NCAA Division III football record book",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.wpi.edu/sports/2023/6/8/facilities-AlumniStadium-index.aspx"
+    },
+    "description": "WPI’s Engineers play at H.Carr Field within Alumni Stadium, surrounded by Norcross Track and the university’s Worcester campus.",
+    "capacityNote": "2,800 reported by NCAA official football record book; school facility page does not state capacity.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/wpi-alumni-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of H.Carr Field at Alumni Stadium, home of the WPI Engineers, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/wpi-alumni-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of H.Carr Field at Alumni Stadium, home of the WPI Engineers, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      }
+    ]
+  },
+  {
+    "id": "western-new-england-golden-bear",
+    "school": "Western New England",
+    "fullSchool": "Western New England University",
+    "team": "Golden Bears",
+    "stadium": "Golden Bear Stadium",
+    "city": "Springfield",
+    "state": "Massachusetts",
+    "opened": 2002,
+    "seatingCapacity": 2000,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": "Spirit",
+    "teamName": "Western New England Golden Bears",
+    "aliases": [
+      "Western New England University",
+      "Western New England Golden Bears",
+      "Golden Bear Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Golden Bear Stadium",
+        "url": "https://wnegoldenbears.com/sports/2023/6/16/information-facilities-golden-bear-stadium-index.aspx"
+      },
+      {
+        "title": "Current facilities index",
+        "url": "https://wnegoldenbears.com/facilities"
+      },
+      {
+        "title": "2026 football schedule announcement",
+        "url": "https://wnegoldenbears.com/news/2026/7/6/wne-football-unveils-2026-season-schedule.aspx"
+      },
+      {
+        "title": "Spirit mascot",
+        "url": "https://wne.edu/student-life/chatbot.cfm"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://wnegoldenbears.com/sports/2023/6/16/information-facilities-golden-bear-stadium-index.aspx"
+    },
+    "description": "Western New England’s Golden Bears play at Golden Bear Stadium in Springfield. The venue opened in 2002 and received synthetic turf in 2010.",
+    "capacityNote": "Official current facilities page says 2000; nonofficial 1500 figure not used.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/western-new-england-golden-bear-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Golden Bear Stadium, home of the Western New England Golden Bears, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/western-new-england-golden-bear-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Golden Bear Stadium, home of the Western New England Golden Bears, with surrounding setting.",
+        "width": 1672,
+        "height": 940
+      }
+    ]
+  },
+  {
+    "id": "westfield-state-alumni",
+    "school": "Westfield State",
+    "fullSchool": "Westfield State University",
+    "team": "Owls",
+    "stadium": "Alumni Field",
+    "city": "Westfield",
+    "state": "Massachusetts",
+    "opened": 1974,
+    "seatingCapacity": 4000,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "Nestor the Owl",
+    "capacityDisplay": "4,000 (2002 university report)",
+    "openedNote": "1974 construction date in Westfield State University Sports-authored August 2018 release reproduced by local newspaper; renovated 2006 and 2018.",
+    "teamName": "Westfield State Owls",
+    "aliases": [
+      "Westfield State University",
+      "Westfield State Owls",
+      "Alumni Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium / university source",
+        "url": "https://www.westfield.ma.edu/documents/2002-neche-self-study-pdfpdf"
+      },
+      {
+        "title": "Official current mascot identity",
+        "url": "https://www.westfield.ma.edu/news/welcome-owls-week-2025-kicks-academic-year"
+      },
+      {
+        "title": "2026 MASCAC active football membership",
+        "url": "https://corsairathletics.com/news/2026/8/20/football-tabbed-mascac-preseason-favorite-for-2026.aspx"
+      },
+      {
+        "title": "2026 Homecoming confirms current football venue",
+        "url": "https://www.westfieldalumni.org/celebrate/hoco26"
+      },
+      {
+        "title": "University Sports-authored renovation history, hosted by local newspaper",
+        "url": "https://thewestfieldnews.com/alumni-field-and-jerry-gravel-track-renovations-completed/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.westfield.ma.edu/documents/2002-neche-self-study-pdfpdf"
+    },
+    "description": "Westfield State University’s Owls play at Alumni Field in Westfield, Massachusetts.",
+    "capacityNote": "University 2002 self-study describes 4,000-seat bleachers added in 1978. Current seat count not independently restated; retain explicit historical-source qualifier.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/westfield-state-alumni-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Alumni Field, home of the Westfield State Owls, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/westfield-state-alumni-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Alumni Field, home of the Westfield State Owls, with surrounding setting.",
+        "width": 1536,
+        "height": 1024
+      }
+    ]
+  },
+  {
+    "id": "williams-farley-lamb",
+    "school": "Williams",
+    "fullSchool": "Williams College",
+    "team": "Ephs",
+    "stadium": "Farley-Lamb Field",
+    "city": "Williamstown",
+    "state": "Massachusetts",
+    "opened": 2014,
+    "seatingCapacity": 1500,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Ephelia the Purple Cow",
+    "teamName": "Williams Ephs",
+    "aliases": [
+      "Williams College",
+      "Weston Field Athletic Complex",
+      "Weston Field",
+      "Farley Lamb",
+      "Williams Ephs",
+      "Farley-Lamb Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium/facility",
+        "url": "https://ephsports.williams.edu/sports/2020/8/10/farley-lamb-field.aspx?id=854"
+      },
+      {
+        "title": "Official mascot/identity",
+        "url": "https://identity.williams.edu/"
+      },
+      {
+        "title": "2026 NESCAC football statistics",
+        "url": "https://nescac.com/stats.aspx?conf=true&path=football&year=2026"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://ephsports.williams.edu/sports/2020/8/10/farley-lamb-field.aspx?id=854"
+    },
+    "description": "Williams’ Ephs play on Farley-Lamb Field, the football venue in the redeveloped Weston Field Athletic Complex. The current field opened in 2014.",
+    "capacityNote": "1,500 home bleacher seats plus standing room (school description).",
+    "capacityLabel": "Home bleacher seats",
+    "capacityShortLabel": "Home bleacher seats",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. See the linked sources and artwork credits for reference dates.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/williams-farley-lamb-aerial.png",
+        "alt": "AI-generated reference-based aerial reconstruction of Farley-Lamb Field, home of the Williams Ephs, with surrounding setting.",
+        "width": 1672,
+        "height": 941
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/williams-farley-lamb-reverse.png",
+        "alt": "AI-generated reference-based reverse reconstruction of Farley-Lamb Field, home of the Williams Ephs, with surrounding setting.",
         "width": 1672,
         "height": 941
       }

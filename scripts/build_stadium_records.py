@@ -8,15 +8,18 @@ raw provider data are written, printed, cached, or included in the artifact.
 Only this app's reviewed overall/conference display labels are embedded in catalog.js.
 Pillow 12.3.0 produces hosting-only lossless WebP artwork; every decoded pixel
 and native dimension is verified. Original source PNGs are never rewritten.
-No authenticated coverage is assumed: a missing school (including Ivy/FCS)
-blocks the entire build, preserving the previous successful Pages deployment.
+No authenticated coverage is assumed: a missing Division I school (including
+Ivy/FCS) blocks the entire build, preserving the previous successful Pages
+deployment. Division II/III rows may explicitly say unavailable only when a
+successful provider response lacks the reviewed identity or season record.
+Malformed or ambiguous data still blocks the build, including for Division II/III.
 """
 from __future__ import annotations
 
 import argparse
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from html.parser import HTMLParser
 import json
 import os
@@ -35,6 +38,13 @@ ROOT_FILES = frozenset({"index.html", "styles.css", "app.js", "catalog.js", "sit
 ASSET_SUFFIXES = frozenset({".png", ".svg", ".ico", ".jpg", ".jpeg", ".webp", ".avif"})
 MAX_RESPONSE_BYTES = 8 * 1024 * 1024
 MAX_GAMES = 30  # Sanity ceiling; never infer a record from absent data.
+SNAPSHOT_SCHEMA = 2
+CLASSIFICATION_LABELS = {
+    "fbs": "NCAA Division I FBS", "fcs": "NCAA Division I FCS",
+    "ii": "NCAA Division II", "iii": "NCAA Division III",
+}
+OPTIONAL_CLASSIFICATIONS = frozenset({"NCAA Division II", "NCAA Division III"})
+UNAVAILABLE_REASONS = frozenset({"identity-unverified", "record-unavailable"})
 
 # Stadium IDs and display names are local, reviewed app data. Error summaries
 # only use these known names, never arbitrary strings returned by the API.
@@ -249,7 +259,36 @@ SCHOOLS = {
     'wofford-gibbs': ('Wofford', 'fcs'),
     'duquesne-rooney': ('Duquesne', 'fcs'),
 }
-# The 209 reviewed identities include twenty FCS additions for v1.15.0. Public
+# Additional reviewed local identities; no claim of authenticated provider coverage.
+# Exact-name lookup is attempted in the same successful /teams and /records
+# responses. No secondary provider, invented stats, or division-only API call.
+SCHOOLS.update({
+    'american-international-abdow': ('American International', 'ii'),
+    'assumption-brian-kelly': ('Assumption', 'ii'),
+    'bentley-yetten': ('Bentley', 'ii'),
+    'curry-katz': ('Curry', 'iii'),
+    'endicott-hempstead': ('Endicott', 'iii'),
+    'nichols-vendetti': ('Nichols', 'iii'),
+    'western-new-england-golden-bear': ('Western New England', 'iii'),
+    'fitchburg-state-elliot': ('Fitchburg State', 'iii'),
+    'worcester-state-coughlin': ('Worcester State', 'iii'),
+    'bridgewater-state-swenson': ('Bridgewater State', 'iii'),
+    'framingham-state-bowditch': ('Framingham State', 'iii'),
+    'westfield-state-alumni': ('Westfield State', 'iii'),
+    'massachusetts-maritime-clean-harbors': ('Massachusetts Maritime', 'iii'),
+    'umass-dartmouth-cressy': ('UMass Dartmouth', 'iii'),
+    'dean-lippert': ('Dean', 'iii'),
+    'mit-steinbrenner': ('MIT', 'iii'),
+    'wpi-alumni': ('WPI', 'iii'),
+    'springfield-stagg': ('Springfield', 'iii'),
+    'salve-regina-toppa': ('Salve Regina', 'iii'),
+    'amherst-pratt': ('Amherst', 'iii'),
+    'tufts-ellis-oval': ('Tufts', 'iii'),
+    'williams-farley-lamb': ('Williams', 'iii'),
+    'stonehill-wb-mason': ('Stonehill', 'fcs'),
+    'merrimack-duane': ('Merrimack', 'fcs'),
+})
+# The original 209 reviewed identities include twenty FCS additions for v1.15.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
 # These names are intentionally not replaced by Hawaii or Appalachian State.
@@ -282,7 +321,7 @@ DISPLAY_NAMES = {
 }
 
 # Explicit football independents: preserve null conference records.
-INDEPENDENT_STADIUMS = frozenset({"notre-dame", "uconn-rentschler-field"})
+INDEPENDENT_STADIUMS = frozenset({"notre-dame", "uconn-rentschler-field", "merrimack-duane"})
 
 # The reviewed third-view set retains Syracuse and UNLV (v1.9.2), and adds
 # Fargodome (draft v1.14.1) after both existing exterior views. Keep the count exact so missing or unexpected
@@ -296,6 +335,10 @@ INTERIOR_VIEW_STADIUMS = frozenset({
 })
 
 EXPLICIT_ALIASES = {
+    # School-specific official full forms, not generic provider abbreviations.
+    # Their current provider IDs and classes still require authenticated validation.
+    "mit-steinbrenner": ("Massachusetts Institute of Technology",),
+    "wpi-alumni": ("Worcester Polytechnic Institute",),
     # Reviewed university spelling; exact match only, never Albany State.
     "ualbany-casey": ("UAlbany",),
     # Provider-style name for this one FCS school; retain its full UI label.
@@ -378,8 +421,10 @@ def validate_catalog(catalog) -> None:
         name, classification = SCHOOLS[sid]
         if sid in found:
             raise BuildError("The catalog contains duplicate stadium IDs.", [sid])
-        if item.get("school") != DISPLAY_NAMES.get(sid, name) or item.get("classification") != f"NCAA Division I {classification.upper()}":
+        if item.get("school") != DISPLAY_NAMES.get(sid, name) or item.get("classification") != CLASSIFICATION_LABELS[classification]:
             raise BuildError("The catalog identity or football classification has changed.", [sid])
+        if (item.get("conference") == "Independent (football)") != (sid in INDEPENDENT_STADIUMS):
+            raise BuildError("The catalog independent-football designation has changed.", [sid])
         expected_views = 3 if sid in INTERIOR_VIEW_STADIUMS else 2
         if not isinstance(item.get("views"), list) or len(item["views"]) != expected_views:
             count_label = "three" if expected_views == 3 else "two"
@@ -484,7 +529,16 @@ def fetch_json(endpoint: str, key: str):
         raise BuildError("The provider returned invalid JSON; build stopped.") from None
 
 
-def resolve_teams(metadata) -> dict[str, dict]:
+def required_record_ids(catalog: list[dict]) -> set[str]:
+    """Catalog classification, not a hardcoded count, determines strict coverage.
+
+    validate_catalog locks every reviewed ID to its expected classification first;
+    relabeling an existing DI school cannot make its records optional.
+    """
+    return {item["id"] for item in catalog if item["classification"] not in OPTIONAL_CLASSIFICATIONS}
+
+
+def resolve_teams(metadata, catalog: list[dict]) -> dict[str, dict]:
     if not isinstance(metadata, list) or not metadata or len(metadata) > 10000:
         raise BuildError("Team metadata is missing or malformed.")
     by_id = defaultdict(list)
@@ -494,13 +548,15 @@ def resolve_teams(metadata) -> dict[str, dict]:
             raise BuildError("Team metadata contains a malformed identity.")
         by_id[row["id"]].append(row)
         by_name[canonical(row["school"])].append(row)
+    required = required_record_ids(catalog)
     resolved = {}
     failures = defaultdict(list)
     used_ids = {}
     for sid, (_, expected_class) in SCHOOLS.items():
         candidates = [row for name in accepted_names(sid) for row in by_name.get(name, [])]
         if not candidates:
-            failures["Missing team metadata."].append(sid)
+            if sid in required:
+                failures["Missing team metadata."].append(sid)
             continue
         if len(candidates) != 1 or len(by_id[candidates[0]["id"]]) != 1:
             failures["Ambiguous or duplicate team metadata."].append(sid)
@@ -536,7 +592,8 @@ def record_label(counts: dict) -> str:
 
 def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
     validate_catalog(catalog)
-    resolved = resolve_teams(metadata)
+    resolved = resolve_teams(metadata, catalog)
+    required = required_record_ids(catalog)
     if not isinstance(records, list) or not records or len(records) > 10000:
         raise BuildError("Season records are missing or malformed.")
     by_id = defaultdict(list)
@@ -548,7 +605,13 @@ def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
     for item in catalog:
         sid = item["id"]
         try:
+            if sid not in resolved:
+                rows.append(unavailable_row(sid, "identity-unverified"))
+                continue
             selected = by_id.get(resolved[sid]["id"], [])
+            if not selected and sid not in required:
+                rows.append(unavailable_row(sid, "record-unavailable"))
+                continue
             if len(selected) != 1:
                 raise BuildError("Season records are missing or have duplicate team IDs.", [sid])
             record = selected[0]
@@ -565,9 +628,9 @@ def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
                 if any(conference[field] > total[field] for field in ("games", "wins", "losses", "ties")):
                     raise BuildError("Conference counts exceed the overall record.", [sid])
                 conference_label = record_label(conference)
-            # Notre Dame and UConn are football independents: conferenceGames
+            # Reviewed football independents: conferenceGames
             # may legitimately be missing/null. Never display a provider 0-0.
-            rows.append({"stadiumId": sid, "overall": record_label(total),
+            rows.append({"stadiumId": sid, "status": "available", "overall": record_label(total),
                          "conference": conference_label})
         except BuildError as exc:
             failures.append(exc)
@@ -579,9 +642,75 @@ def make_snapshot(catalog: list[dict], metadata, records, now=None) -> dict:
     checked = now or datetime.now(timezone.utc)
     if not isinstance(checked, datetime) or checked.tzinfo is None:
         raise BuildError("A valid UTC check time is required.")
-    return {"schemaVersion": 1, "season": SEASON,
-            "checkedAt": checked.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
-            "source": "CollegeFootballData", "rows": rows}
+    snapshot = {"schemaVersion": SNAPSHOT_SCHEMA, "season": SEASON,
+                "checkedAt": checked.astimezone(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z"),
+                "source": "CollegeFootballData", "rows": rows}
+    validate_snapshot(catalog, snapshot, now=checked)
+    return snapshot
+
+
+def unavailable_row(sid: str, reason: str) -> dict:
+    return {"stadiumId": sid, "status": "unavailable", "reason": reason,
+            "overall": None, "conference": None}
+
+
+def label_counts(value):
+    if not isinstance(value, str) or not re.fullmatch(r"\d{1,2}-\d{1,2}(?:-\d{1,2})?", value, flags=re.ASCII):
+        return None
+    parts = tuple(map(int, value.split("-")))
+    if sum(parts) > MAX_GAMES:
+        return None
+    return (*parts, 0) if len(parts) == 2 else parts
+
+
+def validate_snapshot(catalog: list[dict], snapshot, now=None) -> None:
+    """Recheck the exact sanitized schema before artifact publication."""
+    validate_catalog(catalog)
+    if (not isinstance(snapshot, dict)
+            or set(snapshot) != {"schemaVersion", "season", "checkedAt", "source", "rows"}
+            or type(snapshot["schemaVersion"]) is not int or snapshot["schemaVersion"] != SNAPSHOT_SCHEMA
+            or type(snapshot["season"]) is not int or snapshot["season"] != SEASON
+            or snapshot["source"] != "CollegeFootballData"
+            or not isinstance(snapshot["rows"], list) or len(snapshot["rows"]) != len(catalog)):
+        raise BuildError("The sanitized records snapshot has an invalid schema or incomplete coverage.")
+    checked_at = snapshot["checkedAt"]
+    if not isinstance(checked_at, str) or not re.fullmatch(r"\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z", checked_at, flags=re.ASCII):
+        raise BuildError("The records check time is invalid.")
+    try:
+        checked = datetime.fromisoformat(checked_at.replace("Z", "+00:00"))
+    except ValueError:
+        raise BuildError("The records check time is invalid.") from None
+    current = now or datetime.now(timezone.utc)
+    if (not isinstance(current, datetime) or current.tzinfo is None
+            or checked < datetime(SEASON, 1, 1, tzinfo=timezone.utc)
+            or checked > current + timedelta(minutes=5)):
+        raise BuildError("The records check time is outside the allowed season or clock range.")
+    required = required_record_ids(catalog)
+    known_ids = {item["id"] for item in catalog}
+    seen = set()
+    for row in snapshot["rows"]:
+        if not isinstance(row, dict) or not isinstance(row.get("stadiumId"), str):
+            raise BuildError("A sanitized records row is malformed.")
+        sid = row["stadiumId"]
+        if sid not in known_ids or sid in seen:
+            raise BuildError("A sanitized records row is unknown or duplicated.")
+        seen.add(sid)
+        if row.get("status") == "unavailable":
+            if (sid in required or set(row) != {"stadiumId", "status", "reason", "overall", "conference"}
+                    or row.get("reason") not in UNAVAILABLE_REASONS
+                    or row.get("overall") is not None or row.get("conference") is not None):
+                raise BuildError("An unavailable records row violates the division coverage policy.", [sid])
+            continue
+        if row.get("status") != "available" or set(row) != {"stadiumId", "status", "overall", "conference"}:
+            raise BuildError("A sanitized records row has an invalid status or fields.", [sid])
+        overall = label_counts(row.get("overall"))
+        conference = label_counts(row.get("conference"))
+        if (not overall or (sid in INDEPENDENT_STADIUMS and row.get("conference") is not None)
+                or (sid not in INDEPENDENT_STADIUMS
+                    and (not conference or any(c > t for c, t in zip(conference, overall))))):
+            raise BuildError("A sanitized records row has invalid display counts.", [sid])
+    if seen != known_ids:
+        raise BuildError("The sanitized records snapshot omits reviewed schools.")
 
 
 def hosted_artwork_plan(catalog_text: str) -> tuple[str, dict[str, tuple[str, tuple[int, int]]]]:
@@ -627,6 +756,8 @@ def build_artifact(source: Path, output: Path, catalog_text: str, snapshot: dict
         raise BuildError("The output path must be new; existing files were preserved.")
     if not output.parent.is_dir():
         raise BuildError("The output parent directory does not exist.")
+    _, catalog_raw = catalog_text.split(CATALOG_MARKER)
+    validate_snapshot(strict_json(catalog_raw.rstrip()[:-1]), snapshot)
     hosted_catalog, artwork = hosted_artwork_plan(catalog_text)
     hosted_files = (files - artwork.keys()) | {value[0] for value in artwork.values()}
     if len(hosted_files) != len(files):
@@ -671,7 +802,7 @@ def report(message: str, success=False):
         try:
             with open(summary_path, "a", encoding="utf-8") as summary:
                 summary.write(f"## Stadium Atlas records\n\n{text}\n\n")
-                summary.write("Only a complete, validated 2026 snapshot may be deployed. No raw API data is published.\n")
+                summary.write("All Division I records must be verified; Division II/III absences are explicit, never inferred zeroes. No raw API data is published.\n")
                 if not success:
                     summary.write("No replacement artifact was published by this step. The last successful Pages deployment is unchanged.\n")
         except OSError:
@@ -699,9 +830,10 @@ def main(argv=None) -> int:
         snapshot = make_snapshot(catalog, metadata, records)
         del metadata, records
         build_artifact(args.source, args.output, catalog_text, snapshot, files)
-        fbs_count = sum(classification == "fbs" for _, classification in SCHOOLS.values())
-        fcs_count = sum(classification == "fcs" for _, classification in SCHOOLS.values())
-        report(f"All {len(SCHOOLS)} schools ({fbs_count} FBS and {fcs_count} FCS) passed identity, season, classification, and record checks. All hosted stadium artwork passed pixel-identical lossless checks. The artifact is ready for the separate Pages deployment job.", success=True)
+        required_count = len(required_record_ids(catalog))
+        verified_count = sum(row["status"] == "available" for row in snapshot["rows"])
+        unavailable_count = len(catalog) - verified_count
+        report(f"All {required_count} Division I schools passed identity, season, classification, and record checks. {verified_count} of {len(catalog)} schools have verified records; {unavailable_count} Division II/III schools are explicitly unavailable. All hosted stadium artwork passed pixel-identical lossless checks. The artifact is ready for the separate Pages deployment job.", success=True)
         return 0
     except BuildError as exc:
         report(exc.public_message())

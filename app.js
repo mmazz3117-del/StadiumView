@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.17.0';
+  const BUILD = '1.17.1';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.17.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.17.1 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -68,6 +68,10 @@
   const divisionFilter = $('#division-filter');
   const sortSelect = $('#stadium-sort');
   let sortOrder = 'school';
+  const selectedStates = new Set();
+  const stateFilter = $('#state-filter');
+  const stateKey = item => typeof item.state === 'string' ? item.state.trim() : '';
+  function hasFilters() { return !!(selectedStates.size || query || letter !== 'All' || conference || classification); }
   const dialog = $('#image-viewer');
   const stage = $('#zoom-stage');
   let viewerImage = $('#viewer-image');
@@ -424,7 +428,7 @@
   $('#start-slideshow').addEventListener('click', () => {
     if (dialog.open || closingViewer || dialog.hidden || !$('#release-warning').hidden) return;
     const from = location.hash || '#collection';
-    history.pushState({stadiumAtlasSlideshow:{from,owned:true,scope:'all'}},'', '#slideshow');
+    history.pushState({stadiumAtlasSlideshow:{from,owned:true,scope:hasFilters() ? 'filtered' : 'all'}},'', '#slideshow');
     route();
     setSlideshowPlaying(true);
     requestViewerFullscreen();
@@ -586,13 +590,38 @@
   }
   conferenceFilter.addEventListener('change', () => { conference = conferenceFilter.value; renderResults(); });
   divisionFilter.addEventListener('change', () => { classification = divisionFilter.value; renderResults(); });
+  const stateCounts = new Map();
+  for (const item of catalog) { const key = stateKey(item); stateCounts.set(key, (stateCounts.get(key) || 0) + 1); }
+  const stateNames = [...stateCounts.keys()].sort((a,b) => Number(!a) - Number(!b) || a.localeCompare(b));
+  for (const [index, name] of stateNames.entries()) {
+    const label = document.createElement('label');
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox'; checkbox.value = name; checkbox.id = `state-choice-${index}`;
+    checkbox.setAttribute('aria-controls', 'stadium-list');
+    checkbox.setAttribute('aria-describedby', 'state-filter-help');
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) selectedStates.add(name); else selectedStates.delete(name);
+      if (selectedStates.size === stateNames.length) selectedStates.clear();
+      renderResults();
+    });
+    const caption = document.createElement('span');
+    caption.textContent = `${name || 'Location unspecified'} (${stateCounts.get(name)})`;
+    label.append(checkbox, caption); $('#state-options').append(label);
+  }
+  function closeStateFilter() { stateFilter.open = false; $('#state-filter-toggle').focus(); }
+  $('#state-filter-done').addEventListener('click', closeStateFilter);
+  stateFilter.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && stateFilter.open) { event.preventDefault(); event.stopPropagation(); closeStateFilter(); }
+  });
+  $('#all-states').addEventListener('click', () => { selectedStates.clear(); renderResults(); });
+  function selectedStateDescription() { return [...selectedStates].sort((a,b) => a.localeCompare(b)).map(name => name || 'Location unspecified').join(', '); }
   function filterDescription() {
-    return [conference, classification, letter !== 'All' ? `Schools starting with ${letter}` : '', query ? `Search: “${query}”` : ''].filter(Boolean).join(' · ');
+    return [selectedStates.size ? `States: ${selectedStateDescription()}` : '', conference, classification, letter !== 'All' ? `Schools starting with ${letter}` : '', query ? `Search: “${query}”` : ''].filter(Boolean).join(' · ');
   }
 
   function matches(item) {
     const searchable = normalize([item.school, item.fullSchool, item.team, item.teamName, item.mascot, item.stadium, item.city, item.state, ...(item.aliases || [])].join(' '));
-    return (!conference || item.conference === conference) && (!classification || item.classification === classification) && (letter === 'All' || item.school.toUpperCase().startsWith(letter)) && normalize(query).split(/\s+/).filter(Boolean).every(word => searchable.includes(word));
+    return (!selectedStates.size || selectedStates.has(stateKey(item))) && (!conference || item.conference === conference) && (!classification || item.classification === classification) && (letter === 'All' || item.school.toUpperCase().startsWith(letter)) && normalize(query).split(/\s+/).filter(Boolean).every(word => searchable.includes(word));
   }
   function compareSchools(a, b) {
     return a.school.localeCompare(b.school) || a.id.localeCompare(b.id);
@@ -615,10 +644,13 @@
     const views = results.reduce((sum,item) => sum + item.views.length, 0);
     $$('.letter').forEach(button => { const selected = button.dataset.letter === letter; button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected)); });
     $('#clear-search').hidden = !query;
-    $('#reset-filters').hidden = !query && letter === 'All' && !conference && !classification;
+    $('#reset-filters').hidden = !hasFilters();
+    $$('#state-options input').forEach(box => { box.checked = selectedStates.has(box.value); });
+    $('#state-selection-summary').textContent = !selectedStates.size ? 'All states' : selectedStates.size === 1 ? selectedStateDescription() : `${selectedStates.size} states selected`;
+    $('#state-filter-toggle').title = selectedStates.size ? selectedStateDescription() : 'All states';
     $('#filter-summary').textContent = filterDescription();
     $('#filter-summary').hidden = !filterDescription();
-    $('#results-title').textContent = query ? 'Search results' : conference || classification ? 'Filtered collection' : letter === 'All' ? 'The collection' : `${letter} · Schools`;
+    $('#results-title').textContent = query ? 'Search results' : conference || classification || selectedStates.size ? 'Filtered collection' : letter === 'All' ? 'The collection' : `${letter} · Schools`;
     $('#result-count').textContent = `${results.length} stadium${results.length === 1 ? '' : 's'}${results.length ? ` · ${views} views` : ''}${sortOrder === 'state' ? ' · State A–Z' : ''}`;
     $('#collection-total').textContent = String(catalog.length).padStart(3,'0');
     $('#collection-note-text').textContent = catalog.length === 1 ? 'Starting in Eugene. More home fields to come.' : `${catalog.length} home fields. ${catalog.reduce((sum,item) => sum + item.views.length,0)} perspectives. More to come.`;
@@ -636,7 +668,7 @@
     }).join('');
     updateRecordLabels();
     $('#empty-state').hidden = results.length > 0;
-    $('#empty-copy').textContent = `No stadiums match ${filterDescription() || 'these filters'}. Try another conference, division, letter, or search, or show all ${catalog.length} stadiums.`;
+    $('#empty-copy').textContent = `No stadiums match ${filterDescription() || 'these filters'}. Try another state, conference, division, letter, or search, or show all ${catalog.length} stadiums.`;
   }
   function syncCardView(item) {
     const card = $(`.stadium-card[data-stadium-id="${item.id}"]`);
@@ -786,7 +818,7 @@
   window.addEventListener('pointercancel', endCardPointer);
   cardList.addEventListener('lostpointercapture', endCardPointer);
   window.addEventListener('blur', cancelCardGesture);
-  function resetFilters() { letter = 'All'; query = ''; conference = ''; classification = ''; input.value = ''; conferenceFilter.value = ''; divisionFilter.value = ''; renderResults(); }
+  function resetFilters() { selectedStates.clear(); letter = 'All'; query = ''; conference = ''; classification = ''; input.value = ''; conferenceFilter.value = ''; divisionFilter.value = ''; renderResults(); }
   input.addEventListener('input', () => { query = input.value; renderResults(); });
   $('.search-form').addEventListener('submit', event => { event.preventDefault(); input.blur(); });
   $('#clear-search').addEventListener('click', () => { query = ''; input.value = ''; renderResults(); input.focus(); });

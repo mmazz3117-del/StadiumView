@@ -1,100 +1,37 @@
-STADIUM ATLAS v1.17.0 — STATE SORTING + 15 NEW ENGLAND STADIUMS
-248 schools / 499 views. Update for your existing v1.16.0 repository.
+STADIUM ATLAS v1.17.1 — PICK ONE OR MULTIPLE STATES
 
-WHAT'S NEW
-Use the new “Sort by” selector above the school cards:
-- School A–Z: the existing default alphabetical view.
-- State A–Z: full state names alphabetically, then schools alphabetically.
-Search, conference/division filters and A–Z school-initial buttons still work.
-Reset filters keeps your chosen sort. Reloading starts with School A–Z.
-Slideshow ordering and grouped-school shuffle are unchanged.
+Starting folder: your Stadium Atlas repository ROOT, where index.html is listed.
+Do not open assets or scripts for this update.
 
-ADDED STADIUMS
-Connecticut: Coast Guard, Trinity, Wesleyan, Western Connecticut.
-Maine: Bates, Bowdoin, Colby, Husson, University of New England.
-New Hampshire: Franklin Pierce, Plymouth State, Saint Anselm.
-Vermont: Middlebury, Norwich, Vermont State Castleton.
-
-UPLOAD IN THIS ORDER
-1. START AT THE REPOSITORY ROOT (the page showing index.html).
-   Open the existing assets folder. If you are already inside assets, stay
-   there; do not open/create another assets folder. Extract every image ZIP
-   on your computer and upload its PNG files directly into this open folder.
-   Expected paths from the repository root are assets/<filename>.png.
-   Keep all earlier images. Do not upload ZIPs or create Part folders.
-2. RETURN TO THE REPOSITORY ROOT, then open the existing scripts folder.
-   If you are already inside scripts, stay there. From the extracted app ZIP,
-   select the file build_stadium_records.py inside its local scripts folder.
-   Upload that FILE into the currently open GitHub scripts folder, replacing
-   build_stadium_records.py. Final root-relative path:
-   scripts/build_stadium_records.py — not scripts/scripts/...
-3. RETURN TO THE REPOSITORY ROOT (not assets or scripts).
-   LAST, replace these FOUR root files together in ONE commit:
+1. Extract this ZIP on your computer.
+2. At the repository ROOT, choose Add file > Upload files.
+3. Upload these FOUR extracted files together, replacing the existing files:
    index.html
    styles.css
    app.js
    catalog.js
-   Do not commit them individually or upload their containing local folder.
-4. The index.html change triggers the existing records/deployment workflow.
-   Open Actions > Refresh Stadium Atlas records and inspect the NEW commit.
-   If needed, choose Run workflow on main. Do not re-run an old job.
-5. After successful deployment, hard-refresh the site with Ctrl+F5.
+4. Commit all four files together. Do not upload the ZIP, its containing folder,
+   this READ-ME, or QA-NOTES.txt. No photo or records-script upload is needed.
+5. In Actions, check the NEW workflow run for this commit. If no new run starts,
+   open Refresh Stadium Atlas records > Run workflow > main > Run workflow.
+   Do not rerun an old job: it can use the old files.
+6. After the new deployment succeeds, open the app and press Ctrl+F5.
+   The version badge should read v1.17.1.
 
-Keep the existing workflow, secret, site.webmanifest, custom-domain settings
-and all earlier assets. The notes/credits are reference documents, not extra
-application files required for this upload. An automatic run between steps 2
-and 3 may safely stop because the older catalog is still present; finish the
-four-file commit and use its new run.
+HOW TO USE
+Open States above the A–Z school buttons. Tick one or several state boxes.
+A school may match ANY selected state; search, conference, division and school
+letter choices still apply as additional filters. Counts beside states show
+schools in the full collection, not counts under other active filters.
+All states clears only the state selection. Unchecking the last state also
+returns to All states. Selecting every state returns to All states as well.
+Reset filters clears all browse filters. Sorting remains available separately.
+Done or Escape closes the state choices. Selections stay while moving between
+school details and the collection, but a page reload starts with All states.
 
-RECORDS
-The latest fixes are included: safe missing-file diagnostics and explicit
-record-inconsistent status. All 211 Division I schools remain mandatory.
-The 37 Division II/III schools can show unavailable when no safe exact school
-identity or record is found, or when verified numeric counts disagree.
-No records are invented, normalized, or treated as zero. Malformed values,
-wrong identities/seasons/classifications, duplicates and shared provider
-errors remain blocking. Trinity Connecticut and University of New England
-use conservative identities to avoid mixing up similarly named schools.
-A later valid refresh automatically restores a withheld record.
+Start slideshow now begins with Current filtered results whenever any browse
+filter is active. Its Photos menu can still explicitly switch to All photos.
+A filter with no matches stays empty; it does not silently show other states.
 
-Current authenticated provider coverage must pass your new workflow; no live
-provider request or deployment was performed while preparing this update.
-The original 233 schools and 469 view entries are retained unchanged.
-
-ARTWORK
-All 30 new views are AI-generated, reference-based architectural illustrations,
-not current photographs or survey-accurate drawings. Fine markings, unseen
-architecture and surrounding details are approximate. Source-era and factual
-qualifications are disclosed in venue details and the included credits.
-
-EXPECTED NEW PNG FILENAMES — starting INSIDE the existing assets folder:
-bates-garcelon-aerial.png
-bates-garcelon-reverse.png
-bowdoin-whittier-aerial.png
-bowdoin-whittier-reverse.png
-coast-guard-cadets-aerial.png
-coast-guard-cadets-reverse.png
-colby-alfond-aerial.png
-colby-alfond-reverse.png
-franklin-pierce-sodexo-aerial.png
-franklin-pierce-sodexo-reverse.png
-husson-winkin-aerial.png
-husson-winkin-reverse.png
-middlebury-youngman-aerial.png
-middlebury-youngman-reverse.png
-norwich-sabine-aerial.png
-norwich-sabine-reverse.png
-plymouth-state-panther-aerial.png
-plymouth-state-panther-reverse.png
-saint-anselm-grappone-aerial.png
-saint-anselm-grappone-reverse.png
-trinity-jessee-miller-aerial.png
-trinity-jessee-miller-reverse.png
-new-england-blue-storm-aerial.png
-new-england-blue-storm-reverse.png
-vermont-state-castleton-wolk-aerial.png
-vermont-state-castleton-wolk-reverse.png
-wesleyan-andrus-aerial.png
-wesleyan-andrus-reverse.png
-western-connecticut-westside-aerial.png
-western-connecticut-westside-reverse.png
+All 248 schools and 499 views remain. No image, record policy, provider mapping,
+secret, or workflow changes are included. This does not fix unavailable records.

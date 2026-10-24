@@ -309,6 +309,22 @@ SCHOOLS.update({
     'middlebury-youngman': ('Middlebury', 'iii'),
     'vermont-state-castleton-wolk': ('Vermont State Castleton', 'iii'),
 })
+# v1.18.0 additions: exact reviewed local identities, not authenticated IDs.
+# New Haven is transitioning into Division I FCS and is mandatory, not optional II.
+# New England College is distinct from University of New England; no bare NEC
+# or New England alias. Union must be New York-qualified, never bare Union.
+SCHOOLS.update({
+    'central-connecticut-arute': ('Central Connecticut', 'fcs'),
+    'new-haven-dellacamera': ('New Haven', 'fcs'),
+    'sacred-heart-sikorsky': ('Sacred Heart', 'fcs'),
+    'post-municipal': ('Post', 'ii'),
+    'southern-connecticut-jess-dow': ('Southern Connecticut', 'ii'),
+    'maine-maritime-ritchie': ('Maine Maritime', 'iii'),
+    'new-england-college-football-field': ('New England College', 'iii'),
+    'ithaca-butterfield': ('Ithaca', 'iii'),
+    'cortland-grady': ('Cortland', 'iii'),
+    'union-bailey': ('Union (NY)', 'iii'),
+})
 # The original 209 reviewed identities include twenty FCS additions for v1.15.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
@@ -357,6 +373,18 @@ INTERIOR_VIEW_STADIUMS = frozenset({
 })
 
 EXPLICIT_ALIASES = {
+    # v1.18 official institution names; no inferred provider abbreviation fallback.
+    # All new FCS IDs/classes/2026 records remain mandatory at authenticated build.
+    "central-connecticut-arute": ("Central Connecticut State", "Central Connecticut State University"),
+    "new-haven-dellacamera": ("University of New Haven",),
+    "sacred-heart-sikorsky": ("Sacred Heart University",),
+    "post-municipal": ("Post University",),  # Never LIU Post / C. W. Post.
+    "southern-connecticut-jess-dow": ("Southern Connecticut State University",),
+    "maine-maritime-ritchie": ("Maine Maritime Academy",),
+    "ithaca-butterfield": ("Ithaca College",),
+    "cortland-grady": ("SUNY Cortland", "State University of New York at Cortland"),
+    "union-bailey": ("Union College (New York)",),
+
     # Research-reviewed Connecticut full form; never bare Trinity or Texas names.
     "trinity-jessee-miller": ("Trinity College (Connecticut)",),
     # Official current/historical names of the same Vermont football program.

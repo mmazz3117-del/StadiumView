@@ -1,18 +1,20 @@
-Stadium Atlas v1.17.1 validation
+Stadium Atlas v1.18.1 QA
 
-Passed: existing 7,939-assertion UI/catalog/sorting/slideshow regression, zero
-reported DOM errors. Dedicated record-policy suite: 21 tests passed.
-Independent targeted state-filter and slideshow review: 424 assertions passed,
-zero errors. Details are recorded separately
-in the working QA report; tested one state, multiple states, all-state reset,
-other filter intersections, empty results, repeated selection, detail routes,
-keyboard close/focus, filtered slideshow and grouped school shuffle.
-Catalog is byte-identical to v1.17.0 except its build marker: 248 schools,
-499 views. The unchanged records builder accepts the updated catalog.
-The record-validation/UI block is unchanged. No record-data repairs included.
+Fill uses max(viewportWidth/imageWidth, viewportHeight/imageHeight); Fit uses
+min of those same ratios. Both use one uniform factor, preserving proportions.
+Mode changes reset pan/zoom; the selected mode is reused on photo/viewport
+changes. No image blur filter, stretch transform or image-byte edits added.
 
-Tests use synthetic DOM/browser stubs, not native-browser screenshots or a
-real phone. Native browser launch was previously blocked and not retried.
-No authenticated data fetch, remote repository writes or deployment performed.
-Existing repository images, records builder and workflow remain required.
-The user's fresh deployment is the live verification step.
+Catalog is exactly v1.18.0 apart from the build marker: 258 schools/519 views.
+All four root build/cache markers are updated together. No records builder,
+workflow, image assets or provider identities are changed.
+
+Checks use a synthetic DOM and browser API stubs; no real-browser screenshot
+or real-phone rendering claims. Native browser access was previously blocked
+and not retried. No authenticated provider request or deployment performed.
+
+Final results: 9,626 independent assertions passed (geometry/interactions,
+existing UI, state filters, shuffle and caption tests). Separate baseline
+regression: 8,289 assertions passed. Records suite: 22 tests passed.
+Caption placement was validated by CSS and safe-area rules, not native visual
+rendering. All tests reported no blocking failures.

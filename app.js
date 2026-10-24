@@ -2,7 +2,7 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.18.0';
+  const BUILD = '1.18.1';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.18.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.18.1 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -74,6 +74,8 @@
   function hasFilters() { return !!(selectedStates.size || query || letter !== 'All' || conference || classification); }
   const dialog = $('#image-viewer');
   const stage = $('#zoom-stage');
+  const sizingSelect = $('#viewer-sizing');
+  let imageSizing = 'fill';
   let viewerImage = $('#viewer-image');
   let letter = 'All';
   let query = '';
@@ -969,7 +971,8 @@
     }
   });
 
-  // Start with the whole image; allow deliberate enlargement without claiming added detail.
+  // Fill by default without changing proportions; Fit preserves the whole image.
+  // Scaling cannot create detail: high magnification can still look softer.
   let fit = 1, scale = 1, x = 0, y = 0, stageWidth = 1, stageHeight = 1;
   const pointers = new Map();
   let gesture = null;
@@ -999,7 +1002,7 @@
     stageHeight = Math.max(1, rect.height);
     const image = displayedPhoto();
     if (!image) return;
-    fit = Math.min(stageWidth / image.width, stageHeight / image.height);
+    fit = (imageSizing === 'fill' ? Math.max : Math.min)(stageWidth / image.width, stageHeight / image.height);
     viewerImage.style.width = `${image.width * fit}px`;
     viewerImage.style.height = `${image.height * fit}px`;
     scale = 1; x = 0; y = 0;
@@ -1029,7 +1032,7 @@
       const position = slideshow.queue.findIndex(photo => photoKey(photo) === photoKey(entry)) + 1;
       $('#viewer-announcement').textContent = `${entry.item.school}, ${entry.item.stadium}. ${image.title}${position ? `, ${position} of ${slideshow.queue.length}` : ''}. Page Up and Page Down change photos. Space pauses or plays. Zooming or dragging pauses playback.`;
     } else {
-      $('#viewer-announcement').textContent = `${image.title}, ${entry.index + 1} of ${entry.item.views.length}. Full image fitted to screen. Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
+      $('#viewer-announcement').textContent = `${image.title}, ${entry.index + 1} of ${entry.item.views.length}. ${imageSizing === 'fill' ? 'Screen filled without stretching; edges may be cropped.' : 'Full image fitted to screen.'} Pinch or scroll to zoom, drag to explore. High magnification can look softer.`;
     }
   }
   function cancelViewerRequest() {
@@ -1197,6 +1200,11 @@
     if (slideshow.active && slideshow.playing) setSlideshowPlaying(false,'Paused to explore · Press Play to continue');
   }
   function localPoint(clientX, clientY) { const rect = stage.getBoundingClientRect(); return {x:clientX - rect.left - rect.width / 2,y:clientY - rect.top - rect.height / 2}; }
+  sizingSelect.addEventListener('change', () => {
+    imageSizing = sizingSelect.value === 'fit' ? 'fit' : 'fill';
+    sizingSelect.value = imageSizing;
+    fitImage(); updateViewerCaption();
+  });
   function zoomTo(next, anchor = {x:0,y:0}) {
     next = clamp(next, minScale, maxScale());
     const ratio = next / scale;

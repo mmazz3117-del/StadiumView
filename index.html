@@ -1,25 +1,25 @@
 <!doctype html>
-<html lang="en" data-app-build="1.18.0">
+<html lang="en" data-app-build="1.18.1">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#121815">
-<meta name="stadium-atlas-build" content="1.18.0">
+<meta name="stadium-atlas-build" content="1.18.1">
 <meta name="description" content="Explore college football from above. Search the Stadium Atlas collection by school or stadium, then explore each home field through aerial perspectives and selected interior overviews.">
 <title>Stadium Atlas · College football from above</title>
 <link rel="icon" href="assets/stadium-atlas-icon-v190-favicon.ico" sizes="any">
 <link rel="icon" href="assets/stadium-atlas-icon-v190-favicon-32.png" type="image/png" sizes="32x32">
 <link rel="icon" href="assets/stadium-atlas-icon-v190-favicon-16.png" type="image/png" sizes="16x16">
 <link rel="apple-touch-icon" href="assets/stadium-atlas-icon-v190-apple-touch-180.png" sizes="180x180">
-<link rel="manifest" href="site.webmanifest?v=1.18.0">
+<link rel="manifest" href="site.webmanifest?v=1.18.1">
 <meta name="application-name" content="Stadium Atlas">
 <meta name="apple-mobile-web-app-title" content="Stadium Atlas">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="stylesheet" href="styles.css?v=1.18.0">
+<link rel="stylesheet" href="styles.css?v=1.18.1">
 <script>
 /* This check lives in the HTML so an old or missing app.js cannot hide a mixed release. */
-window.STADIUM_ATLAS_EXPECTED = Object.freeze({build:'1.18.0',schools:258,views:519});
+window.STADIUM_ATLAS_EXPECTED = Object.freeze({build:'1.18.1',schools:258,views:519});
 window.addEventListener('DOMContentLoaded', function () {
   var expected = window.STADIUM_ATLAS_EXPECTED;
   var runtime = window.STADIUM_ATLAS_RUNTIME;
@@ -52,15 +52,15 @@ window.addEventListener('DOMContentLoaded', function () {
   document.body.classList.remove('viewer-open');
 });
 </script>
-<script src="catalog.js?v=1.18.0" defer></script>
-<script src="app.js?v=1.18.0" defer></script>
+<script src="catalog.js?v=1.18.1" defer></script>
+<script src="app.js?v=1.18.1" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header shell">
   <a class="brand" href="#" aria-label="Stadium Atlas home"><img class="brand-mark" src="assets/stadium-mark.svg" width="44" height="38" alt=""><span>STADIUM<span class="brand-sub">ATLAS</span></span></a>
   <div class="header-meta"><span class="status-dot"></span> COLLEGE FOOTBALL</div>
-  <span class="version-badge" id="version-badge" aria-label="Stadium Atlas version 1.18.0">v1.18.0</span>
+  <span class="version-badge" id="version-badge" aria-label="Stadium Atlas version 1.18.1">v1.18.1</span>
   <a class="header-link" href="#collection">Explore <span aria-hidden="true">↗︎</span></a>
 </header>
 <div class="layout-toolbar shell" role="group" aria-label="Slideshow and display preferences">
@@ -124,7 +124,9 @@ window.addEventListener('DOMContentLoaded', function () {
   <h2 id="viewer-title" class="sr-only">Aerial view</h2>
   <p id="viewer-stadium" class="sr-only">AUTZEN STADIUM</p>
   <p id="viewer-era" class="sr-only">2024-era reconstruction</p>
-  <div id="zoom-stage" class="zoom-stage" tabindex="0" role="group" aria-label="Stadium image. Pinch or scroll to zoom, then drag to explore. Double-tap to fit or zoom. Plus and minus keys zoom, zero fits, arrow keys pan, and Page Up or Page Down changes the view."><img id="viewer-image" src="assets/autzen-aerial.png" width="1672" height="941" alt="" draggable="false"></div>
+  <div id="zoom-stage" class="zoom-stage" tabindex="0" role="group" aria-label="Stadium image. Pinch or scroll to zoom, then drag to explore. Double-tap to reset the selected image sizing or zoom. Plus and minus keys zoom, zero resets the selected image sizing, arrow keys pan, and Page Up or Page Down changes the view."><img id="viewer-image" src="assets/autzen-aerial.png" width="1672" height="941" alt="" draggable="false"></div>
+  <div class="viewer-overlay viewer-sizing"><label class="sr-only" for="viewer-sizing">Image sizing</label><select id="viewer-sizing" aria-describedby="viewer-sizing-help"><option value="fill">Fill screen</option><option value="fit">Fit whole image</option></select></div>
+  <p id="viewer-sizing-help" class="sr-only">Fill screen preserves proportions and crops edges to remove margins. Fit whole image shows every edge and may leave margins. Larger display sizes can look softer.</p>
   <button id="close-viewer" class="viewer-overlay viewer-close" aria-label="Close full-screen image" title="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
   <button id="viewer-prev" class="viewer-overlay viewer-arrow viewer-arrow-prev" aria-label="Previous aerial view" aria-keyshortcuts="PageUp" title="Previous view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg></button>
   <button id="viewer-next" class="viewer-overlay viewer-arrow viewer-arrow-next" aria-label="Next aerial view" aria-keyshortcuts="PageDown" title="Next view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg></button>
@@ -145,7 +147,7 @@ window.addEventListener('DOMContentLoaded', function () {
     </div>
     <div class="slideshow-footnote"><p id="slideshow-status" role="status" aria-live="polite">Paused</p><p>AI-generated stadium reconstructions</p></div>
   </section>
-  <p id="viewer-help" class="sr-only">Pinch or scroll to zoom. Drag to explore. Double-tap to fit or zoom. Enlarging past the original image resolution can look softer. Use the edge arrows or Page Up and Page Down to change views, and Escape to close. In a slideshow, Space or P on the image pauses or plays; zooming or dragging pauses playback. Use the Photos menu to choose all photos or the current filtered results. Slideshow controls fade after a few seconds. Move the pointer, tap once, or press Tab to reveal them. Controls stay visible while using the keyboard or an open menu.</p>
+  <p id="viewer-help" class="sr-only">Pinch or scroll to zoom. Drag to explore. Double-tap to reset the selected image sizing or zoom. Enlarging past the original image resolution can look softer. Use the edge arrows or Page Up and Page Down to change views, and Escape to close. In a slideshow, Space or P on the image pauses or plays; zooming or dragging pauses playback. Use the Photos menu to choose all photos or the current filtered results. Slideshow controls fade after a few seconds. Move the pointer, tap once, or press Tab to reveal them. Controls stay visible while using the keyboard or an open menu.</p>
   <p class="sr-only" id="viewer-announcement" aria-live="polite"></p>
 </dialog>
 </body>

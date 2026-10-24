@@ -10,9 +10,10 @@ Pillow 12.3.0 produces hosting-only lossless WebP artwork; every decoded pixel
 and native dimension is verified. Original source PNGs are never rewritten.
 No authenticated coverage is assumed: a missing Division I school (including
 Ivy/FCS) blocks the entire build, preserving the previous successful Pages
-deployment. Division II/III rows may explicitly say unavailable only when a
-successful provider response lacks the reviewed identity or season record.
-Malformed or ambiguous data still blocks the build, including for Division II/III.
+deployment. Division II/III rows may explicitly say unavailable when a successful
+provider response lacks the reviewed identity or season record, or a verified
+record has well-typed but arithmetically inconsistent counts. Malformed counts,
+invalid identities/classifications/seasons, and ambiguity still block the build.
 """
 from __future__ import annotations
 
@@ -288,6 +289,26 @@ SCHOOLS.update({
     'stonehill-wb-mason': ('Stonehill', 'fcs'),
     'merrimack-duane': ('Merrimack', 'fcs'),
 })
+# v1.17.0 additions use reviewed local identities, not verified provider IDs.
+# Exact matching remains intentional: missing optional coverage is explicit.
+# Bare Trinity is NEVER accepted: Connecticut and Texas both play Division III.
+SCHOOLS.update({
+    'bates-garcelon': ('Bates', 'iii'),
+    'bowdoin-whittier': ('Bowdoin', 'iii'),
+    'colby-alfond': ('Colby', 'iii'),
+    'husson-winkin': ('Husson', 'iii'),
+    'new-england-blue-storm': ('University of New England', 'iii'),
+    'coast-guard-cadets': ('Coast Guard', 'iii'),
+    'trinity-jessee-miller': ('Trinity (CT)', 'iii'),
+    'wesleyan-andrus': ('Wesleyan', 'iii'),
+    'western-connecticut-westside': ('Western Connecticut', 'iii'),
+    'norwich-sabine': ('Norwich', 'iii'),
+    'franklin-pierce-sodexo': ('Franklin Pierce', 'ii'),
+    'plymouth-state-panther': ('Plymouth State', 'iii'),
+    'saint-anselm-grappone': ('Saint Anselm', 'ii'),
+    'middlebury-youngman': ('Middlebury', 'iii'),
+    'vermont-state-castleton-wolk': ('Vermont State Castleton', 'iii'),
+})
 # The original 209 reviewed identities include twenty FCS additions for v1.15.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
@@ -308,6 +329,7 @@ SCHOOLS.update({
 # Reviewed UI labels are separate from provider identities. This mapping only
 # validates catalog display text; it never participates in provider matching.
 DISPLAY_NAMES = {
+    "trinity-jessee-miller": "Trinity",
     'ualbany-casey': 'UAlbany',
 
     "california-memorial-stadium": "Cal",
@@ -335,6 +357,11 @@ INTERIOR_VIEW_STADIUMS = frozenset({
 })
 
 EXPLICIT_ALIASES = {
+    # Research-reviewed Connecticut full form; never bare Trinity or Texas names.
+    "trinity-jessee-miller": ("Trinity College (Connecticut)",),
+    # Official current/historical names of the same Vermont football program.
+    # Any multiple matching identities still fail; generic abbreviations do not match.
+    "vermont-state-castleton-wolk": ("Vermont State University Castleton", "Castleton University", "Castleton"),
     # School-specific official full forms, not generic provider abbreviations.
     # Their current provider IDs and classes still require authenticated validation.
     "mit-steinbrenner": ("Massachusetts Institute of Technology",),

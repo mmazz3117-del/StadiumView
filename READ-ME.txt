@@ -1,47 +1,100 @@
-STADIUM ATLAS v1.16.0 — MASSACHUSETTS & RHODE ISLAND
-24 new schools / 48 new views. Final catalog: 233 schools / 469 views.
-An update for your existing v1.15.0 repository, not a standalone site archive.
+STADIUM ATLAS v1.17.0 — STATE SORTING + 15 NEW ENGLAND STADIUMS
+248 schools / 499 views. Update for your existing v1.16.0 repository.
+
+WHAT'S NEW
+Use the new “Sort by” selector above the school cards:
+- School A–Z: the existing default alphabetical view.
+- State A–Z: full state names alphabetically, then schools alphabetically.
+Search, conference/division filters and A–Z school-initial buttons still work.
+Reset filters keeps your chosen sort. Reloading starts with School A–Z.
+Slideshow ordering and grouped-school shuffle are unchanged.
+
+ADDED STADIUMS
+Connecticut: Coast Guard, Trinity, Wesleyan, Western Connecticut.
+Maine: Bates, Bowdoin, Colby, Husson, University of New England.
+New Hampshire: Franklin Pierce, Plymouth State, Saint Anselm.
+Vermont: Middlebury, Norwich, Vermont State Castleton.
 
 UPLOAD IN THIS ORDER
-1. Extract all six image ZIP parts on your computer. Upload all 48 PNG files
-   into the EXISTING assets folder in GitHub. Keep every existing image.
-   Do not create Part 1 / Part 2 / etc. folders. Do not upload the ZIPs themselves.
-2. From the app-files ZIP, replace scripts/build_stadium_records.py in the
-   EXISTING scripts folder. Keep the existing workflow and repository secret.
-3. LAST, upload/replace these FOUR files together at the repository root
-   in ONE commit: index.html, styles.css, app.js, catalog.js.
-   Do not place them in assets or scripts. Do not commit them individually.
-   The index.html change triggers the existing records/deployment workflow.
-4. Check Actions > Refresh Stadium Atlas records. Use the run for the NEW
-   commit. If a manual refresh is needed, choose Run workflow on main;
-   do not re-run jobs from an older commit.
+1. START AT THE REPOSITORY ROOT (the page showing index.html).
+   Open the existing assets folder. If you are already inside assets, stay
+   there; do not open/create another assets folder. Extract every image ZIP
+   on your computer and upload its PNG files directly into this open folder.
+   Expected paths from the repository root are assets/<filename>.png.
+   Keep all earlier images. Do not upload ZIPs or create Part folders.
+2. RETURN TO THE REPOSITORY ROOT, then open the existing scripts folder.
+   If you are already inside scripts, stay there. From the extracted app ZIP,
+   select the file build_stadium_records.py inside its local scripts folder.
+   Upload that FILE into the currently open GitHub scripts folder, replacing
+   build_stadium_records.py. Final root-relative path:
+   scripts/build_stadium_records.py — not scripts/scripts/...
+3. RETURN TO THE REPOSITORY ROOT (not assets or scripts).
+   LAST, replace these FOUR root files together in ONE commit:
+   index.html
+   styles.css
+   app.js
+   catalog.js
+   Do not commit them individually or upload their containing local folder.
+4. The index.html change triggers the existing records/deployment workflow.
+   Open Actions > Refresh Stadium Atlas records and inspect the NEW commit.
+   If needed, choose Run workflow on main. Do not re-run an old job.
+5. After successful deployment, hard-refresh the site with Ctrl+F5.
 
-Keep existing images, workflow files, CNAME/custom-domain settings, and other
-repository files. README, credits, QA, source notes and manifests are reference
-documents, not required root application files. Upload images as files inside
-assets, not as an extra nested assets/assets directory.
+Keep the existing workflow, secret, site.webmanifest, custom-domain settings
+and all earlier assets. The notes/credits are reference documents, not extra
+application files required for this upload. An automatic run between steps 2
+and 3 may safely stop because the older catalog is still present; finish the
+four-file commit and use its new run.
 
 RECORDS
-The original 209 schools plus Stonehill and Merrimack remain strict mandatory
-Division I matches. For the 22 new Division II/III schools, a successful valid
-provider response with no exact school/record match yields an explicit
-unavailable status, never a fabricated 0-0. Authentication, network, malformed
-responses and ambiguous identities still fail the build. This does not claim
-that the provider universally lacks Division II/III data. Merrimack's 2026
-independent football conference record is N/A. The UAlbany spelling fix stays.
+The latest fixes are included: safe missing-file diagnostics and explicit
+record-inconsistent status. All 211 Division I schools remain mandatory.
+The 37 Division II/III schools can show unavailable when no safe exact school
+identity or record is found, or when verified numeric counts disagree.
+No records are invented, normalized, or treated as zero. Malformed values,
+wrong identities/seasons/classifications, duplicates and shared provider
+errors remain blocking. Trinity Connecticut and University of New England
+use conservative identities to avoid mixing up similarly named schools.
+A later valid refresh automatically restores a withheld record.
 
-No authenticated live refresh was run for this release; Stonehill/Merrimack
-provider identities and actual current coverage must pass the new workflow.
-The build stops safely if required matches are missing. An automatic/manual
-run between steps 2 and 3 may fail safely because the catalog is still old;
-finish the final four-file commit and use its new run.
+Current authenticated provider coverage must pass your new workflow; no live
+provider request or deployment was performed while preparing this update.
+The original 233 schools and 469 view entries are retained unchanged.
 
-ARTWORK AND FACTS
-New views are AI-generated, reference-based architectural interpretations,
-not photographs, survey drawings, or proof of a facility's current condition.
-Unseen details and fine markings are approximate. Source-era differences and
-uncertain capacities/opening dates are disclosed in each venue's detail view
-and the accompanying credits/source notes. All 48 PNGs are distinct generated
-assets. Existing 209 schools/421 views and grouped school shuffle are retained.
+ARTWORK
+All 30 new views are AI-generated, reference-based architectural illustrations,
+not current photographs or survey-accurate drawings. Fine markings, unseen
+architecture and surrounding details are approximate. Source-era and factual
+qualifications are disclosed in venue details and the included credits.
 
-This release was prepared offline. No repository write or deployment was made.
+EXPECTED NEW PNG FILENAMES — starting INSIDE the existing assets folder:
+bates-garcelon-aerial.png
+bates-garcelon-reverse.png
+bowdoin-whittier-aerial.png
+bowdoin-whittier-reverse.png
+coast-guard-cadets-aerial.png
+coast-guard-cadets-reverse.png
+colby-alfond-aerial.png
+colby-alfond-reverse.png
+franklin-pierce-sodexo-aerial.png
+franklin-pierce-sodexo-reverse.png
+husson-winkin-aerial.png
+husson-winkin-reverse.png
+middlebury-youngman-aerial.png
+middlebury-youngman-reverse.png
+norwich-sabine-aerial.png
+norwich-sabine-reverse.png
+plymouth-state-panther-aerial.png
+plymouth-state-panther-reverse.png
+saint-anselm-grappone-aerial.png
+saint-anselm-grappone-reverse.png
+trinity-jessee-miller-aerial.png
+trinity-jessee-miller-reverse.png
+new-england-blue-storm-aerial.png
+new-england-blue-storm-reverse.png
+vermont-state-castleton-wolk-aerial.png
+vermont-state-castleton-wolk-reverse.png
+wesleyan-andrus-aerial.png
+wesleyan-andrus-reverse.png
+western-connecticut-westside-aerial.png
+western-connecticut-westside-reverse.png

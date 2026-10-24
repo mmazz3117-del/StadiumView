@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.16.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.17.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -15106,6 +15106,978 @@ window.STADIUMS = [
         "alt": "AI-generated reference-based reverse reconstruction of Farley-Lamb Field, home of the Williams Ephs, with surrounding setting.",
         "width": 1672,
         "height": 941
+      }
+    ]
+  },
+  {
+    "id": "bates-garcelon",
+    "school": "Bates",
+    "fullSchool": "Bates College",
+    "team": "Bobcats",
+    "stadium": "Garcelon Field",
+    "city": "Lewiston",
+    "state": "Maine",
+    "opened": 1899,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Bates Bobcat",
+    "capacityDisplay": "1,500-seat grandstand",
+    "capacityNote": "Official 2015 history describes the 2010 grandstand as seating 1,500; this is not asserted as current total venue capacity.",
+    "openedDisplay": "1899",
+    "teamName": "Bates Bobcats",
+    "aliases": [
+      "Bates College",
+      "Bates Bobcats",
+      "Garcelon Field"
+    ],
+    "sources": [
+      {
+        "title": "Garcelon Field",
+        "url": "https://gobatesbobcats.com/facilities/garcelon-field/3"
+      },
+      {
+        "title": "Grandstand renovation history",
+        "url": "https://www.bates.edu/news/2015/05/05/slideshow-garcelon-fields-gifts-to-bates-college/"
+      },
+      {
+        "title": "Bates Bobcat 2026",
+        "url": "https://www.bates.edu/news/2026/10/08/theres-a-new-bobcat-in-town/"
+      },
+      {
+        "title": "2026 football membership and active teams",
+        "url": "https://nescac.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://gobatesbobcats.com/facilities/garcelon-field/3"
+    },
+    "description": "Bates College’s Bobcats play at Garcelon Field in Lewiston, Maine.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated aerial approximations based on August 2023 official drone photographs; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/bates-garcelon-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Garcelon Field, home of the Bates Bobcats, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/bates-garcelon-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Garcelon Field, home of the Bates Bobcats, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "bowdoin-whittier",
+    "school": "Bowdoin",
+    "fullSchool": "Bowdoin College",
+    "team": "Polar Bears",
+    "stadium": "Whittier Field",
+    "city": "Brunswick",
+    "state": "Maine",
+    "opened": 1896,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Polar Bear",
+    "capacityDisplay": "Not verified",
+    "capacityNote": "Current official facility page does not give total capacity. Historic secondary figures deliberately omitted.",
+    "openedDisplay": "1896",
+    "openedNote": "Field opened 1896; Hubbard Grandstand dates to 1904; modernization 2017–2019.",
+    "teamName": "Bowdoin Polar Bears",
+    "aliases": [
+      "Bowdoin College",
+      "Bowdoin Polar Bears",
+      "Whittier Field"
+    ],
+    "sources": [
+      {
+        "title": "Whittier Field",
+        "url": "https://athletics.bowdoin.edu/facilities/whittier-field/10"
+      },
+      {
+        "title": "Completed renovation",
+        "url": "https://www.bowdoin.edu/news/2019/03/new-locker-rooms-and-training-facility-for-bowdoin-athletes-completes-whitter-field-renovation.html"
+      },
+      {
+        "title": "Polar Bear mascot",
+        "url": "https://athletics.bowdoin.edu/sports/2024/10/25/the-polar-bear.aspx"
+      },
+      {
+        "title": "2026 football membership and active teams",
+        "url": "https://nescac.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.bowdoin.edu/facilities/whittier-field/10"
+    },
+    "description": "Bowdoin College’s Polar Bears play at Whittier Field in Brunswick, Maine.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated aerial approximations based on 2017/2024 official ground photographs and a post-renovation official aerial of unspecified capture date; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/bowdoin-whittier-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Whittier Field, home of the Bowdoin Polar Bears, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/bowdoin-whittier-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Whittier Field, home of the Bowdoin Polar Bears, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "coast-guard-cadets",
+    "school": "Coast Guard",
+    "fullSchool": "United States Coast Guard Academy",
+    "team": "Bears",
+    "stadium": "Cadet Memorial Field",
+    "city": "New London",
+    "state": "Connecticut",
+    "opened": 1932,
+    "seatingCapacity": 4500,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": "Objee the Bear",
+    "capacityNote": "NCAA-reported seating; current facility page does not restate capacity.",
+    "openedNote": "NCAA stadium table reports 1932.",
+    "teamName": "Coast Guard Bears",
+    "aliases": [
+      "United States Coast Guard Academy",
+      "Coast Guard Bears",
+      "Cadet Memorial Field"
+    ],
+    "sources": [
+      {
+        "title": "Official facility",
+        "url": "https://coastguardathletics.com/facilities/cadet-memorial-field/28"
+      },
+      {
+        "title": "NCAA stadium table",
+        "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official mascot",
+        "url": "https://uscga.edu/about/objee-the-bear/"
+      },
+      {
+        "title": "2026 football standings",
+        "url": "https://newmacsports.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://coastguardathletics.com/facilities/cadet-memorial-field/28"
+    },
+    "description": "United States Coast Guard Academy’s Bears play at Cadet Memorial Field in New London, Connecticut.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials based on photographs uploaded July2025 and a 2023 illustrated campus map. Campus architecture, shoreline distance and field details are interpretive, not current documentary photography.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/coast-guard-cadets-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Cadet Memorial Field, home of the Coast Guard Bears, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/coast-guard-cadets-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Cadet Memorial Field, home of the Coast Guard Bears, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "colby-alfond",
+    "school": "Colby",
+    "fullSchool": "Colby College",
+    "team": "Mules",
+    "stadium": "Seaverns Field at Harold Alfond Stadium",
+    "city": "Waterville",
+    "state": "Maine",
+    "opened": null,
+    "seatingCapacity": 2000,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Morty the Mule",
+    "capacityDisplay": "2,000",
+    "openedDisplay": "Restored / dedicated 2008",
+    "openedNote": "Official sources describe restoration/dedication in 2008, not an original opening date. Turf resurfaced 2018.",
+    "teamName": "Colby Mules",
+    "aliases": [
+      "Colby College",
+      "Colby Mules",
+      "Seaverns Field at Harold Alfond Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Seaverns Field",
+        "url": "https://colbyathletics.com/sports/2020/5/28/facilities-seaverns-field.aspx"
+      },
+      {
+        "title": "Alfond track",
+        "url": "https://colbyathletics.com/sports/2020/5/28/facilities-alfond-track.aspx"
+      },
+      {
+        "title": "Morty mascot",
+        "url": "https://colbyathletics.com/news/2021/3/26/general-making-of-the-mule-how-colbys-mascot-came-to-life.aspx?path=general"
+      },
+      {
+        "title": "2026 football membership and active teams",
+        "url": "https://nescac.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://colbyathletics.com/sports/2020/5/28/facilities-seaverns-field.aspx"
+    },
+    "description": "Colby College’s Mules play at Seaverns Field at Harold Alfond Stadium in Waterville, Maine.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated aerial approximations based on official aerial published in an April 2021 asset path; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/colby-alfond-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Seaverns Field at Harold Alfond Stadium, home of the Colby Mules, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/colby-alfond-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Seaverns Field at Harold Alfond Stadium, home of the Colby Mules, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "franklin-pierce-sodexo",
+    "school": "Franklin Pierce",
+    "fullSchool": "Franklin Pierce University",
+    "team": "Ravens",
+    "stadium": "Sodexo Field",
+    "city": "Rindge",
+    "state": "New Hampshire",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division II",
+    "conference": "NE10",
+    "mascot": "Rocky the Raven",
+    "capacityDisplay": "Not verified",
+    "capacityNote": "The current university facility page does not publish a capacity; conflicting secondary counts are not asserted.",
+    "openedNote": "The original opening year was not verified from a primary source; 2019 was the inaugural Division II football season, not the opening of this existing field.",
+    "description": "Franklin Pierce’s Ravens play at Sodexo Field, a compact multipurpose artificial-turf venue among the wooded hills of Rindge.",
+    "teamName": "Franklin Pierce Ravens",
+    "aliases": [
+      "FPU",
+      "Franklin Pierce Ravens",
+      "Sodexho Field",
+      "Franklin Pierce University",
+      "Sodexo Field"
+    ],
+    "sources": [
+      {
+        "title": "Official Sodexo Field facility page",
+        "url": "https://fpuravens.com/facilities/sodexo-field/1"
+      },
+      {
+        "title": "Official 2026 football schedule",
+        "url": "https://fpuravens.com/sports/football/schedule"
+      },
+      {
+        "title": "Official 2026 orientation and Rocky the Raven",
+        "url": "https://franklinpierce.edu/student-experience/campus-life/orientation/index.html"
+      },
+      {
+        "title": "Official first Division II football season announcement",
+        "url": "https://www.franklinpierce.edu/news/fpu_announces_football_inaugural_season.html"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://fpuravens.com/facilities/sodexo-field/1"
+    },
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: 2025 upload; capture date unspecified. Background details beyond the photographed views are approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/franklin-pierce-sodexo-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Sodexo Field, home of the Franklin Pierce Ravens, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/franklin-pierce-sodexo-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Sodexo Field, home of the Franklin Pierce Ravens, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "husson-winkin",
+    "school": "Husson",
+    "fullSchool": "Husson University",
+    "team": "Eagles",
+    "stadium": "Dr. John W. Winkin Sports Complex",
+    "city": "Bangor",
+    "state": "Maine",
+    "opened": 2003,
+    "seatingCapacity": 3000,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": "Baldwin",
+    "capacityDisplay": "3,000",
+    "openedDisplay": "2003",
+    "openedNote": "2003 is the opening year listed in the NCAA Division III stadium table; field and press-box renovations occurred later.",
+    "teamName": "Husson Eagles",
+    "aliases": [
+      "Husson University",
+      "Husson Eagles",
+      "Dr. John W. Winkin Sports Complex"
+    ],
+    "sources": [
+      {
+        "title": "Winkin Sports Complex",
+        "url": "https://hussoneagles.com/facilities/dr-john-w-winkin-sports-complex/3"
+      },
+      {
+        "title": "NCAA Division III football records stadium table",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Baldwin and 2026 homecoming",
+        "url": "https://www.husson.edu/news/2026/09/husson-homecoming-october-2-3-2026"
+      },
+      {
+        "title": "2026 football membership and active teams",
+        "url": "https://cnesports.org/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://hussoneagles.com/facilities/dr-john-w-winkin-sports-complex/3"
+    },
+    "description": "Husson University’s Eagles play at Dr. John W. Winkin Sports Complex in Bangor, Maine.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated aerial approximations based on official July 2022 aerial photograph; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/husson-winkin-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Dr. John W. Winkin Sports Complex, home of the Husson Eagles, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/husson-winkin-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Dr. John W. Winkin Sports Complex, home of the Husson Eagles, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "middlebury-youngman",
+    "school": "Middlebury",
+    "fullSchool": "Middlebury College",
+    "team": "Panthers",
+    "stadium": "Youngman Field at Alumni Stadium",
+    "city": "Middlebury",
+    "state": "Vermont",
+    "opened": 1991,
+    "seatingCapacity": 3500,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Panther",
+    "capacityNote": "The current college facility page specifies 3,500 seats.",
+    "openedNote": "College-hosted facilities history dates the stadium to 1991; turf was installed in 2008, resurfaced in 2021, and corner lights were added in summer 2026.",
+    "description": "Middlebury’s football field is set into the hillside, with one main grandstand and views toward the Green Mountains. The site’s 2026 corner lights appear in the official September aerial references.",
+    "teamName": "Middlebury Panthers",
+    "aliases": [
+      "Middlebury Panthers",
+      "Alumni Stadium",
+      "Youngman Field",
+      "Middlebury College",
+      "Youngman Field at Alumni Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official Youngman Field facility page",
+        "url": "https://athletics.middlebury.edu/facilities/youngman-field-at-alumni-stadium/19"
+      },
+      {
+        "title": "College-hosted facilities history",
+        "url": "https://sites.middlebury.edu/lacrossehistory/facilities/"
+      },
+      {
+        "title": "Official 2026 NESCAC football standings",
+        "url": "https://nescac.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official athletics visual identity and Panther history",
+        "url": "https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/athletics.middlebury.edu/documents/2023/10/27/Athletics_Identity_Manual_REV1023_FINAL.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.middlebury.edu/facilities/youngman-field-at-alumni-stadium/19"
+    },
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: September 2026. Background details beyond the photographed views are approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/middlebury-youngman-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Youngman Field at Alumni Stadium, home of the Middlebury Panthers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/middlebury-youngman-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Youngman Field at Alumni Stadium, home of the Middlebury Panthers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "norwich-sabine",
+    "school": "Norwich",
+    "fullSchool": "Norwich University",
+    "team": "Cadets",
+    "stadium": "Sabine Field at Haynes Family Stadium",
+    "city": "Northfield",
+    "state": "Vermont",
+    "opened": 1921,
+    "seatingCapacity": 1200,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": null,
+    "openedDisplay": "Dedicated 1921",
+    "openedNote": "Dedicated October 8, 1921; renovated and renamed 2013.",
+    "teamName": "Norwich Cadets",
+    "aliases": [
+      "Norwich University",
+      "Norwich Cadets",
+      "Sabine Field at Haynes Family Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official facility",
+        "url": "https://norwichathletics.com/facilities/sabine-field-at-haynes-family-stadium/2"
+      },
+      {
+        "title": "University capacity",
+        "url": "https://home.norwich.edu/on/athletics-recreation"
+      },
+      {
+        "title": "2026 football standings",
+        "url": "https://newmacsports.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://norwichathletics.com/facilities/sabine-field-at-haynes-family-stadium/2"
+    },
+    "description": "Norwich University’s Cadets play at Sabine Field at Haynes Family Stadium in Northfield, Vermont.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials based on official August13,2026 drone photographs; architectural detail and distant surroundings are interpretive, not documentary photography.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/norwich-sabine-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Sabine Field at Haynes Family Stadium, home of the Norwich Cadets, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/norwich-sabine-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Sabine Field at Haynes Family Stadium, home of the Norwich Cadets, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "plymouth-state-panther",
+    "school": "Plymouth State",
+    "fullSchool": "Plymouth State University",
+    "team": "Panthers",
+    "stadium": "Panther Field",
+    "city": "Holderness",
+    "state": "New Hampshire",
+    "opened": 2021,
+    "seatingCapacity": 1200,
+    "classification": "NCAA Division III",
+    "conference": "MASCAC",
+    "mascot": "Pemi the Panther",
+    "capacityLabel": "East-side bleacher seats",
+    "capacityShortLabel": "Bleacher seats",
+    "capacityNote": "The current university facility page specifies 1,200 seats in the east-side bleachers; future west grandstand construction is not treated as completed.",
+    "openedNote": "The current turf venue was ready in spring 2021. Its official physical address is in Holderness, across the river from Plymouth.",
+    "description": "Plymouth State’s Panthers play at Panther Field on the university’s Holderness athletic campus. The 2021 turf venue sits between the PE Center and Parish Field beside ALLWell North.",
+    "teamName": "Plymouth State Panthers",
+    "aliases": [
+      "PSU",
+      "Plymouth State Panthers",
+      "Plymouth",
+      "Plymouth State University",
+      "Panther Field"
+    ],
+    "sources": [
+      {
+        "title": "Official Panther Field facility page and physical address",
+        "url": "https://athletics.plymouth.edu/facilities/panther-field/37"
+      },
+      {
+        "title": "Official 2026 football schedule",
+        "url": "https://athletics.plymouth.edu/sports/football/schedule/2026?grid=true"
+      },
+      {
+        "title": "NCAA 2026–27 football classification and conference",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=548"
+      },
+      {
+        "title": "University system report identifying Pemi the Panther",
+        "url": "https://www.usnh.edu/sites/default/files/media/2025-03/board-meeting-packet-2025-03-21.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.plymouth.edu/facilities/panther-field/37"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: 2021. Background details beyond the photographed views are approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/plymouth-state-panther-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Panther Field, home of the Plymouth State Panthers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/plymouth-state-panther-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Panther Field, home of the Plymouth State Panthers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "saint-anselm-grappone",
+    "school": "Saint Anselm",
+    "fullSchool": "Saint Anselm College",
+    "team": "Hawks",
+    "stadium": "Grappone Stadium",
+    "city": "Manchester",
+    "state": "New Hampshire",
+    "opened": 1999,
+    "seatingCapacity": 2500,
+    "classification": "NCAA Division II",
+    "conference": "NE10",
+    "mascot": "Hammer the Hawk",
+    "capacityLabel": "Grandstand seats",
+    "capacityShortLabel": "Grandstand seats",
+    "capacityNote": "The university lists 2,500 grandstand seats within a total crowd capacity of 4,500; the total is not presented as an all-seated capacity.",
+    "description": "Saint Anselm’s Hawks play at Grappone Stadium, with a compact main grandstand, two-story press box and neighboring athletic facilities. Its synthetic turf was replaced in 2022.",
+    "teamName": "Saint Anselm Hawks",
+    "aliases": [
+      "Saint Anselm Hawks",
+      "St. Anselm",
+      "SAC",
+      "Saint Anselm College",
+      "Grappone Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official Grappone Stadium facility page",
+        "url": "https://saintanselmhawks.com/facilities/grappone-stadium/1"
+      },
+      {
+        "title": "Official 2026 football schedule announcement",
+        "url": "https://saintanselmhawks.com/news/2026/4/8/saint-anselm-announces-2026-football-schedule.aspx"
+      },
+      {
+        "title": "Official conference history documenting 1999 stadium construction",
+        "url": "https://northeast10.org/news/2024/8/15/general-assumption-alum-ted-paulauskas-served-as-saint-anselm-athletic-director-for-25-years.aspx"
+      },
+      {
+        "title": "Official July 2026 mascot identification",
+        "url": "https://www.anselm.edu/about/anselmian-hub/news/scene-campus-springsummer-2026"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://saintanselmhawks.com/facilities/grappone-stadium/1"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: 2022. Background details beyond the photographed views are approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/saint-anselm-grappone-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Grappone Stadium, home of the Saint Anselm Hawks, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/saint-anselm-grappone-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Grappone Stadium, home of the Saint Anselm Hawks, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "trinity-jessee-miller",
+    "school": "Trinity",
+    "fullSchool": "Trinity College (Connecticut)",
+    "team": "Bantams",
+    "stadium": "Jessee/Miller Field at Tansill Muldoon Stadium",
+    "city": "Hartford",
+    "state": "Connecticut",
+    "opened": 1900,
+    "seatingCapacity": 5500,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Banty",
+    "openedNote": "1900 refers to original playing field. New grandstand dates differ between 2021 announcement and facility page describing 2022 construction.",
+    "teamName": "Trinity Bantams",
+    "aliases": [
+      "Trinity (CT)",
+      "Trinity College (Connecticut)",
+      "Trinity Bantams",
+      "Jessee/Miller Field",
+      "Tansill Muldoon Stadium",
+      "The Coop",
+      "Jessee/Miller Field at Tansill Muldoon Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official facility",
+        "url": "https://bantamsports.com/facilities/jessee-miller-field-at-tansill-muldoon-stadium/4"
+      },
+      {
+        "title": "Original field history",
+        "url": "https://bantamsfootball.com/trini"
+      },
+      {
+        "title": "New stadium announcement",
+        "url": "https://bantamsports.com/news/2021/9/16/football-tansill-muldoon-families-support-new-trinity-stadium.aspx"
+      },
+      {
+        "title": "Bantam mascot",
+        "url": "https://www.trincoll.edu/news/photo-gallery-the-bantams-many-forms/"
+      },
+      {
+        "title": "2026 football standings",
+        "url": "https://nescac.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://bantamsports.com/facilities/jessee-miller-field-at-tansill-muldoon-stadium/4"
+    },
+    "description": "Trinity College (Connecticut)’s Bantams play at Jessee/Miller Field at Tansill Muldoon Stadium in Hartford, Connecticut.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials combine campus geometry from an image uploaded July2020 with grandstand photographs uploaded August2022; not current documentary photography.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/trinity-jessee-miller-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Jessee/Miller Field at Tansill Muldoon Stadium, home of the Trinity Bantams, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/trinity-jessee-miller-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Jessee/Miller Field at Tansill Muldoon Stadium, home of the Trinity Bantams, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "new-england-blue-storm",
+    "school": "University of New England",
+    "fullSchool": "University of New England",
+    "team": "Nor’Easters",
+    "stadium": "Blue Storm Stadium",
+    "city": "Biddeford",
+    "state": "Maine",
+    "opened": 2018,
+    "seatingCapacity": 1600,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": "Stormin’ Norman",
+    "capacityDisplay": "1,600",
+    "openedDisplay": "2018",
+    "openedNote": "Current stadium opened August 2018; earlier Big Blue Turf field dates to 2010.",
+    "teamName": "University of New England Nor’Easters",
+    "aliases": [
+      "University of New England",
+      "University of New England Nor’Easters",
+      "Blue Storm Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Blue Storm Stadium",
+        "url": "https://athletics.une.edu/facilities/blue-storm-stadium/1125"
+      },
+      {
+        "title": "Stormin Norman mascot",
+        "url": "https://www.une.edu/magazine/2021-edition/new-look-une-mascot-makes-its-debut"
+      },
+      {
+        "title": "2026 football membership and active teams",
+        "url": "https://cnesports.org/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.une.edu/facilities/blue-storm-stadium/1125"
+    },
+    "description": "University of New England’s Nor’Easters play at Blue Storm Stadium in Biddeford, Maine.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated aerial approximations based on official June 2026 aerial with a November 2018 supplemental field view; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/new-england-blue-storm-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Blue Storm Stadium, home of the University of New England Nor’Easters, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/new-england-blue-storm-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Blue Storm Stadium, home of the University of New England Nor’Easters, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "vermont-state-castleton-wolk",
+    "school": "Vermont State Castleton",
+    "fullSchool": "Vermont State University Castleton",
+    "team": "Spartans",
+    "stadium": "Dave Wolk Stadium",
+    "city": "Castleton",
+    "state": "Vermont",
+    "opened": 2009,
+    "seatingCapacity": 1600,
+    "classification": "NCAA Division III",
+    "conference": "NJAC",
+    "mascot": "Sparty the Spartan",
+    "capacityLabel": "Bleacher seats",
+    "capacityShortLabel": "Bleacher seats",
+    "capacityNote": "The university specifies 1,600 seats and 5,000 overall capacity. The larger overall capacity is not an all-seated count.",
+    "openedNote": "Opened as Spartan Stadium in 2009; renamed Dave Wolk Stadium in 2018. Football remains NJAC in 2026; the announced MASCAC return begins in 2027.",
+    "description": "Dave Wolk Stadium features depot-inspired architecture that reflects the region’s railroad history. The multi-use turf field opened in 2009 and was renamed for former president Dave Wolk in 2018.",
+    "teamName": "Vermont State Castleton Spartans",
+    "aliases": [
+      "Castleton",
+      "Castleton University",
+      "VTSU Castleton",
+      "Spartan Stadium",
+      "Castleton Spartans",
+      "Vermont State University Castleton",
+      "Vermont State Castleton Spartans",
+      "Dave Wolk Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official Dave Wolk Stadium facility page",
+        "url": "https://castletonsports.com/facilities/dave-wolk-stadium/3"
+      },
+      {
+        "title": "Official 2009 opening report",
+        "url": "https://castletonsports.com/news/2009/9/1/9_1_2009_3578.aspx"
+      },
+      {
+        "title": "Official 2026 football preview and NJAC affiliation",
+        "url": "https://castletonsports.com/news/2026/9/4/football-opens-2026-season-on-saturday.aspx"
+      },
+      {
+        "title": "University mascot identification",
+        "url": "https://vermontstate.edu/news/rutland-herald-vtsu-castleton-class-of-2025-unveils-sparty-statue-as-parting-gift/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://castletonsports.com/facilities/dave-wolk-stadium/3"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated architectural approximation using official 2020-upload venue details and the stadium photograph in a 2024 NJAC announcement graphic; capture dates unspecified. Graphic overlay excluded. Surrounding landscape and building relationships beyond the references are approximate, not surveyed or current documentary proof.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/vermont-state-castleton-wolk-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Dave Wolk Stadium, home of the Vermont State Castleton Spartans, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/vermont-state-castleton-wolk-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Dave Wolk Stadium, home of the Vermont State Castleton Spartans, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "wesleyan-andrus",
+    "school": "Wesleyan",
+    "fullSchool": "Wesleyan University",
+    "team": "Cardinals",
+    "stadium": "Corwin Stadium at Andrus Field",
+    "city": "Middletown",
+    "state": "Connecticut",
+    "opened": 1881,
+    "seatingCapacity": 5000,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "The Cardinal",
+    "capacityNote": "NCAA-reported seating; current facility page does not restate capacity.",
+    "openedNote": "1881 is NCAA-reported original field year. Andrus Field dedicated 1898; Corwin Stadium named 2002.",
+    "teamName": "Wesleyan Cardinals",
+    "aliases": [
+      "Wesleyan University (Connecticut)",
+      "Wesleyan Cardinals",
+      "Andrus Field",
+      "Corwin Stadium",
+      "Wesleyan University",
+      "Corwin Stadium at Andrus Field"
+    ],
+    "sources": [
+      {
+        "title": "Official facility",
+        "url": "https://athletics.wesleyan.edu/facilities/corwin-stadium/6"
+      },
+      {
+        "title": "NCAA stadium table",
+        "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official mascot",
+        "url": "https://newsletter.blogs.wesleyan.edu/2019/08/15/wesleyan-introduces-new-cardinal/"
+      },
+      {
+        "title": "2026 football standings",
+        "url": "https://nescac.com/standings.aspx?path=football"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.wesleyan.edu/facilities/corwin-stadium/6"
+    },
+    "description": "Wesleyan University’s Cardinals play at Corwin Stadium at Andrus Field in Middletown, Connecticut.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials based on official facility photographs uploaded October2026; architectural detail and distant surroundings are interpretive, not documentary photography.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/wesleyan-andrus-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Corwin Stadium at Andrus Field, home of the Wesleyan Cardinals, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/wesleyan-andrus-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Corwin Stadium at Andrus Field, home of the Wesleyan Cardinals, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "western-connecticut-westside",
+    "school": "Western Connecticut",
+    "fullSchool": "Western Connecticut State University",
+    "team": "Wolves",
+    "stadium": "Westside Athletic Complex",
+    "city": "Danbury",
+    "state": "Connecticut",
+    "opened": null,
+    "seatingCapacity": 2500,
+    "classification": "NCAA Division III",
+    "conference": "Landmark Conference",
+    "mascot": "Wally the Wolf",
+    "openedDisplay": "2002–03",
+    "openedNote": "University history and 2026 news say completed 2002; athletics facility page says opened August 2003.",
+    "teamName": "Western Connecticut Wolves",
+    "aliases": [
+      "WestConn",
+      "WCSU",
+      "Western Connecticut State",
+      "Western Connecticut State University",
+      "WestConn Wolves",
+      "Westside Athletic Complex",
+      "Western Connecticut Wolves"
+    ],
+    "sources": [
+      {
+        "title": "Official facility",
+        "url": "https://westconnathletics.com/facilities/the-westside-athletic-complex/2"
+      },
+      {
+        "title": "University stadium history",
+        "url": "https://www.wcsu.edu/football-50-years/announcement/westside-athletic-complex-wac/"
+      },
+      {
+        "title": "2026 turf replacement",
+        "url": "https://news.wcsu.edu/westconn-wolves-to-take-to-the-field-on-new-turf-next-fall/"
+      },
+      {
+        "title": "2026 Landmark membership",
+        "url": "https://westconnathletics.com/news/2026/8/19/westconn-football-participates-in-landmark-media-day-picked-fourth-in-pre-season-poll.aspx"
+      },
+      {
+        "title": "Official mascot identity",
+        "url": "https://news.wcsu.edu/wcsu-announces-new-mascot-identity/"
+      },
+      {
+        "title": "President identifies Wally",
+        "url": "https://staging.www.wcsu.edu/president/community-messages/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://westconnathletics.com/facilities/the-westside-athletic-complex/2"
+    },
+    "description": "Western Connecticut State University’s Wolves play at Westside Athletic Complex in Danbury, Connecticut.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials use a 2017 venue photograph and a May2026 Wolves turf announcement graphic, not an as-built photograph. Current turf design/completion and surroundings are not visually verified.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/western-connecticut-westside-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Westside Athletic Complex, home of the Western Connecticut Wolves, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/western-connecticut-westside-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Westside Athletic Complex, home of the Western Connecticut Wolves, with surrounding setting."
       }
     ]
   }

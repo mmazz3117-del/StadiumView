@@ -2,11 +2,11 @@
   'use strict';
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
-  const BUILD = '1.16.0';
+  const BUILD = '1.17.0';
   window.STADIUM_ATLAS_RUNTIME = {build:BUILD,ready:false,schools:0,views:0};
   const catalog = window.STADIUMS;
   const expectedBuild = document.documentElement.dataset.appBuild;
-  const validCatalog = Array.isArray(catalog) && catalog.length === 233 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant','north-dakota-state-fargodome'].includes(item.id) ? 3 : 2));
+  const validCatalog = Array.isArray(catalog) && catalog.length === 248 && catalog.every(item => item && Array.isArray(item.views) && item.views.length === (['syracuse-jma-wireless-dome','unlv-allegiant','north-dakota-state-fargodome'].includes(item.id) ? 3 : 2));
   if (expectedBuild !== BUILD || window.STADIUM_ATLAS_CATALOG_BUILD !== BUILD || !validCatalog) {
     let warning = document.getElementById('release-warning');
     if (!warning) {
@@ -16,7 +16,7 @@
       document.body.prepend(warning);
     }
     warning.hidden = false;
-    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.16.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
+    warning.innerHTML = '<strong>The update files need to match.</strong><p id="release-warning-message">Upload index.html, styles.css, app.js, and catalog.js from the same v1.17.0 code ZIP into the same app folder, replacing the older files, then reload.</p>';
     warning.style.cssText = 'display:block;padding:18px;margin:20px;background:#382f18;border:1px solid #dbc477;border-radius:4px;color:#fff3c8;font:14px/1.6 Arial,sans-serif;';
     if (document.getElementById('start-slideshow')) document.getElementById('start-slideshow').disabled = true;
     if (document.getElementById('main')) document.getElementById('main').hidden = true;
@@ -66,6 +66,8 @@
   const board = $('#letter-board');
   const conferenceFilter = $('#conference-filter');
   const divisionFilter = $('#division-filter');
+  const sortSelect = $('#stadium-sort');
+  let sortOrder = 'school';
   const dialog = $('#image-viewer');
   const stage = $('#zoom-stage');
   let viewerImage = $('#viewer-image');
@@ -592,9 +594,24 @@
     const searchable = normalize([item.school, item.fullSchool, item.team, item.teamName, item.mascot, item.stadium, item.city, item.state, ...(item.aliases || [])].join(' '));
     return (!conference || item.conference === conference) && (!classification || item.classification === classification) && (letter === 'All' || item.school.toUpperCase().startsWith(letter)) && normalize(query).split(/\s+/).filter(Boolean).every(word => searchable.includes(word));
   }
+  function compareSchools(a, b) {
+    return a.school.localeCompare(b.school) || a.id.localeCompare(b.id);
+  }
+  function compareSchoolList(a, b) {
+    if (sortOrder !== 'state') return compareSchools(a, b);
+    const stateA = typeof a.state === 'string' ? a.state.trim() : '';
+    const stateB = typeof b.state === 'string' ? b.state.trim() : '';
+    // Preserve full place names (including DC); unknown locations go last.
+    return Number(!stateA) - Number(!stateB) || stateA.localeCompare(stateB) || compareSchools(a, b);
+  }
+  sortSelect.addEventListener('change', () => {
+    sortOrder = sortSelect.value === 'state' ? 'state' : 'school';
+    sortSelect.value = sortOrder;
+    renderResults();
+  });
   function renderResults() {
     cancelCardGesture();
-    const results = catalog.filter(matches).sort((a,b) => a.school.localeCompare(b.school));
+    const results = catalog.filter(matches).sort(compareSchoolList);
     const views = results.reduce((sum,item) => sum + item.views.length, 0);
     $$('.letter').forEach(button => { const selected = button.dataset.letter === letter; button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected)); });
     $('#clear-search').hidden = !query;
@@ -602,7 +619,7 @@
     $('#filter-summary').textContent = filterDescription();
     $('#filter-summary').hidden = !filterDescription();
     $('#results-title').textContent = query ? 'Search results' : conference || classification ? 'Filtered collection' : letter === 'All' ? 'The collection' : `${letter} · Schools`;
-    $('#result-count').textContent = `${results.length} stadium${results.length === 1 ? '' : 's'}${results.length ? ` · ${views} views` : ''}`;
+    $('#result-count').textContent = `${results.length} stadium${results.length === 1 ? '' : 's'}${results.length ? ` · ${views} views` : ''}${sortOrder === 'state' ? ' · State A–Z' : ''}`;
     $('#collection-total').textContent = String(catalog.length).padStart(3,'0');
     $('#collection-note-text').textContent = catalog.length === 1 ? 'Starting in Eugene. More home fields to come.' : `${catalog.length} home fields. ${catalog.reduce((sum,item) => sum + item.views.length,0)} perspectives. More to come.`;
     $('#stadium-list').classList.toggle('multi-stadium', catalog.length > 1);

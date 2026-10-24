@@ -445,3 +445,177 @@ https://gps-merrimack-edu.cdn.technolutions.net/images/footer-img-2020.jpg
 Reference era: Official college graduate admissions portal, 2020 image asset filename
 Caveats: Official athletics aerial uploaded June 2019; source-era field markings, not claimed 2026 capture.
 
+
+
+STADIUM ATLAS v1.17.0 — NEW ENGLAND EXPANSION
+Research checked 2026-10-24. Generated architectural illustrations, not documentary photographs. Reference upload dates are not necessarily capture dates. Final view QA is recorded separately in the artwork manifests.
+
+Bates — Garcelon Field
+AI-generated aerial approximations based on August 2023 official drone photographs; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.
+Source: https://gobatesbobcats.com/facilities/garcelon-field/3
+Source: https://www.bates.edu/news/2015/05/05/slideshow-garcelon-fields-gifts-to-bates-college/
+Source: https://www.bates.edu/news/2026/10/08/theres-a-new-bobcat-in-town/
+Source: https://nescac.com/standings.aspx?path=football
+Visual reference: https://gobatesbobcats.com/images/2023/8/3/230803_Drone_Garcelon_2184.JPG
+Visual reference: https://gobatesbobcats.com/images/2023/8/3/230803_Drone_Garcelon_2183.JPG
+Official 2015 history describes the 2010 grandstand as seating 1,500; this is not asserted as current total venue capacity.
+
+
+Bowdoin — Whittier Field
+AI-generated aerial approximations based on 2017/2024 official ground photographs and a post-renovation official aerial of unspecified capture date; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.
+Source: https://athletics.bowdoin.edu/facilities/whittier-field/10
+Source: https://www.bowdoin.edu/news/2019/03/new-locker-rooms-and-training-facility-for-bowdoin-athletes-completes-whitter-field-renovation.html
+Source: https://athletics.bowdoin.edu/sports/2024/10/25/the-polar-bear.aspx
+Source: https://nescac.com/standings.aspx?path=football
+Visual reference: https://www.bowdoin.edu/facilities/images/whitter_field_sunset.jpg
+Visual reference: https://athletics.bowdoin.edu/images/2024/10/24/whittier9.JPG
+Visual reference: https://athletics.bowdoin.edu/images/2017/12/6/whittier2-2017.jpg
+Current official facility page does not give total capacity. Historic secondary figures deliberately omitted.
+Field opened 1896; Hubbard Grandstand dates to 1904; modernization 2017–2019.
+
+Colby — Seaverns Field at Harold Alfond Stadium
+AI-generated aerial approximations based on official aerial published in an April 2021 asset path; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.
+Source: https://colbyathletics.com/sports/2020/5/28/facilities-seaverns-field.aspx
+Source: https://colbyathletics.com/sports/2020/5/28/facilities-alfond-track.aspx
+Source: https://colbyathletics.com/news/2021/3/26/general-making-of-the-mule-how-colbys-mascot-came-to-life.aspx?path=general
+Source: https://nescac.com/standings.aspx?path=football
+Visual reference: https://colbyathletics.com/images/2021/4/7/seaverns_field.jpg
+
+Official sources describe restoration/dedication in 2008, not an original opening date. Turf resurfaced 2018.
+
+Husson — Dr. John W. Winkin Sports Complex
+AI-generated aerial approximations based on official July 2022 aerial photograph; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.
+Source: https://hussoneagles.com/facilities/dr-john-w-winkin-sports-complex/3
+Source: https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf
+Source: https://www.husson.edu/news/2026/09/husson-homecoming-october-2-3-2026
+Source: https://cnesports.org/standings.aspx?path=football
+Visual reference: https://hussoneagles.com/images/2022/9/1/Winkin_Complex_4.jpg
+
+2003 is the opening year listed in the NCAA Division III stadium table; field and press-box renovations occurred later.
+
+University of New England — Blue Storm Stadium
+AI-generated aerial approximations based on official June 2026 aerial with a November 2018 supplemental field view; not real photographs or a survey of current conditions. Fine markings, distant surroundings and inferred reverse-angle details may differ.
+Source: https://athletics.une.edu/facilities/blue-storm-stadium/1125
+Source: https://www.une.edu/magazine/2021-edition/new-look-une-mascot-makes-its-debut
+Source: https://cnesports.org/standings.aspx?path=football
+Visual reference: https://athletics.une.edu/images/2026/6/25/Storm_Stadium_BSS_Noreaster_Diamond.jpg
+Visual reference: https://athletics.une.edu/images/2018/11/30/StormStadium1.jpg
+
+Current stadium opened August 2018; earlier Big Blue Turf field dates to 2010.
+
+Coast Guard — Cadet Memorial Field
+Approximate AI-generated aerials based on photographs uploaded July2025 and a 2023 illustrated campus map. Campus architecture, shoreline distance and field details are interpretive, not current documentary photography.
+Source: https://coastguardathletics.com/facilities/cadet-memorial-field/28
+Source: https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/D3.pdf
+Source: https://uscga.edu/about/objee-the-bear/
+Source: https://newmacsports.com/standings.aspx?path=football
+Visual reference: https://coastguardathletics.com/images/2025/7/11/cmf-1.png
+Visual reference: https://coastguardathletics.com/images/2025/7/11/cmf-2.png
+Visual reference: https://s3.us-east-1.amazonaws.com/sidearm.sites/uscga.sidearmsports.com/documents/2024/1/18/USCGA-Campus_Map__2023__1_.pdf
+NCAA-reported seating; current facility page does not restate capacity.
+NCAA stadium table reports 1932.
+
+Trinity — Jessee/Miller Field at Tansill Muldoon Stadium
+Approximate AI-generated aerials combine campus geometry from an image uploaded July2020 with grandstand photographs uploaded August2022; not current documentary photography.
+Source: https://bantamsports.com/facilities/jessee-miller-field-at-tansill-muldoon-stadium/4
+Source: https://bantamsfootball.com/trini
+Source: https://bantamsports.com/news/2021/9/16/football-tansill-muldoon-families-support-new-trinity-stadium.aspx
+Source: https://www.trincoll.edu/news/photo-gallery-the-bantams-many-forms/
+Source: https://nescac.com/standings.aspx?path=football
+Visual reference: https://bantamsports.com/images/2022/8/23/51796134337_d441a11e3b_5k.jpg
+Visual reference: https://bantamsports.com/images/2020/7/9/43020331594_ff03b55db2_k.jpg
+Visual reference: https://bantamsports.com/images/2022/8/23/51796127627_133e0dffe7_k.jpg
+
+1900 refers to original playing field. New grandstand dates differ between 2021 announcement and facility page describing 2022 construction.
+
+Wesleyan — Corwin Stadium at Andrus Field
+Approximate AI-generated aerials based on official facility photographs uploaded October2026; architectural detail and distant surroundings are interpretive, not documentary photography.
+Source: https://athletics.wesleyan.edu/facilities/corwin-stadium/6
+Source: https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/D3.pdf
+Source: https://newsletter.blogs.wesleyan.edu/2019/08/15/wesleyan-introduces-new-cardinal/
+Source: https://nescac.com/standings.aspx?path=football
+Visual reference: https://athletics.wesleyan.edu/images/2026/10/16/Corwin_4.JPG
+Visual reference: https://athletics.wesleyan.edu/images/2026/10/16/Corwin_1.JPG
+NCAA-reported seating; current facility page does not restate capacity.
+1881 is NCAA-reported original field year. Andrus Field dedicated 1898; Corwin Stadium named 2002.
+
+Western Connecticut — Westside Athletic Complex
+Approximate AI-generated aerials use a 2017 venue photograph and a May2026 Wolves turf announcement graphic, not an as-built photograph. Current turf design/completion and surroundings are not visually verified.
+Source: https://westconnathletics.com/facilities/the-westside-athletic-complex/2
+Source: https://www.wcsu.edu/football-50-years/announcement/westside-athletic-complex-wac/
+Source: https://news.wcsu.edu/westconn-wolves-to-take-to-the-field-on-new-turf-next-fall/
+Source: https://westconnathletics.com/news/2026/8/19/westconn-football-participates-in-landmark-media-day-picked-fourth-in-pre-season-poll.aspx
+Source: https://news.wcsu.edu/wcsu-announces-new-mascot-identity/
+Source: https://staging.www.wcsu.edu/president/community-messages/
+Visual reference: https://www.wcsu.edu/football-50-years/wp-content/uploads/sites/212/2020/05/stadium2017_6310-copy-1024x640.jpg
+Visual reference: https://news.wcsu.edu/wp-content/uploads/2026/05/New-turf_533x300.jpg
+
+University history and 2026 news say completed 2002; athletics facility page says opened August 2003.
+
+Norwich — Sabine Field at Haynes Family Stadium
+Approximate AI-generated aerials based on official August13,2026 drone photographs; architectural detail and distant surroundings are interpretive, not documentary photography.
+Source: https://norwichathletics.com/facilities/sabine-field-at-haynes-family-stadium/2
+Source: https://home.norwich.edu/on/athletics-recreation
+Source: https://newmacsports.com/standings.aspx?path=football
+Visual reference: https://norwichathletics.com/images/2026/8/19/DJI_20260813112655_0043_D.jpg
+Visual reference: https://norwichathletics.com/images/2026/8/19/DJI_20260813112402_0040_D.jpg
+Visual reference: https://norwichathletics.com/images/2026/8/19/DJI_20260813111754_0031_D.jpg
+
+Dedicated October 8, 1921; renovated and renamed 2013.
+
+Franklin Pierce — Sodexo Field
+AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: 2025 upload; capture date unspecified. Background details beyond the photographed views are approximate.
+Source: https://fpuravens.com/facilities/sodexo-field/1
+Source: https://fpuravens.com/sports/football/schedule
+Source: https://franklinpierce.edu/student-experience/campus-life/orientation/index.html
+Source: https://www.franklinpierce.edu/news/fpu_announces_football_inaugural_season.html
+Visual reference: https://fpuravens.com/images/2025/6/9/53829906867_d65588ae04_o.jpg
+Visual reference: https://fpuravens.com/images/2025/6/9/53831161004_2d37a02bc1_o__1_.jpg
+The current university facility page does not publish a capacity; conflicting secondary counts are not asserted.
+The original opening year was not verified from a primary source; 2019 was the inaugural Division II football season, not the opening of this existing field.
+
+Plymouth State — Panther Field
+AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: 2021. Background details beyond the photographed views are approximate.
+Source: https://athletics.plymouth.edu/facilities/panther-field/37
+Source: https://athletics.plymouth.edu/sports/football/schedule/2026?grid=true
+Source: https://web3.ncaa.org/directory/orgDetail?id=548
+Source: https://www.usnh.edu/sites/default/files/media/2025-03/board-meeting-packet-2025-03-21.pdf
+Visual reference: https://athletics.plymouth.edu/images/2021/8/11/Panther_Field_Aerial.jpg
+Visual reference: https://athletics.plymouth.edu/images/2021/8/10/Panther_Field_Southwest_Corner_Elevated.jpg
+The current university facility page specifies 1,200 seats in the east-side bleachers; future west grandstand construction is not treated as completed.
+The current turf venue was ready in spring 2021. Its official physical address is in Holderness, across the river from Plymouth.
+
+Saint Anselm — Grappone Stadium
+AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: 2022. Background details beyond the photographed views are approximate.
+Source: https://saintanselmhawks.com/facilities/grappone-stadium/1
+Source: https://saintanselmhawks.com/news/2026/4/8/saint-anselm-announces-2026-football-schedule.aspx
+Source: https://northeast10.org/news/2024/8/15/general-assumption-alum-ted-paulauskas-served-as-saint-anselm-athletic-director-for-25-years.aspx
+Source: https://www.anselm.edu/about/anselmian-hub/news/scene-campus-springsummer-2026
+Visual reference: https://saintanselmhawks.com/images/2022/10/11/DJI_0029_3TKXJ.JPG
+Visual reference: https://saintanselmhawks.com/images/2022/10/11/DJI_0044.JPG
+The university lists 2,500 grandstand seats within a total crowd capacity of 4,500; the total is not presented as an all-seated capacity.
+
+
+Middlebury — Youngman Field at Alumni Stadium
+AI-generated architectural approximation based on official venue photographs; not a current documentary photograph or surveyed site model. Reference era: September 2026. Background details beyond the photographed views are approximate.
+Source: https://athletics.middlebury.edu/facilities/youngman-field-at-alumni-stadium/19
+Source: https://sites.middlebury.edu/lacrossehistory/facilities/
+Source: https://nescac.com/standings.aspx?path=football
+Source: https://s3.us-east-2.amazonaws.com/sidearm.nextgen.sites/athletics.middlebury.edu/documents/2023/10/27/Athletics_Identity_Manual_REV1023_FINAL.pdf
+Visual reference: https://athletics.middlebury.edu/images/2026/9/3/DJI_0016.JPG
+Visual reference: https://athletics.middlebury.edu/images/2026/9/3/DJI_0040.JPG
+The current college facility page specifies 3,500 seats.
+College-hosted facilities history dates the stadium to 1991; turf was installed in 2008, resurfaced in 2021, and corner lights were added in summer 2026.
+
+Vermont State Castleton — Dave Wolk Stadium
+AI-generated architectural approximation using official 2020-upload venue details and the stadium photograph in a 2024 NJAC announcement graphic; capture dates unspecified. Graphic overlay excluded. Surrounding landscape and building relationships beyond the references are approximate, not surveyed or current documentary proof.
+Source: https://castletonsports.com/facilities/dave-wolk-stadium/3
+Source: https://castletonsports.com/news/2009/9/1/9_1_2009_3578.aspx
+Source: https://castletonsports.com/news/2026/9/4/football-opens-2026-season-on-saturday.aspx
+Source: https://vermontstate.edu/news/rutland-herald-vtsu-castleton-class-of-2025-unveils-sparty-statue-as-parting-gift/
+Visual reference: https://castletonsports.com/images/2020/8/21/stadium_wide_6723.JPG
+Visual reference: https://castletonsports.com/images/2020/8/21/stadium_front_6788.JPG
+Visual reference: https://njacsports.com/images/2024/10/29/castleton_graphic_1920x1080.jpg
+Visual reference: https://castletonsports.com/images/2020/8/21/crowd_0049_2.jpg
+The university specifies 1,600 seats and 5,000 overall capacity. The larger overall capacity is not an all-seated count.
+Opened as Spartan Stadium in 2009; renamed Dave Wolk Stadium in 2018. Football remains NJAC in 2026; the announced MASCAC return begins in 2027.

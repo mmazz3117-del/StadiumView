@@ -619,3 +619,111 @@ Visual reference: https://njacsports.com/images/2024/10/29/castleton_graphic_192
 Visual reference: https://castletonsports.com/images/2020/8/21/crowd_0049_2.jpg
 The university specifies 1,600 seats and 5,000 overall capacity. The larger overall capacity is not an all-seated count.
 Opened as Spartan Stadium in 2009; renamed Dave Wolk Stadium in 2018. Football remains NJAC in 2026; the announced MASCAC return begins in 2027.
+
+
+STADIUM ATLAS v1.18.0 — NEW ENGLAND + NEW YORK
+Research checked October 24, 2026. Generated artwork is approximate, not documentary photography. Original reference photographs remain their owners’ works and are not redistributed as app imagery.
+
+Central Connecticut — Arute Field
+AI-generated reference-based aerial illustrations, not photographs or a current survey. Venue geometry follows Paul Baker’s original stadium photographs in an October 2024 article updated July 2025 (capture date unspecified), a university public-history photograph posted November 2021, and the official November 2025 campus map. The running track is a separate neighboring facility, not around the football field. Background buildings, signage and reverse-angle details are approximate.
+- Official CCSU football notes hosted by UConn: https://uconnhuskies.com/documents/download/2025/8/26/CCSU_FBNotes_-_UConn_Game.pdf
+- NCAA FCS record book stadium table: https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/FCS.pdf
+- Central mascot: https://www.ccsu.edu/article/cheers-175-years
+- 2026 homecoming at Arute Field: https://www.ccsu.edu/homecoming
+- University 2004–06 catalog stadium rebuild: https://ccsu.smartcatalogiq.com/-/media/institution/ccsu/2004-2006%20Graduate%20Catalog.pdf
+- Paul Baker original Arute Field photographs; article October 2024, updated July 2025, exact capture date unspecified: https://static.wixstatic.com/media/d50ee7_c44526ad4eb14ef48fae6b2e46edf7aa~mv2.jpg/v1/fill/w_1920,h_1440,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/d50ee7_c44526ad4eb14ef48fae6b2e46edf7aa~mv2.jpg
+- Paul Baker original Arute Field photographs; article October 2024, updated July 2025, exact capture date unspecified: https://static.wixstatic.com/media/d50ee7_a4131ec3cef945b6a57e266881a8fe35~mv2.jpg/v1/fill/w_1920,h_1440,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/d50ee7_a4131ec3cef945b6a57e266881a8fe35~mv2.jpg
+- CCSU public history field photograph posted November 2021; capture date unspecified: https://ccsupublichistory.wordpress.com/wp-content/uploads/2021/11/image.jpeg?w=1200
+- Official campus map revised November 25, 2025: https://www.ccsu.edu/sites/default/files/2026-01/CAMPUS%20MAP%20for%20TRI-FOLD%202025%20Combined%20rev%2011%2025.pdf
+
+New Haven — Ralph F. DellaCamera Stadium
+AI-generated reference-based aerial illustrations, not photographs or a current survey. Blue turf, gold end zones and compact stands follow official June–August 2021 imagery; surrounding campus details and markings are approximate.
+- Official facility: https://newhavenchargers.com/facilities/ralph-f-dellacamera-stadium/3
+- University seating and dedication details: https://old.newhaven.edu/about/facilities/
+- 2026NEC schedule: https://newhavenchargers.com/news/2026/3/2/new-haven-nec-announce-2026-football-schedule.aspx
+- Charlie mascot: https://www.newhaven.edu/news/blog/2026/class-of-2023-move-in.php
+- June 9, 2021 official drone photograph: https://newhavenchargers.com/images/2021/7/7/NewHavenFacilities_20210609_DJI_0872_HDR.jpg
+- Official stadium oblique uploaded August 2021: https://newhavenchargers.com/images/2021/8/24/DellaCamera.png
+
+Sacred Heart — Sikorsky Credit Union Field
+AI-generated reference-based aerial illustrations, not photographs or a current survey. Site geometry and field markings follow the official 2022 Family Weekend aerial (uploaded 2024). The July 2026 Sikorsky naming-rights graphic is a rendering, not an as-built photograph; current signage and surrounding campus details may differ.
+- 2026 naming agreement: https://sacredheartpioneers.com/news/2026/7/15/general-shu-and-sikorsky-credit-union-announce-multi-year-naming-rights-agreement
+- Official venue: https://sacredheartpioneers.com/facilities/sikorsky-credit-union-field/3
+- University 2026–27 facilities catalog: https://sacredheart.smartcatalogiq.com/en/2026-2027/2026-2027-undergraduate-catalog/university-facilities/campus-field
+- 2026CAA membership: https://www.sacredheart.edu/news-room/news-listing/leveling-up/
+- Mascot: https://next.sacredheart.edu/
+- 2022 Family Weekend aerial, uploaded June 2024: https://sacredheartpioneers.com/images/2024/6/12/Campus_Field_2022_family_weekend.jpg
+- July 2026 naming-rights announcement rendering, not an as-built photograph: https://sacredheartpioneers.com/images/2026/7/15/Untitled-1.png
+
+Southern Connecticut — Jess Dow Field
+AI-generated reference-based aerial illustrations, not photographs or a current survey. Turf and track colors follow the completed venue photo uploaded January 2024. A May 2023 design rendering informed general site geometry only, not proof of as-built details; campus context is approximate.
+- Official facility: https://scsuowls.com/facilities/jess-dow-field/21
+- 2026 football schedule announcement: https://scsuowls.com/news/2026/4/16/scsu-football-announces-2026-schedule.aspx
+- Otus mascot: https://scsuowls.com/news/2010/5/3/BB_0503102803.aspx
+- Completed turf photograph uploaded January 2024: https://scsuowls.com/images/2024/1/10/6.jpg
+- May 2023 renovation design rendering; geometry only: https://scsuowls.com/images/2023/5/15/JDF._ObliqueNE_1OWSt.jpg
+
+Ithaca — Bertino Field at Butterfield Stadium
+Approximate AI-generated aerials combine site geometry from an official image uploaded September 2016 with the completed-turf overhead published October 2023. Surroundings and architectural details are interpretive, not current documentary photographs.
+- Official stadium history: https://athletics.ithaca.edu/sports/2005/7/31/butterfield-stadium.aspx
+- 2026 active football and full field name: https://athletics.ithaca.edu/news/2026/9/17/football-opens-liberty-league-slate-this-saturday-vs-hilbert.aspx
+- Official no-mascot statement: https://www.ithaca.edu/about/bombers-no-mascot-required
+- 2023 field dedication: https://www.ithaca.edu/news/new-era
+- Uploaded September 2016; historic site geometry only: https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/bombers.ithaca.edu/images/2016/9/28/Butterfield_Stadium_Aerial.jpg
+- October 2023 completed-turf overhead photograph: https://www.ithaca.edu/sites/default/files/styles/max_width_1920/public/2023-10/DJI_0767.JPG.webp?itok=yL_fOY5d
+
+Cortland — James J. Grady Field at SUNY Cortland Stadium Complex
+Approximate AI-generated aerials based on official August 2023 new-turf photographs. Buildings, markings and surroundings are interpretive, not current documentary photographs.
+- Official stadium facility: https://www.cortlandreddragons.com/facilities/suny-cortland-stadium-complex/2
+- 2026 conference standings: https://empire8.com/standings.aspx?path=football
+- Official mascot: https://www2.cortland.edu/offices/publications/big/mascot/
+- August 2023 new-turf photograph: https://www.cortlandreddragons.com/images/2023/8/10/GradyField2023.jpg
+- August 2023 new-turf photograph: https://www.cortlandreddragons.com/images/2023/8/10/GradyField2023_b.jpg
+
+Union (NY) — Frank Bailey Field at Bertagna-Class of 1985 Stadium
+Approximate AI-generated aerials combine legacy grandstand photography identified as 2005/uploaded July 2006, a photo uploaded December 2025, and an illustrated campus map imprinted September 2025/hosted February 2026. Campus geometry, turf markings and architectural details are interpretive, not current documentary photographs.
+- Official stadium facility: https://unionathletics.com/facilities/frank-bailey-field-at-bertagna-class-of-1985-stadium/3
+- NCAA stadium table: https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf
+- 2026 active football: https://unionathletics.com/news/2026/9/26/football-starts-liberty-league-defense-with-rout-of-buffalo-state.aspx
+- Official mascot: https://www.union.edu/news/stories/202311/meet-charger-unions-new-mascot
+- Filename identifies 2005 image, uploaded July 2006; legacy grandstand architecture: https://unionathletics.com/images/2006/7/19/Stadium%202005B.JPG
+- UploadedDecember 2025; capture date unspecified: https://unionathletics.com/images/2025/12/18/baileyfield_football_xGMGN.jpg
+- Map imprint 09/25, hosted February 2026; illustrated placement guide, not aerial photograph: https://www.union.edu/sites/default/files/union-marketing-layer/202602/campusmap.pdf
+
+Maine Maritime — Ritchie Field
+AI-generated reference-based aerial approximations, not documentary photographs. Based on academy photographs published in October 2018, November 2019 and November 2023; capture dates may differ. Turf markings, buildings, vegetation and sightlines are approximate and may not reflect 2026 conditions.
+- Official source: https://marinersports.org/sports/2022/5/18/information-facilities-ritchie.aspx
+- Official source: https://marinersports.org/news/2026/3/17/football-announces-upcoming-2026-schedule.aspx
+- Official source: https://web3.ncaa.org/directory/orgDetail?id=378
+- Official academy campus aerial: https://marinersports.org/news/2023/11/17/general-baer-named-fara-newcomer-of-the-year.aspx
+- Maine Maritime Academy via Facebook, explicitly credited by Maine Public; primary academy photograph republished: https://www.mainepublic.org/business-and-economy/2019-11-15/new-report-finds-that-maine-maritime-academy-is-one-of-the-best-values-in-higher-education-in-u-s
+- Official pressbox/grandstand photograph: https://marinersports.org/news/2018/10/5/10_5_2018_275
+- Published November 2023; capture date unspecified: https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/marinersports.org/images/2023/11/15/MMA_Campus.png
+- Published November 2019; capture date unspecified: https://npr.brightspotcdn.com/legacy/sites/mpbn/files/201911/73304976_2488395784563049_8658156926271488000_o.jpg
+- October 2018: https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/marinersports.org/images/2018/10/5/captainsWpi.jpg
+
+New England College — NEC Football Field
+AI-generated reference-based aerial approximations, not documentary photographs. Based on official September 2025 photographs of the new natural-grass NEC Football Field. Surroundings, markings and reverse-angle geometry are approximate; future facility plans are not depicted.
+- Official source: https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx
+- Official source: https://athletics.nec.edu/sports/football/schedule/2026
+- Official source: https://athletics.nec.edu/news/2026/7/6/nec-football-releases-2026-schedule.aspx
+- Official source: https://web3.ncaa.org/directory/orgDetail?id=467
+- Official venue aerial: https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx
+- Official venue field photograph: https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx
+- Official bleacher and pressbox photograph: https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx
+- September 2025; filename indicates September 13 capture: https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/athletics.nec.edu/images/2025/9/16/DJI_20250913202811_0001_D.JPG
+- September 2025: https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/athletics.nec.edu/images/2025/9/12/FBField2__1_.jpg
+- September 2025: https://athletics.nec.edu/images/2025/9/19/FootballField.jpg
+
+Post — Municipal Stadium
+AI-generated reference-based aerial approximations, not documentary photographs. Based on an undated contractor aerial and undated city parks photograph inspected October 24, 2026. The source-era blue WATERBURY markings and shared softball turf are depicted; current paint, turf and surrounding details may differ. This is the football/soccer field, not the separate historic baseball stadium.
+- Official source: https://posteagles.com/sports/football/schedule
+- Official source: https://northeast10.org/standings.aspx?path=football
+- Official source: https://waterburyct.myrec.com/info/facilities/area_info.aspx?AreaID=14820&FacilityID=14819
+- Official source: https://post.edu/blog/newsletter-week-of-april-29-2024/
+- Official source: https://post.edu/wp-content/uploads/2022/04/post_brand_guide_2022_04_11.pdf
+- Official source: https://www.waterburyct.org/filestorage/103431/108302/108357/108364/108366/Waterbury_2015-2025_POCD_Part_II.rev_9-14-16.pdf
+- Primary construction contractor aerial; shows polygonal multipurpose turf, two softball markings outside football endzones; HTTP origin works, HTTPS returns 503: https://www.histoneson.com/projects.htm
+- Official football/soccer turf photograph; modest silver stands and wooded backdrop: https://waterburyct.myrec.com/info/facilities/area_info.aspx?AreaID=14820&FacilityID=14819
+- Undated contractor portfolio, inspected October 24, 2026: http://www.histoneson.com/gallery/Waterbury-Municipal-Stadium.jpg
+- Undated city parks photograph, inspected October 24, 2026: https://waterburyct.myrec.com/PhotoPool/Large/75.jpg

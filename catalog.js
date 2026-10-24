@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.17.1';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.18.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -16078,6 +16078,693 @@ window.STADIUMS = [
         "width": 1536,
         "height": 1024,
         "alt": "AI-generated reference-based reverse reconstruction of Westside Athletic Complex, home of the Western Connecticut Wolves, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "central-connecticut-arute",
+    "school": "Central Connecticut",
+    "fullSchool": "Central Connecticut State University",
+    "team": "Blue Devils",
+    "stadium": "Arute Field",
+    "city": "New Britain",
+    "state": "Connecticut",
+    "opened": null,
+    "seatingCapacity": 5500,
+    "classification": "NCAA Division I FCS",
+    "conference": "NEC",
+    "mascot": "Kizer the Blue Devil",
+    "capacityNote": "5,500 listed in official 2025 football notes and NCAA stadium table.",
+    "openedDisplay": "2000–01 (rebuilt)",
+    "openedNote": "University 2004–06 catalog dates major new stands/turf to fall 2000, while NCAA current-stadium table lists 2001. Earlier Arute Field incarnations predate this rebuild.",
+    "description": "Arute Field is the Blue Devils football venue on the Central Connecticut State University campus.",
+    "teamName": "Central Connecticut Blue Devils",
+    "aliases": [
+      "CCSU",
+      "Central Connecticut State",
+      "Central",
+      "Central Connecticut State University",
+      "Central Connecticut Blue Devils",
+      "Arute Field"
+    ],
+    "sources": [
+      {
+        "title": "Official CCSU football notes hosted by UConn",
+        "url": "https://uconnhuskies.com/documents/download/2025/8/26/CCSU_FBNotes_-_UConn_Game.pdf"
+      },
+      {
+        "title": "NCAA FCS record book stadium table",
+        "url": "https://s3.amazonaws.com/fs.ncaa.org/Docs/stats/football_records/FCS.pdf"
+      },
+      {
+        "title": "Central mascot",
+        "url": "https://www.ccsu.edu/article/cheers-175-years"
+      },
+      {
+        "title": "2026 homecoming at Arute Field",
+        "url": "https://www.ccsu.edu/homecoming"
+      },
+      {
+        "title": "University 2004–06 catalog stadium rebuild",
+        "url": "https://ccsu.smartcatalogiq.com/-/media/institution/ccsu/2004-2006%20Graduate%20Catalog.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://uconnhuskies.com/documents/download/2025/8/26/CCSU_FBNotes_-_UConn_Game.pdf"
+    },
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current survey. Venue geometry follows Paul Baker’s original stadium photographs in an October 2024 article updated July 2025 (capture date unspecified), a university public-history photograph posted November 2021, and the official November 2025 campus map. The running track is a separate neighboring facility, not around the football field. Background buildings, signage and reverse-angle details are approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/central-connecticut-arute-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Arute Field, home of the Central Connecticut Blue Devils, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/central-connecticut-arute-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Arute Field, home of the Central Connecticut Blue Devils, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "cortland-grady",
+    "school": "Cortland",
+    "fullSchool": "State University of New York at Cortland",
+    "team": "Red Dragons",
+    "stadium": "James J. Grady Field at SUNY Cortland Stadium Complex",
+    "city": "Cortland",
+    "state": "New York",
+    "opened": 2002,
+    "seatingCapacity": 6500,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": "Blaze",
+    "openedNote": "Stadium complex opened summer 2002; field named for James J.Grady and turf/video board replaced 2023.",
+    "teamName": "Cortland Red Dragons",
+    "aliases": [
+      "Cortland",
+      "SUNY Cortland",
+      "Cortland State",
+      "Cortland Red Dragons",
+      "Grady Field",
+      "SUNY Cortland Stadium Complex",
+      "State University of New York at Cortland",
+      "James J. Grady Field at SUNY Cortland Stadium Complex"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facility",
+        "url": "https://www.cortlandreddragons.com/facilities/suny-cortland-stadium-complex/2"
+      },
+      {
+        "title": "2026 conference standings",
+        "url": "https://empire8.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official mascot",
+        "url": "https://www2.cortland.edu/offices/publications/big/mascot/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.cortlandreddragons.com/facilities/suny-cortland-stadium-complex/2"
+    },
+    "description": "State University of New York at Cortland’s Red Dragons play at James J. Grady Field at SUNY Cortland Stadium Complex in Cortland, New York.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials based on official August 2023 new-turf photographs. Buildings, markings and surroundings are interpretive, not current documentary photographs.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/cortland-grady-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of James J. Grady Field at SUNY Cortland Stadium Complex, home of the Cortland Red Dragons, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/cortland-grady-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of James J. Grady Field at SUNY Cortland Stadium Complex, home of the Cortland Red Dragons, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "ithaca-butterfield",
+    "school": "Ithaca",
+    "fullSchool": "Ithaca College",
+    "team": "Bombers",
+    "stadium": "Bertino Field at Butterfield Stadium",
+    "city": "Ithaca",
+    "state": "New York",
+    "opened": 1958,
+    "seatingCapacity": 5000,
+    "classification": "NCAA Division III",
+    "conference": "Liberty League",
+    "mascot": null,
+    "capacityDisplay": "Approximately 5,000",
+    "capacityNote": "Official facility page specifies approximate seating; larger standing crowds are not seating capacity.",
+    "openedNote": "Original stadium completed summer 1958; Butterfield naming 1992; Bertino turf renovation 2023.",
+    "teamName": "Ithaca Bombers",
+    "aliases": [
+      "Ithaca",
+      "Ithaca College",
+      "Ithaca Bombers",
+      "Bertino Field at Butterfield Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium history",
+        "url": "https://athletics.ithaca.edu/sports/2005/7/31/butterfield-stadium.aspx"
+      },
+      {
+        "title": "2026 active football and full field name",
+        "url": "https://athletics.ithaca.edu/news/2026/9/17/football-opens-liberty-league-slate-this-saturday-vs-hilbert.aspx"
+      },
+      {
+        "title": "Official no-mascot statement",
+        "url": "https://www.ithaca.edu/about/bombers-no-mascot-required"
+      },
+      {
+        "title": "2023 field dedication",
+        "url": "https://www.ithaca.edu/news/new-era"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.ithaca.edu/sports/2005/7/31/butterfield-stadium.aspx"
+    },
+    "description": "Ithaca College’s Bombers play at Bertino Field at Butterfield Stadium in Ithaca, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials combine site geometry from an official image uploaded September 2016 with the completed-turf overhead published October 2023. Surroundings and architectural details are interpretive, not current documentary photographs.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/ithaca-butterfield-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Bertino Field at Butterfield Stadium, home of the Ithaca Bombers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/ithaca-butterfield-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Bertino Field at Butterfield Stadium, home of the Ithaca Bombers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "maine-maritime-ritchie",
+    "school": "Maine Maritime",
+    "fullSchool": "Maine Maritime Academy",
+    "team": "Mariners",
+    "stadium": "Ritchie Field",
+    "city": "Castine",
+    "state": "Maine",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": null,
+    "capacityDisplay": "Not verified",
+    "capacityNote": "Current football seating capacity not verified from primary sources.",
+    "openedDisplay": "In use since the 1940s",
+    "openedNote": "Official history dates use to the 1940s, not a verified exact opening year. Grandstand replaced after the 2007 storm; turf replaced in 2018.",
+    "teamName": "Maine Maritime Academy Mariners",
+    "aliases": [
+      "Maine Maritime",
+      "Maine Maritime Academy",
+      "Maine Maritime Academy Mariners",
+      "Ritchie Field"
+    ],
+    "sources": [
+      {
+        "title": "Official source",
+        "url": "https://marinersports.org/sports/2022/5/18/information-facilities-ritchie.aspx"
+      },
+      {
+        "title": "Official source",
+        "url": "https://marinersports.org/news/2026/3/17/football-announces-upcoming-2026-schedule.aspx"
+      },
+      {
+        "title": "Official source",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=378"
+      },
+      {
+        "title": "Official academy campus aerial",
+        "url": "https://marinersports.org/news/2023/11/17/general-baer-named-fara-newcomer-of-the-year.aspx"
+      },
+      {
+        "title": "Maine Maritime Academy via Facebook, explicitly credited by Maine Public; primary academy photograph republished",
+        "url": "https://www.mainepublic.org/business-and-economy/2019-11-15/new-report-finds-that-maine-maritime-academy-is-one-of-the-best-values-in-higher-education-in-u-s"
+      },
+      {
+        "title": "Official pressbox/grandstand photograph",
+        "url": "https://marinersports.org/news/2018/10/5/10_5_2018_275"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://marinersports.org/sports/2022/5/18/information-facilities-ritchie.aspx"
+    },
+    "description": "Maine Maritime Academy’s Mariners play at Ritchie Field in Castine, Maine.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on academy photographs published in October 2018, November 2019 and November 2023; capture dates may differ. Turf markings, buildings, vegetation and sightlines are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/maine-maritime-ritchie-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Ritchie Field, home of the Maine Maritime Academy Mariners, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/maine-maritime-ritchie-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Ritchie Field, home of the Maine Maritime Academy Mariners, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "new-england-college-football-field",
+    "school": "New England College",
+    "fullSchool": "New England College",
+    "team": "Pilgrims",
+    "stadium": "NEC Football Field",
+    "city": "Henniker",
+    "state": "New Hampshire",
+    "opened": 2025,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "Conference of New England",
+    "mascot": "Pilgrim",
+    "capacityDisplay": "Not verified",
+    "capacityNote": "Current football seating capacity not verified from primary sources.",
+    "openedDisplay": "2025",
+    "openedNote": "Official facility page confirms summer 2025 construction and first home game September 6, 2025. Natural-grass venue within Laurie Cox Memorial Fields, not Don Melander Field.",
+    "teamName": "New England College Pilgrims",
+    "aliases": [
+      "New England College",
+      "New England College Pilgrims",
+      "NEC Football Field"
+    ],
+    "sources": [
+      {
+        "title": "Official source",
+        "url": "https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx"
+      },
+      {
+        "title": "Official source",
+        "url": "https://athletics.nec.edu/sports/football/schedule/2026"
+      },
+      {
+        "title": "Official source",
+        "url": "https://athletics.nec.edu/news/2026/7/6/nec-football-releases-2026-schedule.aspx"
+      },
+      {
+        "title": "Official source",
+        "url": "https://web3.ncaa.org/directory/orgDetail?id=467"
+      },
+      {
+        "title": "Official venue aerial",
+        "url": "https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx"
+      },
+      {
+        "title": "Official venue field photograph",
+        "url": "https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx"
+      },
+      {
+        "title": "Official bleacher and pressbox photograph",
+        "url": "https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.nec.edu/sports/2025/9/13/Facilities-Bridges-Gym.aspx"
+    },
+    "description": "New England College’s Pilgrims play at NEC Football Field in Henniker, New Hampshire.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on official September 2025 photographs of the new natural-grass NEC Football Field. Surroundings, markings and reverse-angle geometry are approximate; future facility plans are not depicted.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/new-england-college-football-field-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of NEC Football Field, home of the New England College Pilgrims, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/new-england-college-football-field-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of NEC Football Field, home of the New England College Pilgrims, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "new-haven-dellacamera",
+    "school": "New Haven",
+    "fullSchool": "University of New Haven",
+    "team": "Chargers",
+    "stadium": "Ralph F. DellaCamera Stadium",
+    "city": "West Haven",
+    "state": "Connecticut",
+    "opened": 2009,
+    "seatingCapacity": 4500,
+    "classification": "NCAA Division I FCS",
+    "conference": "NEC",
+    "mascot": "Charlie the Charger",
+    "capacityNote": "University facilities page reports 4,500 seats; other secondary capacity figures are not used.",
+    "openedNote": "Dedicated September 26,2009; football returned after a five-year hiatus.",
+    "description": "New Haven’s blue-and-gold football field sits on North Campus across Boston Post Road from the main campus. The program is an NCAA Division I transition member and a full NEC football member in 2026.",
+    "teamName": "New Haven Chargers",
+    "aliases": [
+      "UNH Chargers",
+      "DellaCamera Stadium",
+      "Kayo Field",
+      "University of New Haven",
+      "New Haven Chargers",
+      "Ralph F. DellaCamera Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official facility",
+        "url": "https://newhavenchargers.com/facilities/ralph-f-dellacamera-stadium/3"
+      },
+      {
+        "title": "University seating and dedication details",
+        "url": "https://old.newhaven.edu/about/facilities/"
+      },
+      {
+        "title": "2026NEC schedule",
+        "url": "https://newhavenchargers.com/news/2026/3/2/new-haven-nec-announce-2026-football-schedule.aspx"
+      },
+      {
+        "title": "Charlie mascot",
+        "url": "https://www.newhaven.edu/news/blog/2026/class-of-2023-move-in.php"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://newhavenchargers.com/facilities/ralph-f-dellacamera-stadium/3"
+    },
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current survey. Blue turf, gold end zones and compact stands follow official June–August 2021 imagery; surrounding campus details and markings are approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/new-haven-dellacamera-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Ralph F. DellaCamera Stadium, home of the New Haven Chargers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/new-haven-dellacamera-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Ralph F. DellaCamera Stadium, home of the New Haven Chargers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "post-municipal",
+    "school": "Post",
+    "fullSchool": "Post University",
+    "team": "Eagles",
+    "stadium": "Municipal Stadium",
+    "city": "Waterbury",
+    "state": "Connecticut",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division II",
+    "conference": "Northeast-10 Conference",
+    "mascot": "Swoop",
+    "capacityDisplay": "Not verified",
+    "capacityNote": "Current football seating capacity not verified from primary sources.",
+    "openedDisplay": "Complex dates to 1930",
+    "openedNote": "Municipal history dates the stadium complex to 1930, but the exact opening of the current football turf is not verified. Baseball seating capacity is not used for football. The 2026 home schedule lists Municipal Stadium; LaMoy is a practice venue.",
+    "teamName": "Post University Eagles",
+    "aliases": [
+      "Post",
+      "Post University",
+      "Post University Eagles",
+      "Municipal Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official source",
+        "url": "https://posteagles.com/sports/football/schedule"
+      },
+      {
+        "title": "Official source",
+        "url": "https://northeast10.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Official source",
+        "url": "https://waterburyct.myrec.com/info/facilities/area_info.aspx?AreaID=14820&FacilityID=14819"
+      },
+      {
+        "title": "Official source",
+        "url": "https://post.edu/blog/newsletter-week-of-april-29-2024/"
+      },
+      {
+        "title": "Official source",
+        "url": "https://post.edu/wp-content/uploads/2022/04/post_brand_guide_2022_04_11.pdf"
+      },
+      {
+        "title": "Official source",
+        "url": "https://www.waterburyct.org/filestorage/103431/108302/108357/108364/108366/Waterbury_2015-2025_POCD_Part_II.rev_9-14-16.pdf"
+      },
+      {
+        "title": "Primary construction contractor aerial; shows polygonal multipurpose turf, two softball markings outside football endzones; HTTP origin works, HTTPS returns 503",
+        "url": "https://www.histoneson.com/projects.htm"
+      },
+      {
+        "title": "Official football/soccer turf photograph; modest silver stands and wooded backdrop",
+        "url": "https://waterburyct.myrec.com/info/facilities/area_info.aspx?AreaID=14820&FacilityID=14819"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://posteagles.com/sports/football/schedule"
+    },
+    "description": "Post University’s Eagles play at Municipal Stadium in Waterbury, Connecticut.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on an undated contractor aerial and undated city parks photograph inspected October 24, 2026. The source-era blue WATERBURY markings and shared softball turf are depicted; current paint, turf and surrounding details may differ. This is the football/soccer field, not the separate historic baseball stadium.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/post-municipal-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Municipal Stadium, home of the Post University Eagles, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/post-municipal-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Municipal Stadium, home of the Post University Eagles, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "sacred-heart-sikorsky",
+    "school": "Sacred Heart",
+    "fullSchool": "Sacred Heart University",
+    "team": "Pioneers",
+    "stadium": "Sikorsky Credit Union Field",
+    "city": "Fairfield",
+    "state": "Connecticut",
+    "opened": 1997,
+    "seatingCapacity": 3334,
+    "classification": "NCAA Division I FCS",
+    "conference": "CAA Football",
+    "mascot": "Big Red",
+    "capacityDisplay": "3,334",
+    "capacityLabel": "Reported seating",
+    "capacityNote": "Current athletics facility page lists 3,334; university 2026–27 catalog separately says more than 3,500. Display follows venue-specific athletics listing; counts conflict.",
+    "openedDisplay": "1997 (facility listing)",
+    "openedNote": "Current university athletics facility page gives 1997; secondary 1993 dates not adopted. Renamed Sikorsky Credit Union Field in 2026.",
+    "description": "Sacred Heart’s multi-sport home on the Park Avenue campus was renamed Sikorsky Credit Union Field in 2026, the same season football entered CAA Football.",
+    "teamName": "Sacred Heart Pioneers",
+    "aliases": [
+      "SHU",
+      "Campus Field",
+      "Sacred Heart University",
+      "Sacred Heart Pioneers",
+      "Sikorsky Credit Union Field"
+    ],
+    "sources": [
+      {
+        "title": "2026 naming agreement",
+        "url": "https://sacredheartpioneers.com/news/2026/7/15/general-shu-and-sikorsky-credit-union-announce-multi-year-naming-rights-agreement"
+      },
+      {
+        "title": "Official venue",
+        "url": "https://sacredheartpioneers.com/facilities/sikorsky-credit-union-field/3"
+      },
+      {
+        "title": "University 2026–27 facilities catalog",
+        "url": "https://sacredheart.smartcatalogiq.com/en/2026-2027/2026-2027-undergraduate-catalog/university-facilities/campus-field"
+      },
+      {
+        "title": "2026CAA membership",
+        "url": "https://www.sacredheart.edu/news-room/news-listing/leveling-up/"
+      },
+      {
+        "title": "Mascot",
+        "url": "https://next.sacredheart.edu/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://sacredheartpioneers.com/news/2026/7/15/general-shu-and-sikorsky-credit-union-announce-multi-year-naming-rights-agreement"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current survey. Site geometry and field markings follow the official 2022 Family Weekend aerial (uploaded 2024). The July 2026 Sikorsky naming-rights graphic is a rendering, not an as-built photograph; current signage and surrounding campus details may differ.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/sacred-heart-sikorsky-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Sikorsky Credit Union Field, home of the Sacred Heart Pioneers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/sacred-heart-sikorsky-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Sikorsky Credit Union Field, home of the Sacred Heart Pioneers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "southern-connecticut-jess-dow",
+    "school": "Southern Connecticut",
+    "fullSchool": "Southern Connecticut State University",
+    "team": "Owls",
+    "stadium": "Jess Dow Field",
+    "city": "New Haven",
+    "state": "Connecticut",
+    "opened": 1988,
+    "seatingCapacity": 6000,
+    "classification": "NCAA Division II",
+    "conference": "NE 10",
+    "mascot": "Otus the Owl",
+    "capacityNote": "Official university athletics facility listing reports 6,000 seats.",
+    "openedNote": "Official facility page gives dedication year 1988; turf and track renewed in 2023.",
+    "description": "Jess Dow Field combines a multi-sport artificial surface, an eight-lane track and a main grandstand beside Moore Fieldhouse.",
+    "teamName": "Southern Connecticut Owls",
+    "aliases": [
+      "SCSU",
+      "Southern Connecticut State",
+      "Southern Connecticut State University",
+      "Southern Connecticut Owls",
+      "Jess Dow Field"
+    ],
+    "sources": [
+      {
+        "title": "Official facility",
+        "url": "https://scsuowls.com/facilities/jess-dow-field/21"
+      },
+      {
+        "title": "2026 football schedule announcement",
+        "url": "https://scsuowls.com/news/2026/4/16/scsu-football-announces-2026-schedule.aspx"
+      },
+      {
+        "title": "Otus mascot",
+        "url": "https://scsuowls.com/news/2010/5/3/BB_0503102803.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://scsuowls.com/facilities/jess-dow-field/21"
+    },
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current survey. Turf and track colors follow the completed venue photo uploaded January 2024. A May 2023 design rendering informed general site geometry only, not proof of as-built details; campus context is approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/southern-connecticut-jess-dow-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Jess Dow Field, home of the Southern Connecticut Owls, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/southern-connecticut-jess-dow-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Jess Dow Field, home of the Southern Connecticut Owls, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "union-bailey",
+    "school": "Union (NY)",
+    "fullSchool": "Union College (New York)",
+    "team": "Garnet Chargers",
+    "stadium": "Frank Bailey Field at Bertagna-Class of 1985 Stadium",
+    "city": "Schenectady",
+    "state": "New York",
+    "opened": 1981,
+    "seatingCapacity": 1600,
+    "classification": "NCAA Division III",
+    "conference": "Liberty League",
+    "mascot": "Charger",
+    "openedNote": "1981 is NCAA-reported stadium year; stands and pressbox renovated 2002.",
+    "teamName": "Union Garnet Chargers",
+    "aliases": [
+      "Union (NY)",
+      "Union College (New York)",
+      "Union Garnet Chargers",
+      "Frank Bailey Field",
+      "Bertagna-Class of 1985 Stadium",
+      "Frank Bailey Field at Bertagna-Class of 1985 Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium facility",
+        "url": "https://unionathletics.com/facilities/frank-bailey-field-at-bertagna-class-of-1985-stadium/3"
+      },
+      {
+        "title": "NCAA stadium table",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "2026 active football",
+        "url": "https://unionathletics.com/news/2026/9/26/football-starts-liberty-league-defense-with-rout-of-buffalo-state.aspx"
+      },
+      {
+        "title": "Official mascot",
+        "url": "https://www.union.edu/news/stories/202311/meet-charger-unions-new-mascot"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://unionathletics.com/facilities/frank-bailey-field-at-bertagna-class-of-1985-stadium/3"
+    },
+    "description": "Union College (New York)’s Garnet Chargers play at Frank Bailey Field at Bertagna-Class of 1985 Stadium in Schenectady, New York.",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Capacity is based on the linked venue source; standing-room attendance may differ.",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. Approximate AI-generated aerials combine legacy grandstand photography identified as 2005/uploaded July 2006, a photo uploaded December 2025, and an illustrated campus map imprinted September 2025/hosted February 2026. Campus geometry, turf markings and architectural details are interpretive, not current documentary photographs.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/union-bailey-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Frank Bailey Field at Bertagna-Class of 1985 Stadium, home of the Union Garnet Chargers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/union-bailey-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Frank Bailey Field at Bertagna-Class of 1985 Stadium, home of the Union Garnet Chargers, with surrounding setting."
       }
     ]
   }

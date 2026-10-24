@@ -1,37 +1,75 @@
-STADIUM ATLAS v1.17.1 — PICK ONE OR MULTIPLE STATES
+STADIUM ATLAS v1.18.0 — 10 MORE SCHOOLS
+258 schools / 519 views. Existing state checkboxes and sorting are preserved.
 
-Starting folder: your Stadium Atlas repository ROOT, where index.html is listed.
-Do not open assets or scripts for this update.
+UPLOAD IN THIS ORDER
 
-1. Extract this ZIP on your computer.
-2. At the repository ROOT, choose Add file > Upload files.
-3. Upload these FOUR extracted files together, replacing the existing files:
+1. Starting folder: your Stadium Atlas repository ROOT, where index.html lives.
+   Open the existing assets folder. If you are already inside assets, stay there.
+   Extract every image ZIP, then upload only the bare PNG files from each pack.
+   All 20 new PNGs belong directly INSIDE assets. Do not upload ZIPs, a Part
+   folder, or another assets folder. Do not delete existing images.
+
+2. Return to repository ROOT. Open the existing scripts folder.
+   Upload build_stadium_records.py from the extracted app ZIP's scripts folder,
+   replacing the existing file. While INSIDE scripts, upload only that bare file.
+   Its final path from ROOT must be scripts/build_stadium_records.py.
+
+3. Return to repository ROOT. LAST, upload these FOUR app files together in
+   one commit, replacing the existing files:
    index.html
    styles.css
    app.js
    catalog.js
-4. Commit all four files together. Do not upload the ZIP, its containing folder,
-   this READ-ME, or QA-NOTES.txt. No photo or records-script upload is needed.
-5. In Actions, check the NEW workflow run for this commit. If no new run starts,
-   open Refresh Stadium Atlas records > Run workflow > main > Run workflow.
-   Do not rerun an old job: it can use the old files.
-6. After the new deployment succeeds, open the app and press Ctrl+F5.
-   The version badge should read v1.17.1.
+   Do not upload this README, the code ZIP, its containing folder, or QA notes.
 
-HOW TO USE
-Open States above the A–Z school buttons. Tick one or several state boxes.
-A school may match ANY selected state; search, conference, division and school
-letter choices still apply as additional filters. Counts beside states show
-schools in the full collection, not counts under other active filters.
-All states clears only the state selection. Unchecking the last state also
-returns to All states. Selecting every state returns to All states as well.
-Reset filters clears all browse filters. Sorting remains available separately.
-Done or Escape closes the state choices. Selections stay while moving between
-school details and the collection, but a page reload starts with All states.
+4. Open Actions and check the NEW workflow run for the final commit. If none
+   starts, open Refresh Stadium Atlas records > Run workflow > main > Run workflow.
+   Do not rerun an old job, which may use old files.
+   A scheduled run between steps 2 and 3 can safely stop because the old catalog
+   and new builder do not yet match; check a fresh run after step 3 instead.
 
-Start slideshow now begins with Current filtered results whenever any browse
-filter is active. Its Photos menu can still explicitly switch to All photos.
-A filter with no matches stays empty; it does not silently show other states.
+5. After the new deployment succeeds, refresh the app with Ctrl+F5. The version
+   badge should show v1.18.0, with 258 schools and 519 views.
 
-All 248 schools and 499 views remain. No image, record policy, provider mapping,
-secret, or workflow changes are included. This does not fix unavailable records.
+Nothing else needs replacing. Keep existing assets, workflow, secrets,
+site.webmanifest and domain settings. All existing 248 schools/499 views remain.
+
+State choices still accept one or multiple states. All states clears just that
+selection; Reset filters clears all browse filters. When any filter is active,
+Start slideshow uses Current filtered results. All photos remains an explicit
+slideshow choice. Every school's views stay together during shuffle.
+
+Records: all 214 Division I schools are mandatory; 44 Division II/III schools
+may explicitly show unavailable when a safe provider identity or valid record
+cannot be verified. This update does not repair the previously unavailable
+records. New authenticated provider validation is pending your live workflow;
+offline tests do not establish live provider coverage.
+
+Artwork is AI-generated, source-based illustration, not current photography or
+survey-accurate depiction. Venue pages and source-era caveats are in the app.
+
+The quiet bottom-center slideshow caption now also shows football division,
+including the FBS/FCS distinction for Division I. This label comes from the
+catalog, independently of whether the school's current records are available.
+
+EXPECTED NEW PNG FILENAMES — starting INSIDE the existing assets folder:
+central-connecticut-arute-aerial.png
+central-connecticut-arute-reverse.png
+cortland-grady-aerial.png
+cortland-grady-reverse.png
+ithaca-butterfield-aerial.png
+ithaca-butterfield-reverse.png
+maine-maritime-ritchie-aerial.png
+maine-maritime-ritchie-reverse.png
+new-england-college-football-field-aerial.png
+new-england-college-football-field-reverse.png
+new-haven-dellacamera-aerial.png
+new-haven-dellacamera-reverse.png
+post-municipal-aerial.png
+post-municipal-reverse.png
+sacred-heart-sikorsky-aerial.png
+sacred-heart-sikorsky-reverse.png
+southern-connecticut-jess-dow-aerial.png
+southern-connecticut-jess-dow-reverse.png
+union-bailey-aerial.png
+union-bailey-reverse.png

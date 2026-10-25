@@ -727,3 +727,217 @@ AI-generated reference-based aerial approximations, not documentary photographs.
 - Official football/soccer turf photograph; modest silver stands and wooded backdrop: https://waterburyct.myrec.com/info/facilities/area_info.aspx?AreaID=14820&FacilityID=14819
 - Undated contractor portfolio, inspected October 24, 2026: http://www.histoneson.com/gallery/Waterbury-Municipal-Stadium.jpg
 - Undated city parks photograph, inspected October 24, 2026: https://waterburyct.myrec.com/PhotoPool/Large/75.jpg
+
+
+STADIUM ATLAS v1.19.0 — FIFTEEN NEW YORK SCHOOLS
+# Stadium Atlas v1.19.0 — New York expansion sources
+
+Checked October 25, 2026. Fifteen additional active NCAA Division III football schools. Generated artwork is illustrative, not photography or a current site survey. Unverified capacities/opening dates remain explicitly unknown; source disagreements are preserved.
+
+## RPI — East Campus Stadium
+AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from May 2020. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.
+Official athletics facility count; capacity may vary by configuration.
+Current venue opening; see source notes.
+
+Factual sources:
+- Official venue information: https://rpiathletics.com/facilities/east-campus-athletic-village/43
+- 2026 football conference: https://libertyleagueathletics.com/standings.aspx?path=football
+- 2026 active football at East Campus Stadium: https://rpiathletics.com/news/2026/9/26/football-begins-liberty-league-play-with-33-7-triumph-against-hobart.aspx
+- Mascot scope: hockey: https://rpiathletics.com/sports/2010/6/29/GEN_0629100832.aspx
+Visual references:
+- Reference: https://rpiathletics.com/images/2020/5/11/ECAV_MM1.jpg — May 2020
+- Reference: https://rpiathletics.com/images/2020/5/15/ECAV.jpg — May 2020
+
+## Hobart — Boswell Field at David J Urick Stadium
+AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from October 2023 field and October 2021 campus. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.
+Current post-renovation capacity not confirmed; historical 2005 guide count of 5,000 is not treated as current.
+Current site opened in 1974; original Boswell Field dates to the 1920s at another location. Turf and lights added in 2010; David J Urick stadium naming in 2018.
+
+Factual sources:
+- Official venue information: https://hwsathletics.com/facilities/boswell-field-at-david-j-urick-stadium/1
+- 2026 football conference: https://libertyleagueathletics.com/standings.aspx?path=football
+- Statesmen identity and Bart mascot: https://www.hws.edu/news/current/herons-statesmen-launch-new.aspx
+Visual references:
+- Reference: https://hwsathletics.com/images/2023/10/5/Boswell_2023_DJI_0334e2_1080p.jpg — October 2023 field and October 2021 campus
+- Reference: https://hwsathletics.com/images/2021/10/12/Campus_DJI_0017e.jpg — October 2023 field and October 2021 campus
+
+## Rochester — Edwin Fauver Stadium
+AI-generated reference-based aerial approximations, not documentary photographs. Based on official March 2018 aerial geometry, an October 2019 stadium photograph uploaded in August 2022, and September 2023 turf photographs. Markings, reverse-angle geometry, vegetation and surrounding buildings are approximate and may not reflect 2026 conditions.
+Official facility features list 5,111; the same page rounds to 5,000 in prose, while the NCAA record book differs at 5,500. Detailed owner facility figure used.
+Current venue opening; see source notes.
+
+Factual sources:
+- Official venue information: https://uofrathletics.com/facilities/edwin-fauver-stadium/6
+- 2026 football conference: https://libertyleagueathletics.com/standings.aspx?path=football
+- Official 2025 program: venue opened in 1930: https://static.uofrathletics.com/custompages/UR%20FOOTBALL/2025/2025-UR-Football-Game-Program-WEB.pdf
+- Rocky mascot: https://www.rochester.edu/adv/alumni-news-media/2023/07/06/buzzing-through-the-years/
+Visual references:
+- Reference: https://uofrathletics.com/images/2018/3/27/Towers_FauverAerial_WEB_.jpg — March 2018 upload; aerial site geometry
+- Reference: https://uofrathletics.com/images/2022/8/29/2019-10-23_Fauver_Stadium_733_WEB.jpg — October 23, 2019 capture per filename; August 2022 upload
+- Reference: https://uofrathletics.com/images/2023/9/27/Fauver2023-3_WEB_.jpg — September 2023 upload; turf and midfield mark
+
+## St. John Fisher — Growney Stadium
+AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from April-May 2020 uploads; capture dates unknown. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.
+NCAA Division III stadium records list 2,500; current owner page only says seating for thousands.
+Current venue opening; see source notes.
+
+Factual sources:
+- Official venue information: https://sjfathletics.com/facilities/growney-stadium/1
+- 2026 football conference: https://empire8.com/news/2026/8/21/2026-empire-8-football-players-to-watch.aspx
+- NCAA Division III stadium records: https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf
+- Official university imagery: Beaks the Cardinal: https://www.sjf.edu/site-assets/homepage-heroes/
+- 2026 active football at Growney: https://www.sjf.edu/news-and-events/news-archive/fall-2026/get-ready-for-family-weekend-2026/
+Visual references:
+- Reference: https://sjfathletics.com/images/2020/4/27/GrowneyAerial_Use_for_Meet_Athletes_Section.jpg — April-May 2020 uploads; capture dates unknown
+- Reference: https://sjfathletics.com/images/2020/5/1/Fisher_Sports_Facilities15.jpg — April-May 2020 uploads; capture dates unknown
+
+## Utica — Charles A. Gaetano Stadium
+AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from December 2022 upload; capture date unknown. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.
+Official athletics facility count; capacity may vary by configuration.
+Official venue page states formal dedication in fall 2002.
+
+Factual sources:
+- Official venue information: https://uticapioneers.com/sports/2010/8/3/gaetano.aspx
+- 2026 football conference: https://empire8.com/news/2026/8/21/2026-empire-8-football-players-to-watch.aspx
+- Trax mascot: https://uticapioneers.com/sports/2016/5/10/trax-the-pioneer-moose.aspx
+- 2026 active Division III football: https://uticapioneers.com/news/2026/10/1/football-22-pioneers-set-to-welcome-17-red-dragons-on-saturday-for-crucial-homecoming-clash.aspx
+Visual references:
+- Reference: https://uticapioneers.com/images/2022/12/9/Stadiums_at_Night_2_gBBki.png — December 2022 upload; capture date unknown
+
+## Hartwick — Wright Stadium
+AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official May 2024 uploads; capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented.
+Exact current capacity not verified consistently.
+Naming dedication, not verified original opening year.
+
+Factual sources:
+- Official venue history: https://www.hartwickhawks.com/facilities/wright-stadium/2
+- 2026 conference football standings: https://empire8.com/standings.aspx?path=football
+- Official mascot identity: https://www.hartwick.edu/about-us/marketing-brand-management/logos/
+Visual references:
+- Reference: https://www.hartwickhawks.com/images/2024/5/24/FBField.png — May 2024 uploads; capture dates unverified
+- Reference: https://www.hartwickhawks.com/images/2024/5/23/Screen_Shot_2024-05-16_at_10.28.38_AM.png — May 2024 uploads; capture dates unverified
+- Reference: https://www.hartwickhawks.com/images/2024/5/24/IMG_5736.JPG — May 2024 uploads; capture dates unverified
+
+## Alfred University — Merrill Field at Yunevich Stadium
+AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official August 2023 turf image and June 2021 scoreboard detail; upload dates, capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented.
+Exact current capacity not verified consistently.
+University campus history says constructed 1921 and reconstructed 2014; NCAA record book lists 1926. Exact original opening remains qualified. Capacity varies: campus describes 210 box seats, 1,435 home bleachers and about 1,355 visitors; NCAA lists 2,790.
+
+Factual sources:
+- Official venue history: https://www.alfred.edu/about/map/merrill-field-yunevich-stadium.cfm
+- 2026 conference football standings: https://empire8.com/standings.aspx?path=football
+- Official mascot identity: https://www.alfred.edu/athletics/
+- Official athletics venue and reference gallery: https://gosaxons.com/facilities/yunevich-stadium/8
+Visual references:
+- Reference: https://gosaxons.com/images/2023/8/10/LCM00637.jpg — August 2023 turf image and June 2021 scoreboard detail; upload dates, capture dates unverified
+- Reference: https://gosaxons.com/images/2021/6/1/LCM_Yunevich_Stadium_105.jpg — August 2023 turf image and June 2021 scoreboard detail; upload dates, capture dates unverified
+
+## Alfred State — Pioneer Stadium
+AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official September 2023 uploads; capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented.
+Current athletics facility page says 1,500; older 2017 university history listed 2,000.
+Current athletics page dates opening to 2009; university 2017 history specifies spring 2008 opening and 2009 naming. Both dates retained rather than forcing precision.
+
+Factual sources:
+- Official venue history: https://www.alfredstate.edu/news/articles/2017-09/new-locker-room-facility-pioneer-stadium
+- 2026 conference football standings: https://empire8.com/standings.aspx?path=football
+- Current Pioneer Stadium facility page: https://alfredstateathletics.com/facilities/pioneer-stadium/6
+Visual references:
+- Reference: https://alfredstateathletics.com/images/2023/9/21/Alfred_Athletic_Field.jpg — September 2023 uploads; capture dates unverified
+- Reference: https://alfredstateathletics.com/images/2023/9/29/20230925_143007959_iOS.png — September 2023 uploads; capture dates unverified
+
+## Buffalo State — Coyer Field
+AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official August 2019 uploads; capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented. The red-track references predate the documented 2023 track refurbishment.
+Official facility figure; source-era limitations noted.
+Official facility history gives early 1960s rather than exact year; turf upgraded 2019 and track 2023.
+
+Factual sources:
+- Official venue history: https://buffalostateathletics.com/facilities/coyer-field/1
+- 2026 conference football standings: https://libertyleagueathletics.com/standings.aspx?path=football
+- Official mascot identity: https://suny.buffalostate.edu/news/benji-bengal-encourages-students-wear-their-masks
+Visual references:
+- Reference: https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/buffalostateathletics.com/images/2019/8/27/w_Coyer_Overhead_behind_PB.jpg — August 2019 uploads; capture dates unverified
+- Reference: https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/buffalostateathletics.com/images/2019/8/27/w_Coyer_Scoreboard.jpg — August 2019 uploads; capture dates unverified
+
+## SUNY Brockport — Bob Boozer Field at Eunice Kennedy Shriver Stadium
+AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official June 2020 and April 2021 layout images, September 2025 pressbox detail. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented. Layout references predate the 2022 video board; its current details are not verified visually.
+Official facility figure; source-era limitations noted.
+Formerly Special Olympics Stadium; renamed for Eunice Kennedy Shriver in 2010.
+
+Factual sources:
+- Official venue history: https://gobrockport.com/facilities/bob-boozer-field/15
+- 2026 conference football standings: https://empire8.com/standings.aspx?path=football
+- Official mascot identity: https://www.brockport.edu/live/news/11241-behind-the-bird-the-history-of-ellsworth
+Visual references:
+- Reference: https://gobrockport.com/images/2020/6/11/Screen_Shot_2020_06_11_at_8_15_42_AM.png — June 2020 and April 2021 layout images, September 2025 pressbox detail
+- Reference: https://gobrockport.com/images/2021/4/29/Screen_Shot_2021_04_29_at_12_22_30_PM.png — June 2020 and April 2021 layout images, September 2025 pressbox detail
+- Reference: https://gobrockport.com/images/2025/9/30/homecoming-football-game-dance-team-cheer-20250927-1.jpg — June 2020 and April 2021 layout images, September 2025 pressbox detail
+
+## SUNY Morrisville — Drake Field at SUNY Morrisville Stadium
+AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses the project designer’s October 2023 completed-black-turf imagery. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.
+Current football seating capacity not verified from primary sources.
+The owner identifies the prior turf as dating to 2006 and its black-turf replacement to 2023; original field opening not verified.
+
+Factual sources:
+- Official stadium overview: https://morrisvillemustangs.com/sports/2019/8/21/athletic-stadium-drake-field.aspx?id=218
+- Black turf installed in 2023: https://morrisvillemustangs.com/news/2023/7/18/general-suny-morrisville-unveils-black-turf-at-stadium.aspx
+- 2026 season preview: https://morrisvillemustangs.com/news/2026/9/4/morrisville-football-kicks-off-2026-in-road-battle-at-kean.aspx?path=wdsp
+- Mo the Mustang: https://www.morrisville.edu/news/making-of-mo-mustang-new-mascot-brings-bolt-of-energy-campus-life
+Visual references:
+- Project designer Drake Field portfolio: https://appelosborne.com/portfolio/athletic-complexes/suny-morrisville-2/ — October 2023 portfolio images of completed black turf
+- Designer aerial/detail 1: https://appelosborne.com/assets/portfolio-items/October-2023/Drake-Field-1__FitWzEzMDAsMTMwMF0.jpg — October 2023 upload path; capture date not separately stated
+- Designer aerial/detail 2: https://appelosborne.com/assets/portfolio-items/October-2023/Drake-Field-2__FitWzEzMDAsMTMwMF0.jpg — October 2023 upload path; capture date not separately stated
+
+## SUNY Maritime — Reinhart Field
+AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses owner photographs uploaded in 2014 and May 2020; capture dates are not verified. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.
+Athletics lists bleacher seating for 1,250; the separate owner rental page lists a 1,500-person field capacity. The seating figure follows athletics, not an independent survey.
+Original opening not verified. Official facility page dates a playing-surface replacement to fall 2014.
+
+Factual sources:
+- Official Reinhart Field listing: https://maritimeathletics.com/facilities/reinhart-field/4
+- October 2026 NEWMAC game at Reinhart: https://www.usmmasports.com/news/2026/10/10/football-at-maritime-recap-2026.aspx
+- Official mascot history: https://maritimeathletics.com/sports/2013/5/20/GEN_0520133843.aspx
+- Owner athletic rentals (different capacity definition): https://www.sunymaritime.edu/public-programs/athletic-rentals
+Visual references:
+- Owner main-field rental photograph: https://www.sunymaritime.edu/sites/default/files/2020-05/Athletic%20Rentals%20Main%20Athletic%20Field.jpg — May 2020 upload path; capture date unknown
+- Owner field photograph: https://maritimeathletics.com/images/2014/8/4/IMG_0114.jpg — August 2014 upload path
+- Owner grandstand photograph: https://maritimeathletics.com/images/2014/12/31/IMG_0122.jpg — December 2014 upload path
+
+## Merchant Marine — Brooks Stadium & Captain James Harvey Tomb Field
+AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses the existing-campus aerial published in the May 2025 owner plan (capture date unknown), plus the June 2024 owner map. Proposed future construction is not depicted as completed. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.
+5,840 listed in the NCAA Division III stadium table; not a new seating survey.
+1945 listed in NCAA stadium table; not a claim that all present structures date to that year.
+
+Factual sources:
+- Official stadium listing: https://usmmasports.com/facilities/brooks-stadium-captain-james-harvey-tomb-field/2
+- 2026 football schedule: https://usmmasports.com/sports/football/schedule
+- NCAA Division III stadium table: https://fs.ncaa.org/Docs/stats/football_records/D3.pdf
+Visual references:
+- Owner-published campus aerial, printed page 4 / PDF page 6: https://www.usmma.edu/sites/usmma.dot.gov/files/USMMA%20CMP_30May2025%28B%29.pdf — Published May 2025; original aerial capture date unknown; existing campus photo only, not proposed projects
+- Owner campus/field map: https://www.usmma.edu/sites/usmma.dot.gov/files/inline-images/Commencement%20MAP%20ONLY%20small.jpg — June 2024 commencement map
+
+## Hamilton — Steuben Field
+AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses owner aerials uploaded in October 2024; capture dates are not separately verified. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.
+Current football seating capacity not verified from primary sources.
+Hamilton dates original construction to 1897 and artificial-turf installation to 2009.
+
+Factual sources:
+- Official Steuben Field listing: https://athletics.hamilton.edu/facilities/steuben-field/15
+- Original opening and 2009 renovation: https://www.hamilton.edu/news/story/steuben-field-to-receive-artificial-turf
+- 2026 football schedule: https://athletics.hamilton.edu/sports/football/schedule
+- Official athletics affiliations and mascot: https://www.hamilton.edu/about/facts
+Visual references:
+- Owner Steuben Field aerial: https://athletics.hamilton.edu/images/2024/10/29/IMG_0354.jpg — October 2024 upload path; capture date unknown
+- Owner reverse aerial: https://athletics.hamilton.edu/images/2024/10/29/IMG_0363_3.jpg — October 2024 upload path; capture date unknown
+
+## St. Lawrence — Weeks Field at Leckonby Stadium
+AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses owner aerials with August/September 2016 filenames, uploaded in June 2020. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.
+Owner facility listing.
+Stadium dedicated in fall 2000; field history may predate the present stands.
+
+Factual sources:
+- Official Weeks Field at Leckonby Stadium listing: https://saintsathletics.com/facilities/weeks-field-at-leckonby-stadium/18
+- 2026 Liberty League opener: https://saintsathletics.com/news/2026/9/26/football-mcguire-boots-69-yard-punt-in-saints-league-opening-loss-at-ithaca.aspx
+Visual references:
+- Owner campus aerial: https://saintsathletics.com/images/2020/6/8/20160902CampusFallDroneAerials19.jpg — September 2, 2016 filename; uploaded June 2020
+- Owner reverse aerial: https://saintsathletics.com/images/2020/6/8/20160822CampusFallAH52.jpg — August 22, 2016 filename; uploaded June 2020
+

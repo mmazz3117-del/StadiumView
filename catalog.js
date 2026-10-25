@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.18.1';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.19.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -16765,6 +16765,943 @@ window.STADIUMS = [
         "width": 1536,
         "height": 1024,
         "alt": "AI-generated reference-based reverse reconstruction of Frank Bailey Field at Bertagna-Class of 1985 Stadium, home of the Union Garnet Chargers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "alfred-state-pioneer",
+    "school": "Alfred State",
+    "fullSchool": "Alfred State College",
+    "team": "Pioneers",
+    "stadium": "Pioneer Stadium",
+    "city": "Alfred",
+    "state": "New York",
+    "opened": null,
+    "seatingCapacity": 1500,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": null,
+    "capacityDisplay": "1,500",
+    "capacityNote": "Current athletics facility page says 1,500; older 2017 university history listed 2,000.",
+    "openedDisplay": "2008–2009",
+    "openedNote": "Current athletics page dates opening to 2009; university 2017 history specifies spring 2008 opening and 2009 naming. Both dates retained rather than forcing precision.",
+    "teamName": "Alfred State College Pioneers",
+    "aliases": [
+      "Alfred State",
+      "Alfred State College",
+      "Alfred State College Pioneers",
+      "Pioneer Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue history",
+        "url": "https://www.alfredstate.edu/news/articles/2017-09/new-locker-room-facility-pioneer-stadium"
+      },
+      {
+        "title": "2026 conference football standings",
+        "url": "https://empire8.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Current Pioneer Stadium facility page",
+        "url": "https://alfredstateathletics.com/facilities/pioneer-stadium/6"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.alfredstate.edu/news/articles/2017-09/new-locker-room-facility-pioneer-stadium"
+    },
+    "description": "Alfred State College’s Pioneers play at Pioneer Stadium in Alfred, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official September 2023 uploads; capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/alfred-state-pioneer-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Pioneer Stadium, home of the Alfred State College Pioneers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/alfred-state-pioneer-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Pioneer Stadium, home of the Alfred State College Pioneers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "alfred-yunevich",
+    "school": "Alfred University",
+    "fullSchool": "Alfred University",
+    "team": "Saxons",
+    "stadium": "Merrill Field at Yunevich Stadium",
+    "city": "Alfred",
+    "state": "New York",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": "Lil’ Alf",
+    "capacityDisplay": "Not verified",
+    "capacityNote": "Exact current capacity not verified consistently.",
+    "openedDisplay": "1921 per university campus history",
+    "openedNote": "University campus history says constructed 1921 and reconstructed 2014; NCAA record book lists 1926. Exact original opening remains qualified. Capacity varies: campus describes 210 box seats, 1,435 home bleachers and about 1,355 visitors; NCAA lists 2,790.",
+    "teamName": "Alfred University Saxons",
+    "aliases": [
+      "Alfred University",
+      "Alfred University Saxons",
+      "Merrill Field at Yunevich Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue history",
+        "url": "https://www.alfred.edu/about/map/merrill-field-yunevich-stadium.cfm"
+      },
+      {
+        "title": "2026 conference football standings",
+        "url": "https://empire8.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official mascot identity",
+        "url": "https://www.alfred.edu/athletics/"
+      },
+      {
+        "title": "Official athletics venue and reference gallery",
+        "url": "https://gosaxons.com/facilities/yunevich-stadium/8"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.alfred.edu/about/map/merrill-field-yunevich-stadium.cfm"
+    },
+    "description": "Alfred University’s Saxons play at Merrill Field at Yunevich Stadium in Alfred, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official August 2023 turf image and June 2021 scoreboard detail; upload dates, capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/alfred-yunevich-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Merrill Field at Yunevich Stadium, home of the Alfred University Saxons, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/alfred-yunevich-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Merrill Field at Yunevich Stadium, home of the Alfred University Saxons, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "buffalo-state-coyer",
+    "school": "Buffalo State",
+    "fullSchool": "Buffalo State University",
+    "team": "Bengals",
+    "stadium": "Coyer Field",
+    "city": "Buffalo",
+    "state": "New York",
+    "opened": null,
+    "seatingCapacity": 3000,
+    "classification": "NCAA Division III",
+    "conference": "Liberty League",
+    "mascot": "Benji the Bengal",
+    "capacityDisplay": "3,000",
+    "capacityNote": "Official facility figure; source-era limitations noted.",
+    "openedDisplay": "Early 1960s",
+    "openedNote": "Official facility history gives early 1960s rather than exact year; turf upgraded 2019 and track 2023.",
+    "teamName": "Buffalo State University Bengals",
+    "aliases": [
+      "Buffalo State",
+      "Buffalo State University",
+      "Buffalo State University Bengals",
+      "Coyer Field"
+    ],
+    "sources": [
+      {
+        "title": "Official venue history",
+        "url": "https://buffalostateathletics.com/facilities/coyer-field/1"
+      },
+      {
+        "title": "2026 conference football standings",
+        "url": "https://libertyleagueathletics.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official mascot identity",
+        "url": "https://suny.buffalostate.edu/news/benji-bengal-encourages-students-wear-their-masks"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://buffalostateathletics.com/facilities/coyer-field/1"
+    },
+    "description": "Buffalo State University’s Bengals play at Coyer Field in Buffalo, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official August 2019 uploads; capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented. The red-track references predate the documented 2023 track refurbishment.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/buffalo-state-coyer-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Coyer Field, home of the Buffalo State University Bengals, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/buffalo-state-coyer-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Coyer Field, home of the Buffalo State University Bengals, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "hamilton-steuben",
+    "school": "Hamilton",
+    "fullSchool": "Hamilton College",
+    "team": "Continentals",
+    "stadium": "Steuben Field",
+    "city": "Clinton",
+    "state": "New York",
+    "opened": 1897,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "NESCAC",
+    "mascot": "Alex",
+    "capacityDisplay": "Not verified",
+    "capacityLabel": "Seating capacity not verified",
+    "capacityNote": "Current football seating capacity not verified from primary sources.",
+    "openedDisplay": "1897",
+    "openedNote": "Hamilton dates original construction to 1897 and artificial-turf installation to 2009.",
+    "description": "Steuben Field is the home football venue of Hamilton College.",
+    "teamName": "Hamilton Continentals",
+    "aliases": [
+      "Hamilton College",
+      "Hamilton Continentals",
+      "Steuben Field"
+    ],
+    "sources": [
+      {
+        "title": "Official Steuben Field listing",
+        "url": "https://athletics.hamilton.edu/facilities/steuben-field/15"
+      },
+      {
+        "title": "Original opening and 2009 renovation",
+        "url": "https://www.hamilton.edu/news/story/steuben-field-to-receive-artificial-turf"
+      },
+      {
+        "title": "2026 football schedule",
+        "url": "https://athletics.hamilton.edu/sports/football/schedule"
+      },
+      {
+        "title": "Official athletics affiliations and mascot",
+        "url": "https://www.hamilton.edu/about/facts"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://athletics.hamilton.edu/facilities/steuben-field/15"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses owner aerials uploaded in October 2024; capture dates are not separately verified. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/hamilton-steuben-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Steuben Field, home of the Hamilton Continentals, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/hamilton-steuben-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Steuben Field, home of the Hamilton Continentals, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "hartwick-wright",
+    "school": "Hartwick",
+    "fullSchool": "Hartwick College",
+    "team": "Hawks",
+    "stadium": "Wright Stadium",
+    "city": "Oneonta",
+    "state": "New York",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": "Swoop",
+    "capacityDisplay": "Not verified",
+    "capacityNote": "Exact current capacity not verified consistently.",
+    "openedDisplay": "Dedicated October 7, 2006",
+    "openedNote": "Naming dedication, not verified original opening year.",
+    "teamName": "Hartwick College Hawks",
+    "aliases": [
+      "Hartwick",
+      "Hartwick College",
+      "Hartwick College Hawks",
+      "Wright Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue history",
+        "url": "https://www.hartwickhawks.com/facilities/wright-stadium/2"
+      },
+      {
+        "title": "2026 conference football standings",
+        "url": "https://empire8.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official mascot identity",
+        "url": "https://www.hartwick.edu/about-us/marketing-brand-management/logos/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://www.hartwickhawks.com/facilities/wright-stadium/2"
+    },
+    "description": "Hartwick College’s Hawks play at Wright Stadium in Oneonta, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official May 2024 uploads; capture dates unverified. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/hartwick-wright-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Wright Stadium, home of the Hartwick College Hawks, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/hartwick-wright-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Wright Stadium, home of the Hartwick College Hawks, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "hobart-boswell",
+    "school": "Hobart",
+    "fullSchool": "Hobart College",
+    "team": "Statesmen",
+    "stadium": "Boswell Field at David J Urick Stadium",
+    "city": "Geneva",
+    "state": "New York",
+    "opened": 1974,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "Liberty League",
+    "mascot": "Bart the Statesman",
+    "capacityDisplay": "Not confirmed",
+    "capacityNote": "Current post-renovation capacity not confirmed; historical 2005 guide count of 5,000 is not treated as current.",
+    "openedDisplay": "1974",
+    "openedNote": "Current site opened in 1974; original Boswell Field dates to the 1920s at another location. Turf and lights added in 2010; David J Urick stadium naming in 2018.",
+    "teamName": "Hobart Statesmen",
+    "aliases": [
+      "Hobart College",
+      "Hobart Statesmen",
+      "Boswell Field at David J Urick Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://hwsathletics.com/facilities/boswell-field-at-david-j-urick-stadium/1"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://libertyleagueathletics.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Statesmen identity and Bart mascot",
+        "url": "https://www.hws.edu/news/current/herons-statesmen-launch-new.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://hwsathletics.com/facilities/boswell-field-at-david-j-urick-stadium/1"
+    },
+    "description": "Hobart College’s Statesmen play at Boswell Field at David J Urick Stadium in Geneva, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from October 2023 field and October 2021 campus. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/hobart-boswell-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Boswell Field at David J Urick Stadium, home of the Hobart Statesmen, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/hobart-boswell-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Boswell Field at David J Urick Stadium, home of the Hobart Statesmen, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "merchant-marine-tomb",
+    "school": "Merchant Marine",
+    "fullSchool": "United States Merchant Marine Academy",
+    "team": "Mariners",
+    "stadium": "Brooks Stadium & Captain James Harvey Tomb Field",
+    "city": "Kings Point",
+    "state": "New York",
+    "opened": 1945,
+    "seatingCapacity": 5840,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": null,
+    "capacityDisplay": "5,840",
+    "capacityLabel": "Listed seating capacity",
+    "capacityNote": "5,840 listed in the NCAA Division III stadium table; not a new seating survey.",
+    "openedDisplay": "1945",
+    "openedNote": "1945 listed in NCAA stadium table; not a claim that all present structures date to that year.",
+    "description": "Brooks Stadium & Captain James Harvey Tomb Field is the home football venue of United States Merchant Marine Academy.",
+    "teamName": "Merchant Marine Mariners",
+    "aliases": [
+      "United States Merchant Marine Academy",
+      "Merchant Marine Mariners",
+      "Brooks Stadium & Captain James Harvey Tomb Field"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium listing",
+        "url": "https://usmmasports.com/facilities/brooks-stadium-captain-james-harvey-tomb-field/2"
+      },
+      {
+        "title": "2026 football schedule",
+        "url": "https://usmmasports.com/sports/football/schedule"
+      },
+      {
+        "title": "NCAA Division III stadium table",
+        "url": "https://fs.ncaa.org/Docs/stats/football_records/D3.pdf"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://usmmasports.com/facilities/brooks-stadium-captain-james-harvey-tomb-field/2"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses the existing-campus aerial published in the May 2025 owner plan (capture date unknown), plus the June 2024 owner map. Proposed future construction is not depicted as completed. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/merchant-marine-tomb-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Brooks Stadium & Captain James Harvey Tomb Field, home of the Merchant Marine Mariners, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/merchant-marine-tomb-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Brooks Stadium & Captain James Harvey Tomb Field, home of the Merchant Marine Mariners, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "rpi-ecav",
+    "school": "RPI",
+    "fullSchool": "Rensselaer Polytechnic Institute",
+    "team": "Engineers",
+    "stadium": "East Campus Stadium",
+    "city": "Troy",
+    "state": "New York",
+    "opened": 2009,
+    "seatingCapacity": 5200,
+    "classification": "NCAA Division III",
+    "conference": "Liberty League",
+    "mascot": null,
+    "capacityDisplay": "5,200",
+    "capacityNote": "Official athletics facility count; capacity may vary by configuration.",
+    "openedDisplay": "2009",
+    "openedNote": "Current venue opening; see source notes.",
+    "teamName": "RPI Engineers",
+    "aliases": [
+      "Rensselaer",
+      "Rensselaer Polytechnic Institute",
+      "ECAV Stadium",
+      "RPI Engineers",
+      "East Campus Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://rpiathletics.com/facilities/east-campus-athletic-village/43"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://libertyleagueathletics.com/standings.aspx?path=football"
+      },
+      {
+        "title": "2026 active football at East Campus Stadium",
+        "url": "https://rpiathletics.com/news/2026/9/26/football-begins-liberty-league-play-with-33-7-triumph-against-hobart.aspx"
+      },
+      {
+        "title": "Mascot scope: hockey",
+        "url": "https://rpiathletics.com/sports/2010/6/29/GEN_0629100832.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://rpiathletics.com/facilities/east-campus-athletic-village/43"
+    },
+    "description": "Rensselaer Polytechnic Institute’s Engineers play at East Campus Stadium in Troy, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from May 2020. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/rpi-ecav-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of East Campus Stadium, home of the RPI Engineers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/rpi-ecav-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of East Campus Stadium, home of the RPI Engineers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "rochester-fauver",
+    "school": "Rochester",
+    "fullSchool": "University of Rochester",
+    "team": "Yellowjackets",
+    "stadium": "Edwin Fauver Stadium",
+    "city": "Rochester",
+    "state": "New York",
+    "opened": 1930,
+    "seatingCapacity": 5111,
+    "classification": "NCAA Division III",
+    "conference": "Liberty League",
+    "mascot": "Rocky the Yellowjacket",
+    "capacityDisplay": "5,111",
+    "capacityNote": "Official facility features list 5,111; the same page rounds to 5,000 in prose, while the NCAA record book differs at 5,500. Detailed owner facility figure used.",
+    "openedDisplay": "1930",
+    "openedNote": "Current venue opening; see source notes.",
+    "teamName": "Rochester Yellowjackets",
+    "aliases": [
+      "University of Rochester",
+      "Rochester Yellowjackets",
+      "Edwin Fauver Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://uofrathletics.com/facilities/edwin-fauver-stadium/6"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://libertyleagueathletics.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official 2025 program: venue opened in 1930",
+        "url": "https://static.uofrathletics.com/custompages/UR%20FOOTBALL/2025/2025-UR-Football-Game-Program-WEB.pdf"
+      },
+      {
+        "title": "Rocky mascot",
+        "url": "https://www.rochester.edu/adv/alumni-news-media/2023/07/06/buzzing-through-the-years/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://uofrathletics.com/facilities/edwin-fauver-stadium/6"
+    },
+    "description": "University of Rochester’s Yellowjackets play at Edwin Fauver Stadium in Rochester, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on official March 2018 aerial geometry, an October 2019 stadium photograph uploaded in August 2022, and September 2023 turf photographs. Markings, reverse-angle geometry, vegetation and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/rochester-fauver-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Edwin Fauver Stadium, home of the Rochester Yellowjackets, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/rochester-fauver-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Edwin Fauver Stadium, home of the Rochester Yellowjackets, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "brockport-shriver",
+    "school": "SUNY Brockport",
+    "fullSchool": "SUNY Brockport",
+    "team": "Golden Eagles",
+    "stadium": "Bob Boozer Field at Eunice Kennedy Shriver Stadium",
+    "city": "Brockport",
+    "state": "New York",
+    "opened": null,
+    "seatingCapacity": 8692,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": "Ellsworth Eagle",
+    "capacityDisplay": "8,692",
+    "capacityNote": "Official facility figure; source-era limitations noted.",
+    "openedDisplay": "Opening year not verified",
+    "openedNote": "Formerly Special Olympics Stadium; renamed for Eunice Kennedy Shriver in 2010.",
+    "teamName": "SUNY Brockport Golden Eagles",
+    "aliases": [
+      "SUNY Brockport",
+      "SUNY Brockport Golden Eagles",
+      "Bob Boozer Field at Eunice Kennedy Shriver Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue history",
+        "url": "https://gobrockport.com/facilities/bob-boozer-field/15"
+      },
+      {
+        "title": "2026 conference football standings",
+        "url": "https://empire8.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official mascot identity",
+        "url": "https://www.brockport.edu/live/news/11241-behind-the-bird-the-history-of-ellsworth"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://gobrockport.com/facilities/bob-boozer-field/15"
+    },
+    "description": "SUNY Brockport’s Golden Eagles play at Bob Boozer Field at Eunice Kennedy Shriver Stadium in Brockport, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated illustrative aerial views, not photographs or survey-accurate reconstructions. Based on official June 2020 and April 2021 layout images, September 2025 pressbox detail. Buildings, vegetation, field markings and reverse-angle geometry are approximate; later changes may not be represented. Layout references predate the 2022 video board; its current details are not verified visually.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/brockport-shriver-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Bob Boozer Field at Eunice Kennedy Shriver Stadium, home of the SUNY Brockport Golden Eagles, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/brockport-shriver-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Bob Boozer Field at Eunice Kennedy Shriver Stadium, home of the SUNY Brockport Golden Eagles, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "maritime-reinhart",
+    "school": "SUNY Maritime",
+    "fullSchool": "SUNY Maritime College",
+    "team": "Privateers",
+    "stadium": "Reinhart Field",
+    "city": "Bronx (Throggs Neck)",
+    "state": "New York",
+    "opened": null,
+    "seatingCapacity": 1250,
+    "classification": "NCAA Division III",
+    "conference": "NEWMAC",
+    "mascot": "Privateer Pete",
+    "capacityDisplay": "1,250",
+    "capacityLabel": "Listed seating capacity",
+    "capacityNote": "Athletics lists bleacher seating for 1,250; the separate owner rental page lists a 1,500-person field capacity. The seating figure follows athletics, not an independent survey.",
+    "openedDisplay": "Not verified",
+    "openedNote": "Original opening not verified. Official facility page dates a playing-surface replacement to fall 2014.",
+    "description": "Reinhart Field is the home football venue of SUNY Maritime College.",
+    "teamName": "SUNY Maritime Privateers",
+    "aliases": [
+      "SUNY Maritime College",
+      "SUNY Maritime Privateers",
+      "Reinhart Field"
+    ],
+    "sources": [
+      {
+        "title": "Official Reinhart Field listing",
+        "url": "https://maritimeathletics.com/facilities/reinhart-field/4"
+      },
+      {
+        "title": "October 2026 NEWMAC game at Reinhart",
+        "url": "https://www.usmmasports.com/news/2026/10/10/football-at-maritime-recap-2026.aspx"
+      },
+      {
+        "title": "Official mascot history",
+        "url": "https://maritimeathletics.com/sports/2013/5/20/GEN_0520133843.aspx"
+      },
+      {
+        "title": "Owner athletic rentals (different capacity definition)",
+        "url": "https://www.sunymaritime.edu/public-programs/athletic-rentals"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://maritimeathletics.com/facilities/reinhart-field/4"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses owner photographs uploaded in 2014 and May 2020; capture dates are not verified. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/maritime-reinhart-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Reinhart Field, home of the SUNY Maritime Privateers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/maritime-reinhart-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Reinhart Field, home of the SUNY Maritime Privateers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "morrisville-drake",
+    "school": "SUNY Morrisville",
+    "fullSchool": "SUNY Morrisville",
+    "team": "Mustangs",
+    "stadium": "Drake Field at SUNY Morrisville Stadium",
+    "city": "Morrisville",
+    "state": "New York",
+    "opened": null,
+    "seatingCapacity": null,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": "Mo the Mustang",
+    "capacityDisplay": "Not verified",
+    "capacityLabel": "Seating capacity not verified",
+    "capacityNote": "Current football seating capacity not verified from primary sources.",
+    "openedDisplay": "Not verified",
+    "openedNote": "The owner identifies the prior turf as dating to 2006 and its black-turf replacement to 2023; original field opening not verified.",
+    "description": "Drake Field at SUNY Morrisville Stadium is the home football venue of SUNY Morrisville.",
+    "teamName": "SUNY Morrisville Mustangs",
+    "aliases": [
+      "SUNY Morrisville",
+      "SUNY Morrisville Mustangs",
+      "Drake Field at SUNY Morrisville Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official stadium overview",
+        "url": "https://morrisvillemustangs.com/sports/2019/8/21/athletic-stadium-drake-field.aspx?id=218"
+      },
+      {
+        "title": "Black turf installed in 2023",
+        "url": "https://morrisvillemustangs.com/news/2023/7/18/general-suny-morrisville-unveils-black-turf-at-stadium.aspx"
+      },
+      {
+        "title": "2026 season preview",
+        "url": "https://morrisvillemustangs.com/news/2026/9/4/morrisville-football-kicks-off-2026-in-road-battle-at-kean.aspx?path=wdsp"
+      },
+      {
+        "title": "Mo the Mustang",
+        "url": "https://www.morrisville.edu/news/making-of-mo-mustang-new-mascot-brings-bolt-of-energy-campus-life"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://morrisvillemustangs.com/sports/2019/8/21/athletic-stadium-drake-field.aspx?id=218"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses the project designer’s October 2023 completed-black-turf imagery. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/morrisville-drake-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Drake Field at SUNY Morrisville Stadium, home of the SUNY Morrisville Mustangs, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/morrisville-drake-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Drake Field at SUNY Morrisville Stadium, home of the SUNY Morrisville Mustangs, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "st-john-fisher-growney",
+    "school": "St. John Fisher",
+    "fullSchool": "St. John Fisher University",
+    "team": "Cardinals",
+    "stadium": "Growney Stadium",
+    "city": "Pittsford",
+    "state": "New York",
+    "opened": 1999,
+    "seatingCapacity": 2500,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": "Beaks the Cardinal",
+    "capacityDisplay": "2,500",
+    "capacityNote": "NCAA Division III stadium records list 2,500; current owner page only says seating for thousands.",
+    "openedDisplay": "1999",
+    "openedNote": "Current venue opening; see source notes.",
+    "teamName": "St. John Fisher Cardinals",
+    "aliases": [
+      "St. John Fisher University",
+      "St. John Fisher Cardinals",
+      "Growney Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://sjfathletics.com/facilities/growney-stadium/1"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://empire8.com/news/2026/8/21/2026-empire-8-football-players-to-watch.aspx"
+      },
+      {
+        "title": "NCAA Division III stadium records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official university imagery: Beaks the Cardinal",
+        "url": "https://www.sjf.edu/site-assets/homepage-heroes/"
+      },
+      {
+        "title": "2026 active football at Growney",
+        "url": "https://www.sjf.edu/news-and-events/news-archive/fall-2026/get-ready-for-family-weekend-2026/"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://sjfathletics.com/facilities/growney-stadium/1"
+    },
+    "description": "St. John Fisher University’s Cardinals play at Growney Stadium in Pittsford, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from April-May 2020 uploads; capture dates unknown. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/st-john-fisher-growney-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Growney Stadium, home of the St. John Fisher Cardinals, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/st-john-fisher-growney-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Growney Stadium, home of the St. John Fisher Cardinals, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "st-lawrence-leckonby",
+    "school": "St. Lawrence",
+    "fullSchool": "St. Lawrence University",
+    "team": "Saints",
+    "stadium": "Weeks Field at Leckonby Stadium",
+    "city": "Canton",
+    "state": "New York",
+    "opened": 2000,
+    "seatingCapacity": 1500,
+    "classification": "NCAA Division III",
+    "conference": "Liberty League",
+    "mascot": null,
+    "capacityDisplay": "1,500",
+    "capacityLabel": "Listed seating capacity",
+    "capacityNote": "Owner facility listing.",
+    "openedDisplay": "2000",
+    "openedNote": "Stadium dedicated in fall 2000; field history may predate the present stands.",
+    "description": "Weeks Field at Leckonby Stadium is the home football venue of St. Lawrence University.",
+    "teamName": "St. Lawrence Saints",
+    "aliases": [
+      "St. Lawrence University",
+      "St. Lawrence Saints",
+      "Weeks Field at Leckonby Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official Weeks Field at Leckonby Stadium listing",
+        "url": "https://saintsathletics.com/facilities/weeks-field-at-leckonby-stadium/18"
+      },
+      {
+        "title": "2026 Liberty League opener",
+        "url": "https://saintsathletics.com/news/2026/9/26/football-mcguire-boots-69-yard-punt-in-saints-league-opening-loss-at-ithaca.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://saintsathletics.com/facilities/weeks-field-at-leckonby-stadium/18"
+    },
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial illustrations, not photographs or a current site survey. Uses owner aerials with August/September 2016 filenames, uploaded in June 2020. Architecture, markings, vegetation and surrounding geography are approximate; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/st-lawrence-leckonby-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Weeks Field at Leckonby Stadium, home of the St. Lawrence Saints, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/st-lawrence-leckonby-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Weeks Field at Leckonby Stadium, home of the St. Lawrence Saints, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "utica-gaetano",
+    "school": "Utica",
+    "fullSchool": "Utica University",
+    "team": "Pioneers",
+    "stadium": "Charles A. Gaetano Stadium",
+    "city": "Utica",
+    "state": "New York",
+    "opened": 2002,
+    "seatingCapacity": 1200,
+    "classification": "NCAA Division III",
+    "conference": "Empire 8",
+    "mascot": "Trax the Pioneer Moose",
+    "capacityDisplay": "1,200",
+    "capacityNote": "Official athletics facility count; capacity may vary by configuration.",
+    "openedDisplay": "2002",
+    "openedNote": "Official venue page states formal dedication in fall 2002.",
+    "teamName": "Utica Pioneers",
+    "aliases": [
+      "Utica University",
+      "Utica Pioneers",
+      "Charles A. Gaetano Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://uticapioneers.com/sports/2010/8/3/gaetano.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://empire8.com/news/2026/8/21/2026-empire-8-football-players-to-watch.aspx"
+      },
+      {
+        "title": "Trax mascot",
+        "url": "https://uticapioneers.com/sports/2016/5/10/trax-the-pioneer-moose.aspx"
+      },
+      {
+        "title": "2026 active Division III football",
+        "url": "https://uticapioneers.com/news/2026/10/1/football-22-pioneers-set-to-welcome-17-red-dragons-on-saturday-for-crucial-homecoming-clash.aspx"
+      }
+    ],
+    "factsSources": {
+      "stadium": "https://uticapioneers.com/sports/2010/8/3/gaetano.aspx"
+    },
+    "description": "Utica University’s Pioneers play at Charles A. Gaetano Stadium in Utica, New York.",
+    "capacityLabel": "Reported capacity",
+    "imageNote": "About these views: AI-generated, reference-based architectural reconstructions, not current photographs or survey-accurate images. Surroundings, unseen details and fine field markings are approximate. AI-generated reference-based aerial approximations, not documentary photographs. Based on official photographs from December 2022 upload; capture date unknown. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/utica-gaetano-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial reconstruction of Charles A. Gaetano Stadium, home of the Utica Pioneers, with surrounding setting."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/utica-gaetano-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse reconstruction of Charles A. Gaetano Stadium, home of the Utica Pioneers, with surrounding setting."
       }
     ]
   }

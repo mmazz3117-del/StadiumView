@@ -325,6 +325,27 @@ SCHOOLS.update({
     'cortland-grady': ('Cortland', 'iii'),
     'union-bailey': ('Union (NY)', 'iii'),
 })
+# v1.19.0 New York additions: reviewed local identities, not provider ID discovery.
+# All fifteen are Division III; no Division I record requirement is loosened.
+# Exact institution-specific names keep SUNY Maritime / Merchant Marine and
+# Alfred University / Alfred State distinct. Rochester uses its full identity.
+SCHOOLS.update({
+    'rpi-ecav': ('RPI', 'iii'),
+    'hobart-boswell': ('Hobart', 'iii'),
+    'rochester-fauver': ('University of Rochester', 'iii'),
+    'st-john-fisher-growney': ('St. John Fisher', 'iii'),
+    'utica-gaetano': ('Utica', 'iii'),
+    'hartwick-wright': ('Hartwick', 'iii'),
+    'alfred-yunevich': ('Alfred University', 'iii'),
+    'alfred-state-pioneer': ('Alfred State', 'iii'),
+    'buffalo-state-coyer': ('Buffalo State', 'iii'),
+    'brockport-shriver': ('SUNY Brockport', 'iii'),
+    'morrisville-drake': ('SUNY Morrisville', 'iii'),
+    'maritime-reinhart': ('SUNY Maritime', 'iii'),
+    'merchant-marine-tomb': ('Merchant Marine', 'iii'),
+    'hamilton-steuben': ('Hamilton', 'iii'),
+    'st-lawrence-leckonby': ('St. Lawrence', 'iii'),
+})
 # The original 209 reviewed identities include twenty FCS additions for v1.15.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
@@ -345,6 +366,7 @@ SCHOOLS.update({
 # Reviewed UI labels are separate from provider identities. This mapping only
 # validates catalog display text; it never participates in provider matching.
 DISPLAY_NAMES = {
+    "rochester-fauver": "Rochester",
     "trinity-jessee-miller": "Trinity",
     'ualbany-casey': 'UAlbany',
 
@@ -373,6 +395,23 @@ INTERIOR_VIEW_STADIUMS = frozenset({
 })
 
 EXPLICIT_ALIASES = {
+    # v1.19 institution names and specific current conference short labels.
+    # These are exact aliases, never generic abbreviations or fuzzy matches.
+    "rpi-ecav": ("Rensselaer", "Rensselaer Polytechnic Institute"),
+    "hobart-boswell": ("Hobart College",),
+    "st-john-fisher-growney": ("St. John Fisher University",),
+    "utica-gaetano": ("Utica University",),
+    "hartwick-wright": ("Hartwick College",),
+    "alfred-yunevich": ("Alfred",),  # Empire 8 distinguishes Alfred from Alfred St.
+    "alfred-state-pioneer": ("Alfred State College", "Alfred St."),
+    "buffalo-state-coyer": ("Buffalo State University",),  # Never Buffalo / UB.
+    "brockport-shriver": ("Brockport",),
+    "morrisville-drake": ("Morrisville", "State University of New York at Morrisville"),
+    "maritime-reinhart": ("SUNY Maritime College",),  # Never bare Maritime.
+    "merchant-marine-tomb": ("United States Merchant Marine Academy",),
+    "hamilton-steuben": ("Hamilton College",),
+    "st-lawrence-leckonby": ("St. Lawrence University",),  # Never Lawrence.
+
     # v1.18 official institution names; no inferred provider abbreviation fallback.
     # All new FCS IDs/classes/2026 records remain mandatory at authenticated build.
     "central-connecticut-arute": ("Central Connecticut State", "Central Connecticut State University"),

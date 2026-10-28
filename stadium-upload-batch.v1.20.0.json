@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "batchVersion": "1.20.0",
+  "expectedSchools": 20,
+  "expectedFiles": 40,
+  "packCount": 10,
+  "schools": [
+    {
+      "id": "albright-shirk",
+      "school": "Albright",
+      "pack": 1,
+      "files": [
+        "assets/albright-shirk-aerial.png",
+        "assets/albright-shirk-reverse.png"
+      ]
+    },
+    {
+      "id": "misericordia-mangelsdorf",
+      "school": "Misericordia",
+      "pack": 1,
+      "files": [
+        "assets/misericordia-mangelsdorf-aerial.png",
+        "assets/misericordia-mangelsdorf-reverse.png"
+      ]
+    },
+    {
+      "id": "kings-pa-mccarthy",
+      "school": "King’s (PA)",
+      "pack": 2,
+      "files": [
+        "assets/kings-pa-mccarthy-aerial.png",
+        "assets/kings-pa-mccarthy-reverse.png"
+      ]
+    },
+    {
+      "id": "alvernia-turf",
+      "school": "Alvernia",
+      "pack": 2,
+      "files": [
+        "assets/alvernia-turf-aerial.png",
+        "assets/alvernia-turf-reverse.png"
+      ]
+    },
+    {
+      "id": "muhlenberg-scotty-wood",
+      "school": "Muhlenberg",
+      "pack": 3,
+      "files": [
+        "assets/muhlenberg-scotty-wood-aerial.png",
+        "assets/muhlenberg-scotty-wood-reverse.png"
+      ]
+    },
+    {
+      "id": "delaware-valley-lipinski",
+      "school": "Delaware Valley",
+      "pack": 3,
+      "files": [
+        "assets/delaware-valley-lipinski-aerial.png",
+        "assets/delaware-valley-lipinski-reverse.png"
+      ]
+    },
+    {
+      "id": "dickinson-biddle",
+      "school": "Dickinson",
+      "pack": 4,
+      "files": [
+        "assets/dickinson-biddle-aerial.png",
+        "assets/dickinson-biddle-reverse.png"
+      ]
+    },
+    {
+      "id": "lycoming-girardi",
+      "school": "Lycoming",
+      "pack": 4,
+      "files": [
+        "assets/lycoming-girardi-aerial.png",
+        "assets/lycoming-girardi-reverse.png"
+      ]
+    },
+    {
+      "id": "fdu-florham-shields",
+      "school": "FDU-Florham",
+      "pack": 5,
+      "files": [
+        "assets/fdu-florham-shields-aerial.png",
+        "assets/fdu-florham-shields-reverse.png"
+      ]
+    },
+    {
+      "id": "montclair-state-sprague",
+      "school": "Montclair State",
+      "pack": 5,
+      "files": [
+        "assets/montclair-state-sprague-aerial.png",
+        "assets/montclair-state-sprague-reverse.png"
+      ]
+    },
+    {
+      "id": "franklin-marshall-shadek",
+      "school": "Franklin & Marshall",
+      "pack": 6,
+      "files": [
+        "assets/franklin-marshall-shadek-aerial.png",
+        "assets/franklin-marshall-shadek-reverse.png"
+      ]
+    },
+    {
+      "id": "moravian-rocco-calvo",
+      "school": "Moravian",
+      "pack": 6,
+      "files": [
+        "assets/moravian-rocco-calvo-aerial.png",
+        "assets/moravian-rocco-calvo-reverse.png"
+      ]
+    },
+    {
+      "id": "wilkes-schmidt",
+      "school": "Wilkes",
+      "pack": 7,
+      "files": [
+        "assets/wilkes-schmidt-aerial.png",
+        "assets/wilkes-schmidt-reverse.png"
+      ]
+    },
+    {
+      "id": "gettysburg-musselman",
+      "school": "Gettysburg",
+      "pack": 7,
+      "files": [
+        "assets/gettysburg-musselman-aerial.png",
+        "assets/gettysburg-musselman-reverse.png"
+      ]
+    },
+    {
+      "id": "widener-quick",
+      "school": "Widener",
+      "pack": 8,
+      "files": [
+        "assets/widener-quick-aerial.png",
+        "assets/widener-quick-reverse.png"
+      ]
+    },
+    {
+      "id": "juniata-knox",
+      "school": "Juniata",
+      "pack": 8,
+      "files": [
+        "assets/juniata-knox-aerial.png",
+        "assets/juniata-knox-reverse.png"
+      ]
+    },
+    {
+      "id": "kean-alumni",
+      "school": "Kean",
+      "pack": 9,
+      "files": [
+        "assets/kean-alumni-aerial.png",
+        "assets/kean-alumni-reverse.png"
+      ]
+    },
+    {
+      "id": "tcnj-lions",
+      "school": "TCNJ",
+      "pack": 9,
+      "files": [
+        "assets/tcnj-lions-aerial.png",
+        "assets/tcnj-lions-reverse.png"
+      ]
+    },
+    {
+      "id": "william-paterson-wightman",
+      "school": "William Paterson",
+      "pack": 10,
+      "files": [
+        "assets/william-paterson-wightman-aerial.png",
+        "assets/william-paterson-wightman-reverse.png"
+      ]
+    },
+    {
+      "id": "rowan-wackar",
+      "school": "Rowan",
+      "pack": 10,
+      "files": [
+        "assets/rowan-wackar-aerial.png",
+        "assets/rowan-wackar-reverse.png"
+      ]
+    }
+  ]
+}

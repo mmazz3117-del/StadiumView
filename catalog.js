@@ -1,4 +1,4 @@
-window.STADIUM_ATLAS_CATALOG_BUILD = '1.19.0';
+window.STADIUM_ATLAS_CATALOG_BUILD = '1.20.0';
 /* Only completed, source-checked stadiums and approved images belong in this collection. */
 window.STADIUM_ATLAS_RECORDS_SEASON = 2026;
 /* Replaced only by the authenticated, all-team-validated Pages build. */
@@ -17702,6 +17702,1292 @@ window.STADIUMS = [
         "width": 1536,
         "height": 1024,
         "alt": "AI-generated reference-based reverse reconstruction of Charles A. Gaetano Stadium, home of the Utica Pioneers, with surrounding setting."
+      }
+    ]
+  },
+  {
+    "id": "albright-shirk",
+    "school": "Albright",
+    "fullSchool": "Albright College",
+    "team": "Lions",
+    "teamName": "Albright Lions",
+    "stadium": "Gene L. Shirk Stadium",
+    "city": "Reading",
+    "state": "Pennsylvania",
+    "opened": 1925,
+    "seatingCapacity": 5000,
+    "classification": "NCAA Division III",
+    "conference": "Middle Atlantic Conference",
+    "mascot": null,
+    "capacityDisplay": "5,000",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Official athletics facility listing; event configurations may vary.",
+    "openedDisplay": "1925",
+    "openedNote": "Venue opening year from cited official source.",
+    "aliases": [
+      "Albright College",
+      "Albright Lions",
+      "Gene L. Shirk Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://albrightathletics.com/sports/2009/7/16/GEN_0627181423.aspx"
+      },
+      {
+        "title": "2026 active football and home venue",
+        "url": "https://albrightathletics.com/sports/football/schedule/2026"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://gomacsports.com/standings.aspx?path=football"
+      }
+    ],
+    "mascotNote": "Named costumed mascot not verified for this entry.",
+    "description": "Albright College’s Lions play at Gene L. Shirk Stadium in Reading, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://albrightathletics.com/sports/2009/7/16/GEN_0627181423.aspx"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: June 2018 upload; capture date unknown. AI-generated reference-based aerial illustrations, not current photographs or survey-accurate geometry. Based on June 2018 upload; capture date unknown. Field markings, reverse-angle details, buildings, landscaping and surrounding geography are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/albright-shirk-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Gene L. Shirk Stadium, home of the Albright Lions; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/albright-shirk-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Gene L. Shirk Stadium, home of the Albright Lions; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "alvernia-turf",
+    "school": "Alvernia",
+    "fullSchool": "Alvernia University",
+    "team": "Golden Wolves",
+    "teamName": "Alvernia Golden Wolves",
+    "stadium": "Alvernia Turf Field",
+    "city": "Reading",
+    "state": "Pennsylvania",
+    "opened": 2009,
+    "seatingCapacity": 2500,
+    "classification": "NCAA Division III",
+    "conference": "Middle Atlantic Conference",
+    "mascot": null,
+    "capacityDisplay": "2,500",
+    "capacityLabel": "Historical reported capacity",
+    "capacityNote": "Albright official 2021 opponent preview lists 2,500. Alvernia current facility page does not state capacity; current figure not confirmed.",
+    "openedDisplay": "2009",
+    "openedNote": "Turf field built 2009; bleachers/press box added 2017, football program began later.",
+    "aliases": [
+      "Alvernia University",
+      "Alvernia Golden Wolves",
+      "Alvernia Turf Field"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://auwolves.com/facilities/turf-field/152"
+      },
+      {
+        "title": "2026 active football and home venue",
+        "url": "https://auwolves.com/sports/football/schedule/2026"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://gomacsports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "Official opponent venue capacity (2021)",
+        "url": "https://albrightathletics.com/news/2021/9/17/preview-football-heads-to-alvernia-for-first-official-meeting.aspx"
+      }
+    ],
+    "mascotNote": "Named costumed mascot not verified for this entry.",
+    "description": "Alvernia University’s Golden Wolves play at Alvernia Turf Field in Reading, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://auwolves.com/facilities/turf-field/152"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: September 2025 upload; capture date unknown. AI-generated reference-based aerial illustrations, not current photographs or survey-accurate geometry. Based on September 2025 upload; capture date unknown. Field markings, reverse-angle details, buildings, landscaping and surrounding geography are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/alvernia-turf-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Alvernia Turf Field, home of the Alvernia Golden Wolves; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/alvernia-turf-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Alvernia Turf Field, home of the Alvernia Golden Wolves; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "delaware-valley-lipinski",
+    "school": "Delaware Valley",
+    "fullSchool": "Delaware Valley University",
+    "team": "Aggies",
+    "teamName": "Delaware Valley Aggies",
+    "stadium": "Robert A. Lipinski Field at James Work Memorial Stadium",
+    "city": "Doylestown",
+    "state": "Pennsylvania",
+    "opened": 1978,
+    "seatingCapacity": 4000,
+    "classification": "NCAA Division III",
+    "conference": "Middle Atlantic Conference",
+    "mascot": null,
+    "capacityDisplay": "4,000",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Official athletics facility listing; event configurations may vary.",
+    "openedDisplay": "1978",
+    "openedNote": "Venue opening year from cited official source.",
+    "aliases": [
+      "Delaware Valley University",
+      "Delaware Valley Aggies",
+      "Robert A. Lipinski Field at James Work Memorial Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://athletics.delval.edu/facilities/robert-a-lipinski-field-at-james-work-memorial-stadium/1"
+      },
+      {
+        "title": "2026 active football and home venue",
+        "url": "https://athletics.delval.edu/schedule.aspx?path=football&season=2026"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://gomacsports.com/standings.aspx?path=football"
+      }
+    ],
+    "mascotNote": "Named costumed mascot not verified for this entry.",
+    "description": "Delaware Valley University’s Aggies play at Robert A. Lipinski Field at James Work Memorial Stadium in Doylestown, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://athletics.delval.edu/facilities/robert-a-lipinski-field-at-james-work-memorial-stadium/1"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: May 2025 upload; capture date unknown; September 2016 upload; capture date unknown. AI-generated reference-based aerial illustrations, not current photographs or survey-accurate geometry. Field references uploaded May 2025 and home-stand reference uploaded September 2016; capture dates unknown. A new press box was built in 2023 and its precise appearance is not verified here. Field markings, grandstand details, reverse-angle surroundings and landscaping are approximate.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/delaware-valley-lipinski-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Robert A. Lipinski Field at James Work Memorial Stadium, home of the Delaware Valley Aggies; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/delaware-valley-lipinski-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Robert A. Lipinski Field at James Work Memorial Stadium, home of the Delaware Valley Aggies; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "dickinson-biddle",
+    "school": "Dickinson",
+    "fullSchool": "Dickinson College",
+    "team": "Red Devils",
+    "teamName": "Dickinson Red Devils",
+    "stadium": "Biddle Field",
+    "city": "Carlisle",
+    "state": "Pennsylvania",
+    "opened": 1903,
+    "seatingCapacity": 1500,
+    "classification": "NCAA Division III",
+    "conference": "Centennial Conference",
+    "mascot": null,
+    "capacityDisplay": "1,500",
+    "capacityLabel": "Reported seating capacity",
+    "capacityNote": "Current official athletics facilities listing reports 1,500; older NCAA list reports 2,577.",
+    "openedDisplay": "1903",
+    "openedNote": "Current athletics facilities page gives 1903 and first game September 25, 1903; college archives date the named memorial land gift to 1909.",
+    "aliases": [
+      "Dickinson College",
+      "Dickinson Red Devils",
+      "Biddle Field"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://dickinsonathletics.com/facilities/biddle-field-complex/7"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://centennial.org/standings.aspx?standings=344"
+      },
+      {
+        "title": "Official source photo and venue layout",
+        "url": "https://dickinsonathletics.com/sports/2022/8/1/biddle-field-complex.aspx"
+      },
+      {
+        "title": "College archives: 1909 Biddle memorial gift",
+        "url": "https://archives.dickinson.edu/encyclopedia/herman-bosler-biddle-athletic-field-1909-present"
+      }
+    ],
+    "mascotNote": "A separately named costumed mascot was not verified for this entry.",
+    "description": "Dickinson College’s Red Devils play at Biddle Field in Carlisle, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://dickinsonathletics.com/facilities/biddle-field-complex/7"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: August 2022 upload; capture date unknown. AI-generated reference-based aerial illustrations, not documentary photographs or a current survey. Source imagery: August 2022 upload; capture date unknown. Field markings, reverse-angle geometry, landscaping and surrounding structures are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/dickinson-biddle-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Biddle Field, home of the Dickinson Red Devils; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/dickinson-biddle-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Biddle Field, home of the Dickinson Red Devils; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "fdu-florham-shields",
+    "school": "FDU-Florham",
+    "fullSchool": "Fairleigh Dickinson University, Florham Campus",
+    "team": "Devils",
+    "teamName": "FDU-Florham Devils",
+    "stadium": "Robert T. Shields Field",
+    "city": "Madison",
+    "state": "New Jersey",
+    "opened": null,
+    "seatingCapacity": 1000,
+    "classification": "NCAA Division III",
+    "conference": "Middle Atlantic Conference",
+    "mascot": null,
+    "capacityDisplay": "1,000",
+    "capacityNote": "Official athletics facility count; may vary by configuration.",
+    "openedDisplay": "Not confirmed",
+    "openedNote": "The official facility page confirms a June 2015 renovation but does not establish the original opening year.",
+    "aliases": [
+      "Fairleigh Dickinson-Florham",
+      "FDU Devils",
+      "Fairleigh Dickinson University Florham"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://fdudevils.com/facilities/robert-t-shields-field/2"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://gomacsports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "2026 active football",
+        "url": "https://fdudevils.com/schedule.aspx?path=football&season=2026"
+      },
+      {
+        "title": "NCAA Division III football records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      }
+    ],
+    "mascotNote": "A separately named costumed mascot was not confirmed; Devils is the team nickname.",
+    "capacityLabel": "Reported capacity",
+    "description": "Fairleigh Dickinson University, Florham Campus’s Devils play at Robert T. Shields Field in Madison, New Jersey.",
+    "factsSources": {
+      "stadium": "https://fdudevils.com/facilities/robert-t-shields-field/2"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: December 2022 upload; capture date unconfirmed; October 2020 image filename; capture date unconfirmed. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Based on official imagery: December 2022 upload; capture date unconfirmed; October 2020 image filename; capture date unconfirmed. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/fdu-florham-shields-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Robert T. Shields Field, home of the FDU-Florham Devils; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/fdu-florham-shields-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Robert T. Shields Field, home of the FDU-Florham Devils; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "franklin-marshall-shadek",
+    "school": "Franklin & Marshall",
+    "fullSchool": "Franklin & Marshall College",
+    "team": "Diplomats",
+    "teamName": "Franklin & Marshall Diplomats",
+    "stadium": "Tom Gilburg Field at Shadek Stadium",
+    "city": "Lancaster",
+    "state": "Pennsylvania",
+    "opened": 2017,
+    "seatingCapacity": 2500,
+    "classification": "NCAA Division III",
+    "conference": "Centennial Conference",
+    "mascot": null,
+    "capacityDisplay": "2,500",
+    "capacityNote": "Official athletics venue seating count; event configurations can vary.",
+    "openedDisplay": "2017",
+    "openedNote": "Official owner venue opening/dedication year.",
+    "aliases": [
+      "Franklin & Marshall College",
+      "Franklin & Marshall Diplomats",
+      "Tom Gilburg Field at Shadek Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://godiplomats.com/facilities/shadek-stadium-tom-gilburg-field-/6"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://centennial.org/news/2026/8/16/johns-hopkins-headlines-cc-football-preseason-poll.aspx"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Franklin & Marshall College’s Diplomats play at Tom Gilburg Field at Shadek Stadium in Lancaster, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://godiplomats.com/facilities/shadek-stadium-tom-gilburg-field-/6"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: May 2023 upload; capture date unknown; June 2023 upload; capture date unknown; August 2019 filename; June 2023 upload. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Field markings, unseen structures, reverse-angle geometry and surroundings are approximate. Reference capture/upload eras are documented; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/franklin-marshall-shadek-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Tom Gilburg Field at Shadek Stadium, home of the Franklin & Marshall Diplomats; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/franklin-marshall-shadek-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Tom Gilburg Field at Shadek Stadium, home of the Franklin & Marshall Diplomats; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "gettysburg-musselman",
+    "school": "Gettysburg",
+    "fullSchool": "Gettysburg College",
+    "team": "Bullets",
+    "teamName": "Gettysburg Bullets",
+    "stadium": "Shirk Field at Musselman Stadium",
+    "city": "Gettysburg",
+    "state": "Pennsylvania",
+    "opened": 1965,
+    "seatingCapacity": 6176,
+    "classification": "NCAA Division III",
+    "conference": "Centennial Conference",
+    "mascot": null,
+    "capacityDisplay": "6,176",
+    "capacityNote": "NCAA Division III stadium records list 6,176; not a newly surveyed 2026 seating count.",
+    "openedDisplay": "1965",
+    "openedNote": "Dedicated September 1965; artificial turf installed September 2003.",
+    "aliases": [
+      "Gettysburg College",
+      "Gettysburg Bullets",
+      "Shirk Field at Musselman Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://gettysburgsports.com/sports/2006/11/2/Shirk%20Field%20at%20Musselman%20Stadium.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://centennial.org/news/2026/8/16/johns-hopkins-headlines-cc-football-preseason-poll.aspx"
+      },
+      {
+        "title": "NCAA Division III stadium capacity",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "2024 stadium lighting project",
+        "url": "https://gettysburgsports.com/news/2024/5/9/football-musselman-stadium-lights-among-campus-enhancements-for-2024-25.aspx"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Gettysburg College’s Bullets play at Shirk Field at Musselman Stadium in Gettysburg, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://gettysburgsports.com/sports/2006/11/2/Shirk%20Field%20at%20Musselman%20Stadium.aspx"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: May 2024 upload before light installation; capture date unknown; August 2011 upload; capture date unknown; September2026 websiteupload; capturedate unknown, imagery shows prelighting layout. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Field markings, unseen structures, reverse-angle geometry and surroundings are approximate. Reference capture/upload eras are documented; later changes may not appear. Source photos show pre2024-lighting configuration; new2024 stadium lighting is not reconstructed.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/gettysburg-musselman-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Shirk Field at Musselman Stadium, home of the Gettysburg Bullets; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/gettysburg-musselman-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Shirk Field at Musselman Stadium, home of the Gettysburg Bullets; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "juniata-knox",
+    "school": "Juniata",
+    "fullSchool": "Juniata College",
+    "team": "Eagles",
+    "teamName": "Juniata Eagles",
+    "stadium": "Goodman Field at Knox Stadium",
+    "city": "Huntingdon",
+    "state": "Pennsylvania",
+    "opened": 1988,
+    "seatingCapacity": 3000,
+    "classification": "NCAA Division III",
+    "conference": "Landmark Conference",
+    "mascot": null,
+    "capacityDisplay": "3,000",
+    "capacityNote": "Official athletics venue seating count; event configurations can vary.",
+    "openedDisplay": "1988",
+    "openedNote": "Current stadium, grandstand and pressbox opened/dedicated1988, per university-linked official tour; football at site since1923 and Goodman Field turf/naming2012.",
+    "aliases": [
+      "Juniata College",
+      "Juniata Eagles",
+      "Goodman Field at Knox Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://www.juniata.edu/about/news/archive.php?action=SHOWARTICLE&id=6782"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://landmarkconference.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Goodman Field dedication and turf installation",
+        "url": "https://www.juniata.edu/about/news/archive.php?action=SHOWARTICLE&id=5503"
+      },
+      {
+        "title": "Current college facilities catalog",
+        "url": "https://www.juniata.edu/catalog/heritage.php"
+      },
+      {
+        "title": "Official university-linked campus tour: Knox Stadium",
+        "url": "https://www.juniata.edu/admission/virtual-tour/index.php"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Juniata College’s Eagles play at Goodman Field at Knox Stadium in Huntingdon, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://www.juniata.edu/about/news/archive.php?action=SHOWARTICLE&id=6782"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: Official university-linked virtual tour build December2022; photograph capture date not stated. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Field markings, unseen structures, reverse-angle geometry and surroundings are approximate. Reference capture/upload eras are documented; later changes may not appear. Based on official university-linked360tour built in December2022; capturedate unspecified. Aerial/reverse view inferred from ground-level panorama rather than aerial survey.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/juniata-knox-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Goodman Field at Knox Stadium, home of the Juniata Eagles; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/juniata-knox-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Goodman Field at Knox Stadium, home of the Juniata Eagles; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "kean-alumni",
+    "school": "Kean",
+    "fullSchool": "Kean University",
+    "team": "Cougars",
+    "teamName": "Kean Cougars",
+    "stadium": "Kean Alumni Stadium",
+    "city": "Union",
+    "state": "New Jersey",
+    "opened": null,
+    "seatingCapacity": 5300,
+    "classification": "NCAA Division III",
+    "conference": "NJAC",
+    "mascot": "Keanu the Cougar",
+    "capacityDisplay": "5,300",
+    "capacityNote": "Official athletics facility count; may vary by configuration.",
+    "openedDisplay": "1960s",
+    "openedNote": "Owner places the venue in the 1960s; exact opening year is not confirmed. Renamed in 1998; seating enlarged in 2006.",
+    "aliases": [
+      "Kean University",
+      "Kean Cougars",
+      "Kean University Alumni Stadium",
+      "Zweidinger Field"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://keanathletics.com/sports/2019/5/9/information-facilities-alumnistadium.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://njacsports.com/standings.aspx?standings=333"
+      },
+      {
+        "title": "2026 active football",
+        "url": "https://njacsports.com/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "NCAA Division III football records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official mascot information",
+        "url": "https://www.kean.edu/news/kean-reveals-new-keanu-mascot"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Kean University’s Cougars play at Kean Alumni Stadium in Union, New Jersey.",
+    "factsSources": {
+      "stadium": "https://keanathletics.com/sports/2019/5/9/information-facilities-alumnistadium.aspx"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: November 2021 upload; capture date unconfirmed. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Based on official imagery: November 2021 upload; capture date unconfirmed. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/kean-alumni-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Kean Alumni Stadium, home of the Kean Cougars; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/kean-alumni-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Kean Alumni Stadium, home of the Kean Cougars; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "kings-pa-mccarthy",
+    "school": "King’s (PA)",
+    "fullSchool": "King's College",
+    "team": "Monarchs",
+    "teamName": "King’s (PA) Monarchs",
+    "stadium": "McCarthy Stadium",
+    "city": "Wilkes-Barre Township",
+    "state": "Pennsylvania",
+    "opened": 1993,
+    "seatingCapacity": 3000,
+    "classification": "NCAA Division III",
+    "conference": "Middle Atlantic Conference",
+    "mascot": null,
+    "capacityDisplay": "3,000",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Official athletics facility listing; event configurations may vary.",
+    "openedDisplay": "1993",
+    "openedNote": "NCAA lists 1993 for original stadium; King’s history dates complex dedication to 1992, and current McCarthy name and synthetic field date to 2008.",
+    "aliases": [
+      "King's College (PA)",
+      "King's College Pennsylvania",
+      "King’s (PA) Monarchs",
+      "McCarthy Stadium at Betzler Athletic Complex"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://kingscollegeathletics.com/facilities/mccarthy-stadium/5"
+      },
+      {
+        "title": "2026 active football and home venue",
+        "url": "https://kingscollegeathletics.com/sports/football/schedule"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://gomacsports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "NCAA stadium year",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official stadium/complex history",
+        "url": "https://kingscollegeathletics.com/facilities"
+      },
+      {
+        "title": "Official off-campus stadium location",
+        "url": "https://kingscollegeathletics.com/sports/2008/10/10/GEN_10_10_08_Betzler_Directions.aspx?id=51"
+      }
+    ],
+    "mascotNote": "Named costumed mascot not verified for this entry.",
+    "description": "King's College’s Monarchs play at McCarthy Stadium in Wilkes-Barre Township, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://kingscollegeathletics.com/facilities/mccarthy-stadium/5"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: October 2025 upload; capture date unknown. AI-generated reference-based aerial illustrations, not current photographs or survey-accurate geometry. Based on October 2025 upload; capture date unknown. Field markings, reverse-angle details, buildings, landscaping and surrounding geography are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/kings-pa-mccarthy-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of McCarthy Stadium, home of the King’s (PA) Monarchs; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/kings-pa-mccarthy-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of McCarthy Stadium, home of the King’s (PA) Monarchs; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "lycoming-girardi",
+    "school": "Lycoming",
+    "fullSchool": "Lycoming College",
+    "team": "Warriors",
+    "teamName": "Lycoming Warriors",
+    "stadium": "David Person Field at Girardi Stadium",
+    "city": "Williamsport",
+    "state": "Pennsylvania",
+    "opened": 1961,
+    "seatingCapacity": 2000,
+    "classification": "NCAA Division III",
+    "conference": "Landmark Conference",
+    "mascot": null,
+    "capacityDisplay": "2,000",
+    "capacityLabel": "Reported seating capacity",
+    "capacityNote": "Owner lists 2,000 bleacher seats; older NCAA publications list 3,700 for David Person Field, so this is the owner-reported seating figure rather than total event capacity.",
+    "openedDisplay": "1961",
+    "openedNote": "Owner says the facility opened in 1961; football began using it in 1962. Girardi Stadium was dedicated in 2023.",
+    "aliases": [
+      "Lycoming College",
+      "Lycoming Warriors",
+      "David Person Field at Girardi Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://lycomingathletics.com/facilities/david-person-field-at-girardi-stadium/1"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://landmarkconference.org/standings.aspx?path=football"
+      },
+      {
+        "title": "2023 Girardi Stadium dedication",
+        "url": "https://lycomingathletics.com/news/2023/9/27/football-lycoming-officially-dedicates-girardi-stadium-at-warriors-home-opener.aspx"
+      }
+    ],
+    "mascotNote": "A separately named costumed mascot was not verified for this entry.",
+    "description": "Lycoming College’s Warriors play at David Person Field at Girardi Stadium in Williamsport, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://lycomingathletics.com/facilities/david-person-field-at-girardi-stadium/1"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: March 2020 upload; capture date unknown; November 2022 upload; capture date unknown. AI-generated reference-based aerial illustrations, not documentary photographs or a current survey. Source imagery: March 2020 upload; capture date unknown; November 2022 upload; capture date unknown. Field markings, reverse-angle geometry, landscaping and surrounding structures are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/lycoming-girardi-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of David Person Field at Girardi Stadium, home of the Lycoming Warriors; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/lycoming-girardi-reverse.png",
+        "width": 1672,
+        "height": 941,
+        "alt": "AI-generated reference-based reverse illustration of David Person Field at Girardi Stadium, home of the Lycoming Warriors; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "misericordia-mangelsdorf",
+    "school": "Misericordia",
+    "fullSchool": "Misericordia University",
+    "team": "Cougars",
+    "teamName": "Misericordia Cougars",
+    "stadium": "Mangelsdorf Field",
+    "city": "Dallas",
+    "state": "Pennsylvania",
+    "opened": 2002,
+    "seatingCapacity": 1500,
+    "classification": "NCAA Division III",
+    "conference": "Middle Atlantic Conference",
+    "mascot": null,
+    "capacityDisplay": "1,500",
+    "capacityLabel": "Reported seating capacity",
+    "capacityNote": "NCAA Division III stadium list reports 1,500. Owner facility page does not publish a numeric capacity.",
+    "openedDisplay": "2002",
+    "openedNote": "Owner facility history states constructed in 2002.",
+    "aliases": [
+      "Misericordia University",
+      "Misericordia Cougars",
+      "Mangelsdorf Field"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://athletics.misericordia.edu/sports/2012/9/26/AthFac_0926122518.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://gomacsports.com/standings.aspx?path=football"
+      },
+      {
+        "title": "NCAA Division III stadium records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      }
+    ],
+    "mascotNote": "A separately named costumed mascot was not verified for this entry.",
+    "description": "Misericordia University’s Cougars play at Mangelsdorf Field in Dallas, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://athletics.misericordia.edu/sports/2012/9/26/AthFac_0926122518.aspx"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: July 2014 upload; capture date unknown. AI-generated reference-based aerial illustrations, not documentary photographs or a current survey. Source imagery: July 2014 upload; capture date unknown. Field markings, reverse-angle geometry, landscaping and surrounding structures are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/misericordia-mangelsdorf-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Mangelsdorf Field, home of the Misericordia Cougars; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/misericordia-mangelsdorf-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Mangelsdorf Field, home of the Misericordia Cougars; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "montclair-state-sprague",
+    "school": "Montclair State",
+    "fullSchool": "Montclair State University",
+    "team": "Red Hawks",
+    "teamName": "Montclair State Red Hawks",
+    "stadium": "Sprague Field",
+    "city": "Montclair",
+    "state": "New Jersey",
+    "opened": null,
+    "seatingCapacity": 6000,
+    "classification": "NCAA Division III",
+    "conference": "NJAC",
+    "mascot": "Rocky the Red Hawk",
+    "capacityDisplay": "6,000",
+    "capacityNote": "Official athletics facility count; may vary by configuration.",
+    "openedDisplay": "1930s",
+    "openedNote": "Owner facility page identifies construction in the 1930s but not an exact year.",
+    "aliases": [
+      "Montclair State University",
+      "MSU Red Hawks",
+      "Sprague"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://montclairathletics.com/sports/2012/2/15/GEN_0215125034.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://njacsports.com/standings.aspx?standings=333"
+      },
+      {
+        "title": "2026 active football",
+        "url": "https://njacsports.com/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "NCAA Division III football records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official mascot information",
+        "url": "https://www.montclair.edu/campus-life/you-belong/our-mascots"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Montclair State University’s Red Hawks play at Sprague Field in Montclair, New Jersey.",
+    "factsSources": {
+      "stadium": "https://montclairathletics.com/sports/2012/2/15/GEN_0215125034.aspx"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: 2015 filename; July 2016 upload. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Based on official imagery: 2015 filename; July 2016 upload. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/montclair-state-sprague-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Sprague Field, home of the Montclair State Red Hawks; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/montclair-state-sprague-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Sprague Field, home of the Montclair State Red Hawks; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "moravian-rocco-calvo",
+    "school": "Moravian",
+    "fullSchool": "Moravian University",
+    "team": "Greyhounds",
+    "teamName": "Moravian Greyhounds",
+    "stadium": "Rocco Calvo Field",
+    "city": "Bethlehem",
+    "state": "Pennsylvania",
+    "opened": null,
+    "seatingCapacity": 2000,
+    "classification": "NCAA Division III",
+    "conference": "Landmark Conference",
+    "mascot": null,
+    "capacityDisplay": "2,000",
+    "capacityNote": "Official 2025 Ursinus game preview lists 2,000; historic listings may differ.",
+    "openedDisplay": "Not confirmed",
+    "openedNote": "Original Steel Field grandstand predates the modern named football facility. A single current-venue opening year is not confirmed.",
+    "aliases": [
+      "Moravian University",
+      "Moravian Greyhounds",
+      "Rocco Calvo Field"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://www.moravian.edu/about/campus-map/steel-athletic-complex"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://landmarkconference.org/standings.aspx?path=football"
+      },
+      {
+        "title": "2025 official visiting-team venue capacity",
+        "url": "https://ursinusathletics.com/news/2025/9/19/preview-football-to-renew-series-with-moravian-on-saturday.aspx"
+      },
+      {
+        "title": "Historic Steel Field grandstand",
+        "url": "https://news.moravian.edu/2021/05/17/1485/"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Moravian University’s Greyhounds play at Rocco Calvo Field in Bethlehem, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://www.moravian.edu/about/campus-map/steel-athletic-complex"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: May 2021 upload; capture date unknown; Fall 2024 filename; March 2025 upload; 2017 campus map filename. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Field markings, unseen structures, reverse-angle geometry and surroundings are approximate. Reference capture/upload eras are documented; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/moravian-rocco-calvo-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Rocco Calvo Field, home of the Moravian Greyhounds; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/moravian-rocco-calvo-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Rocco Calvo Field, home of the Moravian Greyhounds; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "muhlenberg-scotty-wood",
+    "school": "Muhlenberg",
+    "fullSchool": "Muhlenberg College",
+    "team": "Mules",
+    "teamName": "Muhlenberg Mules",
+    "stadium": "Frank Marino Field at Scotty Wood Stadium",
+    "city": "Allentown",
+    "state": "Pennsylvania",
+    "opened": 1999,
+    "seatingCapacity": 3000,
+    "classification": "NCAA Division III",
+    "conference": "Centennial Conference",
+    "mascot": "Marti the Mule",
+    "capacityDisplay": "3,000",
+    "capacityNote": "Official athletics venue seating count; event configurations can vary.",
+    "openedDisplay": "1999",
+    "openedNote": "Owner facility page says dedicated at the 1999 home opener; older secondary/NCAA lists sometimes say 1998.",
+    "aliases": [
+      "Muhlenberg College",
+      "Muhlenberg Mules",
+      "Frank Marino Field at Scotty Wood Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://muhlenbergsports.com/facilities/scotty-wood-stadium-frank-marino-field/5"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://centennial.org/news/2026/8/16/johns-hopkins-headlines-cc-football-preseason-poll.aspx"
+      },
+      {
+        "title": "University athletics and mascot",
+        "url": "https://www.muhlenberg.edu/muhlenberg-experience/student-life/athletics/"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Muhlenberg College’s Mules play at Frank Marino Field at Scotty Wood Stadium in Allentown, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://muhlenbergsports.com/facilities/scotty-wood-stadium-frank-marino-field/5"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: March 2024 upload; capture date unknown; August 2026 upload; capture date unknown. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Field markings, unseen structures, reverse-angle geometry and surroundings are approximate. Reference capture/upload eras are documented; later changes may not appear.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/muhlenberg-scotty-wood-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Frank Marino Field at Scotty Wood Stadium, home of the Muhlenberg Mules; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/muhlenberg-scotty-wood-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Frank Marino Field at Scotty Wood Stadium, home of the Muhlenberg Mules; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "rowan-wackar",
+    "school": "Rowan",
+    "fullSchool": "Rowan University",
+    "team": "Profs",
+    "teamName": "Rowan Profs",
+    "stadium": "Coach Richard Wackar Stadium",
+    "city": "Glassboro",
+    "state": "New Jersey",
+    "opened": 1971,
+    "seatingCapacity": 5000,
+    "classification": "NCAA Division III",
+    "conference": "NJAC",
+    "mascot": "Whoo RU",
+    "capacityDisplay": "5,000",
+    "capacityNote": "Official athletics facility count; may vary by configuration.",
+    "openedDisplay": "1971",
+    "openedNote": "John Page Memorial Field first hosted football in 1971; stadium renovated in 2009.",
+    "aliases": [
+      "Rowan University",
+      "Rowan Profs",
+      "John Page Memorial Field",
+      "Glassboro State"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://www.rowanathletics.com/sports/2020/10/27/coach-richard-wackar-stadium.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://njacsports.com/standings.aspx?standings=333"
+      },
+      {
+        "title": "2026 active football",
+        "url": "https://njacsports.com/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "NCAA Division III football records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official mascot information",
+        "url": "https://www.rowanathletics.com/sports/2007/3/9/Mascot.aspx"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "Rowan University’s Profs play at Coach Richard Wackar Stadium in Glassboro, New Jersey.",
+    "factsSources": {
+      "stadium": "https://www.rowanathletics.com/sports/2020/10/27/coach-richard-wackar-stadium.aspx"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: 2024, identified by owner page; September 2024 upload. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Based on official imagery: 2024, identified by owner page; September 2024 upload. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/rowan-wackar-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Coach Richard Wackar Stadium, home of the Rowan Profs; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/rowan-wackar-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Coach Richard Wackar Stadium, home of the Rowan Profs; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "tcnj-lions",
+    "school": "TCNJ",
+    "fullSchool": "The College of New Jersey",
+    "team": "Lions",
+    "teamName": "TCNJ Lions",
+    "stadium": "Lions Stadium",
+    "city": "Ewing",
+    "state": "New Jersey",
+    "opened": 1984,
+    "seatingCapacity": 6000,
+    "classification": "NCAA Division III",
+    "conference": "NJAC",
+    "mascot": "Roscoe the Lion",
+    "capacityDisplay": "More than 6,000",
+    "capacityNote": "Owner says the venue accommodates more than 6,000 spectators; 6,000 is the published NCAA stadium-list figure, not an exact current upper bound.",
+    "openedDisplay": "1984",
+    "openedNote": "Owner facility page identifies construction in 1984.",
+    "aliases": [
+      "The College of New Jersey",
+      "TCNJ Lions",
+      "Trenton State"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://tcnjathletics.com/sports/2009/11/20/GEN_1120095148.aspx?id=1426"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://njacsports.com/standings.aspx?standings=333"
+      },
+      {
+        "title": "2026 active football",
+        "url": "https://njacsports.com/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "NCAA Division III football records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      },
+      {
+        "title": "Official mascot information",
+        "url": "https://studentlife.tcnj.edu/mascot-roscoe/"
+      }
+    ],
+    "capacityLabel": "Reported capacity",
+    "description": "The College of New Jersey’s Lions play at Lions Stadium in Ewing, New Jersey.",
+    "factsSources": {
+      "stadium": "https://tcnjathletics.com/sports/2009/11/20/GEN_1120095148.aspx?id=1426"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: May 2014 upload; capture date unconfirmed. AI-generated reference-based aerial illustrations, not documentary photographs or a current site survey. Based on official imagery: May 2014 upload; capture date unconfirmed. Field markings, reverse-angle geometry, landscaping and surrounding buildings are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/tcnj-lions-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Lions Stadium, home of the TCNJ Lions; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/tcnj-lions-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Lions Stadium, home of the TCNJ Lions; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "widener-quick",
+    "school": "Widener",
+    "fullSchool": "Widener University",
+    "team": "Pride",
+    "teamName": "Widener Pride",
+    "stadium": "Elizabeth J. Hirschmann Field at Leslie C. Quick Jr. Stadium",
+    "city": "Chester",
+    "state": "Pennsylvania",
+    "opened": 1994,
+    "seatingCapacity": 4000,
+    "classification": "NCAA Division III",
+    "conference": "Middle Atlantic Conference",
+    "mascot": null,
+    "capacityDisplay": "4,000+",
+    "capacityLabel": "Reported seating capacity",
+    "capacityNote": "Owner states over 4,000 spectators; NCAA lists 4,000. Display is a rounded reported capacity.",
+    "openedDisplay": "1994",
+    "openedNote": "Official owner facility page states opened in 1994; playing surface was dedicated to Elizabeth J. Hirschmann in October 2017.",
+    "aliases": [
+      "Widener University",
+      "Widener Pride",
+      "Elizabeth J. Hirschmann Field at Leslie C. Quick Jr. Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://widenerpride.com/facilities/elizabeth-j-hirschmann-field-at-leslie-c-quick-jr-stadium/2"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://gomacsports.com/standings.aspx?path=football"
+      }
+    ],
+    "mascotNote": "A separately named costumed mascot was not verified for this entry.",
+    "description": "Widener University’s Pride play at Elizabeth J. Hirschmann Field at Leslie C. Quick Jr. Stadium in Chester, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://widenerpride.com/facilities/elizabeth-j-hirschmann-field-at-leslie-c-quick-jr-stadium/2"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: December 2015 upload; capture date unknown. AI-generated reference-based aerial illustrations, not documentary photographs or a current survey. Source imagery: December 2015 upload; capture date unknown. Field markings, reverse-angle geometry, landscaping and surrounding structures are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/widener-quick-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Elizabeth J. Hirschmann Field at Leslie C. Quick Jr. Stadium, home of the Widener Pride; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/widener-quick-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Elizabeth J. Hirschmann Field at Leslie C. Quick Jr. Stadium, home of the Widener Pride; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "wilkes-schmidt",
+    "school": "Wilkes",
+    "fullSchool": "Wilkes University",
+    "team": "Colonels",
+    "teamName": "Wilkes Colonels",
+    "stadium": "Schmidt Stadium",
+    "city": "Edwardsville",
+    "state": "Pennsylvania",
+    "opened": 1965,
+    "seatingCapacity": 4000,
+    "classification": "NCAA Division III",
+    "conference": "Landmark Conference",
+    "mascot": null,
+    "capacityDisplay": "4,000",
+    "capacityLabel": "Reported seating capacity",
+    "capacityNote": "NCAA Division III stadium list reports 4,000; current owner venue page does not publish capacity.",
+    "openedDisplay": "1965",
+    "openedNote": "NCAA Division III stadium list gives 1965.",
+    "aliases": [
+      "Wilkes University",
+      "Wilkes Colonels",
+      "Schmidt Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://gowilkesu.com/sports/2010/8/6/gen_0806103216.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://landmarkconference.org/standings.aspx?path=football"
+      },
+      {
+        "title": "Venue address and spectator information",
+        "url": "https://gowilkesu.com/sports/2024/8/15/wilkes-athletics-ticket-information.aspx"
+      },
+      {
+        "title": "NCAA Division III stadium records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      }
+    ],
+    "mascotNote": "A separately named costumed mascot was not verified for this entry.",
+    "description": "Wilkes University’s Colonels play at Schmidt Stadium in Edwardsville, Pennsylvania.",
+    "factsSources": {
+      "stadium": "https://gowilkesu.com/sports/2010/8/6/gen_0806103216.aspx"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: October 2010 upload; capture date unknown; August 2013 upload; capture date unknown. AI-generated reference-based aerial illustrations, not documentary photographs or a current survey. Source imagery: October 2010 upload; capture date unknown; August 2013 upload; capture date unknown. Field markings, reverse-angle geometry, landscaping and surrounding structures are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/wilkes-schmidt-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Schmidt Stadium, home of the Wilkes Colonels; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/wilkes-schmidt-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Schmidt Stadium, home of the Wilkes Colonels; architecture and surroundings are approximate."
+      }
+    ]
+  },
+  {
+    "id": "william-paterson-wightman",
+    "school": "William Paterson",
+    "fullSchool": "William Paterson University of New Jersey",
+    "team": "Pioneers",
+    "teamName": "William Paterson Pioneers",
+    "stadium": "Wightman Stadium",
+    "city": "Wayne",
+    "state": "New Jersey",
+    "opened": 1972,
+    "seatingCapacity": 1909,
+    "classification": "NCAA Division III",
+    "conference": "NJAC",
+    "mascot": null,
+    "capacityDisplay": "1,909",
+    "capacityLabel": "Reported capacity",
+    "capacityNote": "Official athletics facility listing; event configurations may vary.",
+    "openedDisplay": "1972",
+    "openedNote": "NCAA Division III stadium table lists 1972; owner page details later renovations.",
+    "aliases": [
+      "William Paterson University of New Jersey",
+      "William Paterson Pioneers",
+      "Wightman Stadium"
+    ],
+    "sources": [
+      {
+        "title": "Official venue information",
+        "url": "https://www.wpupioneers.com/facilities/wightman-stadium/3"
+      },
+      {
+        "title": "2026 active football and home venue",
+        "url": "https://www.wpupioneers.com/news/2026/9/5/football-rally-falls-short-during-season-opener.aspx"
+      },
+      {
+        "title": "2026 football conference",
+        "url": "https://njacsports.com/stats.aspx?path=football&year=2026"
+      },
+      {
+        "title": "NCAA Division III stadium records",
+        "url": "https://fs.ncaa.org.s3.amazonaws.com/Docs/stats/football_records/D3.pdf"
+      }
+    ],
+    "mascotNote": "Named costumed mascot not verified for this entry.",
+    "description": "William Paterson University of New Jersey’s Pioneers play at Wightman Stadium in Wayne, New Jersey.",
+    "factsSources": {
+      "stadium": "https://www.wpupioneers.com/facilities/wightman-stadium/3"
+    },
+    "imageNote": "About these views: AI-generated, reference-based aerial illustrations, not current photographs or survey-accurate images. Source era: April 2019 upload; capture date unknown. AI-generated reference-based aerial illustrations, not current photographs or survey-accurate geometry. Based on April 2019 upload; capture date unknown. Field markings, reverse-angle details, buildings, landscaping and surrounding geography are approximate and may not reflect 2026 conditions.",
+    "views": [
+      {
+        "title": "Aerial view",
+        "src": "assets/william-paterson-wightman-aerial.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based aerial illustration of Wightman Stadium, home of the William Paterson Pioneers; architecture and surroundings are approximate."
+      },
+      {
+        "title": "Reverse view",
+        "src": "assets/william-paterson-wightman-reverse.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": "AI-generated reference-based reverse illustration of Wightman Stadium, home of the William Paterson Pioneers; architecture and surroundings are approximate."
       }
     ]
   }

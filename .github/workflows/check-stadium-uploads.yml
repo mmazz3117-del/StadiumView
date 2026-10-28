@@ -1,0 +1,30 @@
+name: Stadium Atlas upload check
+run-name: Upload check · ${{ github.event.head_commit.message || 'Manual check' }}
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions: {}
+jobs:
+  upload-check:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - name: Read this commit (no stored credentials)
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+          sparse-checkout: |
+            /catalog.js
+            /stadium-upload-batch.v1.20.0.json
+            /scripts/check_stadium_uploads.py
+          sparse-checkout-cone-mode: false
+      - name: Check current catalog and named v1.20.0 batch files
+        env:
+          UPLOAD_BEFORE: ${{ github.event.before }}
+          UPLOAD_AFTER: ${{ github.sha }}
+        run: python3 scripts/check_stadium_uploads.py --source .

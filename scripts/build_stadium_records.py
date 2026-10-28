@@ -346,6 +346,9 @@ SCHOOLS.update({
     'hamilton-steuben': ('Hamilton', 'iii'),
     'st-lawrence-leckonby': ('St. Lawrence', 'iii'),
 })
+# v1.20.0: 20 NJ/PA Division III institution identities.
+# Provider IDs/records remain authenticated and fail-closed; no guessed records.
+SCHOOLS.update({'albright-shirk': ('Albright', 'iii'), 'alvernia-turf': ('Alvernia', 'iii'), 'delaware-valley-lipinski': ('Delaware Valley', 'iii'), 'dickinson-biddle': ('Dickinson', 'iii'), 'fdu-florham-shields': ('FDU-Florham', 'iii'), 'franklin-marshall-shadek': ('Franklin & Marshall', 'iii'), 'gettysburg-musselman': ('Gettysburg', 'iii'), 'juniata-knox': ('Juniata', 'iii'), 'kean-alumni': ('Kean', 'iii'), 'kings-pa-mccarthy': ("King's (PA)", 'iii'), 'lycoming-girardi': ('Lycoming', 'iii'), 'misericordia-mangelsdorf': ('Misericordia', 'iii'), 'montclair-state-sprague': ('Montclair State', 'iii'), 'moravian-rocco-calvo': ('Moravian', 'iii'), 'muhlenberg-scotty-wood': ('Muhlenberg', 'iii'), 'rowan-wackar': ('Rowan', 'iii'), 'tcnj-lions': ('TCNJ', 'iii'), 'widener-quick': ('Widener', 'iii'), 'wilkes-schmidt': ('Wilkes', 'iii'), 'william-paterson-wightman': ('William Paterson', 'iii')})
 # The original 209 reviewed identities include twenty FCS additions for v1.15.0. Public
 # FBS directory identities were checked at https://collegefootballdata.com/teams
 # (2026-10-14); canonical provider spellings include "Hawai'i" and "App State".
@@ -379,6 +382,8 @@ DISPLAY_NAMES = {
     'ulm-st-francis': 'ULM',
     'grambling-state-stadium': 'Grambling State',
 }
+
+DISPLAY_NAMES.update({'albright-shirk': 'Albright', 'alvernia-turf': 'Alvernia', 'delaware-valley-lipinski': 'Delaware Valley', 'dickinson-biddle': 'Dickinson', 'fdu-florham-shields': 'FDU-Florham', 'franklin-marshall-shadek': 'Franklin & Marshall', 'gettysburg-musselman': 'Gettysburg', 'juniata-knox': 'Juniata', 'kean-alumni': 'Kean', 'kings-pa-mccarthy': 'King’s (PA)', 'lycoming-girardi': 'Lycoming', 'misericordia-mangelsdorf': 'Misericordia', 'montclair-state-sprague': 'Montclair State', 'moravian-rocco-calvo': 'Moravian', 'muhlenberg-scotty-wood': 'Muhlenberg', 'rowan-wackar': 'Rowan', 'tcnj-lions': 'TCNJ', 'widener-quick': 'Widener', 'wilkes-schmidt': 'Wilkes', 'william-paterson-wightman': 'William Paterson'})
 
 # Explicit football independents: preserve null conference records.
 INDEPENDENT_STADIUMS = frozenset({"notre-dame", "uconn-rentschler-field", "merrimack-duane"})
@@ -446,6 +451,9 @@ EXPLICIT_ALIASES = {
     "ucla-rose-bowl": ("University of California, Los Angeles",),
 }
 
+
+# v1.20.0 exact institution names only; no fuzzy provider matching.
+EXPLICIT_ALIASES.update({'albright-shirk': ('Albright College',), 'alvernia-turf': ('Alvernia University',), 'delaware-valley-lipinski': ('Delaware Valley University',), 'dickinson-biddle': ('Dickinson College',), 'franklin-marshall-shadek': ('Franklin & Marshall College',), 'gettysburg-musselman': ('Gettysburg College',), 'juniata-knox': ('Juniata College',), 'kean-alumni': ('Kean University',), 'kings-pa-mccarthy': ("King's College (Pennsylvania)",), 'lycoming-girardi': ('Lycoming College',), 'misericordia-mangelsdorf': ('Misericordia University',), 'montclair-state-sprague': ('Montclair State University',), 'moravian-rocco-calvo': ('Moravian University',), 'muhlenberg-scotty-wood': ('Muhlenberg College',), 'rowan-wackar': ('Rowan University',), 'tcnj-lions': ('The College of New Jersey',), 'widener-quick': ('Widener University',), 'wilkes-schmidt': ('Wilkes University',), 'william-paterson-wightman': ('William Paterson University of New Jersey',)})
 
 class BuildError(Exception):
     """A controlled error containing only a fixed reason and known school names."""
